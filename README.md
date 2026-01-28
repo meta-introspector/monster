@@ -2,6 +2,17 @@
 
 Monster Group Walk Down to Earth - A mathematical exploration of the Monster group's order.
 
+## ⚠️ Disclaimer
+
+**Author**: Undergraduate math student (not currently enrolled), exploring patterns in the Monster group. This is a learning project, not professional research. I welcome corrections, guidance, and constructive criticism from experts. Please review with patience and understanding.
+
+**What this is**: Documented experiments, working code, interesting patterns  
+**What this isn't**: Rigorous professional mathematics (yet)
+
+I humbly request help, feedback, and mercy from the mathematical community.
+
+---
+
 ## 📚 Quick Start
 
 **New to this project?** Start here:

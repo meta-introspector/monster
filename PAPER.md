@@ -4,6 +4,36 @@
 **Date**: January 28, 2026  
 **Status**: Draft with Proofs
 
+---
+
+## ⚠️ Important Disclaimer
+
+**Author Background**: I am an undergraduate mathematics student (not currently formally enrolled) with some computer science background. This work represents my best effort to explore and document fascinating patterns I've discovered in the Monster group structure, but I am **not a professional mathematician or researcher**.
+
+**Request for Review**: I humbly request that professional mathematicians, group theorists, and computer scientists review this work with patience and understanding. I am certain there are errors, oversights, and naive assumptions. I welcome corrections, guidance, and constructive criticism.
+
+**What I'm Claiming**:
+- I've implemented working code that demonstrates interesting patterns
+- I've found correlations between Monster group primes and computational processes
+- I've documented my experiments and observations carefully
+
+**What I'm NOT Claiming**:
+- That all my mathematical reasoning is rigorous or correct
+- That I fully understand all the deep mathematics involved
+- That my "proofs" meet professional standards without review
+- That my interpretations are the only or best explanations
+
+**Please Help**: If you're a professional in these fields, I would be deeply grateful for:
+- Corrections to mathematical errors
+- Guidance on proper formalization
+- Suggestions for rigorous proof techniques
+- Pointers to relevant literature I may have missed
+- Mercy for an enthusiastic amateur trying to learn
+
+This is a learning journey, not a claim of expertise. Thank you for your patience and understanding.
+
+---
+
 ## Abstract
 
 We present a complete neural network implementation of the Monster group's mathematical structure, with formal proofs of equivalence between Python and Rust implementations. Our 71-layer autoencoder preserves Monster group symmetry through Hecke operators, achieving 23× compression of the LMFDB database while maintaining 253,581× overcapacity. We prove functional equivalence, type safety, and performance improvements through bisimulation.

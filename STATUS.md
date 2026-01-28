@@ -1,7 +1,14 @@
 # Monster Group Neural Network - Current Status
 
 **Date**: January 28, 2026  
-**Status**: Complete Documentation + Active Experiments
+**Status**: Complete Documentation + Active Experiments  
+**Author**: Undergraduate math student (learning project)
+
+## ⚠️ Important Note
+
+This is an **amateur exploration** by someone still learning mathematics and computer science. All claims should be reviewed by professionals. I'm documenting my experiments and observations, not claiming rigorous mathematical truth. Please approach with appropriate skepticism and offer corrections where needed.
+
+---
 
 ## ✅ Completed
 
