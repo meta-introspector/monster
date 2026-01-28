@@ -1,0 +1,62 @@
+[
+  {
+    "path": "user-manager.py",
+    "lines": 30,
+    "literal_71": 0,
+    "shard": 2
+  },
+  {
+    "path": "start-lmfdb.py",
+    "lines": 6,
+    "literal_71": 0,
+    "shard": 2
+  },
+  {
+    "path": ".github/workflows/generate-matrix.py",
+    "lines": 33,
+    "literal_71": 0,
+    "shard": 3
+  },
+  {
+    "path": ".github/workflows/generate_autopep8codes.py",
+    "lines": 67,
+    "literal_71": 4,
+    "shard": 1
+  },
+  {
+    "path": "scripts/__init__.py",
+    "lines": 1,
+    "literal_71": 0,
+    "shard": 1
+  },
+  {
+    "path": "scripts/import_overwrite_generic.py",
+    "lines": 48,
+    "literal_71": 0,
+    "shard": 2
+  },
+  {
+    "path": "scripts/maass/import_maass_and_maass_lfun.py",
+    "lines": 42,
+    "literal_71": 0,
+    "shard": 2
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_euler_factors.py",
+    "lines": 129,
+    "literal_71": 0,
+    "shard": 3
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_trace_hash_Lfunctions.py",
+    "lines": 35,
+    "literal_71": 0,
+    "shard": 5
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_embeddings_mf_hecke_cc.py",
+    "lines": 97,
+    "literal_71": 0,
+    "shard": 1
+  }
+]

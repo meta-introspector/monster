@@ -1,0 +1,52 @@
+[
+  {
+    "path": "user-manager.py",
+    "nodes": 81,
+    "literal_71": 0
+  },
+  {
+    "path": "start-lmfdb.py",
+    "nodes": 7,
+    "literal_71": 0
+  },
+  {
+    "path": ".github/workflows/generate-matrix.py",
+    "nodes": 179,
+    "literal_71": 0
+  },
+  {
+    "path": ".github/workflows/generate_autopep8codes.py",
+    "nodes": 205,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/__init__.py",
+    "nodes": 1,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/import_overwrite_generic.py",
+    "nodes": 227,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/maass/import_maass_and_maass_lfun.py",
+    "nodes": 115,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_euler_factors.py",
+    "nodes": 1192,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_trace_hash_Lfunctions.py",
+    "nodes": 270,
+    "literal_71": 0
+  },
+  {
+    "path": "scripts/classical_modular_forms/populate_embeddings_mf_hecke_cc.py",
+    "nodes": 1023,
+    "literal_71": 0
+  }
+]
