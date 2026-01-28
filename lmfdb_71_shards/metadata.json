@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "total_shards": 71,
+  "shards_with_data": 29,
+  "total_objects": 41,
+  "levels": {
+    "1_shards": 29,
+    "2_chunks": 40,
+    "3_witnesses": 41,
+    "4_attributes": 905,
+    "5_enums": 5041,
+    "6_structs": 71,
+    "7_functions": 71
+  },
+  "targets": {
+    "1_shards": 71,
+    "2_chunks": 5041,
+    "3_witnesses": 357911,
+    "4_attributes": 25411681,
+    "5_enums": 1804229351,
+    "6_structs": 128100283921,
+    "7_functions": 9095120158391
+  },
+  "schema": {
+    "shard_id": "int64",
+    "chunk_id": "int64",
+    "witness_id": "int64",
+    "object_id": "string",
+    "type": "string",
+    "file": "string",
+    "line": "int64",
+    "complexity": "int64",
+    "level": "int64",
+    "base_complexity": "int64",
+    "code": "string",
+    "proof_hash": "string"
+  },
+  "reconstruction": {
+    "method": "Load all 71 shards and merge by shard_id",
+    "verification": "Check proof_hash for each object",
+    "ordering": "Sort by (shard_id, chunk_id, witness_id, line)"
+  }
+}
