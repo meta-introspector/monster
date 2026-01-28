@@ -4,3 +4,6 @@ perf_traces/*.script
 result
 *.o
 *.data*
+target/
+*/target/
+lmfdb-rust/target/
