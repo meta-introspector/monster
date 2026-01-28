@@ -1,105 +1,42 @@
 #!/usr/bin/env python3
 """
-Upload LMFDB Hecke Analysis to HuggingFace Dataset
+Upload LMFDB Monster dataset to HuggingFace
 """
 
-import os
-import json
-from pathlib import Path
-from huggingface_hub import HfApi, create_repo
+from datasets import Dataset
+import pandas as pd
 
-def upload_to_huggingface():
-    """Upload analysis results to HuggingFace"""
-    
-    # Initialize API
-    token = os.environ.get('HF_TOKEN')
-    if not token:
-        print("Error: HF_TOKEN not set")
-        return
-    
-    api = HfApi(token=token)
-    repo_id = "monster-group/lmfdb-hecke-analysis"
-    
-    # Create repo if doesn't exist
-    try:
-        create_repo(repo_id, repo_type="dataset", exist_ok=True)
-        print(f"✓ Repository: {repo_id}")
-    except Exception as e:
-        print(f"Repository exists or error: {e}")
-    
-    # Upload files
-    files_to_upload = [
-        "lmfdb_hecke_analysis/summary.json",
-        "lmfdb_hecke_analysis/source/file_analysis.json",
-        "lmfdb_hecke_analysis/ast/ast_analysis.json",
-        "ANALYSIS_REPORT.md",
-    ]
-    
-    for file_path in files_to_upload:
-        if Path(file_path).exists():
-            try:
-                api.upload_file(
-                    path_or_fileobj=file_path,
-                    path_in_repo=file_path,
-                    repo_id=repo_id,
-                    repo_type="dataset",
-                )
-                print(f"✓ Uploaded: {file_path}")
-            except Exception as e:
-                print(f"✗ Failed to upload {file_path}: {e}")
-    
-    # Create README
-    readme = """
-# LMFDB Hecke Analysis Dataset
+print("🤗 UPLOADING TO HUGGINGFACE")
+print("=" * 60)
+print()
 
-Complete Hecke operator analysis of the LMFDB codebase.
+# Load dataset
+df = pd.read_parquet('lmfdb_monster_dataset.parquet')
 
-## Contents
+print(f"Dataset: {len(df)} rows, {len(df.columns)} columns")
+print()
 
-- `summary.json` - Overall statistics
-- `source/` - Source code analysis
-- `ast/` - AST analysis
-- `bytecode/` - Bytecode analysis
-- `perf/` - Performance traces
-- `database/` - Database dumps
+# Convert to HuggingFace Dataset
+dataset = Dataset.from_pandas(df)
 
-## Analysis Levels
+print("Dataset features:")
+print(dataset.features)
+print()
 
-1. **Source**: Literal 71 occurrences
-2. **AST**: Constant(71) nodes
-3. **Bytecode**: LOAD_CONST 71 operations
-4. **Performance**: Cycle signatures
-5. **Database**: Prime 71 patterns
+# Upload to HuggingFace Hub
+# Requires: huggingface-cli login
+dataset_name = "meta-introspector/lmfdb-monster-71"
 
-## Prime 71 Resonance
+print(f"Uploading to: {dataset_name}")
+print()
 
-This dataset reveals how prime 71 (highest Monster prime) appears throughout the LMFDB codebase at all transformation levels.
-
-## Citation
-
-```bibtex
-@dataset{monster_lmfdb_hecke_2026,
-  title={LMFDB Hecke Analysis Dataset},
-  author={Monster Group Neural Network Project},
-  year={2026},
-  publisher={HuggingFace},
-  url={https://huggingface.co/datasets/monster-group/lmfdb-hecke-analysis}
-}
-```
-"""
-    
-    with open("README.md", "w") as f:
-        f.write(readme)
-    
-    api.upload_file(
-        path_or_fileobj="README.md",
-        path_in_repo="README.md",
-        repo_id=repo_id,
-        repo_type="dataset",
-    )
-    print("✓ Uploaded: README.md")
-    
-    print(f"\n✅ Dataset available at: https://huggingface.co/datasets/{repo_id}")
-
-if __name__ == '__main__':
-    upload_to_huggingface()
+try:
+    dataset.push_to_hub(dataset_name)
+    print("✅ Upload complete!")
+    print(f"View at: https://huggingface.co/datasets/{dataset_name}")
+except Exception as e:
+    print(f"❌ Upload failed: {e}")
+    print()
+    print("To upload manually:")
+    print(f"  1. huggingface-cli login")
+    print(f"  2. python3 upload_to_huggingface.py")

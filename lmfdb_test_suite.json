@@ -1,0 +1,5811 @@
+{
+  "total_tests": 645,
+  "tests_with_71": 31,
+  "tests": [
+    {
+      "name": "test_main",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 9,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_label",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 13,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 11
+    },
+    {
+      "name": "test_direct_access",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 25,
+      "num_statements": 16,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 17
+    },
+    {
+      "name": "test_browse",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 43,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_moments",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 57,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_subgroups",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 61,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_event_probabilities",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 66,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_completeness",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 70,
+      "num_statements": 14,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 15
+    },
+    {
+      "name": "test_trace_zero_density",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 95,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_favourites",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 103,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 111,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_issue_6691_fixed",
+      "file": "lmfdb/sato_tate_groups/test_st.py",
+      "line": 119,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test that issue #6691 is fixed: labels with non-numeric component group parts don't crash",
+      "complexity": 5
+    },
+    {
+      "name": "test_download_qexp",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 12,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_download",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 38,
+      "num_statements": 24,
+      "has_71": false,
+      "docstring": "Test download function",
+      "complexity": 25
+    },
+    {
+      "name": "test_download_magma",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 75,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_expression_level",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 126,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_download_search",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 130,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 10
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 144,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Test that we don't hit any error on a random newform",
+      "complexity": 6
+    },
+    {
+      "name": "test_dimension",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 170,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_traces",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 175,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 10
+    },
+    {
+      "name": "test_trivial_searches",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 190,
+      "num_statements": 3,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_parity",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 219,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_coefficient_fields",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 228,
+      "num_statements": 25,
+      "has_71": false,
+      "docstring": "Test the display of coefficient fields.",
+      "complexity": 26
+    },
+    {
+      "name": "test_inner_twist",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 262,
+      "num_statements": 13,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 14
+    },
+    {
+      "name": "test_self_twist",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 282,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_selft_twist_disc",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 290,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_projective",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 304,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_artin",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 313,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_AL_search",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 329,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Test that we display AL eigenvals/signs",
+      "complexity": 7
+    },
+    {
+      "name": "test_Fricke_signs_search",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 339,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Test that we display Fricke signs",
+      "complexity": 6
+    },
+    {
+      "name": "test_is_self_dual",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 354,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_hecke_charpolys",
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 362,
+      "num_statements": 5,
+      "has_71": true,
+      "docstring": "Test that the Hecke charpolys are correct.\n\nSome expected Hecke charpolys are stored in the dict test_data,\nwhich are then checked to be in the relevant page. These examples\nhave been chosen to be readily verifiable from the displayed\nFourier coefficients of each respective homepage.",
+      "complexity": 6
+    },
+    {
+      "name": "test_expression_divides",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 13,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_browse_page",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 17,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Check browsing for elliptic modular forms",
+      "complexity": 10
+    },
+    {
+      "name": "test_stats",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 30,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 11
+    },
+    {
+      "name": "test_dynamic_stats",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 42,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_sidebar",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 48,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_badp",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 58,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_level_bread",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 65,
+      "num_statements": 11,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 12
+    },
+    {
+      "name": "test_many",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 80,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_favorite",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 94,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_tracehash",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 142,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 147,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_failure",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 152,
+      "num_statements": 13,
+      "has_71": false,
+      "docstring": "Check that bad inputs are handled correctly",
+      "complexity": 14
+    },
+    {
+      "name": "test_delta",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 169,
+      "num_statements": 14,
+      "has_71": false,
+      "docstring": "Check that the Delta function is ok....\nRecall that this version uses the old urls...",
+      "complexity": 15
+    },
+    {
+      "name": "test_level11",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 188,
+      "num_statements": 10,
+      "has_71": true,
+      "docstring": "Check that the weight 2 form of level 11 works.",
+      "complexity": 11
+    },
+    {
+      "name": "test_triv_character",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 203,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_non_triv_character",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 211,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Check that non-trivial characters are also working.",
+      "complexity": 10
+    },
+    {
+      "name": "test_get_args",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 224,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_empty",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 232,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_not_in_db",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 243,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_character_validation",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 250,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_decomposition",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 256,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_convert_conreylabels",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 274,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_maximal",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 282,
+      "num_statements": 20,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 21
+    },
+    {
+      "name": "test_dim_table",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 304,
+      "num_statements": 36,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 37
+    },
+    {
+      "name": "test_character_parity",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 356,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_dual",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 362,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_embedded_invariants",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 391,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_satake",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 418,
+      "num_statements": 53,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 54
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 577,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_character_values",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 604,
+      "num_statements": 9,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 10
+    },
+    {
+      "name": "test_invalid_format_parameter",
+      "file": "lmfdb/classical_modular_forms/test_cmf.py",
+      "line": 659,
+      "num_statements": 18,
+      "has_71": false,
+      "docstring": "Test that invalid format parameters are handled gracefully",
+      "complexity": 19
+    },
+    {
+      "name": "test_template_collisions",
+      "file": "lmfdb/tests/test_template_namespace.py",
+      "line": 10,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "check lmfdb code directories for duplicate template names",
+      "complexity": 9
+    },
+    {
+      "name": "test_root",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 19,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_robots",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 23,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_favicon",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 27,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_javscript",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 30,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_css",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 35,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_url_map",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 42,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "        ",
+      "complexity": 3
+    },
+    {
+      "name": "test_some_latex_error",
+      "file": "lmfdb/tests/test_root.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Tests for latex errors, but fails at the moment because of other errors",
+      "complexity": 3
+    },
+    {
+      "name": "test_acknowledgments",
+      "file": "lmfdb/tests/test_acknowlegments.py",
+      "line": 8,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_workshops",
+      "file": "lmfdb/tests/test_acknowlegments.py",
+      "line": 14,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_workshoplinks",
+      "file": "lmfdb/tests/test_workshoplinks.py",
+      "line": 6,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_random_redirect_status_code",
+      "file": "lmfdb/tests/test_random_redirects.py",
+      "line": 44,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Test that random routes return 307 (Temporary Redirect) status code\ninstead of 301 (Permanent Redirect) to prevent browser caching.",
+      "complexity": 3
+    },
+    {
+      "name": "test_random_redirect_cache_control",
+      "file": "lmfdb/tests/test_random_redirects.py",
+      "line": 58,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Test that random routes have Cache-Control headers set to prevent caching.",
+      "complexity": 3
+    },
+    {
+      "name": "test_random_routes_work",
+      "file": "lmfdb/tests/test_random_redirects.py",
+      "line": 77,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Test that random routes actually redirect to valid pages.\nThis ensures the decorator doesn't break functionality.",
+      "complexity": 3
+    },
+    {
+      "name": "test_ellcurve_dirichletchar",
+      "file": "lmfdb/tests/test_tensor_products.py",
+      "line": 16,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_modform_artinrep",
+      "file": "lmfdb/tests/test_tensor_products.py",
+      "line": 21,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_Galois_group_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 10,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_conjugacy_classes_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 14,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_character_table_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 18,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_abstract_group_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 24,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_number_field_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 28,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_local_field_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 32,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_galois_module_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 36,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_galois_alias_knowl",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 40,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_prod_knowl_sync",
+      "file": "lmfdb/tests/test_dynamic_knowls.py",
+      "line": 44,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_all_internal_links",
+      "file": "lmfdb/tests/test_homepage.py",
+      "line": 72,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test all internal links found in index_boxes.yaml.",
+      "complexity": 5
+    },
+    {
+      "name": "test_all_external_links",
+      "file": "lmfdb/tests/test_homepage.py",
+      "line": 81,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test all external links found in index_boxes.yaml.",
+      "complexity": 5
+    },
+    {
+      "name": "test_all_links_by_box",
+      "file": "lmfdb/tests/test_homepage.py",
+      "line": 90,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Test all links grouped by box.",
+      "complexity": 6
+    },
+    {
+      "name": "test_random_link",
+      "file": "lmfdb/tests/test_homepage.py",
+      "line": 108,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Test the global random link functionality.",
+      "complexity": 4
+    },
+    {
+      "name": "test_method",
+      "file": "lmfdb/tests/test_homepage.py",
+      "line": 117,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_zeroes_spelling",
+      "file": "lmfdb/tests/test_spelling.py",
+      "line": 11,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "'zeroes' should be 'zeros'",
+      "complexity": 3
+    },
+    {
+      "name": "test_an_list",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 46,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Checking utility: an_list",
+      "complexity": 10
+    },
+    {
+      "name": "test_coeff_to_poly",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 62,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: coeff_to_poly",
+      "complexity": 4
+    },
+    {
+      "name": "test_display_multiset",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 69,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: display_multiset",
+      "complexity": 4
+    },
+    {
+      "name": "test_pair2complex",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 77,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Checking utility: pair2complex",
+      "complexity": 5
+    },
+    {
+      "name": "test_round_to_half_int",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 85,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: round_to_half_int",
+      "complexity": 4
+    },
+    {
+      "name": "test_to_dict",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 92,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Checking utility: to_dict",
+      "complexity": 3
+    },
+    {
+      "name": "test_splitcoeff",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 99,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: splitcoeff",
+      "complexity": 4
+    },
+    {
+      "name": "test_comma",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 111,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Checking utility: comma",
+      "complexity": 6
+    },
+    {
+      "name": "test_format_percentage",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 120,
+      "num_statements": 3,
+      "has_71": true,
+      "docstring": "Checking utility: format_percentage",
+      "complexity": 4
+    },
+    {
+      "name": "test_signtocolour",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 127,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: signtocolour",
+      "complexity": 4
+    },
+    {
+      "name": "test_rgbtohex",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 134,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Checking utility: rgbtohex",
+      "complexity": 4
+    },
+    {
+      "name": "test_web_latex",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 145,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Checking utility: web_latex",
+      "complexity": 6
+    },
+    {
+      "name": "test_web_latex_ideal_fact",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 156,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "Checking utility: web_latex_ideal_fact",
+      "complexity": 9
+    },
+    {
+      "name": "test_web_latex_split_on",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 170,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Checking utility: web_latex_split_on",
+      "complexity": 5
+    },
+    {
+      "name": "test_web_latex_split_on_pm",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 179,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Checking utility: web_latex_split_on_pm",
+      "complexity": 6
+    },
+    {
+      "name": "test_web_latex_split_on_re",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 188,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Checking utility: web_latex_split_on_re",
+      "complexity": 6
+    },
+    {
+      "name": "test_list_to_latex_matrix",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 197,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "Checking utility: list_to_latex_matrix",
+      "complexity": 8
+    },
+    {
+      "name": "test_integer_set",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 210,
+      "num_statements": 78,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 79
+    },
+    {
+      "name": "test_complete",
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 312,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_api_home",
+      "file": "lmfdb/api/test_api.py",
+      "line": 4,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the top-level api page works",
+      "complexity": 4
+    },
+    {
+      "name": "test_api_databases",
+      "file": "lmfdb/api/test_api.py",
+      "line": 11,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that one collection from each database works",
+      "complexity": 4
+    },
+    {
+      "name": "test_api_examples_html",
+      "file": "lmfdb/api/test_api.py",
+      "line": 26,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the sample queries on the top page all work (html output)",
+      "complexity": 4
+    },
+    {
+      "name": "test_api_examples_yaml",
+      "file": "lmfdb/api/test_api.py",
+      "line": 42,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the sample queries on the top page all work (yaml output)",
+      "complexity": 4
+    },
+    {
+      "name": "test_api_examples_json",
+      "file": "lmfdb/api/test_api.py",
+      "line": 53,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that the sample queries on the top page all work (json output)",
+      "complexity": 5
+    },
+    {
+      "name": "test_api_usage",
+      "file": "lmfdb/api/test_api.py",
+      "line": 61,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the queries used by ODK demo all work",
+      "complexity": 4
+    },
+    {
+      "name": "test_login_page",
+      "file": "lmfdb/users/test_users.py",
+      "line": 13,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_user_db",
+      "file": "lmfdb/users/test_users.py",
+      "line": 16,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_user",
+      "file": "lmfdb/users/test_users.py",
+      "line": 20,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_int_points",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 7,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_curve_label",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 11,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_iso_label",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 15,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_Cremona_label_mal",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 21,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_missing_curve",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 25,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_missing_class",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 33,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_invalid_class",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 41,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_Cond_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 49,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_Weierstrass_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 57,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_j_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 61,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_jbad_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 71,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_tors_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 76,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_SurjPrimes_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 81,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_NonMaxPrimes_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 84,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_BadPrimes_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 88,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_num_int_pts_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 102,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_cm_disc_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 107,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_one_per_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 111,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_galois_image_search",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 115,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_isogeny_class",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 125,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_dl_qexp",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 129,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_dl_code",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 133,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_dl_all",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 137,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_sha",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 141,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_disc_factor",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 150,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Test for factorization of large discriminants",
+      "complexity": 4
+    },
+    {
+      "name": "test_torsion_growth",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 157,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test for torsion growth data",
+      "complexity": 5
+    },
+    {
+      "name": "test_990h",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 165,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Test the exceptional 990h/990.i optimal labelling.",
+      "complexity": 7
+    },
+    {
+      "name": "test_completeness",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 195,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Test that the dynamic completeness knowl displays OK.",
+      "complexity": 4
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/elliptic_curves/test_ell_curves.py",
+      "line": 202,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_page",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 8,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/Q search & browse page works.",
+      "complexity": 4
+    },
+    {
+      "name": "test_stats",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 17,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the link to the stats page works.",
+      "complexity": 4
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 27,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the link to a random curve works.",
+      "complexity": 4
+    },
+    {
+      "name": "test_browse",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 37,
+      "num_statements": 11,
+      "has_71": false,
+      "docstring": "Check that the browsing links work.",
+      "complexity": 12
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 57,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Check that the link to a specific curve works.",
+      "complexity": 10
+    },
+    {
+      "name": "test_search",
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 80,
+      "num_statements": 13,
+      "has_71": true,
+      "docstring": "Check that various search combinations work.",
+      "complexity": 14
+    },
+    {
+      "name": "test_random_family",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 13,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_by_family_label",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 16,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_type",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 19,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_hodge_vector",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 22,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_bezout_det",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 25,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_p_part",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 28,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_monodromy",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 31,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_good_euler",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 35,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_random_motive",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 40,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_motive_label",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 44,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_type_motive",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 47,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_signature",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 50,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_conductor",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 53,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_local_information",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 56,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_degree",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 63,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_weight",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 67,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_family_hodge_vector",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 71,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_A",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 75,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_B",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 79,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_Ap",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 83,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_Bp",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 87,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_Ap_perp",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 91,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_Bp_perp",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 95,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_conductor",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 101,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_hodge_vector",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 105,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_specialization",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 109,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_root_number",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 113,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_friends_family",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 123,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_friends_motive",
+      "file": "lmfdb/hypergm/test_hgm.py",
+      "line": 128,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_ramif_cl_deg",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 8,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_f",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 12,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_top_slope",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 18,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_field_page",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 26,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_global_splitting_models",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 32,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 39,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_download",
+      "file": "lmfdb/local_fields/test_localfields.py",
+      "line": 43,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_Dirichletmethods",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 9,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_nchars",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 18,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_order",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 24,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_even_odd",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 28,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_modbrowse",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 33,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 37,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_condsearch",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 51,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_nextprev",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 55,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_table",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 63,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_navig",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 70,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_dirichletfamily",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 74,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_dirichletgroup",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 79,
+      "num_statements": 17,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 18
+    },
+    {
+      "name": "test_dirichletgalorbs",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 100,
+      "num_statements": 20,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 21
+    },
+    {
+      "name": "test_dirichletchar11",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 152,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_dirichletchar21",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 156,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_valuefield",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 160,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_dirichletcharbig",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 164,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "nice example to check the Conrey naming scheme\nfor p = 40487, 5 generates Z/pZ but not Z/p^2Z\nthe next one is OK, namely 10.\nThis test also makes sure the code scales a little bit.",
+      "complexity": 9
+    },
+    {
+      "name": "test_dirichletchar43",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 178,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_dirichlet_calc",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 186,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 10
+    },
+    {
+      "name": "test_dirichletchar531",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 200,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_dirichletchar6000lfunc",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 207,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check Sato-Tate group and L-function link for 6000/11  ",
+      "complexity": 7
+    },
+    {
+      "name": "test_dirichletchar9999lfunc",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 215,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that the L-function link for 9999/2 is displayed if and only if the L-function data is present",
+      "complexity": 6
+    },
+    {
+      "name": "test_dirichletchar99999999999999999lfunc",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 222,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check Dirichlet character with very large modulus",
+      "complexity": 7
+    },
+    {
+      "name": "test_sage_code_gens",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 230,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "Test that the sage code stubs generate the correct character. This\nis important because the same logic for generating the display code\nis used to generate the character for computing gauss/kloosterman\nsums etc. The three tests below have been chosen for issues\nidentified with previous versions of the sage generating code.",
+      "complexity": 11
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/characters/test_characters.py",
+      "line": 249,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_stats",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 7,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_cond_range",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 13,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_disc_range",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 17,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_curve_label",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 21,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_isogeny_class_label",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 39,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_Lfunction_link",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 47,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_twist_link",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 51,
+      "num_statements": 2,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_conductor",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 62,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_by_url_isogeny_class_label",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 69,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_by_url_curve_label",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 73,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_by_url_isogeny_class_discriminant",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 99,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 107,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_conductor_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 112,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_disc_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 116,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 120,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_rational_weierstrass_points_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 125,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_torsion_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 129,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_torsion_order_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 133,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_two_selmer_rank_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 137,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_analytic_rank_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 141,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_gl2_type_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 145,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_st_group_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 149,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_st0_group_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 153,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_automorphism_group_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 157,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_geometric_automorphism_group_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 161,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_locally_solvable_serach",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 165,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_sha_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 169,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_torsion",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 185,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_mwgroup",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 189,
+      "num_statements": 13,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 14
+    },
+    {
+      "name": "test_bsd_invariants",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 204,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 11
+    },
+    {
+      "name": "test_local_invariants",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 216,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_mfhilbert",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 222,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_ratpts",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 228,
+      "num_statements": 11,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 12
+    },
+    {
+      "name": "test_endo_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 241,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_igusa_clebsch_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 258,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_igusa_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 270,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_G2_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 277,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_badprimes_search",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 284,
+      "num_statements": 16,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 17
+    },
+    {
+      "name": "test_related_objects",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 302,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 348,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 357,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_galrep",
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 386,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_lattice",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 6,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_lattice_dim",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 11,
+      "num_statements": 4,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_lattice_classnumber",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 17,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_classnumber_large",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 21,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_classnumber_large_download",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 25,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_search",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 29,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_search_next",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 33,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_searchdim",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 37,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_searchlevel",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 41,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_searchminvectlength",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 45,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_searchGM",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 49,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_searchGM_2",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_latticeZ2",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 57,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_lattice_thetadisplay",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 61,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_lattice_random",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 67,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_downloadstring",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 73,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_downloadstring2",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 77,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_downloadstring_search",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 82,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download_shortest",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 86,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download_genus",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 90,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_favorite",
+      "file": "lmfdb/lattice/test_lattice.py",
+      "line": 94,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_deg",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 8,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_t_solv_prim",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 12,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_display_bigpage",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 17,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_range",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 21,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_order",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 26,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_groupid",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 31,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_bad_jump",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 36,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_bad_out_of_range",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 40,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/galois_groups/test_galoisgroup.py",
+      "line": 44,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_url_label",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 8,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_passport_label",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 12,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_url_naturallabel",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 16,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_url_topological_pages",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 20,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "Test bad URLs for topological webpages",
+      "complexity": 8
+    },
+    {
+      "name": "test_search_genus_group",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 33,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_magma_download",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 37,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_full_auto_links",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 41,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_index_page",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 45,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_stats_page",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 49,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_unique_groups_pages",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_quo_genus_gt_0",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 57,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_quo_genus_search",
+      "file": "lmfdb/higher_genus_w_automorphisms/test_hgcwa.py",
+      "line": 61,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_polynomial",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 6,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that the formatted polynomial displays correctly",
+      "complexity": 3
+    },
+    {
+      "name": "test_display_field",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 12,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that the base field gets displayed correctly",
+      "complexity": 3
+    },
+    {
+      "name": "test_frob_angles",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 18,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that the Frobenius angles display correctly",
+      "complexity": 3
+    },
+    {
+      "name": "test_is_simple",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 24,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that is_simple is computed correctly, and that the decomposition information displays correctly",
+      "complexity": 5
+    },
+    {
+      "name": "test_is_ordinary",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 32,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that is_ordinary is computed correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_is_supersingular",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 39,
+      "num_statements": 3,
+      "has_71": true,
+      "docstring": "Check that is_supersingular is computed correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_slopes",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 46,
+      "num_statements": 2,
+      "has_71": true,
+      "docstring": "Check that display_slopes works",
+      "complexity": 3
+    },
+    {
+      "name": "test_counts",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 52,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that length_A_counts and length_C_counts work",
+      "complexity": 4
+    },
+    {
+      "name": "test_display_number_fld",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 59,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that display_number_field works",
+      "complexity": 3
+    },
+    {
+      "name": "test_display_gal_gp",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 67,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that display_galois_group works",
+      "complexity": 3
+    },
+    {
+      "name": "test_is_primitive",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 75,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that is_primitive is computed correctly, and that the base change information displays correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_newton_polygon_plot",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 82,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the plot of the Newton polygon is included and computed correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_circle_plot",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 91,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the plot showing the roots of the Weil polynomial displays correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_property_box",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 100,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that the property box displays.",
+      "complexity": 6
+    },
+    {
+      "name": "test_split_Frobenius_angles",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 109,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the Frobenius angles are split into multiple math elements",
+      "complexity": 4
+    },
+    {
+      "name": "test_av_download",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 116,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "Test downloading on search results page.",
+      "complexity": 11
+    },
+    {
+      "name": "test_download_all",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 130,
+      "num_statements": 7,
+      "has_71": true,
+      "docstring": "Test downloading all stored data to text",
+      "complexity": 8
+    },
+    {
+      "name": "test_download_curves",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 144,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Test downloading all stored data to text",
+      "complexity": 10
+    },
+    {
+      "name": "test_cyclic_group_of_points_display",
+      "file": "lmfdb/abvar/fq/test_av.py",
+      "line": 161,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the cyclic group of points information is displayed\non the isogeny-class page.",
+      "complexity": 4
+    },
+    {
+      "name": "test_index_page",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 9,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that the Variety/Abelian/Fq index page works",
+      "complexity": 5
+    },
+    {
+      "name": "test_stats_page",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 17,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_completeness_page",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 22,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Variety/Abelian/Fq/Completeness works",
+      "complexity": 4
+    },
+    {
+      "name": "test_further_completeness_page",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 29,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Variety/Abelian/Fq/Source works",
+      "complexity": 4
+    },
+    {
+      "name": "test_labels_page",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 36,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Variety/Abelian/Fq/Labels works",
+      "complexity": 4
+    },
+    {
+      "name": "test_lookup",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 43,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that Variety/Abelian/Fq/?jump works",
+      "complexity": 3
+    },
+    {
+      "name": "test_bad_label",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 55,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check the error message for a bad label url",
+      "complexity": 3
+    },
+    {
+      "name": "test_count_table",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 61,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "Check that the count table works",
+      "complexity": 9
+    },
+    {
+      "name": "test_search_dimension",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 75,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that we can search by dimension",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_basefield",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 85,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that we can search by base field",
+      "complexity": 3
+    },
+    {
+      "name": "test_simple_search",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 91,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to simple or non-simple abelian varieties only",
+      "complexity": 6
+    },
+    {
+      "name": "test_geom_decomp_search",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 102,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Check that we can restrict to (geometrically) (non) squarefree\nabelian varieties only.",
+      "complexity": 10
+    },
+    {
+      "name": "test_primitive_search",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 125,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to primitive or non-primitive abelian varieties only",
+      "complexity": 6
+    },
+    {
+      "name": "test_search_prank",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 134,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that we can search by p-rank",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_newton",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 142,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check that we can search by newton polygon",
+      "complexity": 7
+    },
+    {
+      "name": "test_search_initcoeffs",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 160,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that we can search by initial coefficients of the polynomial",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_pointcountsav",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 172,
+      "num_statements": 3,
+      "has_71": true,
+      "docstring": "Check that we can search by the point counts of the abelian variety",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_pointcountscurve",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 179,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by the point counts of the curve",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_anglerank",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 186,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can search by angle rank",
+      "complexity": 6
+    },
+    {
+      "name": "test_search_isogfactor",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 195,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that we can search by decomposition into isogeny factors",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_numberfield",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 210,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by number field",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_jacobian",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 218,
+      "num_statements": 11,
+      "has_71": false,
+      "docstring": "Check that we can restrict to Jacobians or non Jacobians",
+      "complexity": 12
+    },
+    {
+      "name": "test_search_princpol",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 236,
+      "num_statements": 13,
+      "has_71": false,
+      "docstring": "Check that we can restrict to principally polarizable or not principally polarizable",
+      "complexity": 14
+    },
+    {
+      "name": "test_search_galois",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 256,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_search_maxnumdisplay",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 262,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that we can restrict how many classes get displayed",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_combos",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 268,
+      "num_statements": 18,
+      "has_71": true,
+      "docstring": "Check that various search combinations work.",
+      "complexity": 19
+    },
+    {
+      "name": "test_search_cyclic_group",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 305,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to cyclic or non-cyclic groups of points\nusing the cyclic search parameter.",
+      "complexity": 6
+    },
+    {
+      "name": "test_search_noncyclic_primes",
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 332,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that the noncyclic_primes search parameter is accepted and\nfinds classes that are non-cyclic at p = 2.",
+      "complexity": 3
+    },
+    {
+      "name": "test_home",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 5,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 14,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_EC",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 18,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_typo",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 26,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_large",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 30,
+      "num_statements": 2,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_range_search",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 34,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_bad_input_search",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 39,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 43,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_CM",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 47,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_base_change",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 51,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hmf_page",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 55,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_hmf_page_higherdim",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 64,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_by_field",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 71,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download_sage",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 75,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_Lfun_link",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 81,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_browse",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 85,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_browse_by_degree",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 91,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_missing_AL",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 95,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_level_one_AL",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 99,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_friends",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 103,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_download_magma",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 136,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 8
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/hilbert_modular_forms/test_hmf.py",
+      "line": 165,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_random_page",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 18,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test 3 random sample pages",
+      "complexity": 5
+    },
+    {
+      "name": "test_browse_page",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 26,
+      "num_statements": 18,
+      "has_71": false,
+      "docstring": "Test the top level browse pages",
+      "complexity": 19
+    },
+    {
+      "name": "test_dimension_tables",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 51,
+      "num_statements": 23,
+      "has_71": false,
+      "docstring": "Test dimension table pages",
+      "complexity": 24
+    },
+    {
+      "name": "test_sample_page_Q",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 78,
+      "num_statements": 4,
+      "has_71": true,
+      "docstring": "Test eigenvalue, Fourier coefficient, and modulus selection on a sample page with coefficient field Q",
+      "complexity": 5
+    },
+    {
+      "name": "test_sample_page_nf",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 99,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Test eigenvalue, Fourier coefficient, and modulus selection on a sample page with quadratic coefficient field",
+      "complexity": 5
+    },
+    {
+      "name": "test_huge_sample",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 121,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Test sample page with defining equation and explicit formula too large to display",
+      "complexity": 3
+    },
+    {
+      "name": "test_all_sample_pages",
+      "file": "lmfdb/siegel_modular_forms/test_siegel_modular_forms.py",
+      "line": 129,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "Verify that every sample form home page loads OK (should take under 10s on atkin)",
+      "complexity": 10
+    },
+    {
+      "name": "test_home_page",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 10,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the home page loads",
+      "complexity": 4
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 18,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the link to a random curve works.",
+      "complexity": 4
+    },
+    {
+      "name": "test_browse",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 26,
+      "num_statements": 13,
+      "has_71": false,
+      "docstring": "Check that the browsing links work.",
+      "complexity": 14
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 44,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that jumping to a specific newform by label works.",
+      "complexity": 3
+    },
+    {
+      "name": "test_search",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 51,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that various search combinations work.",
+      "complexity": 4
+    },
+    {
+      "name": "test_newspace",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 59,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check newspace pages",
+      "complexity": 4
+    },
+    {
+      "name": "test_newform",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 70,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "Check newform pages",
+      "complexity": 9
+    },
+    {
+      "name": "test_friends",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 84,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_download_sage",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 111,
+      "num_statements": 9,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 10
+    },
+    {
+      "name": "test_download_magma",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 140,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/bianchi_modular_forms/test_bmf.py",
+      "line": 166,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_Q",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 5,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hard_degree10",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 9,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hard_degree16",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 13,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_ramif_cl_deg",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 16,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_abelian_conductor",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 19,
+      "num_statements": 1,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_stuff_not_computed",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 22,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_poly_mean2parser",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 25,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_zeta",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 31,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_sqrt",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 34,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_search_disc",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 37,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_url_label",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 40,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_url_naturallabel",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 43,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_arith_equiv",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 46,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_sextic_twin",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 49,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_how_computed",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 52,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_galois_group_page",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 55,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_imaginary_quadratic_page",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 58,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_discriminants_page",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 61,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_field_labels_page",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 64,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_url_bad",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 67,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_random_field",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 70,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_statistics",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 73,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_signature_search",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 76,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_relative_class_number",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 80,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_fundamental_units",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 83,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_split_ors",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 87,
+      "num_statements": 5,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 94,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_errors",
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 97,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_LDirichlet",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 14,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_Lec",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 40,
+      "num_statements": 85,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 86
+    },
+    {
+      "name": "test_Lcmf",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 153,
+      "num_statements": 105,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 106
+    },
+    {
+      "name": "test_Lhmf",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 287,
+      "num_statements": 13,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 14
+    },
+    {
+      "name": "test_Lgl3maass",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 319,
+      "num_statements": 5,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_Lgl4maass",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 326,
+      "num_statements": 8,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_Lartin",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 372,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_Lgenus2",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 389,
+      "num_statements": 71,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 72
+    },
+    {
+      "name": "test_Llhash",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 478,
+      "num_statements": 15,
+      "has_71": false,
+      "docstring": "Checking L/lhash/ pages",
+      "complexity": 16
+    },
+    {
+      "name": "test_tracehash",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 500,
+      "num_statements": 10,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 11
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 513,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_LDirichletZeros",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 523,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_LecZeros",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 527,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_LecPlot",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 532,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_LcmfPlot",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 536,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_errorMessages",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 553,
+      "num_statements": 24,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 25
+    },
+    {
+      "name": "test_trace_search_mod_q",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 594,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_paintSVGall",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 603,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 607,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_trivial_chi",
+      "file": "lmfdb/lfunctions/test_lfunctions.py",
+      "line": 613,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_index",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 9,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_browse_1_10_0_10",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 13,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_browse_1_15_0_15",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 17,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_browse_10_100_0_4",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 21,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_browse_100_1000_0_1",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 25,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_all",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 29,
+      "num_statements": 2,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_N_101",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 33,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_R_40_50",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 37,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_R_1234",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 41,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_form_1234",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 45,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_form_1234_long_label",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 49,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/maass_forms/test_maass.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_deg_condrange",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 7,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_gal_ram_rn_fn",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 11,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_display_page",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 15,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_big_degree_old",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 21,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_big_degree_new",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 26,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/artin_representations/test_artin_representation.py",
+      "line": 30,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_minimal_eqn",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 7,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about (non)existence of a global minimal model",
+      "complexity": 7
+    },
+    {
+      "name": "test_base_field",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 17,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about its base field",
+      "complexity": 6
+    },
+    {
+      "name": "test_bad_red",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 26,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about its bad reduction primes",
+      "complexity": 6
+    },
+    {
+      "name": "test_weierstrass",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 35,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about its Weirstrass eqn",
+      "complexity": 5
+    },
+    {
+      "name": "test_conductor",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 43,
+      "num_statements": 7,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about its conductor\nand discriminant",
+      "complexity": 8
+    },
+    {
+      "name": "test_j",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 55,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check that the elliptic curve/#field tells about its j invariant",
+      "complexity": 7
+    },
+    {
+      "name": "test_download",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 65,
+      "num_statements": 11,
+      "has_71": false,
+      "docstring": "Check that the code download links work",
+      "complexity": 12
+    },
+    {
+      "name": "test_search",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 80,
+      "num_statements": 16,
+      "has_71": false,
+      "docstring": "Check ecnf search results",
+      "complexity": 17
+    },
+    {
+      "name": "test_browse",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 104,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that degree browse pages display correctly",
+      "complexity": 3
+    },
+    {
+      "name": "test_isodeg",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 111,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Test that searching for isogeny degree works",
+      "complexity": 6
+    },
+    {
+      "name": "test_cm_disc_search",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 120,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Test that searching for CM field discriminant works",
+      "complexity": 6
+    },
+    {
+      "name": "test_related_objects",
+      "file": "lmfdb/ecnf/test_ecnf.py",
+      "line": 131,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_ecnf_isgclass_title",
+      "file": "lmfdb/ecnf/test_isog_class.py",
+      "line": 7,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check rendering of title name and base field of ECNF isogeny class.",
+      "complexity": 5
+    },
+    {
+      "name": "test_ecnf_label_in_isgclass",
+      "file": "lmfdb/ecnf/test_isog_class.py",
+      "line": 15,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check curve in ECNF isogeny class by label.",
+      "complexity": 4
+    },
+    {
+      "name": "test_ecnf_weiercoeffs_in_isgclass",
+      "file": "lmfdb/ecnf/test_isog_class.py",
+      "line": 22,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check curve in ECNF isogeny class by Weierstrass coefficients.",
+      "complexity": 4
+    },
+    {
+      "name": "test_ecnf_isgmatrix_in_ecnf_isgclass",
+      "file": "lmfdb/ecnf/test_isog_class.py",
+      "line": 29,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check isogeny matrix of ECNF isogeny class.",
+      "complexity": 5
+    },
+    {
+      "name": "test_ecnf_isclass_related_object",
+      "file": "lmfdb/ecnf/test_isog_class.py",
+      "line": 37,
+      "num_statements": 16,
+      "has_71": false,
+      "docstring": "Check related object (near Properties box) of an ECNF isogeny class.",
+      "complexity": 17
+    },
+    {
+      "name": "test_home",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 5,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_level_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 13,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_level_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 23,
+      "num_statements": 12,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 13
+    },
+    {
+      "name": "test_index_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 37,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_index_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 41,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 45,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 49,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_rank_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_rank_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 57,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_minus_rank_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 61,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_minus_rank_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 65,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_Q_gonality_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 69,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 11
+    },
+    {
+      "name": "test_cusps_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 81,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_cusps_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 87,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_rational_CM_points_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 91,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_elliptic_points_order_2_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 105,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_elliptic_points_order_3_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 109,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_SL2_level",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 113,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_PSL2_index",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 118,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_cusp_widths",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 123,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_newform_level",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 128,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_cusp_orbits",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 133,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_modcrv_label",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 138,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_GL2ZNZ_gens",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 145,
+      "num_statements": 2,
+      "has_71": true,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_GL2ZNZ_subgroup",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 158,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_contains_negative_one_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 163,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_cyclic_isogeny_field_degree",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 169,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_cyclic_torsion_field_degree",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 174,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_full_torsion_field_degree",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 179,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_conductor",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 184,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_is_simple",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 189,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_is_squarefree",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 193,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_isogeny_decomposition",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 197,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_newforms",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 202,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_modcrv_model",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 207,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_rational_points",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 214,
+      "num_statements": 15,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 16
+    },
+    {
+      "name": "test_low_degree_points_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 231,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_obstructions_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 235,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 7
+    },
+    {
+      "name": "test_j_points_range",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 243,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 9
+    },
+    {
+      "name": "test_fiber_product_of_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 253,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_fiber_product_of",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 257,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 5
+    },
+    {
+      "name": "test_minimally_covers",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 268,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_minimally_covered_by_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 273,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_minimally_covered_by",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 280,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_family_page",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 298,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_family_search",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 312,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_image",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 333,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_interesting",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 338,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 342,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_jump",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 347,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_related_objects",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 361,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_download",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 417,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 422,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_gassmann_class",
+      "file": "lmfdb/modular_curves/test_modular_curves.py",
+      "line": 503,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_stats",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 5,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 9,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_by_galmap_label",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 12,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_passport_label",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 15,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_passport",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 18,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_smooth_equation",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 21,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_plane_equation",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 25,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_urls",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 30,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_deg_range",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 44,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_group_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 48,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_abc_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 52,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_abc_list_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 55,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 59,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_orbit_size_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 63,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_pass_size_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 67,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_geom_type_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 71,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_count_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 75,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_field_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 78,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_primitive_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 82,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_primitivization_search",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 87,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_deg_range_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 93,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_group_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 97,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_abc_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 101,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_abc_list_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 104,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_genus_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 108,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_max_orbit_size_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 112,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_pass_size_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 116,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_geom_type_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 120,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_count_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 124,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_primitive_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 127,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_primitivization_search_passports",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 132,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 138,
+      "num_statements": 17,
+      "has_71": true,
+      "docstring": "Test download function",
+      "complexity": 18
+    },
+    {
+      "name": "test_friends",
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 209,
+      "num_statements": 1,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 2
+    },
+    {
+      "name": "test_is_solvable",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 6,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that solvable is computed correctly",
+      "complexity": 4
+    },
+    {
+      "name": "test_property_box",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 15,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the property box displays.",
+      "complexity": 4
+    },
+    {
+      "name": "test_abstract_group_download",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 24,
+      "num_statements": 10,
+      "has_71": false,
+      "docstring": "Test downloading on search results page.",
+      "complexity": 11
+    },
+    {
+      "name": "test_conj_decode",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 38,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_live_pages",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 48,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 6
+    },
+    {
+      "name": "test_underlying_data",
+      "file": "lmfdb/groups/abstract/test_abstract_groups.py",
+      "line": 78,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_index_page",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 10,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the Groups/Abstract index page works",
+      "complexity": 4
+    },
+    {
+      "name": "test_completeness_page",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 21,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Groups/Abstract/Completeness works",
+      "complexity": 4
+    },
+    {
+      "name": "test_further_completeness_page",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 28,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Groups/Abstract/Source works",
+      "complexity": 4
+    },
+    {
+      "name": "test_labels_page",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 35,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that Groups/Abstract/Labels works",
+      "complexity": 4
+    },
+    {
+      "name": "test_lookup",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 42,
+      "num_statements": 4,
+      "has_71": false,
+      "docstring": "Check that Groups/Abstract/?jump works",
+      "complexity": 5
+    },
+    {
+      "name": "test_abelian_lookup",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 51,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that Groups/Abstract/ab/ works",
+      "complexity": 3
+    },
+    {
+      "name": "test_random",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 57,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that the random link works",
+      "complexity": 4
+    },
+    {
+      "name": "test_bad_label",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 66,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check the error message for a bad label url",
+      "complexity": 3
+    },
+    {
+      "name": "test_search_order",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 72,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by order",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_exponent",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 80,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by exponent",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_nilpotent",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 88,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by exponent",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_autgroup",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 96,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by automorphism group",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_autgroup_order",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 104,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by automorphism group order",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_center",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 112,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by center",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_commutator",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 120,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by commutators",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_centralquot",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 128,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by central quotients",
+      "complexity": 4
+    },
+    {
+      "name": "test_search_abelianization",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 137,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by abelianization",
+      "complexity": 4
+    },
+    {
+      "name": "test_abelian_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 145,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to abelian or non-abelian groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_cyclic_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 154,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to cyclic or non-cyclic groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_simple_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 163,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to simple or non-simple groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_perfect_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 175,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to perfect or non-perfect groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_solvable_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 184,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to solvable or non-solvbable groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_nilpotent_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 193,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to nilpotent or non-nilpotent groups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_direct_product_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 202,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to direct product or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_semidirect_product_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 211,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to semidirect product or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_famly_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 220,
+      "num_statements": 19,
+      "has_71": false,
+      "docstring": "Check that we can search by family",
+      "complexity": 20
+    },
+    {
+      "name": "test_order_stats_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 244,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by order statistics",
+      "complexity": 4
+    },
+    {
+      "name": "test_outer_group_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 255,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by outer automorphism group",
+      "complexity": 4
+    },
+    {
+      "name": "test_outer_order_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 262,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by order of outer automorphism group",
+      "complexity": 4
+    },
+    {
+      "name": "test_metabelian_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 269,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to metabelian groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_metacyclic_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 278,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to metacyclic groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_almost_simple_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 287,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to almost simple groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_quasisimple_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 296,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to quasisimple groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_Agroup_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 305,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to A-group groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_Zgroup_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 314,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to Z-group groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_derived_length_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 323,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by derived length",
+      "complexity": 4
+    },
+    {
+      "name": "test_frattini_label_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 330,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by Frattini subgroup",
+      "complexity": 4
+    },
+    {
+      "name": "test_supersolvable_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 337,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to supersolvable groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_monomial_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 346,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to monomial groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_rational_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 355,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to rational groups or not only",
+      "complexity": 6
+    },
+    {
+      "name": "test_rank_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 364,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by rank",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroups_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 375,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that subgroup search page is working",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_label_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 382,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that subgroup search by label is working",
+      "complexity": 3
+    },
+    {
+      "name": "test_subgroup_order_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 388,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that subgroup search by label is working",
+      "complexity": 3
+    },
+    {
+      "name": "test_subgroup_cyclic_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 394,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to cyclic or non-cyclic subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_abelian_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 403,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to abelian or non-abelian subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_solvable_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 412,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can restrict to solvable or non-solvable subgroups only",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_normal_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 422,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to normal or non-normal subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_characteristic_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 431,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to characteristic or non-characteristic subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_perfect_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 440,
+      "num_statements": 8,
+      "has_71": false,
+      "docstring": "Check that we can restrict to perfect or non-perfect subgroups only",
+      "complexity": 9
+    },
+    {
+      "name": "test_subgroup_maximal_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 452,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to maximal or non-maximal subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_central_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 461,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to central or non-central subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_proper_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 470,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to proper or non-proper subgroups only",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_ambient_label_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 479,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by ambient label",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_ambient_order_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 486,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by ambient order",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_direct_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 493,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups that are direct products",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_semidirect_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 502,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups that are semidirect products",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_hall_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 511,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups that are Hall subgroups",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_sylow_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 520,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups that are Sylow subgroups",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_quotient_label_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 529,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by quotient label",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_index_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 536,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can search by subgroup index",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_cyclic_quotient_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 543,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups with cyclic quotients",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_abelian_quotient_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 552,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups with abelian quotients",
+      "complexity": 6
+    },
+    {
+      "name": "test_subgroup_solvable_quotient_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 561,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups with solvable quotients",
+      "complexity": 4
+    },
+    {
+      "name": "test_subgroup_maximal_quotient_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 571,
+      "num_statements": 5,
+      "has_71": false,
+      "docstring": "Check that we can restrict to subgroups with maximal quotients",
+      "complexity": 6
+    },
+    {
+      "name": "test_character_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 580,
+      "num_statements": 6,
+      "has_71": false,
+      "docstring": "Check that complex character search works",
+      "complexity": 7
+    },
+    {
+      "name": "test_highlighted_character",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 593,
+      "num_statements": 3,
+      "has_71": true,
+      "docstring": "Check that character links work",
+      "complexity": 4
+    },
+    {
+      "name": "test_conj_class_search",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 600,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "Check that conjugacy class search works",
+      "complexity": 4
+    },
+    {
+      "name": "test_highlighted_conj_class",
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 608,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "Check that conjugacy class links work",
+      "complexity": 3
+    },
+    {
+      "name": "test_hecke_algebra",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 7,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_hecke_algebra_one",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 13,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_hecke_algebra_classnumber",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 19,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    },
+    {
+      "name": "test_hecke_algebra_search",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 25,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hecke_algebra_search_next",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 29,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hecke_algebra_search_with_l",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 34,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hecke_algebra_search_with_orbit",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 39,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_hecke_algebra_search_with_orbit_and_l",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 43,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download_hecke_op",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 48,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_download_idempotent",
+      "file": "lmfdb/hecke_algebras/test_hecke_algebras.py",
+      "line": 53,
+      "num_statements": 2,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 3
+    },
+    {
+      "name": "test_clusters",
+      "file": "lmfdb/cluster_pictures/test_clusterpicture.py",
+      "line": 6,
+      "num_statements": 3,
+      "has_71": false,
+      "docstring": "",
+      "complexity": 4
+    }
+  ]
+}
