@@ -1,0 +1,131 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_repetition
+physical: qubits
+logical: qubits
+
+name: 'Quantum repetition code'
+introduced: '\cite{doi:10.1103/PhysRevA.32.3266}'
+
+description: |
+  Encodes \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|\phi_0\rangle^{\otimes n}\) and \(|1\rangle\to|\phi_1\rangle^{\otimes n}\). The code is called a \textit{bit-flip} code when \(|\phi_i\rangle = |i\rangle\), and a \textit{phase-flip} code when \(|\phi_0\rangle = |+\rangle\) and \(|\phi_1\rangle = |-\rangle\).
+
+  The \(\pm\)-basis codewords for the bit-flip code are \textit{GHZ states} \cite{doi:10.1119/1.16243,doi:10.1119/1.16503,arxiv:0712.0921} (a.k.a. qubit cat states) \(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\). These are ground states of the one-dimensional \textit{classical Ising model} Hamiltonian \(H=\sum_{i} Z_{i}Z_{i+1}\).
+
+  The \(\pm\)-basis codewords for the phase-flip code are expanded in the computational basis as
+  \begin{align}
+    \begin{split}
+      |\overline{+}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=0}|v_{1},\cdots,v_{n}\rangle~{\phantom{,}}\\
+      |\overline{-}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=1}|v_{1},\cdots,v_{n}\rangle~,
+    \end{split}
+  \end{align}
+  showing that the phase-flip code stores information in the total parity of the qubits.
+  For example, an early code realized in devices is the 2-qubit phase-flip code \cite{arxiv:quant-ph/0006088}, which encodes a logical qubit into Bell states \(|00\rangle+|11\rangle\) and \(|01\rangle+|10\rangle\).
+
+
+protection: |
+  Bit-flip code detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits and does not detect any phase-flip errors \(Z\).
+  Phase-flip code detects phase-flip errors \(Z\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits and does not detect any bit-flip errors \(X\).
+
+  Because they protect against only one type of noise, both codes can be thought of as a classical \([n,1,d]\) repetition code with classical distance \(d=\left\lfloor (n-1)/2\right\rfloor\) embedded in a quantum system.
+  Nevertheless, the phase-flip code can offer some degree of protection in particular physical systems based on superconducting circuits \cite{arxiv:1205.1836,arxiv:2303.17810}.
+
+features:
+  encoders:
+    - 'Non-deterministic encoders for various specific states of the 2-qubit phase-flip code \cite{arxiv:quant-ph/0408064}.'
+    - 'Fault-tolerant GHZ-state preparation with small qubit registers \cite{arxiv:0709.4539}.'
+    - 'Unitary circuit of depth logarithmic in \(n\) \cite{arxiv:1807.05572}. Any circuit has to have range \(n\) because Ghz states are locally indistinguishable \cite{arxiv:1910.08980}.'
+    - 'Adaptive constant-depth circuit with geometrically local gates and measurements throughout \cite{arxiv:1906.08890,arxiv:2112.03061}.'
+    - 'Lindbladian-based dissipative encoding and autonomous QEC passively protecting against bit flips \cite{arxiv:quant-ph/0110111,arxiv:1702.08673}.'
+    - 'Error-corrected GHZ state distillation for Steane error correction \cite{arxiv:2210.14143}.'
+    - 'Approximate Hamiltonian-based encoding of GHZ states \cite{arxiv:2406.10336}.'
+  general_gates:
+    - 'Toffoli magic-state preparation protocol \cite{arxiv:2012.04108}.'
+  decoders:
+    - 'Fault-tolerant syndrome detection \cite{arxiv:quant-ph/0412168}.'
+    - 'Autonomous QEC for the 3-qubit bit-flip code \cite{arxiv:quant-ph/0501049}.'
+    - 'Machine learning algorithm to implement autonomous QEC for the three-qubit quantum repetition code \cite{arxiv:2110.10378}.'
+    - 'Quantum version of the Tsirelson local automaton decoder \cite{arxiv:2412.19803}.'
+    - 'Planar decoder designed to work under circuit-level noise \cite{arxiv:2501.03582}.'
+    - 'Single-rule and shearing-rule local automaton decoders \cite{arxiv:2505.10162}.'
+
+  fault_tolerance:
+    - 'Fault-tolerant syndrome detection \cite{arxiv:quant-ph/0412168}.'
+    - 'Toffoli magic-state preparation protocol \cite{arxiv:2012.04108}.'
+  code_capacity_threshold:
+    - 'Independent \(X\) noise: \(50\%\) with RG decoder for quantum repetition code arranged on a 1D or 2D lattice \cite{arxiv:1708.09286}.'
+    - 'A nonzero threshold exists under the single-rule local automaton decoders \cite{arxiv:2505.10162}.'
+  threshold:
+    - 'Phenomenological noise: \(11\%\) and \(17.2\%\) with RG decoder for quantum repetition code arranged on a 1D and 2D lattice, respectively \cite{arxiv:1708.09286}.'
+    - 'Threshold under real-time geometrically local decoder based on introducing an ancillary buffer and confining spacetime interactions between anyons  \cite{arxiv:2510.08056}.'
+
+
+
+realizations:
+  - 'NMR: 2-qubit phase-flip code \cite{arxiv:quant-ph/9811068,arxiv:cs/0012017}; 3-qubit bit-flip code \cite{arxiv:quant-ph/0004030}; 3-qubit phase-flip code \cite{arxiv:quant-ph/9802018,arxiv:1108.4842}, with up to two rounds of error correction in liquid-state NMR \cite{arxiv:1109.4821}. Such codes were used to characterize noise \cite{arxiv:quant-ph/0610038}.'
+  - 'Linear optics: 2-qubit phase-flip code \cite{arxiv:quant-ph/0502042}.'
+  - 'Trapped ions: 3-qubit bit-flip code by Wineland group \cite{doi:10.1038/nature03074}, and 3-qubit phase-flip algorithm implemented in 3 cycles on high fidelity gate operations \cite{doi:10.1126/science.1203329}.
+  Both phase- and bit-flip codes for 31 qubits and their stabilizer measurements have been realized by Quantinuum \cite{arxiv:2305.03828}.
+  Multiple rounds of Steane error correction \cite{arxiv:2312.09745}.'
+  - |
+    Superconducting circuits: 3-qubit phase-flip and bit-flip code by Schoelkopf group \cite{arxiv:1004.4324,arxiv:1109.4948}; 3-qubit bit-flip code \cite{arxiv:1411.5542}; 3-qubit phase-flip code up to 3 cycles of error correction \cite{arxiv:1508.01388}; IBM 15-qubit device \cite{arxiv:1709.00990}; IBM Rochester device using 43-qubit code \cite{arxiv:2004.11037}; Google system performing up to 8 error-correction cycles on 5 and 9 qubits \cite{arxiv:1411.7403}; Google Quantum AI Sycamore utilizing up to 11 physical qubits and running 50 correction rounds \cite{arxiv:2102.06132}; Google Quantum AI Sycamore utilizing up to 25 qubits for comparison of logical error scaling with a quantum code \cite{arxiv:2207.06431} (see also \cite{arxiv:2211.04728}). 
+    Google Quantum AI follow-up experiment on codes up to (classical) distance 29, demonstrating exponential suppression to an error floor of \(10^{-10}\) \cite{arxiv:2408.13687}. 
+    Ising-model Nishimori phase transition realized for GHZ states on 54 qubits on a 127 qubit IBM device \cite{arxiv:2309.02863}. 
+    GHZ state on 75 qubits made on an IBM device \cite{arxiv:2411.14638}. 
+    Implementation of planar decoder for codes with distances between 3 and 11 on 72-qubit superconducting device \cite{arxiv:2501.03582}.
+    Lattice surgery on the surface-17 code has been realized by splitting the code into two repetition codes by the Wallraff group \cite{arxiv:2501.04612}.
+    2-qubit phase-flip code error detection realized with one ancilla by the Simakov group \cite{arxiv:2506.20529}. GHZ state of 120 qubits realized on IBM device \cite{arxiv:2510.09520}.
+  - 'Autonomous QEC protocols have been implemented on a 3-qubit superconducting qubit device \cite{arxiv:2107.11398}.'
+  - 'Semiconductor spin-qubit devices: 3-qubit devices at RIKEN \cite{arxiv:2201.08581} and Delft \cite{arxiv:2202.11530}.'
+  - 'Nitrogen-vacancy centers in diamond: 3-qubit phase-flip code \cite{arxiv:1309.6424,doi:10.1038/s42005-022-00875-6} (see also Ref. \cite{arxiv:1309.5452}).'
+  - 'Repetition codes are used in quantum annealing protocols \cite{arxiv:quant-ph/0512170,arxiv:1307.8190,arxiv:1408.4382}.'
+  - 'Neutral atom arrays: 41 rounds of syndrome extraction and heralded logical Bell state preparation \cite{arxiv:2506.09936}.'
+
+#  - 'See Table S6 in Ref. \cite{arxiv:2102.06132} for a history of earlier implementations.'
+#  - 'Molecular spin qubits: 3-qubit molecule \cite{doi:10.1039/d0sc03107k}.'
+
+notes:
+  - 'Repetition codes can be used to benchmark device performance \cite{arxiv:2202.11045}.'
+
+
+relations:
+  parents:
+    - code_id: quantum_parity
+      detail: 'A \([[m_1 m_2,1,\min(m_1,m_2)]]\) QPC reduces to a repetition code when \(m_1\) or \(m_2\) is one.'
+    - code_id: group_quantum_repetition
+      detail: 'Group-based quantum repetition codes reduce to quantum repetition codes for \(G = \mathbb{Z}_2\).'
+    - code_id: gnu_permutation_invariant
+      detail: 'GNU codewords for \(g=1\) reduce to the phase-flip repetition code.'
+    - code_id: frustration_free
+      detail: 'The codespace of the quantum repetition code is the ground-state space of a frustration-free classical Ising model with nearest-neighbor interactions.'
+    - code_id: commuting_projector
+      detail: 'The codespace of the quantum repetition code is the ground-state space of a frustration-free classical Ising model with nearest-neighbor interactions.'
+    - code_id: small_distance_qubit_stabilizer
+  cousins:
+    - code_id: fracton
+      detail: 'The 1D quantum repetition code is an ingredient in product constructions that yield several fracton phases \cite[Fig. 8]{arxiv:2402.16831}.'
+    - code_id: topological_abelian
+      detail: 'The 1D quantum repetition code is an ingredient in product constructions that yield several topological phases \cite[Fig. 8]{arxiv:2402.16831}.'
+    - code_id: cluster_state
+      detail: 'GHZ states can be used as resource states for MBQC protocols \cite{arxiv:1410.3720,arxiv:1502.07437,arxiv:2109.12280}.'
+    - code_id: ame
+      detail: 'GHZ states are \(1\)-uniform for all \(n\) and AME for \(n=2,3\).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-09-28'
+    - user_id: MazinKarjikar
+      date: '2022-06-28'
+    - user_id: VictorVAlbert
+      date: '2022-06-07'
+    - user_id: VictorVAlbert
+      date: '2022-02-23'
+    - user_id: VictorVAlbert
+      date: '2021-10-29'

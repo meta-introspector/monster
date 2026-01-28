@@ -1,0 +1,33 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: unitary_design
+physical: groups
+
+name: 'Unitary \(t\)-design'
+introduced: '\cite{arxiv:quant-ph/0512217,arxiv:quant-ph/0606161,arxiv:quant-ph/0611002}'
+
+description: |
+  A unitary \(t\)-design is a subset of the unitary group that reproduces Haar averages of polynomials over the group up to degree \(t\) \cite[Def. 1]{arxiv:quant-ph/0611002}.
+  The design conditions are defined using the \(t\)th tensor product of the group's adjoint representation.
+
+protection: |
+  Bounds on design size have been computed \cite{arXiv:0809.3813}.
+
+
+relations:
+  parents:
+    - code_id: unitary
+      detail: 'Unitary \(t\)-designs are designs on the unitary group \(U(N)\). Random \(n\)-qubit unitary circuits form approximate unitary designs on \(U(2^n)\) at a depth logarithmic in \(n\) \cite{arxiv:2407.07754}.'
+    - code_id: t-designs
+      detail: 'Unitary \(t\)-designs are designs on the unitary group \(U(N)\).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-10-27'

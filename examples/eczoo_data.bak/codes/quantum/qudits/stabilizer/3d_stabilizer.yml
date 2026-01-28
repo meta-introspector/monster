@@ -1,0 +1,41 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: 3d_stabilizer
+physical: qudits
+logical: qudits
+# there are no Galois 3D stabilizers
+
+name: '3D lattice stabilizer code'
+
+description: |
+  Lattice stabilizer code in three spatial dimensions.
+  Qubit codes are conjectured to admit either fracton phases or abelian topological phases that are equivalent to multiple copies of the 3D surface code and/or the 3D fermionic surface code via a local constant-depth Clifford circuit \cite{arxiv:1908.08049}.
+
+# 1. \textit{Abelian topological phase}: Excitations are mobile in all 3 dimensions, as is typical in a topological code. Such codes are conjectured to be equivalent to a \(\mathbb{Z}_2\) gauge theory, i.e., multiple copies of the 3D surface code or the 3D fermionic surface code.
+
+features:
+  code_capacity_threshold:
+    - 'Applying Clifford deformations to various 3D stabilizer codes, including the 3D surface code, 3D color code, X-cube model code, and Sierpinski prism model code, yields a \(50\%\) code capacity threshold under infinitely biased Pauli noise \cite{arxiv:2211.02116}.'
+
+
+relations:
+  parents:
+    - code_id: qudit_stabilizer
+    - code_id: translationally_invariant_stabilizer
+  cousins:
+    - code_id: clifford-deformed_surface
+      detail: 'Applying Clifford deformation to various 3D stabilizer codes, including the 3D surface code, 3D color code, X-cube model code, the Sierpinski prism model code, yields a \(50\%\) code capacity threshold under infinitely biased Pauli noise \cite{arxiv:2211.02116}.'
+    - code_id: asymmetric_qecc
+      detail: 'Applying Clifford deformation to various 3D stabilizer codes, including the 3D surface code, 3D color code, X-cube model code, the Sierpinski prism model code, yields a \(50\%\) code capacity threshold under infinitely biased Pauli noise \cite{arxiv:2211.02116}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-01-27'

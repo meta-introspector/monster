@@ -1,0 +1,44 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: grassmannian
+physical: quotients
+
+name: 'Grassmannian code'
+introduced: '\cite{arxiv:math/0208002,arxiv:math/0208003,arxiv:math/0208004,arxiv:0806.2317}'
+# Last ref for complex cases
+
+description: |
+  Encodes \(K\) states (codewords) into a compact Grassmannian, which includes the real, complex, or quaternionic Grassmannians.
+  Points in a real (complex) Grassmannian index fixed-dimension subspaces of real (complex) vector spaces.
+
+
+protection: |
+  Optimal Grassmannian codes are robust to coordinate erasure \cite{arXiv:math/0301135,doi:10.1016/j.acha.2006.07.003}.
+  Various code bounds have been formulated \cite{doi:10.1109/TIT.2002.801469,arxiv:math/0308110,arXiv:math/0610812,arxiv:math/0610813,arxiv:0806.2317}.
+
+realizations: 
+  - 'Multiple description coding \cite{arXiv:math/0301135}.'
+  - 'Digital fingerprinting \cite{arXiv:1111.3376}.'
+
+
+notes:
+  - 'Tables of real Grassmannian codes \cite{manual:{Sloane, N. J. A. "How to pack lines, planes, 3-spaces, etc." Online]: http://www2. research. att. com/~ njas/grass/index. html (2006).}}'
+
+relations:
+  parents:
+    - code_id: symmetric_space
+      detail: 'Grassmannians are symmetric spaces \(G/H\) for \(G = O(p+q)\) and \(H = O(p)\times O(q)\) in the case of real Grassmannians, \(G = U(p+q)\) and \(H = U(p)\times U(q)\) in the case of complex Grassmannians, and \(G = Sp(p+q)\) and \(H = Sp(p)\times Sp(q)\) in the case of quaternionic Grassmannians.'
+  cousins:
+    - code_id: t-designs
+      detail: 'Designs have been formulated on Grassmannians \cite{doi:10.1023/A:1020826329555,doi:10.1016/S0012-365X(03)00151-1,arxiv:0712.1939,arxiv:1612.06729,arxiv:1705.02978}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-10-27'

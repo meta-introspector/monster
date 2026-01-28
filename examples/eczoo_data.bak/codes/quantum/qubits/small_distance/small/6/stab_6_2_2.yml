@@ -1,0 +1,62 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stab_6_2_2
+physical: qubits
+logical: qubits
+
+name: '\([[6,2,2]]\) \(C_6\) code'
+introduced: '\cite{arxiv:quant-ph/0410199}'
+
+description: |
+  Error-detecting self-dual CSS code used in concatenation schemes for fault-tolerant quantum computation.
+  A set of stabilizer generators is \(IIXXXX\) and \(XXIIXX\), together with the same two \(Z\)-type generators.
+
+features:
+  magic_scaling_exponent: 'Various magic-state distillation protocols exist for the \([[4,2,2]]\) qubit code and the \(C_6\) code in what are known as Meier-Eastin-Knill (MEK) protocols \cite{arxiv:1204.4221}.
+  For example, the magic-state yield parameter is \(\gamma = \log_2 5 \approx 2.322\) for a protocol using the \([[10,2,2]]\) code \cite[Box 2]{arxiv:1612.07330}; see also \cite[Table IV]{arxiv:1709.02789}.'
+
+  transversal_gates:
+    - 'One of the code''s logical qubits can be relaxed to a gauge qubit to yield a \([[6,1,1,2]]\) subsystem qubit stabilizer code with a particular set of transversal gates. This code admits a fault-tolerant circuit relevant to magic-state preparation \cite{arxiv:2501.17447}.'
+
+  general_gates:
+    - 'Fault-tolerant magic-state preparation \cite{arxiv:2506.14688}.'
+
+  fault_tolerance:
+    - 'Concatenations of \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation schemes \cite{arxiv:quant-ph/0410199} admitting a post-selected threshold \cite{arxiv:quant-ph/0608018,arxiv:quant-ph/0703264} (see also Ref. \cite{arxiv:quant-ph/0612073}).'
+    - 'Concatenations of quantum Hamming codes with the \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation with constant space and quasi-polylogarithmic time overheads \cite{arxiv:2207.08826,arxiv:2402.09606}. This scheme can be augmented to fit on a 1D qubit lattice with nearest-neighbor connectivity \cite{arxiv:2502.16132}.'
+    - 'Fault-tolerant magic-state preparation \cite{arxiv:2506.14688}.'
+    - 'One of the code''s logical qubits can be relaxed to a gauge qubit to yield a \([[6,1,1,2]]\) subsystem qubit stabilizer code with a particular set of transversal gates. This code admits a fault-tolerant circuit relevant to magic-state preparation \cite{arxiv:2501.17447}.'
+
+realizations: 
+    - 'Trapped ions: fault-tolerant magic-state preparation demonstrated on a 20-qubit H1-1 device by Quantinuum \cite{arxiv:2506.14688}.'
+
+relations:
+  parents:
+    - code_id: rotated_surface
+      detail: 'The \(C_6\) code is a rotated surface code on a triangular prism, a small discretization of a cylinder \cite{manual:{V. V. Albert, private communication, 2025.}}. Purely \(Z\)- or \(X\)-type stabilizers lie on the three square faces of the prism.'
+    - code_id: quantum_h
+      detail: 'The \([[k+4,k,2]]\) H code for \(k=2\) is the \(C_6\) code.'
+    - code_id: goy
+      detail: 'The Ganti-Onunkwo-Young code for \(r=1\) is the \(C_6\) code.'
+    - code_id: kls
+      detail: 'The Khesin-Lu-Shor code for \(r=2\) and \(m=2^r - 1 = 3\) is the \(C_6\) code.'
+    - code_id: stabilizer_over_gf4
+      detail: 'The \(C_6\) code is Hermitian \cite[Table 6]{arxiv:2501.17447}.'
+  cousins:
+    - code_id: qubit_concatenated
+      detail: 'Concatenations of \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation schemes \cite{arxiv:quant-ph/0410199} admitting a post-selected threshold \cite{arxiv:quant-ph/0608018,arxiv:quant-ph/0703264} (see also Ref. \cite{arxiv:quant-ph/0612073}) and the Meier-Eastin-Knill (MEK) magic-state distillation protocols \cite{arxiv:1204.4221}.
+      Concatenations of quantum Hamming codes with the \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation with constant space and quasi-polylogarithmic time overheads \cite{arxiv:2207.08826,arxiv:2402.09606}. This scheme can be augmented to fit on a 1D qubit lattice with nearest-neighbor connectivity \cite{arxiv:2502.16132}.'
+    - code_id: stab_4_2_2
+      detail: 'Concatenations of \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation schemes \cite{arxiv:quant-ph/0410199} admitting a post-selected threshold \cite{arxiv:quant-ph/0608018,arxiv:quant-ph/0703264} (see also Ref. \cite{arxiv:quant-ph/0612073}) and the Meier-Eastin-Knill (MEK) magic-state distillation protocols \cite{arxiv:1204.4221}.
+      Concatenations of quantum Hamming codes with the \([[4,2,2]]\) and \(C_6\) codes yield fault-tolerant quantum computation with constant space and quasi-polylogarithmic time overheads \cite{arxiv:2207.08826,arxiv:2402.09606}. This scheme can be augmented to fit on a 1D qubit lattice with nearest-neighbor connectivity \cite{arxiv:2502.16132}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-28'

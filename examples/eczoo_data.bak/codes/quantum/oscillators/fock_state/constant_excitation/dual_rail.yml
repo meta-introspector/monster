@@ -1,0 +1,84 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: dual_rail
+physical: oscillators
+logical: qubits
+
+name: 'Dual-rail quantum code'
+introduced: '\cite{arxiv:quant-ph/9505011,arxiv:quant-ph/9604031,arxiv:quant-ph/9702001}'
+
+description: |
+  Two-mode bosonic code encoding a logical qubit in Fock states with one excitation.
+  The logical-zero state is represented by \(|10\rangle\), while the logical-one state is represented by \(|01\rangle\).
+  This encoding is often realized in temporal or spatial modes, corresponding to a \textit{time-bin} or \textit{frequency-bin} encoding.
+  Two different types of photon polarization can also be used.
+
+  This code is a DFS \cite{arxiv:quant-ph/9807004,arxiv:quant-ph/9902041,arxiv:quant-ph/9908064,arxiv:quant-ph/0007013} with respect to phase errors \cite{arxiv:quant-ph/0210072}.
+
+protection: |
+  This is an error-detecting code against one \hyperref[topic:ad]{photon loss} event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state \(|00\rangle\) is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.
+
+  For Deutsch''s  problem specifically, this code protects against errors resulting in states that have the correct photon number, but in the wrong modes \cite{doi:10.1103/PhysRevA.52.3489}.
+
+features:
+  encoders:
+    - 'Optimal control pulses \cite{arxiv:2311.04423}'
+  general_gates:
+    - 'General gates are performed using two-body Hamiltonian rotations \cite{arxiv:quant-ph/0210072}.'
+    - 'Bosonic gates include beamsplitters \cite{doi:10.1038/s41467-023-41104-0} and Kerr nonlinearities. In particular, a cross Kerr rotation at angle \(\pi\) induces a \(CZ\) gate. Universal quantum computing can be achieved using the KLM protocol \cite{doi:10.1038/35051009} with only linear optical elements and photon detectors.'
+    - 'Dynamical-decoupling protocols \cite{arxiv:quant-ph/0210072,arxiv:0712.1480}.'
+    - 'A probabilistic CZ gate via a non-linear sign-shift gate, which transforms the Fock states \( \alpha|0\rangle+\beta|1\rangle+\gamma|2\rangle\) into \(\alpha|0\rangle+\beta|1\rangle-\gamma|2\rangle \), followed by measurement \cite{arxiv:quant-ph/0307015}.'
+    - 'Error-detecting \(CCZ\) and \(cSWAP\) gates using three-level ancilla \cite{arxiv:2212.11196}.'
+    - 'Cavity-assisted bias-preserving CNOT gate \cite{arxiv:2503.10935}.'
+
+  fault_tolerance:
+    - 'Dual-rail qubits can be used to convert leakage and \hyperref[topic:ad]{AD} noise into erasure noise \cite{arxiv:0710.1052,arxiv:2208.05461}.'
+
+realizations:
+  - 'The dual-rail code is ubiquitous in linear-optical quantum devices and is behind the KLM protocol, one of the first proposals for fault-tolerant computation.
+  See reviews \cite{arxiv:quant-ph/0512104,arxiv:quant-ph/0512071,arxiv:1907.06331} for more details.'
+  - 'Superconducting circuit devices: Gates have been demonstrated in the Schoelkopf group at Yale University \cite{doi:10.1038/s41467-023-41104-0}. Error detection has been demonstrated in 3D cavities in the Devoret group at Yale University \cite{arxiv:2311.04423} and Amazon Web Services \cite{arxiv:2307.08737} using transmon qubits, following earlier theoretical proposals \cite{arxiv:2212.12077,arxiv:2208.05461}. GHZ and Bell states as well as universal gates have been implemented on a four-qubit dual-rail code by the Yu group \cite{arxiv:2504.12099}. Logical readout in 3D cavities has been demonstrated by Quantum Circuits Inc. \cite{arxiv:2307.03169}. Cavity-assisted bias-preserving CNOT gate has been demonstrated \cite{arxiv:2503.10935}.'
+  - 'Photonic platforms: state preparation and measurement fidelity of \(99.98\%\) in the C telecom band by PsiQuantum \cite{arxiv:2404.17570}.'
+
+# notes:
+#   - 'For Deutsch''s problem \cite{doi:10.1098/rspa.1992.0167} with optical qubits, error correction using photon number detection reduces the error probability from \(\frac{1}{4} (1+e^{-\gamma}-2e^{-3\gamma/2}) \)   to \(\frac{1}{2} (1- \text{sech} \gamma/2)\).'
+
+
+relations:
+  parents:
+    - code_id: one_hot_quantum
+    - code_id: two-mode_binomial
+      detail: 'The two-mode binomial code for \(S=N=0\) reduces to the dual-rail code.'
+  cousins:
+    - code_id: oscillators_concatenated
+      detail: 'The KLM protocol, one of the first protocols for fault-tolerant quantum computation, utilizes concatenations of the dual-rail code with a stabilizer code such as the Steane code \cite{doi:10.1038/35051009,arxiv:quant-ph/0405112,arxiv:quant-ph/0502101}. Concatenating the dual-rail code with an \([[n,k,d]]\) stabilizer code yields an \([[2n,k,d]]\) constant-excitation code \cite{arxiv:2010.00538} that protects against \(d-1\) \hyperref[topic:ad]{AD} errors \cite{arxiv:1001.2356}. Concatenating the outer dual-rail code with an inner single-mode bosonic code yields several gates that are independent of the inner code \cite{arxiv:1605.09278}.'
+    - code_id: steane
+      detail: 'The KLM protocol, one of the first protocols for fault-tolerant quantum computation, utilizes concatenations of the dual-rail code with a stabilizer code such as the Steane code \cite{doi:10.1038/35051009,arxiv:quant-ph/0405112,arxiv:quant-ph/0502101}.' 
+    - code_id: single-mode
+      detail: 'Concatenating the outer dual-rail code with an inner single-mode bosonic code yields several gates that are independent of the inner code \cite{arxiv:1605.09278}.'
+    - code_id: ampdamp
+      detail: 'Dual-rail qubits can be used to convert leakage and \hyperref[topic:ad]{AD} noise into erasure noise \cite{arxiv:0710.1052,arxiv:2208.05461}. Concatenating the dual-rail code with an \([[n,k,d]]\) stabilizer code yields an \([[2n,k,d]]\) constant-excitation code \cite{arxiv:2010.00538} that protects against \(d-1\) \hyperref[topic:ad]{AD} errors \cite{arxiv:1001.2356}.'
+    - code_id: quantum_parity
+      detail: 'An \([[8,1,2]]\) QPC correcting a single \hyperref[topic:ad]{AD} error is equivalent to a concatenation of the \(\{|\overline{01}\rangle,|\overline{11}\rangle\}\) (constant-excitation) subcode of the \([[4,2,2]]\) code with the dual-rail code \cite{arxiv:quant-ph/0103042,arxiv:quant-ph/0501184,arxiv:2010.00538}. More generally, an \([[m^2,1,m]]\) QPC corrects \(m-1\) \hyperref[topic:ad]{AD} errors \cite{arxiv:1001.2356}.'
+    - code_id: stab_4_2_2
+      detail: 'An \([[8,1,2]]\) QPC correcting a single \hyperref[topic:ad]{AD} error is equivalent to a concatenation of the \(\{|\overline{01}\rangle,|\overline{11}\rangle\}\) (constant-excitation) subcode of the \([[4,2,2]]\) code with the dual-rail code \cite{arxiv:quant-ph/0103042,arxiv:quant-ph/0501184,arxiv:2010.00538}. More generally, an \([[m^2,1,m]]\) QPC corrects \(m-1\) \hyperref[topic:ad]{AD} errors \cite{arxiv:1001.2356}.'
+    - code_id: cluster_state
+      detail: 'The KLM protocol can be combined with cluster states in various ways to yield MBQC protocols \cite{arxiv:quant-ph/0303008,arxiv:quant-ph/0402005,arxiv:quant-ph/0405157}; see review \cite{arxiv:1907.06331}.'
+    - code_id: quantum_repetition
+      detail: 'The dual-rail code is an error space of the quantum repetition code for \(n=2\) and is stabilized by \(-ZZ\).'
+
+_meta:
+  changelog:
+    - user_id: YinchenLiu
+      date: '2024-03-15'
+    - user_id: EshaSwaroop
+      date: '2024-03-14'
+    - user_id: 'VictorVAlbert'
+      date: '2021-12-18'
+    - user_id: 'DhruvDevulapalli'
+      date: '2021-12-17'
+    - user_id: 'AniketMaiti'
+      date: '2024-02-08'

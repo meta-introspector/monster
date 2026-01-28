@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: single_qubit_clifford
+physical: qubits
+logical: qubits
+
+name: '\([[2^{2r-1}-1,1,2^r-1]]\) quantum punctured RM code'
+short_name: '\([[2^{2r-1}-1,1,2^r-1]]\)'
+introduced: '\cite[Ch. 7]{preset:PreskillNotes}'
+
+description: |
+  A quantum Reed-Muller code constructed with a punctured self-dual RM \([2^r-1,2^{r-1},\sqrt{2}^{r-1}-1]\) code and its even subcode for \(r \geq 2\).
+
+features:
+  transversal_gates:
+    - 'All single-qubit gates in the \hyperref[topic:clifford]{Clifford group}.'
+
+relations:
+  parents:
+    - code_id: quantum_reed_muller
+      detail: 'The \([[2^{2r-1}-1,1,2^r-1]]\) quantum punctured RM codes are special cases of the \([[\sum_{i=w+1}^m \binom{m}{i}, \sum_{i=0}^{w} \binom{m}{i}, \sum_{i=w+1}^{r+1} \binom{r+1}{i}]]\) family for \(m \to 2r-1\), \(w \to 0\), and \(r \to r-1\).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-11-17'
+    - user_id: IanTeixeira
+      date: '2021-11-17'
+    - user_id: VictorVAlbert
+      date: '2022-11-15'

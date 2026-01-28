@@ -1,0 +1,31 @@
+[package]
+name = "iarelife"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+walkdir = "2.5"
+
+[[bin]]
+name = "iarelife"
+path = "src/main.rs"
+
+[[bin]]
+name = "fixedpoint"
+path = "src/fixedpoint.rs"
+
+[[bin]]
+name = "image-search"
+path = "src/image_search.rs"
+
+[[bin]]
+name = "graph"
+path = "src/graph.rs"
+
+[[bin]]
+name = "residue"
+path = "src/residue.rs"

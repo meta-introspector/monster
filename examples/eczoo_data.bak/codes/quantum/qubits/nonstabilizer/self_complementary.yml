@@ -1,0 +1,39 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: self_complementary
+physical: qubits
+logical: qubits
+
+
+name: 'Self-complementary qubit code'
+introduced: '\cite{arxiv:quant-ph/0701065,arxiv:0712.2586}'
+
+description: |
+  A qubit code which admits a basis of codewords of the form \(|c\rangle+|\overline{c}\rangle\), where \(c\) is a bitstring and \(\overline{c}\) is its negation a.k.a. complement. 
+  Their codewords generalize the two-qubit Bell states and three-qubit GHZ states and are often called \textit{(qubit) cat states} or \textit{poor-man's GHZ states}.
+  Such codes were originally pointed out to perform well against \hyperref[topic:ad]{AD} noise \cite{arxiv:0712.2586}.
+
+
+protection: |
+  Self-complementary codes automatically protect against a single \(Z\) error and lie in the \(+1\)-eigenspace of the all-\(X\) Pauli string \cite{arxiv:quant-ph/0701065}. Codes consisting of computational basis states whose bitstrings are sufficiently spaced apart correct at least one \hyperref[topic:ad]{AD} error \cite[Thm. 2.5]{arxiv:0712.2586}\cite[Thm. 2]{arxiv:0907.5149}.
+
+
+relations:
+  parents:
+    - code_id: qubits_into_qubits
+    - code_id: ampdamp
+      detail: 'Self-complementary quantum codes consisting of computational basis states whose bitstrings are sufficiently spaced apart correct at least one \hyperref[topic:ad]{AD} error \cite[Thm. 2.5]{arxiv:0712.2586}\cite[Thm. 2]{arxiv:0907.5149}.'
+  cousins:
+    - code_id: bits_into_bits
+      detail: 'A binary code is called \textit{self-complementary} if, for each codeword \(c\), its negation \(\overline{c}\) is also a codeword \cite{doi:10.3390/math11244950}. Any self-complementary \((n,K,d > 1)\) classical code yields an \(((n,K/2,2))\) self-complementary quantum code whose quantum codewords are superpositions of the classical codewords and their complements \cite[Lemma 1]{arxiv:quant-ph/0701065}. Self-complementary classical code parameters are governed by the Gray-Rankin bound \cite{doi:10.1109/TIT.1962.1057721}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-07-14'

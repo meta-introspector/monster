@@ -1,0 +1,34 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quasi_cyclic_qldpc
+# includes both Galois, modular, and oscillator
+# physical: galois
+# logical: galois
+
+name: 'Quasi-cyclic QLDPC (QC-QLDPC) code'
+short_name: 'QC-QLDPC'
+introduced: '\cite{arxiv:quant-ph/0701020,arxiv:1007.1778}'
+
+description: |
+  A QLDPC code such that cyclic shifts of the subsystems by \(\ell\geq 1\) leave the codespace invariant.
+  Stabilizer generator matrices of such codes can be put into block form, where each nonzero block is a circulant matrix \cite{arxiv:quant-ph/0701020,arxiv:1007.1778}. 
+
+
+relations:
+  parents:
+    - code_id: qldpc
+    - code_id: quantum_quasi_cyclic
+  cousins:
+    - code_id: qc_ldpc
+      detail: 'QC-QLDPC codes are quantum counterparts of QC-LDPC codes. QC-LDPC codes can be used to make qubit QLDPC codes using various non-CSS constructions \cite{doi:10.1109/TIT.2009.2034794}. There exist explicit constructions of both whose parity-check (stabilizer generator) matrices have column weight 2 and girth 12 \cite{arxiv:2501.13444}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-08-01'

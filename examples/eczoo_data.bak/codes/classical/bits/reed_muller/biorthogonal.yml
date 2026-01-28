@@ -1,0 +1,53 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: biorthogonal
+physical: bits
+logical: bits
+
+name: '\([2^m,m+1,2^{m-1}]\) First-order RM code'
+
+alternative_names:
+  - 'Biorthogonal code'
+  - 'RM\((1,m)\) code'
+  - 'Augmented Hadamard code'
+
+description: |
+  A member of the family of first-order RM codes.
+  Its codewords are the rows of the \(2^m\)-dimensional Hadamard matrix \(H\) and its negation \(-H\) with the mapping \(+1\to 0\) and \(-1\to 1\).
+  The family is self-orthogonal for \(m \geq 3\) \cite{arxiv:2303.16729}.
+  They form a \((2^m,2^{m+1})\) biorthogonal spherical code under the \hyperref[topic:antipodal-mapping]{antipodal mapping}.
+
+  The automorphism group of the code is \(GA_{m}(\mathbb{F}_2)\) \cite{preset:MacSlo}.
+
+
+features:
+  decoders:
+    - 'First-order RM codes admit specialized decoders, such as the Fast Hadamard Transform decoder \cite{manual:{E.C. Posner, \emph{Combinatorial Structures in Planetary Reconnaissance} in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.}}.'
+
+realizations:
+  - 'The \([32, 6, 16]\) RM\((1,5)\) code was used for the 1971 Mariner 9 spacecraft \cite{doi:10.1109/ITWKSPS.2010.5503223}.'
+
+notes:
+  - 'See Ref. \cite{doi:10.1109/TIT.1972.1054732} for the weight distribution of the \(2^{26}\) cosets of the \([32,6]\) first-order RM code.'
+
+# , obtained in part by hand computation.'
+
+
+relations:
+  parents:
+    - code_id: reed_muller
+      detail: 'First-order RM codes are RM\((1,m)\) codes.'
+  cousins:
+    - code_id: biorthogonal_spherical
+      detail: 'Each first-order RM code maps to a \((2^m,2^{m+1})\) biorthogonal spherical code under the \hyperref[topic:antipodal-mapping]{antipodal mapping} \cite{doi:10.1109/18.720542}\cite[Sec. 6.4]{manual:{Forney, G. D. (2003). 6.451 Principles of Digital Communication II, Spring 2003.}}\cite[pg. 19]{preset:EricZin}. In other words, first-order RM (biorthogonal spherical) codes form orthoplexes in Hamming (Euclidean) space.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-04-26'

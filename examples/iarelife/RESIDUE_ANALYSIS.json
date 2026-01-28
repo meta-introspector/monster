@@ -1,0 +1,518 @@
+{
+  "total_codes": 1049,
+  "mapped_codes": 982,
+  "unmapped_codes": [
+    {
+      "code_id": "metrological",
+      "name": "Metrological code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "quantum_quasi_cyclic",
+      "name": "Quasi-cyclic quantum code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "nonabelian_covariant_erasure",
+      "name": "\\(U(d)\\)-covariant approximate erasure code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "g_covariant_erasure",
+      "name": "\\(G\\)-covariant erasure code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "single_subsystem",
+      "name": "Monolithic quantum code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "coherent_constellation",
+      "name": "Coherent-state constellation code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "qsc",
+      "name": "Quantum spherical code (QSC)",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "oscillator_css",
+      "name": "Bosonic CSS code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "icosahedral_fock",
+      "name": "Icosahedral Fock-state code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "ea_oscillators",
+      "name": "EA bosonic code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "single-mode",
+      "name": "Single-mode bosonic code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "oscillators_into_oscillators",
+      "name": "Oscillator-into-oscillator code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "molecular",
+      "name": "Molecular code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "generalized_homological_product",
+      "name": "Generalized homological-product code",
+      "reason": "LDPC code",
+      "properties": [
+        "quantum",
+        "classical",
+        "ldpc"
+      ]
+    },
+    {
+      "code_id": "css",
+      "name": "Calderbank-Shor-Steane (CSS) stabilizer code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "rotor_4_2_2",
+      "name": "Four-rotor code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "quantum_plane_curve",
+      "name": "Quantum plane-curve code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "subsystem_galois_into_galois",
+      "name": "Subsystem Galois-qudit code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "qudit_sign",
+      "name": "Modular-qudit shift-resistant code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "subsystem_qudits_into_qudits",
+      "name": "Subsystem modular-qudit code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "okada",
+      "name": "Okada spin code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "icosahedral_spin",
+      "name": "Icosahedral spin code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "diatomic_molecular",
+      "name": "Diatomic molecular code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "quantum_irregular_convolutional",
+      "name": "Quantum irregular convolutional code (QIRCC)",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "hurwitz_surface",
+      "name": "Hurwitz surface code",
+      "reason": "Quantum-only code",
+      "properties": []
+    },
+    {
+      "code_id": "check_product",
+      "name": "Quantum check-product code",
+      "reason": "No Monster connection",
+      "properties": [
+        "quantum",
+        "classical"
+      ]
+    },
+    {
+      "code_id": "qubit_generalized_homological_product_css",
+      "name": "Generalized homological-product qubit CSS code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "single_qubit_clifford",
+      "name": "\\([[2^{2r-1}-1,1,2^r-1]]\\) quantum punctured RM code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "qubit_stabilizer_oaqecc",
+      "name": "Operator-algebra (OA) qubit stabilizer code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "subsystem_qubits_into_qubits",
+      "name": "Subsystem qubit code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "meir",
+      "name": "Meir code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "bs-ltc",
+      "name": "Ben-Sasson-Sudan code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "codes_with_availability",
+      "name": "Availability code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "dual_additive",
+      "name": "Dual additive code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "parity_check_tensor",
+      "name": "Parity-check tensor-product code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "matrix_product",
+      "name": "Matrix-product code",
+      "reason": "Quantum-only code",
+      "properties": [
+        "quantum"
+      ]
+    },
+    {
+      "code_id": "parvaresh_vardy",
+      "name": "Parvaresh-Vardy (PV) code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "q-ary_ldgm",
+      "name": "\\(q\\)-ary LDGM code",
+      "reason": "LDPC code",
+      "properties": []
+    },
+    {
+      "code_id": "checksum",
+      "name": "Checksum code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "reversible",
+      "name": "Reversible code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "mbr",
+      "name": "Minimum-bandwidth regenerating (MBR) code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "matrices_into_matrices",
+      "name": "Matrix-based code",
+      "reason": "No Monster connection",
+      "properties": [
+        "classical"
+      ]
+    },
+    {
+      "code_id": "polytope",
+      "name": "Polytope code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "smith_spherical",
+      "name": "Smith \\(40\\)-point code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "binary_antipodal",
+      "name": "Binary antipodal code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "binary_balanced",
+      "name": "Binary balanced spherical code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "esix_shell",
+      "name": "\\(E_6\\) lattice-shell code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "eseven_shell",
+      "name": "\\(E_7\\) lattice-shell code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "lambda16_shell",
+      "name": "\\(\\Lambda_{16}\\) lattice-shell code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "dual_over_rings",
+      "name": "Dual linear code over \\(R\\)",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "isbn",
+      "name": "International Standard Book Number (ISBN) code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "upc",
+      "name": "Universal product code (UPC)",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "dual_over_z4",
+      "name": "Dual code over \\(\\mathbb{Z}_4\\)",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "rings_into_rings",
+      "name": "Ring code",
+      "reason": "No Monster connection",
+      "properties": [
+        "classical"
+      ]
+    },
+    {
+      "code_id": "honeycomb",
+      "name": "Honeycomb tiling",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "points_into_balls",
+      "name": "Bounded-energy code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "dual_lattice",
+      "name": "Dual lattice",
+      "reason": "Polar code",
+      "properties": []
+    },
+    {
+      "code_id": "an_dual",
+      "name": "\\(A_n^{\\perp}\\) lattice",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "an",
+      "name": "\\(A_n\\) lattice",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "unary",
+      "name": "Unary code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "gs-ltc",
+      "name": "Goldreich-Sudan code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "bsghsv-ltc",
+      "name": "Ben-Sasson-Goldreich-Harsha-Sudan-Vadhan (BGHSV) code",
+      "reason": "No Monster connection",
+      "properties": []
+    },
+    {
+      "code_id": "generalized_gallager",
+      "name": "Generalized Gallager code",
+      "reason": "LDPC code",
+      "properties": []
+    },
+    {
+      "code_id": "regular_ldpc",
+      "name": "Regular LDPC code",
+      "reason": "LDPC code",
+      "properties": [
+        "ldpc"
+      ]
+    },
+    {
+      "code_id": "tsf",
+      "name": "Tanner-Sridhara-Fuja (TSF) code",
+      "reason": "LDPC code",
+      "properties": [
+        "ldpc"
+      ]
+    },
+    {
+      "code_id": "quantum_hadamard_bpsk",
+      "name": "Hadamard BPSK c-q code",
+      "reason": "No Monster connection",
+      "properties": [
+        "quantum",
+        "classical"
+      ]
+    },
+    {
+      "code_id": "concatenated_c-q",
+      "name": "Concatenated c-q code",
+      "reason": "No Monster connection",
+      "properties": [
+        "quantum",
+        "classical"
+      ]
+    }
+  ],
+  "residue_patterns": [
+    {
+      "pattern": "No Monster connection",
+      "count": 46,
+      "examples": [
+        "nonabelian_covariant_erasure",
+        "g_covariant_erasure",
+        "oscillator_css",
+        "icosahedral_fock",
+        "ea_oscillators"
+      ]
+    },
+    {
+      "pattern": "Quantum-only code",
+      "count": 15,
+      "examples": [
+        "metrological",
+        "quantum_quasi_cyclic",
+        "single_subsystem",
+        "coherent_constellation",
+        "qsc"
+      ]
+    },
+    {
+      "pattern": "LDPC code",
+      "count": 5,
+      "examples": [
+        "generalized_homological_product",
+        "q-ary_ldgm",
+        "generalized_gallager",
+        "regular_ldpc",
+        "tsf"
+      ]
+    },
+    {
+      "pattern": "Polar code",
+      "count": 1,
+      "examples": [
+        "dual_lattice"
+      ]
+    }
+  ],
+  "missing_primes": [
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    41,
+    47,
+    59,
+    71
+  ],
+  "found_primes": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ]
+}

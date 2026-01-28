@@ -1,0 +1,43 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: walker_wang
+physical: categories
+logical: categories
+
+name: 'Walker-Wang model code'
+introduced: '\cite{arxiv:1104.2632}'
+
+description: |
+  A non-stabilizer commuting-projector 3D topological code defined by a unitary braided fusion category \( \mathcal{C} \) (also known as a unitary premodular category).
+  The code is defined on a cubic lattice that is resolved to be trivalent, with a qudit of dimension \( |\mathcal{C}| \) located at each edge.
+  The codespace is the ground-state subspace of the Walker-Wang model Hamiltonian \cite{arxiv:1104.2632} and realizes the Crane-Yetter model \cite{arxiv:hep-th/9301062,arxiv:hep-th/9309063,arxiv:hep-th/9409167}.
+  A single-state version of the code provides a resource state for MBQC \cite{arxiv:2011.04693}.
+
+protection: |
+  Codespace dimensions (i.e., ground-state degeneracy) has been calculated for various boundary conditions \cite{arxiv:1208.5128}.
+
+features:
+  encoders:
+    - 'For modular chiral anyon theories, a unitary encoder is conjectured to not be implementable in constant depth because it is believed to be an example of a \textit{quantum cellular automaton} (QCA) (i.e., causal or locality-preserving automorphism) that cannot be locally implemented \cite{arxiv:1812.01625,arxiv:2205.09141}.
+    States of modular gapped theories can be initialized in constant depth \cite{arxiv:2208.03397}.'
+
+relations:
+  parents:
+    - code_id: enriched_walker_wang
+      detail: '\(G\)-enriched Walker-Wang models reduce to Walker-Wang models for trivial \(G\) \cite{arxiv:1606.07144}.'
+  cousins:
+    - code_id: string_net
+      detail: 'The Walker-Wang model is a generalization of the 3D version of the Levin-Wen model \cite[Sec. 5]{arxiv:cond-mat/0404617}, which realizes gauge theories coupled to bosons and fermions.'
+
+# - code_id: topological
+#   detail: 'Walker-Wang model codes can be realized using Walker-Wang model Hamiltonians, which realize 3D topological phases based on unitary braided fusion categories.'
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-03-28'

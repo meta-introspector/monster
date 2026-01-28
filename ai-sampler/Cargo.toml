@@ -1,0 +1,40 @@
+[package]
+name = "monster-ai-sampler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+headless_chrome = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+base64 = "0.21"
+
+# Use mistral.rs for pure Rust inference
+mistralrs = { git = "https://github.com/meta-introspector/mistral.rs", optional = true }
+
+# OpenCV for classical computer vision
+opencv = { version = "0.92", optional = true, default-features = false, features = ["imgproc", "highgui", "videoio"] }
+
+[[bin]]
+name = "sample-with-mistralrs"
+path = "src/mistralrs_sampler.rs"
+
+[[bin]]
+name = "full-trace"
+path = "src/full_trace.rs"
+
+[[bin]]
+name = "homotopy-test"
+path = "src/homotopy_test.rs"
+
+[[bin]]
+name = "emergence-test"
+path = "src/emergence_test.rs"
+
+[[bin]]
+name = "orbit-runner"
+path = "src/orbit_runner.rs"

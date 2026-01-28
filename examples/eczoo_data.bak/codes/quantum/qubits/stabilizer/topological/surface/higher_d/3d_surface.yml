@@ -1,0 +1,101 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: 3d_surface
+physical: qubits
+logical: qubits
+
+name: '3D surface code'
+introduced: '\cite{arxiv:quant-ph/0110143,arxiv:cond-mat/0411752}'
+
+alternative_names:
+  - '3D toric code'
+  - '3D cubic code'
+  - 'Bosonic-charge bosonic-loop (BcBl) surface code'
+
+
+description: |
+  A generalization of the Kitaev surface code defined on a 3D cubic lattice.
+  Qubits are placed on edges, \(Z\)-type stabilizer generators are placed on square plaquettes oriented in all three directions, and \(X\)-type stabilizers are placed on the six edges neighboring every vertex \cite{arxiv:1404.4618}.
+
+  \textit{3D toric code} often either refers to the construction on
+  the three-dimensional torus or is an alternative name for the general
+  construction.
+  The construction on surfaces with boundaries is often called the
+  \textit{3D planar code}.
+  There exists a rotated version of the 3D surface code, the \textit{3D rotated surface code}, akin to the (2D) rotated surface code \cite{arxiv:2211.02116}.
+  The \textit{welded surface code} \cite{arxiv:1406.4227} consists of several 3D surface codes stitched together in a way that the distance scales faster than the linear size of the system.
+
+  Related models \cite{arxiv:cond-mat/0607736,arxiv:1012.0859} on lattices with certain colorability are equivalent to several copies of the 3D surface code \cite{arxiv:1908.08049}.
+
+
+protection: |
+  The planar 3D surface code family on a cubic lattice of length \(L\) has parameters \([[2L(L-1)^2+L^3,1,d_X=L^2,d_Z=L]]\), while the 3D toric code has parameters \([[3L^3,3,d_X=L^2,d_Z=L]]\).
+
+  Stability against Hamiltonian perturbations was determined using a tensor-network representation \cite{arxiv:2012.15346}. The phase diagram of the perturbed tensor network maps to that of a 3D Ising gauge theory.
+
+#  The \textit{Kirigami code} \cite{} consists of three copies of the 3D surface code.
+
+#protection: As a stabilizer code, \([[n=O(d^2), k=O(1), d]]\).
+
+features:
+  transversal_gates:
+    - 'Transversal inter-block \(CZ\) gate \cite{arxiv:1801.04255}.'
+  decoders:
+    - 'Flip decoder and its modification p-flip \cite{arxiv:2212.06985}.'
+    - 'Tensor-network decoder \cite{arxiv:2310.10722}.'
+    - 'Efficient MWPM decoder for 3D toric and 3D welded surface codes handling string-like syndromes only \cite{arxiv:1808.03092}.'
+    - 'Generalization of linear-time ML erasure decoder \cite{arxiv:1703.01517} to 3D surface codes \cite{arxiv:1808.03092}.'
+    - 'Equivariant machine learning decoder \cite{arxiv:2409.04300}.'
+  general_gates:
+    - 'There is a CZ gate for the 3D toric code on a Klein bottle \(\times S^1\) \cite{arxiv:2211.11764}.'
+    - 'Lattice surgery \cite{arxiv:1801.04255}.'
+    - '3D and Hybrid 2D-3D surface code computation using lattice surgery and without magic-state distillation \cite{arxiv:1801.04255}.'
+    - 'Fault-tolerant Hadamard gate using teleportation and error correction \cite{arxiv:1801.04255}.'
+    - 'Various \(CZ\) and \(CCZ\) gates implemented via constant-depth circuits \cite{arxiv:1503.02065,arxiv:1801.04255,arxiv:2106.05274,arxiv:2108.00018,arxiv:2310.16982,arxiv:2312.09111,arxiv:2404.05033}, with \(CZ\) gates formulated in terms of the slant product \cite{arxiv:1509.03626,arxiv:2208.07367} or cup product \cite{arxiv:2410.16250} structures.'
+    # 2410.16250 explains the above 
+  fault_tolerance:
+    - 'Fault-tolerant Hadamard gate using teleportation and error correction \cite{arxiv:1801.04255}.'
+  code_capacity_threshold:
+    - 'Independent \(X,Z\) noise: \(12\%\) for bit-flip and \(3\%\) for phase-flip channels with MWPM decoder for 3D toric code \cite{arxiv:1808.03092}, and \(17.2\%\) and \(3.3\%\) with RG decoder for 3D toric code \cite{arxiv:1708.09286}.'
+    - 'Erasure noise: \(24.8\%\) with generalization of linear-time ML erasure decoder \cite{arxiv:1703.01517} to 3D surface codes \cite{arxiv:1808.03092}.
+    No threshold was observed for the 3D welded surface code \cite{arxiv:1808.03092}.'
+
+  threshold:
+    - 'Phenomenological noise model for the 3D toric code: \(2.90(2)\%\) under BP-OSD decoder \cite{arxiv:2009.11790}, \(7.1\%\) under improved BP-OSD \cite{arxiv:2206.03122}, \(7.3\%\) under RG \cite{arxiv:1708.09286}, and \(2.6\%\) under flip decoder \cite{arxiv:2212.06985}.
+    For 3D surface code: \(3.08(4)\%\) under flip decoder \cite{arxiv:2009.11790}. Optimal thresholds of \(11\%\) under \(X\)-type and \(2\%\) under \(Z\)-type noise derived in Ref. \cite{arxiv:2510.20489}.'
+
+
+relations:
+  parents:
+    - code_id: higher_dimensional_surface
+    - code_id: qudit_3d_surface
+      detail: 'The qudit 3D surface code reduces to the 3D surface code for \(q=2\). The 3D surface code realizes 3D \(\mathbb{Z}_2\) gauge theory with bosonic charge and loop excitations (BcBl). The welded surface code does not satisfy homogeneous topological order \cite{arxiv:2009.13551}.'
+  cousins:
+    - code_id: chamon
+      detail: 'The 3D planar and toric code on a cubic lattice can be obtained from a hypergraph product of three repetition codes \cite[Exam. A.1]{arxiv:2311.01328}\cite{arxiv:1810.01519}. The Chamon code is an XYZ product of three repetition codes \cite[Sec. 3.4]{arxiv:2011.09746}.'
+    - code_id: rotated_surface
+      detail: 'There exists a rotated version of the 3D surface code, akin to the (2D) rotated surface code \cite{arxiv:2211.02116}.'
+    - code_id: hamiltonian
+      detail: 'Stability of the 3D surface code against Hamiltonian perturbations was determined using a tensor-network representation \cite{arxiv:2012.15346}. The phase diagram of the perturbed tensor network maps to that of a 3D Ising gauge theory.'
+    - code_id: multisector_hypergraph
+      detail: 'The 3D planar and toric code on a cubic lattice can be obtained from a hypergraph product of three repetition codes \cite[Exam. A.1]{arxiv:2311.01328}\cite{arxiv:1810.01519}.'
+    - code_id: repetition
+      detail: 'The 3D planar and toric code on a cubic lattice can be obtained from a hypergraph product of three repetition codes \cite[Exam. A.1]{arxiv:2311.01328}\cite{arxiv:1810.01519}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: nathanan
+      date: '2025-11-14'
+    - user_id: VictorVAlbert
+      date: '2025-11-14'
+    - user_id: AleksanderKubica
+      date: '2022-05-16'
+    - user_id: VictorVAlbert
+      date: '2022-05-16'

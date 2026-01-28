@@ -1,0 +1,31 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: eseven_shell
+physical: spheres
+logical: reals
+
+name: '\(E_7\) lattice-shell code'
+
+description: |
+  Spherical code whose codewords are points on the \(E_7\) lattice normalized to lie on the unit sphere.
+
+relations:
+  parents:
+    - code_id: lattice_shell
+  cousins:
+    - code_id: eseven
+    - code_id: delsarte_optimal
+      detail: 'The 63 sets of antipodal pairs of the smallest \(E_7\) lattice shell form a sharp configuration in the projective space \(\mathbb{R}P^6\) \cite{arxiv:math/0607446}.'
+    - code_id: real_projective
+      detail: 'The 63 sets of antipodal pairs of the smallest \(E_7\) lattice shell form a sharp configuration in the projective space \(\mathbb{R}P^6\) \cite{arxiv:math/0607446}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-05'

@@ -1,0 +1,27 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: weight_two
+physical: bits
+logical: bits
+
+name: 'Weight-two code'
+introduced: '\cite{manual:{R. W. Hamming, Letter, April 5, 1978.}}'
+
+description: |
+  A length-\(n\) binary code whose codewords all have Hamming weight two. Such codes provide slightly extra redundancy for storage of small-scale information such as ZIP codes or decimal digits.
+
+
+relations:
+  parents:
+    - code_id: constant_weight
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-08-12'

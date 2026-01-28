@@ -1,0 +1,44 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: floquet_fracton
+physical: qubits
+logical: qubits
+
+name: 'Fracton Floquet code'
+introduced: '\cite{arxiv:2210.02468}'
+
+description: |
+  3D Floquet code whose qubits are placed on vertices of a truncated cubic honeycomb.
+  Its weight-two check operators are placed on edges of each truncated cube, while weight-three check operators are placed on each triangle.
+  Its ISG can be that of the X-cube model code or the checkerboard model code.
+  On a three-torus of size \(L_x \times L_y \times L_z\), the code consists of \(n= 48L_xL_yL_z\) physical qubits and encodes \(k= 2(L_x+L_y+L_z)-6\) logical qubits.
+
+
+features:
+  decoders:
+    - 'Period-six measurement sequence utilizing two- and three-qubit measurements \cite{arxiv:2210.02468}.'
+
+
+relations:
+  parents:
+    - code_id: floquet
+  cousins:
+    - code_id: xcube
+      detail: 'The ISG of the X-cube Floquet code can be that of the X-cube model code or the checkerboard model code.'
+    - code_id: checkerboard
+      detail: 'The ISG of the X-cube Floquet code can be that of the X-cube model code or the checkerboard model code.'
+    - code_id: floquet_color
+      detail: 'The fracton Floquet code is obtained via a 3D generalization of the construction used in the Floquet color code \cite{arxiv:2210.02468}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: nathanan
+      date: '2024-06-27'
+    - user_id: VictorVAlbert
+      date: '2024-04-05'

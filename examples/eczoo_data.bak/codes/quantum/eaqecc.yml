@@ -1,0 +1,46 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: eaqecc
+
+name: 'Entanglement-assisted (EA) QECC'
+short_name: 'EAQECC'
+introduced: '\cite{arxiv:quant-ph/0205117,arxiv:quant-ph/0608027,arxiv:quant-ph/0610092}'
+
+alternative_names:
+  - 'Catalytic QECC'
+
+description: 'QECC whose encoding and decoding utilizes pre-shared entanglement between sender and receiver.'
+
+protection: |
+  Pre-shared entanglement can be prepared in a way that is robust to noise \cite{arxiv:0904.1175}.
+
+features:
+  rate: |
+    The EA quantum capacity is the highest rate of quantum information transmission through a quantum channel with arbitrarily small error rate and access to arbitrary amounts of entanglement \cite{arxiv:quant-ph/0106052}.
+    The fault-tolerant EA capacity is the capacity for the more general case where the encoding and decoding maps are also assumed to undergo noise \cite{arxiv:2210.02939}.
+
+notes:
+  - 'See Ref. \cite{arxiv:1610.04013,doi:10.1017/CBO9781139034807.009} for an introduction to EAQECCs.'
+
+relations:
+  parents:
+    - code_id: eaoaecc
+      detail: 'An EAOAQECC that has no gauge structure (e.g., gauge qubits), that has no block structure that corresponds to a classical code, and that utilizes pre-shared entanglement is an EA QECC.'
+  cousins:
+    - code_id: qecc
+      detail: 'EA QECCs utilize additional ancillary subsystems in a pre-shared entangled state, but reduce to QECCs when said subsystems are interpreted as noiseless physical subsystems.'
+    - code_id: eacq
+      detail: 'An EA hybrid QECC storing no classical information reduces to an EA QECC. Conversely, any EA QECC can be converted into an EA hybrid QECC by using a portion of its logical subspace to store only classical information.'
+    - code_id: eaoecc
+      detail: 'An EA subsystem QECC reduces to an EA QECC when the gauge subsystem is trivial. Conversely, any EA QECC with a tensor-product logical subspace can be turned into an EA subsystem QECC by treating a logical tensor factor as a gauge subsystem.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-05-31'

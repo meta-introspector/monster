@@ -1,0 +1,22 @@
+- domain_id: classical_domain
+  name: 'Classical Domain'
+  description: |-
+    Codes for communication over classical channels
+  root_codes:
+    - code_id: ecc
+    - code_id: t-designs
+
+- domain_id: quantum_domain
+  name: 'Quantum Domain'
+  description: |-
+    Codes for quantum communication over quantum channels
+  root_codes:
+    - code_id: quantum_into_quantum
+
+- domain_id: classical_into_quantum_domain
+  name: 'Classical-quantum Domain'
+  description: |-
+    Codes for classical communication over quantum channels
+  root_codes:
+    - code_id: classical_into_quantum
+

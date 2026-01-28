@@ -1,0 +1,45 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: galois_quad_residue
+physical: galois
+logical: galois
+
+name: 'Quantum quadratic-residue (QR) code'
+short_name: 'Quantum QR code'
+introduced: '\cite{arxiv:quant-ph/9703048,arxiv:quant-ph/0508070,arxiv:0712.0103}'
+
+description: |
+  Galois-qudit \([[n,1]]_q\) \hyperref[topic:quantum-weight-enumerator]{pure} self-dual CSS code constructed from a dual-containing QR code via the Galois-qudit CSS construction.
+  For \(q\) not divisible by \(n\), its distance satisfies \(d^2-d+1 \geq n\) when \(n \equiv 3\) modulo 4 \cite[Thm. 40]{arxiv:quant-ph/0508070} and \(d \geq \sqrt{n}\) when \(n\equiv 1\) modulo 4 \cite[Thm. 41]{arxiv:quant-ph/0508070}.
+
+features:
+  transversal_gates: 
+    - 'Qubit quantum QR codes admit transversal implementations of the \hyperref[topic:clifford]{single-qubit Clifford group} \cite{arxiv:2408.12752}. They yield a family of high-distance triorthogonal codes \cite{arxiv:2408.12752} via the doubling transformation \cite{arxiv:1509.03239}; such codes admit transversal implementations of the \(T\) gate.'
+
+
+relations:
+  parents:
+    - code_id: galois_css
+    - code_id: galois_duadic
+      detail: 'Quantum QR codes are quantum duadic codes since QR codes are duadic codes.'
+  cousins:
+    - code_id: q-ary_quad_residue
+    - code_id: data_syndrome
+      detail: 'A family of qubit quantum QR codes can be made into QDS codes \cite[Thm. 14]{arxiv:1907.01393}.'
+    - code_id: quantum_mds
+      detail: 'Almost all quantum QR codes for prime-dimensional qudits are quantum MDS \cite[Corr. 11]{arxiv:quant-ph/9703048}.'
+    - code_id: quantum_triorthogonal
+      detail: 'Qubit quantum QR codes are doubly even and admit transversal implementations of the \hyperref[topic:clifford]{single-qubit Clifford group} \cite{arxiv:2408.12752}. They yield a family of high-distance triorthogonal and weak triply even codes via the doubling transformation \cite{arxiv:2408.12752}; such codes admit transversal implementations of the \(T\) gate.'
+    - code_id: quantum_divisible
+      detail: 'Qubit quantum QR codes are doubly even and admit transversal implementations of the \hyperref[topic:clifford]{single-qubit Clifford group} \cite{arxiv:2408.12752}. They yield a family of high-distance triorthogonal and weak triply even codes via the doubling transformation \cite{arxiv:2408.12752}; such codes admit transversal implementations of the \(T\) gate.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-05-05'

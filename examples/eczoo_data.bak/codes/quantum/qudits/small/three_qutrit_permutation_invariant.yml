@@ -1,0 +1,40 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: three_qutrit_permutation_invariant
+
+name: '\(((3,2,2))_3\) Three-qutrit single-deletion code'
+introduced: '\cite{arxiv:2509.20545}'
+
+description: |
+  Three-qutrit PI code that is the smallest qutrit PI code to correct one deletion error.
+
+  The code admits the following logical codewords:
+  \begin{align}
+    |\overline{0}\rangle &\propto|000\rangle+|111\rangle+|222\rangle\\
+    |\overline{1}\rangle &\propto|012\rangle+|021\rangle+|102\rangle+|120\rangle+|201\rangle+|210\rangle~.
+  \end{align}
+
+protection: |
+  The smallest qutrit PI code to correct one deletion error.
+
+relations:
+  parents:
+    - code_id: qudits_into_qudits
+    - code_id: permutation_invariant
+    - code_id: small_distance_quantum
+  cousins:
+    - code_id: four_qubit_permutation_invariant
+      detail: 'The four-qubit (three-qutrit) single-deletion code is the smallest PI qubit (qutrit) code to correct one deletion error.'
+    - code_id: wasilewski-banaszek
+      detail: 'The three-qutrit single-deletion code maps to the Wasilewski-Banaszek code via the \hyperref[topic:qudit-dicke]{simplex mapping} \cite{arxiv:2509.20545}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-10-24'

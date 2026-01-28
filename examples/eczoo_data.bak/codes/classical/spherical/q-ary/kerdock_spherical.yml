@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: kerdock_spherical
+physical: spheres
+logical: reals
+
+name: 'Kerdock spherical code'
+introduced: '\cite{manual:{König, Hermann. "Isometric imbeddings of Euclidean spaces into finite dimensional lp-spaces." Banach Center Publications 34.1 (1995): 79-87. <https://eudml.org/doc/251336>.},doi:10.1016/B978-0-12-189420-7.50028-1,manual:{Levenshtein, V. I. "Bounds on the maximal cardinality of a code with bounded modulus of the inner product." Soviet Math. Dokl. Vol. 25. No. 2. 1982.}}'
+
+description: |
+   Family of \((n=2^{2r},n^2,2-2/\sqrt{n})\) spherical codes for \(r \geq 2\), obtained from Kerdock codes via the \hyperref[topic:antipodal-mapping]{antipodal mapping} \cite[pg. 157]{preset:EricZin}.
+   These codes are optimal for their parameters for \(2\leq r\leq 5\), they are unique for \(r\in\{2,3\}\), and they form spherical 3-designs because their codewords are unions of \(2^{2r-1}+1\) orthoplexes \cite{arxiv:2403.16874}.
+
+relations:
+  parents:
+    - code_id: binary_antipodal
+    - code_id: spherical_design
+      detail: 'Kerdock spherical codes form spherical 3-designs because their codewords are unions of \(2^{2r-1}+1\) orthoplexes \cite{arxiv:2403.16874}.'
+  cousins:
+    - code_id: kerdock
+      detail: 'Kerdock spherical codes can be obtained from Kerdock codes using the \hyperref[topic:antipodal-mapping]{antipodal mapping} \cite[pg. 157]{preset:EricZin}.'
+    - code_id: univ_opt_spherical
+      detail: 'Kerdock spherical codes are almost universally optimal \cite{arxiv:1509.07837}.'
+    - code_id: biorthogonal_spherical
+      detail: 'Kerdock spherical codes form spherical 3-designs because their codewords are unions of \(2^{2r-1}+1\) orthoplexes \cite{arxiv:2403.16874}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-23'

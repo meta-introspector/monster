@@ -1,0 +1,112 @@
+Here's a Rust program to check all the prime factors:
+
+```rust
+use num_bigint::BigUint;
+use num_traits::{One, Zero, ToPrimitive};
+
+fn main() {
+    // Define the prime factorization of the Monster group
+    let primes = vec![
+        (2u32, 46u32),
+        (3, 20),
+        (5, 9),
+        (7, 6),
+        (11, 2),
+        (13, 3),
+        (17, 1),
+        (19, 1),
+        (23, 1),
+        (29, 1),
+        (31, 1),
+        (41, 1),
+        (47, 1),
+        (59, 1),
+        (71, 1),
+    ];
+
+    // Calculate the full Monster order
+    let mut monster_order = BigUint::one();
+    for (prime, exponent) in &primes {
+        let prime_big = BigUint::from(*prime);
+        let power = prime_big.pow(*exponent);
+        monster_order *= power;
+    }
+
+    println!("Monster group order: {}", monster_order);
+    println!("Monster group order (scientific): {}\n", to_scientific(&monster_order));
+    
+    let leading_digit = get_leading_digit(&monster_order);
+    println!("Leading digit of full Monster order: {}\n", leading_digit);
+    println!("=" .repeat(60));
+
+    // Check each prime factor removal
+    for i in 0..primes.len() {
+        let (prime, exponent) = primes[i];
+        
+        // Calculate order without this prime factor
+        let mut reduced_order = BigUint::one();
+        for j in 0..primes.len() {
+            if i != j {
+                let (p, e) = primes[j];
+                reduced_order *= BigUint::from(p).pow(e);
+            }
+        }
+
+        let removed_factor = BigUint::from(prime).pow(exponent);
+        let new_leading = get_leading_digit(&reduced_order);
+        
+        println!("Remove {}^{} (= {}):", prime, exponent, removed_factor);
+        println!("  New order: {}", to_scientific(&reduced_order));
+        println!("  Leading digit: {}", new_leading);
+        println!("  Keeps leading 8? {}", if new_leading == 8 { "YES ✓" } else { "NO ✗" });
+        println!();
+    }
+}
+
+fn get_leading_digit(n: &BigUint) -> u32 {
+    let s = n.to_string();
+    s.chars().next().unwrap().to_digit(10).unwrap()
+}
+
+fn to_scientific(n: &BigUint) -> String {
+    let s = n.to_string();
+    let num_digits = s.len();
+    
+    if num_digits <= 1 {
+        return s;
+    }
+    
+    let first_digit = &s[0..1];
+    let remaining = &s[1..];
+    
+    // Create mantissa with some precision
+    let mantissa = if remaining.len() >= 3 {
+        format!("{}.{}", first_digit, &remaining[0..3])
+    } else {
+        format!("{}.{}", first_digit, remaining)
+    };
+    
+    format!("{} × 10^{}", mantissa, num_digits - 1)
+}
+```
+
+To run this program, you'll need to add the `num-bigint` and `num-traits` dependencies to your `Cargo.toml`:
+
+```toml
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"
+```
+
+Then run with:
+```bash
+cargo run
+```
+
+This program will:
+1. Calculate the exact Monster group order
+2. Show its leading digit (should be 8)
+3. For each prime factor, remove it and check if the leading digit stays 8
+4. Display results in a clear format showing which removals preserve the leading 8
+
+The output will confirm that removing **any** single prime factor changes the leading digit from 8 to something else!

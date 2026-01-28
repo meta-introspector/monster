@@ -1,0 +1,40 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: hyperbolic
+physical: quotients
+
+name: 'Hyperbolic sphere packing'
+introduced: '\cite{doi:10.1109/ITW.1998.706453,doi:10.1016/j.jfranklin.2005.09.001}'
+
+description: |
+  Encodes states (codewords) into coordinates in the hyperbolic plane.
+
+protection: |
+  Designed to communicate information over channels for which a Lorentzian metric is appropriate \cite{doi:10.1137/1104038}.
+  Linear programming (LP) bounds exist for hyperbolic surfaces \cite{doi:10.1023/B:GEOM.0000006580.47816.e9,arxiv:1212.5966,arxiv:2302.02540,arxiv:2411.07139,arxiv:2505.23572}.
+
+
+relations:
+  parents:
+    - code_id: 2pt_homogeneous
+      detail: 'Hyperbolic space in \(D\) dimensions is a symmetric space \(G/H\) for \(G = SO(D,1)\) the proper Lorentz group and \(H = O(D)\). The hyperbolic plane is the case \(D=2\). In fact, hyperbolic spaces are noncompact three-point homogeneous spaces \cite[Sec. 6.6.1.1]{doi:10.1007/978-3-642-18245-7}.'
+  cousins:
+    - code_id: pam
+      detail: 'Hyperbolic PAM constellations may yield improved performance over Euclidean ones \cite{doi:10.1109/ITW.1998.706453}.'
+    - code_id: psk
+      detail: 'Hyperbolic PSK constellations may yield improved performance over Euclidean ones \cite{manual:{Silva, E. B., and R. Palazzo Jr. "M-PSK signal constellations in hyperbolic space achieving better performance than the M-PSK signal constellations in Euclidean space." 1999 IEEE Information Theory Workshop, Metsovo, Greece. 1999.}}.'
+    - code_id: qam
+      detail: 'Hyperbolic QAM constellations may yield improved performance over Euclidean ones \cite{manual:{Silva, E. B., R. Palazzo Jr, and M. Firer. "Performance analysis of QAM-like constellations in hyperbolic space." 2000 International Symposium on Information Theory and its Applications, Honolulu, USA. 2000.}}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-11-02'
+    - user_id: VictorVAlbert
+      date: '2022-02-16'

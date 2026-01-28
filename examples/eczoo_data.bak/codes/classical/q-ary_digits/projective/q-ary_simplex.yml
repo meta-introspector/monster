@@ -1,0 +1,71 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: q-ary_simplex
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: '\(q\)-ary simplex code'
+introduced: '\cite{doi:10.1111/j.1469-1809.1941.tb02298.x,doi:10.1002/j.1538-7305.1948.tb01338.x}'
+#  from Cameron, Peter J. "Some bridges between codes and designs." Unpublished manuscript, Queen Mary and Westfield College, London (1998).
+
+
+alternative_names:
+  - 'First-order PRM code'
+  - '\(q\)-ary maximum-length feedback-shift-register code'
+
+description: |
+  An \([n,m,q^{m-1}]_q\) equidistant projective code with \(n=\frac{q^m-1}{q-1}\), denoted as \(S(q,m)\). The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space \(PG(m-1,q)\), with each column being a chosen representative of the corresponding element.
+  All nonzero simplex codewords have a constant weight of \(q^{m-1}\) \cite{doi:10.1016/S0019-9958(63)80010-8,doi:10.1137/0114009}.
+
+  The dual of a \(q\)-ary simplex code is the \([n,n-m,3]_q\) \(q\)-ary Hamming code.
+  A punctured simplex code is known as a \textit{\(q\)-ary MacDonald code} \cite{doi:10.1147/rd.41.0043}, with parameters \([\frac{q^m-q^u}{q-1},m,q^{m-1}-q^{u-1}]_q\) for \(u \leq m-1\) \cite{doi:10.1109/TIT.1975.1055315}.
+
+protection: |
+  The simplex codes saturate the Plotkin bound \cite[Sec. 1.2.2]{doi:10.1007/978-94-011-3810-9}.
+
+features:
+  decoders:
+    - 'Permutation decoder \cite{doi:10.3934/amc.2012.6.505} and MacDonald \cite{doi:10.1007/s00200-016-0286-7} codes.'
+
+notes:
+  - 'See corresponding MinT database entry \cite{manual:{Rudolf Schürer and Wolfgang Ch. Schmid. “Simplex Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. https://web.archive.org/web/20240420202309/https://mint.sbg.ac.at/desc_CSimplex.html}}.'
+
+
+relations:
+  parents:
+    - code_id: projective_reed_muller
+      detail: 'The \(q\)-ary simplex codes are first-order PRM codes \cite[Sec. 1.2.2]{doi:10.1007/978-94-011-3810-9}.'
+    - code_id: incidence_matrix
+      detail: 'Columns of a simplex code''s generator matrix correspond to one-dimensional subspaces of \(\mathbb{F}_q^n\).'
+    - code_id: griesmer
+      detail: 'Simplex codes saturate the Griesmer bound (\cite{doi:10.1201/9781315371993}, Exer. 5.1.11).'
+    - code_id: univ_opt_q-ary
+      detail: 'Simplex codes and their punctured versions are LP universally optimal codes \cite{arxiv:1212.1913}.'
+  cousins:
+    - code_id: q-ary_linear
+      detail: 'Linear \(q\)-ary codes cannot be constant weight, but can have nonzero codewords with constant weight. All such codes are equidistant, and Bonisoli''s theorem states that any equidistant linear code is a direct sum of \(q\)-ary simplex codes \cite{manual:{Bonisoli, Arrigo. "Every equidistant linear code is a sequence of dual Hamming codes." Ars Combinatoria 18 (1984): 181-186.}} (see also Refs. \cite{doi:10.1016/S0019-9958(63)80010-8,doi:10.1137/0114009}).'
+    - code_id: q-ary_constant_weight
+      detail: 'Linear \(q\)-ary codes cannot be constant weight, but can have nonzero codewords with constant weight. All such codes are equidistant, and Bonisoli''s theorem states that any equidistant linear code is a direct sum of \(q\)-ary simplex codes \cite{manual:{Bonisoli, Arrigo. "Every equidistant linear code is a sequence of dual Hamming codes." Ars Combinatoria 18 (1984): 181-186.}} (see also Refs. \cite{doi:10.1016/S0019-9958(63)80010-8,doi:10.1137/0114009}).'
+    # Also in q-ary_constant_weight
+    - code_id: q-ary_hamming
+      detail: '\(q\)-ary Hamming and \(q\)-ary simplex codes are dual to each other \cite[pg. 45]{doi:10.1007/978-94-011-3810-9}'
+    # The dual of a PRM code is not always a PRM code \cite{doi:10.1109/18.104317,arxiv:2406.04757}.
+    - code_id: dual
+      detail: '\(q\)-ary Hamming and \(q\)-ary simplex codes are dual to each other \cite[pg. 45]{doi:10.1007/978-94-011-3810-9}'
+    # The dual of a PRM code is not always a PRM code \cite{doi:10.1109/18.104317,arxiv:2406.04757}.
+    - code_id: two_weight
+      detail: '\(q\)-ary MacDonald codes are the unique two-weight codes with weights \(q^{m-1}-q^{m-1}\) and \(q^{m-1}\) \cite{doi:10.1109/TIT.1975.1055315}.'
+    - code_id: extended_reed_solomon
+      detail: '\(q\)-ary simplex codes for \(m=2\) can be thought of as extended RS codes \cite{manual:{Rudolf Schürer and Wolfgang Ch. Schmid. “Extended Reed–Solomon Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. https://web.archive.org/web/20240420202309/https://mint.sbg.ac.at/desc_CReedSolomon-extended.html}}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-26'

@@ -1,0 +1,47 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: concatenated
+
+name: 'Concatenated code'
+introduced: '\cite{preset:Forney}'
+
+alternative_names:
+  - 'Serially concatenated code'
+# \cite{doi:10.1109/TIT.2005.846392}
+
+description: |
+  A code whose encoding mapping is a composition of two mappings: first the message set is mapped onto the code space of the outer code, then each coordinate of the outer code is mapped on the code space of the inner code. 
+  In the basic construction, the outer code's alphabet is the finite field \(\mathbb{F}_{p^m}\) and the \(m\)-dimensional inner code is over over the field \(\mathbb{F}_p\). The construction is not limited to linear codes.
+
+
+#  'Stub \cite{doi:10.1109/TIT.2005.846392}.'
+
+protection: ''
+
+features:
+  rate: 'There exist bounds on distance and rate of concatenated codes with a fixed outer and random inner code \cite{doi:10.1109/18.904536,arxiv:2405.08584}.'
+  decoders:
+    - 'Generalized minimum-distance decoder \cite{doi:10.1109/TIT.1966.1053873}.'
+
+#notes:
+#  - ''
+
+relations:
+  parents:
+    - code_id: generalized_concatenated
+  cousins:
+    - code_id: quantum_concatenated
+      detail: 'Quantum codes can be concatenated with classical codes to yield good quantum codes \cite{arxiv:0905.0428}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: AlexanderBarg
+      date: '2024-08-03'
+    - user_id: VictorVAlbert
+      date: '2022-03-22'

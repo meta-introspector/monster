@@ -1,0 +1,38 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_cluster_state
+physical: groups
+logical: groups
+
+name: 'Group-based cluster-state code'
+introduced: '\cite{arxiv:1408.6237}'
+
+description: |
+  A code based on a group-based cluster state for a group \(G\) \cite{arxiv:1408.6237}.
+  Such cluster states can be defined using a graph and conditional group multiplication operations.
+  A group-based cluster state for \(G=\mathbb{F}_q\) for prime-power \(q\) is called a \textit{Galois-qudit cluster state}, while the state for \(G=\mathbb{Z}_q\) for positive \(q\) is called a modular-qudit cluster state.
+
+features:
+  general_gates:
+    - '1D group-based cluster states for certain non-Abelian groups \cite{arxiv:2312.09272} are resources for universal MBQC.'
+
+# not group GKP since right and left multipliers are in stabilizer group
+relations:
+  parents:
+    - code_id: group_quantum
+      detail: 'Group-based cluster states are stabilized by \hyperref[topic:group-pauli]{group-based right- and left-multiplication error} operators \cite{arxiv:1408.6237,arxiv:2312.09272}.'
+  cousins:
+    - code_id: hopf_cluster_state
+      detail: 'Hopf-algebra cluster-state codes reduce to group-based cluster-state codes for finite groups when the Hopf algebra reduces to a finite group.'
+    # Not parent because hopf algebra assumed finite
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-04-03'

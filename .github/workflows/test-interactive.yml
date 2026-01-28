@@ -1,0 +1,65 @@
+name: Test Interactive Site with AI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-local-with-act:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Test with nektos/act
+        run: |
+          curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+          act -l
+          
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Nix
+        uses: cachix/install-nix-action@v24
+        
+      - name: Build WASM module
+        run: |
+          nix develop --command bash -c "
+            cd wasm
+            cargo build --target wasm32-unknown-unknown --release
+          "
+          
+      - name: Setup Python with Pyodide
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install test dependencies
+        run: |
+          pip install playwright pytest pytest-playwright pyodide-build
+          playwright install chromium
+          
+      - name: Build test site
+        run: |
+          mkdir -p test-site
+          cp web/index.html test-site/
+          cp web/style.css test-site/
+          cp -r wasm/target/wasm32-unknown-unknown/release/*.wasm test-site/ || true
+          
+      - name: Run headless browser tests
+        run: pytest tests/test_interactive.py -v
+        
+      - name: Test with AI model accessibility
+        run: python tests/test_ai_readable.py
+        
+      - name: Generate accessibility report
+        run: python tests/generate_report.py
+        
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/

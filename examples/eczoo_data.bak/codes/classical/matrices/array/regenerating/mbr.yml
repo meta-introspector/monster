@@ -1,0 +1,27 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: mbr
+physical: matrices
+logical: q-ary_digits
+
+name: 'Minimum-bandwidth regenerating (MBR) code'
+short_name: 'MBR'
+
+description: |
+  An RGC that corresponds to an extreme point in the storage-bandwidth trade-off curve that is characterised by \(\alpha = d\beta\).
+
+relations:
+  parents:
+    - code_id: regenerating
+      detail: 'MBR codes are extreme points in the storage-bandwidth trade-off curve and are characterised by \(\alpha = d\beta\).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-22'

@@ -1,0 +1,37 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: ea_turbo
+physical: qubits
+logical: qubits
+
+name: 'EA quantum turbo code'
+introduced: '\cite{doi:10.1109/ISIT.2011.6034165,arxiv:1010.1256}'
+
+description: |-
+  A quantum turbo code which uses pre-shared entanglement.
+  This allows its encoder to be both recursive and non-catastrophic.
+
+features:
+  rate: 'Maximal-entanglement EA quantum turbo codes come close to achieving the EA hashing bound \cite{arxiv:1010.1256}; see \cite[Footnote 2]{arxiv:1302.4150}.'
+  encoders:
+    - 'As opposed to quantum turbo codes with no pre-shared entanglement, EA encoders can be both recursive and non-catastrophic \cite{arxiv:1010.1256}.'
+
+relations:
+  parents:
+    - code_id: eastab
+  cousins:
+    - code_id: turbo
+    - code_id: quantum_turbo
+    - code_id: maximal_entanglement_galois_stabilizer
+      detail: 'Maximal-entanglement EA quantum turbo codes come close to achieving the EA hashing bound \cite{arxiv:1010.1256}; see \cite[Footnote 2]{arxiv:1302.4150}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-05-06'

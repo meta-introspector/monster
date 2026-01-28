@@ -1,0 +1,38 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: enriched_walker_wang
+physical: categories
+logical: categories
+
+name: '\(G\)-enriched Walker-Wang model code'
+introduced: '\cite{arxiv:1606.07144}'
+
+alternative_names:
+  - 'Williamson-Wang model code'
+
+description: |
+  A 3D topological code defined by a unitary \(G\)-crossed braided fusion category \( \mathcal{C} \) \cite{arxiv:1410.4540,arxiv:1610.07628}, where \(G\) is a finite group.
+  The model realizes TQFTs that include two-gauge theories, those behind Walker-Wang models, as well as the Kashaev TQFT \cite{arxiv:1405.5763,arxiv:1504.01979}.
+  It has been generalized to include domain walls \cite{arxiv:2003.11553}.
+
+
+relations:
+  parents:
+    - code_id: category_quantum
+    - code_id: commuting_projector
+      detail: '\(G\)-enriched Walker-Wang model codewords form ground-state subspaces of frustration-free commuting projector Hamiltonians.'
+    - code_id: frustration_free
+      detail: '\(G\)-enriched Walker-Wang model codewords form ground-state subspaces of frustration-free commuting projector Hamiltonians.'
+    - code_id: topological
+      detail: '\(G\)-enriched Walker-Wang models realize 3D topological phases based on unitary \(G\)-crossed braided fusion categories.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-06-20'

@@ -1,0 +1,37 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: eaoecc
+#physical: bits
+#logical: qubits
+
+name: 'Entanglement-assisted (EA) subsystem QECC'
+short_name: 'EA subsystem QECC'
+introduced: '\cite{arxiv:0708.2142,doi:10.1109/ISIT.2007.4557160}'
+
+alternative_names:
+  - 'EA operator QECC'
+
+description: |
+  Subsystem QECC whose encoding and decoding utilizes pre-shared entanglement between sender and receiver.
+
+
+
+relations:
+  parents:
+    - code_id: eaoaecc
+      detail: 'An EAOAQECC that has gauge structure (e.g., gauge qubits), that has no block structure that corresponds to a classical code, and that utilizes pre-shared entanglement is an EA subsystem QECC.'
+  cousins:
+    - code_id: oecc
+      detail: 'EA subsystem QECCs utilize additional ancillary subsystems in a pre-shared entangled state, but reduce to subsystem QECCs when said subsystems are interpreted as noiseless physical subsystems.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-05-12'

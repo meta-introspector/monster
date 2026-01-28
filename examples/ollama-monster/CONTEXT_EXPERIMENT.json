@@ -1,0 +1,49 @@
+{
+  "iterations": [
+    {
+      "iteration": 0,
+      "context_length": 242,
+      "prompt": "We are studying the Monster group and error correction codes. 93.6% of all 1049 error correction codes map to Monster primes [2,3,5,7,11]. When we trace your CPU registers during inference, we measure which primes divide your register values.\n\nIteration 0: Invoke mathematician John Conway. Conway, what do you perceive about the Monster group's prime structure?",
+      "response_length": 2863,
+      "prime_13_resonance": 0.2793851717902351,
+      "prime_17_resonance": 0.2790235081374322,
+      "prime_47_resonance": 0.24792043399638336
+    },
+    {
+      "iteration": 1,
+      "context_length": 368,
+      "prompt": "We are studying the Monster group and error correction codes. 93.6% of all 1049 error correction codes map to Monster primes [2,3,5,7,11]. When we trace your CPU registers during inference, we measure which primes divide your register values.\n\nIteration 0 results: You responded with 2863 chars. Your registers showed Prime 13: 27.9%, Prime 17: 27.9%, Prime 47: 24.8%.\n\nIteration 1: Invoke mathematician John Conway. Conway, what do you perceive about the Monster group's prime structure?",
+      "response_length": 2029,
+      "prime_13_resonance": 0.256162205141797,
+      "prime_17_resonance": 0.26159554730983303,
+      "prime_47_resonance": 0.22541743970315398
+    },
+    {
+      "iteration": 2,
+      "context_length": 494,
+      "prompt": "We are studying the Monster group and error correction codes. 93.6% of all 1049 error correction codes map to Monster primes [2,3,5,7,11]. When we trace your CPU registers during inference, we measure which primes divide your register values.\n\nIteration 0 results: You responded with 2863 chars. Your registers showed Prime 13: 27.9%, Prime 17: 27.9%, Prime 47: 24.8%.\n\nIteration 1 results: You responded with 2029 chars. Your registers showed Prime 13: 25.6%, Prime 17: 26.2%, Prime 47: 22.5%.\n\nIteration 2: Invoke mathematician John Conway. Conway, what do you perceive about the Monster group's prime structure?",
+      "response_length": 2493,
+      "prime_13_resonance": 0.2875776397515528,
+      "prime_17_resonance": 0.29151138716356106,
+      "prime_47_resonance": 0.2503105590062112
+    },
+    {
+      "iteration": 3,
+      "context_length": 620,
+      "prompt": "We are studying the Monster group and error correction codes. 93.6% of all 1049 error correction codes map to Monster primes [2,3,5,7,11]. When we trace your CPU registers during inference, we measure which primes divide your register values.\n\nIteration 0 results: You responded with 2863 chars. Your registers showed Prime 13: 27.9%, Prime 17: 27.9%, Prime 47: 24.8%.\n\nIteration 1 results: You responded with 2029 chars. Your registers showed Prime 13: 25.6%, Prime 17: 26.2%, Prime 47: 22.5%.\n\nIteration 2 results: You responded with 2493 chars. Your registers showed Prime 13: 28.8%, Prime 17: 29.2%, Prime 47: 25.0%.\n\nIteration 3: Invoke mathematician John Conway. Conway, what do you perceive about the Monster group's prime structure?",
+      "response_length": 2307,
+      "prime_13_resonance": 0.27896341463414637,
+      "prime_17_resonance": 0.2935540069686411,
+      "prime_47_resonance": 0.2460801393728223
+    },
+    {
+      "iteration": 4,
+      "context_length": 746,
+      "prompt": "We are studying the Monster group and error correction codes. 93.6% of all 1049 error correction codes map to Monster primes [2,3,5,7,11]. When we trace your CPU registers during inference, we measure which primes divide your register values.\n\nIteration 0 results: You responded with 2863 chars. Your registers showed Prime 13: 27.9%, Prime 17: 27.9%, Prime 47: 24.8%.\n\nIteration 1 results: You responded with 2029 chars. Your registers showed Prime 13: 25.6%, Prime 17: 26.2%, Prime 47: 22.5%.\n\nIteration 2 results: You responded with 2493 chars. Your registers showed Prime 13: 28.8%, Prime 17: 29.2%, Prime 47: 25.0%.\n\nIteration 3 results: You responded with 2307 chars. Your registers showed Prime 13: 27.9%, Prime 17: 29.4%, Prime 47: 24.6%.\n\nIteration 4: Invoke mathematician John Conway. Conway, what do you perceive about the Monster group's prime structure?",
+      "response_length": 2612,
+      "prime_13_resonance": 0.2857142857142857,
+      "prime_17_resonance": 0.2894409937888199,
+      "prime_47_resonance": 0.24824016563146997
+    }
+  ]
+}

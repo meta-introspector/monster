@@ -1,0 +1,71 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_perfect
+# includes both Galois and modular
+
+name: 'Perfect quantum code'
+#introduced: ''
+
+description: |
+  A type of block quantum code whose parameters satisfy the quantum Hamming bound with equality.
+
+  A \hyperref[topic:degeneracy]{non-degenerate} code constructed out of \(q\)-dimensional qudits and having parameters \(((n,K,2t+1))\) is perfect if \(n\), \(K\), \(t\), and \(q\) are such that the quantum Hamming bound \cite{arxiv:quant-ph/9602022},
+  \begin{align}
+  \sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
+  \end{align}
+  becomes an equality for such codes.
+  For example, for a qubit \(q=2\) code with one logical qubit (\(K=2\)) and \(t=1\), the bound becomes \(3n+1 \leq 2^{n-1}\).
+  The bound can be saturated only at certain \(n\).
+
+  For qubit codes with \(K=2^k\), one can work out an asymptotic Hamming bound in the large-\(n,k,t\) limit,
+  \begin{align}
+  \frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-h(t/n),
+  \end{align}
+  where \(h\) is the binary entropy function.
+
+  \hyperref[topic:degeneracy]{Degenerate} codes can in principle violate the quantum Hamming bound.
+  It was shown that qubit stabilizer codes correcting up to two errors \cite{arxiv:quant-ph/9705052}, qudit stabilizer codes up to distance two \cite{arxiv:0711.4603}, qudit CSS codes of qudit dimension \(q\geq 5\) along with certain other codes \cite{arxiv:0811.1621}, and qubit codes up to distance \(d\leq 127\) \cite{arxiv:2208.11800} do not violate the bound.
+  A quantum Hamming-like bound exists for \hyperref[topic:degeneracy]{degenerate} qubit stabilizer codes \cite{arxiv:2306.00048}.
+
+protection: |
+  Perfect codes have been classified.
+  For qubits (\(q=2\)), the only nontrivial perfect codes are the stabilizer code family \([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\) for \(r \geq 2\), obtained from Hamming codes over \(\mathbb{F}_4\) via the Hermitian construction \cite{arxiv:quant-ph/9607027,arxiv:quant-ph/9608006}. These codes are related to partial spreads in projective geometry \cite{doi:10.2140/iig.2008.6.53}.
+  For qudits, the corresponding family is the \([[\frac{q^{2r}-1}{q^{2}-1},q^{n-2r},3]]_q\) family of quantum twisted codes \cite{arxiv:0907.0049,doi:10.1002/(SICI)1520-6610(2000)8:3<174::AID-JCD3>3.0.CO;2-T}.
+
+# The trivial code (\(k=n\)) is also perfect.
+
+features:
+  rate: '\(k/n\to 1\) asymptotically with \(n\).'
+
+notes:
+  - ''
+#In general, impure not the same as non-degenerate for general codes
+
+relations:
+  parents:
+    - code_id: small_distance_quantum
+      detail: 'All non-trivial perfect codes have distance three.'
+    - code_id: qecc_finite
+  cousins:
+    - code_id: perfect
+      detail: 'A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.'
+    - code_id: stabilizer_over_gf4
+      detail: 'For qubits (\(q=2\)), the only nontrivial perfect codes are the stabilizer code family \([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\) for \(r \geq 2\), obtained from Hamming codes over \(\mathbb{F}_4\) via the Hermitian construction \cite{arxiv:quant-ph/9607027,arxiv:quant-ph/9608006}. These codes are related to partial spreads in projective geometry \cite{doi:10.2140/iig.2008.6.53}.'
+    - code_id: q-ary_hamming
+      detail: 'For qubits (\(q=2\)), the only nontrivial perfect codes are the stabilizer code family \([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\) for \(r \geq 2\), obtained from Hamming codes over \(\mathbb{F}_4\) via the Hermitian construction \cite{arxiv:quant-ph/9607027,arxiv:quant-ph/9608006}. These codes are related to partial spreads in projective geometry \cite{doi:10.2140/iig.2008.6.53}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-08-26'
+    - user_id: MazinKarjikar
+      date: '2022-06-03'
+    - user_id: VictorVAlbert
+      date: '2021-12-03'

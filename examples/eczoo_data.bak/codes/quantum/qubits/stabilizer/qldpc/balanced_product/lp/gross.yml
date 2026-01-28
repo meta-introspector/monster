@@ -1,0 +1,63 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: gross
+physical: qubits
+logical: qubits
+
+name: '\([[144,12,12]]\) gross code'
+introduced: '\cite{arxiv:2308.07915}'
+
+alternative_names:
+  - '\((3,3)\) BB code'
+  # \cite{arxiv:2410.11942}
+
+description: |
+  A BB code which requires less physical and ancilla qubits (for syndrome extraction) than the surface code with the same number of logical qubits and distance.
+  The gross code is equivalent to 8 copies of the surface code via a constant-depth Clifford circuit, and is an element of a larger family of 2D stabilizer codes \cite{arxiv:2410.11942}.
+  The name stems from the fact that a gross is a dozen dozen.
+
+  A different BB QLDPC code with the same parameters was introduced in \cite{arxiv:2407.16336}.
+# https://twitter.com/jaygambetta/status/1773099803561381995
+
+protection: |
+  Admits a \hyperref[topic:pseudo-threshold]{pseudo-threshold} of \(\approx 0.7\%\) for the circuit-based noise model.
+
+features:
+  rate: 'An ancilla-added rate of \(1/24\). In contrast, the distance-13 surface code has ancilla-added rate \(1/338\).'
+
+  transversal_gates:
+    - 'Logical Pauli operators and fold-transversal gates studied in Ref. \cite{arxiv:2409.18175}.'
+
+  general_gates:
+    - '\hyperref[topic:clifford]{Clifford gates} \cite{arxiv:2407.18393}.'
+
+  decoders:
+    - 'The GDG sliding-window decoder \cite{arxiv:2403.18901}, with a realization achieving a worst-case decoding latency of 3ms per window.'
+    - 'AC decoder is faster than ordinary BP-OSD with no reduction of fidelity \cite{arxiv:2406.14527}.'
+    - 'Transformer-based neural-network decoder \cite{arxiv:2504.13043}.'
+
+  fault_tolerance:
+    - 'Fault-tolerant modular quantum computing framework \cite{arxiv:2506.03094}.'
+
+
+realizations:
+  - 'An FPGA implementation of the Relay-BP decoder \cite{arxiv:2510.21600}.'
+
+
+relations:
+    parents:
+      - code_id: qcga
+    cousins:
+      - code_id: surface
+        detail: 'The gross code requires less physical and ancilla qubits (for syndrome extraction) than the surface code with the same number of logical qubits and distance. The gross code is equivalent to 8 copies of the surface code via a constant-depth Clifford circuit, and is an element of a larger family of 2D stabilizer codes \cite{arxiv:2410.11942}. An architecture combining the surface and gross codes was proposed in \cite{arxiv:2411.03202}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-28'

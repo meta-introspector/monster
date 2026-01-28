@@ -1,0 +1,29 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: msr
+physical: matrices
+logical: q-ary_digits
+
+name: 'Minimum-storage regenerating (MSR) code'
+short_name: 'MSR'
+
+description: |
+  An RGC that corresponds to an extreme point in the storage-bandwidth trade-off curve that is characterised by \(\alpha = (d-k+1)\beta\).
+
+relations:
+  parents:
+    - code_id: regenerating
+      detail: 'MSR codes are extreme points in the storage-bandwidth trade-off curve and are characterised by \(\alpha = (d-k+1)\beta\).'
+    - code_id: mds_array
+      detail: 'MSR codes are MDS array codes; e.g., see \cite{arxiv:2408.16584}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-22'

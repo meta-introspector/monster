@@ -1,0 +1,54 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: two-mode_binomial
+physical: oscillators
+logical: qudits
+
+name: 'Two-mode binomial code'
+introduced: '\cite{arxiv:quant-ph/9811011,doi:10.1103/PhysRevA.56.1114}'
+
+description: |
+  Two-mode constant-energy CLY code whose coefficients are square-roots of binomial coefficients.
+
+  The simplest two-mode \(S=1\) code is an analogue of the "0-2-4" single-mode binomial code \cite{arxiv:quant-ph/9811011}, with codewords
+  \begin{align}
+  \begin{split}
+    |\overline{0}\rangle&=\frac{1}{\sqrt{2}}\left(|40\rangle+|04\rangle\right)\\
+    |\overline{1}\rangle&=|22\rangle~.
+  \end{split}
+  \end{align}
+
+  An alternative basis for general codewords is
+  \begin{align}
+    |\overline{\mu}\rangle=\frac{1}{2^{J}}\sum_{m=0}^{2J}\left(-1\right)^{\mu m}\sqrt{{2J \choose m}}\left|2J-(S+1)m,(S+1)m\right\rangle~,
+  \end{align}
+  with spacing \(S\) and dephasing error parameter \(N\) such that \(J = \frac{1}{2}(N+1)(S+1)\) \cite{arxiv:1602.00008}.
+  The \(S=0\) version can be obtained by applying a \(50:50\) beamsplitter to the highest-weight Fock states \(|2J,0\rangle\) and \(|0,2J\rangle\) \cite{arxiv:1512.07605}; in this case, codewords are two-mode binomial coherent states \cite{doi:10.1088/0305-4470/4/3/009,doi:10.1103/PhysRevA.6.2211,arxiv:2104.10581}.
+
+
+relations:
+  parents:
+    - code_id: chuang-leung-yamamoto
+  cousins:
+    - code_id: tiger
+      detail: 'The two-mode binomial code for \(S=0\) is a tiger code with \(G = (2,-2)\) and \(H = (1,1)\) \cite{arxiv:2411.09668}. It can be generalized \cite{arxiv:2411.09668} to an \(n\)-mode code encoding a qu\(n\)it in generalized \(SU(n)\) coherent states \cite{doi:10.1088/0305-4470/26/2/018}.'
+    - code_id: binomial
+    - code_id: chi2
+      detail: 'Two-mode binomial codes \cite[Eqs. (90-91)]{arxiv:1709.05302} are closely related to three-mode \(\chi^2\) binomial codes \cite[Eqs. (61-62)]{arxiv:1709.05302}.'
+    - code_id: oscillators_concatenated
+      detail: 'Two-mode binomial codes can be concatenated with repetition codes to yield bosonic analogues of QPCs \cite{arxiv:1512.07605}.'
+    - code_id: quantum_parity
+      detail: 'Two-mode binomial codes can be concatenated with repetition codes to yield bosonic analogues of QPCs \cite{arxiv:1512.07605}.'
+    - code_id: group_representation
+      detail: 'An application of the group-representation encoding construction \cite[Lemma 1]{arxiv:2306.11621} yields a family of two-mode codes that closely resemble the two-mode binomial codes \cite{arxiv:2508.20647}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-17'

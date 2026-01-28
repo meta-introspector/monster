@@ -1,0 +1,53 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: homogeneous_space_classical
+physical: quotients
+
+name: 'Homogeneous-space code'
+
+alternative_names:
+  - 'Coset-space code'
+  - '\(G/H\) code'
+
+description: |
+  Encodes \(K\) states (codewords) into a homogeneous (a.k.a. coset) space \(G/H\), where \(G\) is a group and \(H\) is a subgroup of \(G\). The space is labeled by cosets of \(H\) in \(G\).
+  Notable groups include compact groups, locally compact Abelian groups, and finite groups. 
+
+  The two-sphere is a simple example of a homogeneous space with \(G/H = SO(3)/SO(2)\). Any point on the sphere can be obtained from any other point by a proper (i.e., \(SO(3)\)) rotation, which is equivalent to saying that \(SO(3)\) acts \textit{transitively}. One can then show that any point is invariant under the subgroup of rotations around the axis parallel to the point. This means that one can associate each point with a coset of \(SO(2)\) in \(SO(3)\).
+
+protection: |
+  The space of normalizable functions on a homogeneous space, \(L^2(G/H)\), carries a representation of \(G\), which can further be decomposed into irreducible representations (irreps) and their multiplicities. 
+  Functions on \(G/H\) that transform as an irrep of \(G\) are called \(G\)\textit{-harmonics}. 
+
+  If the decomposition of a homogeneous space into \(G\)-irreps is \textit{multiplicity free}, there are no multiplicities, and the irreps and their internal indices are sufficient to completely label a basis for the space. 
+  In this case, the pair \((G,H)\) is called a Gelfand pair.
+  For example, the integer angular momentum \(J\) and its \(z\)-axis projection \(m\) are sufficient to completely label the spherical harmonics (a.k.a. be a good set of quantum numbers), which in turn can be used to expand any function on the two-sphere \(S^2 = SO(3)/SO(2)\). 
+  Therefore, \((SO(3),SO(2))\) is a Gelfand pair.
+  
+  Functions that correspond to projections onto irreps are called \textit{zonal spherical functions} \cite{doi:10.2307/1969252}; these correspond to functions on the double coset space \(H \backslash G / H\) \cite[Eq. (2.9)]{arxiv:math/0701533} and can be obtained by averaging harmonics over \(G\). 
+  
+  The matrix algebra of zonal spherical functions is non-Abelian when there are multiplicities in the irrep decomposition since irrep projections can be tensored with arbitrary matrices on the irreps' multiplicity space and still commute with the group action, but not with each other.
+
+  For multiplicity-free spaces such as symmetric spaces, the zonal spherical functions form an Abelian algebra, and the behavior of such functions can be used to obtain bounds on code parameters such as the Levenshtein bound \cite{manual:{V. I. Levenshtein, "On choosing polynomials to obtain bounds in packing problems." Proc. Seventh All-Union Conf. on Coding Theory and Information Transmission, Part II, Moscow, Vilnius. 1978.},manual:{V. I. Levenshtein, “On bounds for packings in n-dimensional Euclidean space”, Dokl. Akad. Nauk SSSR, 245:6 (1979), 1299–1303},manual:{V. I. Levenshtein. Bounds for packings of metric spaces and some of their applications. Problemy Kibernet, 40 (1983), 43-110.}}.
+
+
+notes:
+  - 'See Refs. \cite[Ch. 9]{doi:10.1007/978-1-4757-6568-7}\cite{arxiv:0909.4767,arxiv:1007.2905} for reviews.'
+
+
+relations:
+  parents:
+    - code_id: ecc
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: AlexanderBarg
+      date: '2025-10-27'
+    - user_id: VictorVAlbert
+      date: '2025-10-27'

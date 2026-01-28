@@ -1,0 +1,42 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: vbs
+physical: spins
+
+name: 'Valence-bond-solid (VBS) code'
+short_name: 'VBS'
+introduced: '\cite{arxiv:quant-ph/0006092,arxiv:1910.00038,arxiv:2105.14777}'
+
+description: |
+  An \(n\)-qubit approximate \(q\)-dimensional spin code family whose codespace is described in terms of \(SU(q)\) valence-bond-solid (VBS) \cite{doi:10.1007/978-3-662-06390-3_18} matrix product states with various boundary conditions.
+  The codes become exact when either \(n\) or \(q\) go to infinity.
+  The original work on these codes studied the \(q=2\) case \cite{arxiv:quant-ph/0006092}.
+
+features:
+  transversal_gates:
+    - 'Two classes of (approximate) VBS codes have \(SU(q)\) transversal gates \cite[Tab. III]{arxiv:2105.14777}.'
+
+relations:
+  parents:
+    - code_id: spins_into_spins
+      detail: 'VBS codewords are eigenstates of the frustration-free VBS Hamiltonian \cite{arxiv:1910.00038,arxiv:2105.14777}.'
+    - code_id: frustration_free
+      detail: 'VBS codewords are eigenstates of the frustration-free VBS Hamiltonian \cite{arxiv:1910.00038,arxiv:2105.14777}.'
+    - code_id: approximate_qecc
+      detail: 'VBS codes approximately protect against erasures in the thermodynamic limit.'
+  cousins:
+    - code_id: covariant
+      detail: 'Two classes of (approximate) VBS codes have \(SU(q)\) transversal gates, i.e., are \(SU(q)\)-covariant \cite[Tab. III]{arxiv:2105.14777}.'
+    - code_id: spt
+      detail: 'VBS codewords \cite{arxiv:1910.00038} are associated with 1D SPT orders \cite{arxiv:1008.3745,arxiv:1010.3732,arxiv:1103.3323,arxiv:1106.4772}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-05-27'

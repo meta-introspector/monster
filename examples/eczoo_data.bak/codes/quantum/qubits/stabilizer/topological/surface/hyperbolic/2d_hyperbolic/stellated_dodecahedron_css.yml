@@ -1,0 +1,50 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stellated_dodecahedron_css
+physical: qubits
+logical: qubits
+
+name: '\([[30,8,3]]\) Bring code'
+introduced: '\cite{arxiv:1712.07666}'
+
+alternative_names:
+  - 'Small stellated dodecahedron code'
+
+description: |
+  A \([[30,8,3]]\) hyperbolic surface code on a quotient of the \(\{5,5\}\) hyperbolic tiling called Bring's curve.
+  Its qubits and stabilizer generators lie on the vertices of the small stellated dodecahedron. Admits a set of weight-five stabilizer generators.
+
+  
+features:
+  transversal_gates:
+    - '\hyperref[topic:clifford]{Clifford group} of four of the eight logical qubits can be done by transversal gates combined with qubit permutations \cite{arxiv:2202.06647}.'
+  decoders:
+    - 'Fault-tolerant parity-check schedules whose performance is similar to those of the surface-17 code, but with qubit overhead reduced by a factor 2.6 \cite{manual:{J. Q. Broshuis, "The Small Stellated Dodecahedron Code: Finding Interleaved Measurement Schedules", Bachelor''s thesis. \href{https://resolver.tudelft.nl/uuid:4e6852c1-b18d-4b6b-8cc4-dc4587bff260}{report-link} \href{https://github.com/MarcSerraPeralta/ssd-scheduler}{GitHub-link}}}.'
+
+
+relations:
+  parents:
+    - code_id: two_dimensional_hyperbolic_surface
+    - code_id: small_distance_qubit_stabilizer
+  cousins:
+    - code_id: polyhedron
+      detail: 'Bring code and related codes listed in \cite[Table 1]{arxiv:1712.07666} arrange qubits and stabilizer generators on star polyhedra.'
+    - code_id: golay
+      detail: 'The automorphism group of the parity-check matrix of the Golay code is the same as a certain automorphism group of the Bring code \cite{arxiv:2202.06647}.'
+    - code_id: dodecahedron
+      detail: 'The qubits and stabilizer generators of the \([[30,8,3]]\) Bring code lie on the vertices of the small stellated dodecahedron.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: MarcSerraPeralta
+      date: '2025-05-09'
+    - user_id: VictorVAlbert
+      date: '2025-05-09'
+    - user_id: VictorVAlbert
+      date: '2023-02-05'

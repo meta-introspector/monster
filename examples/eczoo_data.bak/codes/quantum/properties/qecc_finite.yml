@@ -1,0 +1,121 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: qecc_finite
+
+name: 'Finite-dimensional quantum error-correcting code'
+short_name: 'Finite QECC'
+
+# Following Gottesman's book
+description: 'Encodes quantum information in a \(K\)-dimensional (\textit{logical}) subspace of an \(N\)-dimensional (\textit{physical}) Hilbert space such that it is possible to recover said information from errors. The logical subspace is spanned by a basis comprised of \textit{code basis states} or \textit{codewords}.'
+
+protection: |
+  Denoting Hilbert spaces by the letter \(\mathsf{H}\), a finite-dimensional quantum code \((U,\cal{E})\) is a partial isometry \(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\) and a set of correctable errors \({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\) with the following property: there exists a quantum operation \({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\) such that for all \(E\in\cal{E}\) and states \(|\psi\rangle\in\mathsf{H}_{K}\),
+  \begin{align}
+  {\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\end{align}
+  for some constant \(c\) \cite{preset:GottesmanBook}. A code is said to \textit{protect against} or \textit{correct} the errors \(\mathcal{E}\).
+  
+  \subsection{Knill-Laflamme error-correction conditions}
+
+  Equivalently, correction capability is determined by of the quantum
+  error-correction conditions, which may admit infinite
+  terms due to non-normalizability of ideal code states. A code that satisfies
+  these conditions approximately, i.e., up to some small quantifiable error, is
+  called an \hyperref[code:approximate_qecc]{approximate code}.
+
+  \begin{defterm}{Knill-Laflamme conditions}
+  The Knill-Laflamme error-correction conditions \cite{doi:10.1103/PhysRevA.55.900,arxiv:quant-ph/9604024,preset:PreskillNotes}\cite[Thm. 10.1]{doi:10.1017/CBO9780511976667} are necessary and sufficient conditions for a code to successfully
+  correct a set of errors in a finite-dimensional Hilbert space.
+  A code (defined by a partial isometry \(U\)) with code space projector \(\Pi = U U^\dagger\)
+  can correct a set of errors \(\{ E_j \}\) if and only if
+  \begin{align}
+    \Pi E_i^\dagger E_j \Pi = c_{ij}\, \Pi\qquad\text{for all \(i,j\),}
+  \end{align}
+  where the \textit{QEC matrix} elements \(c_{ij}\) are arbitrary complex numbers.  
+  The term \(\Pi E_i^\dagger E_j \Pi\) can be split into two types of conditions, the \textit{diagonal} (a.k.a. non-deformation or invariance) conditions \(\langle \psi| E_i^\dagger E_j | \psi\rangle\) for a codeword \(|\psi\rangle\), and the \textit{off-diagonal} (a.k.a. orthogonality or distinguishability) conditions \(\langle \psi| E_i^\dagger E_j | \phi\rangle\) for two orthogonal codewords \(|\psi\rangle\) and \(|\phi\rangle\).
+  \end{defterm}
+
+  For codewords whose basis states are chosen far enough apart (in some notion of distance) so that the off-diagonal conditions are automatically zero, the remaining diagonal conditions correspond to a system of non-linear constraints on the basis-expansion coefficients of the codewords.
+  In this setting, there exist finite QECCs with \(K = \lceil N/D\rceil/(D+1)\) that protect against an error set with \(D\) basis elements \cite[Thm. 4]{arxiv:quant-ph/9908066}, a consequence of the \textit{Tverberg theorem} \cite{doi:10.1112/jlms/s1-41.1.123,doi:10.1007/978-1-4613-0039-7,arxiv:1712.06119}. For \(K = 2\) this theorem reduces to Radon's theorem \cite{doi:10.1007/BF01464231,doi:10.1007/978-1-4613-0039-7}.
+
+  The Knill-Laflamme conditions can alternatively be expressed in terms of the \hyperref[topic:complementary-channel]{complementary channel}, in an entropic information-theoretic way via a data processing inequality \cite{arxiv:quant-ph/9604022,arxiv:quant-ph/9604034,arxiv:quant-ph/9702031,arxiv:quant-ph/9707023,arxiv:quant-ph/0304007}, or can be interpreted thermodynamically \cite{arxiv:quant-ph/0202054}.
+  They motivate higher-rank numerical ranges, which are generalizations of the numerical range of an operator \cite{arxiv:quant-ph/0511101,arxiv:math/0511278,arxiv:1407.1350}.
+  They have been extended to sequences of multiple errors and rounds of correction \cite{arxiv:2405.17567}.
+
+  \begin{defterm}{Degeneracy}
+  \label{topic:degeneracy}
+  A code is degenerate with respect to a noise model if different errors map code states to the same error subspace.
+  For a linearly independent error set \(\cal{E}\), degeneracy is equivalent to \(\text{rank}(c_{ij}) < |\cal{E}|\) \cite{preset:GottesmanBook}.
+  \end{defterm}
+
+  \subsection{Correctability of quantum channels}
+
+  From now on, we use \(\mathcal{E}\) to denote a noise channel constructed out of the set of errors \(E\) and let \(\mathcal{U}(\cdot)=U(\cdot)U^\dagger\) be the superoperator corresponding to the partial encdoing isometry \(U\).
+  A noise channel is correctable if there exists a recovery channel \(\mathcal{D}\) such that
+  \begin{align}
+    \mathcal{D}\mathcal{E}\mathcal{U}(\rho)=\rho
+  \end{align}
+  for all logical states \(\rho\).
+
+  The above is equivalent to the fidelity between \(\rho\) and \(\mathcal{D}\mathcal{E}\mathcal{U}(\rho)\) being one for any notion of distance between quantum states.
+  In particular, we can consider a scenario where we send only one part of an entangled state through a channel and determine whether the entanglement has been preserved during transmission.
+  Using the notion of entanglement fidelity, a quantum channel \(\mathcal{E}\) is exactly correctable iff there exists a quantum channel \(\mathcal{D}\) such that
+  \begin{align}
+    (\mathcal{D}\mathcal{E}\mathcal{U}\otimes\mathrm{id})(\ket{\psi}\bra{\psi})=\ket{\psi}\bra{\psi}
+  \end{align}
+  for all states \(\rho\) and their corresponding purifications \(\ket{\psi}\) (i.e., states \(\ket{\psi}\) such that \(\text{Tr}_{2}(|\psi\rangle\langle\psi|)=\rho\)).
+
+  The above entanglement fidelity condition can be alternatively expressed using complementary channels.
+
+  \begin{defterm}{Complementary channel}
+  \label{topic:complementary-channel}
+  A complementary channel \(\mathcal{E}^C\) is obtained from a channel \(\mathcal{E}\) that acts on a system by interpreting the channel as coming from a unitary operation acting on a larger system-environment tensor-product space (i.e., performing an isometric extension) with the environment necessarily in a pure state, and then tracing out the system factor (instead of the second environmental factor) \cite[Sec. 5.2.2]{doi:10.1017/CBO9781139525343}.
+  A noise channel \({\cal E}(\cdot)=\sum_{j}E_{j}(\cdot)E_{j}^{\dagger}\) admits a complementary channel of the form
+  \begin{align}
+    {\cal E}^{C}(\cdot)=\sum_{j,k}\text{Tr}\{E_{j}(\cdot)E_{k}^{\dagger}\}|j\rangle\langle k|~.
+  \end{align}
+  \end{defterm}
+
+  A channel \(\mathcal{E}\) is correctable if  \(\mathcal{E}^C(\rho)=\rho_0\mathrm{Tr}(\rho)\) for some constant state \(\rho_0\), which is equivalent to the \term{Knill-Laflamme conditions} \cite{arxiv:0811.1621,arxiv:0907.5391}.
+  The logical and physical dimensions are related to the channel rank for non-degenerate codes via the quantum packing bound \cite{arxiv:1007.3655}. 
+
+features:
+  decoders:
+    - 'The operation \(\cal{D}\) in the definition of this code is called the decoder. However, the term \textit{decoder} can sometimes be used for the unencoder \(\cal{U}\) (i.e., the inverse of the encoder), which does not correct errors.'
+    - 'There are several recovery maps which work for noise that is not exactly correctable; see \hyperref[code:approximate_qecc]{AQECC} entry.'
+    - 'QECCs are useful \cite{arxiv:1507.07072} for the mean king''s measurement problem \cite{doi:10.1103/PhysRevLett.58.1385}.'
+    - 'Protection can be implemented via \textit{autonomous QEC} (a.k.a. continuous QEC or continuous-time QEC) \cite{doi:10.1098/rspa.1998.0165,arxiv:quant-ph/9912104,arxiv:quant-ph/0110111,arxiv:quant-ph/0501038,arxiv:quant-ph/0511221} via, e.g., reservoir engineering \cite{doi:10.1103/PhysRevLett.77.4728}; see review \cite{arxiv:1311.2485}. There are analogues of the \term{Knill-Laflamme conditions} for autonomous QEC \cite{arxiv:1711.02999,arxiv:2103.05007}, and it has been adapted to non-Markovian noise \cite{arxiv:0705.2342}. Information-theoretic bounds have been derived for open-loop control \cite{arxiv:quant-ph/0409187}. Machine learning can be used to optimize autonomous QEC encoding and recovery \cite{arxiv:2506.21707}.'
+
+  code_capacity_threshold:
+    - 'Coherent information of the state under the action of a noise channel can be used to estimate the optimal threshold \cite{arxiv:2312.06664}.'
+
+
+relations:
+  parents:
+    - code_id: qecc
+  cousins:
+    - code_id: ecc_finite
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-07-24'
+    - user_id: M10T
+      date: '2023-07-17'
+    - user_id: M10T
+      date: '2023-07-07'
+    - user_id: M10T
+      date: '2023-07-03'
+    - user_id: M10T
+      date: '2023-06-28'
+    - user_id: VictorVAlbert
+      date: '2022-07-15'
+    - user_id: VictorVAlbert
+      date: '2022-03-18'
+    - user_id: VictorVAlbert
+      date: '2021-12-09'

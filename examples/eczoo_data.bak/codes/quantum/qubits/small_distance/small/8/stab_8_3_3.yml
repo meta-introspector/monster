@@ -1,0 +1,45 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stab_8_3_3
+physical: qubits
+logical: qubits
+
+name: '\([[8, 3, 3]]\) Eight-qubit Gottesman code'
+short_name: '\([[8, 3, 3]]\)'
+introduced: '\cite{arxiv:quant-ph/9604038,arxiv:quant-ph/9605005,arxiv:quant-ph/9605021,arxiv:quant-ph/9607030}'
+
+description: |
+   Eight-qubit \hyperref[topic:degeneracy]{non-degenerate} code that can be obtained from a modified CSS construction using the \([8,4,4]\) extended Hamming code and a \([8,7,2]\) even-weight code \cite{arxiv:quant-ph/9605021}.
+   The modification introduces signs between the codewords.
+
+   See \cite[Table 3.3]{arxiv:quant-ph/9705052} for its stabilizer generator matrix.
+   The code's automorphism group is \(\text{A}\Gamma\text{L}(1,8)\) \cite{arxiv:2109.12735}.
+   It is unique for its parameters, up to equivalence \cite{arxiv:0709.1780}\cite[pg. 386]{doi:10.1007/3-540-30731-1}.
+
+features:
+  transversal_gates:
+    - 'Permutation-based gates \cite[Sec. IV.D]{arxiv:1302.1035}.'
+    - 'No gates outside of the \hyperref[topic:pauli]{Pauli group} were found in Ref. \cite{arxiv:1912.10063}.'
+  general_gates:
+    - 'Logical Trotter circuits can be implemented via symplectic transvections \cite{arxiv:2504.11444}.'
+
+
+relations:
+  parents:
+    - code_id: quantum_hamming
+  cousins:
+    - code_id: hamming844
+      detail: 'The \([[8, 3, 3]]\) code is obtained via a modified CSS construction from the \([8,4,4]\) extended Hamming code.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: FerozAhmedMian
+      date: '2024-03-14'
+    - user_id: VictorVAlbert
+      date: '2023-11-28'

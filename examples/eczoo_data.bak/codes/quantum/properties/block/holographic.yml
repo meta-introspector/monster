@@ -1,0 +1,37 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: holographic
+
+name: 'Holographic code'
+short_name: 'HQECC'
+introduced: '\cite{arxiv:1503.06237}'
+
+description: |
+  Block quantum code whose features serve to model aspects of the AdS/CFT holographic duality and, more generally, quantum gravity.
+
+notes:
+  - 'Reviews of holographic codes \cite{arxiv:2102.02619,arxiv:2110.14669}.'
+
+
+# SYK codes do not seem to be related to Lego, so parent is block quantum
+relations:
+  parents:
+    - code_id: qecc
+  cousins:
+    - code_id: approximate_qecc
+      detail: 'Universal subspace approximate error correction is used to model black holes \cite{arxiv:1807.06041}.'
+    - code_id: approximate_oaecc
+      detail: 'Properties of holographic codes are often quantified in the Heisenberg picture, i.e., in terms of operator algebras \cite{arxiv:1411.7041,arxiv:1612.00017,arxiv:2012.14001,arxiv:2203.01379}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-08'
+    - user_id: JoelRajakumar
+      date: '2021-12-20'

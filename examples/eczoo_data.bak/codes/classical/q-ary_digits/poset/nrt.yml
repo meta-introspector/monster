@@ -1,0 +1,33 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: nrt
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: 'Niederreiter-Rosenbloom-Tsfasman (NRT) code'
+short_name: 'NRT code'
+introduced: '\cite{doi:10.1007/BF01294651,doi:10.1016/0012-365X(91)90315-S,doi:10.1016/0012-365X(92)90566-X,manual:{M. Yu. Rosenbloom, M. A. Tsfasman, “Codes for the m-Metric”, Probl. Peredachi Inf., 33:1 (1997), 55–63; Problems Inform. Transmission, 33:1 (1997), 45–52}}'
+
+description: |
+  A poset code based on a partial ordering of \([n]\), i.e., \(1\leq 2\leq \cdots \leq n\).
+
+protection: |
+  LP bounds are provided in Refs. \cite{arXiv:cs/0702033,doi:10.1007/s10623-006-9025-6}.
+
+relations:
+  parents:
+    - code_id: poset
+  cousins:
+    - code_id: orthogonal_array
+      detail: 'There exist orthogonal arrays in ordered Hamming space \cite{doi:10.4153/CJM-1999-017-5,arxiv:cs/0702033}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-09-11'

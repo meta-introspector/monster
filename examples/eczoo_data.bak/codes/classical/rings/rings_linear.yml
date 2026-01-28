@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: rings_linear
+physical: rings
+logical: rings
+
+name: '\(R\)-linear code'
+#introduced: ''
+
+description: |
+  A code of length \(n\) over a ring \(R\) is \(R\)-linear if it is a submodule of \(R^n\).
+  Axiomatically, one can define such a code by assuming the message set is a module over the alphabet and that encoding functions a module-homomorphisms \cite{doi:10.1016/S0019-9958(63)80010-8}.
+
+  There is a standard form for codes over finite chain rings with maximal ideals \cite[Thm. 2.12]{doi:10.1007/978-3-319-59806-2}.  
+# Split defn over F_q and Z_q?
+
+notes:
+  - 'See Ref. \cite{manual:{Sole, P. ed., 2009. Codes over rings (Vol. 6). World Scientific.}} for an introduction.'
+  - 'See book \cite{doi:10.1007/978-3-319-59806-2} for an introduction.'
+
+relations:
+  parents:
+    - code_id: rings_into_rings
+    - code_id: group_linear
+      detail: '\(R\)-linear codes are linear over \(G=R\) since rings and submodules are Abelian groups under addition.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-04'

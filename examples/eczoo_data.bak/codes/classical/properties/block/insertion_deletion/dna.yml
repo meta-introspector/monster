@@ -1,0 +1,38 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: dna
+
+name: 'DNA storage code'
+introduced: '\cite{arxiv:1410.8837}'
+
+description: |
+  Code that was designed (or that can be applied) to encode information into the four-base-pair alphabet of a DNA molecule.
+
+  There exist several proposals tailored specifically for DNA storage \cite{arxiv:1410.8837,arxiv:1505.02199,doi:10.1038/s41598-017-05188-1,doi:10.1073/pnas.2004821117,doi:10.1109/TIT.2021.3066430}.
+
+  
+protection: |
+  Noise affecting DNA molecules can include insertions and deletions \cite{arxiv:1803.03322}. The DNA data storage channel has been characterized \cite{arxiv:1410.8837,arxiv:1502.00517,arxiv:1803.03322}.
+
+notes:
+  - 'Review of DNA-based coding \cite{arxiv:1507.01611}.'
+  - 'Communicating with DNA may be simplified to a graph-based communication model \cite{manual:{Terlep, T. Arthur. A Mathematical Theory of Communication with Graphs and Symbols. Diss. Purdue University, 2024.}}.'
+
+
+relations:
+  parents:
+    - code_id: insertion_deletion
+      detail: 'DNA codes can typically handle base-pair insertions and deletions.'
+  cousins:
+    - code_id: ldpc
+      detail: 'LDPC codes are potentially relevant for DNA storage \cite{doi:10.1109/ACCESS.2020.3021700}.'
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-22'

@@ -1,0 +1,56 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: knill
+
+name: 'Knill code'
+introduced: '\cite{arxiv:quant-ph/9608049}'
+
+alternative_names:
+  - 'Clifford code'
+
+description: |
+  A group representation code whose projection is onto an irrep of a normal subgroup of the group \(G\) formed by a nice error basis.
+  More general definitions dropping the normality requirement also exist \cite{arxiv:2509.20545}.
+  Knill codes yield stabilizer-like codes based on error bases that are non-Pauli but that nevertheless maintain many of the useful features of Pauli-type bases.
+
+  \begin{defterm}{Nice error basis}
+  \label{topic:nice-error-basis}
+    A nice error basis \cite{arxiv:quant-ph/9608048,arxiv:quant-ph/9608049,arxiv:quant-ph/0010082} for an \(q\)-dimensional vector space is a set \(\{E_g~,~g\in G\}\) of unitary operators, where \(G\) is a (not necessarily Abelian) group of order \(q^2\) that is represented projectively. Namely,
+    \begin{align}
+      \text{tr}(E_{g})&=q\delta^{G}_{g,1}\\
+      E_{g}E_{h}&=\omega_{g,h}E_{gh}
+    \end{align}
+  for all group elements \(g,h\).
+  Above, \(\delta^{G}_{g,1}\) is the \hyperref[topic:group-pauli]{group Kronecker-delta function}.
+  This definition can naturally be extended to continuous groups.
+  \end{defterm}
+
+  The first example of an error basis based on a non-Abelian error group is due to S. Egner and consists of products of \(S\), Pauli, and Hadamard gates \cite{arxiv:quant-ph/9608049}.
+  An example of a small non-stabilizer Knill code is presented in \cite[Sec. 10.9]{doi:10.1201/9781420035377-11}. 
+  Certain nice error bases have been classified and are related to the braid group \cite{arxiv:0902.0383}.
+
+notes:
+  - 'Catalogue of \hyperref[topic:nice-error-basis]{nice error bases}, managed by A. Klappenecker and M. Rotteler, is available on \href{https://people.engr.tamu.edu/andreas-klappenecker/ueb/ueb.html}{this website}.'
+  - 'Many Knill codes are qubit stabilizer codes \cite{arxiv:quant-ph/0010076}.
+  A table of non-stabilizer Knill codes is available in Ref. \cite{manual:{Klappenecker, Andreas, and Martin Rötteler. "On the structure of nonstabilizer Clifford codes." Quantum Information & Computation 4.2 (2004): 152-160.}}.
+  An infinite family is constructed in Ref. \cite{arxiv:quant-ph/0402060}.'
+
+
+relations:
+  parents:
+    - code_id: group_representation
+      detail: 'Knill codes project onto a single irrep of the normalizer of a normal subgroup of the group formed by a \hyperref[topic:nice-error-basis]{nice error basis} \cite[Lemma 3.1]{arxiv:quant-ph/9608049}.'
+  cousins:
+    - code_id: oecc
+      detail: 'Subsystem Knill codes can be formulated \cite{arxiv:quant-ph/0604161}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-04-04'

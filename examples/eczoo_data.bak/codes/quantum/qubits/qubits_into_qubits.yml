@@ -1,0 +1,207 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: qubits_into_qubits
+physical: qubits
+logical: qubits
+
+name: 'Qubit code'
+#introduced: ''
+
+alternative_names:
+  - 'Qubit subspace code'
+
+description: |
+  Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (i.e., \(n\)-qubit) Hilbert space.
+  Usually denoted as \(((n,K))\) or \(((n,K,d))\), where \(d\) is the code's distance.
+
+  The qubit codes are \textit{equivalent} if the codespace of one code can be mapped into that of the other under a tensor product of single-qubit unitary operations and a qubit permutation.
+
+protection: |
+  An \(((n,K,d))\) code with distance \(d\) detects errors acting on up to \(d-1\) qubits, corrects erasure errors on up to \(d-1\) qubits, or corrects errors acting on up to \(\lfloor (d-1)/2 \rfloor\) qubits.
+  Combinations of errors and erasures can also be corrected \cite{arxiv:2511.01080}.
+  The number of correctable errors is often called the \textit{decoding radius}, and it is upper bounded by half of the code distance.
+  As a result, qubit codes cannot tolerate adversarial errors on more than \((1-R)/4\) registers, where \(R = \log_2 K/n\) is the code rate.
+
+  \subsection{Pauli-string error basis}
+  \label{topic:pauli}
+
+  A convenient and often considered error set is the \textit{Pauli error} or \textit{Pauli string} basis.
+
+  \begin{defterm}{Pauli strings}
+  For a single qubit, this set consists of products of powers of the Pauli matrices
+  \begin{align}
+    X=\begin{pmatrix}0 & 1\\
+    1 & 0
+    \end{pmatrix}\,\,\text{ and }\,\,Z=\begin{pmatrix}1 & 0\\
+    0 & -1
+    \end{pmatrix}~.
+  \end{align}
+  For multiple qubits, error set elements are tensor products of elements of the single-qubit error set.
+  Tensor products of \(X\) (\(Z\)) Paulis acting on different qubits are called \(X\)\textit{-type} (\(Z\)\textit{-type}) Pauli strings.
+  Combining the \(X\)-type and \(Z\)-type strings with \(i\) forms a group called the \textit{Pauli group} on \(n\) qubits, while combining them with \(-1\) forms the \textit{real Pauli group}.
+  \end{defterm}
+
+  The Pauli error set is a unitary and Hermitian basis for linear operators on the multi-qubit Hilbert space that is orthonormal under the Hilbert-Schmidt inner product; it is a prototypical \hyperref[topic:nice-error-basis]{nice error basis}.
+  The distance associated with this set is often the minimum weight of a Pauli string that implements a nontrivial logical operation in the code.
+
+  \subsection{Noise channels}
+
+  A quantum channel that admits a set of Pauli strings as its Kraus operators is called a \textit{Pauli channel}, and such channels are typically more tractable than the more general, non-Pauli channels.
+  Relevant Pauli channels include dephasing noise and depolarizing noise (a.k.a. Werner-Holevo channel \cite{arxiv:quant-ph/0203003}).
+  One can extract a binary memoryless symmetric channel from a Pauli channel that is a classical counterpart to the Pauli channel \cite{arxiv:1904.04713}.
+
+  Relevant non-Pauli channels are \hyperref[topic:ad]{AD} noise, erasure (which maps all qubit states into a third state \(|e\rangle\) outside of the qubit Hilbert space), and biased erasure \cite{arxiv:2302.03063} (in which case only the \(|1\rangle\) qubit state is mapped to \(|e\rangle\)).
+  Noise can be correlated in space or in time, with the latter being an example of a non-Markovian phenomenon \cite{arxiv:quant-ph/0505153,arxiv:2012.01894}.
+
+  \subsection{Quantum weight enumerators and pure distance}
+  \label{topic:quantum-weight-enumerator}
+
+  \begin{defterm}{Quantum weight enumerator}
+  Determining protection and bounds on code parameters can also be done using the code's Shor-Laflamme \textit{quantum weight enumerator} \cite{arxiv:quant-ph/9610040} (cf. \hyperref[topic:weight-enumerator]{weight enumerators})
+    \begin{align}
+    \begin{split}
+      A(x)&=\sum_{j=0}^{n}A_{j}x^{j}\\
+      A_{j}&=\frac{1}{K^{2}}\sum_{\text{wt-}j\text{ Paulis }P}\left|\text{tr}(P\Pi)\right|^{2}~,
+    \end{split}
+    \end{align}
+  where \(\Pi\) is the code projection, and where the sum is over the Pauli group modulo the subgroup of phases (hence, the dagger below is necessary in case the coset representative is not Hermitian).
+
+  The dual quantum weight enumerator is
+    \begin{align}
+    \begin{split}
+      B(x)&=\sum_{j=0}^{n}B_{j}x^{j}\\
+      B_{j}&=\frac{1}{K}\sum_{\text{wt-}j\text{ Paulis }P}\text{tr}(P\Pi P^{\dagger}\Pi)~,
+    \end{split}
+    \end{align}
+  and the two satisfy the \textit{quantum MacWilliams identity} \cite{arxiv:quant-ph/9610040}; see \cite[Ch. 7]{preset:GottesmanBook}.
+  This identity gives rise to quantum linear programming (LP) bounds \cite{arxiv:quant-ph/9611001,arxiv:quant-ph/9709049}; see the book \cite{preset:GottesmanBook}.
+  Weight enumerators give rise to an analogue of Poisson summation for qubit and, more generally, modular-qudit stabilizer codes \cite{arxiv:2405.19643}.
+  \end{defterm}
+
+  \begin{defterm}{Pure distance}
+  The distance \(d\) of a qubit code is the smallest integer \(0<j=d\) at which the \hyperref[topic:quantum-weight-enumerator]{quantum weight enumerator} is not equal to its dual, \(A_j \neq B_j\) \cite{arxiv:quant-ph/9906126}.
+  A code is called \textit{pure} if \(A_j = 0\) for all \(0 < j < d\); otherwise, the code is called \textit{impure}.
+  The \textit{pure distance} \cite{arxiv:1409.2559,arxiv:2107.14252} (a.k.a. diagonal distance \cite{arxiv:0712.1979,arxiv:2107.11286}) \(d_{\textnormal{pure}}\) is the smallest integer \(1 < j=d_{\textnormal{pure}}\) at which \(A_j > 0\).
+  Codes for which \(d_{\textnormal{pure}} < d\) are impure, otherwise they are pure.
+  For impure codes, there exists a Pauli error of weight less than the \(d\) that has a nonzero expectation value with respect to a code state.
+
+  Degenerate qubit codes are impure, but impure codes may not be degenerate \cite{arxiv:quant-ph/9608006,preset:GottesmanBook}.
+  There are subtleties with defining \hyperref[topic:degeneracy]{degeneracy} for non-stabilizer qubit codes with even distance \cite{preset:GottesmanBook}.
+  \end{defterm}
+
+  Other types of quantum weight enumerators are the Rains unitary enumerators \cite{arxiv:quant-ph/9612015} and the \textit{Rains shadow enumerators} \cite{arxiv:quant-ph/9611001} (see also \cite{arxiv:quant-ph/0406063}), and \textit{signed weight enumerators} taking into account the sign of the expectation value of a Pauli string \cite{arxiv:1702.06990}. 
+  Rains shadow enumerators are related to Bell sampling \cite{arxiv:2408.16914}.
+  These notions can be generalized to qudit codes and other error bases \cite{arxiv:0810.2574,doi:10.1016/j.aam.2020.102085,arxiv:2211.02756,arxiv:2308.05152}.
+  There are techniques to compute them for general codes \cite{arxiv:2308.05152}.
+  Semidefinite programming (SDP) hierarchies and a quantum Delsarte bound have been developed \cite{arxiv:2408.10323}.
+
+# The minimum weight of a Pauli error with nonzero diagonal entries that has a nonzero expectation value for some code basis state is called the \textit{diagonal distance} \cite{arxiv:0712.1979,arxiv:2107.11286} (see also pure distance \cite{arxiv:2107.14252}).
+# Codes whose distance is greater than the diagonal distance are \hyperref[topic:degeneracy]{degenerate}.
+# \hyperref[topic:degeneracy]{Degenerate} codes admit undetectable Pauli errors (i.e., errors whose projection into the codespace is nonzero) of weight less than the code distance (i.e., the projection satisfies the \term{Knill-Laflamme conditions}).
+
+
+features:
+  rate: 'Exact two-way assisted capacities have been obtained for the erasure and dephasing channels \cite{arxiv:1510.08863}. There are many bounds on the quantum capacity of the depolarizing channel (e.g., \cite{arxiv:quant-ph/0607039}); see review \cite{arxiv:1801.02019}. The optimal asymptotic error exponent of entanglement distillation is given by the reverse relative entropy of entanglement, a single-letter quantity \cite{arxiv:2408.07067}.'
+  transversal_gates:
+    - 'A qubit code is \(U\)-\textit{quasi-transversal} if it can realize the logical gate \(U\) in the third level of the \term{Clifford hierarchy} using the physical gate \(C T^{\otimes n}\), where \(C\) is some Clifford gate \cite[Def. 4]{arxiv:1606.01904}.'
+  general_gates:
+    - 'Computing using \hyperref[topic:clifford]{Clifford gates} only can be efficiently simulated on a classical computer, according to the \textit{Gottesman-Knill theorem} \cite{arxiv:quant-ph/9807006,manual:{E. Knill, private communication, ca. 1998.}}.
+    There is a canonical form for \hyperref[topic:clifford]{Clifford circuits} \cite{arxiv:2003.09412,arxiv:2408.15202} and many algorithms for simulating them \cite{arxiv:quant-ph/0406196,arxiv:1712.03554,arxiv:2301.02356,arxiv:2502.07150}.
+    Universal quantum computing can be achieved using \hyperref[topic:clifford]{Clifford gates} and a single type of \hyperref[topic:clifford]{non-Clifford} gate, such as the \(T\) gate \cite{arxiv:quant-ph/9503016}.
+    More generally, the \textit{Solovay-Kitaev} theorem \cite{doi:10.1070/rm1997v052n06abeh002155,doi:10.1090/gsm/047} states that any subset of gates the generates a dense subgroup of the full \(n\)-qubit gate group can be used to construct any gate to arbitrary accuracy (see \cite{arxiv:quant-ph/0505030}\cite[Appx. 3]{doi:10.1017/cbo9780511976667.019}). The task of approximating a desired gate by \hyperref[topic:clifford]{Clifford gates} and a fixed set of \hyperref[topic:clifford]{non-Clifford} gates is called \textit{gate compilation} or \textit{circuit synthesis}.'
+    - 'Non-Clifford gates are typically more difficult to implement than \hyperref[topic:clifford]{Clifford gates} and so are treated as a resource. Gate errors in circuit synthesis can sometimes add up destructively \cite{arxiv:1612.01011}. There is a threshold against depolarizing noise for any single-qubit gate that determines if the gate enables universal quantum computation \cite{arxiv:0907.3189,arxiv:1011.2497}.'
+    - 'The most studied set of universal gates is generated by the Clifford+\(T\) gate set. Exactly optimizing \(T\)-gate count in circuit synthesis is \(NP\)-hard \cite{arxiv:2310.05958,arxiv:2503.06045}. Gate compilation can be done using various heuristic procedures \cite{arxiv:1303.2042,arxiv:1308.4134,arxiv:1601.07363,arxiv:1601.07601,arxiv:1710.07345,arxiv:1712.01557,arxiv:1808.00128,arxiv:2101.12223,arxiv:2110.10292,arxiv:2506.15147}, e.g., \textit{ZX calculus} (a.k.a. Penrose spin calculus) \cite{arxiv:1903.10477,arxiv:1911.09039,arxiv:2004.05164,arxiv:2109.01076}, reinforcement learning \cite{arxiv:2105.15048,arxiv:2103.07585,arxiv:2212.04508,arxiv:2402.14396,arxiv:2404.14865,arxiv:2511.09951}, genetic algorithms \cite{arxiv:2504.09391}, or Hermitian lattices \cite{arxiv:2405.19302}.
+    There is an optimal asymptotic scaling of the number of T gates needed to prepare an arbitrary state \cite{arxiv:1812.00954,arxiv:2411.04790}.'
+    - 'Other gate sets for generating universal gates are Clifford + \(\sqrt{T}\) \cite{arxiv:2203.10064}, Toffoli and Hadamard \cite{arxiv:quant-ph/0205115,arxiv:1212.5069}, cosine-sine \cite{arxiv:quant-ph/0404089}, and icosahedral super-golden gates \cite{manual:{Sarnak, P. (2015, February). Letter to Scott Aaronson and Andy Pollington on the Solovay-Kitaev Theorem and Golden Gates.},arxiv:1704.02106,arxiv:2205.03007,arxiv:2509.09047}. The \(n\)-qubit Toffoli gates can be exactly realized using at least \(nT\) gates \cite{arxiv:1904.01124}, but this can be relaxed at the expense of some errors \cite{arxiv:2510.07223}.'
+    - '\begin{defterm}{Clifford hierarchy}
+      \label{topic:clifford-hierarchy}
+      The Clifford hierarchy \cite{arxiv:quant-ph/9908010,arxiv:1608.06596,arxiv:1902.04022,arxiv:2212.05398,arxiv:2410.11818} is a tower of gate sets which includes Pauli and \hyperref[topic:clifford]{Clifford gates} at its first two levels, and \hyperref[topic:clifford]{non-Clifford} gates at higher levels.
+      The \(k\)th level is defined recursively by
+      \begin{align}
+        C_k = \{ U | U P U^{\dagger} \in C_{k-1} \}~,
+      \end{align}
+      where \(P\) is any Pauli matrix, where \(C_1\) is the \hyperref[topic:pauli]{Pauli group}, and where \(C_2\) is the \hyperref[topic:clifford]{Clifford group}.
+      Gates for one qubit have been classified \cite{arxiv:2501.07939}.
+      \end{defterm}'
+    - 'Arbitrary \(n\)-qubit circuits can be implemented fault-tolerantly in a 3D architecture using \(O(n^{3/2}\log^3 n)\) qubits, and in a 2D architecture using only \(O(n^2 \log^3 n)\) qubits \cite{arxiv:2402.13863}.'
+    - 'Fault-tolerant gates can be done for any code supporting a transversal implementation of Pauli gates using generalized gate teleportation \cite{arxiv:2409.11616}.'
+  decoders:
+    - 'Syndrome measurements are assumed to be perfect in the \textit{code-capacity model}. Incorporating faulty syndrome measurements can be done using the \textit{phenomenological noise model}, which simulates errors during syndrome extraction by flipping some of the bits of the measured syndrome bitstring. In the more involved \textit{circuit-level noise model}, every component of the syndrome extraction circuit can be faulty.'
+    - 'The decoder determining the most likely error given a noise channel is called the \textit{maximum probability error} (MPE) decoder. For few-qubit codes (\(n\) is small), MPE decoding can be based by creating a lookup table. For infinite code families, the size of such a table scales exponentially with \(n\), so approximate decoding algorithms scaling polynomially with \(n\) have to be used.'
+    - '\begin{defterm}{Effective distance and hook errors}
+      \label{topic:effective-distance}
+      Decoders are characterized by an effective distance (a.k.a. \textit{circuit-level distance}), the minimum number of faulty operations during syndrome measurement that is required to make an undetectable error. A code is \textit{distance-preserving} if it admits a decoder whose circuit-level distance is equal to the code distance. A particularly dangerous class of syndrome measurement circuit faults are \textit{hook errors}, which are ancilla faults that cause more than one data-qubit error \cite{arxiv:quant-ph/0110143}. Hook errors occur at specific places in a syndrome extraction circuit and can sometimes be removed by re-ordering the gates of the circuit. If not, the use of \textit{flag qubits} (see \cite{preset:GottesmanBook}) to detect hook errors may be necessary to yield fault-tolerant decoders. 
+      \end{defterm}'
+  fault_tolerance:
+    - 'There are lower bounds on the overhead of fault-tolerant QEC in terms of the capacity of the noise channel \cite{arxiv:2202.00119}. A more stringent bound applies to geometrically local QEC due to the fact that locality constrains the growth of the entanglement that is needed for protection \cite{arxiv:2302.04317}.'
+    - 'Arbitrary \(n\)-qubit circuits can be implemented fault-tolerantly in a 3D architecture using \(O(n^{3/2}\log^3 n)\) qubits, and in a 2D architecture using only \(O(n^2 \log^3 n)\) qubits \cite{arxiv:2402.13863}.'
+    - 'Fault-tolerant gates can be done for any code supporting a transversal implementation of Pauli gates using generalized gate teleportation \cite{arxiv:2409.11616}.'
+  threshold:
+    - |
+        \begin{defterm}{Computational threshold}
+        \label{topic:computational-threshold}
+        A fault-tolerant computational threshold is the maximum noise rate in a particular single-parameter noise model below which any logical computation of size \(M\) can be executed on a physical-qubit architecture to arbitrary accuracy and with an overhead of \hyperref[topic:asymptotics]{order} \(O(M\text{polylog}M)\).
+        The first methods to achieve a computational threshold use recursively concatenated stabilizer code families \cite{arxiv:quant-ph/9702058,arxiv:quant-ph/9705031,arxiv:quant-ph/9903099,arxiv:quant-ph/9906129,arxiv:quant-ph/0410047,arxiv:quant-ph/0504218,arxiv:quant-ph/0703230,arxiv:quant-ph/0604090}; such a threshold is called a \textit{concatenated threshold}.
+        Initially proven under local stochastic noise, the concatenated threshold theorem also holds for various types of non-Markovian noise \cite{arxiv:quant-ph/0402104,arxiv:quant-ph/0504218,arxiv:quant-ph/0703230,arxiv:quant-ph/0510231} and leakage errors \cite{arxiv:quant-ph/0511065}.
+        This theorem can be rephrased in terms of Bernoulli site percolation \cite{arxiv:quant-ph/0307166}.
+        The resulting concatenated code is highly \hyperref[topic:degeneracy]{degenerate}, with all but an exponentially small fraction of generators having small weights. 
+        Circuit and measurement designs have to take care of the few stabilizer generators with large weights in order to be fault tolerant, but measurement duration may not pose a threat to scalability \cite{arxiv:quant-ph/0607047}.
+        Concatenated methods require constant-space and polylogarithmic-time overhead, but concatenations using quantum Hamming codes improve this to quasi-polylogarithmic time \cite{arxiv:2207.08826,arxiv:2402.09606}, and concatenations of the Steane code and certain QLDPC codes further improve this to polylogarithmic time \cite{arxiv:2411.03683}.
+        Subsequently, thresholds were determined for infinite families of lattice stabilizer codes, starting with the toric code \cite{arxiv:quant-ph/0110143}; such a threshold is colloquially called a \textit{topological threshold}.
+        Fault-tolerant computations with no notion of locality can be made local on a 2D or 3D geometry with minimal overhead \cite{arxiv:2402.13863}.
+        \end{defterm}
+    - 'There is an upper bound on the threshold under local update recovery that is derived via quantum optimal transport \cite{arxiv:quant-ph/0310136} (see also Ref. \cite{arxiv:2309.16241}).'
+    - 'There is a threshold against depolarizing noise for any single-qubit gate that determines if the gate enables universal quantum computation \cite{arxiv:0907.3189,arxiv:1011.2497}.'
+    - '\begin{defterm}{Measurement threshold}
+      \label{topic:measurement-threshold}
+      One can derive conditions quantifying how many random single-qubit measurements can be made without destroying the logical information \cite{arxiv:2402.00145}.
+      The measurement threshold is the maximum total probability that a single qubit is measured in a random \(X\), \(Y\), or \(Z\) basis at which the logical information is still recoverable.
+      The measurement threshold is at least as large as the erasure threshold \cite[Thm. 4]{arxiv:2402.00145}.
+      \end{defterm}'
+    - 'There is a dynamical phase transition between a bounded-error and an unbounded-error phase for a model of qubits weakly coupled to a refrigerator \cite{arxiv:2411.12805}.'
+
+
+notes:
+  - 'There is a relation between one-way entanglement distillation protocols and QECCs \cite{arxiv:quant-ph/9604024}.'
+  - 'Qubit error correction is required for unconditionally secure quantum key distribution \cite{arxiv:quant-ph/9803006}.'
+  - 'See \href{https://github.com/qiskit-community/qiskit-qec}{Qiskit QEC framework} for realizing protocols on IBM machines.'
+  - 'There exists a distance- and rate-dependent lower bound on the degree of entanglement of a qubit code \cite[Thm. 3i]{arxiv:2405.01332}.'
+
+
+# Primary parent is a qubit code
+relations:
+  parents:
+    - code_id: oa_qubits_into_qubits
+      detail: 'An OA qubit code which has no gauge qubits and no block structure is a qubit code.'
+    - code_id: qudits_into_qudits
+      detail: 'Modular-qudit quantum codes for \(q=2\) correspond to qubit codes. Modular-qudit codes \cite{arxiv:2502.05992}, circuits \cite{arxiv:1905.10481}, and magic-state distillation schemes \cite{arxiv:1205.3104,arxiv:1406.3055} can have advantages over their qubit counterparts. Modular qudits are useful for simulating gauge theories \cite{arxiv:2207.01731,arxiv:2209.10781}. There are several ways to embed one or more qubits into a single modular qudit, yielding efficient qubit gate decompositions \cite{arxiv:2311.12003}.'
+    - code_id: galois_into_galois
+      detail: 'Galois-qudit quantum codes for \(q=2\) correspond to qubit codes.'
+    - code_id: spins_into_spins
+      detail: 'Spin codes with spin \(\ell=1/2\) correspond to qubit codes since the single-qubit Pauli matrices generate the Lie algebra of \(SU(2)\).'
+  cousins:
+    - code_id: clifford_group
+      detail: |
+        Computing using \hyperref[topic:clifford]{Clifford gates} only can be efficiently simulated on a classical computer, according to the \textit{Gottesman-Knill theorem} \cite{arxiv:quant-ph/9807006,manual:{E. Knill, private communication, ca. 1998.}}.
+        There is a canonical form for \hyperref[topic:clifford]{Clifford circuits} \cite{arxiv:2003.09412,arxiv:2408.15202} and many algorithms for simulating them \cite{arxiv:quant-ph/0406196,arxiv:1712.03554,arxiv:2301.02356,arxiv:2502.07150}.
+        Universal quantum computing can be achieved using \hyperref[topic:clifford]{Clifford gates} and a single type of \hyperref[topic:clifford]{non-Clifford} gate, such as the \(T\) gate \cite{arxiv:quant-ph/9503016}.
+        More generally, the \textit{Solovay-Kitaev} theorem \cite{doi:10.1070/rm1997v052n06abeh002155,doi:10.1090/gsm/047} states that any subset of gates the generates a dense subgroup of the full \(n\)-qubit gate group can be used to construct any gate to arbitrary accuracy (see \cite{arxiv:quant-ph/0505030}\cite[Appx. 3]{doi:10.1017/cbo9780511976667.019}).
+    - code_id: qubit_classical_into_quantum
+      detail: 'Qubit c-q codes are qubit codes designed to transmit classical information.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-01-08'
+    - user_id: SamGunn
+      date: '2022-01-08'
+    - user_id: VictorVAlbert
+      date: '2022-05-07'
+    - user_id: VictorVAlbert
+      date: '2021-10-29'

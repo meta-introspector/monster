@@ -1,0 +1,53 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: subsystem_color
+physical: qubits
+logical: qubits
+
+# general class encapsulating capped and doubled, so not necessarily translation invariant. Consider peeling off original lattice codes to separate entries
+name: 'Subsystem color code'
+introduced: '\cite{arxiv:0908.4246,arxiv:1311.0879}'
+
+alternative_names:
+  - 'Gauge color code'
+
+description: |
+  A subsystem version of the color code.
+  One way to obtain it is by expanding the vertices of a two-colex embedded in a surface of genus \(g\).
+  Vertex expansion consists of spl every vertex into a triangle and splitting every edge into a pair of edges.
+
+
+features:
+  decoders:
+    - 'Clustering decoder \cite{arxiv:1503.08217}.'
+    - 'Erasure decoder \cite{doi:10.1109/ITW46852.2021.9457583}.'
+    - 'Gauge-fixing decoders \cite{arxiv:2111.14594,doi:10.1109/ITW46852.2021.9457583}.'
+
+
+relations:
+  parents:
+    - code_id: subsystem_css
+    - code_id: qudit_subsystem_color
+      detail: 'Modular-qudit subsystem color codes reduce to subsystem color codes for \(q=2\).'
+  cousins:
+    - code_id: color
+    - code_id: eaoaecc
+      detail: 'A 15-qubit subsystem color code can be converted into a hybrid code (an EA code) by converting its components to classical bits (ebits) \cite{arxiv:2411.14389}.'
+    - code_id: hamming
+      detail: 'The \([10,6,3]\) shortened Hamming code can be converted into an EAOAQECC \cite{arxiv:2411.14389}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-05-18'
+    - user_id: YiTingRickTu
+      date: '2022-04-23'
+    - user_id: VictorVAlbert
+      date: '2022-01-01'

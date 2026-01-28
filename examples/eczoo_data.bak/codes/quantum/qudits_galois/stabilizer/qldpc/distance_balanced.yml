@@ -1,0 +1,51 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: distance_balanced
+physical: galois
+logical: galois
+
+name: 'Distance-balanced code'
+introduced: '\cite{arxiv:1611.03790,arxiv:2102.10030,arxiv:2004.07935}'
+
+description: |
+  Galois-qudit CSS code constructed from a CSS code and a classical code using a distance-balancing procedure based on a generalized homological product.
+  The initial code is said to be \textit{unbalanced}, i.e., tailored to noise biased toward either bit- or phase-flip errors, and the procedure can result in a code that is treats both types of errors on a more equal footing.
+  The original distance-balancing procedure \cite{arxiv:1611.03790}, later generalized \cite[Thm. 4.2]{arxiv:2004.07935}, can yield QLDPC codes \cite[Thm. 1]{arxiv:1611.03790}.
+
+  \begin{defterm}{Weight reduction}
+  \label{topic:weight-reduction}
+  Various procedures performing \textit{weight reduction} \cite{arxiv:1611.03790,arxiv:2102.10030,arxiv:2402.05228} take in a qubit stabilizer code and output a longer code that admits a set of stabilizer generators whose weight is independent of the number of qubits \(n\).
+  The weight reduction procedure of Ref. \cite{arxiv:2402.05228} has been extended to subsystem qubit stabilizer codes \cite{arxiv:2410.10194}.
+  \end{defterm}
+
+features:
+  decoders:
+    - 'The effective distance of single-ancilla syndrome extraction QLDPC code circuits can be preserved under weight reduction \cite{arxiv:2409.02193}. The distance balancing technique of Ref. \cite{arxiv:2004.07935} preserves the \hyperref[topic:effective-distance]{effective distance} of single-ancilla syndrome extraction circuits \cite{arxiv:2409.02193}.'
+  fault_tolerance:
+    - 'Single-ancilla syndrome extraction circuits that, for the most part, preserve the \hyperref[topic:effective-distance]{effective distance} of weight-reduced qLDPC codes \cite{arxiv:2409.02193}. The distance balancing technique of Ref. \cite{arxiv:2004.07935} preserves \hyperref[topic:effective-distance]{effective distance} \cite{arxiv:2409.02193}.'
+
+
+
+relations:
+  parents:
+    - code_id: galois_css
+    - code_id: generalized_homological_product_css
+  cousins:
+    - code_id: homological_product
+      detail: 'Distance balancing relies on taking a homological product of chain complexes corresponding to a classical and a quantum code.'
+    - code_id: subsystem_stabilizer
+    - code_id: gkp-cluster-state
+      detail: '\hyperref[topic:weight-reduction]{Weight reduction} has been studied in the context of GKP CV-cluster-state codes \cite{arxiv:2402.05228}.'
+    - code_id: qldpc
+      detail: 'Lattice surgery techniques for QLDPC codes \cite{arxiv:2110.10794,arxiv:2308.08648} utilize \hyperref[topic:weight-reduction]{weight reduction}. Single-ancilla syndrome extraction circuits that, for the most part, preserve the \hyperref[topic:effective-distance]{effective distance} of weight-reduced qLDPC codes \cite{arxiv:2409.02193}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-01-20'

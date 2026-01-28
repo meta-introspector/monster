@@ -1,0 +1,65 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: icosahedral_permutation_invariant
+physical: qubits
+logical: qubits
+
+name: '\(((7,2,3))\) Pollatsek-Ruskai code'
+introduced: '\cite{arxiv:quant-ph/0304153,arxiv:2005.10910,arxiv:2305.07023}'
+
+alternative_names:
+  - '\(((7,2,3))\) icosahedral code'
+  - '\(((7,2,3))\) Kubischta-Teixeira code'
+
+
+description: |
+  Seven-qubit PI code that realizes gates from the binary icosahedral group transversally.
+  Can also be interpreted as a spin-\(7/2\) single-spin code.
+  The codespace projection is a projection onto an irrep of the binary icosahedral group \(2I\).
+  See Ref. \cite{arxiv:2504.20847} for other non-PI codes realizing \(2I\) gates transversally.
+
+  In terms of \hyperref[topic:dicke]{Dicke states}, the unnormalized logical states of one version \cite{arxiv:2305.07023} of this code are
+  \begin{align}
+    \begin{split}
+      |0_{L}\rangle&\propto \sqrt{15}|D_{0}^{7}\rangle+\sqrt{21}|D_{4}^{7}\rangle\\&\quad+\sqrt{7}\;|D_{2}^{7}\rangle-\sqrt{21}|D_{6}^{7}\rangle\,,\\|1_{L}\rangle&\propto X^{\otimes7}|0_{L}\rangle\,.
+    \end{split}
+  \end{align}
+  Another version \cite{arxiv:2005.10910} of this code, converted into Dicke states, has unnormalized logical states
+  \begin{align}
+    \begin{split}
+      |0_{L}\rangle&\propto\sqrt{3}|D_{0}^{7}\rangle+\sqrt{7}|D_{5}^{7}\rangle\\
+      |1_{L}\rangle&\propto\sqrt{7}|D_{2}^{7}\rangle-\sqrt{3}|D_{7}^{7}\rangle\,.
+    \end{split}
+  \end{align}
+
+features:
+  transversal_gates:
+    - 'Binary icosahedral group \(2I\) gates can be realized transversally \cite{arxiv:2305.07023}. See Ref. \cite{arxiv:2504.20847} for other non-PI codes realizing \(2I\) gates transversally.'
+
+
+relations:
+  parents:
+    - code_id: combinatorial_permutation_invariant
+      detail: 'The Pollatsek-Ruskai code is equivalent to the \(Q_{2,1,2,-}\) combinatorial PI code \cite[Sec. 5.2]{arxiv:2310.05358}. It is a seven-qubit PI code that realizes gates from the binary icosahedral group transversally.'
+    - code_id: t_group
+      detail: 'The \(((7,2,3))\) Pollatsek-Ruskai code admits a transversal representation of the twisted \(1\)-group \(2I\) \cite{arxiv:2402.01638}.'
+  cousins:
+    - code_id: steane
+      detail: 'The Pollatsek-Ruskai code can be continuously deformed to the Steane code \cite{arxiv:2410.07983}.'
+    - code_id: icosahedron
+      detail: 'Binary icosahedral group \(2I\) gates can be realized transversally in the Pollatsek-Ruskai code \cite{arxiv:2305.07023}.'
+    - code_id: icosahedral_spin
+      detail: 'The \(((7,2,3))\) Pollatsek-Ruskai code maps to the icosahedral spin code via the \hyperref[topic:dicke]{Dicke state mapping} \cite{arxiv:2305.07023}.'
+    - code_id: icosahedral_fock
+      detail: 'The \(((7,2,3))\) Pollatsek-Ruskai code maps to the icosahedral Fock-state code via the \hyperref[topic:qudit-dicke]{simplex mapping} \cite{arxiv:2509.20545}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-05-12'

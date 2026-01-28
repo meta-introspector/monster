@@ -1,0 +1,112 @@
+name: Build Monster Walk Paper and WASM
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Nix
+        uses: cachix/install-nix-action@v24
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          
+      - name: Setup Cachix
+        uses: cachix/cachix-action@v13
+        with:
+          name: nix-community
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          
+      - name: Build Paper v1
+        run: nix build .#paper -L
+        
+      - name: Build Paper v2 (Literate)
+        run: nix build .#paper-v2 -L
+        
+      - name: Copy outputs
+        run: |
+          mkdir -p dist
+          cp -r result/* dist/ || true
+          cp result-1/* dist/ || true
+          
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: papers
+          path: dist/*.pdf
+          
+      - name: Upload HTML artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-outputs
+          path: dist/*.html
+
+  build-rust-wasm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32-unknown-unknown
+          
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+        
+      - name: Build WASM
+        run: |
+          cd wasm
+          wasm-pack build --target web --out-dir ../dist/wasm
+          
+      - name: Upload WASM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: wasm-module
+          path: dist/wasm/
+
+  build-interactive-site:
+    needs: [build-paper, build-rust-wasm]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Build interactive site
+        run: |
+          mkdir -p site
+          cp artifacts/papers/* site/
+          cp artifacts/html-outputs/* site/
+          cp -r artifacts/wasm-module/* site/wasm/
+          cp web/index.html site/
+          cp web/style.css site/
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: interactive-site
+          path: site/

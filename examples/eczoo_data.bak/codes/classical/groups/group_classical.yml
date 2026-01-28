@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_classical
+physical: groups
+
+name: 'Group-alphabet code'
+
+description: |
+  Encodes \(K\) states (codewords) in coordinates labeled by elements of a group \(G\). The number of codewords may be infinite for infinite groups, so various restricted versions have to be constructed in practice.
+
+
+relations:
+  parents:
+    - code_id: homogeneous_space_classical
+      detail: 'Homogeneous spaces \(G/H\) for trivial \(H\) reduce to group spaces. A group-\(G\) space can also be thought of as a multiplicity-free homogeneous space \((G\times G) / G\) \cite[pg. 60]{manual:{Diaconis, Persi. "Group representations in probability and statistics." Lecture notes-monograph series 11 (1988): i-192.}}.'
+  cousins:
+    - code_id: group_quantum
+      detail: 'Group-based quantum codes are quantum counterparts of group-alphabet codes.'
+    - code_id: symmetric_space
+      detail: 'Group spaces for Lie groups \(G\) are symmetric spaces \cite[Table 6.1]{doi:10.1007/978-3-642-18245-7}.'
+
+
+
+#    - code_id: bits_into_bits
+#      detail: 'Group-alphabet codes whose alphabet is based on the field \(\mathbb{F}_2\), taken to be an Abelian group under addition, are binary codes.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-24'

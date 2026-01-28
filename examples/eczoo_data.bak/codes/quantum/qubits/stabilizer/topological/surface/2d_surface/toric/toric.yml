@@ -1,0 +1,108 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: toric
+physical: qubits
+logical: qubits
+
+name: 'Toric code'
+introduced: |
+  \cite{doi:10.1070/RM1997v052n06ABEH002155,doi:10.1007/978-1-4615-5923-8_19}
+
+description: |
+  Version of the Kitaev surface code on a square lattice with periodic boundary conditions, encoding two logical qubits.
+  Being the first manifestation of the surface code, "toric code" is often an alternative name for the general construction.
+  \textit{Twisted toric code} \cite[Fig. 8]{arxiv:2012.09271} refers to the construction on a torus with twisted (a.k.a. shifted) boundary conditions.
+
+  The stabilizers of the toric code are generated
+  by star operators \(A_v\) and plaquette operators \(B_p\).
+  Each star operator is a product of four Pauli-\(X\) operators on the edges adjacent to a vertex   \(v\) of the lattice; each plaquette operator is a product of four Pauli-\(Z\) operators applied to the edges adjacent to a face, or plaquette, \(p\) of the
+  lattice (\ref{figure:toric-code-operators}).
+
+  \begin{figure}
+    \includegraphics{toric-code-operators}
+    \caption{Stabilizer generators and logical operators of the toric code.
+      The star operators \(A_v\) and the plaquette operators
+      \(B_p\) generate the stabilizer group.  The logical
+      operators are strings that wrap around the torus.}
+    \label{figure:toric-code-operators}
+  \end{figure}
+
+  We denote by
+  \(\overline{X}_i,\overline{Z}_i\) the logical Pauli-\(X\) and Pauli-\(Z\)
+  operator of the \(i\)-th logical qubit (with \(i\in\{1,2\}\)).  They are represented by strings of Pauli-\(X\) operators or Pauli-\(Z\) operators that wrap around the torus, as shown in \ref{figure:toric-code-operators}.
+
+protection: |
+  Toric code on an \(L\times L\) torus is a \([[2L^2,2,L]]\) CSS code.
+  The number of error patterns can be used to bound the ground-state energy of a \(\pm J\) Ising model \cite{arxiv:cond-mat/0405313}.
+
+  Coherent physical errors in the toric code are expected to become incoherent logical errors under syndrome measurement; see corroborating numerical studies performed by embedding each physical qubit into two fermions via the tetron code \cite{arxiv:1710.02270} as well as deriving analytical bounds \cite{arxiv:1912.04319}.
+  More generally, there is a tensor-network routine that calculates the effective logical channel \cite{arxiv:2403.08706}
+
+
+features:
+  encoders:
+    - 'Lindbladian-based dissipative encoding for the toric code \cite{arxiv:1310.1036} that does not give a speedup relative to circuit-based encoders \cite{arxiv:1310.1037}.'
+
+  transversal_gates:
+    - 'Transversal logical Pauli gates correspond to Pauli strings on non-trivial loops of the torus.'
+
+  general_gates:
+    - 'Logical \(CX\) gate for the \([[12,2,3]]\) twisted toric code \cite{arxiv:2505.20261}.'
+
+  code_capacity_threshold:
+    - |
+      Independent \(X,Z\) noise: \(p_X = 10.31\%\) under MWPM decoding \cite{arxiv:quant-ph/0207088} (see also Ref. \cite{arxiv:1405.4883}), \(9.9\%\) under BP-OSD decoding \cite{arxiv:2005.07016}, and \(8.9\%\) under GBP decoding \cite{arxiv:2212.03214}. 
+      The threshold under ML decoding corresponds to the value of a critical point of a two-dimensional random-bond Ising model (RBIM) on the Nishimori line \cite{doi:10.1143/JPSJ.55.3305,arxiv:quant-ph/0110143}, calculated to be \(10.94 \pm 0.02\%\) in Ref. \cite{arxiv:cond-mat/0010143}, \(10.93(2)\%\) in Ref. \cite{arxiv:cond-mat/0106023}, \(10.9187\%\) in Ref. \cite{arxiv:0811.0464}, \(10.917(3)\%\) in Ref. \cite{arxiv:0811.2101}, \(10.939(6)\%\) in Ref. \cite{arxiv:0902.4153}, and estimated to be between \(10.9\%\) and \(11\%\) in Ref. \cite{arxiv:1405.4883}.
+      The model for the case of the toric code has been thoroughly investigated \cite{arxiv:2402.16937,arxiv:2512.10399}.
+      The Bravyi-Suchara-Vargo (BSV) tensor network decoder \cite{arxiv:1405.4883} exactly solves the ML decoding problem under independent \(X,Z\) noise for the surface code and has complexity of \hyperref[topic:asymptotics]{order} \(O(n^2)\); the decoder provides an efficient tensor-network contraction for the partition function resulting from the statistical mechanical mapping, which is known to be solvable for an Ising model on a planar graph \cite{doi:10.1103/PhysRev.88.1332}.
+      ML decoding \cite{arxiv:quant-ph/0110143} is \(\#P\)-hard in general for the surface code \cite{arxiv:2309.10331}.
+      Above values are for one type of noise only, and the ML threshold for combined \(X\) and \(Z\) noise is \(2p_X - p_X^2 \approx 20.6\%\) \cite[Table 1]{arxiv:2212.03214}. 
+      Thresholds for various lattices have been obtained in Refs. \cite{arxiv:1112.1613,arxiv:1202.2743}.
+    - 'Depolarizing noise: between \(17\%\) and \(18.5\%\) under BSV tensor-network decoding \cite{arxiv:1405.4883}, \(14\%\) under GBP decoding \cite{arxiv:2212.03214}, \(16.5\%\) under recursive MWPM \cite{arxiv:2212.11632}, between \(16\%\) and \(17.5\%\) under AMBP4 (depending on whether surface or toric code is considered) \cite{arxiv:2104.13659}, and between \(15\%\) and \(16\%\) under RG \cite{arxiv:0911.0581}, Markov-chain \cite{arxiv:1302.2669}, or MWPM \cite{arxiv:0905.0531} decoding.
+    The threshold under ML decoding corresponds to the value of a critical point of the disordered eight-vertex Ising model, calculated to be \(18.9(3)\%\) \cite{arxiv:1202.1852} (see also APS Physics viewpoint \cite{doi:10.1103/Physics.5.50}).'
+    - 'Erasure noise: \(50\%\) for square tiling \cite{arxiv:0904.3556,arxiv:0912.1159}.
+    There is an inverse relationship between coordination number of the syndrome graph, with the threshold corresponding to a percolation transition \cite{arxiv:1810.09621}.'
+    - '\hyperref[topic:ad]{AD} noise: \(39\%\) \cite{arxiv:1607.06460}.'
+    - 'Correlated noise: the threshold under ML decoding corresponds to the value of a critical point of a particular random-bond Ising model (RBIM) \cite{arxiv:1209.2157,arxiv:1304.2975}. A threshold of \(10.04(6)\%\) under mildly correlated bit-flip noise is obtained in Ref. \cite{arxiv:1809.10704}.'
+    # The latter work considers \(X\)-type noise only, but this is equivalent since \(X\)- and \(Z\)-type noise is corrected independently.
+    - 'The toric code has a \hyperref[topic:measurement-threshold]{measurement threshold} of one \cite{arxiv:2402.00145}.'
+    - 'Coherent noise: the threshold under ML decoding corresponds to the value of a critical point of a particular random-bond Ising model (RBIM) called the complex-coupled Ashkin-Teller model \cite{arxiv:2410.22436,arxiv:2411.05785}. Another statistical mechanical mapping has been studied for \(X\)-type noise channels interpolating between coherent and incoherent noise \cite{arxiv:2412.21055}.'
+    - 'Threshold of \(1.5\%\) under real-time geometrically local decoder based on introducing an ancillary buffer and confining spacetime interactions between anyons  \cite{arxiv:2510.08056}.'
+
+  threshold:
+    - 'The threshold under ML decoding with measurement errors corresponds to the value of a critical point of a three-dimensional random plaquette model \cite{arxiv:quant-ph/0110143,arxiv:quant-ph/0207088}.'
+    - '\(0.133\%\) for independent \(X,Z\) noise and faulty syndrome measurements using a local automaton decoder \cite{arxiv:1609.00510}.'
+    - 'Toric-code thresholds for post-selected QEC can be studied with statistical mechanical models \cite{arxiv:2410.07598}.'
+
+realizations:
+  - |
+    Neutral atom arrays: One cycle of syndrome readout on 19-qubit planar and 24-qubit toric codes \cite{arxiv:2112.03923}.
+
+# lifted is parent through galois hgp, balanced through balanced
+relations:
+  parents:
+    - code_id: surface
+      detail: 'The toric code is the surface code on a 2D torus.'
+    - code_id: higher_dimensional_toric
+      detail: 'The \(D\)-dimensional twisted toric code reduces to the toric code for \(D=2\) and a square lattice.'
+    - code_id: hypergraph_product
+      detail: 'The toric code can be obtained from a hypergraph product of two repetition codes \cite[Exam. 6]{arxiv:1202.0928}. Other hypergraph products of two repetition codes yield the related \([[2d^2-2d+1,1,d]]\) CSS code family \cite[Exam. 5]{arxiv:1202.0928}.'
+  cousins:
+    - code_id: lifted_product
+      detail: 'A lifted-product code for the ring \(R=\mathbb{F}_2[x,y]/(x^L-1,y^L-1)\) is the toric code \cite[Appx. B]{arxiv:2111.03654}.'
+    - code_id: balanced_product
+      detail: 'Twisted toric codes can be obtained from balanced products of cyclic graphs over a cyclic group \cite[Fig. 8]{arxiv:2012.09271}.'
+    - code_id: repetition
+      detail: 'The toric code can be obtained from a hypergraph product of two repetition codes \cite[Exam. 6]{arxiv:1202.0928}. Other hypergraph products of two repetition codes yield the related \([[2d^2-2d+1,1,d]]\) CSS code family \cite[Exam. 5]{arxiv:1202.0928}.'
+    - code_id: tetron
+      detail: 'Coherent physical errors in the toric code are expected to become incoherent logical errors under syndrome measurement; see corroborating numerical studies performed by embedding each physical qubit into two fermions via the tetron code \cite{arxiv:1710.02270} as well as deriving analytical bounds \cite{arxiv:1912.04319}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-05-05'

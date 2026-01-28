@@ -1,0 +1,54 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: binary_dihedral_permutation_invariant
+physical: qubits
+logical: qubits
+
+name: 'Binary dihedral PI code'
+introduced: '\cite{arxiv:2310.17652}'
+
+description: |
+  Multi-qubit PI code designed to realize gates from the binary dihedral group transversally.
+  Can also be interpreted as a single-spin code.
+  The codespace projection is a projection onto an irrep of the \textit{binary dihedral group} \( \mathsf{BD}_{2N} = \langle\omega I, X, P\rangle \) of order \(8N\), where \( \omega \) is a \( 2N \)th root of unity, and \( P = \text{diag} ( 1, \omega^2) \).
+
+  The construction includes three families and a handful of particular codes.
+  The first family has parameters \(((2m+3,2,3))\) for \(m\) not a power of two, realizing binary dihedral transversal gates that are not possible to realize in any qubit stabilizer code \cite[Prop. 1]{arxiv:2310.17652}.
+  The second family is the case of \(m\) being a power of two, corresponding to \(((2^{m-1}+3,2,3))\) codes, each realizing a member of the \term{Clifford hierarchy} transversally.
+  The third family consists of \(((n,2,d))\) codes with \(n = \frac{1}{4}(3d^2+6d-7+2(d\text{ mod }8))\), realizing \(S\) and \(T\) gates transversally.
+  The handful of codes have distance 5 (7, 9, 11, 13) and encode in 27 (49, 73, 107, 147) qubits, all realizing transversal \(T\) gates.
+
+features:
+  transversal_gates:
+    - 'Binary dihedral group gates can be realized transversally, which include subgroups of any level of the \term{Clifford hierarchy} and subgroups which cannot be realized by any qubit stabilizer code.'
+
+
+relations:
+  parents:
+    - code_id: qubit_permutation_invariant
+  cousins:
+    - code_id: small_distance_quantum
+      detail: 'The first and second families of binary dihedral PI codes have distance three, and the third family has the member \(((27,2,5))\).'
+    - code_id: combinatorial_permutation_invariant
+      detail: 'The \(Q_{3,1,2m-4,+}\) and \(Q_{3,1,2^m-4,+}\) combinatorial PI codes reduce to the \(((2m+3,2,3))\) and \(((2^{m-1}+3,2,3))\) binary dihedral PI codes, respectively \cite[Prop. 5.6]{arxiv:2310.05358} (see also \cite{arxiv:2411.13142}).'
+    - code_id: xp_stabilizer
+      detail: 'Binary dihedral permutation invariant codewords form error spaces of XP stabilizer codes.'
+    - code_id: diagonal_clifford
+      detail: 'The \(((2^{r-1}+3,2,3))\) family of binary dihedral PI codes realizes the same (strongly) transversal gates as the \([[2^r-1,1,3]]\) quantum RM codes, but require fewer qubits in almost all cases.'
+    - code_id: stab_49_1_5
+      detail: 'The \(((27,2,5))\) binary dihedral PI code realizes the \(T\) gate (strongly) transversally, but requires fewer qubits than the \([[49,1,5]]\) triorthogonal code.'
+    - code_id: quantum_triorthogonal
+      detail: 'There exist binary dihedral PI codes that have distance 5 (7, 9, 11, 13) and encode in 27 (49, 73, 107, 147) qubits, all realizing transversal \(T\) gates.'
+    - code_id: j_gross
+      detail: 'Binary dihedral PI codes can be interpreted as Clifford single-spin codes via the \hyperref[topic:dicke]{Dicke-state mapping}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-20'

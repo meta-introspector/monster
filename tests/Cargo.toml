@@ -1,0 +1,23 @@
+[package]
+name = "monster-tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+headless_chrome = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[test]]
+name = "integration"
+path = "tests/integration.rs"
+
+[[bench]]
+name = "benchmarks"
+harness = false

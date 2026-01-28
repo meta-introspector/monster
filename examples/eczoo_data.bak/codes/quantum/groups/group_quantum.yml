@@ -1,0 +1,81 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_quantum
+physical: groups
+logical: groups
+
+name: 'Group-based quantum code'
+
+description: |
+  Encodes a \textit{logical} Hilbert space, finite- or infinite-dimensional, into a \textit{physical} Hilbert space of \(L^2\)-normalizable functions on a second-countable unimodular group \(G\), i.e., a \(G\)\textit{-valued qudit} or \(G\)-qudit.
+  In other words, a group-valued qudit is a vector space whose canonical basis states \(|g\rangle\) are labeled by elements \(g\) of a group \(G\).
+  For \(K\)-dimensional logical subspace and for block codes defined on groups \(G^{n}\), can be denoted as \(((n,K))_G\).
+  When the logical subspace is the Hilbert space of \(L^2\)-normalizable functions on \(G^{ k}\), can be denoted as \([[n,k]]_G\).
+  Ideal codewords may not be normalizable, depending on whether \(G\) is continuous and/or noncompact, so approximate versions have to be constructed in practice.
+
+  A notion of Gaussian states and Hudson's theorem have been developed for arbitrary locally compact Abelian \(G\) \cite{arxiv:2204.08162}.
+  A Wigner function formalism has also been developed \cite{arxiv:2004.13860}.
+
+protection: |
+  \subsection{Group-based error basis}
+  A convenient error set is the group-based analogue of the Pauli string set for \hyperref[code:qubits_into_qubits]{qubit} codes.
+  For a single group-valued qudit, this set consists of products of \(X\)-type operators labeled by group elements \(g\), and \(Z\)-type operators labeled by matrix elements of \(G\)-irreps \(\lambda\) \cite{arxiv:1408.6237,arxiv:1911.00099,arxiv:2111.12096}.
+  The outline below is for finite groups, but can be extended to compact unimodular groups or to oscillators and rotors by substituting the sum over the group with a group integral.
+
+  \begin{defterm}{Group-based error basis}
+  \label{topic:group-pauli}
+  There are two types of \(X\)-type operators, corresponding to left and right group multiplication.
+  These act on computational basis states \(|h\rangle\) as
+  \begin{align}
+    \overrightarrow{X}_{g}|h\rangle&=|gh\rangle\\
+    \overleftarrow{X}_{g}|h\rangle&=|hg^{-1}\rangle
+  \end{align}
+  for any group elements \(h,g\).
+  The \(Z\)-type operators can be thought of as matrix-product operators (MPOs) \cite{arxiv:2312.09272} whose virtual dimension is the dimension \(d_{\lambda}\) of their corresponding irrep.
+  The are diagonal in the group-valued basis, yielding the \(d_{\lambda}\)-dimensional irrep matrix \(Z_{\lambda}(g)\) evaluated at the given group element,
+  \begin{align}
+    \hat{Z}_{\lambda}\otimes|g\rangle=Z_{\lambda}(g)\otimes|g\rangle~.
+  \end{align}
+  Each matrix element of this irrep matrix is a generally non-unitary operator on the group-valued qudit.
+  For one-dimensional irreps, the matrix reduces to a single unitary \(Z\)-type operator, and the direct-product symbol is no longer needed.
+  For special cases of Abelian \(G\) being \(\mathbb{Z}_2\), \(\mathbb{Z}_q\), \(\mathbb{F}_q\), \(U(1)\cong \mathbb{Z}\), or \(\mathbb{R}\), the group-based error basis reduces to the familiar \hyperref[topic:pauli]{qubit Pauli}, \hyperref[topic:qudit-pauli]{qubit Pauli}, \hyperref[topic:galois-pauli]{Galois-qudit Pauli}, \hyperref[topic:rotor-pauli]{rotor generalized Pauli}, or \hyperref[topic:displacements]{oscillator displacement} error basis, respectively.
+  \end{defterm}
+
+  Products of either left- or right-multiplication \(X\)-type operators with all \(Z\)-type operators form a basis for linear operators on the group-valued qudit space that is complete and orthonormal under the Hilbert-Schmidt inner product \cite[Eq. (123)]{arxiv:1911.00099}.
+  In particular,
+  \begin{align}
+    \text{tr}(\overrightarrow{X}_{g}^{\dagger}\overrightarrow{X}_{h})=\delta_{g,h}^{G}~,
+  \end{align}
+  where the group Kronecker delta function \(\delta^{G}_{g,h}=1\) if \(g=h\) and zero otherwise.
+
+features:
+  general_gates:
+    - 'Various gates for a single \(G\)-valued qudit include the Fourier gate (which is a re-expression of the group basis in terms of \(G\)-irreps), the \(g \to g^{-1}\) inversion gate, conditional multiplication gates, and conditional multiplication gates in the irrep basis \cite{arXiv:1408.6237,arxiv:1911.00099,arxiv:1903.08807,arxiv:2208.12309,arxiv:2402.16780}.'
+    - 'The \term{Clifford hierarchy} can be extended to arbitrary Abelian \(G\) \cite{arxiv:quant-ph/9908010,arxiv:1503.08800,arxiv:1509.03626}.'
+
+notes:
+  - 'See Refs. \cite{arxiv:1601.03843,arxiv:1709.04460} for introductions to Hilbert spaces for Abelian groups.'
+  - 'Group-based \(Z\)-type operators correspond to group-valued fields in the continuum limit \cite{arxiv:2111.12096} and Wilson link operators in lattice gauge theory \cite{arxiv:2108.11402}.'
+
+
+relations:
+  parents:
+    - code_id: homogeneous_space_quantum
+      detail: 'Homogeneous spaces \(G/H\) for trivial \(H\) reduce to group spaces. A group-\(G\) space can also be thought of as a multiplicity-free homogeneous space \((G\times G) / G\) \cite[pg. 60]{manual:{Diaconis, Persi. "Group representations in probability and statistics." Lecture notes-monograph series 11 (1988): i-192.}}.'
+    - code_id: category_quantum
+      detail: 'Finite-group-based quantum codes, whose basis states are parameterized by a finite group, correspond to category-based codes for the fusion category \(Vec G\). Extensions of such categories to Lie groups can also be done \cite{manual:{Fredenhagen, Klaus. "Superselection sectors with infinite statistical dimension." Subfactors (Kyuzeso, 1993) (1994): 242-258.},arxiv:2106.12577,manual:{Kevin Walker. \href{https://www.birs.ca/events/2023/5-day-workshops/23w5091/videos/watch/202312061131-Walker.html}{Lie group symmetries and non-unital higher categories. Subfactors and Fusion (2-)Categories}, Banff International Research Station, 2023.},arxiv:2503.14596} (see also \cite{arxiv:gr-qc/0303060}).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-10-31'
+    - user_id: DavidAasen
+      date: '2025-10-31'
+    - user_id: VictorVAlbert
+      date: '2021-12-03'

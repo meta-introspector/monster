@@ -1,0 +1,59 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: galois_non_stabilizer
+physical: galois
+logical: galois
+
+name: 'Galois-qudit USt code'
+introduced: '\cite{arxiv:quant-ph/9703002,arxiv:quant-ph/9703016,arxiv:quant-ph/9710031,arxiv:quant-ph/0210097,arxiv:0801.2144,arxiv:1208.4907}'
+# First ref discusses unions of general codes
+
+alternative_names:
+  - 'Galois-qudit non-stabilizer code'
+# arxiv:quant-ph/0210097
+
+description: |
+  A Galois-qubit code whose codespace consists of a direct sum of a Galois-qubit stabilizer codespace and one or more of that stabilizer code's error spaces.
+
+  Given a subset \(T\) of coset representatives of \(\mathsf{N}(\mathsf{S})/\mathsf{S}\) of a Galois-qudit stabilizer code \(((n,K))\) with codespace \(\mathsf{C}\) and stabilizer group \(\mathsf{S}\), one can construct the Galois-qudit USt with codespace
+  \begin{align}
+    \mathsf{C}_{\text{USt}}=\bigoplus_{t\in T}t\mathsf{C}~.
+  \end{align}
+  The parameters of the USt are \(((n,K|T|,d))\), where \(|T|\) is the number of chosen coset representatives.
+  A Galois-qudit USt is \textit{CSS-like} when the underlying stabilizer code is CSS, so the coset representatives from the two classical codes underlying the CSS code.
+
+  Union stabilizer codes generalize stabilizer codes by modifying the original stabilizer code projection with elements of a subset \(\mathsf{B}\subset\mathsf{S}\) called the \textit{Fourier description} \cite[Thm. 2.7]{arxiv:quant-ph/0210097}.
+  When \(\mathsf{B}\) is a subgroup of \(\mathsf{S}\), then the code reduces to an ordinary stabilizer code.
+
+  The \(((n, \lceil\frac{q^n}{n(q^2-1)}\rceil,2))_q\) family of Galois-qudit non-stabilizer codes is constructed in Ref. \cite{arxiv:quant-ph/0210097}.
+
+# This construction is equivalent to that from Ref. \cite{arxiv:0801.2144}, as noted at the end of \cite[Sec. III]{arxiv:0801.2144}.
+
+#    Asymptotically good union stabilizer codes admitting efficient encoding and decoding procedures have been constructed.
+#    A technical definition for non-Galois qudits is as follows. For any \(\alpha\)-good \(n\times n\) matrix over \(\mathbb{F}_q\) and
+#    any \(\lfloor\alpha n\rfloor\)-pure maximal Gottesman subgroup of the error group \(\mathsf{E}, 0<\alpha<1\),
+#    there exists an \(((n,\frac{2^n}{N(n,2,\lfloor\alpha n\rfloor)},2\alpha n))\) QECC,
+#    where \(N(n,q,d)=\sum_{i=1}^d\begin{pmatrix} n \\ i\end{pmatrix}(q^2-1)^i\).
+#    A subgroup \(\mathsf{S}\) of \(\mathsf{E}\) is a \(d\)-pure Gottesman subgroup if \(\mathsf{S}\) does not contain \(e^{2\pi ik/N}I,\forall 1\leq k\leq N-1\),
+#    and all non-trivial centralizers of \(\mathsf{S}\) have weights at least \(d\).
+
+
+relations:
+  parents:
+    - code_id: galois_into_galois
+  cousins:
+    - code_id: projective
+      detail: 'Galois-qudit USt codes can be obtained from lines in projective space \cite{arxiv:2107.11281,manual:{Ball, Simeon. "Stabiliser codes and quantum sets of lines." Finite Geometries Sixth Irsee Conference. 2022.}}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-13'
+    - user_id: JiaxinHuang
+      date: '2022-04-08'

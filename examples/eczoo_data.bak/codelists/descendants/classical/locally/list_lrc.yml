@@ -1,0 +1,28 @@
+
+list_id: lrc
+title: Locally recoverable codes
+intro: |
+  Here is a list of codes related to locally recoverable codes.
+
+codes:
+  select:
+    - descendant_of: locally_recoverable
+    - cousin_of: locally_recoverable
+
+display:
+  style: table
+  options:
+    cssclass: xtra-xtra-stretch
+    columns:
+      - property: name
+        title: Code
+        link_to_code: true
+        cssclass: 'top left'
+
+      - property: description
+        title: Description
+        cssclass: 'textit'
+        first_paragraph_only: true
+
+sort:
+  by: name

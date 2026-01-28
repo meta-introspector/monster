@@ -1,0 +1,43 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: 3d_semion
+physical: qudits
+logical: qudits
+
+name: 'Chiral semion Walker-Wang model code'
+short_name: 'Chiral semion Walker-Wang'
+introduced: '\cite{arxiv:2202.05442}'
+
+description: |
+  A 3D lattice modular-qudit stabilizer code with qudit dimension \(q=4\) whose low-energy excitations on boundaries realize the chiral semion topological order.
+  The model admits 2D chiral semion topological order at one of its surfaces \cite{arxiv:1907.02075,arxiv:2202.05442}.
+  The corresponding phase can also be realized via a non-stabilizer Hamiltonian \cite{arxiv:1208.5128}.
+
+features:
+  encoders:
+    - 'A unitary QCA encoder applied to product state realizes the 3D chiral semion Walker-Wang model code, which in turn admits 2D chiral semion topological order if truncated at one of its surfaces \cite{arxiv:1907.02075,arxiv:2202.05442}.'
+
+relations:
+  parents:
+    - code_id: qudit_stabilizer
+    - code_id: 3d_stabilizer
+    - code_id: walker_wang
+      detail: 'The Walker-Wang model code reduces to the chiral semion model code when the input category is \(\mathcal{C}=\mathbb{Z}_{2}^{(1/2)}\), or alternatively \(\mathcal{C}=\mathbb{Z}_{4}^{(1)}\) after condensing a \(\mathbb{Z}_{2}\)-transparent boson.'
+    - code_id: tqt
+      detail: 'When treated as ground states of the code Hamiltonian, the code states realize 3D double-semion topological order, a topological phase of matter that exists as the deconfined phase of the 3D twisted \(\mathbb{Z}_2\) gauge theory \cite{doi:10.1007/BF02096988}.'
+  cousins:
+    - code_id: semion
+      detail: 'A unitary QCA encoder applied to product state realizes the 3D chiral semion Walker-Wang model code, which in turn admits 2D chiral semion topological order if truncated at one of its surfaces \cite{arxiv:1907.02075,arxiv:2202.05442}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: nathanan
+      date: '2023-03-28'
+    - user_id: VictorVAlbert
+      date: '2023-03-28'

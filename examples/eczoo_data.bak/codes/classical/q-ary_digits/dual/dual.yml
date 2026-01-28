@@ -1,0 +1,70 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: dual
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: 'Dual linear code'
+
+alternative_names:
+  - 'Orthogonal linear code'
+
+description: |
+  For any \([n,k]_q\) linear code \(C\), the dual code is the set of \(q\)-ary strings that are orthogonal to the codewords of \(C\) under a particular inner product.
+  
+  The dual code is a linear code defined by
+  \begin{align}
+  C^\perp = \{ y\in \mathbb{F}_q^{n} ~|~ x\cdot y=0 \forall x\in C\},
+  \end{align}
+  where the \textit{ordinary}, \textit{standard}, \textit{Euclidean}, or \textit{symmetric} inner product is \(x\cdot y = \sum_{i=1}^n x_i y_i\) for coordinates \(x_i,y_i\).
+
+  A code that is contained in its dual, \(C \subseteq C^\perp\), is called \textit{self-orthogonal}, \textit{weakly self-dual}, or \textit{null}.
+  A self-orthogonal code is called \textit{maximal} if it is not contained in the dual of any other code.
+  A code that contains its dual, \(C^\perp \subseteq C\), is called \textit{dual-containing}.
+  A code that is equal to its dual, \(C^\perp = C\), is called self-dual.
+  A code that is equivalent to its dual is called iso-dual.
+  The intersection of a code and its dual, \(C \cap C^{\perp}\), is called the \textit{hull} of the code.
+  A code admits a complementary dual if \(C\) and \(C^{\perp}\) do not share any codewords; such codes are called LCD codes.
+  The dual of a dual code is the original code.
+  A code is dual-containing iff its dual is self-orthogonal.
+
+  The dual code \(C^\perp\) is the row space of the parity check matrix of \(C\). The dual code is the kernel of the encoding map for \(C\), and \(\dim C^\perp = n-k\).
+  The automorphism group of a linear binary code and its dual are the same \cite[pg. 230]{preset:MacSlo}.
+
+  An alternative definition of dual substitutes the Euclidean inner product for the \textit{Hermitian inner product},
+  \begin{align}
+    x\cdot y \to x\cdot \bar{y} = \sum_{i=1}^n x_i y^{p}_i~.
+  \end{align}
+  Self-dual codes with respect to the above product are called \textit{Hermitian self-dual}; similar definitions hold for self-orthogonal and dual-containing.
+
+  More general inner products can also be considered \cite{doi:10.1007/s10623-016-0282-8}.
+
+protection: |
+  The dual of an \([n,k,d] \) code is an \([n,n-k,d^{\perp}]\) code, where the \hyperref[topic:weight-enumerator]{dual distance} \(d^{\perp}\) is not always related to \(d\).
+  The generator matrix of \(C^\perp\) is the parity check matrix of \(C\), and visa versa.
+
+  The generator matrix of the Hermitian dual of a code with generator matrix \(G = [I_k~~A]\) is \([-\bar{A}^T~~I_{n-k}]\), where \(\bar{A}\) contains matrix elements of \(A\) raised to the \(p\)th power.
+  A code is Hermitian self-dual if and only if \(A \bar{A}^{T} = -I_{n/2}\).
+
+
+relations:
+  parents:
+    - code_id: q-ary_linear
+    - code_id: dual_over_rings
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-07-22'
+    - user_id: MicahShaw
+      date: '2022-06-28'
+    - user_id: VictorVAlbert
+      date: '2021-12-18'
+    - user_id: DhruvDevulapalli
+      date: '2021-12-17'

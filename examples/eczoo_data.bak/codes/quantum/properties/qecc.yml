@@ -1,0 +1,110 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: qecc
+#physical: bits
+#logical: qubits
+
+name: 'Quantum error-correcting code (QECC)'
+short_name: 'QECC'
+
+# Following Gottesman's book, but removed finite dims
+description: |
+  Encodes quantum information in a (\textit{logical}) subspace of a
+  (\textit{physical}) Hilbert space such that it is possible to recover said
+  information from errors that act as linear maps on the physical space.
+  The state space of a QECC is contained in the space of complex \(L^2\)-normalizable functions of some configuration space, which usually corresponds to the alphabet of a classical code.
+
+  Since quantum information is encoded in quantum superpositions, an additional source of noise (not relevant to classical encodings) can affect the relative phase of such superpositions.
+  Quantum error-correcting codes have to protect against such \textit{phase-flip noise} while also protecting against conventional classical \textit{bit-flip} noise.
+  Codes are not expected to protect against both types of noise perfectly, and there is generally a tradeoff.
+
+  The logical subspace is spanned by a basis comprised of \textit{code basis states}
+  or \textit{codewords}. Codewords may not be normalizable if the physical
+  Hilbert space in infinite, so approximate versions have to be constructed in
+  practice.
+
+  While all considered QECC states are complex functions, real or quaternionic function spaces can also be considered for QEC \cite{arxiv:quant-ph/9911074,arxiv:2504.19833}. 
+
+protection: |
+  Denoting Hilbert spaces by the letter \(\mathsf{H}\), a quantum code
+  \((U,\cal{E})\) is a partial isometry
+  \(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\) with a set of
+  correctable errors \(\cal{E}\) with the following property: there exists a
+  quantum operation \(\cal{D}\) such that for all \(E\in\cal{E}\) and states
+  \(|\psi\rangle\in\mathsf{H}_{\text{logical}}\),
+  \begin{align}
+    {\cal D} (EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})
+    = c(E,|\psi\rangle)|\psi\rangle\langle\psi|
+  \end{align}
+  for some constant \(c\).
+
+  Equivalently, correction capability is determined by the \term{Knill-Laflamme conditions}, which may admit infinite terms due to non-normalizability of ideal code states in the case of codes with infinite-dimenional physical spaces. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an \hyperref[code:approximate_qecc]{approximate code}. These conditions can also be formulated in terms of a dual Heisenberg picture, where correctability is checked for some algebra of observables \cite{arxiv:0811.0421}.
+
+  \begin{defterm}{Pseudo-threshold (a.k.a. break-even point)}
+  \label{topic:pseudo-threshold}
+  The ultimate goal of error correction is to make sure that the logical error rate is smaller than the underlying physical error rate.
+  For a noise model parameterized by a single physical error rate \(p\), the \textit{pseudo-threshold} or \textit{break-even point} is the smallest \(p\) at which the logical error rate after error correction is equal to \(p\).
+  \end{defterm}
+# Include other often used defs
+
+#notes:
+#  - 'Bounds on n,k, or d for this class.'
+#  - 'Links to code tables, github, GAP algebra packages, more papers \cite{arxiv:####.#####}.'
+
+features:
+  rate: |
+    The quantum channel capacity, i.e., the regularized coherent information, is the highest rate of quantum information transmission through a quantum channel with arbitrarily small error rate \cite{arxiv:quant-ph/9604015,preset:ShorMSRI,arxiv:quant-ph/0304127}. 
+    In other words, the capacity formula implies that one can achieve a transmission rate
+    \(r\) over a quantum channel \(\mathcal{E}\) iff, for sufficiently large \(n\), \(m=\lfloor r n \rfloor\),
+    and for all \(\epsilon>0\),
+    \begin{align}
+      ||\mathcal{D}\mathcal{E}\mathcal{U}-I^{\otimes m}||_1\leq \epsilon
+    \end{align}
+    for some encoding channel \(\mathcal{U}\) and some recovery channel \(\mathcal{D}\).
+    The quantum capacity \(Q\) of \(\mathcal{E}\) is defined as the supremum over \(n\) of achievable transmission rates \cite{doi:10.1017/9781316848142}.
+    See \cite[Ch. 24]{arxiv:1106.1445} for definitions and a history.     
+    
+    The fault-tolerant capacity is the capacity for the more general case where the encoding and decoding maps are also assumed to undergo noise \cite{arxiv:2009.07161}.
+
+    Doublin coefficients \cite{manual:{Doeblin, W. (1937). Sur les propriétés asymptotiques de mouvement régis par certains types de chaines simples. Bulletin mathématique de la Société roumaine des sciences, 39(1), 57-115.}} for quantum channels have been studied \cite{arxiv:2309.08475}.
+
+  decoders:
+    - 'The effect of an error is a mapping of the code subspace into another, potentially overlapping, subspace. To determine, or diagnose, the effect of the error in what is known as \textit{syndrome-based decoding}, one can measure one or more operators called \textit{check operators}, which resolve code and error spaces without collapsing the quantum information inside the spaces. The eigenvalues of check operators are called \textit{error syndromes}. One \textit{round} or \textit{cycle} of quantum error correction proceeds by extracting syndromes and performing correcting operations to map the error space containing the logical information back into the codespace. For some codes, correcting operations are not necessary because one can instead track which error space contains the logical information.'
+
+
+notes:
+  - 'See Refs. \cite{arxiv:quant-ph/9712048,arxiv:quant-ph/0004072,doi:10.1090/gsm/047,doi:10.1017/CBO9780511976667,arxiv:quant-ph/0507174,arxiv:quant-ph/0612185,arxiv:0904.2557,arxiv:0905.2794,arxiv:1302.3428,doi:10.1103/RevModPhys.88.041001,doi:10.1002/9783527805785.ch1,arxiv:1508.03695,arxiv:1907.11157,preset:PreskillNotes,arxiv:1910.03672,arxiv:2007.05992,doi:10.1002/9781119790327.ch10,arxiv:2407.12737} for overviews of quantum error correction.'
+  - 'See Refs. \cite{doi:10.1017/CBO9781139034807,doi:10.1201/b15868,preset:GottesmanBook} for books on quantum error correction.'
+  - 'See video tutorials by \href{https://www.youtube.com/watch?v=_ls3KczZL2c}{V. V. Albert}, \href{https://www.youtube.com/watch?v=uD69GCYF9Zg}{S. M. Girvin}, \href{https://www.youtube.com/watch?v=buIbd_aXAHw}{P. Shor}, \href{https://www.youtube.com/watch?v=Je7sVJGKMgU}{B. Terhal}, and \href{https://www.youtube.com/watch?v=mcwpe8iJ5uo}{J. Wright}.'
+  - 'Quantum error correction was initially claimed not to be theoretically possible \cite{arxiv:hep-th/9406058,doi:10.1098/rsta.1995.0106} and has been criticized since \cite{arxiv:1310.8457}.'
+  - 'Resource-theoretic interpretations of quantum error correction have been developed, including those that think of codes together with recovery operations as superchannels (a.k.a. quantum combs or bipartite operations) \cite{arxiv:1105.4464,arxiv:1210.4722,arxiv:1406.7142,arxiv:2405.17567,arxiv:2409.09416}.'
+  - 'QECC can be used as a mechanism for securing quantum computation \cite{arxiv:2506.16614}.'
+
+
+# 20240704 subsystem QECC, hybrid QECC, and QECC are three children of OAQECC
+relations:
+  parents:
+    - code_id: oaecc
+      detail: 'An OAQECC which has no gauge structure (e.g., gauge qubits) and no block structure is a QECC.'
+  cousins:
+    - code_id: approximate_qecc
+      detail: 'QAECCs correcting a noise channel exactly reduce to QECCs.'
+    - code_id: ecc
+      detail: 'Quantum information cannot be copied using a linear process \cite{doi:10.1038/299802a0}, so one cannot send several copies of a quantum state through a channel as can be done for classical information. The \term{Knill-Laflamme conditions} can similarly be formulated for classical codes \cite[Sec. 3]{arxiv:2109.08691}, although they are not as widely as used as those for quantum codes.'
+    - code_id: metrological
+      detail: 'Metrological codes are logical-qubit codes that satisfy the \term{Knill-Laflamme conditions} conditions only partially, and codes that satisfy them fully are QECCs.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-07-30'
+    - user_id: PhilippeFaist
+      date: '2022-07-15'
+    - user_id: VictorVAlbert
+      date: '2022-01-03'

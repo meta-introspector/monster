@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: homogeneous_space_quantum
+physical: quotients
+
+name: 'Homogeneous-space quantum code'
+
+alternative_names:
+  - 'Coset-space quantum code'
+  - '\(G/H\) quantum code'
+
+description: |
+  Encodes a \textit{logical} Hilbert space, finite- or infinite-dimensional, into a \textit{physical} Hilbert space of \(L^2\)-normalizable functions on a homogeneous space \(G/H\) or, more generally, induced representations whose base space is \(G/H\) \cite{doi:10.2307/1969423,doi:10.1016/B978-1-4832-3188-4.50009-0,manual:{Isham, C. J. (1984). Topological and global aspects of quantum theory (pp. p. 1059–1290.). North-Holland.},doi:10.1016/0550-3213(91)90609-2,arxiv:1304.3366}. Here, \(G\) is a second-countable unimodular group, and \(H\) is a closed subgroup of \(G\).
+
+
+protection: |
+  \hyperref[topic:quantum-weight-enumerator]{Quantum weight enumerators}, linear programming bounds, and Rains shadow enumerators have been extended to quantum codes defined on multiplicity-free two-point homogeneous spaces \cite{arxiv:2502.14165}.
+
+
+relations:
+  parents:
+    - code_id: qecc
+  cousins:
+    - code_id: homogeneous_space_classical
+      detail: 'Homogeneous-space quantum codes are quantum counterparts of homogeneous-space codes.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-10-27'

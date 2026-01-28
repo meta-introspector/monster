@@ -1,0 +1,44 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: frobenius
+physical: qudits
+logical: qudits
+
+name: 'Frobenius code'
+introduced: '\cite{arxiv:1011.5814}'
+
+description: |
+  A cyclic prime-qudit stabilizer code whose length \(n\) divides \(p^t + 1\) for some positive integer \(t\).
+
+# Let \(C\) be a quantum cyclic code on \(n\) prime-dimensional qudits.
+# Then, \(C\) is a Frobenius code if there exists a positive integer \(t\) such that \(n\) divides \(p^t +1\).
+
+# protection: 'Protects against Pauli noise.'
+
+features:
+  decoders:
+    - 'Adapted from the Berlekamp decoding algorithm for classical BCH codes. There exists a polynomial time quantum algorithm to correct errors of weight at most \(\tau\), where \(\delta=2\tau+1\) is the BCH distance of the code \cite{arxiv:1011.5814}. '
+
+notes:
+  - 'Frobenius codes that are also stabilizer codes have been completely classified.
+  No such codes exist when \(t\) is odd.'
+
+relations:
+  parents:
+    - code_id: qudit_stabilizer
+    - code_id: quantum_cyclic
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: EnJuiKuo
+      date: '2024-03-18'
+    - user_id: VictorVAlbert
+      date: '2024-03-18'
+    - user_id: NolanCoble
+      date: '2021-12-03'

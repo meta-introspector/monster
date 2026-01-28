@@ -1,0 +1,86 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: galois_into_galois
+physical: galois
+logical: galois
+
+name: 'Galois-qudit code'
+
+alternative_names:
+  - '\(\mathbb{F}_q\)-qudit code'
+  - '\(\mathbb{F}_q\)-qudit code'
+  - 'Galois-qudit subspace code'
+
+
+description: |
+  Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space, with canonical qudit states \(|k\rangle\) labeled by elements \(k\) of the \textit{Galois field} \(\mathbb{F}_q\) and with \(q\) being a power of a prime \(p\).
+
+  A Galois field can be thought of as a vector space whose basis vectors are the \(m\) roots of some polynomial and whose coefficients (i.e., field) are \(p\)th roots of unity.
+
+  Codes can be denoted as \(((n,K))_q\) or \(((n,K,d))_q\), whenever the code''s distance \(d\) is defined.
+  This notation differentiates between Galois-qudit and \(((n,K,d))_{\mathbb{Z}_q}\) modular-qudit codes, although the same notation is usually used for both.'
+
+  There exists an analogue of the Wigner function for Galois qudits \cite{arxiv:quant-ph/0401155,arxiv:quant-ph/0410117}.
+  
+protection: |
+  An \(((n,K,d))_q\) code with distance \(d\) detects errors acting on up to \(d-1\) Galois qudits, corrects erasure errors on up to \(d-1\) Galois qudits, or corrects errors acting on up to \(\lfloor (d-1)/2 \rfloor\) Galois qudits.
+
+  \subsection{Galois-qudit Pauli-string error basis}
+  A convenient and often considered error set is the Galois-qudit analogue of the Pauli string set for \hyperref[code:qubits_into_qubits]{qubit} codes.
+
+  \begin{defterm}{Galois-qudit Pauli strings}
+  \label{topic:galois-pauli}
+  For a single Galois qudit, this set consists of products of \(X\)-type and \(Z\)-type operators labeled by elements \(\beta \in \mathbb{F}_q\), which act on computational basis states \(|\gamma\rangle\) for \(\gamma\in \mathbb{F}_q\) as
+  \begin{align}
+    X_{\beta}\left|\gamma\right\rangle =\left|\gamma+\beta\right\rangle \,\,\text{ and }\,\,Z_{\beta}\left|\gamma\right\rangle =e^{i\frac{2\pi}{p}\text{tr}(\beta\gamma)}\left|\gamma\right\rangle~,
+  \end{align}
+  where \(\text{tr}\) is the \hyperref[topic:finite-fields]{field trace}.
+  For multiple Galois qudits, error set elements are tensor products of elements of the single-qudit error set.
+  Tensor products of \(X\) (\(Z\)) Galois-qudit Paulis acting on different qudits are called \(X\)\textit{-type} (\(Z\)\textit{-type}) Galois-qudit Pauli strings.
+  Combining the \(X\)-type and \(Z\)-type strings with a \(p\)th root of unity forms a group called the \textit{Galois-qudit Pauli group} (on \(n\) Galois qudits.
+  \end{defterm}
+
+  The Galois-qudit Pauli error set is a unitary basis for linear operators on the multi-qudit Hilbert space that is orthonormal under the Hilbert-Schmidt inner product; it is a \hyperref[topic:nice-error-basis]{nice error basis}. The distance associated with this set is often the minimum weight of a Galois qudit Pauli string that implements a nontrivial logical operation in the code.
+
+
+features:
+  general_gates:
+    - 'The normalizer of the \hyperref[topic:galois-pauli]{Galois-qudit Pauli group}  is the Galois-qudit Clifford group \cite{arxiv:quant-ph/0211014}\cite[Ch. 8]{doi:10.1007/978-3-319-44906-7}.'
+  decoders:
+    - 'For few-qudit codes (\(n\) is small), decoding can be based on a lookup table. For infinite code families, the size of such a table scales exponentially with \(n\), so approximate decoding algorithms scaling polynomially with \(n\) have to be used. The decoder determining the most likely error given a noise channel is called the \textit{maximum-likelihood} (ML) decoder.'
+    - 'RL-on-Greedy decoder based on reinforcement learning \cite{arxiv:2506.03397}.'
+
+
+notes:
+  - 'Introduction to Galois qudits by \href{https://ethz.ch/content/vp/en/conferences/2014/qec/05_thursday/dab6ca18-7453-4197-aaaa-8b1964ece714.html}{Gottesman}.'
+  - 'CodingTheory Julia software library \cite{manual:{Eric Sabo. CodingTheory. https://github.com/esabo/CodingTheory}}.'
+  - 'See \cite[Ch. 8]{doi:10.1007/978-3-319-44906-7} for a side-by-side introduction to modular and Galois qudits.'
+
+relations:
+  parents:
+    - code_id: block_quantum
+      detail: 'Galois-qudit codes are block quantum codes with \(\Sigma=\mathbb{F}_q\).'
+    - code_id: qecc_finite
+    - code_id: group_quantum
+      detail: 'A Galois qudit for \(q=p^m\) can be decomposed into a Kronecker product of \(m\) modular qudits \cite{doi:10.1109/18.959288}; see Sec. 5.3 of Ref. \cite{arxiv:quant-ph/0501074}.
+      Interpreted this way, Galois-qudit codes are group quantum codes whose physical spaces are constructed using Galois fields \(\mathbb{F}_q\) as groups. More general versions of such qudits can be valued in a Galois ring \cite{arxiv:2501.18968}, over which there also exists a Fourier transform \cite{arxiv:0904.2560}.'
+  cousins:
+    - code_id: qudits_into_qudits
+      detail: |
+        A Galois qudit for \(q=p^m\) can be decomposed into a Kronecker product of \(m\) modular qudits; see \cite{doi:10.1109/18.959288}\cite[Sec. 5.3]{arxiv:quant-ph/0501074}\cite{preset:GottesmanBook,arxiv:2408.10140,arxiv:2408.09254}.
+        The two coincide when \(q\) is prime, and reduce to qubits when \(q=2\).
+        However, Pauli matrices for the two types of qudits are defined differently.
+        See \cite[Ch. 8]{doi:10.1007/978-3-319-44906-7} for a side-by-side introduction to modular and Galois qudits.
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-05-07'
+    - user_id: VictorVAlbert
+      date: '2021-12-03'

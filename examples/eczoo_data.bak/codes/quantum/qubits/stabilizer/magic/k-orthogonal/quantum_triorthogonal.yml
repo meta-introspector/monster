@@ -1,0 +1,71 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_triorthogonal
+physical: qubits
+logical: qubits
+
+name: 'Triorthogonal code'
+introduced: '\cite{arxiv:1209.2426}'
+
+description: |
+  Qubit CSS code whose \(X\)-type logicals and stabilizer generators form a triorthogonal matrix (defined below) in the \hyperref[topic:binary-symplectic-representation]{symplectic representation}.
+
+  An \(m \times n\) binary matrix is triorthogonal if its rows \(r_1, \ldots, r_m\) satisfy \(|r_i \cdot r_j| = 0\) and \(|r_i \cdot r_j \cdot r_k| = 0\) with binary addition and multiplication.
+  The triorthogonal CSS code associated with the matrix is constructed by mapping nonzero entries in even-weight rows to \(X\) operators, and \(Z\) operators for each row in the orthogonal complement.
+
+  See \cite[Appx. D]{arxiv:1606.01904}\cite[Sec. 2.3]{arxiv:1709.02832} for generalized versions of triorthogonality.
+
+protection: 'Weight \(t\) Pauli errors, where \(t\) depends on the family. For example, Ref. \cite{arxiv:1209.2426} provides a family of distance \(2\) codes.'
+
+features:
+  encoders:
+    - 'Encoder for magic states for the code constructed in \cite{arxiv:1209.2426}.'
+
+  transversal_gates:
+    - 'Transversal action of \(T\) gates on all qubits, followed by a particular pattern of \(CZ\) and \(S\) gates, will realize a logical \(T\) gate \cite[Lemma 2]{arxiv:1209.2426}. When an additional condition on logical-\(X\) operators is satisfied, the \(CZ\) and \(S\) gates are no longer necessary \cite[Thm. 14]{arxiv:1910.09333}.'
+    - 'Triorthogonality is necessary but not sufficient for physical transversal \(T\) gates on each qubit to realize the identity logical gate \cite[Thm. 12]{arxiv:1910.09333}.'
+    - 'Certain codes realize controlled-controlled-\(Z\) gates \cite{arxiv:1304.3709}, realized via physical \(CCZ\) gates on three code blocks.'
+    - 'Triorthogonal codes realizing logical \(T\) gates using only physical \(T\) gates can be paired up with self-dual CSS codes to yield a transversal CNOT gate \cite{arxiv:2510.05708}.'
+
+  decoders:
+    - 'Steane error correction \cite{arxiv:2510.05708}.'
+
+  fault_tolerance:
+    - 'Universal fault-tolerant gates can be performed without magic-state distillation \cite{arxiv:1304.3709,arxiv:2210.14074}.'
+    - 'Universal fault-tolerant gates can be achieved by pairing with a self-dual CSS code and using Steane error correction \cite{arxiv:2510.05708}.'
+
+notes:
+  - 'Reference \cite{arxiv:2107.09684} presents a classification of triorthogonal codes up to \(n + k \leq 38\) by associating each triorthogonal code with a RM code polynomial.'
+
+relations:
+  parents:
+    - code_id: quantum_k-orthogonal
+      detail: '\(k\)-orthogonal codes reduce to triorthogonal codes for \(k=3\).'
+    - code_id: qudit_triorthogonal
+      detail: 'Prime-qudit triorthogonal codes reduce to triorthogonal codes when \(p=2\).'
+  cousins:
+    - code_id: quantum_reed_muller
+      detail: 'Classification of triorthogonal codes yields a connection to RM code polynomials \cite{arxiv:2107.09684}.'
+    - code_id: self_dual
+      detail: 'Self-dual binary codes can be used to construct triorthogonal codes \cite{arxiv:2408.09685}.'
+    - code_id: css-t
+      detail: 'Triorthogonal and CSS-T codes overlap, but neither is a subset of the other \cite{arxiv:2408.12752}. CSS-T codes reduce to triorthogonal codes when the logical action of the physical transversal \(T\) gate is a logical \(T\) gate on all encoded qubits. Triorthogonality is necessary for physical transversal \(T\) gates on each qubit to realize the identity logical gate \cite[Thm. 12]{arxiv:1910.09333}. The \(X\)-type stabilizer generator matrix for a CSS-T code is always triorthogonal \cite[Corr. 5]{arxiv:2312.17518}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-07-29'
+    - user_id: ShubhamPJain
+      date: '2024-07-29'
+    - user_id: NarayananRengaswamy
+      date: '2024-07-29'
+    - user_id: VictorVAlbert
+      date: '2021-12-16'
+    - user_id: BenjaminQuiring
+      date: '2021-12-16'

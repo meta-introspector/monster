@@ -1,0 +1,40 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: rhombic_dodecahedron
+physical: spheres
+logical: reals
+
+name: 'Rhombic dodecahedron code'
+
+# vertices on wikipedia
+description: |
+  Spherical \((3,14,2-2/\sqrt{3})\) code whose codewords are the vertices of the rhombic dodecahedron, whose vertices are the union of the cube and the octahedron.
+  
+
+protection: |
+  Optimal antipodal configuration of 14 points in 3D space \cite{arxiv:math/0208004}.
+
+
+relations:
+  parents:
+    - code_id: polyhedron
+  cousins:
+    - code_id: dual_polytope
+      detail: 'The rhombic dodecahedron and cuboctahedron are dual to each other \cite{doi:10.7312/hold92776}.'
+    - code_id: cubeoctahedron
+      detail: 'The rhombic dodecahedron and cuboctahedron are dual to each other \cite{doi:10.7312/hold92776}.'
+    - code_id: hypercube
+      detail: 'The vertices of a rhombic dodecahedron are a union of the vertices of a cube and an octahedron.'
+    - code_id: biorthogonal_spherical
+      detail: 'The vertices of a rhombic dodecahedron are a union of the vertices of a cube and an octahedron.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2025-07-16'

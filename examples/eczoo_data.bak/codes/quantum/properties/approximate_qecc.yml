@@ -1,0 +1,215 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: approximate_qecc
+
+name: 'Approximate quantum error-correcting code (AQECC)'
+short_name: 'AQECC'
+introduced: '\cite{arxiv:quant-ph/9704002,doi:10.1070/RM1997v052n06ABEH002155,arxiv:quant-ph/0307138,arxiv:quant-ph/0503139,arxiv:0907.4207,arxiv:0907.5391,arxiv:1706.09434}'
+
+description: |
+  Encodes quantum information so that it is possible to approximately recover that information from noise up to an error bound in recovery.
+
+  Many families of approximate block quantum codes become exact in the \(n\to\infty\) limit (see children).
+  More generally, codes that become exact for some parameter values are called \textit{quasi exact} \cite{arxiv:2105.14777}.
+
+protection: |
+  Many of the state fidelity conditions that hold exactly for \hyperref[code:qecc_finite]{(exact) QECCs} can be shown to hold up to some error \(\epsilon\) for approximate QECCs.
+  Approximate correction has been formulated for certain types of correlated noise \cite{arxiv:0909.1466}.
+
+  \subsection{Input-output fidelity}
+
+  This is the primary notion of closeness between states before and after error correction. 
+  It is defined as
+  \begin{align}
+    \langle\psi|\mathcal{N}(|\psi\rangle\langle\psi|)|\psi\rangle~,
+  \end{align}
+  where \(\mathcal{N}\) is the combination of encoding, noise, and recovery channels.
+  This quantity is difficult to compute, and there exist other quantities that are easier to work with and that also become 1 in the limit of perfect error correction.
+
+  \subsection{Entanglement fidelity}
+
+  Let \(f(\rho_1,\rho_2)\) be the fidelity between quantum states.
+  Let entanglement fidelity between channels \(\mathcal{N}\) and \(\mathcal{M}\) be defined as
+  \begin{align}
+    F_{\rho}(\mathcal{N},\mathcal{M})
+    =f((\mathcal{N}\otimes\mathrm{id})\ket{\psi}\bra{\psi},(\mathcal{M}\otimes\mathrm{id})\ket{\psi}\bra{\psi})~,
+  \end{align}
+  where \(\ket{\psi}\) is a purification of the mixed state \(\rho\).
+  The worst-case entanglement fidelity is then defined as
+  \begin{align}
+    F(\mathcal{N},\mathcal{M})=\min_{\rho} F_{\rho}(\mathcal{N},\mathcal{M})~.
+  \end{align}
+
+  Now, based on the Bures distance and worst case entanglement fidelity, we define
+  \begin{align}
+    d(\mathcal{N},\mathcal{M})=\sqrt{1-F(\mathcal{N},\mathcal{M})}
+  \end{align}
+  as a measure of distance between quantum channels~\cite{arxiv:0907.5391}.
+
+  Given some encoding map \(\mathcal{U}\) and some noise channel \(\mathcal{E}\),
+  the code described by \(\mathcal{U}\) is \textit{\(\epsilon\)-correctable} if there exists
+  some quantum channel \(\mathcal{D}\) such that
+  \begin{align}
+    d(\mathcal{D}\mathcal{E}\mathcal{U}(\rho),\rho)\leq \epsilon
+  \end{align}
+  for all logical states \(\rho\)~\cite{arxiv:0907.5391}.
+  When \(\epsilon=0\) we can derive the standard \term{Knill-Laflamme conditions} \cite{arxiv:1102.3809}.
+
+  Upper and lower bounds based on the average entanglement fidelity can be derived \cite[Eq. (10)]{arxiv:0907.5391}\cite[Eqs. (138-139)]{arxiv:0907.3386}\cite[Eq. (139)]{arxiv:1103.0649}.
+  Riemannian optimization techniques can be applied to design approximate QECCs since the set of unitary encoding maps \(U\) forms a Stiefel manifold \cite{arxiv:2407.08423}.
+
+  \subsection{Complementary channel formulation}
+
+  Given a noise channel \(\mathcal{E}\), there exists a recovery channel \(\mathcal{D}\) such that
+  \(F(\mathcal{D}\mathcal{E},\mathrm{id})=1-\epsilon\) iff there exists some \(\mathcal{D}'\) such that
+  for \hyperref[topic:complementary-channel]{complementary channel} \(\mathcal{E}^C\), \(F(\mathcal{E}^C,\mathcal{D}')=1-\epsilon\)
+  and \(D'(\rho)=\rho_0\) for some fixed \(\rho_0\).
+  Note that \(F\) denotes worst case entanglement fidelity between channels.
+
+  We can generalize this by replacing \(\mathrm{id}\) with some channel \(M\). Given noise channel \(\mathcal{E}\),
+  there exists a recovery channel \(\mathcal{D}\) such that
+  \(F(\mathcal{D}\mathcal{E},\mathcal{M})=1-\epsilon\) iff there exists some \(\mathcal{D}'\) such that
+  for \hyperref[topic:complementary-channel]{complementary channel} \(\mathcal{E}^C\), \(F(\mathcal{E}^C,\mathcal{D}'\mathcal{M}^C)=1-\epsilon\) \cite{arxiv:0907.5391}.
+
+  \subsection{Approximate error-correction conditions}
+  Analogously to the \term{Knill-Laflamme conditions} for (exact) QECCs, there exist various formulations of necessary and sufficient conditions for approximate error correction to determine if some code is \(\epsilon\)-correctable under a noise channel.
+
+  Necessary and sufficient conditions for approximate error correction can also be expressed in terms of
+  \hyperref[topic:complementary-channel]{complementary channels}.
+  Given some code defined by projector \(\Pi = U U^\dagger\), \(\Pi\) is \textit{\(\epsilon\)-correctable}
+  with respect to some noise channel \(\mathcal{E}\) if
+  \begin{align}
+    \Pi E_i^{\dagger}E_j \Pi =\lambda_{ij}\Pi +\Pi B_{ij}\Pi ~,
+  \end{align}
+  where \(\Lambda(\rho)=\mathrm{Tr}(\rho)\sum_{ij} \lambda_{ij}|i\rangle\langle j|\)
+  is a density operator,
+  \begin{align}
+    (\Lambda+B)(\rho)=\Lambda(\rho)+\sum_{ij}\mathrm{Tr}(\rho B_{ij})|i\rangle\langle j|
+  \end{align}
+  is the output state of the complementary noise channel \(\mathcal{E}^C = \Lambda+B\), and the Bures distance \(d(\Lambda+B,\Lambda)\le\epsilon\)~\cite{arxiv:0907.5391}.
+  An alternative measure, the \textit{AQEC relative entropy}, measures the relative entropy between \(\Lambda + B\) and \(\Lambda\) \cite{arxiv:2312.16991}.
+  The non-correctable contributions \(B_{ij}\) can be arranged in a signature vector that is amenable to numerical optimization in the space of Stiefel manifolds \cite{arxiv:2410.07983,arxiv:2504.20847}. 
+  The Frobenius norm of the matrix \(B_{ij}\) bounds the difference between the two \hyperref[topic:quantum-weight-enumerator]{quantum weight enumerators} \cite{arxiv:2108.04434}.
+
+  In addition to the necessary and sufficient error correction conditions,
+  there exist sufficient conditions for AQECCs.
+  Given a noise channel \(\mathcal{U}(\rho)=\sum_{n} A_n \rho A_n^{\dagger}\) where \(\forall{n}\), \(A_n\) is a Kraus operator, and code projector \(\Pi \), express the following using polar decomposition, \(A_n \Pi =U_n \sqrt{\Pi A_n^{\dagger}A_n \Pi }\), and let \(p_n\) and \(p_n\lambda_n\) be the largest and smallest eigenvalues for \(\Pi A_n^{\dagger}A_n \Pi \).
+  Then, we are guaranteed that if
+  \begin{align}\Pi U_m^{\dagger}U_n \Pi =\delta_{mn} \Pi  \land p_n(1-\lambda_n)\le O(f(\epsilon))\end{align}
+  we have a fidelity \(F \geq 1-O(f(\epsilon))\) after recovery~\cite{arxiv:quant-ph/9704002}.
+
+  \subsection{Universal subspace AQECCs and alpha-bits}
+
+  Universal subspace approximate error correction is a type of approximate error correction that quantifies protection of information stored in (strict) subspaces of a logical space.
+  See also formulations of error corrections for subsets that are not necessarily subspaces \cite{arxiv:2112.01858}.
+
+  Given a subspace of a Hilbert space \(\mathsf{S}\) of dimension \(d\), noise channel \(\mathcal{E}\), and encoding \(\mathcal{U}\), we define the subspace as an \textit{\(\alpha\)-dit} with error \(\epsilon\) if, for all subspaces \(\tilde{\mathsf{S}}\) of dimension less than or equal to \(d^{\alpha}+1\),
+  there exists some channel \(\tilde{\mathcal{D}}\) such that
+  \begin{align}||(\tilde{\mathcal{D}}\circ \mathcal{E}\circ \mathcal{U})|\psi\rangle-|\psi\rangle||_1\leq \epsilon\end{align}
+  for all \(|\psi\rangle\in \tilde{\mathsf{S}}\)~\cite{arxiv:1706.09434}.
+
+  Generalizing the notion of quantum information transmission and capacity of \hyperref[code:qecc_finite]{(exact) QECCs}, one can achieve an \(\alpha\)-bit transmission rate \(r\) quantum channel \(\mathcal{E}\) iff,
+  for sufficiently large \(d\) and \(n\), and for all \(\epsilon>0\), the channel \(\mathcal{E}^{\otimes n}\)
+  is able to transmit
+  \begin{align}\left\lceil \frac{n r}{\log(d)} \right\rceil\quad \textup{\(\alpha\)-dits}\end{align}
+  with total error \(\epsilon\) across those \(\alpha\)-dits.
+  The \(\alpha\)-bit capacity \(Q\) of \(\mathcal{E}\)
+  is defined as the supremum of achievable transmission rates~\cite{arxiv:1706.09434}.
+
+  \subsection{Other metrics of approximate error correction}
+
+  \begin{enumerate}[(1)]
+  \item \begin{defterm}{Code space complexity}
+  \label{topic:codespace-complexity}
+  One can relate robustness of an approximate quantum code to the quantum \textit{circuit complexity} \cite{arxiv:1210.1281,arxiv:1402.5674,arxiv:1301.1363,arxiv:1607.05256} of creating states in the codespace.
+  For a family of block codes, scaling as \hyperref[topic:asymptotics]{order} \(O(k/n)\) of a code parameter called the \textit{subsystem variance} characterizes the transition between code subspaces with low and high circuit complexity \cite{arxiv:2310.04710}.
+  The Lovasz local lemma yields a trade-off between circuit complexity and local indistinguishability \cite{arxiv:2510.04453}.
+  \end{defterm}
+  \item \textit{Integrity} measures how well a code state \(\psi\) and an orthogonal state can be distinguished in trace distance after noise and recovery are applied \cite{arxiv:1707.09951}.
+  \end{enumerate}
+
+
+
+
+# Please remove calM from, first discussing the codespace case and then opening up to algebras.
+
+# \subsection{Complementary channel formulation}
+
+# Given a noise channel \(\mathcal{E}\), there exists a recovery channel \(\mathcal{D}\) such that
+# \(F(\mathcal{D}\mathcal{E},\mathcal{M})=1-\epsilon\) iff there exists some \(\mathcal{D}'\) such that
+# for complementary channels \(\mathcal{E}^C\) and \(\mathcal{M}^C\), \(F(\mathcal{E}^C,\mathcal{D}'\mathcal{M}^C)=1-\epsilon\).
+# Note that \(F\) denotes worst case entanglement fidelity between channels.
+#
+# One example is that if \(\mathcal{M}\) is the projector onto some algebra \(\mathcal{A}\),
+# we can derive correctability conditions for that algebra under \(\mathcal{E}\)~\cite{arxiv:0907.5391}.
+
+
+features:
+  rate: 'An extension of the \hyperref[topic:bpt-bound]{BPT bound} to approximate codes is done in Ref. \cite{arxiv:1610.06169}.'
+  encoders:
+    - 'Given a decoder, an encoding that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program \cite{arxiv:quant-ph/0109155,arxiv:quant-ph/0307138,arxiv:0706.3400,arxiv:0708.3658}).'
+    - 'Variational quantum circuit encoder \cite{arxiv:2204.03560}.'
+  decoders:
+    - 'Given an encoding and a noise channel, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program \cite{arxiv:quant-ph/0109155,arxiv:quant-ph/0307138,arxiv:quant-ph/0606105,arxiv:0706.3400,arxiv:0708.3658}. This optimal decoder is robust to unexpected variations in the noise channel \cite{arxiv:0905.3838}.'
+    - 'The \textit{decoupling approach} a.k.a. the \textit{Uhlmann decoder} \cite{arxiv:quant-ph/0702005,arxiv:1004.1641,arxiv:1012.6044}.'
+    - 'Quantum machine-learning based decoders such as quantum convolutional neural networks \cite{arxiv:1810.03787} and quantum autoencoders \cite{arxiv:2202.00555}.'
+    - 'The \textit{Leung recovery map} \cite{doi:10.1103/PhysRevA.56.2567} for a noise channel whose Kraus operators \(E_j\) yield a diagonal QEC matrix, \(c_{ij}\propto\delta_{ij}\), has Kraus operators \(\Pi V_j^{\dagger}\), where \(\Pi\) is the codespace projection, and where \(V_j\) is the unitary from the polar decomposition of \(E_j \Pi\).
+    This is the recovery used in the proof of the Knill-Laflamme conditions \cite[Thm. 10.1]{doi:10.1017/CBO9780511976667}.'
+    - 'The \textit{Cafaro recovery map} \cite{arxiv:1308.4582} can be obtained for noise Kraus operators if there exists a basis of error words with respect to which the uncorrectable piece in the Knill-Laflamme conditions is diagonal; see Ref. \cite{arxiv:2406.02444}.
+    The map recovers information perfectly for strictly correctable noise.'
+    - 'The \textit{Petz recovery map} a.k.a. the \textit{transpose map} \cite{doi:10.1007/BF01212345,doi:10.1093/qmath/39.1.97,arxiv:1810.03150}, a quantum channel determined by the codespace and noise channel, yields an infidelity of recovery that is at most twice away from the infidelity of the best possible recovery \cite{arxiv:quant-ph/0004088}. 
+    The fidelity can be expressed exactly as a function of the \term{Knill-Laflamme conditions} \cite[Thm. 1]{arxiv:2401.02022}, and it can be used to derive a generalization of the \term{Knill-Laflamme conditions} for approximate QECCs \cite{arxiv:0909.0931,arxiv:1202.5139}.
+    Satisfaction of the \term{Knill-Laflamme conditions} is sufficient but not necessary for the Petz recovery map to be the optimal recovery, and a necessary and sufficient condition has been derived \cite{arxiv:2410.23622}.
+    The infidelity of a modified Petz recovery map under erasure can be bounded using the conditional mutual information via the \textit{approximate Petz theorem} \cite{arxiv:1410.0664,arxiv:1509.07127,arxiv:1610.06169}.
+    In the case of topological codes, the Petz infidelity is related to the topological entanglement entropy \cite{arxiv:2408.00857}.
+    Modifications include the Petz-like decoder \cite{arxiv:2405.06051}, the temporal Petz recovery map for dynamical codes \cite{arxiv:2502.09177}, and a syndrome-based Petz recovery \cite{arxiv:2510.08719}.
+    THe Petz map is related to quantum Bayes'' rule \cite{arxiv:2410.00319}.'
+    - 'The Yoshida-Kitaev decoder for the Hayden-Preskill protocol \cite{arxiv:1710.03363} can be extended to general QECCs \cite{arxiv:2405.06051}.'
+    - 'If parts of the \term{Knill-Laflamme conditions} are violated, a deterministic recovery operation is not possible. However, a probabilistic recovery and a modified version of the conditions can still be constructed \cite{arxiv:2410.00155}.'
+
+notes:
+  - 'See review \cite{arxiv:2208.00365}.'
+
+relations:
+  parents:
+    - code_id: approximate_oaecc
+  cousins:
+    - code_id: topological
+      detail: 'In the case of topological codes, the Petz infidelity is related to the topological entanglement entropy \cite{arxiv:2408.00857}.'
+    - code_id: spt
+      detail: 'Certain phases with continuous symmetries cannot be prepared using a constant-depth circuit, a consequence of the Lieb-Schult-Mattis theorem \cite{doi:10.1016/0003-4916(61)90115-4,arxiv:cond-mat/9911137,arxiv:2112.06946,arxiv:2405.14929}. The theorem, in turn, can be linked to the circuit complexity of the underlying approximate error-correcting code \cite{arxiv:2510.04453}.'
+    - code_id: stiefel
+      detail: 'Riemannian optimization techniques can be applied to design approximate QECCs since the set of unitary encoding maps \(U\) forms a Stiefel manifold \cite{arxiv:2407.08423}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: M10T
+      date: '2023-07-25'
+    - user_id: VictorVAlbert
+      date: '2023-07-24'
+    - user_id: M10T
+      date: '2023-07-19'
+    - user_id: M10T
+      date: '2023-07-11'
+    - user_id: M10T
+      date: '2023-07-03'
+    - user_id: M10T
+      date: '2023-06-28'
+    - user_id: M10T
+      date: '2023-06-22'
+    - user_id: M10T
+      date: '2023-06-20'
+    - user_id: VictorVAlbert
+      date: '2022-08-12'
+    - user_id: PhilippeFaist
+      date: '2022-07-15'
+    - user_id: VictorVAlbert
+      date: '2021-12-05'
+    - user_id: ManasiShingane
+      date: '2021-12-05'

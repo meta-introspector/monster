@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: q-ary_ltc
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: '\(q\)-ary linear LTC'
+#introduced: '\cite{doi:10.1145/103418.103428,manual:{Sanjeev Arora. \emph{Probabilistic checking of proofs and hardness of approximation problems}. UC Berkeley, 1994.},doi:10.1137/S0097539793255151,arxiv:1307.3975}'
+
+description: |
+  A \(q\)-ary linear code \(C\) of length \(n\) that is a \((u,R)\)-LTC with query complexity \(u\) and soundness \(R>0\).
+  More technically, the code is a \((u,R)\)-LTC if the rows of its parity-check matrix \(H\in \mathbb{F}_q^{r\times n}\) have weight at most \(u\) and if
+  \begin{align}
+    \frac{1}{r}|H x| \geq \frac{R}{n} D(x,C)
+  \end{align}
+  holds for any \(q\)-ary string \(x\), where \(D(x,C)\) is the \(q\)-ary Hamming distance between \(x\) and the closest codeword to \(x\) \cite[Def. 11]{arxiv:1911.03069}.
+  A code satisfying the above constraint without the weight-\(u\) restriction is called an \(R\)\textit{-testable code} \cite{arxiv:2311.04681}.
+
+notes:
+  - 'Testable binary codes admit weakly stable presentations of their correspoding groups; this property is relevant to the disproof of the Connes embedding conjecture \cite{arxiv:2311.04681}.'
+
+relations:
+  parents:
+    - code_id: q-ary_linear
+      detail: 'Linear \(q\)-ary codes with distances \(\frac{1}{2}n-\sqrt{t n}\) for some \(t\) are called almost-orthogonal and are locally testable with query complexity of \hyperref[topic:asymptotics]{order} \(O(t)\) \cite{doi:10.1109/SFCS.2005.16}. This was later improved to codes with distance \(\frac{1}{2}n-O(n^{1-\gamma})\) for any positive \(\gamma\) \cite{doi:10.1109/FOCS.2007.8}, provided that the number of codewords is polynomial in \(n\).'
+    - code_id: ltc
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-09-30'

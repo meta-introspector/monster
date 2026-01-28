@@ -1,0 +1,31 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: cubic_honeycomb_color
+physical: qubits
+logical: qubits
+
+name: 'Cubic honeycomb color code'
+introduced: '\cite{arxiv:cond-mat/0607736}'
+
+description: |
+  3D color code defined on a four-colorable bitruncated cubic honeycomb uniform tiling.
+
+features:
+  transversal_gates: 
+    - 'A code family on a truncated cube with particular boundary conditions admits a transversal control-\(S\) gate via physical \(T\) and \(T^{\dagger}\) gates \cite{arxiv:2411.15035}.'
+
+
+relations:
+  parents:
+    - code_id: 3d_color
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-05-03'

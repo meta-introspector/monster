@@ -1,0 +1,5 @@
+perf_traces/*.data
+perf_traces/*.script
+.lake/
+result
+*.o

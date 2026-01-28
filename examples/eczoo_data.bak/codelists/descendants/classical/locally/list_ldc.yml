@@ -1,0 +1,28 @@
+
+list_id: ldc
+title: Locally decodable codes
+intro: |
+  Here is a list of codes related to locally decodable codes.
+
+codes:
+  select:
+    - descendant_of: ldc
+    - cousin_of: ldc
+
+display:
+  style: table
+  options:
+    cssclass: xtra-xtra-stretch
+    columns:
+      - property: name
+        title: Code
+        link_to_code: true
+        cssclass: 'top left'
+
+      - property: description
+        title: Description
+        cssclass: 'textit'
+        first_paragraph_only: true
+
+sort:
+  by: name

@@ -1,0 +1,45 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_double_abelian
+physical: qudits
+logical: qudits
+
+name: 'Abelian quantum-double stabilizer code'
+introduced: '\cite{arxiv:quant-ph/9707021}'
+
+description: |
+  Modular-qudit stabilizer code whose codewords realize 2D modular gapped Abelian topological order with trivial cocycle.
+  The corresponding anyon theory is defined by an Abelian group.
+  All such codes can be realized by a stack of modular-qudit surface codes because all Abelian groups are Kronecker products of cyclic groups.
+
+  There exists an invariant that can be computed to uniquely characterize the anyons of a state in an Abelian quantum-double topological phase \cite{arxiv:1407.2926}.
+
+protection: |
+  Error-correcting properties established in Ref. \cite{arxiv:1804.03203} using operator algebra theory.
+  Correcting the maximum number of correctable errors is \(NP\)-complete \cite{arxiv:2404.08552}.
+
+features:
+  encoders:
+    - 'Any geometrically local unitary circuit connecting two quantum double models whose groups are not isomorphic must have depth at linear linear in \(n\) \cite{arxiv:1407.2926}.'
+  decoders:
+    - 'Efficient decoder correcting below the code distance \cite{arxiv:2404.08552}.'
+
+
+# not css because Clifford-deformed is there
+relations:
+  parents:
+    - code_id: tqd_abelian_stabilizer
+      detail: 'The anyon theory corresponding to Abelian quantum double codes is defined by an Abelian group and trivial cocycle. All Abelian TQD codes can be realized as modular-qudit stabilizer codes by starting with an Abelian quantum double model along with a family of Abelian TQDs that generalize the double semion anyon theory and \hyperref[topic:code-switching]{condensing} certain bosonic anyons \cite{arxiv:2211.03798}. Upon gauging some symmetries \cite{arxiv:1202.3120,arxiv:1407.1025,arxiv:1603.04442,arxiv:1603.05182,arxiv:1605.01640,arxiv:1805.01836,arxiv:1806.08679,arXiv:2108.11402,arxiv:2310.16032,arxiv:2410.02213}, Type-I and II \(\mathbb{Z}_2^3\) TQDs realize the same topological order as certain Abelian quantum double models \cite{arxiv:hep-th/9511195,arxiv:1508.03468,arxiv:2112.12757}.'
+    - code_id: quantum_double
+      detail: 'The anyon theory corresponding to (Abelian) quantum double codes is defined by an (Abelian) group.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-04-06'

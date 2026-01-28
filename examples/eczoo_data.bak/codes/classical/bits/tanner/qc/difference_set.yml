@@ -1,0 +1,43 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+
+code_id: difference_set
+physical: bits
+logical: bits
+
+name: 'Difference-set cyclic (DSC) code'
+short_name: 'DSC'
+introduced: '\cite{doi:10.1002/j.1538-7305.1966.tb01686.x}'
+
+description: |
+  Cyclic LDPC code constructed deterministically from a difference set.
+  Certain DCS codes satisfy more redundant constraints than Gallager codes and thus can outperform them \cite{doi:10.1007/978-1-4613-0165-3_6}.
+
+notes:
+  - 'See book \cite[Ch. 6]{doi:10.1142/9283} for a general theory of linear codes made from difference sets.'
+
+
+relations:
+  parents:
+    - code_id: qc_ldpc
+    - code_id: algebraic_ldpc
+    - code_id: binary_cyclic
+  cousins:
+    - code_id: hadamard
+      detail: '\textit{Hadamard difference sets} are difference sets constructed from Hadamard matrices \cite[Ch. 6]{doi:10.1142/9283}.'
+    - code_id: hyperoval
+      detail: 'Hyperoval difference sets yield DSC codes \cite{doi:10.1023/A:1008264606494}\cite[Ch. 6]{doi:10.1142/9283}.'
+    - code_id: generalized_reed_muller
+      detail: 'DSC codes can be \hyperref[topic:finite-fields]{subfield} subcodes of GRM codes, and visa versa \cite[Thm. 6.14]{doi:10.1142/9283}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-05-04'

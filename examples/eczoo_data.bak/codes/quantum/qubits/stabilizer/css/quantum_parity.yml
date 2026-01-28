@@ -1,0 +1,92 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_parity
+physical: qubits
+logical: qubits
+
+name: 'Quantum parity code (QPC)'
+short_name: 'QPC'
+introduced: '\cite{doi:10.1103/PhysRevA.52.R2493,arxiv:quant-ph/0006088,arxiv:quant-ph/0501184}'
+
+alternative_names:
+  - 'Subspace Shor code'
+
+description: |
+  A \([[m_1 m_2,1,\min(m_1,m_2)]]\) CSS code family obtained from concatenating an \(m_1\)-qubit phase-flip repetition code with an \(m_2\)-qubit bit-flip repetition code.
+
+  Logical codewords are
+  \begin{align}
+  \begin{split}
+  |\overline{0}\rangle&=\frac{1}{2^{m_2/2}}\left(|0\rangle^{\otimes m_1}+|1\rangle^{\otimes m_1}\right)^{\otimes m_2}\\
+  |\overline{1}\rangle&=\frac{1}{2^{m_2/2}}\left(|0\rangle^{\otimes m_1}-|1\rangle^{\otimes m_1}\right)^{\otimes m_2}~.
+  \end{split}
+  \end{align}
+
+# An \(((8,1))\) constant-excitation code correcting a single \hyperref[topic:ad]{AD} error can be obtained from concatenating the constant-excitation \([[4,1,2]]\) subcode with the dual-rail code \cite{arxiv:quant-ph/0501184,arxiv:2010.00538}; its codewords are
+# \begin{align}
+# \begin{split}
+#   |\overline{0}\rangle & =(|00001111\rangle+|11110000\rangle)/\sqrt{2}\\
+#   |\overline{1}\rangle & =(|11000011\rangle+|00111100\rangle)/\sqrt{2}~.
+# \end{split}
+# \end{align}
+
+
+protection: 'Has distance \(d=\min(m_1,m_2)\).'
+
+#                   - 'Tier 1(physical encoding): \(\ket{0}=\ket{H}\) and \(\ket{1}=\ket{V}\) '
+#                   - 'Tier 2(parity encoding): \(\ket{0}^{(n)} = (\ket{+}^{\otimes n}+\ket{-}^{\otimes n})/\sqrt{2} \)  and \(\ket{1}^{(n)} = (\ket{+}^{\otimes n} - \ket{-}^{\otimes n})/\sqrt{2} \)'
+#                   - 'Tier 3(redundant encoding): Finally, any code word is: \ket{\psi}=\alpha\ket{0}^{(n)\ket{0}^{(n)\cdots\ket{0}^{(n)+\beta\ket{1}^{(n)\ket{1}^{(n)\cdots\ket{1}^{(n)}'
+
+features:
+  encoders:
+    - 'Encoders for a recursively concatenated QPCs are related to \textit{quantum trees} \cite{arxiv:2305.03694,arxiv:2306.14294,arxiv:2409.13801} and tree tensor networks \cite{arxiv:1312.4578}.'
+    - 'Linear-optical encoding \cite{arxiv:0707.0903}.'
+  decoders:
+    - 'Teleportation-based QEC \cite{arxiv:1310.5291}.'
+  threshold:
+    - 'All optical scheme using QPCs concatenated with either Steane or Golay codes \cite{arxiv:0908.3932}.'
+
+realizations:
+  - 'The \([[m^2,1,m]]\) codes for \(m\leq 7\) have been realized in trapped-ion quantum devices \cite{arxiv:2104.01205}.'
+  - 'QPCs have been discussed independently in the context of superconducting circuits \cite[Eq. (1)]{arxiv:cond-mat/0403712}\cite[Eqs. (8-10)]{doi:10.1088/0034-4885/75/7/072001}, and aspects of such designs have been realized in experiments \cite{arxiv:0802.2295}.'
+
+notes:
+  - 'Non-determinisitic linear-optical encoding \cite{arxiv:quant-ph/0501184} whose success probability \(P_{E}\) is determined by the efficiency \(\eta\) of the photonic encoding circuit. A threshold \(\eta > 0.82 \) exists for the efficiency, above which \(P_{E}\to 1\) as \(m_1\to\infty\) given particular \(m_2\).'
+
+relations:
+  parents:
+    - code_id: generalized_shor
+    - code_id: group_quantum_parity
+      detail: 'A \([[m_1 m_2,1,\min(m_1,m_2)]]_G\) group-based QPC reduces to a QPC for \(G=\mathbb{Z}_2\).'
+    - code_id: quantum_lego
+      detail: 'Encoders for a recursively concatenated QPCs are related to \textit{quantum trees} \cite{arxiv:2305.03694,arxiv:2306.14294} and tree tensor networks \cite{arxiv:1312.4578}.'
+  cousins:
+    - code_id: bacon_shor
+      detail: 'Bacon-Shor codes reduce to QPCs when all \(X\)-type gauge generators are fixed \cite[pg. 6]{arxiv:1809.01193}.'
+    - code_id: majorana_stab
+      detail: 'QPCs for \(m_1=m_2\) can be conveniantly expressed in terms of mutually commuting Majorana operators \cite{arxiv:quant-ph/0003137}.'
+    - code_id: constant_excitation
+      detail: 'QPCs for even \(m_1\) can be made into CE codes by a Pauli transformation (e.g., \(XIXI\cdots XI\)) applied to each block of \(m_1\) qubits.'
+    - code_id: ampdamp
+      detail: 'An \([[8,1,2]]\) QPC correcting a single \hyperref[topic:ad]{AD} error is equivalent to a concatenation of the \(\{|\overline{01}\rangle,|\overline{11}\rangle\}\) (constant-excitation) subcode of the \([[4,2,2]]\) code with the dual-rail code \cite{arxiv:quant-ph/0103042,arxiv:quant-ph/0501184,arxiv:2010.00538}. More generally, an \([[m^2,1,m]]\) QPC corrects \(m-1\) \hyperref[topic:ad]{AD} errors \cite{arxiv:1001.2356}.'
+    - code_id: rbh
+      detail: 'QPCs can be concatenated with RBH codes \cite{arxiv:2207.06805}.'
+
+# QPC codes have been generalized to other classes of AD codes \cite{arxiv:2412.16450,arxiv:2501.07093}.
+
+#     - code_id: translationally_invariant_stabilizer
+# Doesn't seem to be since stab gens can be arbitrarily large
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-14'
+    - user_id: VictorVAlbert
+      date: '2021-12-31'
+    - user_id: XinyuanZheng
+      date: '2021-12-20'

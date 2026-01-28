@@ -1,0 +1,50 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: floquet_xyz_ruby
+physical: qubits
+logical: qubits
+
+name: 'XYZ ruby Floquet code'
+introduced: '\cite{arxiv:2407.08566}'
+
+description: |
+  2D Floquet code whose qubits are placed on vertices of a ruby tiling.
+  Its weight-two check operators are placed on various edges.
+  One third of the time during its measurement schedule, its ISG is that of the 6.6.6 color code concatenated with a three-qubit repetition code.
+  Together, all ISGs generate the gauge group of the 3F subsystem code.
+  A Floquet code with the same underlying subsystem code but with a different measurement schedule was developed in Ref. \cite{arxiv:2307.13668}.
+# from Ref. \cite{arxiv:0908.4246}, whose logical operators .
+
+
+features:
+  decoders:
+    - 'Period-three and period-six measurement sequences utilizing two-qubit measurements \cite{arxiv:2407.08566}.'
+  threshold:
+    - 'Circuit-level noise: \(\approx 0.18\%\) using BP-OSD decoder \cite{arxiv:2407.08566}.'
+
+
+relations:
+  parents:
+    - code_id: floquet
+  cousins:
+    - code_id: triangular_color
+      detail: 'One third of the time during its measurement schedule, the ISG of the XYZ ruby Floquet code is that of the 6.6.6 color code concatenated with a three-qubit repetition code.'
+    - code_id: quantum_repetition
+      detail: 'One third of the time during its measurement schedule, the ISG of the XYZ ruby Floquet code is that of the 6.6.6 color code concatenated with a three-qubit repetition code.'
+    - code_id: honeycomb
+      detail: 'The XYZ ruby Floquet code is defined on the ruby tiling.'
+    - code_id: subsystem_three_fermion
+      detail: 'Together, all ISGs of the XYZ ruby Floquet code generate the gauge group of the 3F subsystem code.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: JulioCarlosMagdalenaDeLaFuente
+      date: '2024-07-12'
+    - user_id: VictorVAlbert
+      date: '2024-07-12'

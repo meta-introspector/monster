@@ -1,0 +1,46 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: hypercube
+physical: spheres
+logical: reals
+
+name: 'Hypercube code'
+
+description: |
+  Spherical \((n,2^n,4/n)\) code whose codewords are vertices of an \(n\)-cube, i.e., all permutations and negations of the vector \((1,1,\cdots,1)\), up to normalization.
+
+protection: |
+  The square (cube) is the optimal antipodal configuration of 4 (8) points in 2D (3D) space \cite{arxiv:math/0208004}.
+
+
+relations:
+  parents:
+    - code_id: polytope
+      detail: 'Hypercube codewords in 2 (3, 4, \(n\)) dimensions form the vertices of a square (cube, tesseract, \(n\)-cube).'
+    - code_id: lattice_shell
+      detail: 'Hypercube codewords form the minimal lattice shell code of the \(\mathbb{Z}^n\) hypercubic lattice when the lattice is shifted such that the center of a hypercube is at the origin.'
+    - code_id: spherical_design
+      detail: 'Hypercube codes form spherical 3-designs. The weighted union of the vertices of a hypercube and an orthoplex form a weighted spherical 5-design in dimensions \(\geq 3\) \cite[Sec. 8.6, Ex. 5-2]{manual:{Stroud, Arthur H. Approximate calculation of multiple integrals. Prentice Hall, 1971.}}\cite[Exam. 2.6]{arxiv:2403.07457}.'
+    - code_id: polyphase
+  cousins:
+    - code_id: dual_polytope
+      detail: 'Orthoplexes and hypercubes are dual to each other.'
+    - code_id: hypercubic
+      detail: 'Hypercube codewords form the minimal lattice shell code of the \(\mathbb{Z}^n\) hypercubic lattice when the lattice is shifted such that the center of a hypercube is at the origin.'
+    - code_id: binary_antipodal
+      detail: 'Binary antipodal codes are subcodes of a hypercube code since the hypercube code corresponds to the Hamming \(n\)-cube (a.k.a. Boolean hypercube) embedded into the unit \(n\)-sphere.'
+    - code_id: bits_into_bits
+      detail: 'Binary strings are elements of the Hamming \(n\)-cube (a.k.a. Boolean hypercube).'
+    - code_id: 24cell
+      detail: 'The vertices of a 24-cell are a union of the vertices of a tesseract and a 16-cell \cite[Exam. 2.6]{arxiv:2403.07457}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-21'

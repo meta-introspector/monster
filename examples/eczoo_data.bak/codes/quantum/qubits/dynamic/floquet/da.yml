@@ -1,0 +1,107 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: da
+physical: qubits
+logical: qubits
+
+name: 'Dynamical code'
+introduced: '\cite{arxiv:2107.02194,arxiv:2307.10353}'
+
+alternative_names:
+  - 'Dynamical automorphism (DA) code'
+  - 'Floquet code'
+
+description: |
+  Dynamically generated stabilizer-based code whose (not necessarily periodic) sequence of few-body measurements implements state initialization, logical gates and error detection.
+
+  After each measurement in the sequence, the codespace is a joint \(+1\) eigenspace of an \textit{instantaneous stabilizer group (ISG)}, i.e., a particular stabilizer group corresponding to the measurement.
+  The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG via \hyperref[topic:code-switching]{code switching} using the group \(\mathsf{F}\) of check operators measured in the next step in the sequence.
+
+  As opposed to subsystem codes, only specific measurement sequences maintain the codespace, and not all sequences implement error detection.
+  Aperiodic measurement sequences provide a way to implement logical gates \cite{arxiv:2307.10353}.
+
+  For dynamical codes based on topological phases, the phase associated with each ISG of the code can be obtained from a single \textit{parent topological phase} associated with the dynamical code \cite{arxiv:2212.00042} via as \hyperref[topic:code-switching]{anyon condensation}.
+  In this way, measurements cycle logical quantum information between the various condensed phases.
+
+
+# Known examples of Dynamical codes include Floquet codes, whose measurement sequences are periodic.
+# Dynamical codes with useful aperiodic sequences include the 2D (3D) DA color codes, which realize the ISG of 2D (3D) color codes at certain measurement rounds, and which can implement Clifford (\hyperref[topic:clifford]{non-Clifford}) gates during their evolution by measurements \cite{arxiv:2307.10353}.
+
+protection: |
+  \subsection{Classification of stabilizers by masking}
+  There exists an efficient classical algorithm that tracks information learned by syndrome extraction at each step \cite{arxiv:2403.04163}.
+  The algorithm performs the following classification of stabilizers into unmasked, temporarily masked, and permanently unmasked stabilizers.
+
+  An unmasked stabilizer is a stabilizer whose outcome can be obtained by measurements.
+  In general, it is not obvious to determine if a stabilizer can be unmasked as its eigenvalue may only be revealed indirectly as a product of several measurements.
+  A temporarily masked stabilizer is a stabilizer whose syndrome can not be obtained by the given sequence but could possibly be obtained with future measurements.
+  A permanently masked stabilizer is a stabilizer whose outcome is irreversibly lost by the given sequence.
+
+  For a masked stabilizer code with a set \(U\) of \(l\) masked stabilizers, its \textit{masked distance} is given by:
+  \begin{equation}
+      d_{\mathrm{u}} = \min\:\text{wt}\{ \mathsf{N}(U)\backslash \mathsf{G}\}~.
+  \end{equation}
+  Above, \(\mathsf{G}\) is a gauge group defined from the algorithm that depends partly on the freedom in the choice of \hyperref[topic:destabilizers]{destabilizers} for the temporarily masked stabilizers, and partly on the measurement sequence which fixes the \hyperref[topic:destabilizers]{destabilizers} for the permanently masked stabilizers.
+
+features:
+  encoders:
+    - 'A dynamical code with \(r\) with \(r\) stabilizer generators can be initialized by a measurement sequence in at most \(r\) cycles \cite{arxiv:2403.04163}.'
+
+  general_gates:
+  -  'The measurement sequences of the 2D DA color code on a \(N\) layers of triangular patches (which encodes \(N\) logical qubits) with a \textit{Pauli boundary} can be used to implement all Clifford logical gates via a sequence of two- and three-qubit measurements \cite{arxiv:2307.10353}.'
+  - 'The 3D DA color code allows for a \hyperref[topic:clifford]{non-Clifford} logical gate via adaptive two-qubit measurements \cite{arxiv:2307.10353}.'
+  - 'Code bounds for gates in the \term{Clifford hierarchy} (similar to the \hyperref[topic:bk-bound]{BK bounds}) can be formulated for QLDPC codes that are embedded in a \(D\)-dimensional lattice but that admit some long-range connectivity \cite{arxiv:2403.04163}.'
+
+  decoders:
+    - 'Temporal Petz recovery map \cite{arxiv:2502.09177}.'
+
+relations:
+  parents:
+    - code_id: qubits_into_qubits
+    - code_id: qudit_da
+  cousins:
+    - code_id: triangular_color
+      detail: 'The parent topological phase of the 2D DA color code is realized by two copies of the 6.6.6 color code \cite{arxiv:2307.10353}.'
+    - code_id: cubic_honeycomb_color
+      detail: 'The parent topological phase of the 3D DA color code is realized by three copies of the cubic honeycomb color code \cite{arxiv:2307.10353}.'
+    - code_id: surface
+      detail: 'One of the instantaneous stabilizer codes of the 2D DA color code are stacks of surface codes'
+    - code_id: topological_abelian
+      detail: 'Useful measurement sequences of dynamical codes can be extracted from topological quantum field theory \cite{arxiv:2307.10353}.'
+    - code_id: approximate_qecc
+      detail: 'Approximate versions of dynamical codes have been formulated \cite{arxiv:2502.09177}.'
+    - code_id: subsystem_stabilizer
+      detail: 'A dynamical code can be viewed as a subsystem stabilizer code, albeit one with less logical qubits.'
+    - code_id: monitored_random_circuits
+      detail: 'Both dynamical and monitored random circuit codes can have an instantaneous stabilizer group which evolves through unitary evolution and measurements. However, dynamical codewords are generated via a specific periodic sequence of measurements, while random-circuit codes maintain a stabilizer group after any measurement. Dynamical codes have the additional capability of detecting errors induced during the measurement process; see Appx. A of Ref. \cite{arxiv:2107.02194}.'
+    - code_id: majorana_stab
+      detail: 'Dynamical codes are viable candidates for storage in Majorana-qubit devices \cite{arxiv:2202.11829}.'
+    - code_id: qubit_stabilizer
+      detail: |
+        Using ZX calculus, an \([[n,k,d]]\) qubit stabilizer code admitting stabilizer generators of weight no more than \(m\) can be \textit{Floquetified} into an \([[n+\lceil m/2 \rceil+\ell,k,d^{\prime}]]\) dynamical code with single- and two-qubit operations, where \(\ell \leq \log_{2} m\) and \(d^{\prime} \geq d\) \cite{arxiv:2410.17240} (see also Ref. \cite{arxiv:2307.11136}). 
+        A more general locality-preserving \textit{spacetime concatenation} procedure yields a dynamical code out of any qubit stabilizer code by structuring measurement gadgets using low-weight measurements while ensuring the preservation of logical information \cite{arxiv:2504.08918}. 
+        In particular, spacetime concatenation reformulates the notion of a dynamical code associated with a stabilizer code in terms of code concatenation for every qubit (spatial concatenation) and measurements between these codes (temporal concatenation), leading to a temporal evolution of the stabilizer state \cite{arxiv:2504.08918}. 
+        A matrix rank condition on the bond operators connecting the gadgets, called the Bond-Kernel-Rank Condition, and a strict locality preservation condition (SLPC), along with preservation of the operator algebra of the stabilizer code under the gadget action, preserves fault-tolerance and the spacetime distance of the code \cite{arxiv:2504.08918}.
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: ArpitDua
+      date: '2025-04-15'
+    - user_id: VictorVAlbert
+      date: '2025-04-15'
+    - user_id: VictorVAlbert
+      date: '2024-04-04'
+    - user_id: XiaozhenFu
+      date: '2024-04-04'
+    - user_id: VictorVAlbert
+      date: '2023-07-21'
+    - user_id: ShankarBalasubramanian
+      date: '2023-07-21'
+    - user_id: nathanan
+      date: '2023-07-21'

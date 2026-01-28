@@ -1,0 +1,56 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stab_16_6_4
+physical: qubits
+logical: qubits
+
+name: '\([[16,6,4]]\) Tesseract color code'
+introduced: '\cite{arxiv:2008.05051,arxiv:2112.03785}'
+
+description: |
+  A (self-dual CSS) 4D color code defined on a tesseract, with stabilizer generators of both types supported on each cube. 
+  A \([[16,4,2,4]]\) tesseract subsystem code can be obtained from this code by using two logical qubits as gauge qubits \cite{arxiv:2409.04628}.
+
+
+features:
+  transversal_gates:
+    - 'Global transversal \(S\) implements a logical circuit composed of \(CZ\) and \(Z\) gates \cite{arxiv:2410.07595,doi:10.1109/JSAIT.2020.3012914,arxiv:2410.07595}'
+  decoders:
+    - 'Post-selected fault-tolerant syndrome extraction \cite{arxiv:2008.05051,arxiv:2112.03785}.'
+  fault_tolerance:
+    - 'Post-selected fault-tolerant syndrome extraction \cite{arxiv:2008.05051,arxiv:2112.03785}.'
+
+realizations:
+  - 'Trapped-ion devices: logical graph and GHZ states of up to 12 logical qubits constructed using three copies of the \([[16,4,2,4]]\) tesseract subsystem code, along with five rounds of post-selected fault-tolerant error correction in a device by Quantinuum \cite{arxiv:2409.04628}.'
+  - 'Neutral atom arrays: deep circuits and 1D-cluster-state creation using 96 logical qubits and hundreds of logical teleportations by the Lukin group \cite{arxiv:2506.20661}.'
+
+
+relations:
+  parents:
+    - code_id: color
+    - code_id: quantum_reed_muller
+      detail: 'The tesseract color code is a quantum Reed-Muller code \cite{arxiv:2410.23263}.'  
+    - code_id: small_distance_qubit_stabilizer
+  cousins:
+    - code_id: stab_15_7_3
+      detail: 'The \([[15,7,3]]\) quantum Hamming code can be obtained by puncturing the tesseract color code \cite{arxiv:2008.05051}.'
+    - code_id: stab_8_3_2
+      detail: 'Applying CNOT gates to the tesseract color code disentangles it into two \([[8,3,2]]\) color codes \cite{arxiv:2409.04628}.'
+    - code_id: stab_4_2_2
+      detail: 'The \([[16,4,2,4]]\) tesseract subsystem color code with particular gauge fixing can be obtained from four copies of the \([[4,2,2]]\) code \cite{arxiv:2409.04628}.'
+    - code_id: hypercube
+      detail: 'Stabilizer generators of both types of the tesseract color code are supported on each cube of a tesseract \cite{arxiv:2008.05051,arxiv:2112.03785}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-09-10'
+    - user_id: 'NolanCoble'
+      date: '2025-01-23'

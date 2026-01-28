@@ -1,0 +1,50 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: binary_quad_residue
+physical: bits
+logical: bits
+
+name: 'Binary quadratic-residue (QR) code'
+short_name: 'Binary QR'
+#introduced: ''
+
+description: |
+  Member of a quadruple of cyclic binary codes of prime length \(n=8m\pm 1\) for \(m\geq 1\) constructed using quadratic residues and nonresidues of \(n\).
+
+  The roots of the generator polynomial \(r(x)\) of the first code (see \ref{topic:Cyclic-to-polynomial-correspondence}) are all of the inequivalent quadratic residues of \(n\), and the second code's generator polynomial is \((x-1)r(x)\). The roots of the generator polynomial \(a(x)\) of the third code are all inequivalent nonresidues of \(n\), and the fourth code's generator polynomial is \((x-1)a(x)\). The codes corresponding to polynomials \(r,a\) are often called \textit{augmented} quadratic-residue codes, while the remaining codes are called \textit{expurgated}.
+
+  Their automorphism group is either \(PSL(2,\mathbb{F}_p)\) or a closely related group by the Gleason-Prange theorem \cite{doi:10.1109/18.133245,preset:MacSlo}.
+
+features:
+  decoders: 
+    - 'Algebraic decoder \cite{manual:{Chen, Y. H., Truong, T. K., Chang, Y., Lee, C. D., & Chen, S. H. (2007). Algebraic decoding of quadratic residue codes using Berlekamp-Massey algorithm. Journal of information science and engineering, 23(1), 127-145.}}.'
+
+notes:
+  - 'Introduction of quadratic-residue codes in Refs. \cite{preset:MacSlo,doi:10.1017/CBO9780511807077}.'
+
+relations:
+  parents:
+    - code_id: binary_duadic
+      detail: 'QR codes are duadic codes of prime length satisfying certain relations \cite{doi:10.1007/978-3-7091-2786-5_1}.'
+    - code_id: q-ary_quad_residue
+  cousins:
+    - code_id: divisible
+      detail: 'Extended binary quadratic residue codes of length \(8m\) are self-dual doubly even codes \cite[pg. 82]{doi:10.1007/978-1-4757-6568-7}.'
+    - code_id: lexicographic
+      detail: 'The \([18,9,6]\) binary QR code is a lexicode \cite{doi:10.1109/TIT.1986.1057187}.'
+    - code_id: quasi_cyclic
+      detail: 'Binary QR codes are equivalent to double circulant codes for all \(n<200\) except 89 and 167 \cite{manual:{Beenker, G. J. M. "On double circulant codes." (1980).}}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-07-15'
+    - user_id: YijiaXu
+      date: '2022-04-25'

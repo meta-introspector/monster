@@ -1,0 +1,36 @@
+
+list_id: univ_opt
+title: Universally optimal codes
+intro: |
+  Here is a list of codes related to universally optimal codes.
+
+codes:
+  select:
+    - descendant_of: univ_opt
+    - cousin_of: univ_opt
+    - cousin_of: univ_opt_q-ary
+    - cousin_of: univ_opt_analog
+    - cousin_of: univ_opt_spherical
+
+display:
+  style: table
+  options:
+    cssclass: xtra-xtra-stretch
+    columns:
+      - property: name
+        title: Code
+        link_to_code: true
+        cssclass: 'top left'
+
+      - property: description
+        title: Description
+        cssclass: 'textit'
+        first_paragraph_only: true
+
+      - relationship_property: univ_opt
+        property: 'detail'
+        title: 'Relation'
+        cssclass: 'textit'
+
+sort:
+  by: name

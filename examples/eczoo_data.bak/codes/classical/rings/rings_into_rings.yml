@@ -1,0 +1,27 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: rings_into_rings
+physical: rings
+
+name: 'Ring code'
+
+description: 'Encodes \(K\) states (codewords) in \(n\) coordinates over a finite ring \(R\).'
+
+relations:
+  parents:
+    - code_id: block
+      detail: 'Ring codes are block codes with \(\Sigma=R\).'
+    - code_id: ecc_finite
+    - code_id: group_classical
+      detail: 'A ring \(R\) is an Abelian group under addition.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-02-16'

@@ -1,0 +1,66 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: oecc
+
+name: 'Subsystem QECC'
+introduced: '\cite{arxiv:quant-ph/0412076,arxiv:quant-ph/0504189}'
+
+alternative_names:
+  - 'Operator QECC (OQECC)'
+  - 'Gauge QECC'
+
+description: |
+  A quantum code which encodes quantum information in a tensor factor of a subspace that is decomposed into a tensor product of subsystems.
+
+  A subsystem code encodes information in a subsystem \(\mathsf{A}\) of the code space \(\mathsf{C}\), which is part of the system Hilbert space \(\mathsf{H}\), as
+  \begin{align}
+  \mathsf{H}=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}~.
+  \end{align}
+  Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or \textit{gauge} subsystem \(\mathsf{B}\). The subsystem \(\mathsf{B}\) therefore gives additional freedom to the error correction process, and is said to encode \textit{gauge qubits} when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code allows for a wider variety of encoding procedures, fault-tolerant logical operations, and efficient error-correction protocols.
+
+protection: |
+  Necessary and sufficient \cite{arxiv:quant-ph/0506069} error-correction conditions are, for all errors \(E_a,E_b\) in an error set \(\cal{E}\),
+  \begin{align}
+  \Pi E^{\dagger}_a E_b \Pi = I_{\mathsf{A}} \otimes g_{ab}^{\mathsf{B}}
+  \end{align}
+  where \(\Pi\) is a projector onto the codespace \(\mathsf{C}\), and \(g_{ab}^{\mathsf{B}}\) is an arbitrary operator on the gauge subsystem.
+  These have been studied in the presence of continuous noise \cite{arxiv:0806.3145}.
+
+  A \textit{unitarily correctable subsystem} is a subsystem code whose encoded information can be recovered via a unitary, i.e., in a measurement-free way \cite{arxiv:quant-ph/0608045} (see also \cite{arxiv:quant-ph/9609015}). For unital noise channels, such codes are related to the multiplicative domain of the channel \cite{arxiv:0811.0947}.
+
+features:
+  encoders:
+    - 'Subsystem QECCs are robust to initialization errors \cite{arxiv:0709.3533}.'
+  decoders:
+    - 'Petz recovery map is shown to be near-optimal for certain subsystem codes \cite{arxiv:1202.5139}.'
+
+realizations:
+  - 'A two-qubit unitarily correctable subsystem code recovery has been realized in an optical system \cite{arxiv:0909.1584}.'
+
+notes:
+  - 'See Refs. \cite{arxiv:math/0404553,arxiv:math/0506491,doi:10.1017/CBO9781139034807.008} for an introduction to operator QEC.'
+
+# 20240704 subsystem QECC, hybrid QECC, and QECC are three children of OAQECC
+relations:
+  parents:
+    - code_id: oaecc
+      detail: 'An OAQECC which has gauge structure (e.g., gauge qubits) but no block structure is a subsystem QECC.'
+  cousins:
+    - code_id: qecc
+      detail: 'A subsystem QECC reduces to an ordinary (i.e., subspace) QECC when the gauge subsystem is trivial.
+      Conversely, any QECC with a tensor-product logical subspace can be turned into a subsystem code by treating a logical tensor factor as a gauge subsystem.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-02'
+    - user_id: SrilekhaGandhari
+      date: '2021-12-14'
+    - user_id: VictorVAlbert
+      date: '2021-11-24'

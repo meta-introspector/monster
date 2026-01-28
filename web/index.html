@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Monster Walk - Interactive Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="module">
+        import init, { MonsterWalk } from './wasm/monster_wasm.js';
+        
+        async function run() {
+            await init();
+            const monster = new MonsterWalk();
+            
+            console.log('Monster Walk initialized!');
+            console.log('Groups:', monster.get_group_count());
+            
+            // Display groups
+            const groups = JSON.parse(monster.get_all_groups());
+            displayGroups(groups);
+            
+            // Display Bott period groups
+            const bottGroups = monster.get_bott_period_groups();
+            displayBottPeriod(bottGroups);
+            
+            // Make interactive
+            setupInteractivity(monster, groups);
+        }
+        
+        function displayGroups(groups) {
+            const container = document.getElementById('groups-container');
+            container.innerHTML = '';
+            
+            groups.forEach(group => {
+                const card = document.createElement('div');
+                card.className = 'group-card';
+                card.id = `group-${group.group_number}`;
+                
+                card.innerHTML = `
+                    <h3>Group ${group.group_number}: ${group.sequence}</h3>
+                    <div class="group-details">
+                        <p><strong>Position:</strong> ${group.position}</p>
+                        <p><strong>Digits Preserved:</strong> ${group.digits}</p>
+                        <p><strong>Factors Removed:</strong> ${group.factors_removed}</p>
+                        <p><strong>Primes:</strong> ${group.removed_primes.join(', ')}</p>
+                    </div>
+                    <div class="math-display">
+                        \\[G_{${group.group_number}} = ${group.sequence}\\]
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+            
+            // Render MathJax
+            MathJax.typesetPromise();
+        }
+        
+        function displayBottPeriod(bottGroups) {
+            const container = document.getElementById('bott-period');
+            container.innerHTML = `
+                <h3>Bott Period 8 Groups</h3>
+                <p>Groups with 8 factor removals: ${bottGroups.join(', ')}</p>
+                <div class="math-display">
+                    \\[\\text{Period} = 8 \\quad \\{G_${bottGroups.join(', G_')}\\}\\]
+                </div>
+            `;
+            MathJax.typesetPromise();
+        }
+        
+        function setupInteractivity(monster, groups) {
+            // Highlight on hover
+            groups.forEach(group => {
+                const card = document.getElementById(`group-${group.group_number}`);
+                card.addEventListener('click', () => {
+                    showGroupDetails(monster, group);
+                });
+            });
+            
+            // Harmonic calculator
+            document.getElementById('calc-harmonic').addEventListener('click', () => {
+                const prime = parseInt(document.getElementById('prime-input').value);
+                const exp = parseInt(document.getElementById('exp-input').value);
+                const result = monster.compute_harmonic(prime, exp);
+                document.getElementById('harmonic-result').textContent = 
+                    `Harmonic: ${result.toFixed(2)} Hz`;
+            });
+        }
+        
+        function showGroupDetails(monster, group) {
+            const modal = document.getElementById('detail-modal');
+            const content = document.getElementById('modal-content');
+            
+            content.innerHTML = `
+                <h2>Group ${group.group_number} Details</h2>
+                <div class="detail-section">
+                    <h3>Sequence: ${group.sequence}</h3>
+                    <p>This group preserves ${group.digits} leading digits by removing ${group.factors_removed} prime factors.</p>
+                    
+                    <h4>Removed Primes:</h4>
+                    <ul>
+                        ${group.removed_primes.map(p => `<li>${p}</li>`).join('')}
+                    </ul>
+                    
+                    <h4>Mathematical Representation:</h4>
+                    <div class="math-display">
+                        \\[M' = \\frac{|\\mathbb{M}|}{${group.removed_primes.map(p => p).join(' \\cdot ')}}\\]
+                    </div>
+                    
+                    <h4>Symmetry Class:</h4>
+                    <p>${getSymmetryClass(group.group_number)}</p>
+                </div>
+                <button onclick="closeModal()">Close</button>
+            `;
+            
+            modal.style.display = 'block';
+            MathJax.typesetPromise();
+        }
+        
+        function getSymmetryClass(groupNum) {
+            const classes = ['A', 'AIII', 'AI', 'BDI', 'D', 'DIII', 'AII', 'CII', 'C', 'CI'];
+            return classes[groupNum - 1] || 'Unknown';
+        }
+        
+        window.closeModal = function() {
+            document.getElementById('detail-modal').style.display = 'none';
+        };
+        
+        run();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>🎪 The Monster Walk Down to Earth</h1>
+        <p>Interactive exploration of the Monster Group's hierarchical structure</p>
+    </header>
+    
+    <nav>
+        <a href="#groups">The 10 Groups</a>
+        <a href="#bott">Bott Periodicity</a>
+        <a href="#harmonics">Harmonics</a>
+        <a href="monster_walk.pdf">PDF Paper</a>
+        <a href="monster_walk_v2.pdf">Literate PDF</a>
+    </nav>
+    
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>The Monster group \(\mathbb{M}\) has order:</p>
+            <div class="math-display">
+                \[|\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71\]
+            </div>
+            <p>By systematically removing prime factors, we discover exactly <strong>10 groups</strong> that preserve leading digits.</p>
+        </section>
+        
+        <section id="groups">
+            <h2>The 10 Groups</h2>
+            <p>Click on any group to see details:</p>
+            <div id="groups-container"></div>
+        </section>
+        
+        <section id="bott">
+            <h2>Bott Periodicity</h2>
+            <div id="bott-period"></div>
+            <p>The Monster Walk exhibits period-8 structure, matching Bott periodicity in K-theory!</p>
+        </section>
+        
+        <section id="harmonics">
+            <h2>Harmonic Frequency Calculator</h2>
+            <div class="calculator">
+                <label>Prime: <input type="number" id="prime-input" value="2" min="2"></label>
+                <label>Exponent: <input type="number" id="exp-input" value="46" min="1"></label>
+                <button id="calc-harmonic">Calculate Harmonic</button>
+                <div id="harmonic-result"></div>
+                <p class="formula">\(f(p, e) = 432 \text{ Hz} \times p \times e\)</p>
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="monster_walk.pdf">📄 Full Paper (PDF)</a></li>
+                <li><a href="monster_walk_v2.pdf">📖 Literate Programming Edition (PDF)</a></li>
+                <li><a href="monster_walk.html">🌐 HTML Version</a></li>
+                <li><a href="https://github.com/meta-introspector/monster">💻 GitHub Repository</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <div id="detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>🌌 The Monster Group computes itself through prime harmonics ✨</p>
+        <p>Built with Rust + WASM + Nix | <a href="https://github.com/meta-introspector/monster">Source Code</a></p>
+    </footer>
+</body>
+</html>

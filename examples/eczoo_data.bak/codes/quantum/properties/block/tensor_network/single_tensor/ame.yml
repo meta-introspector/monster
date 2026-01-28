@@ -1,0 +1,85 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: ame
+
+# \(((n,q,\lfloor(n+1)/2\rfloor))_{\mathbb{Z}_q}\)
+name: 'Perfect-tensor code'
+
+alternative_names:
+  - 'Absolutely maximally entangled (AME) code'
+  - 'Maximally multipartite entangled state (MMES) code'
+
+description: |
+  Block quantum code encoding one subsystem into an odd number \(n\) subsystems whose encoding isometry is a perfect tensor.
+  This code stems from an AME\((n,q)\) \hyperref[topic:ame]{AME state}, or equivalently, a \(((n+1,1,\lfloor (n+1)/2 \rfloor + 1))\) code.
+
+  \begin{defterm}{Absolutely maximally entangled (AME) state}
+  \label{topic:ame}
+  A state on \(n\) subsystems is \(d\)\textit{-uniform} \cite{arxiv:quant-ph/0005031,arxiv:quant-ph/0310137,arxiv:1404.3586} (a.k.a. \(d\)-undetermined \cite{arxiv:0809.3081} or \(d\)-maximally mixed \cite{arxiv:1211.4118}) if all reduced density matrices on up to \(d\) subsystems are maximally mixed.
+  A \(K\)-dimensional subspace of \((d-1)\)-uniform states of \(n\) subsystems is equivalent to a \hyperref[topic:quantum-weight-enumerator]{pure} \(((n,K,d))\) block quantum code \cite{arxiv:0704.0251,arxiv:1907.07733}.
+  An AME state (a.k.a. maximally multi-partite entangled state or MMES \cite{arxiv:0710.2868,arxiv:1002.2592}) is a \(\lfloor n/2 \rfloor\)-uniform state, corresponding to a \hyperref[topic:quantum-weight-enumerator]{pure} \(((n,1,\lfloor n/2 \rfloor + 1))\) code.
+  The rank-\(n\) tensor formed by the encoding isometry of such codes is a \textit{perfect tensor} (a.k.a. multi-unitary tensor), meaning that it is proportional to an isometry for any bipartition of its indices into a set \(A\) and a complementary set \(A^{\perp}\) such that \(|A|\leq|A^{\perp}|\).
+  Absolutely maximal entanglement exists for non-normalizable states of continuous-variable (CV) systems, whose reduced density matrices are proportional to the infinite-dimensional identity matrix; such states are called CV AME or CV MMES \cite{arxiv:0901.1488,arxiv:2503.15698}.
+  \end{defterm}
+
+  Stabilizer Galois-qudit perfect-tensor codes can be converted to \hyperref[topic:ame]{AME states} via established shortening/lengthening procedures \cite[Table 1]{arxiv:quant-ph/0508070}\cite{arxiv:1502.05267}.
+  For example, an \([[n,0,d]]\) AME state can be converted into an \([[n-1,1,d-1]]\) perfect-tensor code by tracing over one qubit \cite[Sec. 3.5]{arxiv:quant-ph/9705052}.
+  There exist infinite families of inequivalent \hyperref[topic:ame]{AME states} \cite{arxiv:2003.13639}.
+
+
+features:
+  encoders:
+    - 'Fault-tolerant \(d\)-uniform state preparation \cite{arxiv:2503.14506}.'
+    - 'Quantum circuits for non-stabilizer AME states \cite{arxiv:2504.05394}.'
+
+  fault_tolerance:
+    - 'Fault-tolerant \(d\)-uniform state preparation \cite{arxiv:2503.14506}.'
+
+
+
+notes:
+  - 'See Ref. \cite{arxiv:1708.06298} and corresponding \href{https://tp.nt.uni-siegen.de/ame/ame.html}{Table of AME states}.'
+  - '\(d\)-uniform states are useful for masking quantum information \cite{arxiv:2009.12497}.'
+  - 'Quantum simulation of approximately \(d\)-uniform states is similar to that with random-state inputs in terms of Trotter error \cite{arxiv:2406.02379}.'
+  - 'See Ref. \cite{arxiv:2508.04777} for a review.'
+
+
+relations:
+  parents:
+    - code_id: block_perfect
+      detail: '\hyperref[code:block_perfect]{Planar-perfect tensors} are automatically \hyperref[code:ame]{perfect tensors}.'
+  cousins:
+    - code_id: quantum_mds
+      detail: '\hyperref[topic:ame]{AME states} for even \(n\) are examples of quantum MDS codes with no logical qubits \cite{arxiv:quant-ph/0310137,arxiv:1701.03359,arxiv:1907.11253}.
+      A family of conjectured perfect-tensor codes is quantum MDS \cite{arxiv:quant-ph/0312164}.'
+    - code_id: combinatorial_design
+      detail: 'Combinatorial designs and \(d\)-uniform quantum states are related \cite{arxiv:1506.08857,arxiv:1708.05946,arxiv:2111.04055}.'      
+    - code_id: orthogonal_array
+      detail: 'Orthogonal arrays and \(d\)-uniform quantum states are related \cite{arxiv:1404.3586,arxiv:1708.05946,arxiv:2303.15001,doi:10.1038/s41534-019-0165-8,doi:10.1103/PhysRevA.99.042332,doi:10.3390/e25040680}.'
+    - code_id: mds
+      detail: 'MDS codes can be used to obtain cluster states that are AME with minimal support \cite{manual:{A. V. Thapliyal, Multipartite maximally entangled states, minimal entanglement generating states and entropic inequalities unpublished presentation (2003).},arxiv:1306.2536,arxiv:1306.2879,arxiv:1506.08857,arxiv:1701.03359,arxiv:1706.08318}.'
+    - code_id: qudit_cluster_state
+      detail: 'MDS codes can be used to obtain cluster states that are AME with minimal support \cite{manual:{A. V. Thapliyal, Multipartite maximally entangled states, minimal entanglement generating states and entropic inequalities unpublished presentation (2003).},arxiv:1306.2536,arxiv:1306.2879,arxiv:1506.08857,arxiv:1701.03359,arxiv:1706.08318}.'
+    - code_id: galois_polynomial
+      detail: '\hyperref[topic:ame]{AME states} for even \(n\) are examples of quantum MDS codes with no logical qubits \cite{arxiv:quant-ph/0310137,arxiv:1701.03359,arxiv:1907.11253}. MDS RS codes can yield perfect tensors via the CSS and Hermitian constructions \cite{arxiv:quant-ph/0312164} (see also Refs. \cite{arxiv:1801.09623,arxiv:1812.04057}).'
+    - code_id: quantum_secret_sharing
+      detail: 'Perfect tensors are useful for quantum secret sharing and open-destination multi-party teleportation \cite{arxiv:1204.2289,arxiv:1306.2536,doi:10.1007/s11128-022-03723-2}.'
+    - code_id: qubit_stabilizer
+      detail: 'The codespace of a qubit stabilizer code with \hyperref[topic:quantum-weight-enumerator]{pure distance} \(d_{\textnormal{pure}}\) is a \((d_{\textnormal{pure}}-1)\)-uniform space.'
+    - code_id: reinforcement_learning
+      detail: 'Reinforcement learning \cite{arxiv:1806.08781} and graph-based optimizers like PyTheus \cite{arxiv:2210.09980} can be used to find AME states.'
+    - code_id: cws
+      detail: 'CWS codes can be constructed from \((d-1)\)-uniform states \cite{doi:10.1109/JSAIT.2025.3602744}.'
+    - code_id: covariant
+      detail: 'An \(SU(2)\)-invariant three-qudit perfect tensor exists \cite{arxiv:1612.04504}, but invariant perfect tensors do not exist on four parties \cite{arxiv:quant-ph/0005013,arxiv:1612.04504,arxiv:2210.02483}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-07-01'

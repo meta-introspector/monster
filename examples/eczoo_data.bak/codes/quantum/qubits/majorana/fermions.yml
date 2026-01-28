@@ -1,0 +1,72 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: fermions
+physical: qubits
+logical: qubits
+
+name: 'Fermion code'
+#introduced: ''
+
+description: |
+  Finite-dimensional quantum error-correcting code encoding a logical qudit or fermionic Hilbert space into a physical Fock space of fermionic modes.
+  Codes are typically described using Majorana operators, which are linear combinations of fermionic creation and annihilation operators \cite{arxiv:quant-ph/0003137}.
+  Majorana operators may either be considered individually or paired in various ways into creation and annihilation operators to yield fermionic modes.
+  They form a Clifford algebra and can be interpreted as Ising anyons in certain contexts.
+
+  Admissible codewords include fermionic states, a subset of which is the Gaussian fermionic states \cite{arxiv:quant-ph/0108033,arxiv:quant-ph/0108010,arxiv:quant-ph/0404180,arxiv:2010.15518,arxiv:2409.11628}.
+  A Wigner function formalism has been developed for fermionic states \cite{arxiv:2004.13860}.
+  There are two types of fermionic coherent states, with the first labeled by Grassmann numbers \cite{manual:{Berazin, F. A. The method of second quantization. Vol. 24. Elsevier, 2012.},doi:10.1007/978-94-007-0196-0} and the second by points in the Grassmannian \cite{doi:10.1002/9783527628285}. 
+  
+  
+
+protection: |
+  Majorana analogues of common qubit noise channels have been developed \cite{arxiv:1806.01275}.
+
+features:
+  encoders:
+    - 'A fermionic code using fermion Fock states as codewords cannot protect against occupation-number errors (i.e., dephasing) and does not admit fermionic logical operators \cite{arxiv:2411.08955,arxiv:2412.16081}.'
+
+  general_gates:
+    - 'Clifford operations on fermionic codes, shown \cite{arxiv:quant-ph/0108033} to be equivalent to match gates \cite{doi:10.1145/380752.380785}, can be formulated using \textit{Fermionic Linear Optics}, a classically simulable model of computation \cite{arxiv:quant-ph/0108033,arxiv:quant-ph/0108010,arxiv:quant-ph/0404180,arxiv:0804.4050,arxiv:2010.15518,arxiv:2409.11628}. The structure of the Majorana Clifford group has been studied \cite{arxiv:2407.11319}.'
+    - 'Non-Clifford gates can be done using gate teleportation, in which a gate can be obtained from a particular magic state (a.k.a. resource state) \cite{arxiv:0804.4050,arxiv:1308.1463,arxiv:1602.03539,arxiv:1905.08584,arxiv:2501.06179}.'
+    - 'General gates include include qubit-like \(S\), \(T\), and \(CZ\) gates acting on either logical qubit or logical fermionic encodings. Fermionic gates include braiding gates which correspond to exchanging Majorana modes. Hybrid gates include \(CZ_{qf}\) gates between a logical qubit and a logical fermion. The braiding, \(CZ_{f}\), \(CZ_{qf}\), Hadamard, \(S\), and \(T\) gates are universal \cite{arxiv:2411.08955}.'
+    - 'Logical-fermion circuits constructed out of certain transversal gates do not admit a lower \(T\) gate count than logical-qubit circuits \cite{arxiv:2411.08955}.'
+    - 'Using fermion codes with logical fermion encodings and the fermionic fast Fourier transform \cite{arxiv:1706.00023} can yield exponential improvements in circuit depth over fermion-into-qubit encodings \cite{arxiv:2411.08955}.'
+
+notes:
+  - 'See Ref. \cite{arxiv:1404.0897} for an introduction into Majorana-based qubits.'
+
+
+relations:
+  parents:
+    - code_id: qubits_into_qubits
+      detail: 'The Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via various fermion-into-qubit encodings.'
+  cousins:
+    - code_id: oscillators
+      detail: 'Bosonic (fermionic) codes are associated with bosonic (fermionic) degrees of freedom.'
+    - code_id: fermions_into_qubits
+      detail: |
+        Fermion (fermion-into-qubit) codes encode logical information into a physical space of fermionic modes (qubits).
+        The Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via various fermion-into-qubit encodings.
+        Using fermion codes with logical fermion encodings and the fermionic fast Fourier transform \cite{arxiv:1706.00023} can yield exponential improvements in circuit depth over fermion-into-qubit encodings \cite{arxiv:2411.08955}.
+    - code_id: constant_excitation
+      detail: 'Fermion codewords lying in a fixed fermion-number subspace have to lie in the same subspace in order to protect against changes in fermion number \cite{arxiv:2411.08955}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: MichaelGullans
+      date: '2025-01-12'
+    - user_id: AlexanderSchuckert
+      date: '2025-01-12'
+    - user_id: VictorVAlbert
+      date: '2025-01-12'
+    - user_id: VictorVAlbert
+      date: '2022-12-04'
+    - user_id: VictorVAlbert
+      date: '2021-12-01'

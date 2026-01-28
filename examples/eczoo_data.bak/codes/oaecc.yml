@@ -1,0 +1,66 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: oaecc
+
+name: 'Operator-algebra QECC (OAQECC)'
+short_name: 'OAQECC'
+introduced: '\cite{arxiv:quant-ph/9908066,arxiv:quant-ph/9910016,arxiv:quant-ph/0101090,arXiv:quant-ph/0603252,arxiv:quant-ph/0608071,arxiv:0705.1574,arxiv:0901.3629,arxiv:1005.0353,doi:10.1142/S0219749908003839,arxiv:2012.14001}'
+
+description: |-
+  A code family that encompasses ordinary (i.e., subspace) codes, subsystem codes, classical-quantum codes, and hybrid codes using an operator-algebraic framework.
+
+  A simple example encompassing elements of all subfamilies encodes quantum information and a single classical bit into a direct sum of two subsystem codes.
+  A quantum subsystem code \(\mathsf{A}_j\otimes\mathsf{B}_j\), with \(\mathsf{A}_j\) the logical factor associated with the quantum information, and \(\mathsf{B}_j\) the gauge factor, is associated with each of the two values \(j\in\{0,1\}\) of the classical bit.
+  The corresponding decomposition of the Hilbert space \(\mathsf{H}\) is
+  \begin{align}
+    \mathsf{H}=(\mathsf{A}_{1}\otimes\mathsf{B}_{1})\oplus(\mathsf{A}_{2}\otimes\mathsf{B}_{2})\oplus\mathsf{C}^{\perp}~,
+  \end{align}
+  where \(\mathsf{C}^\perp\) is the combined error space of both codes.
+  The above code reduces to a subsystem code when \(\mathsf{A}_{2}\otimes\mathsf{B}_{2}\) is trivial, reduces to a classical-quantum code when \(\mathsf{A}_{1,2}\) are both trivial, reduces to a hybrid code when \(\mathsf{B}_{1,2}\) are both trivial, and reduces to an ordinary (i.e., subspace) code when \(\mathsf{B_1}\) and \(\mathsf{A}_{2}\otimes\mathsf{B}_{2}\) are both trivial.
+
+  In general, an OAQECC is determined by a finite dimensional \(C^*\) algebra \(\mathcal{A}\) of operators on \(\mathsf{H}\).
+  This \textit{logical algebra} induces a decomposition of the Hilbert space as
+  \begin{align}\mathsf{H} = \bigoplus_\gamma \mathsf{A}_\gamma \otimes \mathsf{B}_\gamma,\end{align}
+  with respect to which \(\mathcal{A}\) takes the form
+  \begin{align}\mathcal{A} = \bigoplus_\gamma I_\gamma \otimes \mathcal{L}(\mathsf{B}_\gamma),\end{align}
+  where \(\mathcal{L}(\mathsf{B}_\gamma)\) denotes the full set of linear maps on \(\mathsf{B}_\gamma\).
+  The \(\mathsf{A}_j\) factors can be used to store quantum information, \(\gamma\) indexes the block structure of the code, while \(\mathsf{B}_j\) determine its gauge structure.
+  Together, the above forms the most general form of an information preserving structure \cite{arXiv:quant-ph/9908066,arxiv:quant-ph/0402056,arxiv:quant-ph/0507213,arXiv:quant-ph/0603252,arxiv:0705.4282,arxiv:1006.1358}.
+  Logical operators form the commutant of \(\mathcal{A}\) as a result of the double commutant (a.k.a. double centralizer) theorem \cite{arxiv:math-ph/9807030}.
+
+protection: |
+  Given an error operation \(\mathcal{E}\), one says that \(\mathcal{A}\) is \textit{correctable} for \(\mathcal{E}\) if there exists a recovery operation \(\mathcal{R}\) such that
+  \begin{align}\Pi_{\mathcal{A}} (\mathcal{R} \circ \mathcal{E})^\dagger(X) \Pi_{\mathcal{A}} = X\end{align} for all \(X \in \mathcal{A}\), where \(\Pi_{\mathcal{A}}\) is the unit projection onto \(\mathcal{A}\).
+
+  Equivalently, \(\mathcal{A}\) is correctable for \(\mathcal{E}\) if there exists a recovery operation \(\mathcal{R}\) such that for any \(\gamma\) and density operators \(\rho_\gamma,\sigma_\gamma\) supported on \(\mathsf{A}_\gamma\) and \(\mathsf{B}_\gamma\), respectively, there exists a state \(\tau_\gamma\) supported on \(A_\gamma\) such that
+  \begin{align}(\mathcal{R} \circ \mathcal{E})(\rho_\gamma \otimes \sigma_\gamma) = \tau_\gamma \otimes \sigma_\gamma.\end{align}
+
+  An algebraic condition for correctability can be given in terms of the Kraus operators \(E_j\) of \(\mathcal{E}\).
+  Indeed, \(\mathcal{A}\) is correctable for \(\mathcal{E}\) if \begin{align}\Pi_{\mathcal{A}} E_j^\dagger E_k \Pi_{\mathcal{A}} \in \mathcal{A}'\end{align}
+  for all \(j,k\), where \(\mathcal{A}'\) is the commutant of \(\mathcal{A}\).
+
+  Conversely, a \textit{private} algebra \(\mathcal{A}\) for a channel \(\mathcal{E}\) is one which is completely decohered by the channel \cite{arxiv:quant-ph/0403161}.
+  In other words, no information about the algebra is retained after the action of the channel.
+  Tradeoffs between error correction and privacy have been studied \cite{arxiv:1811.10425}.
+
+relations:
+  parents:
+    - code_id: quantum_into_quantum
+  cousins:
+    - code_id: approximate_oaecc
+      detail: 'Approximate OAQECCs correcting a noise channel exactly reduce to OAQECCs.'
+    - code_id: eaoaecc
+      detail: 'EAOAQECCs utilize additional ancillary subsystems in a pre-shared entangled state, but reduce OAQECCs when said subsystems are interpreted as noiseless physical subsystems.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: MichaelLiu
+      date: '2023-17-06'
+    - user_id: VictorVAlbert
+      date: '2021-11-24'

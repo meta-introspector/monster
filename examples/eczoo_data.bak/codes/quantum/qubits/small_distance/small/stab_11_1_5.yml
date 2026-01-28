@@ -1,0 +1,35 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stab_11_1_5
+physical: qubits
+logical: qubits
+
+name: '\([[11,1,5]]\) quantum dodecacode'
+short_name: '\([[11,1,5]]\)'
+introduced: '\cite{arxiv:quant-ph/9608006}'
+
+description: |
+  Eleven-qubit \hyperref[topic:quantum-weight-enumerator]{pure} stabilizer code that is the smallest qubit stabilizer code to correct two-qubit errors.
+
+  See \cite[Table 8.5]{arxiv:quant-ph/9705052}\cite{arxiv:quant-ph/0406063} for its stabilizer generator matrix.
+
+protection: 'Smallest stabilizer code that protects against errors on any two qubits. Detects four-qubit errors.'
+
+features:
+  encoders:
+    - 'Encoding circuit consisting of 32 gates constructed from reinforcement learning \cite{arxiv:2311.04750}.'
+
+relations:
+  parents:
+    - code_id: small_distance_qubit_stabilizer
+# Not over \mathbb{F}_4 because dodecacode is not additive
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-26'

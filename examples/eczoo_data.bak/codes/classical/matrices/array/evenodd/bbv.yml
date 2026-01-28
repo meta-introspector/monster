@@ -1,0 +1,35 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+
+code_id: bbv
+physical: matrices
+
+
+name: 'Generalized EVENODD code'
+introduced: '\cite{doi:10.1109/18.485722}'
+
+alternative_names:
+  - 'Blaum-Bruck-Vardy array code'
+
+
+description: |
+  A generalization of the EVENODD code defined for parameters \(m\) and \(r\); see \cite{preset:HPArray}.
+
+
+relations:
+  parents:
+    - code_id: array
+  cousins:
+    - code_id: mds_array
+      detail: 'Generalized EVENODD codes for prime \(m\) and \(r=3\) are MDS array codes \cite{preset:HPArray}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-09-10'

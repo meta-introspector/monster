@@ -1,0 +1,31 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: subsystem_hypergraph
+physical: qubits
+logical: qubits
+
+name: 'Sarvepalli-Brown subsystem code'
+introduced: '\cite{arxiv:1207.0479}'
+# Code ID is misleading, real SHP is subsystem_quantum_parity
+
+description: |
+  Member of a family of non-CSS subsystem codes constructed from hypergraphs that satisfy certain assumptions \cite[Construction C]{arxiv:1207.0479}.
+
+
+relations:
+  parents:
+    - code_id: subsystem_stabilizer
+  cousins:
+    - code_id: color
+      detail: 'Sarvepalli-Brown subsystem codes can be derived from color codes \cite[Thm. 3]{arxiv:1207.0479}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-01-23'

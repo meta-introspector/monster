@@ -1,0 +1,42 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: xyz_color
+physical: qubits
+logical: qubits
+
+name: 'XYZ color code'
+introduced: '\cite{arxiv:2203.16534}'
+
+description: |
+  Non-CSS variant of the 6.6.6 color code whose generators are \(XZXZXZ\) and \(ZYZYZY\) Pauli strings associated to each hexagonal in the hexagonal (6.6.6) tiling. A further variation called the \textit{domain wall color code} admits generators of the form \(XXXZZZ\) and \(ZZZXXX\) \cite{arxiv:2307.00054}.
+
+features:
+  decoders:
+    - 'Efficient ML decoder at infinite bias \cite{arxiv:2203.16534}.'
+    - 'Cellular-automaton decoder \cite{arxiv:2203.16534}.'
+  code_capacity_threshold:
+    - '\(50\%\) threshold for noise infinitely biased towards \(X\) or \(Y\) or \(Z\) errors using cellular-automaton decoder \cite{arxiv:2203.16534}.'
+    - 'Independent \(X,Y\) noise: threshold value of the sum of both noise probabilities is between \(9\%\) and \(14\%\), depending on the noise bias \cite{arxiv:2203.16534}.'
+
+
+relations:
+  parents:
+    - code_id: twist_defect_color
+  cousins:
+    - code_id: triangular_color
+      detail: 'The XYZ color code is obtained from the 6.6.6 color code by applying single-qubit Clifford rotations on a subset of qubits such that the \(X\)- and \(Z\)-type generators are mapped to \(XZXZXZ\) and \(ZYZYZY\), respectively.'
+    - code_id: xzzx
+      detail: 'The XZZX surface (XYZ color) is a non-CSS analogue of the rotated surface (6.6.6 color) code such that the two codes are related by single-qubit Clifford rotations.'
+    - code_id: fracton
+      detail: 'The XYZ color code resembles a Type-II fracton code in the limit of infinite noise bias \cite{arxiv:2203.16534}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-29'

@@ -1,0 +1,48 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: subspace
+physical: matrices
+
+name: 'Subspace code'
+introduced: '\cite{arXiv:cs/0703061,arxiv:0805.3824,arxiv:1103.3117}'
+
+
+description: |
+  A code that is a set of subspaces of \(\mathbb{F}_q^n\). Codewords are generator matrices of the subspaces in reduced-row echelon form, and distance is governed by various notions of subspace overlap.
+
+protection: |
+  Subspace codes are quantified with respect to the subspace distance \cite{arXiv:cs/0703061} or injection distance \cite{arxiv:0805.3824}.
+  
+  Generalizations of various bounds for ordinary \(q\)-ary codes have been developed for subspace codes; see \cite{preset:HKSnetwork}.
+
+features:
+  decoders:
+    - 'List decoding up to the Singleton bound \cite{doi:10.1145/2488608.2488715}.'
+
+realizations:
+  - 'Packet-based transmission over linear networks \cite{arxiv:cs/0703061,arxiv:0711.0708,preset:HKSnetwork}.'
+
+notes:
+  - 'Reviews of subspace codes \cite{doi:10.1007/978-3-642-10868-6_1,preset:HKSnetwork}.'
+
+# 20240911: Codewords are subspaces, not elements of field, so q-ary is not parent
+relations:
+  parents:
+    - code_id: matrices_into_matrices
+      detail: 'Subspace codes are represented by generator matrices of subspaces of \(\mathbb{F}_q^n\).'
+  cousins:
+    - code_id: projective
+      detail: 'Subspace codes are sets of subspaces of a projective space \(PG(n-1,q)\).'
+    - code_id: gabidulin
+      detail: 'Gabidulin codes can be used to construct asymptotically good subspace codes \cite{doi:10.1109/TIT.2003.809567,arXiv:cs/0703061}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-08-23'

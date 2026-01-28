@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_quantum_parity
+physical: groups
+logical: groups
+
+name: 'Group-based QPC'
+introduced: '\cite{arxiv:1902.07714}'
+
+description: |
+  An \([[m r,1,\min(m,r)]]_G\) generalization of the QPC.
+
+  Logical codewords for each group element \(g\) are
+  \begin{align}
+    |\overline{g}\rangle=\left({\textstyle \frac{1}{\sqrt{|G|^{m-1}}}}\sum_{h_{1},h_{2},\cdots,h_{m}\in G}\delta_{g,h_{1}h_{2}\cdots h_{m}}|h_{1},h_{2},\cdots,h_{m}\rangle\right)^{\otimes r}~.
+  \end{align}
+  where \(\delta^{G}_{g,h}\) is the \hyperref[topic:group-pauli]{group Kronecker-delta function}.
+  For non-compact groups, the sum becomes an integral, and ideal codewords are no longer normalizable.
+
+# not group GKP since right and left multipliers are in stabilizer group
+relations:
+  parents:
+    - code_id: group_quantum
+    - code_id: quantum_concatenated
+      detail: 'A group-based QPC is a concatenation of a phase-flip group-based repetition code with a bit-flip group-based repetition code.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-04-05'

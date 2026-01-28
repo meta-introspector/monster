@@ -1,0 +1,40 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: squeezed_fock_state
+physical: oscillators
+logical: qudits
+
+name: 'Squeezed fock-state code'
+introduced: '\cite{arxiv:2312.16000,arxiv:2506.00300,arxiv:2509.16993,arxiv:2510.04209}'
+
+description: |
+  Approximate bosonic code that encodes a qubit into a superposition of one or a few squeezed Fock states, some of which are the result of a photon-number resolving measurement \cite{arxiv:2509.16993}.
+
+  The simplest code encodes a qubit into the same Fock state, but one which is squeezed in opposite directions \cite{arxiv:2312.16000}.
+  Taking the Fock state \(|1\rangle\), the codewords are
+  \begin{align}
+  \begin{split}
+  |\overline{0}\rangle&=S(r)|1\rangle \\
+  |\overline{1}\rangle&=S(-r)|1\rangle~,
+  \end{split}
+  \end{align}
+  where \(S(\pm r)\) is the squeezing operator with squeezing parameter \(\pm r\).
+
+protection: 'The code approximately protects against loss and dephasing errors, becoming exact in the \(r\to\infty\) limit.'
+
+relations:
+  parents:
+    - code_id: single-mode
+    - code_id: ampdamp
+      detail: 'The squeezed Fock-state code approximately protects against loss and dephasing errors, becoming exact in the \(r\to\infty\) limit.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-12-30'

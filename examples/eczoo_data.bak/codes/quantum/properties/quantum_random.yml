@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_random
+
+name: 'Random quantum code'
+#introduced: ''
+
+description: 'Quantum code whose construction is non-deterministic in some way, i.e., codes that utilize an elements of randomness somewhere in their construction. Members of this class range from fully non-deterministic codes (e.g., random-circuit codes), to codes whose multi-step construction is deterministic with the exception of a single step (e.g., expander lifter-product codes).'
+
+
+protection: |
+  Certain random codes have nontrivial \hyperref[topic:codespace-complexity]{codespace complexity} \cite{arxiv:2310.04710}.
+
+features:
+  rate: 'Haar random codes achieve the quantum Hamming bound \cite{arxiv:2510.07158}.'
+
+# This is more of a unifying property, not meant to be a parent to anything
+relations:
+  parents:
+    - code_id: approximate_qecc
+      detail: 'Random codes typically correct errors on average.'
+  cousins:
+    - code_id: random
+    - code_id: quantum_perfect
+      detail: 'Haar random codes achieve the quantum Hamming bound \cite{arxiv:2510.07158}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-02-28'

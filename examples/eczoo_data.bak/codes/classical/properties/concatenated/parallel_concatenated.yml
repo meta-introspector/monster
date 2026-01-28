@@ -1,0 +1,28 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: parallel_concatenated
+
+name: 'Parallel concatenated code'
+
+description: |
+  A code that is constructed by combining two or more codes in a Tanner code, in a tensor-product code, or in a modified Tanner construction \cite{doi:10.1109/TIT.2005.846392}.
+
+protection: ''
+
+#notes:
+#  - ''
+
+relations:
+  parents:
+    - code_id: ecc
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-03-22'

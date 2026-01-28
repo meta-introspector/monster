@@ -1,0 +1,43 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: bksf
+physical: qubits
+logical: qubits
+
+name: 'Bravyi-Kitaev superfast (BKSF) code'
+short_name: 'BKSF'
+introduced: '\cite{arxiv:quant-ph/0003137}'
+
+alternative_names:
+  - 'Loop-stabilized fermion simulation (LSFS) code'
+# 1701.07072
+
+description: |
+  An single error-detecting fermion-into-qubit encoding defined on 2D qubit lattice whose stabilizers are associated with loops in the lattice.
+  The code can be generalized to a single error-correcting code (i.e., with distance three) on graphs of degree \(\geq 6\) \cite{arxiv:1810.05274}.
+
+protection: |
+  The code can detect single-qubit errors \cite{arxiv:1812.08190}.
+  A generalized BKSF code has distance 3 on a graph with degree \(\geq 6\), while original BKSF code cannot correct single-qubit errors on graphs of degree \(< 6\) \cite{arxiv:1810.05274}.
+
+
+relations:
+  parents:
+    - code_id: mlsc
+      detail: 'The BKSF code can be thought of as a particular MLSC \cite{arxiv:1812.08190}.'
+    - code_id: 2d_bosonization
+      detail: 'The BKSF code is a distance-two 2D bosonization code for a specific edge ordering \cite{arxiv:2201.05153}.'
+# cousins:
+#   - code_id: triangular_color
+#     detail: 'The square-lattice BKSF encoding \cite{arxiv:1810.05274} has the excitation structure as one of the toric codes underlying the 2D color code \cite{manual:{Compact fermion to qubit mappings for quantum simulation}}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-20'

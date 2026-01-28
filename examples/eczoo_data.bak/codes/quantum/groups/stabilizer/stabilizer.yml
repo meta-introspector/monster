@@ -1,0 +1,79 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: stabilizer
+# includes Galois, modular, oscillators, and groups
+
+name: 'Stabilizer code'
+
+description: |
+  A code whose logical subspace is the joint eigenspace (usually with eigenvalue \(+1\)) of a set of commuting unitary Pauli-type operators forming the code's stabilizer group.
+  They can be block codes defined of tensor-product spaces of qubits or qudits, or non-block codes defined on single sufficiently large Hilbert spaces such as bosonic modes or group spaces.
+
+  The coding theory motivation for stabilizer codes came from linear binary codes, whose codewords form a closed subspace in the space of binary strings.
+  Stabilizer codes extend this property, in various ways, to quantum error correction.
+  Stabilizer codes can be defined succinctly using the stabilizer group generators and without explicitly writing out a basis of codewords.
+  The stabilizer formalism is applicable to almost all quantum-code kingdoms; see \href{https://errorcorrectionzoo.org/list/stabilizer}{list of stabilizer codes} for a list of all stabilizer codes.
+
+  Stabilizer codes were originally defined for qubits, where the relevant commuting operators are tensor products of Pauli matrices.
+  The Pauli stabilizer structure is useful in providing standardized encoding, gates, decoding, and performance bounds.
+  Elements of this structure remain in qudit extensions, in particular for prime-dimensional modular qudits and Galois qudits.
+  Infinite-dimensional Pauli-type bases yield the bosonic stabilizer and rotor stabilizer codes.
+
+  One can switch between stabilizer codes by appending another stabilizer group and taking the center of the resulting larger group.
+  \begin{defterm}{Stabilizer code switching, code deformation, update rule, or code rewiring}
+  \label{topic:code-switching}
+  Stabilizer code switching is a map between stabilizer codes that is done using a stabilizer group \(\mathsf{F}\),
+  \begin{align}
+  \mathsf{S}\to\mathsf{N}_{\left\langle \mathsf{S},\mathsf{F}\right\rangle }\left(\mathsf{F}\right)~,
+  \end{align}
+  where \(\mathsf{N}\) denotes taking the normalizer of a group (e.g., see \cite{doi:10.1017/CBO9780511976667,arxiv:2402.00145} for proofs).
+  Code switching may not preserve the logical information and instead implement logical measurements; conditions on \(\mathsf{S}\) and \(\mathsf{F}\) such that qubit stabilizer \hyperref[topic:code-switching]{code switching} preserves logical information are derived in \cite[Prop. II.1]{arxiv:2304.01277}.
+  The stabilizer rewiring algorithm (SRA) allows for code switching between a pair of compatible stabilizer codes \cite{arxiv:1707.09403} (see also Ref. \cite{arxiv:1311.0879,arxiv:1511.02596}), and ancillary qubits may be used to maintain minimum distance of any intermediate codes \cite{arxiv:1709.09282}.
+  Clifford operations and Pauli measurements can be expressed as sequences of \hyperref[topic:code-switching]{code switching} \cite{arxiv:2401.12017}.
+  In the context of stabilizer codes realizing Abelian topological phases, \hyperref[topic:code-switching]{code switching} implements \textit{anyon condensation} of any anyons represented by operators in the group \(\mathsf{F}\).
+  Code switching can be done using only transversal gates for qubit stabilizer codes \cite{arxiv:2409.13465}.
+  \end{defterm}
+
+  Extensions of the stabilizer formalism, such as \hyperref[code:xs_stabilizer]{XS} and \hyperref[code:xp_stabilizer]{XP} stabilizer codes, relax the mutual commutation property.
+  Other extensions, such as \hyperref[code:cws]{CWS} and \hyperref[code:non_stabilizer]{union stabilizer} codes, enlarge the codespace by re-assigning error words as codewords.
+
+#  Stabilizer codes have been defined for qubits, modular qudits, Galois qudits, and oscillators using their respective Pauli-type groups.
+# An important property of qubit and qudit stabilizer codes is the QLDPC property, which means (roughly) that working with them remains not too hard as number of qudits grows; these remain as the primary ingredients for a quantum memory.
+
+protection: |
+  The group of all Pauli-type operators typically serves as the set of noise operators for stabilizer codes.
+
+features:
+  general_gates:
+    - 'A Gottesman-Knill-type theorem exists for qubits, modular qudits, Galois qudits, and rotors \cite{arxiv:1210.3637,arxiv:1409.4800}, as well as oscillators \cite{arxiv:quant-ph/0109047,arxiv:1210.1783,arxiv:1208.3660}. Stabilizer codes can be described by quadratic functions over Abelian groups \cite{arxiv:2601.15396}.'
+
+  decoders:
+    - 'The structure of stabilizer codes allows for straightforward syndrome-based decoding because the stabilizer generators serve as the code''s check operators, and their eigenvalues serve as the error syndromes. The error correction process involves measuring the stabilizer generators and applying correcting Pauli-type operators based on the measurement outcomes.'
+
+
+relations:
+  parents:
+    - code_id: group_quantum
+      detail: 'Stabilizer codes are constructed out of Pauli strings, modular-qudit Pauli strings, Galois-qudit Pauli strings, oscillator displacement operators, or rotor generalized Pauli strings. All of these are examples of the Weyl-Heisenberg group on Manin''s quantum plane, which is defined on a configuration space that is generally a free Abelian group \cite{doi:10.5802/aif.1117,doi:10.1143/PTP.102.219,arxiv:math/0307393,arxiv:math/0402401}.'
+    - code_id: commuting_projector
+      detail: 'Codespace is the ground-state space of the \textit{code Hamiltonian}, which consists of an equal linear combination of stabilizer generators and which can be made into a frustration-free commuting-projector Hamiltonian.'
+    - code_id: frustration_free
+      detail: 'Codespace is the ground-state space of the \textit{code Hamiltonian}, which consists of an equal linear combination of stabilizer generators and which can be made into a frustration-free commuting-projector Hamiltonian.'
+    - code_id: knill
+      detail: 'Stabilizer codes are Knill codes whose \hyperref[topic:nice-error-basis]{nice error basis} is either the Pauli strings, modular-qudit Pauli strings, Galois-qudit Pauli strings, oscillator displacement operators, or rotor generalized Pauli strings.'
+  cousins:
+    - code_id: topological_abelian
+      detail: 'There is a general correspondence between stabilizer codes and gauge theory, with the stabilizer group playing the role of the gauge group \cite{arxiv:2412.15317}.'
+
+#   Stabilizer codes are group-representation codes since their projections are onto an irrep of the logical group formed by those unitary operators that preserve the code (e.g., logical Paulis in the case of qubit stabilizer codes) \cite{arxiv:2306.11621}
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-19'

@@ -1,0 +1,38 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: mps
+physical: spins
+
+name: 'Magnon code'
+introduced: '\cite{arxiv:1902.02115}'
+
+description: |
+  An \(n\)-spin approximate code whose codespace of \(k=\Omega(\log n)\) qubits is efficiently described in terms of particular matrix product states or Bethe ansatz tensor networks.
+  Magnon codewords are low-energy excited states of the frustration-free Heisenberg-XXX model Hamiltonian \cite{arxiv:1902.02115}.
+
+protection: 'Distance \(d=\Omega(n^{1-\nu})\) for any \(\nu\in(0,1)\).'
+
+relations:
+  parents:
+    - code_id: spins_into_spins
+      detail: 'Magnon codewords are low-energy excited states of the frustration-free Heisenberg-XXX model Hamiltonian \cite{arxiv:1902.02115}.'
+    - code_id: frustration_free
+      detail: 'Magnon codewords are low-energy excited states of the frustration-free Heisenberg-XXX model Hamiltonian \cite{arxiv:1902.02115}.'
+    - code_id: approximate_qecc
+      detail: 'Magnon codes approximately protect against erasures in the thermodynamic limit.'
+  cousins:
+    - code_id: eth
+      detail: 'Magnon codes have been shown to protect against non-geometrically local noise, while ETH codes protect only against erasures on geometrically local patches.'
+    - code_id: spt
+      detail: 'Magnon codewords \cite{arxiv:1902.02115} are associated with 1D SPT orders \cite{arxiv:1008.3745,arxiv:1010.3732,arxiv:1103.3323,arxiv:1106.4772}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-12-28'

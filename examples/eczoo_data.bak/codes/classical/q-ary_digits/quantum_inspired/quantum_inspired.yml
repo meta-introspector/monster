@@ -1,0 +1,26 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: quantum_inspired
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: 'Quantum-inspired classical block code'
+
+description: |
+  A \(q\)-ary linear code whose construction was inspired by a quantum code.
+
+
+relations:
+  parents:
+    - code_id: q-ary_linear
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-12-26'

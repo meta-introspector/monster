@@ -1,0 +1,56 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: insertion_deletion
+
+
+name: 'Editing code'
+introduced: '\cite{manual:{Levenshtein, Vladimir I. "Binary codes capable of correcting deletions, insertions, and reversals." Soviet physics doklady. Vol. 10. No. 8. 1966.}}'
+
+alternative_names:
+  - 'Insertion and deletion code'
+
+description: |
+    A block code designed to protect against insertions, where a new symbol is added somewhere within the string, and deletions, where a symbol at an unknown location is erased.
+# Since deletions come at unknown locations, they are more difficult to deal with than erasures.
+
+protection: |
+    The metric measuring distance of an error word to the nearest codeword is the \textit{Levenshtein's deletion distance}: given vectors \(u,v\), this distance is one-half the smallest number of deletions and insertions needed to change \(u\) to \(v\).
+    A code \(C\) corrects \(e\) deletions if all codewords are separated by at least \(e+1\) in the deletion distance \cite{arxiv:math/0207197}.
+    Similar distances, collectively called \textit{editing distances}, can be defined for insertions and related operations \cite[Sec. 22.7]{preset:HKSmetrics}.
+
+
+features:
+  rate: 'An asymptotically good linear code against bit-flip errors can be converted into an asymptotically good code against insertion-deletion errors \cite{arxiv:2007.09075}.'
+
+# features:
+#   rate: 'For binary codes, the optimal achievable rate to protect against a \(\delta\) fraction of insertions and deletions is \(1- O(\delta \log\frac{1}{\delta})\).'
+# In the large alphabet setting, there exists a code which corrects a \(\delta\) fraction of insertions and deletions and has a rate of \((1-\Omega)^5\).'
+
+notes:
+  - 'See Refs. \cite{arxiv:1906.07887,doi:10.1109/TIT.2021.3056317}\cite[Sec. 22.7]{preset:HKSmetrics} for more details.'
+
+
+# Codewords are q-ary strings, so q-ary parent
+relations:
+  parents:
+    - code_id: block
+  cousins:
+    - code_id: permutation_invariant
+      detail: 'PI codes of distance \(d\) can protect against \(d-1\) (quantum) deletion errors.'
+    - code_id: combinatorial_design
+      detail: 'Perfect deletion correcting codes can be constructed using combinatorial design theory \cite{doi:10.1007/BF01390767,doi:10.1023/A:1008212622423}.'
+    - code_id: perfect
+      detail: 'Perfect deletion correcting codes can be constructed using combinatorial design theory \cite{doi:10.1007/BF01390767,doi:10.1023/A:1008212622423}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: FengxingZhu
+      date: '2024-03-16'
+    - user_id: VictorVAlbert
+      date: '2024-03-16'

@@ -1,0 +1,49 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: spin_cat
+physical: spins
+logical: qubits
+
+name: 'Spin cat code'
+introduced: '\cite{arxiv:2101.03662,arxiv:2401.04271}'
+
+description: |
+  An analogue of the two-component cat code designed for a large spin, which is often realized in the PI subspace of atomic ensembles.
+
+  The encoding was designed by using the Holstein-Primakoff mapping \cite{doi:10.1103/PhysRev.58.1098,doi:10.2307/3212170,doi:10.1103/RevModPhys.63.375} to pull back the phase-space structure of a bosonic system to the compact phase space of a quantum spin.
+
+  The codewords can be approximated by two spin-coherent states.
+  The version where the two spin-coherent states are antipodal has been considered in Ref. \cite{arxiv:2401.04271}.
+
+  An extended version of the spin cat code, the dark spin-cat code, encodes in two spins, both thought of as hyperfine manifolds \cite{arxiv:2408.04421}.
+
+features:
+  general_gates:
+    - 'CNOT gate preserving the rank of spherical-tensor noise operators \cite{arxiv:2401.04271}.'
+  decoders:
+    - 'Measurement-free error correction protocol \cite{arxiv:2401.04271}.'
+
+realizations:
+  - 'Trapped ions: autonomous error-correction scheme reduces errors by a factor up to 2.2, as demonstrated by the Chiaverini group \cite{arxiv:2503.13908}.'
+  - 'Silicon spin qubits: cat-state initialization \cite{arxiv:2405.15494}.'
+  - 'Synthetic spin system inside a microwave cavity: universal control using linear and nonlinear pulses \cite{arxiv:2405.15695}.'
+
+relations:
+  parents:
+    - code_id: single_spin
+  cousins:
+    - code_id: two-legged-cat
+      detail: 'The spin-cat code construction utilizes the Holstein-Primakoff mapping \cite{doi:10.1103/PhysRev.58.1098,doi:10.2307/3212170,doi:10.1103/RevModPhys.63.375} to convert cat codes into codes for spin systems.'
+    - code_id: spins_into_spins
+      detail: 'An extended version of the spin cat code, the dark spin-cat code, encodes in two spins, both thought of as hyperfine manifolds \cite{arxiv:2408.04421}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-01-19'

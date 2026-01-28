@@ -1,0 +1,40 @@
+[package]
+name = "ollama-monster"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+byteorder = "1.5"
+
+[[bin]]
+name = "code-search"
+path = "src/code_search.rs"
+
+[[bin]]
+name = "trace"
+path = "src/trace.rs"
+
+[[bin]]
+name = "eigenvector"
+path = "src/eigenvector.rs"
+
+[[bin]]
+name = "context-exp"
+path = "src/context_exp.rs"
+
+[[bin]]
+name = "view-logs"
+path = "src/view_logs.rs"
+
+[[bin]]
+name = "analyze-perf"
+path = "src/analyze_perf.rs"
+
+[[bin]]
+name = "auto-feedback"
+path = "src/auto_feedback.rs"

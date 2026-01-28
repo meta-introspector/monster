@@ -1,0 +1,34 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: petersen
+physical: bits
+logical: bits
+
+name: '\([15,6,5]\) Petersen cycle code'
+introduced: '\cite{doi:10.1109/TIT.1968.1054190}'
+
+description: |
+  A \([15,6,5]\) cycle code whose parity-check matrix is the incidence matrix of the Petersen graph.
+  The Petersen graph can be thought of as a dodecahedron with antipodes identified \cite[Appx. A.2.1]{arxiv:1703.07847}.
+
+notes:
+  - 'See more details, see \cite[Example 10.11.7]{doi:10.1007/978-3-540-72780-4}.'
+
+relations:
+  parents:
+    - code_id: homological_classical
+    - code_id: small_distance
+  cousins:
+    - code_id: dodecahedron
+      detail: 'The Petersen graph can be thought of as a dodecahedron with antipodes identified \cite[Appx. A.2.1]{arxiv:1703.07847}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-03-16'

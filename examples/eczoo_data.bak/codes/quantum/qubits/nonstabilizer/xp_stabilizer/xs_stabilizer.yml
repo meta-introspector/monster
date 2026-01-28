@@ -1,0 +1,35 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: xs_stabilizer
+physical: qubits
+logical: qubits
+
+name: 'XS stabilizer code'
+introduced: '\cite{arxiv:1404.5327}'
+
+description: |
+  A type of stabilizer code where stabilizer generators are elements of the group \( \{\alpha I, X, \sqrt{Z}\}^{\otimes n} \), with \( \sqrt{Z} = \text{diag} (1, i)\). The codespace is a joint \(+1\) eigenspace of a set of stabilizer generators, which need not commute to define a valid codespace.
+
+  The phases in the qubit-basis expansion of an XS stabilizer state are polynomials of degree three or below \cite{arxiv:1404.5327}.
+
+
+relations:
+  parents:
+    - code_id: xp_stabilizer
+      detail: 'The XP stabilizer formalism reduces to the XS formalism at \(N=4\).'
+  cousins:
+    - code_id: tqd_abelian
+      detail: 'Abelian TQD models for the groups \(\mathbb{Z}_2^k\) can be realized as XS stabilizer codes \cite{arxiv:1404.5327}. Upon gauging some symmetries \cite{arxiv:1202.3120,arxiv:1407.1025,arxiv:1603.04442,arxiv:1603.05182,arxiv:1605.01640,arxiv:1805.01836,arxiv:1806.08679,arXiv:2108.11402,arxiv:2310.16032,arxiv:2410.02213}, a Type-III \(\mathbb{Z}_2^3\) TQD realizes the same topological order as the \(G=D_4\) quantum double model \cite{arxiv:hep-th/9511195,arxiv:1508.03468,arxiv:2112.12757}.'
+    - code_id: tqd
+      detail: 'Abelian TQD models for the groups \(\mathbb{Z}_2^k\) can be realized as XS stabilizer codes \cite{arxiv:1404.5327}. Upon gauging some symmetries \cite{arxiv:1202.3120,arxiv:1407.1025,arxiv:1603.04442,arxiv:1603.05182,arxiv:1605.01640,arxiv:1805.01836,arxiv:1806.08679,arXiv:2108.11402,arxiv:2310.16032,arxiv:2410.02213}, a Type-III \(\mathbb{Z}_2^3\) TQD realizes the same topological order as the \(G=D_4\) quantum double model \cite{arxiv:hep-th/9511195,arxiv:1508.03468,arxiv:2112.12757}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-19'

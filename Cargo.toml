@@ -1,0 +1,32 @@
+[package]
+name = "monster"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "monster"
+path = "src/main.rs"
+
+[[bin]]
+name = "all_groups"
+path = "src/all_groups.rs"
+
+[[bin]]
+name = "prime_emojis"
+path = "src/prime_emojis.rs"
+
+[[bin]]
+name = "group_harmonics"
+path = "src/group_harmonics.rs"
+
+[[bin]]
+name = "musical_periodic_table"
+path = "src/musical_periodic_table.rs"
+
+[[bin]]
+name = "monster_emoji_report"
+path = "src/monster_emoji_report.rs"
+
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"

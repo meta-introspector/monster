@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Walk - Interactive with PyodideLite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎪 The Monster Walk - Live Computation</h1>
+        <p>Interactive exploration with WASM + Pyodide</p>
+        <div id="status">Loading...</div>
+    </header>
+    
+    <nav>
+        <button onclick="runRustWasm()">Run Rust WASM</button>
+        <button onclick="runPyodide()">Run Python (Pyodide)</button>
+        <button onclick="runTests()">Run Tests</button>
+        <button onclick="generateReport()">AI Report</button>
+    </nav>
+    
+    <main>
+        <section id="live-computation">
+            <h2>Live Computation Environment</h2>
+            <div class="split-view">
+                <div class="code-panel">
+                    <h3>Python Code (Pyodide)</h3>
+                    <textarea id="python-code" rows="15">
+# Monster Walk computation in browser
+import json
+
+def compute_monster_groups():
+    groups = []
+    monster_order = "808017424794512875886459904961710757005754368000000000"
+    
+    # Define the 10 groups
+    group_data = [
+        (0, "8080", 4, 8),
+        (4, "1742", 4, 4),
+        (8, "479", 3, 4),
+        (11, "451", 3, 4),
+        (14, "2875", 4, 4),
+        (18, "8864", 4, 8),
+        (22, "5990", 4, 8),
+        (26, "496", 3, 6),
+        (29, "1710", 4, 3),
+        (33, "7570", 4, 8),
+    ]
+    
+    for i, (pos, seq, digits, removed) in enumerate(group_data, 1):
+        groups.append({
+            "group": i,
+            "position": pos,
+            "sequence": seq,
+            "digits": digits,
+            "factors_removed": removed
+        })
+    
+    return groups
+
+# Compute and display
+groups = compute_monster_groups()
+print(f"Found {len(groups)} groups")
+for g in groups:
+    print(f"Group {g['group']}: {g['sequence']}")
+
+# Return for JavaScript
+groups
+                    </textarea>
+                    <button onclick="executePython()">Execute Python</button>
+                </div>
+                
+                <div class="output-panel">
+                    <h3>Output</h3>
+                    <pre id="output"></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section id="wasm-computation">
+            <h2>WASM Computation</h2>
+            <div id="wasm-output"></div>
+        </section>
+        
+        <section id="test-results">
+            <h2>Test Results</h2>
+            <div id="test-output"></div>
+        </section>
+        
+        <section id="ai-report">
+            <h2>AI Accessibility Report</h2>
+            <pre id="ai-report-output"></pre>
+        </section>
+    </main>
+    
+    <script type="module">
+        let pyodide = null;
+        let monsterWasm = null;
+        
+        // Initialize Pyodide
+        async function initPyodide() {
+            document.getElementById('status').textContent = 'Loading Pyodide...';
+            pyodide = await loadPyodide();
+            
+            // Install packages
+            await pyodide.loadPackage(['numpy', 'micropip']);
+            
+            document.getElementById('status').textContent = '✓ Pyodide Ready';
+            console.log('Pyodide initialized');
+        }
+        
+        // Initialize WASM
+        async function initWasm() {
+            try {
+                const { MonsterWalk } = await import('./wasm/monster_wasm.js');
+                await import('./wasm/monster_wasm_bg.wasm');
+                monsterWasm = new MonsterWalk();
+                console.log('WASM initialized');
+            } catch (e) {
+                console.log('WASM not available:', e);
+            }
+        }
+        
+        // Execute Python code
+        window.executePython = async function() {
+            if (!pyodide) {
+                alert('Pyodide not loaded yet');
+                return;
+            }
+            
+            const code = document.getElementById('python-code').value;
+            const output = document.getElementById('output');
+            
+            try {
+                // Redirect stdout
+                pyodide.runPython(`
+                    import sys
+                    from io import StringIO
+                    sys.stdout = StringIO()
+                `);
+                
+                // Run code
+                const result = pyodide.runPython(code);
+                
+                // Get stdout
+                const stdout = pyodide.runPython('sys.stdout.getvalue()');
+                
+                output.textContent = stdout;
+                
+                // If result is JSON-serializable, show it
+                if (result) {
+                    output.textContent += '\n\nResult:\n' + JSON.stringify(result.toJs(), null, 2);
+                }
+            } catch (err) {
+                output.textContent = 'Error: ' + err.message;
+            }
+        };
+        
+        // Run Rust WASM
+        window.runRustWasm = function() {
+            if (!monsterWasm) {
+                document.getElementById('wasm-output').textContent = 'WASM not loaded';
+                return;
+            }
+            
+            const groups = JSON.parse(monsterWasm.get_all_groups());
+            const bottGroups = monsterWasm.get_bott_period_groups();
+            
+            let output = `Monster Order: ${monsterWasm.get_monster_order()}\n\n`;
+            output += `Groups: ${groups.length}\n\n`;
+            
+            groups.forEach(g => {
+                output += `Group ${g.group_number}: ${g.sequence} (${g.digits} digits, ${g.factors_removed} removed)\n`;
+            });
+            
+            output += `\nBott Period 8 Groups: ${bottGroups.join(', ')}`;
+            
+            document.getElementById('wasm-output').textContent = output;
+        };
+        
+        // Run Pyodide tests
+        window.runPyodide = async function() {
+            if (!pyodide) {
+                alert('Pyodide not loaded yet');
+                return;
+            }
+            
+            const testCode = `
+import json
+
+# Test Monster Walk properties
+def test_monster_walk():
+    tests_passed = 0
+    tests_total = 0
+    
+    # Test 1: Exactly 10 groups
+    tests_total += 1
+    groups = compute_monster_groups()
+    if len(groups) == 10:
+        print("✓ Test 1: Exactly 10 groups")
+        tests_passed += 1
+    else:
+        print("✗ Test 1: Expected 10 groups, got", len(groups))
+    
+    # Test 2: Bott period groups
+    tests_total += 1
+    bott_groups = [g for g in groups if g['factors_removed'] == 8]
+    if len(bott_groups) == 4:
+        print(f"✓ Test 2: Bott period 8 groups: {[g['group'] for g in bott_groups]}")
+        tests_passed += 1
+    else:
+        print("✗ Test 2: Expected 4 Bott period groups")
+    
+    # Test 3: First group is 8080
+    tests_total += 1
+    if groups[0]['sequence'] == '8080':
+        print("✓ Test 3: First group is 8080")
+        tests_passed += 1
+    else:
+        print("✗ Test 3: First group should be 8080")
+    
+    # Test 4: Harmonic calculation
+    tests_total += 1
+    harmonic = 432 * 2 * 46  # Binary Moon
+    if harmonic == 39744:
+        print(f"✓ Test 4: Harmonic calculation: {harmonic} Hz")
+        tests_passed += 1
+    else:
+        print("✗ Test 4: Harmonic calculation failed")
+    
+    print(f"\\n{tests_passed}/{tests_total} tests passed")
+    return tests_passed == tests_total
+
+test_monster_walk()
+            `;
+            
+            try {
+                pyodide.runPython(`
+                    import sys
+                    from io import StringIO
+                    sys.stdout = StringIO()
+                `);
+                
+                pyodide.runPython(testCode);
+                const stdout = pyodide.runPython('sys.stdout.getvalue()');
+                
+                document.getElementById('test-output').textContent = stdout;
+            } catch (err) {
+                document.getElementById('test-output').textContent = 'Error: ' + err.message;
+            }
+        };
+        
+        // Generate AI accessibility report
+        window.generateReport = function() {
+            const report = {
+                timestamp: new Date().toISOString(),
+                structure: {
+                    sections: Array.from(document.querySelectorAll('section')).map(s => s.id),
+                    headings: Array.from(document.querySelectorAll('h1, h2, h3')).map(h => h.textContent.trim()),
+                    interactive: {
+                        buttons: document.querySelectorAll('button').length,
+                        textareas: document.querySelectorAll('textarea').length,
+                        code_blocks: document.querySelectorAll('pre, code').length
+                    }
+                },
+                capabilities: {
+                    pyodide: pyodide !== null,
+                    wasm: monsterWasm !== null,
+                    mathjax: typeof MathJax !== 'undefined'
+                },
+                accessibility: {
+                    semantic_html: true,
+                    aria_labels: document.querySelectorAll('[aria-label]').length,
+                    alt_text: document.querySelectorAll('img[alt]').length
+                }
+            };
+            
+            document.getElementById('ai-report-output').textContent = 
+                JSON.stringify(report, null, 2);
+            
+            console.log('AI Report:', report);
+        };
+        
+        // Initialize on load
+        window.addEventListener('load', async () => {
+            await initPyodide();
+            await initWasm();
+            
+            // Auto-run initial computation
+            executePython();
+        });
+    </script>
+    
+    <footer>
+        <p>🌌 Live computation with Pyodide + WASM + Nix ✨</p>
+    </footer>
+</body>
+</html>

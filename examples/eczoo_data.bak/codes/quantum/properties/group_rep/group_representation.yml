@@ -1,0 +1,42 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_representation
+
+name: 'Group-representation code'
+introduced: '\cite{arxiv:2005.10910,arxiv:2305.07023,arxiv:2306.11621}'
+
+description: |
+  Code whose projection is onto an irreducible representation of a subgroup \(G\) of a group of canonical or distinguished unitary operations, e.g., transversal gates in the case of block quantum codes, Gaussian operations in the case of bosonic codes, or \(SU(2)\) operations in the case of single-spin codes.
+
+protection: |
+  Error correction ability is not guaranteed, but can be searched in the multiplicity space of the irrep in case there is more than one copy present.
+
+features:
+  encoders:
+    - 'General encoding map \cite[Lemma 1]{arxiv:2306.11621}.'
+  general_gates:
+    - 'By definition, a group \(G\) of gates can be realized on the code using the unitary operations used to define the code.'
+
+
+relations:
+  parents:
+    - code_id: covariant
+      detail: 'Group-representation code projections are onto a single irrep of a subgroup of canonical or distinguished unitary operations on a Hilbert space. This makes them covariant w.r.t. that subgroup. More general covariant codes need not be projections onto a single irrep. Removing the restriction to distinguished operations and allowing all operations, every code projection on an \(N\)-dim Hilbert space can be expressed as a projection onto the irrep formed by the code-preserving subgroup of \(U(N)\). The same idea holds when \(N\) is taken to infinity. In other words, while all codes are covariant w.r.t. some group, group-representation codes are covariant w.r.t. a canonical or distinguished subgroup.'
+  cousins:
+    - code_id: small_distance_quantum
+      detail: 'See Ref. \cite{arxiv:2403.08999} for tables of distance-two codes with various families of transversal gates.'
+
+# cousins:
+#   - code_id: qsc
+#     detail: 'There exist group-representation codes that are quantum spherical codes with non-uniform coefficients; such codes, by definition, admit a desired group of gates via Gaussian rotations \cite{arxiv:2306.11621}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-02-21'

@@ -1,0 +1,103 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: bacon_shor
+physical: qubits
+logical: qubits
+
+name: 'Bacon-Shor code'
+introduced: '\cite{doi:10.1103/PhysRevA.52.R2493,arxiv:quant-ph/0305025,arxiv:quant-ph/0506023}'
+
+description: |
+  Subsystem CSS code defined on an \(m_1 \times m_2\) lattice of qubits that generalizes the \([[9,1,3]]\) (subspace) Shor code.
+  It is said to be \textit{symmetric} when \(m_1=m_2\), and \textit{asymmetric} otherwise.
+
+  The \(X\)-type and \(Z\)-type stabilizers defined as \(X\) and \(Z\) operators acting on all qubits on adjacent columns and rows, respectively. Let \(O_{i,j}\) denote an operator acting on the qubit at a position \((i,j)\) on the lattice, with \(i\in\{0,1,\ldots ,m_1-1\}\) and \(j\in\{0,1,\ldots,m_2-1\}\). The code's stabilizer group is
+  \begin{align}
+  \mathsf{S}=\langle X_{i,*}X_{i+1,*},Z_{*,j}Z_{*,j+1}\rangle~,
+  \end{align}
+  with generators expressed as products of nearest-neightbour 2-qubit gauge operators,
+  \begin{align}
+  \begin{split}
+  X_{i,*}X_{i+1,*}= \bigotimes_{k=0}^{m_2-1} X_{i,k}X_{i+1,k} \\
+  Z_{*,j}Z_{*,j+1}=\bigotimes_{k=0}^{m_1-1} Z_{k,j}Z_{k,j+1}~.
+  \end{split}
+  \end{align}
+  Syndrome extraction can be done by measuring these gauge operators, which are on fewer qubits and local.
+
+  A Floquet version of the Bacon-Shor code admits a period-four measurement sequence that utilizes its gauge degrees of freedom as defects evolving across measurement rounds. This \textit{Floquet-Bacon-Shor} code saturates the \hyperref[topic:subsystem-bt-bound]{subsystem BT bound}.
+  Applying a period-four measurement schedule to the original Bacon-Shor code yields a numerical threshold under circuit-level noise \cite{arxiv:2504.02749}.
+
+protection: |
+  The \([[m_1 m_2,1,min(m_1,m_2)]]\) variant has distance \(d=min(m_1,m_2)\).
+  In a symmetric 3-dimensional case (defined on a cubic lattice) with \(L^3\) qubits, the code has the parameters \([[L^3,1,L]]\).
+  Bacon-Shor code parameteres can be optimized by changing the block geometry, yielding good performance against biased noise \cite{arxiv:1209.0794}.
+
+features:
+  rate: 'A non-LDPC family of Bacon-Shor codes achieves a distance of \hyperref[topic:asymptotics]{order} \(\Omega(n^{1-\epsilon})\) with sparse gauge operators.'
+  transversal_gates:
+    - 'Logical Hadamard is transversal in symmetric Bacon-Shor codes up to a qubit permutation \cite{arxiv:quant-ph/0610063} and can be implemented with teleportation \cite{arxiv:quant-ph/0002039}.'
+    - 'Bacon-Shor codes on an \(m \times m^k\) lattice admit transversal \(k\)-qubit-controlled \(Z\) gates \cite{arxiv:1705.01686}.'
+  general_gates:
+    - 'Pieceably fault-tolerant circuits can be employed to construct non-transversal gates effectively \cite{manual:{Yoder, Theodore., \emph{DSpace@MIT} Practical Fault-Tolerant Quantum Computation (2018)}}.'
+    - 'Subsystem lattice surgery \cite{arxiv:1609.08062}.'
+    - 'Measurement-free deformation protocol realizing the \(CCZ\) gate \cite{arxiv:2412.15187}.'
+  fault_tolerance:
+    - 'Fault-tolerant teleportation-based computation scheme for asymmetric Bacon-Shor codes that is effective against highly biased noise \cite{arxiv:1211.1400}.'
+    - 'Pieceably fault-tolerant circuits can be employed to construct non-transversal gates effectively \cite{manual:{Yoder, Theodore., \emph{DSpace@MIT} Practical Fault-Tolerant Quantum Computation (2018)}}.'
+  code_capacity_threshold:
+    - 'The number of check operators scales sublinearly with system size, so the Bacon-Shor codes alone do not exhibit a topological threshold in the \(m_1,m_2 \to \infty\) limit \cite{arxiv:1903.03937}.
+    However, a threshold can be obtained from concatenated Bacon-Shor codes that are further restricted to planar geometries, whose recovery circuit is a subset of a circuit used by a larger bona-fide Bacon-Shor code \cite{arxiv:2305.12046}.
+    This threshold differs from a \hyperref[topic:computational-threshold]{concatenated threshold} in that there are no long-range connectivity requirements.'
+    - 'Lower bounds for the \hyperref[topic:computational-threshold]{concatenated threshold} of various small Bacon-Shor codes are tabulated in \cite[Table I]{arxiv:quant-ph/0610063}.'
+  threshold:
+    - 'Numerical study of \hyperref[topic:computational-threshold]{concatenated thresholds} of logical CNOT gates for various codes against depolarizing noise \cite{arxiv:0711.1556}.'
+    - 'The Bacon-Shor code has a \hyperref[topic:measurement-threshold]{measurement threshold} of zero \cite{arxiv:2402.00145}.'
+    - 'Applying a period-four measurement schedule to the original Bacon-Shor code yields a numerical threshold under circuit-level noise \cite{arxiv:2504.02749}.'
+  decoders:
+    - 'Both Steane error correction and Shor error correction can be used for syndrome extraction, with the former outperforming the latter \cite{arxiv:2403.01659}.'
+    - 'Utilizing the mapping of the effect of the noise to a statistical mechanical model \cite{arxiv:quant-ph/0110143,arxiv:2002.11733} yields several copies of the 1D Ising model \cite[Sec. V.B]{arxiv:0908.4246}.'
+    - 'While check operators are few-body, stabilizer weights scale with the number of qubits, and stabilizer expectation values are obtained by taking products of gauge-operator expectation values.
+    It is thus not clear how to extract stabilizer values in a fault-tolerant manner \cite{arxiv:2009.03921,arxiv:2107.02194}.'
+    - 'Autonomous QEC \cite{arxiv:1212.3564}.'
+    - 'Applying a period-four measurement schedule to the original Bacon-Shor code yields a numerical threshold under circuit-level noise \cite{arxiv:2504.02749}.'
+
+realizations:
+  - 'Superconducting qubits: The Floquet-Bacon-Shor code has been realized on a 3-by-3 lattice \cite{arxiv:2503.03867}.'
+
+notes:
+  - 'See \cite[Sec. III.C1]{arxiv:1302.3428} for an exposition.'
+
+relations:
+  parents:
+    - code_id: bravyi_bacon_shor
+    - code_id: subsystem_quantum_parity
+    - code_id: compass_model
+      detail: 'A compass code on a fully non-colored lattice reduces to the Bacon-Shor code.'
+  cousins:
+    - code_id: hamiltonian
+      detail: 'The 2D Bacon-Shor gauge-group Hamiltonian is the compass model \cite{doi:10.1070/PU1982v025n04ABEH004537,arxiv:cond-mat/0501708,arxiv:1303.5922}.'
+    - code_id: hybrid_stabilizer
+      detail: 'There are several ways to convert Bacon-Shor codes to hybrid qubit stabilizer codes \cite{arxiv:2012.05896,arxiv:2304.11442}'
+    - code_id: floquet
+      detail: 'A Floquet version of the Bacon-Shor code admits a period-four measurement sequence that utilizes its gauge degrees of freedom as defects evolving across measurement rounds. This \textit{Floquet-Bacon-Shor} code saturates the \hyperref[topic:subsystem-bt-bound]{subsystem BT bound}.
+      Applying a period-four measurement schedule to the original Bacon-Shor code yields a numerical threshold under circuit-level noise \cite{arxiv:2504.02749}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-07-31'
+    - user_id: MazinKarjikar
+      date: '2022-06-28'
+    - user_id: VictorVAlbert
+      date: '2022-03-15'
+    - user_id: SrilekhaGandhari
+      date: '2022-01-20'
+    - user_id: VictorVAlbert
+      date: '2021-12-03'

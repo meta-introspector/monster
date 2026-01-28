@@ -1,0 +1,78 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: rank_metric
+physical: matrices
+logical: matrices
+
+name: 'Rank-metric code'
+introduced: '\cite{doi:10.1016/0097-3165(78)90015-8}'
+
+alternative_names:
+  - 'Delsarte rank-metric code'
+
+description: |
+  Each codeword is a \textit{matrix} over \(\mathbb{F}_q\), with codewords forming a \(\mathbb{F}_q\)-linear subspace, and with the metric being the rank of the difference of matrices. The distance \(d\) is the minimum rank of all nonzero matrices in the code. Rank-metric codes on \(n\times m\) matrices are denoted as \([n\times m,k,d]_q\).
+
+  The number of codewords satisfies \(k \leq \max(n, m) M\), where \(M\) is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called \textit{Delsarte optimal anticodes}.
+
+protection: |
+  Protects against errors with rank \(\leq \lfloor \frac{d-1}2 \rfloor\).
+
+  The complexity of decoding rank-metric codes is unknown but expected to be harder than that of binary linear codes \cite{arxiv:1404.3482}.
+
+  Linear programming bounds have been derived \cite{doi:10.1016/0097-3165(78)90015-8,doi:10.1007/978-94-010-9787-1_2,doi:10.1016/j.jcta.2010.05.006}.
+  See Ref. \cite{arxiv:1410.1333} for a discussion of \hyperref[topic:weight-enumerator]{MacWilliams identities}.
+
+features:
+  decoders:
+    - 'Polynomial-reconstruction Berlekamp-Welch based decoder \cite{doi:10.1007/11779360_4}.'
+    - 'Berlekamp-Massey based decoder \cite{doi:10.1109/ISIT.2004.1365435}.'
+#    - 'The lower bound of the time complexity for the most efficient decoding algorithms for an m*n codeword representation code is approximately \(m\)^{3}*2^{\(n\)^{2}}, which is exponentially better than the Hamming Metric. For applications such as cryptography where the decoding algorithms having high time complexity is desired, Rank Metric offers promise for security in a post quantum era.'
+
+
+#  decoders:
+#    - 'The method of decoding is analogous to the Berlekamp-Welch algorithm.'
+#    - 'Error locator polynomial \(E(y_i) = E(f(\alpha_i))\).'
+#    - 'This problem is linearized to \(E(y_i) = N(\alpha_i)\). Using the known degrees of these polynomials \(deg_q f \leq k-1, deg_q E \leq t\), this problem becomes a set of linear equations which can be solved for \(E\) and \(f\).'
+#    - 'Finally we perform \(E(y_i - f_i(\alpha_i)) = 0\) to solve for the error vector.'
+
+realizations:
+  - 'Identity-Based Encryption \cite{doi:10.1007/978-3-319-63697-9_7}.'
+  - 'Digital watermarking \cite{doi:10.1016/j.image.2018.12.015}.'
+  - 'Network coding and streaming media broadcasting \cite{doi:10.1109/CWIT.2007.375706}.'
+
+
+notes:
+  - 'See Ref. \cite{doi:10.1017/9781009283403,doi:10.14459/2021md1601193,doi:10.1561/0100000119}\cite[Sec. 5]{preset:HPArray} for more details.'
+
+
+relations:
+  parents:
+    - code_id: sum_rank_metric
+      detail: 'The sum-rank metric generalizes both the Hamming metric and the rank metric \cite{arxiv:1710.03109}.'
+    - code_id: 2pt_homogeneous
+      detail: 'Matrices of dimension \(m\times n\) over \(\mathbb{F}_q\) form a finite two-point homogeneous space \cite{doi:10.1016/0097-3165(78)90015-8,doi:10.1007/978-94-010-9787-1_2,doi:10.1016/j.jcta.2010.05.006}\cite[Table 2]{arxiv:1007.2905}.'
+    #  are in one-to-one correspondence with bilinear forms, which
+  cousins:
+    - code_id: subspace
+      detail: 'An \(m \times n\) rank-metric codeword \(A\) can be \textit{lifted} to a subspace codeword \((I | A)\) that generates an \(m\)-dimensional subspace \cite{arxiv:0711.0708}\cite[Def. 14.5.21]{preset:HKSprojective}.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: MazinKarjikar
+      date: '2023-01-16'
+    - user_id: VictorVAlbert
+      date: '2023-01-16'
+    - user_id: MazinKarjikar
+      date: '2022-12-30'
+    - user_id: VictorVAlbert
+      date: '2022-05-25'
+    - user_id: ThomasWrona
+      date: '2022-05-18'

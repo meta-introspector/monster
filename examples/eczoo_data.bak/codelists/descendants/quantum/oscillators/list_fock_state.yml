@@ -1,0 +1,31 @@
+
+list_id: fock_state
+
+title: |
+  Bosonic Fock-state codes
+
+intro: |
+  Here is a list of bosonic Fock-state codes.
+
+
+display:
+  style: table
+  options:
+    cssclass: xtra-xtra-stretch
+    columns:
+      - property: name
+        title: Code
+        link_to_code: true
+        cssclass: 'top left'
+
+      - property: description
+        title: Description
+        cssclass: 'textit'
+        first_paragraph_only: true
+
+sort:
+  by: name
+
+codes:
+  select:
+    - descendant_of: fock_state

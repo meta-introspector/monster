@@ -1,0 +1,48 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: reinforcement_learning
+physical: qubits
+logical: qubits
+
+name: 'Neural network quantum code'
+introduced: '\cite{arxiv:1802.05267,arxiv:1806.08781,arxiv:1812.08451}'
+
+description: |
+  An approximate qubit code obtained from a numerical optimization involving a reinforcement learning agent.
+
+protection: |
+  Depends on the parameter being optimized.
+
+features:
+  rate: 'Neural network codes can be obtained by optimizing the coherent information \cite{arxiv:1806.08781}.'
+  
+  encoders:
+    - 'Both codes and encoding circuits can be obtained via a reinforcement learning agent \cite{arxiv:2311.04750}.'
+
+notes:
+  - 'See review on the use of artificial intelligence in quantum error correction \cite{arxiv:2412.20380}.'
+
+relations:
+  parents:
+    - code_id: qubits_into_qubits
+    - code_id: approximate_qecc
+  cousins:
+    - code_id: surface
+      detail: 'Reinforcement learners can be used to optimize the geometry of the surface code to be more suited to a noise channel \cite{arxiv:1812.08451}.'
+    - code_id: numopt
+      detail: 'Numerically optimized bosonic codes can be obtained via reinforcement learning \cite{arxiv:2108.02766,arxiv:2212.11651}.'
+    - code_id: small_distance_qubit_stabilizer
+      detail: '13 inequivalent \([[9,3,3]]\) codes, along with others, have been found via reinforcement learning \cite{arxiv:2311.04750}.'
+    - code_id: stab_5_1_3
+      detail: 'Various five-qubit codes, numerically obtained through variational techniques, can outperform the five-qubit perfect code against depolarizing noise \cite{arxiv:2506.11552}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-01-08'

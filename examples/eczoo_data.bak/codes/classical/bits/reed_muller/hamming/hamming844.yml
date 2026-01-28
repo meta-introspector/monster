@@ -1,0 +1,55 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: hamming844
+physical: bits
+logical: bits
+
+name: '\([8,4,4]\) extended Hamming code'
+introduced: '\cite{doi:10.1002/j.1538-7305.1948.tb01338.x,doi:10.1002/j.1538-7305.1950.tb00463.x,manual:{M. J. E. Golay, \emph{Notes on digital coding}, Proc. IEEE, 37 (1949) 657.}}'
+
+alternative_names:
+  - '\([8,4,4]\) \(e_8\) code'
+# Self-dual codes book
+
+description: |
+  Extension of the \([7,4,3]\) Hamming code by a parity-check bit.
+  The smallest doubly even self-dual code.
+
+  A generator matrix is
+  \begin{align}
+  \begin{pmatrix}
+  1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
+  0 & 1 & 0 & 0 & 1 & 0 & 1 & 1 \\
+  0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 \\
+  0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\
+  \end{pmatrix}~.
+  \end{align}
+
+  Its automorphism group is \(GA(3,\mathbb{F}_2)\) \cite{arxiv:1912.09167}.
+
+relations:
+  parents:
+    - code_id: self_dual
+      detail: 'The \([8,4,4]\) extended Hamming code is the smallest doubly even self-dual code.'
+    - code_id: extended_hamming
+    - code_id: biorthogonal
+      detail: 'The \([8,4,4]\) extended Hamming code is a first-order RM code because it is self-dual and first-order RM codes are dual to extended Hamming codes.'
+    - code_id: group
+      detail: 'The \([8,4,4]\) extended Hamming code is a group-algebra code for the group \(\mathbb{Z}_2 \times \mathbb{Z}_4\) \cite{arxiv:1912.09167}.'
+  cousins:
+    - code_id: binary_quad_residue
+      detail: 'The \([8,4,4]\) extended Hamming code is an extended quadratic-residue code \cite{preset:MacSlo}.'
+    - code_id: divisible
+      detail: 'The \([8,4,4]\) extended Hamming code code is the smallest double-even self-dual code.'
+
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-12-21'

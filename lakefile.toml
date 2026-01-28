@@ -1,0 +1,15 @@
+name = "monster-lean"
+version = "0.1.0"
+defaultTargets = ["MonsterLean"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.27.0"
+
+[[lean_lib]]
+name = "MonsterLean"
+
+[[lean_exe]]
+name = "monster-lean"
+root = "Main"

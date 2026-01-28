@@ -1,0 +1,70 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: simplex
+physical: bits
+logical: bits
+
+name: '\([2^m-1,m,2^{m-1}]\) simplex code'
+introduced: '\cite{doi:10.1111/j.1469-1809.1941.tb02298.x,doi:10.1002/j.1538-7305.1948.tb01338.x}'
+#  from Cameron, Peter J. "Some bridges between codes and designs." Unpublished manuscript, Queen Mary and Westfield College, London (1998).
+
+alternative_names:
+  - 'Shortened Hadamard code'
+  - 'RM\(^*(1,m)\) code'
+  - 'Maximum-length feedback-shift-register code'
+
+description: |
+  A member of the equidistant code family that is dual to the \([2^m,2^m-m-1,3]\) Hamming family.
+  The columns of its generator matrix are in one-to-one correspondence with the elements of the projective space \(PG(m-1,2)\), with each column being a chosen representative of the corresponding element.
+  Simplex codes saturate the Plotkin bound and hence have nonzero codewords all of the same weight, \(2^{m-1}\) \cite[Th. 11(a)]{preset:MacSlo}.
+  The codewords form a \((2^m,2^m+1)\) simplex spherical code under the \hyperref[topic:antipodal-mapping]{antipodal mapping}.
+
+  A punctured simplex code is known as a \textit{MacDonald code} \cite{doi:10.1147/rd.41.0043}, with parameters \([[2^m-2^u,m,2^{m-1}-2^{u-1}]]\) for \(u \leq m-1\) \cite{doi:10.1109/TIT.1975.1055315}.
+
+  The automorphism group of the code is \(GL_{m}(\mathbb{F}_2)\) \cite{preset:MacSlo}.
+
+protection: |
+  Simplex codes saturate the Plotkin bound and hence have nonzero codewords all of the same weight \cite[Th. 11(a)]{preset:MacSlo}.
+
+
+features:
+  decoders:
+    - 'Serial orthogonal decoder \cite{manual:{R. R. Green, "A serial orthogonal decoder," JPL Space Programs Summary, vol. 37–39-IV, pp. 247–253, 1966.},doi:10.1109/ITW.2003.1216684}'
+    - 'Quantum decoder \cite{manual:{A. Barg and S. Zhou, “A quantum decoding algorithm for the simplex code”, in Proceedings of the 36th Annual Allerton Conference on Communication, Control and Computing, Monticello, IL, 23–25 September 1998 (UIUC 1998) 359–365}}.'
+
+
+relations:
+  parents:
+    - code_id: binary_linear
+      detail: 'Linear binary codes cannot be constant weight, but can have nonzero codewords with constant weight. All such codes are equidistant, and Bonisoli''s theorem states that any equidistant linear binary code is a direct sum of simplex codes \cite{manual:{Bonisoli, Arrigo. "Every equidistant linear code is a sequence of dual Hamming codes." Ars Combinatoria 18 (1984): 181-186.}} (see also Refs. \cite{doi:10.1016/S0019-9958(63)80010-8,doi:10.1137/0114009}).'
+    - code_id: combinatorial_design
+      detail: 'Simplex codewords form a 2-design \cite[pg. 166]{preset:MacSlo}.'
+    - code_id: q-ary_simplex
+      detail: '\(q\)-ary simplex codes reduce to simplex codes for \(q=2\).'
+  cousins:
+    - code_id: hamming
+      detail: 'Hamming and simplex codes are dual to each other.'
+    - code_id: dual
+      detail: 'Hamming and simplex codes are dual to each other.'
+    - code_id: simplex_spherical
+      detail: 'Binary simplex codes map to \((2^m,2^m+1)\) simplex spherical codes under the \hyperref[topic:antipodal-mapping]{antipodal mapping} \cite[Sec. 6.5.2]{manual:{Forney, G. D. (2003). 6.451 Principles of Digital Communication II, Spring 2003.}}\cite[pg. 18]{preset:EricZin}. In other words, simplex (simplex spherical) codes form simplices in Hamming (Euclidean) space.'
+    - code_id: biorthogonal
+      detail: 'First-order RM codes and simplex codes are interconvertible via shortening and lengthening \cite[pg. 31]{preset:MacSlo}. Punctured first-order RM codes and simplex codes are interconvertible via expurgation and augmentation \cite[pg. 31]{preset:MacSlo}.'
+    - code_id: constant_weight
+      detail: 'Linear binary codes cannot be constant weight, but can have nonzero codewords with constant weight. All such codes are equidistant, and Bonisoli''s theorem states that any equidistant linear binary code is a direct sum of simplex codes \cite{manual:{Bonisoli, Arrigo. "Every equidistant linear code is a sequence of dual Hamming codes." Ars Combinatoria 18 (1984): 181-186.}} (see also Refs. \cite{doi:10.1016/S0019-9958(63)80010-8,doi:10.1137/0114009}).'
+    # Also in constant_weight
+    - code_id: reed_muller
+      detail: 'Simplex are equivalent to RM\(^*(1,m)\).'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-08-09'
+    - user_id: YiTingRickTu
+      date: '2022-03-28'

@@ -1,0 +1,55 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: tetracode
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: '\([4,2,3]_3\) Tetracode'
+introduced: '\cite{doi:10.1007/978-1-4757-6568-7}'
+
+description: |
+  The \([4,2,3]_3\) ternary self-dual MDS code that has connections to lattices \cite{doi:10.1007/978-1-4757-6568-7}.
+
+  A generator matrix is
+  \begin{align}
+    \begin{pmatrix}1 & 0 & 1 & 1\\
+    0 & 1 & 1 & 2
+    \end{pmatrix}~,
+  \end{align}
+  where \(\mathbb{F}_3 = \{0,1,2\}\).
+
+notes:
+  - 'See corresponding MinT database entry \cite{manual:{Rudolf Schürer and Wolfgang Ch. Schmid. “Tetracode.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. https://web.archive.org/web/20240420202309/https://mint.sbg.ac.at/desc_CTetra.html}}.'
+
+relations:
+  parents:
+    - code_id: self_dual
+      detail: 'The tetracode is Euclidean self-dual.'
+    - code_id: self_dual_over_zq
+    - code_id: q-ary_simplex
+      detail: 'The tetracode is equivalent to \(S(3,2)\).'
+    - code_id: q-ary_hamming
+      detail: 'The tetracode is equivalent to the \(r=2\) \(3\)-ary Hamming code.'
+    - code_id: mds
+      detail: 'The tetracode is a unique MDS code \cite{manual:{Taussky, Olga, and John Todd. "Covering theorems for groups." Bulletin of the American Mathematical Society. Vol. 54. No. 3. 201 CHARLES ST, PROVIDENCE, RI 02940-2213: AMER MATHEMATICAL SOC, 1948.},doi:10.1112/jlms/s1-44.1.60}.'
+    - code_id: extended_reed_solomon
+      detail: 'The tetracode is an extended RS code \cite[pg. 81]{doi:10.1007/978-1-4757-6568-7}.'
+    - code_id: lexicographic
+      detail: 'The tetracode is a lexicode \cite{doi:10.1109/TIT.1986.1057187}.'
+  cousins:
+    - code_id: ternary_golay
+      detail: 'Extended ternary Golay codewords can be obtained from tetracodewords \cite{doi:10.1007/978-1-4757-6568-7}.
+      The tetracode can be used to decode the extended ternary Golay code \cite{doi:10.1109/TIT.1986.1057197}.'
+    - code_id: eeight
+      detail: 'The \([4,2,3]_3\) tetracode can be used to obtain the \(E_8\) Gosset lattice \cite[Exam. 10.5.5]{preset:EricZin}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-08-09'

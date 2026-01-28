@@ -1,0 +1,36 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: wozencraft
+physical: q-ary_digits
+logical: q-ary_digits
+
+name: 'Wozencraft ensemble code'
+introduced: '\cite{manual:{J. L. Massey, Threshold Decoding. Cambridge, MA: M.I.T. Press, 1963.}}'
+
+description: |
+  A code that is part of the Wozencraft ensemble, a set of codes most of whose members achieve the \hyperref[topic:gv-bound]{GV bound}.
+
+  Each \([2k,k]_q\) code is defined by a parameter \(\alpha \in \mathbb{F}_{q^k}\) and consists of codewords \((x,\alpha x)\) for each message \(x \in \mathbb{F}_{q^k}\), where each element of \(\mathbb{F}_{q^k}\) is expressed over \(\mathbb{F}_q^k\) using a fixed basis.
+
+protection: |
+  Bounds and constructions with \hyperref[topic:asymptotics]{order} \(\Omega(\sqrt{k})\) distance are provided in Ref. \cite{arxiv:2305.02484}.
+
+features:
+  rate: 'Meets the \hyperref[topic:gv-bound]{GV bound} for most choices of \(\alpha\).
+  Puncturing the code yields a higher rate with also meeting the \hyperref[topic:gv-bound]{GV bound}; see Ref. \cite{arxiv:2305.02484}.
+  These codes can be used to asymptotically improve over the \hyperref[topic:gv-bound]{GV bound} \cite{arxiv:0708.4164}.'
+
+relations:
+  parents:
+    - code_id: q-ary_linear
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-22'

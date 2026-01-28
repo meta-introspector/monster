@@ -1,0 +1,3 @@
+[submodule "examples/eczoo_data"]
+	path = examples/eczoo_data
+	url = https://github.com/errorcorrectionzoo/eczoo_data.git

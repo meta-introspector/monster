@@ -1,0 +1,35 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: oscillators_into_oscillators
+physical: oscillators
+logical: oscillators
+
+name: 'Oscillator-into-oscillator code'
+short_name: 'O2O'
+introduced: '\cite{arxiv:quant-ph/9711021,arxiv:quant-ph/9711049}'
+
+
+description: 'Encodes \(k\) bosonic modes into \(n\) bosonic modes.'
+
+#\(L^2\)-normalizable functions on \(\mathbb{R}^k\) into that on \(\mathbb{R}^n\). Usually denoted as \(((n,k))_{\mathbb{R}}\).'
+
+#notes:
+#  - ''
+
+#realizations: ''
+
+relations:
+  parents:
+    - code_id: oscillators
+      detail: 'Oscillator-into-oscillator codes are bosonic codes with an infinite-dimensional logical subspace.'
+  # block_quantum is not immediate parent since oscillators is child of it
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2021-10-30'

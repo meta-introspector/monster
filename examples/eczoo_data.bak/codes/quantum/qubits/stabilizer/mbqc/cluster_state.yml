@@ -1,0 +1,177 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: cluster_state
+physical: qubits
+logical: qubits
+
+name: 'Cluster-state code'
+introduced: '\cite{arxiv:quant-ph/0004051}'
+
+alternative_names:
+  - 'Graph-state code'
+
+description: |
+  A code based on a cluster state and often used in measurement-based quantum computation (MBQC) \cite{arxiv:quant-ph/0108118,doi:10.1103/PhysRevLett.86.5188} (a.k.a. one-way quantum processing), which substitutes the temporal dimension necessary for decoding a conventional code with a spatial dimension.
+  This is done by encoding the computation into the features of the cluster state''s graph.
+
+  Cluster states are stabilizer states defined on a graph.
+  There is one stabilizer generator \(S_j\) per graph vertex \(j\) of the form
+  \begin{align}
+    S_j = X_{j} \prod_{k\in N(j)} Z_k~,
+  \end{align}
+  where the neighborhood \(N(j)\) is the set of vertices which share an edge with \(j\).
+  
+  A type of cluster-state code can be built from a cluster state by applying the CWS construction using a linear binary code, in which codewords are obtained by applying \(Z\)-type operators defined by the code to the cluster state; see, e.g., Ref. \cite{arxiv:2304.08363}. \hyperref[topic:quantum-weight-enumerator]{Pure} CWS codes can be constructed from uniform graphs \cite{arxiv:2405.06142}.
+
+  By contrast, MBQC schemes utilize single cluster states.
+  An MBQC scheme can be constructed out of any qubit CSS code (via \textit{foliation} \cite{arxiv:1607.02579}; see also Ref. \cite{arxiv:1705.05602}) or qubit stabilizer code \cite{arxiv:1811.11780}.
+  Foliation of a CSS code can be interpreted as a product of the code's chain complex with another complex \cite{arxiv:2410.12963}.
+  The original MBQC scheme \cite{arxiv:quant-ph/0510135,arxiv:quant-ph/0610082} uses the RBH cluster state on the bcc lattice (i.e., a cubic lattice with qubits on edges and faces).
+
+  Since they are stabilizer states, two cluster states are considered local-Clifford equivalent if they can be mapped into each other under a tensor product of arbitrary \hyperref[topic:clifford]{single-qubit Clifford} operations.
+  Such operations can sometimes be done via local complementation (LC) of the underlying graph \cite{arxiv:quant-ph/0307130,arxiv:quant-ph/0308151}.
+  More generally, any two local-unitary equivalent cluster states can be mapped into each other by operations at some level of the hierarchy \cite{arxiv:2409.20183}, meaning that general tensor-product unitaries are not needed.
+  Cluster states on \(\leq 19\) qubits are LC equivalent if and only if they are local-unitary equivalent \cite{arxiv:2409.20183}, and there exists a cluster state on \(27\) qubits that is LC but not local-unitary equivalent \cite{arxiv:0709.1266,arxiv:0812.4625,arxiv:1910.03969}.
+  Local complementation has been generalized to graphically characterize local unitary equivalence under local Clifford operations and, more generally, at other levels of the \term{Clifford hierarchy} \cite{arxiv:2409.20183}.
+
+protection: |
+  Protection is related to the stabilizer code underlying the cluster state.
+  There is no physical error correction, and decoding output is simply used to update the Pauli frame.
+
+  There exist necessary and sufficient conditions for a family of cluster states to exhibit \hyperref[topic:tqo]{TQO-1} \cite{arxiv:2112.02502}.
+  \hyperref[topic:quantum-weight-enumerator]{Quantum weight enumerators} of cluster state codes are known as sector weights \cite{arxiv:1905.06928,arxiv:1908.04220,arxiv:2105.12752,arxiv:2207.07665}.
+
+  Potential and limits of MBQC using probabilistic gates has been studied \cite{arxiv:quant-ph/0605014}.
+  Cluster states can be optimized to be robust against qubit erasure \cite{arxiv:2212.04834}.
+
+features:
+  encoders:
+    - 'Initialization of all qubits in the \(|+\rangle\) state and action of \(CZ\) gates along the edges of the graph.'
+    - 'Optimal-depth preparation based on graph coloring \cite{arxiv:1011.5464}.'
+    - 'A cluster-like state, or a state that is in the same SPT phase as a cluster state, can be prepared in finite time \cite{arxiv:2107.04019}.'
+    - 'ZX calculus based encoder representation \cite{arxiv:2304.08363}.'
+
+  general_gates:
+    - 'The computation encoded in pre-determined fashion via topological features of the cluster state''s graph, such as boundaries, defects, or twists. Such features can be created using \(Z\)-type measurements, which effectively cut a qubit off from the cluster state. Non-Clifford gates are performed by inserting \hyperref[topic:clifford]{non-Clifford} states into particular \textit{singular} qubits. More generally, any gate protocol of a qubit stabilizer code yields an MBQC protocol \cite{arxiv:1811.11780}.
+    To perform the computation, subsets qubits are measured, e.g., along one two-dimensional slice of a 3D lattice for each time step.
+    This effectively teleports the logical information into the remaining unmeasured portion of the cluster state.
+    The computation terminates after all qubits are measured.
+
+    The entire cluster state does not need to be created at the start of the computation. Instead, the portion of the cluster state in the extra dimension can be initialized as the computation progresses.'
+
+    - 'Clifford operations can be realized as operations acting on graphs underlying a cluster state \cite{arxiv:quant-ph/0308151}. They can be done in any order, demonstrating \textit{parallelism} \cite{arxiv:quant-ph/0108067}.'
+
+  decoders:
+    - 'MBQC syndrome extraction is performed by multiplying certain single-qubit \(X\)-type measurements, which yield syndrome values.'
+
+  code_capacity_threshold:
+    - 'Independent \(X,Z\) noise: \(p_X = 2.9\%\) under MWPM decoding \cite{arxiv:quant-ph/0510135}.
+    The threshold under ML decoding corresponds to the value of a critical point of the 3D random-plaquette \(\mathbb{Z}_2\) gauge theory (3D-RPGM) via the statistical mechanical mapping \cite{arxiv:quant-ph/0110143}, calculated to be \(3.3 \%\) \cite{arxiv:quant-ph/0401101} (see also \cite{arxiv:cond-mat/0501372}).'
+
+  fault_tolerance:
+    - 'There is a simple proof of a threshold for MBQC \cite{arxiv:quant-ph/0503130}.'
+    - 'Photonic architecture \cite{arxiv:0808.1782}.'
+    - 'Generalized foliation procedures exist for noise-bias preserving MBQC \cite{arxiv:2201.10566}.'
+    - 'Fault complexes yield fault-tolerance properties of cluster states that come from foliations of codes \cite{arxiv:2410.12963}.'
+
+# Do only local measurements, X in the bulk (vacuum V)
+# Multiply outcomes to get stabilizers XXXXXX on cube, which is the same as product of cluster state stabs on a cube since Z's cancel
+# This diagnoses for Z errors
+#
+# Z-type error correction round measures Z in the bulk (defect D), which yields ZZZZZZ when multiplied together on a cube
+# This diagnoses for X errors
+
+# 3D cluster state has anyonic strings
+
+# Logical info is no desctroyed, but teleported layer by layer along the third direction
+
+# Storage capacity depends upon the topology of the code surface
+#   Rough/smooth boundaries
+#   Tori = 2 qubits
+#   Planes with two holes = 1 qubit
+# Gates consist of building a 3D lattice in which holes are twisted. Cluster state is using 3rd spatial dim for a temporal one.
+# Lattice surgery also can be scaffolded in.
+
+# So information is effectively stored near the boundary of the 2D slice. Measuring slice by slice will teleport it to the next slice.
+
+realizations:
+  - 'Polarizations of photons: quantum computation \cite{arxiv:quant-ph/0503126,arxiv:0906.2233} and single-qubit error correction on an 8-qubit cluster state \cite{arxiv:1202.5459}.'
+
+notes:
+  - 'See Refs. \cite{arxiv:quant-ph/0602096,doi:10.1002/9783527635283} for a review of cluster states and their applications.'
+  - 'Cluster states are useful for entanglement purification \cite{arxiv:0705.4165}.'
+  - 'Graph-State Compass (GSC) Python software library for manipulating local Clifford equivalence classes of cluster states \cite{arxiv:1910.03969,doi:10.5281/zenodo.2582616,manual:{Sam Morley-Short. GSC. https://github.com/sammorley-short/gsc/tree/master, 2021.}}.'
+
+
+relations:
+  parents:
+    - code_id: qubit_stabilizer
+      detail: 'Cluster-state codes are particular qubit stabilizer codes.
+      Any qubit stabilizer code is equivalent to a graph quantum code via a single-qubit \hyperref[topic:clifford]{Clifford circuit} \cite{arxiv:quant-ph/0111080} (see also \cite{arxiv:quant-ph/0308151,arxiv:quant-ph/0703112}).
+      As a corollary, any qubit stabilizer state is equivalent to a cluster state under a single-qubit \hyperref[topic:clifford]{Clifford circuit} \cite{arxiv:quant-ph/0308151}\cite[Appx. A]{arxiv:1910.00471}.
+      There are algorithms that determine whether two stabilizer states are equivalent that work by checking whether their corresponding cluster states are equivalent \cite{arxiv:1805.05305,arxiv:1805.05306,arxiv:1805.04559}.
+      Any fault-tolerant scheme based on qubit stabilizer codes can be mapped into a cluster-state based MBQC protocol \cite{arxiv:1811.11780}.'
+    - code_id: cws
+      detail: 'A type of cluster-state code can be built from a cluster state by applying the CWS construction using a linear binary code, in which codewords are obtained by applying \(Z\)-type operators defined by the code to the cluster state; see, e.g., Ref. \cite{arxiv:2304.08363}. \hyperref[topic:quantum-weight-enumerator]{Pure} CWS codes can be constructed from uniform graphs \cite{arxiv:2405.06142}.'
+    - code_id: qudit_cluster_state
+      detail: 'Modular-qudit cluster-state codes reduce to cluster-state codes for \(q=2\).'
+  cousins:
+    - code_id: fusion
+      detail: 'FBQC and MBQC are both computational models in which computation is done by measuring resource states (which are qubit stabilizer states).
+      The difference between the two is in how the states are constructed.
+      FBQC is based exclusively on two-qubit measurements tailored to photonic platforms. These measurements require a foliation with more qubits but one which can be built by fusing smaller modules.'
+    - code_id: qubit_css
+      detail: |
+        A resource cluster state can be constructed out of any qubit CSS code via foliation. Conversely, CSS codes can be constructed out of cluster states \cite{arxiv:1607.02579}. 
+        Foliation of a CSS code can be interpreted as a product of the code's chain complex with another complex \cite{arxiv:2410.12963}.
+    - code_id: xp_stabilizer
+      detail: 'XP stabilizer states are in one-to-one correspondence with weighted hypergraph states \cite{arxiv:2203.00103,manual:{Webster, Mark. The XP Stabilizer Formalism. Dissertation, University of Sydney, 2023.}}, which generalize both weighted graph states \cite{arxiv:quant-ph/0407075,arxiv:quant-ph/0602096,arxiv:quant-ph/0602230} and hypergraph states \cite{arxiv:1211.5554,arxiv:1404.6492,arxiv:1410.3904}.
+      The latter can also be utilized in MBQC schemes \cite{arxiv:1805.12093,doi:10.1038/s41598-019-49968-3}.'
+    - code_id: dynamic_gen
+      detail: 'MBQC is done using a measurement-based dynamical process.'
+    #- code_id: dual_rail
+    #  detail: 'The KLM protocol can be combined with cluster states in various ways to yield MBQC protocols \cite{arxiv:quant-ph/0303008,arxiv:quant-ph/0402005,arxiv:quant-ph/0405157}.'
+    - code_id: spt
+      detail: |
+        Cluster states defined on various lattices are representatives of SPT phases, and states realizing these phases can be resources for MBQC. 
+        In 1D, cluster states are examples of SPT phases with global symmetries \cite{arxiv:quant-ph/0301052,arxiv:1009.3491,arxiv:1111.7173,arxiv:1201.4877,arxiv:1301.0861} and enable MBQC on a single qubit \cite{arxiv:quant-ph/0108118,doi:10.1103/PhysRevLett.86.5188}. 
+        The square-lattice cluster state, which is the prototypical resource for universal MBQC \cite{arxiv:quant-ph/0108118,doi:10.1103/PhysRevLett.86.5188}, and other 2D cluster states \cite{arxiv:1806.08780,arxiv:1806.04663,arxiv:1907.13279} have SPT order protected by subsystem symmetries \cite{arxiv:1803.02369,arxiv:1803.00095,arxiv:1806.08780}.
+        States like AKLT states and SPT fixed-point states can be efficiently converted into cluster states using local measurements and subsequently used as resources for MBQC \cite{arxiv:1002.1567,arxiv:1009.3491,arxiv:1009.2840,arxiv:1102.5064,arxiv:1310.5100,arxiv:1509.02947}.
+        In 3D, cluster states belong to SPT phases protected by higher-form symmetries \cite{arxiv:1611.05450} and enable universal fault-tolerant MBQC \cite{arxiv:quant-ph/0703143}.
+        A cluster-like state, or a state that is in the same SPT phase as a cluster state, can be prepared in finite time \cite{arxiv:2107.04019}. Cluster states can be created on various lattices \cite{arxiv:1909.11817}.
+    - code_id: translationally_invariant_stabilizer
+      detail: |
+        Cluster states defined on various lattices are representatives of SPT phases, and states realizing these phases can be resources for MBQC. 
+        In 1D, cluster states are examples of SPT phases with global symmetries \cite{arxiv:quant-ph/0301052,arxiv:1009.3491,arxiv:1111.7173,arxiv:1201.4877,arxiv:1301.0861} and enable MBQC on a single qubit \cite{arxiv:quant-ph/0108118,doi:10.1103/PhysRevLett.86.5188}. 
+        The square-lattice cluster state, which is the prototypical resource for universal MBQC \cite{arxiv:quant-ph/0108118,doi:10.1103/PhysRevLett.86.5188}, and other 2D cluster states \cite{arxiv:1806.08780,arxiv:1806.04663,arxiv:1907.13279} have SPT order protected by subsystem symmetries \cite{arxiv:1803.02369,arxiv:1803.00095,arxiv:1806.08780}.
+        States like AKLT states and SPT fixed-point states can be efficiently converted into cluster states using local measurements and subsequently used as resources for MBQC \cite{arxiv:1002.1567,arxiv:1009.3491,arxiv:1009.2840,arxiv:1102.5064,arxiv:1310.5100,arxiv:1509.02947}.
+        In 3D, cluster states belong to SPT phases protected by higher-form symmetries \cite{arxiv:1611.05450} and enable universal fault-tolerant MBQC \cite{arxiv:quant-ph/0703143}.
+        A cluster-like state, or a state that is in the same SPT phase as a cluster state, can be prepared in finite time \cite{arxiv:2107.04019}. Cluster states can be created on various lattices \cite{arxiv:1909.11817}.
+    - code_id: t-designs
+      detail: 'Kerdock codes correspond to cluster states, and the corresponding Clifford-group automorphisms of this set form a particular group \cite{doi:10.1112/S0024611597000403} that is a unitary 2-design on \(U(2^n)\) \cite{arxiv:1904.07842}. As such, cluster states form complex projective 2-designs on \(\mathbb{C}P^{2^n}\). These are useful in matrix-vector multiplication \cite{arxiv:2105.05879}.'
+    - code_id: complex_projective
+      detail: 'Kerdock codes correspond to cluster states, and the corresponding Clifford-group automorphisms of this set form a particular group \cite{doi:10.1112/S0024611597000403} that is a unitary 2-design on \(U(2^n)\) \cite{arxiv:1904.07842}. As such, cluster states form complex projective 2-designs on \(\mathbb{C}P^{2^n}\). These are useful in matrix-vector multiplication \cite{arxiv:2105.05879}.'
+    - code_id: surface
+      detail: 'Foliating the surface code yields a cluster state on the Lieb lattice \cite{arxiv:quant-ph/9707021,arxiv:1508.03468,arXiv:2211.01376,arXiv:2310.16032}.'
+    # Kitaev writes about the larger lattice but doesn't call it Lieb lattice
+
+
+# In 1D, cluster states are examples of SPT phases with global symmetries and allow MBQC on a single qubit. In 2D, cluster states with subsystem symmetries are universal resources for MBQC. In 3D, cluster states with higher-form symmetries enable universal fault-tolerant MBQC.
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: DavidTStephen
+      date: '2024-12-07'
+    - user_id: VictorVAlbert
+      date: '2024-12-07'
+    - user_id: VictorVAlbert
+      date: '2023-03-01'
+    - user_id: YaronJarach
+      date: '2023-03-01'
+    - user_id: VictorVAlbert
+      date: '2023-03-01'

@@ -1,0 +1,67 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: gnu_permutation_invariant
+physical: spins
+logical: qubits
+
+name: 'GNU PI code'
+short_name: 'GNU'
+introduced: '\cite{arxiv:1302.3247,arxiv:1512.02469}'
+
+description: |
+  PI code whose codewords can be expressed as superpositions of \hyperref[topic:dicke]{Dicke states} with coefficients are square-roots of the binomial distribution.
+
+  In terms of \hyperref[topic:dicke]{Dicke states}, logical codewords for codes encoding a single qubit \cite{arxiv:1302.3247} are
+  \begin{align}
+  |\overline{\pm}\rangle = \sum_{\ell=0}^{m} \frac{(\pm 1)^\ell}{\sqrt{2^m}} \sqrt{m \choose \ell} |D^n_{g \ell}\rangle~.
+  \end{align}
+  Here, \(n\) is the number of particles used for encoding \(1\) qubit, and \(g, m \leq n\) are arbitrary positive integers.
+  Codes with higher logical dimension are developed in Ref. \cite{arxiv:1512.02469}.
+  Each Dicke state in the code can be \textit{shifted} by adding a shift \(s\) to both \(n\) and \(g\).
+
+
+protection: 'Depends on the family. One family which is completely symmetrized versions of Bacon-Shor codes (parameterized by \(t\)) protects against arbitrary weight-\(t\) spin errors. Additionally, codes with large enough length \((t+1)(3t+1)+t\) can approximately correct \(t\) spontaneous decay errors.'
+
+features:
+  decoders:
+    - 'For a family of shifted gnu codes, decoding can be done using projection, probability amplitude rebalancing, and gate teleportation in time \(O(n^2)\) \cite{arxiv:2102.02494}.'
+    - 'Syndrome extraction protocol for insertion errors \cite{arxiv:2509.03413}.'
+
+notes:
+  - 'The degree of entanglement in (non-concatenated) GNU codes scales at most logarithmically in their distance \cite[Appx. D]{arxiv:2405.01332}.'
+
+
+relations:
+  parents:
+    - code_id: qudit_gnu_permutation_invariant
+      detail: 'Qudit GNU codes encoding logical qubits reduce to GNU codes.'
+  cousins:
+    - code_id: combinatorial_permutation_invariant
+      detail: 'Combinatorial PI codes \(Q_{g,(m-1)/2,g-1,+}\) are GNU codes for odd \(m\) \cite[Prop. 5.4]{arxiv:2310.05358}.'
+    - code_id: bacon_shor
+      detail: 'GNU codes of length \((2t+1)^2\) result from projecting Bacon-Shor codes into the PI qubit subspace \cite{arxiv:1302.3247}.'
+    - code_id: frustration_free
+      detail: 'GNU codes lie within the ground state of ferromagnetic Heisenberg models without an external magnetic field \cite{arxiv:1904.01458}.'
+    - code_id: binomial
+      detail: 'Binomial codes and GNU codes related via the Holstein-Primakoff mapping \cite{doi:10.1103/PhysRev.58.1098,doi:10.2307/3212170,doi:10.1103/RevModPhys.63.375}. A qudit generalization of GNU codes can be obtained from qudit binomial codes \cite[Appx. C]{arxiv:1708.05010}.'
+    - code_id: metopt
+      detail: 'GNU codes can be used to sense signals within the PI subspace \cite{arxiv:2212.06285}.'
+
+
+#    - code_id: gkp
+#      detail: 'GNU permutation invariant codes are approximately equivalent (in the limit for \(n\)) to an appropriate subspace of GKP codes, in that the binonmial weightings over the Dicke states converge to the Gaussian weightings of the oscillator codes.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2022-04-26'
+    - user_id: VictorVAlbert
+      date: '2021-12-16'
+    - user_id: BenjaminQuiring
+      date: '2021-12-16'

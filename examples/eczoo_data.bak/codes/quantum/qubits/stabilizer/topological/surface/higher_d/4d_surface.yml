@@ -1,0 +1,84 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: 4d_surface
+physical: qubits
+logical: qubits
+
+name: '\((2,2)\) Loop toric code'
+introduced: '\cite{arxiv:quant-ph/0110143}'
+
+alternative_names:
+  - 'Kitaev tesseract code'
+  - '4D surface code'
+  - 'All-loop toric code'
+  # 2112.02137
+  - '\((2,2)\) 4D toric code'
+
+description: |
+  A generalization of the Kitaev surface code defined on a 4D lattice.
+  The code is called a \((2,2)\) toric code because it admits 2D membrane \(Z\)-type and \(X\)-type logical operators.
+  Both types of operators create 1D (i.e., loop) excitations at their edges.
+  The code serves as a self-correcting quantum memory \cite{arxiv:quant-ph/0110143,arxiv:0811.0033}.
+
+  Qubits are placed on plaquettes, each \(Z\)-type stabilizer generator is supported on six plaquettes surrounding an edge, and \(X\)-type stabilizers are placed on the six plaquettes of every cube \cite{arxiv:2010.02238}.
+
+  \textit{Loop toric code} often either refers to the construction on
+  the four-dimensional torus or is an alternative name for the general
+  construction.
+
+  The construction has been extended to modular qudits \cite{arxiv:2112.02137}.
+
+protection: |
+  Code parameters for an open hypercubic lattice of side-length \(L\) are \([[6L^4 − 12L^3 + 10L^2 - 4L + 1, 1, L^2]]\) \cite{arxiv:2408.08865}.
+
+features:
+  encoders:
+    - 'Lindbladian-based dissipative encoding, for which codespace is steady-state space of a Lindbladian \cite{arxiv:1010.2901}.'
+  transversal_gates:
+    - 'Only logical \hyperref[topic:clifford]{Clifford gates} can be implemented transversally when defined on a hypercubic lattice \cite{arxiv:2010.02238}.'
+  general_gates:
+    - 'Logical \(S\) gate using physical \(CS\) gates via the Pontryagin square \cite{arxiv:2112.02137}.'
+    - 'Logical \(CZ\), \(S\), and Hadamard gates when defined on a hypercubic lattice \cite{arxiv:2405.11719}.'
+  decoders:
+    - 'Local automaton decoder \cite{arxiv:1609.00510} based on Toom''s rule for the classical 2D repetition code \cite{manual:{A. L. Toom, “Nonergodic Multidimensional System of Automata”, Probl. Peredachi Inf., 10:3 (1974), 70–79; Problems Inform. Transmission, 10:3 (1974), 239–246},manual:{Toom, Andrei L. "Stable and attractive trajectories in multicomponent systems." Multicomponent random systems 6 (1980): 549-575.},doi:10.1007/978-1-4612-2168-5_18,doi:10.1147/rd.481.0005}.'
+    - 'Local automaton decoder obtained from reinforcement learning \cite{arxiv:2408.09524}.'
+  code_capacity_threshold:
+    - 'Independent \(X,Z\) noise: \(2.117\%\) with Hastings decoder \cite{arxiv:1609.00510} and \(7.3\%\) with RG decoder for 4D surface code \cite{arxiv:1708.09286}.
+    It is conjectured via a statistical-mechanical mapping that the optimal ML decoder yields a threshold of \(11.003\%\) \cite{arxiv:hep-th/0310279}.'
+  threshold:
+    - 'Phenomenological noise model for the 4D loop toric code: \(4.35\%\) with RG decoder \cite{arxiv:1708.09286}, and \(4.3\%\) under improved BP-OSD decoder \cite{arxiv:2206.03122}.'
+    - 'Gate-based depolarizing noise: \(0.31\%\) with RG decoder for 4D loop toric code \cite{arxiv:1708.09286}.'
+    - '\(1.59\%\) for independent \(X,Z\) noise and faulty syndrome measurements using the Hastings decoder \cite{arxiv:1609.00510}.'
+
+
+realizations:
+  - 'Trapped ions: single-shot QEC realized using a \([[33,1,4]]\) rotated version of the loop toric code on the Quantinuum H2 device \cite{arxiv:2408.08865}.'
+
+
+relations:
+  parents:
+    - code_id: higher_dimensional_surface
+      detail: 'The 4D loop toric code realizes 4D \(\mathbb{Z}_2\) gauge theory with only loop excitations \cite{arxiv:2112.02137}.'
+    - code_id: translationally_invariant_stabilizer
+    - code_id: single_shot
+      detail: 'Single-shot QEC has been realized using the \([[33,1,4]]\) loop toric code on the Quantinuum H2 device \cite{arxiv:2408.08865}.'
+    - code_id: topological_abelian
+      detail: 'The 4D loop toric code realizes 4D \(\mathbb{Z}_2\) gauge theory with only loop excitations \cite{arxiv:2112.02137}.'
+  cousins:
+    - code_id: multisector_hypergraph
+      detail: 'The 4D loop planar (toric) code on a hypercubic lattice can be obtained from a particular choice of chain complex from a hypergraph product of four repetition codes \cite{arxiv:1810.01519}.'
+    - code_id: repetition
+      detail: 'The 4D loop planar (toric) code on a hypercubic lattice can be obtained from a particular choice of chain complex from a hypergraph product of four repetition codes \cite{arxiv:1810.01519}.'
+    - code_id: double_homological_product
+      detail: 'The 4D loop planar (toric) code on a hypercubic lattice can be obtained from a particular choice of chain complex from a hypergraph product of four repetition codes \cite{arxiv:1810.01519}. As such, it is a particular Campbell double homological product code \cite[table I]{arxiv:1805.09271}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-04-26'

@@ -1,0 +1,45 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: four_qubit_permutation_invariant
+
+name: '\(((4,2,2))\) Four-qubit single-deletion code'
+introduced: '\cite{arxiv:2001.08405,arxiv:2004.00814}'
+
+description: |
+  Four-qubit PI code that is the smallest qubit code to correct one deletion error.
+
+  In terms of \hyperref[topic:dicke]{Dicke states}, a basis of logical codewords is
+  \begin{align}
+  \begin{split}
+    |0_{L}\rangle&=\frac{1}{\sqrt{2}}\left(|D_{0}^{4}\rangle+|D_{4}^{4}\rangle\right)\\
+    |1_{L}\rangle&=|D_{2}^{4}\rangle~.
+  \end{split}
+  \end{align}
+
+protection: |
+  The smallest qubit PI code to correct one deletion error.
+
+relations:
+  parents:
+    - code_id: gnu_permutation_invariant
+      detail: 'The four-qubit single-deletion code is a GNU code for \(g=m=2\) \cite{arxiv:2102.02494}.'
+    - code_id: unentangled_permutation_invariant
+      detail: 'The Bravyi-Lee-Li-Yoshida code reduces to the four-qubit single-deletion code for \(n=4\).'
+  cousins:
+    - code_id: binomial
+      detail: 'The four-qubit single-deletion code can be obtained from the "0-2-4" single-mode binomial code by substituting Fock states with \hyperref[topic:dicke]{Dicke states}.'
+    - code_id: stab_4_2_2
+      detail: 'Projecting the four-qubit code into the PI subspace yields the four-qubit single-deletion code. A basis of codewords for the four-qubit single-deletion code consists of the \(|\overline{00}\rangle\) and \(|\overline{01}\rangle+|\overline{10}\rangle+|\overline{11}\rangle\) states of the four-qubit code.'
+    - code_id: combinatorial_permutation_invariant
+      detail: 'The combinatorial PI code \(Q_{1,1,1,-}\) is another example of a four-qubit code correcting a single deletion error \cite[Sec. 5.1]{arxiv:2310.05358}.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-04-18'

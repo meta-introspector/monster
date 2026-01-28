@@ -1,0 +1,41 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: ea_qubits_into_qubits
+physical: qubits
+logical: qubits
+
+name: 'EA qubit code'
+
+description: |
+  Qubit code designed to utilize pre-shared entanglement between sender and receiver.
+
+protection: |
+  The \hyperref[topic:quantum-gv-bound]{quantum GV bound} and Plotkin bound have been extended to EA qubit codes \cite{arxiv:1010.5506}.
+
+
+features:
+  rate: 'There are EA versions of classical and quantum capacities \cite{arxiv:quant-ph/9904023}, and the ratio of the entanglement-assisted and unassisted classical capacities of a channel is bounded by a function of the input channel''s dimension \cite{arxiv:2408.17290}. EA hashing bounds on the minimum entanglement required to achieve the entanglement-assisted channel capacity are derived \cite{arxiv:quant-ph/0205117}.'
+  encoders:
+    - 'Encoding algorithm \cite{arxiv:0806.4214}.'
+  decoders:
+    - 'Decoding algorithm \cite{arxiv:0806.4214}.'
+
+
+relations:
+  parents:
+    - code_id: ea_galois_into_galois
+      detail: 'EA Galois-qudit codes reduce to EA qubit codes for \(q=2\).'
+  cousins:
+    - code_id: qubits_into_qubits
+      detail: 'EA qubit codes utilize additional ancillary qubits in a pre-shared entangled state, but reduce to ordinary qubit codes when said qubits are interpreted as noiseless physical qubits.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-10-31'

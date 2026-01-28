@@ -1,0 +1,25 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: qubit_generalized_homological_product_css
+
+name: 'Generalized homological-product qubit CSS code'
+
+description: |
+  A qubit CSS code whose properties are determined from an underlying chain complex via the \hyperref[topic:CSS-to-homology-correspondence]{qubit CSS-to-homology correspondence}. This complex often consists of some type of product of other chain complexes.
+
+
+relations:
+  parents:
+    - code_id: qubit_css
+    - code_id: generalized_homological_product_css
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-13'

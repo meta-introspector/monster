@@ -1,0 +1,30 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: oscillators_concatenated
+
+name: 'Concatenated bosonic code'
+
+description: |
+  A concatenated code whose outer code is a bosonic code. In other words, a bosonic code that can be thought of as a concatenation of a possibly non-bosonic inner code and another bosonic outer code.
+
+features:
+  decoders:
+    - 'Decoder exploiting analog information from the outer code for bosonic codes concatenated with qubit QLDPC codes \cite{arxiv:2311.01328}.'
+
+
+relations:
+  parents:
+    - code_id: oscillators
+    - code_id: quantum_concatenated
+      detail: 'A concatenated bosonic code is a bosonic code that can be thought of as a concatenation of a possibly non-bosonic outer code and another bosonic inner code.'
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-11-05'

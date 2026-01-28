@@ -1,0 +1,60 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: qudit_cluster_state
+physical: qudits
+logical: qudits
+
+name: 'Modular-qudit cluster-state code'
+introduced: '\cite{arxiv:quant-ph/0304054}'
+
+alternative_names:
+  - 'Modular-qudit graph-state code'
+
+description: |
+  A code based on a modular-qudit cluster state.
+
+  Modular-qudit cluster states are modular-qudit stabilizer states defined on a graph.
+  There is one modular-qudit stabilizer generator \(S_v\) per graph vertex \(v\) of the form \cite[Eq. (1)]{arxiv:quant-ph/0304054}
+  \begin{align}
+    S_v = X^{\dagger}_{v} \prod_{w\in N(v)} Z_w~,
+  \end{align}
+  where the neighborhood \(N(v)\) is the set of vertices which share an edge with \(v\).'
+
+features:
+  encoders:
+    - 'Operators forming the information group can be used to track how logical information is encoded \cite{arxiv:0912.2017}.'
+
+  general_gates:
+    - '1D modular-qudit cluster states \cite{arxiv:quant-ph/0304054,arxiv:quant-ph/0512155} are resources for universal MBQC.'
+
+realizations:
+  - 'Quantum computation with cluster states has been realized using photons in the time and frequency domains \cite{doi:10.1038/s41567-018-0347-x}.'
+
+
+# hopf is finite, so two different parents
+relations:
+  parents:
+    - code_id: qudit_stabilizer
+      detail: 'Modular-qudit cluster-state codes are particular modular-qudit stabilizer codes.
+      Any modular-qubit stabilizer code is equivalent to a graph quantum code for \(G=\mathbb{Z}_q\) via a single-modular-qudit Clifford circuit \cite{arxiv:quant-ph/0111080} (see also \cite{arxiv:quant-ph/0308151,arxiv:quant-ph/0703112}).'
+    - code_id: qudit_cws
+      detail: 'A type of modular-qudit cluster-state code can be built from a modular-qudit cluster state by applying the modular-qudit CWS construction using a linear \(q\)-ary code, in which codewords are obtained by applying modular-qudit \(Z\)-type operators defined by the code to the modular-qudit cluster state; see, e.g., Ref. \cite{arxiv:2304.08363}.'
+    - code_id: graph_quantum
+      detail: 'Graph quantum codes for \(G=\mathbb{Z}_q\) reduce to modular-qudit cluster-state codes.'
+    - code_id: hopf_cluster_state
+      detail: 'Hopf-algebra cluster-state codes reduce to modular-qudit cluster-state codes when the Hopf algebra reduces the group \(\mathbb{Z}_q\).'
+  cousins:
+    - code_id: spt
+      detail: |
+        Qudit cluster states defined on 1D lattices are representatives of various SPT phases \cite{arxiv:1503.06794}. 
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2024-06-13'

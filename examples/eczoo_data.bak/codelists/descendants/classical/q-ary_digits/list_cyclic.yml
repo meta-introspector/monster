@@ -1,0 +1,27 @@
+
+list_id: cyclic
+title: Cyclic codes
+intro: |
+  Here is a list of cyclic codes.
+
+codes:
+  select:
+    - descendant_of: cyclic
+
+display:
+  style: table
+  options:
+    cssclass: xtra-xtra-stretch
+    columns:
+      - property: name
+        title: Code
+        link_to_code: true
+        cssclass: 'top left'
+
+      - property: description
+        title: Description
+        cssclass: 'textit'
+        first_paragraph_only: true
+
+sort:
+  by: name

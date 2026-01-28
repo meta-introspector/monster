@@ -1,0 +1,112 @@
+#######################################################
+## This is a code entry in the error correction zoo. ##
+##       https://github.com/errorcorrectionzoo       ##
+#######################################################
+
+code_id: group_gkp
+physical: groups
+logical: groups
+
+name: 'Group GKP code'
+introduced: '\cite{arxiv:1911.00099}'
+
+alternative_names:
+  - 'Non-Abelian CSS code'
+  - 'Group coset code'
+  
+
+description: |
+  Group-based quantum code whose construction is based on nested subgroups \(H\subset K
+  \subset G\). 
+  The group GKP code was originally formulated as an extension of the \hyperref[code:gkp]{GKP code} construction to other group-valued spaces.
+  In other words, the only requirement to construct group GKP codes is that the configuration space \(G\) is a group under some operation.
+
+  Group GKP codes are based on the following decomposition of the underlying group,
+  \begin{align}
+    G \cong \frac{G}{K} \times \frac{K}{H} \times \widehat{H}~,
+  \end{align}  
+  where \(\widehat{H}\) is the Fourier space of \(H\) obtained from the Peter-Weyl theorem.
+  The codes' logical subspace is spanned by basis states that are equal
+  superpositions of elements of cosets of \(H\) in \(K\), and can be finite- or
+  infinite-dimensional depending on the chosen groups.
+  Codes are stabilized by \(X\)-type \hyperref[topic:group-pauli]{group-based right-multiplication error operators} representing \(H\), all \(Z\)-type operators that are constant on \(K\), and any left-multiplication error operators that are constant on the codespace.
+  The \(Z\)-type operators are non-unitary matrix product operators for non-Abelian groups.
+
+  The construction encompasses all Pauli-type CSS codes since those are Abelian group GKP codes; relevant \(G\) and \(H\) are tabulated in \ref{table:group-gkp-codes}.
+  An \(n\) Galois-qubit CSS code corresponds to the \(\mathbb{F}_q^{k_1} \subseteq \mathbb{F}_q^{k_2} \subset \mathbb{F}_q^{n}\) group construction, where \(k=k_2-k_1\), and where the group operation is addition; this construction should be extendable to additive \(q\)-ary codes since those are also groups under addition.  
+  An \([[n,k,d]]_{\mathbb{R}}\) analog CSS code corresponds to the \(\mathbb{R}^{ k_1} \subseteq \mathbb{R}^{ k_2} \subset \mathbb{R}^{n}\) group construction, where \(k=k_2-k_1\).
+  A single-mode qubit GKP CSS code corresponds to the \(2\mathbb{Z}\subset\mathbb{Z}\subset\mathbb{R}\) group construction, and multimode GKP CSS codes can be similarly described.
+  Oscillator-into-oscillator GKP CSS codes for \(n\) modes correspond to subgroups \(\mathbb{Z}^m\) for \(m<n\).
+  Rotor GKP codes correspond to the \(\mathbb{Z}_{k_1} \subseteq \mathbb{Z}_{k_2} \subset U(1)\) group construction, where \(k=k_2/k_1\).
+  \begin{table}
+    \begin{cells}
+    \celldata<c H, c H, c H, l H>{Space & \(G\) & \(K\) & Related code}
+    \celldata<c, c, c, l>{
+    \(n\) qubits & \(\mathbb{Z}_2^n\) & \(\mathbb{Z}_2^m\)
+        & qubit CSS
+        \\
+    \(n\) modular qudits & \(\mathbb{Z}_q^n\) & \(K\)
+        & modular-qudit CSS
+        \\
+    \(n\) Galois qudits & \(\mathbb{F}_q^n\) & \(\mathbb{F}_q^m\)
+        & Galois-qudit CSS
+        \\
+    \(n\) modes & \( \mathbb{R}^n \) & \( \mathbb{R}^m \)
+        & analog CSS
+        \\
+    \(n\) modes & \( \mathbb{R}^n \) & \( \mathbb{Z}^n \)
+        & multimode GKP
+        \\
+    \(n\) modes & \( \mathbb{R}^n \) & \( \mathbb{Z}^{m<n} \)
+        & oscillator-into-oscillator GKP
+        \\
+    \(n\) rotors & \( \mathbb{Z}^n \) & \( \mathbb{Z}^m \)
+        & homological rotor
+        \\
+    rotor & \(U(1)\) & \(\mathbb{Z}_n\)
+        & rotor GKP
+        \\
+    rigid body & \(SO(3)\) & \(K\)
+        & molecular
+        \\
+    1 mode, 1 qudit & \( \mathbb{R} \times \mathbb{Z}_q \) & \( \mathbb{Z} \)
+        & simple LCA
+    }
+    \end{cells}
+    \caption{
+    Special cases of group GKP codes.
+    }
+    \label{table:group-gkp-codes}
+  \end{table}
+
+
+protection: 'Protects against generalized bit-flip errors \(g\in G\) that are inside the fundamental domain of \(G/K\).
+Protection against phase-flip errors determined by branching rules of irreps of \(G\) into those of \(K\), and further into those of \(H\).'
+
+features:
+  transversal_gates:
+    - 'Group-GKP codes corresponding to the \(G^{k_1} \subseteq G^{ k_2} \subset G^{n}\) group construction admit \(X\)-type transversal Pauli gates representing \(G\) \cite{arxiv:1902.07714}.'
+
+realizations:
+  - 'Cryptographic applications stemming from the monogamy of entanglement of group GKP code and error words \cite{arxiv:2212.03935}.'
+
+
+relations:
+  parents:
+    - code_id: group_quantum
+
+
+# Begin Entry Meta Information
+_meta:
+  # Change log - most recent first
+  changelog:
+    - user_id: VictorVAlbert
+      date: '2023-06-03'
+    - user_id: AlexCowtan
+      date: '2023-06-03'
+    - user_id: VictorVAlbert
+      date: '2022-09-28'
+    - user_id: PhilippeFaist
+      date: '2022-09-27'
+    - user_id: VictorVAlbert
+      date: '2021-11-29'
