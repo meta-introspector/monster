@@ -9,6 +9,7 @@ serde_json = "1.0"
 anyhow = "1.0"
 num-bigint = "0.4"
 num-traits = "0.2"
+sha2 = "0.10"
 
 [[bin]]
 name = "rust_gcd"
