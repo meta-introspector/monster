@@ -1,0 +1,175 @@
+{
+  "total_matches": 27,
+  "by_type": {
+    "field_size": 2,
+    "dimension": 1,
+    "prime": 16,
+    "conductor": 1,
+    "genus": 1,
+    "coefficient": 2,
+    "eigenvalue": 4,
+    "degree": 0,
+    "discriminant": 0,
+    "hecke": 0,
+    "level": 0,
+    "order": 0,
+    "rank": 0
+  },
+  "matches": {
+    "field_size": [
+      {
+        "file": "scripts/ecnf/hmf_check_find.py",
+        "line": 613,
+        "code": "if field_label=='4.4.7168.1': bad_p = [29**2]"
+      },
+      {
+        "file": "lmfdb/number_fields/test_numberfield.py",
+        "line": 88,
+        "code": "self.check_args('/NumberField/?signature=%5B0%2C3%5D&galois_group=S3', '6.0.177147.2')"
+      }
+    ],
+    "dimension": [
+      {
+        "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+        "line": 393,
+        "code": "large_dimension_page_as_text = self.tc.get('/ModularForm/GL2/Q/holomorphic/671/2/i/a/', follow_redirects=True).get_data(as_text=True)"
+      }
+    ],
+    "prime": [
+      {
+        "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+        "line": 393,
+        "code": "large_dimension_page_as_text = self.tc.get('/ModularForm/GL2/Q/holomorphic/671/2/i/a/', follow_redirects=True).get_data(as_text=True)"
+      },
+      {
+        "file": "lmfdb/elliptic_curves/test_browse_page.py",
+        "line": 103,
+        "code": "L = self.tc.get(\"EllipticCurve/Q/?conductor=162&jinv=-1159088625%2F097152\")"
+      },
+      {
+        "file": "lmfdb/hypergm/main.py",
+        "line": 504,
+        "code": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]"
+      },
+      {
+        "file": "lmfdb/utils/search_parsing.py",
+        "line": 1036,
+        "code": "example = \"[1/7,2,3] or [5,6/71]\""
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 2385,
+        "code": "#POmega-(8,4) = 67536471195648000"
+      },
+      {
+        "file": "lmfdb/abvar/fq/main.py",
+        "line": 269,
+        "code": "example=\"[75,7125]\","
+      },
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 176,
+        "code": "self.check_args(\"/Variety/Abelian/Fq/?abvar_point_count=%5B75%2C7125%5D\", \"2.9.ab_d\")"
+      },
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 177,
+        "code": "self.check_args(\"/Variety/Abelian/Fq/?abvar_point_count=%5B75%2C7125%5D\", \"2.9.ab_d\")"
+      },
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 294,
+        "code": "\"/Variety/Abelian/Fq/?initial_coefficients=%5B1%2C-1%2C3%2C9%5D&abvar_point_count=%5B75%2C7125%5D\","
+      },
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 298,
+        "code": "\"/Variety/Abelian/Fq/?initial_coefficients=%5B1%2C-1%2C3%2C9%5D&abvar_point_count=%5B75%2C7125%5D\","
+      },
+      {
+        "file": "lmfdb/number_fields/test_numberfield.py",
+        "line": 88,
+        "code": "self.check_args('/NumberField/?signature=%5B0%2C3%5D&galois_group=S3', '6.0.177147.2')"
+      },
+      {
+        "file": "lmfdb/belyi/test_belyi.py",
+        "line": 188,
+        "code": "\"phi := (1/2*x^2+2/5*x+1/200*(nu+5))/(x^5+6/5*x^4+1/50*(7*nu+5)*x^3+1/250*(35*nu-57)*x^2+1/10000*(91*nu-345)*x+1/12500*(-133*nu+71))*y+1/2;\""
+      },
+      {
+        "file": "lmfdb/belyi/test_belyi.py",
+        "line": 197,
+        "code": "\"phi = (1/2*x^2+2/5*x+1/200*(nu+5))/(x^5+6/5*x^4+1/50*(7*nu+5)*x^3+1/250*(35*nu-57)*x^2+1/10000*(91*nu-345)*x+1/12500*(-133*nu+71))*y+1/2\""
+      },
+      {
+        "file": "lmfdb/groups/abstract/main.py",
+        "line": 2977,
+        "code": "example=\"5120#4714647875464396655\","
+      },
+      {
+        "file": "lmfdb/groups/abstract/main.py",
+        "line": 3674,
+        "code": "ans += f'<tr><td><a href=\"{url_for(\"galois_groups.by_label\", label=rec[\"label\"])}\">{rec[\"label\"]}</a></td><td class=\"right\">${rec[\"parity\"]}$</td><td class=\"center\">{\"yes\" if rec[\"prim\"] == 1 else \"no"
+      },
+      {
+        "file": "lmfdb/groups/abstract/test_browse_page.py",
+        "line": 598,
+        "code": "self.check_args(\"/Groups/Abstract/Qchar_table/96.71?char_highlight=96.71.6a\", \"The row representing the character 96.71.6a is highlighted below.\")"
+      }
+    ],
+    "conductor": [
+      {
+        "file": "lmfdb/elliptic_curves/test_browse_page.py",
+        "line": 103,
+        "code": "L = self.tc.get(\"EllipticCurve/Q/?conductor=162&jinv=-1159088625%2F097152\")"
+      }
+    ],
+    "genus": [
+      {
+        "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+        "line": 52,
+        "code": "L = self.tc.get(\"/Genus2Curve/Q/?g22=1016576&g20=5071050752/9&g21=195344320/9\")"
+      }
+    ],
+    "coefficient": [
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 294,
+        "code": "\"/Variety/Abelian/Fq/?initial_coefficients=%5B1%2C-1%2C3%2C9%5D&abvar_point_count=%5B75%2C7125%5D\","
+      },
+      {
+        "file": "lmfdb/abvar/fq/test_browse_page.py",
+        "line": 298,
+        "code": "\"/Variety/Abelian/Fq/?initial_coefficients=%5B1%2C-1%2C3%2C9%5D&abvar_point_count=%5B75%2C7125%5D\","
+      }
+    ],
+    "eigenvalue": [
+      {
+        "file": "lmfdb/hilbert_modular_forms/hilbert_modular_form.py",
+        "line": 146,
+        "code": "ProcessedCol(\"is_CM\", \"mf.cm\", \"CM\", lambda cm: \"&#x2713;\" if cm == \"yes\" else \"\", short_title=\"CM\", align=\"center\", apply_download=lambda cm: (cm == \"yes\"), default=False),"
+      },
+      {
+        "file": "lmfdb/hilbert_modular_forms/hilbert_modular_form.py",
+        "line": 147,
+        "code": "ProcessedCol(\"is_base_change\", \"mf.base_change\", \"Base change\", lambda bc: \"&#x2713;\" if bc == \"yes\" else \"\", align=\"center\", apply_download=lambda bc: (bc == \"yes\"), default=False)])"
+      },
+      {
+        "file": "lmfdb/modular_curves/main.py",
+        "line": 1031,
+        "code": "lambda x: r\"&#x2713;\" if x == 4 else (r\"\" if x in [2,-1,-2,-3,-4] else r\"<i>?</i>\"), align=\"center\"),"
+      },
+      {
+        "file": "lmfdb/modl_galois_representations/main.py",
+        "line": 152,
+        "code": "ProcessedCol(\"determinant_index\", \"modlgal.det_surjective\", \"Det. surjective\", lambda a: \"&#x2713;\" if a == 1 else \"\" , align=\"center\", default=False),"
+      }
+    ],
+    "degree": [],
+    "discriminant": [],
+    "hecke": [],
+    "level": [],
+    "order": [],
+    "rank": []
+  }
+}

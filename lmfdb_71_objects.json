@@ -1,0 +1,100 @@
+{
+  "total_objects": 14,
+  "by_type": {
+    "collection": 12,
+    "dict_key": 1,
+    "dict_value": 1
+  },
+  "objects": {
+    "collection": [
+      {
+        "file": "scripts/ecnf/bmf_check.py",
+        "line": 19,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/tests/test_utils.py",
+        "line": 282,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/hypergm/main.py",
+        "line": 504,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1551,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1555,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1574,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1586,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1614,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1622,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1627,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1634,
+        "value": 71,
+        "type": "collection"
+      },
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 1641,
+        "value": 71,
+        "type": "collection"
+      }
+    ],
+    "dict_key": [
+      {
+        "file": "lmfdb/utils/completeness.py",
+        "line": 834,
+        "value": 71,
+        "type": "dict_key"
+      }
+    ],
+    "dict_value": [
+      {
+        "file": "lmfdb/number_fields/web_number_field.py",
+        "line": 74,
+        "value": 71,
+        "type": "dict_value"
+      }
+    ]
+  }
+}
