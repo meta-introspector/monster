@@ -1,0 +1,1634 @@
+{
+  "binaries": [
+    {
+      "item": "/usr/bin/nvdisasm",
+      "type": "binary",
+      "size": 33542504,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 16771252
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-lto-dump-12",
+      "type": "binary",
+      "size": 32560176,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 2960016
+    },
+    {
+      "item": "/usr/bin/terraform-ls",
+      "type": "binary",
+      "size": 31416472,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 15708236
+    },
+    {
+      "item": "/usr/bin/ctr",
+      "type": "binary",
+      "size": 28907208,
+      "hecke_operator": "T_19",
+      "prime": 19,
+      "eigenvalue": 1521432
+    },
+    {
+      "item": "/usr/bin/ocamldebug",
+      "type": "binary",
+      "size": 24607948,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 12303974
+    },
+    {
+      "item": "/usr/bin/ocamldep.byte",
+      "type": "binary",
+      "size": 19287149,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 2755307
+    },
+    {
+      "item": "/usr/bin/doxygen",
+      "type": "binary",
+      "size": 16937968,
+      "hecke_operator": "T_19",
+      "prime": 19,
+      "eigenvalue": 891472
+    },
+    {
+      "item": "/usr/bin/ocamldoc.opt",
+      "type": "binary",
+      "size": 12509232,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 4169744
+    },
+    {
+      "item": "/usr/bin/runc",
+      "type": "binary",
+      "size": 10476744,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 3492248
+    },
+    {
+      "item": "/usr/bin/gdb",
+      "type": "binary",
+      "size": 10280680,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 2056136
+    },
+    {
+      "item": "/usr/bin/ocamlcmt",
+      "type": "binary",
+      "size": 8657704,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 787064
+    },
+    {
+      "item": "/usr/bin/ctest",
+      "type": "binary",
+      "size": 7691024,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 699184
+    },
+    {
+      "item": "/usr/bin/compute-sanitizer",
+      "type": "binary",
+      "size": 7247656,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 557512
+    },
+    {
+      "item": "/usr/bin/luatex",
+      "type": "binary",
+      "size": 6967048,
+      "hecke_operator": "T_41",
+      "prime": 41,
+      "eigenvalue": 169928
+    },
+    {
+      "item": "/usr/bin/luajithbtex",
+      "type": "binary",
+      "size": 6893416,
+      "hecke_operator": "T_29",
+      "prime": 29,
+      "eigenvalue": 237704
+    },
+    {
+      "item": "/usr/bin/luajittex",
+      "type": "binary",
+      "size": 6852456,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 527112
+    },
+    {
+      "item": "/usr/bin/cmake",
+      "type": "binary",
+      "size": 6747024,
+      "hecke_operator": "T_29",
+      "prime": 29,
+      "eigenvalue": 232656
+    },
+    {
+      "item": "/usr/bin/qemu-xtensa",
+      "type": "binary",
+      "size": 6397952,
+      "hecke_operator": "T_71",
+      "prime": 71,
+      "eigenvalue": 90112
+    },
+    {
+      "item": "/usr/bin/qemu-xtensaeb",
+      "type": "binary",
+      "size": 6341360,
+      "hecke_operator": "T_31",
+      "prime": 31,
+      "eigenvalue": 204560
+    },
+    {
+      "item": "/usr/bin/cudafe++",
+      "type": "binary",
+      "size": 5952680,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 1190536
+    },
+    {
+      "item": "/usr/bin/gron",
+      "type": "binary",
+      "size": 5287744,
+      "hecke_operator": "T_29",
+      "prime": 29,
+      "eigenvalue": 182336
+    },
+    {
+      "item": "/usr/bin/qemu-aarch64_be",
+      "type": "binary",
+      "size": 5264120,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 1052824
+    },
+    {
+      "item": "/usr/bin/qemu-aarch64",
+      "type": "binary",
+      "size": 5255928,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 1751976
+    },
+    {
+      "item": "/usr/bin/qemu-hexagon",
+      "type": "binary",
+      "size": 4922520,
+      "hecke_operator": "T_19",
+      "prime": 19,
+      "eigenvalue": 259080
+    },
+    {
+      "item": "/usr/bin/rg",
+      "type": "binary",
+      "size": 4177440,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 835488
+    },
+    {
+      "item": "/usr/bin/ocamloptp.byte",
+      "type": "binary",
+      "size": 3968138,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1984069
+    },
+    {
+      "item": "/usr/bin/ocamlcp.byte",
+      "type": "binary",
+      "size": 3961205,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 792241
+    },
+    {
+      "item": "/usr/bin/qemu-mips",
+      "type": "binary",
+      "size": 3958968,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 304536
+    },
+    {
+      "item": "/usr/bin/gimp-console-2.10",
+      "type": "binary",
+      "size": 3870432,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 1290144
+    },
+    {
+      "item": "/usr/bin/perl",
+      "type": "binary",
+      "size": 3806200,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 761240
+    },
+    {
+      "item": "/usr/bin/qemu-armeb",
+      "type": "binary",
+      "size": 3781464,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 1260488
+    },
+    {
+      "item": "/usr/bin/remap-rootfs",
+      "type": "binary",
+      "size": 3735848,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1867924
+    },
+    {
+      "item": "/usr/bin/memfd-bind",
+      "type": "binary",
+      "size": 3732680,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 533240
+    },
+    {
+      "item": "/usr/bin/python2.7",
+      "type": "binary",
+      "size": 3592536,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 1197512
+    },
+    {
+      "item": "/usr/bin/qemu-ppc64le",
+      "type": "binary",
+      "size": 3561368,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1780684
+    },
+    {
+      "item": "/usr/bin/chicken",
+      "type": "binary",
+      "size": 3389672,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 260744
+    },
+    {
+      "item": "/usr/bin/stap",
+      "type": "binary",
+      "size": 3144304,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1572152
+    },
+    {
+      "item": "/usr/bin/qemu-i386",
+      "type": "binary",
+      "size": 2776456,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1388228
+    },
+    {
+      "item": "/usr/bin/qemu-x86_64",
+      "type": "binary",
+      "size": 2755768,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 119816
+    },
+    {
+      "item": "/usr/bin/qemu-sparc64",
+      "type": "binary",
+      "size": 2569912,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1284956
+    },
+    {
+      "item": "/usr/bin/qemu-sparc",
+      "type": "binary",
+      "size": 2516600,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 503320
+    },
+    {
+      "item": "/usr/bin/ocamlbuild",
+      "type": "binary",
+      "size": 2432392,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1216196
+    },
+    {
+      "item": "/usr/bin/nvidia-powerd",
+      "type": "binary",
+      "size": 2366096,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1183048
+    },
+    {
+      "item": "/usr/bin/qemu-img",
+      "type": "binary",
+      "size": 2336808,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 778936
+    },
+    {
+      "item": "/usr/bin/qemu-sh4",
+      "type": "binary",
+      "size": 2272504,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 174808
+    },
+    {
+      "item": "/usr/bin/xemacs-21.4.24-mule",
+      "type": "binary",
+      "size": 2238416,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1119208
+    },
+    {
+      "item": "/usr/bin/busybox",
+      "type": "binary",
+      "size": 2193272,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 129016
+    },
+    {
+      "item": "/usr/bin/ocamlcp.opt",
+      "type": "binary",
+      "size": 2178376,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 94712
+    },
+    {
+      "item": "/usr/bin/Xvfb",
+      "type": "binary",
+      "size": 2073056,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1036528
+    },
+    {
+      "item": "/usr/bin/strace",
+      "type": "binary",
+      "size": 1972848,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 85776
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-dwp",
+      "type": "binary",
+      "size": 1904000,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 112000
+    },
+    {
+      "item": "/usr/bin/happy",
+      "type": "binary",
+      "size": 1866192,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 109776
+    },
+    {
+      "item": "/usr/bin/pdftex",
+      "type": "binary",
+      "size": 1802504,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 163864
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-ld.bfd",
+      "type": "binary",
+      "size": 1736184,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 578728
+    },
+    {
+      "item": "/usr/bin/alex",
+      "type": "binary",
+      "size": 1663504,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 831752
+    },
+    {
+      "item": "/usr/bin/bpftrace",
+      "type": "binary",
+      "size": 1543992,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 514664
+    },
+    {
+      "item": "/usr/bin/mfluajit",
+      "type": "binary",
+      "size": 1435576,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 717788
+    },
+    {
+      "item": "/usr/bin/sqldiff",
+      "type": "binary",
+      "size": 1370920,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 274184
+    },
+    {
+      "item": "/usr/bin/showdb",
+      "type": "binary",
+      "size": 1362824,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 681412
+    },
+    {
+      "item": "/usr/bin/showstat4",
+      "type": "binary",
+      "size": 1350472,
+      "hecke_operator": "T_29",
+      "prime": 29,
+      "eigenvalue": 46568
+    },
+    {
+      "item": "/usr/bin/ocamlmklib.opt",
+      "type": "binary",
+      "size": 1337416,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 668708
+    },
+    {
+      "item": "/usr/bin/flatpak",
+      "type": "binary",
+      "size": 1307520,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 261504
+    },
+    {
+      "item": "/usr/bin/ndisasm",
+      "type": "binary",
+      "size": 1300848,
+      "hecke_operator": "T_41",
+      "prime": 41,
+      "eigenvalue": 31728
+    },
+    {
+      "item": "/usr/bin/openssl",
+      "type": "binary",
+      "size": 1001272,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 500636
+    },
+    {
+      "item": "/usr/bin/schroot",
+      "type": "binary",
+      "size": 990640,
+      "hecke_operator": "T_29",
+      "prime": 29,
+      "eigenvalue": 34160
+    },
+    {
+      "item": "/usr/bin/tmux",
+      "type": "binary",
+      "size": 971320,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 138760
+    },
+    {
+      "item": "/usr/bin/grub-fstest",
+      "type": "binary",
+      "size": 960432,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 56496
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-g++-11",
+      "type": "binary",
+      "size": 928584,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 309528
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-gfortran-11",
+      "type": "binary",
+      "size": 928584,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 309528
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-gcc-11",
+      "type": "binary",
+      "size": 928584,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 309528
+    },
+    {
+      "item": "/usr/bin/x86_64-linux-gnu-cpp-10",
+      "type": "binary",
+      "size": 887568,
+      "hecke_operator": "T_41",
+      "prime": 41,
+      "eigenvalue": 21648
+    }
+  ],
+  "shared_objects": [
+    {
+      "item": "/usr/lib/i386-linux-gnu/libLLVM-15.so.1",
+      "type": "shared_object",
+      "size": 127470060,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 25494012
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-gpucomp.so.580.65.06",
+      "type": "shared_object",
+      "size": 101756800,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 20351360
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/nvidia/current/libnvidia-nvvm.so.520.61.05",
+      "type": "shared_object",
+      "size": 98593048,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 49296524
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-nvvm.so.580.65.06",
+      "type": "shared_object",
+      "size": 94400832,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 4104384
+    },
+    {
+      "item": "/usr/lib/libnode.so.93",
+      "type": "shared_object",
+      "size": 82671600,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 7515600
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libmergedlo.so",
+      "type": "shared_object",
+      "size": 80656224,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 7332384
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-compiler.so.520.61.05",
+      "type": "shared_object",
+      "size": 59743312,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 29871656
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-ptxjitcompiler.so.580.65.06",
+      "type": "shared_object",
+      "size": 54502036,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 27251018
+    },
+    {
+      "item": "/usr/lib/llvm-12/lib/libclang-cpp.so.12",
+      "type": "shared_object",
+      "size": 47554640,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 6793520
+    },
+    {
+      "item": "/usr/lib/llvm-11/lib/libclang-cpp.so.11",
+      "type": "shared_object",
+      "size": 45898160,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 4172560
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-glcore.so.520.61.05",
+      "type": "shared_object",
+      "size": 40108340,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 8021668
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-eglcore.so.520.61.05",
+      "type": "shared_object",
+      "size": 37875860,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 3443260
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-glcore.so.580.65.06",
+      "type": "shared_object",
+      "size": 32555180,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 4650740
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-eglcore.so.580.65.06",
+      "type": "shared_object",
+      "size": 30498824,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 15249412
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libicudata.so.70.1",
+      "type": "shared_object",
+      "size": 29475936,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 4210848
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-glvkspirv.so.520.61.05",
+      "type": "shared_object",
+      "size": 27902592,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 9300864
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libcuda.so.580.65.06",
+      "type": "shared_object",
+      "size": 27713372,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 13856686
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-opencl.so.580.65.06",
+      "type": "shared_object",
+      "size": 22720676,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 2065516
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/nvidia/current/libnvidia-ptxjitcompiler.so.520.61.05",
+      "type": "shared_object",
+      "size": 22137832,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 11068916
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvcuvid.so.580.65.06",
+      "type": "shared_object",
+      "size": 20625080,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 1213240
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libswlo.so",
+      "type": "shared_object",
+      "size": 19361296,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 9680648
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libsclo.so",
+      "type": "shared_object",
+      "size": 18283448,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 9141724
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libvulkan_intel.so",
+      "type": "shared_object",
+      "size": 14518476,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 854028
+    },
+    {
+      "item": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so",
+      "type": "shared_object",
+      "size": 14491744,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 7245872
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libvulkan_intel_hasvk.so",
+      "type": "shared_object",
+      "size": 13605036,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 4535012
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-glvkspirv.so.580.65.06",
+      "type": "shared_object",
+      "size": 13531220,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 2706244
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/dri/radeonsi_drv_video.so",
+      "type": "shared_object",
+      "size": 13197364,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 6598682
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/dri/nouveau_drv_video.so",
+      "type": "shared_object",
+      "size": 13197364,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 6598682
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/dri/r600_drv_video.so",
+      "type": "shared_object",
+      "size": 13197364,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 6598682
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/dri/virtio_gpu_drv_video.so",
+      "type": "shared_object",
+      "size": 13197364,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 6598682
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libvulkan_radeon.so",
+      "type": "shared_object",
+      "size": 9493264,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 863024
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libsdlo.so",
+      "type": "shared_object",
+      "size": 7915792,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 3957896
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libvulkan_lvp.so",
+      "type": "shared_object",
+      "size": 7525304,
+      "hecke_operator": "T_41",
+      "prime": 41,
+      "eigenvalue": 183544
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libskialo.so",
+      "type": "shared_object",
+      "size": 7032856,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 3516428
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libooxlo.so",
+      "type": "shared_object",
+      "size": 5664120,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 514920
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libscfiltlo.so",
+      "type": "shared_object",
+      "size": 5252272,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 2626136
+    },
+    {
+      "item": "/usr/lib/libchicken.so.11",
+      "type": "shared_object",
+      "size": 4474512,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 194544
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libcuilo.so",
+      "type": "shared_object",
+      "size": 4461416,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 2230708
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libcrypto.so.3",
+      "type": "shared_object",
+      "size": 4429800,
+      "hecke_operator": "T_23",
+      "prime": 23,
+      "eigenvalue": 192600
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libpdfiumlo.so",
+      "type": "shared_object",
+      "size": 4157336,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 2078668
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libchartcorelo.so",
+      "type": "shared_object",
+      "size": 3890800,
+      "hecke_operator": "T_71",
+      "prime": 71,
+      "eigenvalue": 54800
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 3804808,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 543544
+    },
+    {
+      "item": "/usr/lib/llvm-12/lib/LLVMPolly.so",
+      "type": "shared_object",
+      "size": 3796632,
+      "hecke_operator": "T_31",
+      "prime": 31,
+      "eigenvalue": 122472
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/liblocaledata_others.so",
+      "type": "shared_object",
+      "size": 3592224,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 1197408
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libicui18n.so.70.1",
+      "type": "shared_object",
+      "size": 3536500,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 321500
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libchartcontrollerlo.so",
+      "type": "shared_object",
+      "size": 3247824,
+      "hecke_operator": "T_71",
+      "prime": 71,
+      "eigenvalue": 45744
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libdbalo.so",
+      "type": "shared_object",
+      "size": 3217104,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 292464
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libwriterfilterlo.so",
+      "type": "shared_object",
+      "size": 3140072,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 241544
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/grpc/_cython/cygrpc.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 3076392,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 279672
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libnvidia-ml.so.580.65.06",
+      "type": "shared_object",
+      "size": 2950812,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 983604
+    },
+    {
+      "item": "/usr/lib/swi-prolog/lib/x86_64-linux/pl2xpce.so",
+      "type": "shared_object",
+      "size": 2863712,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1431856
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libmswordlo.so",
+      "type": "shared_object",
+      "size": 2709160,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 541832
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libvbaobjlo.so",
+      "type": "shared_object",
+      "size": 2654448,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 156144
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/scipy/sparse/_sparsetools.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 2565400,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 513080
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/liblocaledata_euro.so",
+      "type": "shared_object",
+      "size": 2536832,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1268416
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libstaroffice-0.0-lo.so.0",
+      "type": "shared_object",
+      "size": 2519136,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 839712
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/scipy/special/cython_special.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 2414104,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 219464
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libswuilo.so",
+      "type": "shared_object",
+      "size": 2404400,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 480880
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libstdc++.so.6.0.30",
+      "type": "shared_object",
+      "size": 2296024,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1148012
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libc.so.6",
+      "type": "shared_object",
+      "size": 2280756,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 760252
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libdict_zh.so",
+      "type": "shared_object",
+      "size": 2275272,
+      "hecke_operator": "T_3",
+      "prime": 3,
+      "eigenvalue": 758424
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libvbaswobjlo.so",
+      "type": "shared_object",
+      "size": 2254672,
+      "hecke_operator": "T_41",
+      "prime": 41,
+      "eigenvalue": 54992
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/scipy/linalg/_flapack.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 2229392,
+      "hecke_operator": "T_11",
+      "prime": 11,
+      "eigenvalue": 202672
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libvclplug_gtk3lo.so",
+      "type": "shared_object",
+      "size": 2214040,
+      "hecke_operator": "T_5",
+      "prime": 5,
+      "eigenvalue": 442808
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libicuuc.so.70.1",
+      "type": "shared_object",
+      "size": 2111068,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1055534
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libslideshowlo.so",
+      "type": "shared_object",
+      "size": 2053696,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 1026848
+    },
+    {
+      "item": "/usr/lib/python3/dist-packages/numpy/core/_simd.cpython-310-x86_64-linux-gnu.so",
+      "type": "shared_object",
+      "size": 1999024,
+      "hecke_operator": "T_2",
+      "prime": 2,
+      "eigenvalue": 999512
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libxml2.so.2.9.13",
+      "type": "shared_object",
+      "size": 1907880,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 146760
+    },
+    {
+      "item": "/usr/lib/libosp.so.5.0.0",
+      "type": "shared_object",
+      "size": 1894344,
+      "hecke_operator": "T_17",
+      "prime": 17,
+      "eigenvalue": 111432
+    },
+    {
+      "item": "/usr/lib/libreoffice/program/libsmlo.so",
+      "type": "shared_object",
+      "size": 1866984,
+      "hecke_operator": "T_7",
+      "prime": 7,
+      "eigenvalue": 266712
+    },
+    {
+      "item": "/usr/lib/i386-linux-gnu/libunistring.so.2.2.0",
+      "type": "shared_object",
+      "size": 1746420,
+      "hecke_operator": "T_13",
+      "prime": 13,
+      "eigenvalue": 134340
+    }
+  ],
+  "websites": [
+    {
+      "item": "https://arxiv.org",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://mathoverflow.net",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://math.stackexchange.com",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.lmfdb.org",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://oeis.org",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_2",
+      "prime": 2
+    },
+    {
+      "item": "https://github.com",
+      "type": "website",
+      "category": "development",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://gitlab.com",
+      "type": "website",
+      "category": "development",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://stackoverflow.com",
+      "type": "website",
+      "category": "development",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://docs.rs",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://crates.io",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://huggingface.co",
+      "type": "website",
+      "category": "ai_ml",
+      "hecke_operator": "T_11",
+      "prime": 11
+    },
+    {
+      "item": "https://pytorch.org",
+      "type": "website",
+      "category": "ai_ml",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://tensorflow.org",
+      "type": "website",
+      "category": "ai_ml",
+      "hecke_operator": "T_11",
+      "prime": 11
+    },
+    {
+      "item": "https://ollama.ai",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://openai.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://en.wikipedia.org/wiki/Monster_group",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_2",
+      "prime": 2
+    },
+    {
+      "item": "https://groupprops.subwiki.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://mathworld.wolfram.com",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_29",
+      "prime": 29
+    },
+    {
+      "item": "https://nixos.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://search.nixos.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://kernel.org",
+      "type": "website",
+      "category": "open_source",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://rust-lang.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://python.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://lean-lang.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://coq.inria.fr",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://isabelle.in.tum.de",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_13",
+      "prime": 13
+    },
+    {
+      "item": "https://www.sagemath.org",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.gap-system.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_13",
+      "prime": 13
+    },
+    {
+      "item": "https://magma.maths.usyd.edu.au",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_31",
+      "prime": 31
+    },
+    {
+      "item": "https://pari.math.u-bordeaux.fr",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_31",
+      "prime": 31
+    },
+    {
+      "item": "https://www.singular.uni-kl.de",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.macaulay2.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.sagemath.org",
+      "type": "website",
+      "category": "mathematics",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.sympy.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://numpy.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://scipy.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_17",
+      "prime": 17
+    },
+    {
+      "item": "https://matplotlib.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_11",
+      "prime": 11
+    },
+    {
+      "item": "https://jupyter.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.latex-project.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_29",
+      "prime": 29
+    },
+    {
+      "item": "https://pandoc.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.gnu.org",
+      "type": "website",
+      "category": "open_source",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.fsf.org",
+      "type": "website",
+      "category": "open_source",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.eff.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://creativecommons.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://archive.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://scholar.google.com",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_13",
+      "prime": 13
+    },
+    {
+      "item": "https://www.semanticscholar.org",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_31",
+      "prime": 31
+    },
+    {
+      "item": "https://www.researchgate.net",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://www.academia.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.ncbi.nlm.nih.gov",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://www.nature.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_11",
+      "prime": 11
+    },
+    {
+      "item": "https://www.science.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_23",
+      "prime": 23
+    },
+    {
+      "item": "https://www.cell.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.pnas.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.ams.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.maa.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.siam.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.acm.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.ieee.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.springer.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.elsevier.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.wiley.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_7",
+      "prime": 7
+    },
+    {
+      "item": "https://www.cambridge.org",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.oup.com",
+      "type": "website",
+      "category": "other",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.mit.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_19",
+      "prime": 19
+    },
+    {
+      "item": "https://www.stanford.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.berkeley.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_3",
+      "prime": 3
+    },
+    {
+      "item": "https://www.harvard.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_23",
+      "prime": 23
+    },
+    {
+      "item": "https://www.princeton.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_5",
+      "prime": 5
+    },
+    {
+      "item": "https://www.caltech.edu",
+      "type": "website",
+      "category": "research",
+      "hecke_operator": "T_23",
+      "prime": 23
+    }
+  ]
+}
