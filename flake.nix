@@ -1,5 +1,5 @@
 {
-  description = "Monster Group LMFDB Hecke Analysis";
+  description = "Monster Group LMFDB with Literate Programming";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -15,10 +15,8 @@
           inherit system overlays;
         };
         
-        # Rust toolchain
         rustToolchain = pkgs.rust-bin.stable.latest.default;
         
-        # Python environment for analysis
         pythonEnv = pkgs.python3.withPackages (ps: with ps; [
           numpy
           scipy
@@ -29,71 +27,66 @@
           huggingface-hub
         ]);
         
-        # LMFDB database
-        lmfdb-database = pkgs.stdenv.mkDerivation {
-          name = "lmfdb-database";
-          src = ./lmfdb-source;
-          
-          buildInputs = [ pkgs.postgresql pythonEnv ];
-          
-          buildPhase = ''
-            # Initialize PostgreSQL
-            initdb -D $out/data
-            
-            # Start PostgreSQL
-            pg_ctl -D $out/data -l $out/logfile start
-            
-            # Wait for startup
-            sleep 5
-            
-            # Create database
-            createdb lmfdb
-            
-            # Load schema (if exists)
-            if [ -f schema.sql ]; then
-              psql lmfdb < schema.sql
-            fi
-            
-            # Stop PostgreSQL
-            pg_ctl -D $out/data stop
-          '';
-          
-          installPhase = ''
-            mkdir -p $out
-            cp -r data $out/
-          '';
-        };
-        
       in {
-        packages = {
-          inherit lmfdb-database;
-          default = lmfdb-database;
-        };
-        
         devShells.default = pkgs.mkShell {
           buildInputs = [
+            # Rust
             rustToolchain
             pkgs.cargo
             pkgs.rustc
+            
+            # Python
             pythonEnv
+            
+            # Database
             pkgs.postgresql
+            
+            # Performance
             pkgs.perf
+            
+            # Tools
             pkgs.git
             pkgs.jq
-            pkgs.act  # nektos/act for local GitHub Actions
+            pkgs.act
+            
+            # Full LaTeX environment
+            pkgs.texlive.combined.scheme-full
+            
+            # Literate programming
+            pkgs.noweb          # Universal literate programming
+            # cweb included in texlive
+            
+            # Document tools
+            pkgs.pandoc
+            pkgs.poppler_utils  # pdftoppm
+            pkgs.imagemagick
+            pkgs.ghostscript
+            pkgs.qpdf
+            
+            # Diagrams
+            pkgs.graphviz
+            pkgs.plantuml
           ];
           
           shellHook = ''
-            echo "Monster Group LMFDB Analysis Environment"
-            echo "========================================"
+            echo "🔬 Monster Group LMFDB Analysis Environment"
+            echo "============================================"
             echo ""
-            echo "Available commands:"
+            echo "📊 Analysis:"
             echo "  cargo run --bin abelian_variety"
             echo "  python3 analyze_lmfdb_source.py"
-            echo "  python3 analyze_lmfdb_ast.py"
-            echo "  python3 analyze_lmfdb_bytecode.py"
-            echo "  ./trace_lmfdb_performance.sh"
-            echo "  act -j analyze-lmfdb  # Run GitHub Actions locally"
+            echo ""
+            echo "📝 LaTeX & Literate Programming:"
+            echo "  pdflatex, xelatex, lualatex"
+            echo "  noweb - Literate programming"
+            echo "  cweb - C literate programming"
+            echo "  pandoc - Document conversion"
+            echo ""
+            echo "🔄 Workflow:"
+            echo "  notangle file.nw > file.rs    # Extract code"
+            echo "  noweave -latex file.nw > file.tex  # Extract docs"
+            echo "  pdflatex file.tex             # Compile PDF"
+            echo "  pdftoppm -png file.pdf page   # Convert to PNG"
             echo ""
           '';
         };
