@@ -20,21 +20,21 @@
   "shards": {
     "2": {
       "ast": 1,
-      "bytecode": 4,
+      "bytecode": 10,
       "output": 21,
-      "total": 26
+      "total": 32
     },
     "3": {
       "ast": 1,
-      "bytecode": 4,
+      "bytecode": 3,
       "output": 7,
-      "total": 12
+      "total": 11
     },
     "5": {
       "ast": 0,
-      "bytecode": 0,
+      "bytecode": 4,
       "output": 7,
-      "total": 7
+      "total": 11
     },
     "7": {
       "ast": 0,
@@ -45,6 +45,12 @@
     "11": {
       "ast": 1,
       "bytecode": 0,
+      "output": 0,
+      "total": 1
+    },
+    "13": {
+      "ast": 0,
+      "bytecode": 1,
       "output": 0,
       "total": 1
     },
