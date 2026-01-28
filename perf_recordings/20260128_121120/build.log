@@ -1,0 +1,29 @@
+Lowering default frequency rate from 4000 to 2000.
+Please consider tweaking /proc/sys/kernel/perf_event_max_sample_rate.
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+error:
+       … while calling the 'derivationStrict' builtin
+         at «nix-internal»/derivation-internal.nix:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'nix-shell'
+         whose name attribute is located at «github:NixOS/nixpkgs/bfc1b8a4574108ceef22f02bafcf6611380c100d?narHash=sha256-msG8SU5WsBUfVVa/9RPLaymvi5bI8edTavbIq3vRlhI%3D»/pkgs/stdenv/generic/make-derivation.nix:536:13
+
+       … while evaluating attribute 'buildInputs' of derivation 'nix-shell'
+         at «github:NixOS/nixpkgs/bfc1b8a4574108ceef22f02bafcf6611380c100d?narHash=sha256-msG8SU5WsBUfVVa/9RPLaymvi5bI8edTavbIq3vRlhI%3D»/pkgs/stdenv/generic/make-derivation.nix:588:13:
+          587|             depsHostHost = elemAt (elemAt dependencies 1) 0;
+          588|             buildInputs = elemAt (elemAt dependencies 1) 1;
+             |             ^
+          589|             depsTargetTarget = elemAt (elemAt dependencies 2) 0;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: 'poppler_utils' has been renamed to/replaced by 'poppler-utils'
+[ perf record: Woken up 1008 times to write data ]
+Warning:
+1 out of order events recorded.
+[ perf record: Captured and wrote 257.243 MB perf_recordings/20260128_121120/build.perf.data (31808 samples) ]

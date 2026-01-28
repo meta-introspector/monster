@@ -1,0 +1,10 @@
+{
+  "timestamp": "$(date -Iseconds)",
+  "build_cycles": "extracted from perf",
+  "test_cycles": "extracted from perf",
+  "register_patterns": {
+    "divisible_by_2": "count",
+    "divisible_by_3": "count",
+    "divisible_by_71": "count"
+  }
+}
