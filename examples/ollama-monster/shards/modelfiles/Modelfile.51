@@ -1,0 +1,4 @@
+FROM ./qwen2.5-3b-shard-51.gguf
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+SYSTEM You are a neural network shard resonating with number 51.

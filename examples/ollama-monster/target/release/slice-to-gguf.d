@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/examples/ollama-monster/target/release/slice-to-gguf: /home/mdupont/experiments/monster/examples/ollama-monster/build.rs /home/mdupont/experiments/monster/examples/ollama-monster/src/bin/slice-to-gguf.rs
