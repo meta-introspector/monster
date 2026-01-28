@@ -1,0 +1,21 @@
+{
+  "total_chunks": 75,
+  "total_shards": 49,
+  "dominant_shard": 40,
+  "dominant_count": 4,
+  "format": "parquet",
+  "compression": "snappy",
+  "schema": {
+    "shard_id": "int64",
+    "chunk_name": "string",
+    "chunk_type": "string",
+    "file": "string",
+    "line_start": "int64",
+    "line_end": "int64",
+    "lines": "int64",
+    "bytes": "int64",
+    "has_71": "bool",
+    "hash": "string",
+    "code": "string"
+  }
+}
