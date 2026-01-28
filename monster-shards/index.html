@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html vocab="http://schema.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Shards: 71-Piece Lattice Decomposition</title>
+    <style>
+        body { font-family: monospace; background: #0a0a0a; color: #e0e0e0; padding: 20px; }
+        h1 { color: #ff6b6b; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; }
+        .shard { background: #1a1a1a; border: 2px solid #333; padding: 10px; text-align: center; cursor: pointer; }
+        .shard.prime { border-color: #4ecdc4; }
+        .shard:hover { border-color: #ff6b6b; }
+    </style>
+</head>
+<body>
+    <h1>🎪 Monster Shards</h1>
+    <p style="text-align: center;">71-Piece Lattice Decomposition of Neural Networks</p>
+    <div class="grid" id="shard-grid"></div>
+    
+    <script>
+        const PRIMES = [2,3,5,7,11,13,17,19,23,29,31,41,47,59,71];
+        const grid = document.getElementById('shard-grid');
+        
+        for (let n = 1; n <= 71; n++) {
+            const div = document.createElement('div');
+            div.className = 'shard' + (PRIMES.includes(n) ? ' prime' : '');
+            div.innerHTML = \`<strong>\${n}</strong><br><small>\${PRIMES.includes(n) ? '★' : ''}</small>\`;
+            div.onclick = () => window.location.href = \`shard-\${String(n).padStart(2, '0')}/paper/shard-\${String(n).padStart(2, '0')}.html\`;
+            grid.appendChild(div);
+        }
+    </script>
+</body>
+</html>

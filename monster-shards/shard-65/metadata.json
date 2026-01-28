@@ -1,0 +1,7 @@
+{
+  "shard": 65,
+  "type": "composite",
+  "godel": "65^65",
+  "status": "planned",
+  "release_week": 17
+}

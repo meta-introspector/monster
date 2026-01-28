@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html vocab="http://schema.org/" typeof="ScholarlyArticle"
+      resource="https://monster-shards.io/shard-1">
+<head>
+    <meta charset="UTF-8">
+    <meta property="identifier" content="urn:monster:shard:1"/>
+    <meta property="isPartOf" content="urn:monster:lattice:71"/>
+    <meta property="primeNumber" content="1"/>
+    <title property="name">Shard 1: Monster Lattice Decomposition</title>
+</head>
+<body>
+    <article>
+        <h1 property="name">Shard 1: Monster Lattice Decomposition</h1>
+        
+        <div property="author" typeof="Organization">
+            <span property="name">Monster Group Walk Project</span>
+        </div>
+        
+        <section property="abstract">
+            <h2>Abstract</h2>
+            <p>This paper presents Shard 1 of the 71-piece Monster lattice decomposition...</p>
+        </section>
+        
+        <section property="hasPart" typeof="SoftwareSourceCode">
+            <h2>Implementation</h2>
+            <meta property="programmingLanguage" content="Rust"/>
+            <meta property="runtimePlatform" content="WebAssembly"/>
+            <link property="codeRepository" href="https://github.com/monster-lean/shard-1"/>
+            <p><a href="../demo/index.html">Run Interactive Demo</a></p>
+        </section>
+        
+        <section property="hasPart" typeof="Dataset">
+            <h2>Data</h2>
+            <meta property="encodingFormat" content="application/x-gguf"/>
+            <link property="distribution" href="../data/shard-1.gguf"/>
+        </section>
+        
+        <section property="hasPart" typeof="Proof">
+            <h2>Zero-Knowledge Proof</h2>
+            <meta property="proofType" content="ZK-SNARK"/>
+            <link property="verificationCircuit" href="../zk/circuit.circom"/>
+            <p><a href="../zk/verify.html">Verify Proof</a></p>
+        </section>
+    </article>
+</body>
+</html>
