@@ -1,0 +1,27 @@
+// Magma model of Abelian variety over F_71
+
+// Define the field
+p := 71;
+F := FiniteField(p);
+
+// Abelian variety parameters
+dimension := 2;
+label := "ah_a";
+
+// Slopes as rationals
+slopes := [0/1, 1/2, 1/2, 1/1];
+
+// Display
+printf "Abelian Variety over F_%o\n", p;
+printf "Dimension: %o\n", dimension;
+printf "Label: %o\n", label;
+printf "Slopes: %o\n", slopes;
+
+// Verify slopes sum to dimension (Newton polygon property)
+slope_sum := &+slopes;
+assert slope_sum eq dimension;
+printf "✓ Slopes sum to dimension: %o = %o\n", slope_sum, dimension;
+
+// URL construction
+url := Sprintf("/Variety/Abelian/Fq/%o/%o/%o", dimension, p, label);
+printf "URL: %o\n", url;

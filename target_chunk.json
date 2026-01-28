@@ -1,0 +1,11 @@
+{
+  "type": "function",
+  "file": "lmfdb/abvar/fq/test_av.py",
+  "name": "test_slopes",
+  "line_start": 46,
+  "line_end": 50,
+  "lines": 5,
+  "bytes": 168,
+  "has_71": true,
+  "code": "    def test_slopes(self):\n        r\"\"\"\n        Check that display_slopes works\n        \"\"\"\n        self.check_args(\"/Variety/Abelian/Fq/2/71/ah_a\", \"[0, 1/2, 1/2, 1]\")"
+}

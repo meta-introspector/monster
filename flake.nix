@@ -4,12 +4,19 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        overlays = [ (import rust-overlay) ];
+        pkgs = import nixpkgs {
+          inherit system overlays;
+        };
+        
+        # Rust toolchain
+        rustToolchain = pkgs.rust-bin.stable.latest.default;
         
         # Python environment for analysis
         pythonEnv = pkgs.python3.withPackages (ps: with ps; [
@@ -65,6 +72,9 @@
         
         devShells.default = pkgs.mkShell {
           buildInputs = [
+            rustToolchain
+            pkgs.cargo
+            pkgs.rustc
             pythonEnv
             pkgs.postgresql
             pkgs.perf
@@ -78,6 +88,7 @@
             echo "========================================"
             echo ""
             echo "Available commands:"
+            echo "  cargo run --bin abelian_variety"
             echo "  python3 analyze_lmfdb_source.py"
             echo "  python3 analyze_lmfdb_ast.py"
             echo "  python3 analyze_lmfdb_bytecode.py"
