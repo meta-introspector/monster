@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/examples/ollama-monster/target/release/extract-spores: /home/mdupont/experiments/monster/examples/ollama-monster/build.rs /home/mdupont/experiments/monster/examples/ollama-monster/src/bin/extract-spores.rs

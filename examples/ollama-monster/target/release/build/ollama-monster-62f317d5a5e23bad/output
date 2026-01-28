@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build.rs
+cargo:warning=mistral.rs not found at ../../../mistral.rs
+cargo:warning=Set MISTRAL_RS_PATH environment variable
