@@ -1,0 +1,33 @@
+Testing Hilbert modular forms with discriminant 71:
+
+Discriminant: 71
+Level: 71
+
+Norms in Q(√71):
+  N(1 + 0√71) = 1, totally positive: True
+  N(1 + 1√71) = -70, totally positive: False
+  N(1 + 2√71) = -283, totally positive: False
+  N(2 + 0√71) = 4, totally positive: True
+  N(2 + 1√71) = -67, totally positive: False
+  N(2 + 2√71) = -280, totally positive: False
+  N(3 + 0√71) = 9, totally positive: True
+  N(3 + 1√71) = -62, totally positive: False
+  N(3 + 2√71) = -275, totally positive: False
+  N(4 + 0√71) = 16, totally positive: True
+  N(4 + 1√71) = -55, totally positive: False
+  N(4 + 2√71) = -268, totally positive: False
+  N(5 + 0√71) = 25, totally positive: True
+  N(5 + 1√71) = -46, totally positive: False
+  N(5 + 2√71) = -259, totally positive: False
+
+Fourier coefficients (mod 71):
+  a_1 = 1
+  a_2 = 9
+  a_3 = 28
+  a_4 = 2
+  a_5 = 55
+  a_6 = 39
+  a_7 = 60
+  a_8 = 17
+  a_9 = 47
+  a_10 = 69
