@@ -40,6 +40,22 @@ The prime 71 is special - it's the largest Monster prime and appears in:
 
 **Answer**: Yes! With proofs.
 
+## Notation Glossary
+
+| Symbol | Meaning | Context |
+|--------|---------|---------|
+| M | Monster group | Sporadic simple group of order ~8×10^53 |
+| j(τ) | J-invariant | Modular function mapping upper half-plane to ℂ |
+| T_p | Hecke operator | Linear operator for prime p |
+| E | Encoder | Neural network layers [5→11→23→47→71] |
+| D | Decoder | Neural network layers [71→47→23→11→5] |
+| ≡ | Equivalence | Bisimulation equivalence (behavioral) |
+| ℝ^n | Real space | n-dimensional real vector space |
+| MSE | Mean Squared Error | Loss function for reconstruction |
+| σ | Activation | ReLU activation function |
+| W_i | Weight matrix | Layer i weight parameters |
+| b_i | Bias vector | Layer i bias parameters |
+
 ## 2. Architecture
 
 ### 2.1 The 71-Layer Autoencoder
