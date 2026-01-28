@@ -1,0 +1,263 @@
+@prefix monster: <http://lmfdb.org/monster/> .
+@prefix zk: <http://lmfdb.org/zk/> .
+@prefix hecke: <http://lmfdb.org/hecke/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Monster Group
+monster:group a monster:SporadicGroup ;
+    rdfs:label "Monster Group" ;
+    monster:order "808017424794512875886459904961710757005754368000000000" ;
+    monster:largestPrime monster:prime71 .
+
+monster:prime71 a monster:LargestPrime ;
+    monster:value 71 ;
+    monster:exponent 1 ;
+    monster:shards 29 .
+
+
+monster:object/0c0a7407 a monster:prime ;
+    monster:shard 24 ;
+    monster:level 6 ;
+    hecke:eigenvalue 11 ;
+    zk:proof "4f17480f110c0bb5" .
+
+monster:object/b140569b a monster:prime ;
+    monster:shard 44 ;
+    monster:level 6 ;
+    hecke:eigenvalue 11 ;
+    zk:proof "bf3e167cd28089dc" .
+
+monster:object/99f94b42 a monster:prime ;
+    monster:shard 49 ;
+    monster:level 7 ;
+    hecke:eigenvalue 13 ;
+    zk:proof "01fd7de78e028a9e" .
+
+monster:object/c90782f9 a monster:prime ;
+    monster:shard 38 ;
+    monster:level 7 ;
+    hecke:eigenvalue 13 ;
+    zk:proof "31411ba679cc1244" .
+
+monster:object/ba854bf5 a monster:prime ;
+    monster:shard 0 ;
+    monster:level 7 ;
+    hecke:eigenvalue 13 ;
+    zk:proof "bd44d0ea8bd5ad98" .
+
+monster:object/a2ec5f9c a monster:prime ;
+    monster:shard 26 ;
+    monster:level 7 ;
+    hecke:eigenvalue 13 ;
+    zk:proof "6c6100e890b0735c" .
+
+monster:object/7ec202b5 a monster:collection ;
+    monster:shard 44 ;
+    monster:level 8 ;
+    hecke:eigenvalue 15 ;
+    zk:proof "10d60ea4e96f252a" .
+
+monster:object/999be6a2 a monster:prime ;
+    monster:shard 10 ;
+    monster:level 8 ;
+    hecke:eigenvalue 15 ;
+    zk:proof "a5f36bf787124638" .
+
+monster:object/3d35e123 a monster:prime ;
+    monster:shard 4 ;
+    monster:level 8 ;
+    hecke:eigenvalue 15 ;
+    zk:proof "7891c86c4a7b7c88" .
+
+monster:object/87d98dfb a monster:prime ;
+    monster:shard 20 ;
+    monster:level 8 ;
+    hecke:eigenvalue 15 ;
+    zk:proof "7c79fb1817f6e7d7" .
+
+monster:object/f5948b2f a monster:dict_value ;
+    monster:shard 51 ;
+    monster:level 9 ;
+    hecke:eigenvalue 17 ;
+    zk:proof "9f6b78ebc9c7d540" .
+
+monster:object/b0398986 a monster:collection ;
+    monster:shard 14 ;
+    monster:level 10 ;
+    hecke:eigenvalue 19 ;
+    zk:proof "349fe085420c56d9" .
+
+monster:object/906bd07a a monster:prime ;
+    monster:shard 60 ;
+    monster:level 10 ;
+    hecke:eigenvalue 19 ;
+    zk:proof "bb2797552619ab7e" .
+
+monster:object/228dcddd a monster:prime ;
+    monster:shard 55 ;
+    monster:level 11 ;
+    hecke:eigenvalue 21 ;
+    zk:proof "cbbad62142fdab84" .
+
+monster:object/fc43f8a6 a monster:collection ;
+    monster:shard 36 ;
+    monster:level 13 ;
+    hecke:eigenvalue 25 ;
+    zk:proof "98e25483cc0399bd" .
+
+monster:object/8c5047e4 a monster:prime ;
+    monster:shard 13 ;
+    monster:level 13 ;
+    hecke:eigenvalue 25 ;
+    zk:proof "98642b8ba1221e80" .
+
+monster:object/ef84d6b2 a monster:prime ;
+    monster:shard 66 ;
+    monster:level 14 ;
+    hecke:eigenvalue 27 ;
+    zk:proof "c4c441116187950c" .
+
+monster:object/a6a04083 a monster:dict_key ;
+    monster:shard 45 ;
+    monster:level 16 ;
+    hecke:eigenvalue 31 ;
+    zk:proof "8336af0f84bd0e1f" .
+
+monster:object/d95408be a monster:conductor ;
+    monster:shard 19 ;
+    monster:level 18 ;
+    hecke:eigenvalue 35 ;
+    zk:proof "3545230d9eb27819" .
+
+monster:object/8f133379 a monster:collection ;
+    monster:shard 64 ;
+    monster:level 23 ;
+    hecke:eigenvalue 45 ;
+    zk:proof "f75836d097684d74" .
+
+monster:object/83c71ba1 a monster:collection ;
+    monster:shard 16 ;
+    monster:level 23 ;
+    hecke:eigenvalue 45 ;
+    zk:proof "9d053aca6349db71" .
+
+monster:object/2902d433 a monster:collection ;
+    monster:shard 15 ;
+    monster:level 23 ;
+    hecke:eigenvalue 45 ;
+    zk:proof "26447f45db20b420" .
+
+monster:object/d00f0ef7 a monster:collection ;
+    monster:shard 25 ;
+    monster:level 23 ;
+    hecke:eigenvalue 45 ;
+    zk:proof "5e2cc27237efb2c4" .
+
+monster:object/605635cb a monster:collection ;
+    monster:shard 35 ;
+    monster:level 24 ;
+    hecke:eigenvalue 47 ;
+    zk:proof "30414c9250e949e7" .
+
+monster:object/4e912b72 a monster:collection ;
+    monster:shard 22 ;
+    monster:level 24 ;
+    hecke:eigenvalue 47 ;
+    zk:proof "bd717b76b77fd27d" .
+
+monster:object/5a33dfe8 a monster:collection ;
+    monster:shard 13 ;
+    monster:level 24 ;
+    hecke:eigenvalue 47 ;
+    zk:proof "48d1879be12cbdf8" .
+
+monster:object/4f5abc3d a monster:collection ;
+    monster:shard 23 ;
+    monster:level 24 ;
+    hecke:eigenvalue 47 ;
+    zk:proof "071277d9864fd9e1" .
+
+monster:object/3ce5f166 a monster:collection ;
+    monster:shard 56 ;
+    monster:level 24 ;
+    hecke:eigenvalue 47 ;
+    zk:proof "591fd4d15df1b1e5" .
+
+monster:object/c9789da0 a monster:prime ;
+    monster:shard 34 ;
+    monster:level 27 ;
+    hecke:eigenvalue 53 ;
+    zk:proof "ecf8e2b52b0bb3b8" .
+
+monster:object/6bad7b47 a monster:genus ;
+    monster:shard 16 ;
+    monster:level 28 ;
+    hecke:eigenvalue 55 ;
+    zk:proof "ce9b20d8cdfdcdbf" .
+
+monster:object/46d543fb a monster:dimension ;
+    monster:shard 8 ;
+    monster:level 31 ;
+    hecke:eigenvalue 61 ;
+    zk:proof "2efe588dfde5c7b8" .
+
+monster:object/60397b1e a monster:prime ;
+    monster:shard 45 ;
+    monster:level 33 ;
+    hecke:eigenvalue 65 ;
+    zk:proof "f7226bd190e598aa" .
+
+monster:object/77867b5b a monster:field_size ;
+    monster:shard 45 ;
+    monster:level 36 ;
+    hecke:eigenvalue 0 ;
+    zk:proof "199c1507404be1c5" .
+
+monster:object/1f5f54dc a monster:field_size ;
+    monster:shard 22 ;
+    monster:level 41 ;
+    hecke:eigenvalue 10 ;
+    zk:proof "90c8adc24e08a5e9" .
+
+monster:object/3d3670de a monster:prime ;
+    monster:shard 10 ;
+    monster:level 44 ;
+    hecke:eigenvalue 16 ;
+    zk:proof "ea4c1480a363e551" .
+
+monster:object/70cded62 a monster:coefficient ;
+    monster:shard 38 ;
+    monster:level 48 ;
+    hecke:eigenvalue 24 ;
+    zk:proof "b5b1c4577605bc92" .
+
+monster:object/77408076 a monster:coefficient ;
+    monster:shard 70 ;
+    monster:level 48 ;
+    hecke:eigenvalue 24 ;
+    zk:proof "059e57eab77bd3d3" .
+
+monster:object/339f8d71 a monster:eigenvalue ;
+    monster:shard 0 ;
+    monster:level 51 ;
+    hecke:eigenvalue 30 ;
+    zk:proof "1a8c06ed104a2f19" .
+
+monster:object/d7554696 a monster:eigenvalue ;
+    monster:shard 56 ;
+    monster:level 52 ;
+    hecke:eigenvalue 32 ;
+    zk:proof "ccb558c7c2f23b9d" .
+
+monster:object/9cfda021 a monster:eigenvalue ;
+    monster:shard 36 ;
+    monster:level 52 ;
+    hecke:eigenvalue 32 ;
+    zk:proof "ff23c851ec5df192" .
+
+monster:object/86b64cb4 a monster:eigenvalue ;
+    monster:shard 22 ;
+    monster:level 57 ;
+    hecke:eigenvalue 42 ;
+    zk:proof "fa02e6a66f277e6f" .

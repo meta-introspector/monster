@@ -1,0 +1,1394 @@
+{
+  "@context": {
+    "@vocab": "http://lmfdb.org/ontology/",
+    "monster": "http://lmfdb.org/monster/",
+    "zk": "http://lmfdb.org/zk/",
+    "hecke": "http://lmfdb.org/hecke/",
+    "shard": "monster:shard",
+    "level": "monster:level",
+    "eigenvalue": "hecke:eigenvalue",
+    "witness": "zk:witness",
+    "proof": "zk:proof",
+    "complexity": "monster:complexity",
+    "prime71": "monster:prime71"
+  },
+  "@graph": [
+    {
+      "@id": "monster:object/0c0a7407",
+      "@type": "monster:prime",
+      "shard": 24,
+      "chunk": 60,
+      "witness": 56,
+      "level": 6,
+      "complexity": 5,
+      "eigenvalue": 11,
+      "file": "lmfdb/abvar/fq/main.py",
+      "line": 269,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "4f17480f110c0bb5818941794b79d83e",
+        "challenge": "355",
+        "response": 66
+      },
+      "monster:factorization": {
+        "shard_mod_71": 24,
+        "chunk_mod_71": 60,
+        "witness_mod_71": 56,
+        "eigenvalue_mod_71": 11
+      }
+    },
+    {
+      "@id": "monster:object/b140569b",
+      "@type": "monster:prime",
+      "shard": 44,
+      "chunk": 38,
+      "witness": 17,
+      "level": 6,
+      "complexity": 5,
+      "eigenvalue": 11,
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 88,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "bf3e167cd28089dc297cd6fe0d8f7309",
+        "challenge": "355",
+        "response": 66
+      },
+      "monster:factorization": {
+        "shard_mod_71": 44,
+        "chunk_mod_71": 38,
+        "witness_mod_71": 17,
+        "eigenvalue_mod_71": 11
+      }
+    },
+    {
+      "@id": "monster:object/99f94b42",
+      "@type": "monster:prime",
+      "shard": 49,
+      "chunk": 7,
+      "witness": 34,
+      "level": 7,
+      "complexity": 6,
+      "eigenvalue": 13,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 176,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "01fd7de78e028a9e5b162cf5bddf6529",
+        "challenge": "426",
+        "response": 20
+      },
+      "monster:factorization": {
+        "shard_mod_71": 49,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 34,
+        "eigenvalue_mod_71": 13
+      }
+    },
+    {
+      "@id": "monster:object/c90782f9",
+      "@type": "monster:prime",
+      "shard": 38,
+      "chunk": 7,
+      "witness": 35,
+      "level": 7,
+      "complexity": 6,
+      "eigenvalue": 13,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 177,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "31411ba679cc124488bc97da4f4c0c8e",
+        "challenge": "426",
+        "response": 20
+      },
+      "monster:factorization": {
+        "shard_mod_71": 38,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 35,
+        "eigenvalue_mod_71": 13
+      }
+    },
+    {
+      "@id": "monster:object/ba854bf5",
+      "@type": "monster:prime",
+      "shard": 0,
+      "chunk": 44,
+      "witness": 46,
+      "level": 7,
+      "complexity": 6,
+      "eigenvalue": 13,
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 188,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "bd44d0ea8bd5ad98a7ffbceee7a9f2d0",
+        "challenge": "426",
+        "response": 20
+      },
+      "monster:factorization": {
+        "shard_mod_71": 0,
+        "chunk_mod_71": 44,
+        "witness_mod_71": 46,
+        "eigenvalue_mod_71": 13
+      }
+    },
+    {
+      "@id": "monster:object/a2ec5f9c",
+      "@type": "monster:prime",
+      "shard": 26,
+      "chunk": 44,
+      "witness": 55,
+      "level": 7,
+      "complexity": 6,
+      "eigenvalue": 13,
+      "file": "lmfdb/belyi/test_belyi.py",
+      "line": 197,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "6c6100e890b0735cfc050f29b60a78a2",
+        "challenge": "426",
+        "response": 20
+      },
+      "monster:factorization": {
+        "shard_mod_71": 26,
+        "chunk_mod_71": 44,
+        "witness_mod_71": 55,
+        "eigenvalue_mod_71": 13
+      }
+    },
+    {
+      "@id": "monster:object/7ec202b5",
+      "@type": "monster:collection",
+      "shard": 44,
+      "chunk": 68,
+      "witness": 19,
+      "level": 8,
+      "complexity": 7,
+      "eigenvalue": 15,
+      "file": "scripts/ecnf/bmf_check.py",
+      "line": 19,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "10d60ea4e96f252afc2b4dd27973296a",
+        "challenge": "497",
+        "response": 49
+      },
+      "monster:factorization": {
+        "shard_mod_71": 44,
+        "chunk_mod_71": 68,
+        "witness_mod_71": 19,
+        "eigenvalue_mod_71": 15
+      }
+    },
+    {
+      "@id": "monster:object/999be6a2",
+      "@type": "monster:prime",
+      "shard": 10,
+      "chunk": 23,
+      "witness": 32,
+      "level": 8,
+      "complexity": 7,
+      "eigenvalue": 15,
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 103,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "a5f36bf78712463891f1fd6cd9236dce",
+        "challenge": "497",
+        "response": 49
+      },
+      "monster:factorization": {
+        "shard_mod_71": 10,
+        "chunk_mod_71": 23,
+        "witness_mod_71": 32,
+        "eigenvalue_mod_71": 15
+      }
+    },
+    {
+      "@id": "monster:object/3d35e123",
+      "@type": "monster:prime",
+      "shard": 4,
+      "chunk": 7,
+      "witness": 10,
+      "level": 8,
+      "complexity": 7,
+      "eigenvalue": 15,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 294,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "7891c86c4a7b7c88d378cb3f61639378",
+        "challenge": "497",
+        "response": 49
+      },
+      "monster:factorization": {
+        "shard_mod_71": 4,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 10,
+        "eigenvalue_mod_71": 15
+      }
+    },
+    {
+      "@id": "monster:object/87d98dfb",
+      "@type": "monster:prime",
+      "shard": 20,
+      "chunk": 7,
+      "witness": 14,
+      "level": 8,
+      "complexity": 7,
+      "eigenvalue": 15,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 298,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "7c79fb1817f6e7d77e865f4276371f1d",
+        "challenge": "497",
+        "response": 49
+      },
+      "monster:factorization": {
+        "shard_mod_71": 20,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 14,
+        "eigenvalue_mod_71": 15
+      }
+    },
+    {
+      "@id": "monster:object/f5948b2f",
+      "@type": "monster:dict_value",
+      "shard": 51,
+      "chunk": 61,
+      "witness": 3,
+      "level": 9,
+      "complexity": 8,
+      "eigenvalue": 17,
+      "file": "lmfdb/number_fields/web_number_field.py",
+      "line": 74,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "9f6b78ebc9c7d540a6bed783b53344a2",
+        "challenge": "568",
+        "response": 11
+      },
+      "monster:factorization": {
+        "shard_mod_71": 51,
+        "chunk_mod_71": 61,
+        "witness_mod_71": 3,
+        "eigenvalue_mod_71": 17
+      }
+    },
+    {
+      "@id": "monster:object/b0398986",
+      "@type": "monster:collection",
+      "shard": 14,
+      "chunk": 7,
+      "witness": 69,
+      "level": 10,
+      "complexity": 9,
+      "eigenvalue": 19,
+      "file": "lmfdb/tests/test_utils.py",
+      "line": 282,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "349fe085420c56d9d9348e1fc5e91d9c",
+        "challenge": "639",
+        "response": 48
+      },
+      "monster:factorization": {
+        "shard_mod_71": 14,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 69,
+        "eigenvalue_mod_71": 19
+      }
+    },
+    {
+      "@id": "monster:object/906bd07a",
+      "@type": "monster:prime",
+      "shard": 60,
+      "chunk": 56,
+      "witness": 7,
+      "level": 10,
+      "complexity": 9,
+      "eigenvalue": 19,
+      "file": "lmfdb/hypergm/main.py",
+      "line": 504,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "bb2797552619ab7ecf1f1096ee3037c5",
+        "challenge": "639",
+        "response": 48
+      },
+      "monster:factorization": {
+        "shard_mod_71": 60,
+        "chunk_mod_71": 56,
+        "witness_mod_71": 7,
+        "eigenvalue_mod_71": 19
+      }
+    },
+    {
+      "@id": "monster:object/228dcddd",
+      "@type": "monster:prime",
+      "shard": 55,
+      "chunk": 48,
+      "witness": 38,
+      "level": 11,
+      "complexity": 10,
+      "eigenvalue": 21,
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 393,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "cbbad62142fdab844ec5462fbbaf276f",
+        "challenge": "710",
+        "response": 18
+      },
+      "monster:factorization": {
+        "shard_mod_71": 55,
+        "chunk_mod_71": 48,
+        "witness_mod_71": 38,
+        "eigenvalue_mod_71": 21
+      }
+    },
+    {
+      "@id": "monster:object/fc43f8a6",
+      "@type": "monster:collection",
+      "shard": 36,
+      "chunk": 56,
+      "witness": 7,
+      "level": 13,
+      "complexity": 12,
+      "eigenvalue": 25,
+      "file": "lmfdb/hypergm/main.py",
+      "line": 504,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "98e25483cc0399bdfd00c59e79447a95",
+        "challenge": "852",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 36,
+        "chunk_mod_71": 56,
+        "witness_mod_71": 7,
+        "eigenvalue_mod_71": 25
+      }
+    },
+    {
+      "@id": "monster:object/8c5047e4",
+      "@type": "monster:prime",
+      "shard": 13,
+      "chunk": 45,
+      "witness": 30,
+      "level": 13,
+      "complexity": 12,
+      "eigenvalue": 25,
+      "file": "lmfdb/groups/abstract/test_browse_page.py",
+      "line": 598,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "98642b8ba1221e8002b50da5ecfc193a",
+        "challenge": "852",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 13,
+        "chunk_mod_71": 45,
+        "witness_mod_71": 30,
+        "eigenvalue_mod_71": 25
+      }
+    },
+    {
+      "@id": "monster:object/ef84d6b2",
+      "@type": "monster:prime",
+      "shard": 66,
+      "chunk": 33,
+      "witness": 42,
+      "level": 14,
+      "complexity": 13,
+      "eigenvalue": 27,
+      "file": "lmfdb/utils/search_parsing.py",
+      "line": 1036,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "c4c441116187950c0f058751c3c7b7d5",
+        "challenge": "923",
+        "response": 23
+      },
+      "monster:factorization": {
+        "shard_mod_71": 66,
+        "chunk_mod_71": 33,
+        "witness_mod_71": 42,
+        "eigenvalue_mod_71": 27
+      }
+    },
+    {
+      "@id": "monster:object/a6a04083",
+      "@type": "monster:dict_key",
+      "shard": 45,
+      "chunk": 0,
+      "witness": 53,
+      "level": 16,
+      "complexity": 15,
+      "eigenvalue": 31,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 834,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "8336af0f84bd0e1f8fa4235c5299c817",
+        "challenge": "1065",
+        "response": 70
+      },
+      "monster:factorization": {
+        "shard_mod_71": 45,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 53,
+        "eigenvalue_mod_71": 31
+      }
+    },
+    {
+      "@id": "monster:object/d95408be",
+      "@type": "monster:conductor",
+      "shard": 19,
+      "chunk": 23,
+      "witness": 32,
+      "level": 18,
+      "complexity": 17,
+      "eigenvalue": 35,
+      "file": "lmfdb/elliptic_curves/test_browse_page.py",
+      "line": 103,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "3545230d9eb278196bc2d22f925a7d2c",
+        "challenge": "1207",
+        "response": 62
+      },
+      "monster:factorization": {
+        "shard_mod_71": 19,
+        "chunk_mod_71": 23,
+        "witness_mod_71": 32,
+        "eigenvalue_mod_71": 35
+      }
+    },
+    {
+      "@id": "monster:object/8f133379",
+      "@type": "monster:collection",
+      "shard": 64,
+      "chunk": 0,
+      "witness": 60,
+      "level": 23,
+      "complexity": 22,
+      "eigenvalue": 45,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1551,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "f75836d097684d746ed413d3d9655c38",
+        "challenge": "1562",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 64,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 60,
+        "eigenvalue_mod_71": 45
+      }
+    },
+    {
+      "@id": "monster:object/83c71ba1",
+      "@type": "monster:collection",
+      "shard": 16,
+      "chunk": 0,
+      "witness": 64,
+      "level": 23,
+      "complexity": 22,
+      "eigenvalue": 45,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1555,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "9d053aca6349db711cbd3aecd817f4c7",
+        "challenge": "1562",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 16,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 64,
+        "eigenvalue_mod_71": 45
+      }
+    },
+    {
+      "@id": "monster:object/2902d433",
+      "@type": "monster:collection",
+      "shard": 15,
+      "chunk": 0,
+      "witness": 12,
+      "level": 23,
+      "complexity": 22,
+      "eigenvalue": 45,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1574,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "26447f45db20b4205a5cd0c10d74be78",
+        "challenge": "1562",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 15,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 12,
+        "eigenvalue_mod_71": 45
+      }
+    },
+    {
+      "@id": "monster:object/d00f0ef7",
+      "@type": "monster:collection",
+      "shard": 25,
+      "chunk": 0,
+      "witness": 24,
+      "level": 23,
+      "complexity": 22,
+      "eigenvalue": 45,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1586,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "5e2cc27237efb2c4dfc0fbfbca36fb47",
+        "challenge": "1562",
+        "response": 41
+      },
+      "monster:factorization": {
+        "shard_mod_71": 25,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 24,
+        "eigenvalue_mod_71": 45
+      }
+    },
+    {
+      "@id": "monster:object/605635cb",
+      "@type": "monster:collection",
+      "shard": 35,
+      "chunk": 0,
+      "witness": 52,
+      "level": 24,
+      "complexity": 23,
+      "eigenvalue": 47,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1614,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "30414c9250e949e7acb0b825b90fd09b",
+        "challenge": "1633",
+        "response": 63
+      },
+      "monster:factorization": {
+        "shard_mod_71": 35,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 52,
+        "eigenvalue_mod_71": 47
+      }
+    },
+    {
+      "@id": "monster:object/4e912b72",
+      "@type": "monster:collection",
+      "shard": 22,
+      "chunk": 0,
+      "witness": 60,
+      "level": 24,
+      "complexity": 23,
+      "eigenvalue": 47,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1622,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "bd717b76b77fd27d03ab3077567b5eb1",
+        "challenge": "1633",
+        "response": 63
+      },
+      "monster:factorization": {
+        "shard_mod_71": 22,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 60,
+        "eigenvalue_mod_71": 47
+      }
+    },
+    {
+      "@id": "monster:object/5a33dfe8",
+      "@type": "monster:collection",
+      "shard": 13,
+      "chunk": 0,
+      "witness": 65,
+      "level": 24,
+      "complexity": 23,
+      "eigenvalue": 47,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1627,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "48d1879be12cbdf83acd890e452f537f",
+        "challenge": "1633",
+        "response": 63
+      },
+      "monster:factorization": {
+        "shard_mod_71": 13,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 65,
+        "eigenvalue_mod_71": 47
+      }
+    },
+    {
+      "@id": "monster:object/4f5abc3d",
+      "@type": "monster:collection",
+      "shard": 23,
+      "chunk": 0,
+      "witness": 1,
+      "level": 24,
+      "complexity": 23,
+      "eigenvalue": 47,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1634,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "071277d9864fd9e199a99b71d1872862",
+        "challenge": "1633",
+        "response": 63
+      },
+      "monster:factorization": {
+        "shard_mod_71": 23,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 1,
+        "eigenvalue_mod_71": 47
+      }
+    },
+    {
+      "@id": "monster:object/3ce5f166",
+      "@type": "monster:collection",
+      "shard": 56,
+      "chunk": 0,
+      "witness": 8,
+      "level": 24,
+      "complexity": 23,
+      "eigenvalue": 47,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 1641,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "591fd4d15df1b1e5137a1cd099995f3d",
+        "challenge": "1633",
+        "response": 63
+      },
+      "monster:factorization": {
+        "shard_mod_71": 56,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 8,
+        "eigenvalue_mod_71": 47
+      }
+    },
+    {
+      "@id": "monster:object/c9789da0",
+      "@type": "monster:prime",
+      "shard": 34,
+      "chunk": 0,
+      "witness": 42,
+      "level": 27,
+      "complexity": 26,
+      "eigenvalue": 53,
+      "file": "lmfdb/utils/completeness.py",
+      "line": 2385,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "ecf8e2b52b0bb3b86d8bd6caf084ab5b",
+        "challenge": "1846",
+        "response": 11
+      },
+      "monster:factorization": {
+        "shard_mod_71": 34,
+        "chunk_mod_71": 0,
+        "witness_mod_71": 42,
+        "eigenvalue_mod_71": 53
+      }
+    },
+    {
+      "@id": "monster:object/6bad7b47",
+      "@type": "monster:genus",
+      "shard": 16,
+      "chunk": 44,
+      "witness": 52,
+      "level": 28,
+      "complexity": 27,
+      "eigenvalue": 55,
+      "file": "lmfdb/genus2_curves/test_genus2_curves.py",
+      "line": 52,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "ce9b20d8cdfdcdbfe2d46dd90981330e",
+        "challenge": "1917",
+        "response": 49
+      },
+      "monster:factorization": {
+        "shard_mod_71": 16,
+        "chunk_mod_71": 44,
+        "witness_mod_71": 52,
+        "eigenvalue_mod_71": 55
+      }
+    },
+    {
+      "@id": "monster:object/46d543fb",
+      "@type": "monster:dimension",
+      "shard": 8,
+      "chunk": 48,
+      "witness": 38,
+      "level": 31,
+      "complexity": 30,
+      "eigenvalue": 61,
+      "file": "lmfdb/classical_modular_forms/test_cmf2.py",
+      "line": 393,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "2efe588dfde5c7b8f7b5afe0992642cc",
+        "challenge": "2130",
+        "response": 45
+      },
+      "monster:factorization": {
+        "shard_mod_71": 8,
+        "chunk_mod_71": 48,
+        "witness_mod_71": 38,
+        "eigenvalue_mod_71": 61
+      }
+    },
+    {
+      "@id": "monster:object/60397b1e",
+      "@type": "monster:prime",
+      "shard": 45,
+      "chunk": 4,
+      "witness": 66,
+      "level": 33,
+      "complexity": 32,
+      "eigenvalue": 65,
+      "file": "lmfdb/groups/abstract/main.py",
+      "line": 2977,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "f7226bd190e598aa5cb7e952fb1eb3fa",
+        "challenge": "2272",
+        "response": 15
+      },
+      "monster:factorization": {
+        "shard_mod_71": 45,
+        "chunk_mod_71": 4,
+        "witness_mod_71": 66,
+        "eigenvalue_mod_71": 65
+      }
+    },
+    {
+      "@id": "monster:object/77867b5b",
+      "@type": "monster:field_size",
+      "shard": 45,
+      "chunk": 38,
+      "witness": 17,
+      "level": 36,
+      "complexity": 35,
+      "eigenvalue": 0,
+      "file": "lmfdb/number_fields/test_numberfield.py",
+      "line": 88,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "199c1507404be1c55c5c89e6303f5764",
+        "challenge": "2485",
+        "response": 0
+      },
+      "monster:factorization": {
+        "shard_mod_71": 45,
+        "chunk_mod_71": 38,
+        "witness_mod_71": 17,
+        "eigenvalue_mod_71": 0
+      }
+    },
+    {
+      "@id": "monster:object/1f5f54dc",
+      "@type": "monster:field_size",
+      "shard": 22,
+      "chunk": 52,
+      "witness": 45,
+      "level": 41,
+      "complexity": 40,
+      "eigenvalue": 10,
+      "file": "scripts/ecnf/hmf_check_find.py",
+      "line": 613,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "90c8adc24e08a5e92dab0ad43e974c64",
+        "challenge": "2840",
+        "response": 55
+      },
+      "monster:factorization": {
+        "shard_mod_71": 22,
+        "chunk_mod_71": 52,
+        "witness_mod_71": 45,
+        "eigenvalue_mod_71": 10
+      }
+    },
+    {
+      "@id": "monster:object/3d3670de",
+      "@type": "monster:prime",
+      "shard": 10,
+      "chunk": 4,
+      "witness": 53,
+      "level": 44,
+      "complexity": 43,
+      "eigenvalue": 16,
+      "file": "lmfdb/groups/abstract/main.py",
+      "line": 3674,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "ea4c1480a363e5515e6919ab4528d4d3",
+        "challenge": "3053",
+        "response": 65
+      },
+      "monster:factorization": {
+        "shard_mod_71": 10,
+        "chunk_mod_71": 4,
+        "witness_mod_71": 53,
+        "eigenvalue_mod_71": 16
+      }
+    },
+    {
+      "@id": "monster:object/70cded62",
+      "@type": "monster:coefficient",
+      "shard": 38,
+      "chunk": 7,
+      "witness": 10,
+      "level": 48,
+      "complexity": 47,
+      "eigenvalue": 24,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 294,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "b5b1c4577605bc92ebf5bd964a9dfec7",
+        "challenge": "3337",
+        "response": 16
+      },
+      "monster:factorization": {
+        "shard_mod_71": 38,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 10,
+        "eigenvalue_mod_71": 24
+      }
+    },
+    {
+      "@id": "monster:object/77408076",
+      "@type": "monster:coefficient",
+      "shard": 70,
+      "chunk": 7,
+      "witness": 14,
+      "level": 48,
+      "complexity": 47,
+      "eigenvalue": 24,
+      "file": "lmfdb/abvar/fq/test_browse_page.py",
+      "line": 298,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "059e57eab77bd3d3c302421831b0faa6",
+        "challenge": "3337",
+        "response": 16
+      },
+      "monster:factorization": {
+        "shard_mod_71": 70,
+        "chunk_mod_71": 7,
+        "witness_mod_71": 14,
+        "eigenvalue_mod_71": 24
+      }
+    },
+    {
+      "@id": "monster:object/339f8d71",
+      "@type": "monster:eigenvalue",
+      "shard": 0,
+      "chunk": 33,
+      "witness": 10,
+      "level": 51,
+      "complexity": 50,
+      "eigenvalue": 30,
+      "file": "lmfdb/modl_galois_representations/main.py",
+      "line": 152,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "1a8c06ed104a2f1950a5086f187ea555",
+        "challenge": "3550",
+        "response": 39
+      },
+      "monster:factorization": {
+        "shard_mod_71": 0,
+        "chunk_mod_71": 33,
+        "witness_mod_71": 10,
+        "eigenvalue_mod_71": 30
+      }
+    },
+    {
+      "@id": "monster:object/d7554696",
+      "@type": "monster:eigenvalue",
+      "shard": 56,
+      "chunk": 47,
+      "witness": 4,
+      "level": 52,
+      "complexity": 51,
+      "eigenvalue": 32,
+      "file": "lmfdb/hilbert_modular_forms/hilbert_modular_form.py",
+      "line": 146,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "ccb558c7c2f23b9dec766fc538ca43f2",
+        "challenge": "3621",
+        "response": 31
+      },
+      "monster:factorization": {
+        "shard_mod_71": 56,
+        "chunk_mod_71": 47,
+        "witness_mod_71": 4,
+        "eigenvalue_mod_71": 32
+      }
+    },
+    {
+      "@id": "monster:object/9cfda021",
+      "@type": "monster:eigenvalue",
+      "shard": 36,
+      "chunk": 47,
+      "witness": 5,
+      "level": 52,
+      "complexity": 51,
+      "eigenvalue": 32,
+      "file": "lmfdb/hilbert_modular_forms/hilbert_modular_form.py",
+      "line": 147,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "ff23c851ec5df192bfd4e4928152dc69",
+        "challenge": "3621",
+        "response": 31
+      },
+      "monster:factorization": {
+        "shard_mod_71": 36,
+        "chunk_mod_71": 47,
+        "witness_mod_71": 5,
+        "eigenvalue_mod_71": 32
+      }
+    },
+    {
+      "@id": "monster:object/86b64cb4",
+      "@type": "monster:eigenvalue",
+      "shard": 22,
+      "chunk": 55,
+      "witness": 37,
+      "level": 57,
+      "complexity": 56,
+      "eigenvalue": 42,
+      "file": "lmfdb/modular_curves/main.py",
+      "line": 1031,
+      "zk:proof": {
+        "@type": "zk:SchnorrProof",
+        "commitment": "fa02e6a66f277e6fb9ee226b0e187b48",
+        "challenge": "3976",
+        "response": 51
+      },
+      "monster:factorization": {
+        "shard_mod_71": 22,
+        "chunk_mod_71": 55,
+        "witness_mod_71": 37,
+        "eigenvalue_mod_71": 42
+      }
+    },
+    {
+      "@id": "monster:group",
+      "@type": "monster:SporadicGroup",
+      "name": "Monster Group",
+      "order": "808017424794512875886459904961710757005754368000000000",
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        41,
+        47,
+        59,
+        71
+      ],
+      "prime71": {
+        "@id": "monster:prime71",
+        "@type": "monster:LargestPrime",
+        "value": 71,
+        "exponent": 1,
+        "shards": 29,
+        "resonance": "dominant"
+      },
+      "hecke_operators": {
+        "T_71": {
+          "@type": "hecke:Operator",
+          "prime": 71,
+          "eigenvalues": [
+            0,
+            10,
+            11,
+            13,
+            15,
+            16,
+            17,
+            19,
+            21,
+            24,
+            25,
+            27,
+            30,
+            31,
+            32,
+            35,
+            42,
+            45,
+            47,
+            53,
+            55,
+            61,
+            65
+          ]
+        }
+      }
+    },
+    {
+      "@id": "monster:shard/24",
+      "@type": "monster:Shard",
+      "shard_id": 24,
+      "member_count": 1,
+      "members": [
+        "monster:object/0c0a7407"
+      ],
+      "mod_71": 24,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/44",
+      "@type": "monster:Shard",
+      "shard_id": 44,
+      "member_count": 2,
+      "members": [
+        "monster:object/b140569b",
+        "monster:object/7ec202b5"
+      ],
+      "mod_71": 44,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/49",
+      "@type": "monster:Shard",
+      "shard_id": 49,
+      "member_count": 1,
+      "members": [
+        "monster:object/99f94b42"
+      ],
+      "mod_71": 49,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/38",
+      "@type": "monster:Shard",
+      "shard_id": 38,
+      "member_count": 2,
+      "members": [
+        "monster:object/c90782f9",
+        "monster:object/70cded62"
+      ],
+      "mod_71": 38,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/0",
+      "@type": "monster:Shard",
+      "shard_id": 0,
+      "member_count": 2,
+      "members": [
+        "monster:object/ba854bf5",
+        "monster:object/339f8d71"
+      ],
+      "mod_71": 0,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/26",
+      "@type": "monster:Shard",
+      "shard_id": 26,
+      "member_count": 1,
+      "members": [
+        "monster:object/a2ec5f9c"
+      ],
+      "mod_71": 26,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/10",
+      "@type": "monster:Shard",
+      "shard_id": 10,
+      "member_count": 2,
+      "members": [
+        "monster:object/999be6a2",
+        "monster:object/3d3670de"
+      ],
+      "mod_71": 10,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/4",
+      "@type": "monster:Shard",
+      "shard_id": 4,
+      "member_count": 1,
+      "members": [
+        "monster:object/3d35e123"
+      ],
+      "mod_71": 4,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/20",
+      "@type": "monster:Shard",
+      "shard_id": 20,
+      "member_count": 1,
+      "members": [
+        "monster:object/87d98dfb"
+      ],
+      "mod_71": 20,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/51",
+      "@type": "monster:Shard",
+      "shard_id": 51,
+      "member_count": 1,
+      "members": [
+        "monster:object/f5948b2f"
+      ],
+      "mod_71": 51,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/14",
+      "@type": "monster:Shard",
+      "shard_id": 14,
+      "member_count": 1,
+      "members": [
+        "monster:object/b0398986"
+      ],
+      "mod_71": 14,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/60",
+      "@type": "monster:Shard",
+      "shard_id": 60,
+      "member_count": 1,
+      "members": [
+        "monster:object/906bd07a"
+      ],
+      "mod_71": 60,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/55",
+      "@type": "monster:Shard",
+      "shard_id": 55,
+      "member_count": 1,
+      "members": [
+        "monster:object/228dcddd"
+      ],
+      "mod_71": 55,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/36",
+      "@type": "monster:Shard",
+      "shard_id": 36,
+      "member_count": 2,
+      "members": [
+        "monster:object/fc43f8a6",
+        "monster:object/9cfda021"
+      ],
+      "mod_71": 36,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/13",
+      "@type": "monster:Shard",
+      "shard_id": 13,
+      "member_count": 2,
+      "members": [
+        "monster:object/8c5047e4",
+        "monster:object/5a33dfe8"
+      ],
+      "mod_71": 13,
+      "is_monster_prime": true
+    },
+    {
+      "@id": "monster:shard/66",
+      "@type": "monster:Shard",
+      "shard_id": 66,
+      "member_count": 1,
+      "members": [
+        "monster:object/ef84d6b2"
+      ],
+      "mod_71": 66,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/45",
+      "@type": "monster:Shard",
+      "shard_id": 45,
+      "member_count": 3,
+      "members": [
+        "monster:object/a6a04083",
+        "monster:object/60397b1e",
+        "monster:object/77867b5b"
+      ],
+      "mod_71": 45,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/19",
+      "@type": "monster:Shard",
+      "shard_id": 19,
+      "member_count": 1,
+      "members": [
+        "monster:object/d95408be"
+      ],
+      "mod_71": 19,
+      "is_monster_prime": true
+    },
+    {
+      "@id": "monster:shard/64",
+      "@type": "monster:Shard",
+      "shard_id": 64,
+      "member_count": 1,
+      "members": [
+        "monster:object/8f133379"
+      ],
+      "mod_71": 64,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/16",
+      "@type": "monster:Shard",
+      "shard_id": 16,
+      "member_count": 2,
+      "members": [
+        "monster:object/83c71ba1",
+        "monster:object/6bad7b47"
+      ],
+      "mod_71": 16,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/15",
+      "@type": "monster:Shard",
+      "shard_id": 15,
+      "member_count": 1,
+      "members": [
+        "monster:object/2902d433"
+      ],
+      "mod_71": 15,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/25",
+      "@type": "monster:Shard",
+      "shard_id": 25,
+      "member_count": 1,
+      "members": [
+        "monster:object/d00f0ef7"
+      ],
+      "mod_71": 25,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/35",
+      "@type": "monster:Shard",
+      "shard_id": 35,
+      "member_count": 1,
+      "members": [
+        "monster:object/605635cb"
+      ],
+      "mod_71": 35,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/22",
+      "@type": "monster:Shard",
+      "shard_id": 22,
+      "member_count": 3,
+      "members": [
+        "monster:object/4e912b72",
+        "monster:object/1f5f54dc",
+        "monster:object/86b64cb4"
+      ],
+      "mod_71": 22,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/23",
+      "@type": "monster:Shard",
+      "shard_id": 23,
+      "member_count": 1,
+      "members": [
+        "monster:object/4f5abc3d"
+      ],
+      "mod_71": 23,
+      "is_monster_prime": true
+    },
+    {
+      "@id": "monster:shard/56",
+      "@type": "monster:Shard",
+      "shard_id": 56,
+      "member_count": 2,
+      "members": [
+        "monster:object/3ce5f166",
+        "monster:object/d7554696"
+      ],
+      "mod_71": 56,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/34",
+      "@type": "monster:Shard",
+      "shard_id": 34,
+      "member_count": 1,
+      "members": [
+        "monster:object/c9789da0"
+      ],
+      "mod_71": 34,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/8",
+      "@type": "monster:Shard",
+      "shard_id": 8,
+      "member_count": 1,
+      "members": [
+        "monster:object/46d543fb"
+      ],
+      "mod_71": 8,
+      "is_monster_prime": false
+    },
+    {
+      "@id": "monster:shard/70",
+      "@type": "monster:Shard",
+      "shard_id": 70,
+      "member_count": 1,
+      "members": [
+        "monster:object/77408076"
+      ],
+      "mod_71": 70,
+      "is_monster_prime": false
+    }
+  ]
+}
