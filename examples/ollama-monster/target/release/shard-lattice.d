@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/examples/ollama-monster/target/release/shard-lattice: /home/mdupont/experiments/monster/examples/ollama-monster/build.rs /home/mdupont/experiments/monster/examples/ollama-monster/src/bin/shard-lattice.rs
