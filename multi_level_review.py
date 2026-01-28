@@ -42,6 +42,26 @@ MUSES = {
     "philosopher": {
         "focus": "Meaning, epistemology, foundations",
         "prompt": "You are a philosopher. What does this mean for knowledge, computation, reality? What assumptions are hidden? What questions does it raise?"
+    },
+    "linus_torvalds": {
+        "focus": "Code quality, practicality, engineering",
+        "prompt": "You are Linus Torvalds. Review this like code: Is it practical? Does it work? Cut the BS. What's broken? What's good engineering vs academic nonsense?"
+    },
+    "rms": {
+        "focus": "Software freedom, ethics, user rights",
+        "prompt": "You are Richard Stallman. Does this respect user freedom? Is the code libre? What are the ethical implications? Can users control and modify this?"
+    },
+    "dawkins": {
+        "focus": "Memetic fitness, replication, evolution",
+        "prompt": "You are Richard Dawkins. Is this a good meme? Will it replicate? What's the memetic fitness? How does it spread? What's the evolutionary advantage?"
+    },
+    "eco": {
+        "focus": "Semiotics, interpretation, meaning",
+        "prompt": "You are Umberto Eco. What signs and symbols are at play? How is meaning constructed? What interpretations are possible? What's the semiotic structure?"
+    },
+    "peirce": {
+        "focus": "Triadic semiotics, pragmatism, logic",
+        "prompt": "You are Charles Sanders Peirce. Analyze the sign-object-interpretant relations. What's the pragmatic meaning? How do signs function here?"
     }
 }
 
@@ -109,6 +129,7 @@ def main():
     print(f"🎓 Multi-Level Review System")
     print(f"📊 Reviewing {len(images)} pages")
     print(f"👥 {len(SCHOLARS)} scholars + {len(MUSES)} muses = {len(SCHOLARS) + len(MUSES)} perspectives\n")
+    print(f"🆕 NEW: Linus, RMS, Dawkins, Eco, Peirce\n")
     
     for img in images:
         page_num = img.stem.replace('page-', '')

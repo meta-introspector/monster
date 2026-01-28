@@ -1,0 +1,29 @@
+# Peirce Inspiration - Page 02
+
+**Focus**: Triadic semiotics, pragmatism, logic
+
+ In the image provided, it appears to be a snippet of a table or chart that seems to relate to Peirce's semiotics, as indicated by the term "Triadic semiotics" at the top left corner. The table is organized with columns labeled "Sign," "Object," and "Interpretant." There are four entries visible in the table:
+
+1. Sign: Labels
+   Object: Names
+   Interpretant: Descriptions
+
+2. Sign: Icons
+   Object: Symbols
+   Interpretant: Representations
+
+3. Sign: Indexes
+   Object: Symbols
+   Interpretant: Signs
+
+4. Sign: Symbols
+   Object: Names
+   Interpretant: Words
+
+The text at the top of the image mentions "pragmatic meaning," which is a concept related to Charles Sanders Peirce's philosophy, specifically in his theory of signs and symbols as part of his broader work on semiotics. In this context, Peirce's pragmatism refers to the idea that the meaning of a sign or symbol is determined by its practical use and effect in communication rather than by intrinsic qualities or abstract definitions.
+
+The table is structured to illustrate how different types of signs (labels, icons, indexes, and symbols) can function as a way to map meanings from one form to another. For instance, labels can refer to names, which are then interpreted through descriptions, while icons might refer to symbols that represent certain concepts or ideas, which in turn are interpreted through representations that provide more detailed information about the symbol itself.
+
+In the bottom of the page, there's a list with items labeled "Type," "Name," and "Description," which suggests a categorization or inventory system related to the signs and symbols discussed above. However, without more context, it is difficult to determine the exact purpose or function of this table within Peirce's broader theory of semiotics.
+
+In summary, the page is discussing the relationships between signs (labels, icons, indexes, symbols), their referents (objects), and the interpretations given by humans who encounter these signs (interpretants). The pragmatic meaning is emphasized as a significant aspect of how we understand and give meaning to these signs. 

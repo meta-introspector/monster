@@ -1,0 +1,17 @@
+# Peirce Inspiration - Page 01
+
+**Focus**: Triadic semiotics, pragmatism, logic
+
+ The image shows a document or a page with some text, which includes the title "MONSTER GROUP MEDIA", the mention of a company that provides news media with the name "MUSQUETTE", and other information such as an email address, website URL, and a list of staff members along with their positions.
+
+In the context of Peirce's triadic semiotics, the relationship between the sign, object, and interpretant can be analyzed as follows:
+
+1. Sign - This refers to the visual elements on the page that convey information. In this case, it's the text content including the name "MONSTER GROUP MEDIA", the company name "MUSQUETTE", the email address, and the website URL. Additionally, there are images that could be considered signs, such as logos or icons, but they are not visible here.
+
+2. Object - This refers to the real-world entity or concept being represented by the sign. The object in this case is likely the actual company named "MUSQUETTE" and its associated news media outlet, "MONSTER GROUP MEDIA". These objects are what the signs on the page represent.
+
+3. Interpretant - This refers to the understanding or meaning that an observer derives from the sign when it is combined with their background knowledge. In this context, the interpretant would be the understanding of what "MUSQUETTE" and "MONSTER GROUP MEDIA" are based on the information provided in the text.
+
+In terms of pragmatics, which is concerned with the practical effects of language signs, we can infer that the document serves a specific purpose for those reading it. The interpretant here would be the action or response elicited from the reader due to the presence of this document and the information it provides. For example, if someone sees this page, they might interpret it as an invitation to contact "MONSTER GROUP MEDIA" through the email address provided, or perhaps as a job opportunity at "MUSQUETTE" based on the names listed under "Staff".
+
+The pragmatic meaning of the document would be tied to its context and purpose. It appears to be an informational or promotional flyer for "MONSTER GROUP MEDIA", inviting viewers to take action such as contacting them or considering opportunities within their organization. The signs on the page function to convey this information effectively, using a combination of text and potentially images that would typically be associated with news media outlets. 
