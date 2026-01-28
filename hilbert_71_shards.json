@@ -1,0 +1,32 @@
+{
+  "total_shards": 71,
+  "levels": {
+    "ast": {
+      "total": 274,
+      "shards_used": 11
+    },
+    "tokens": {
+      "total": 279,
+      "shards_used": 15
+    },
+    "lines": {
+      "total": 47,
+      "shards_used": 14
+    },
+    "bytecode": {
+      "total": 66,
+      "shards_used": 12
+    },
+    "perf": {
+      "total": 1000,
+      "shards_used": 13
+    }
+  },
+  "shard_71": {
+    "ast_nodes": 0,
+    "tokens": 1,
+    "lines": 0,
+    "bytecode": 4,
+    "perf_samples": 14
+  }
+}
