@@ -1,5 +1,5 @@
 {
-  description = "Monster group order analyzer with LaTeX paper";
+  description = "Monster Group LMFDB Hecke Analysis";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -11,187 +11,79 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         
-        # LaTeX paper build (v1)
-        monster-paper = pkgs.stdenv.mkDerivation {
-          name = "monster-walk-paper";
-          src = ./.;
-          
-          buildInputs = with pkgs; [
-            texlive.combined.scheme-full
-            pandoc
-            python3Packages.pygments
-          ];
-          
-          buildPhase = ''
-            pdflatex monster_walk.tex
-            bibtex monster_walk || true
-            pdflatex monster_walk.tex
-            pdflatex monster_walk.tex
-            
-            pandoc monster_walk.tex \
-              -o monster_walk.html \
-              --standalone \
-              --mathjax \
-              --toc \
-              --number-sections \
-              --css=https://latex.now.sh/style.css \
-              --metadata title="The Monster Group Walk and Bott Periodicity"
-            
-            pandoc monster_walk.tex \
-              -o monster_walk_mathml.html \
-              --standalone \
-              --mathml \
-              --toc \
-              --number-sections
-          '';
-          
-          installPhase = ''
-            mkdir -p $out
-            cp monster_walk.pdf $out/ || true
-            cp monster_walk.html $out/
-            cp monster_walk_mathml.html $out/
-            cp monster_walk.tex $out/
-          '';
-        };
+        # Python environment for analysis
+        pythonEnv = pkgs.python3.withPackages (ps: with ps; [
+          numpy
+          scipy
+          sympy
+          pandas
+          matplotlib
+          jupyter
+          huggingface-hub
+        ]);
         
-        # Literate programming version (v2)
-        monster-paper-v2 = pkgs.stdenv.mkDerivation {
-          name = "monster-walk-paper-v2-literate";
-          src = ./.;
+        # LMFDB database
+        lmfdb-database = pkgs.stdenv.mkDerivation {
+          name = "lmfdb-database";
+          src = ./lmfdb-source;
           
-          buildInputs = with pkgs; [
-            texlive.combined.scheme-full
-            pandoc
-            python3Packages.pygments
-          ];
+          buildInputs = [ pkgs.postgresql pythonEnv ];
           
           buildPhase = ''
-            pdflatex -shell-escape monster_walk_v2.tex
-            pdflatex -shell-escape monster_walk_v2.tex
-            pdflatex -shell-escape monster_walk_v2.tex
+            # Initialize PostgreSQL
+            initdb -D $out/data
             
-            pandoc monster_walk_v2.tex \
-              -o monster_walk_v2.html \
-              --standalone \
-              --mathjax \
-              --toc \
-              --number-sections \
-              --highlight-style=pygments \
-              --css=https://latex.now.sh/style.css \
-              --metadata title="The Monster Walk: Literate Programming Edition"
-          '';
-          
-          installPhase = ''
-            mkdir -p $out
-            cp monster_walk_v2.pdf $out/
-            cp monster_walk_v2.html $out/
-            cp monster_walk_v2.tex $out/
-          '';
-        };
-        
-        # Interactive Pyodide site
-        monster-pyodide-site = pkgs.stdenv.mkDerivation {
-          name = "monster-pyodide-site";
-          src = ./.;
-          
-          buildPhase = ''
-            mkdir -p site
-            cp web/pyodide.html site/index.html
-            cp web/style.css site/
-            cp web/index.html site/wasm-demo.html
+            # Start PostgreSQL
+            pg_ctl -D $out/data -l $out/logfile start
             
-            # Copy WASM if built
-            if [ -d wasm/pkg ]; then
-              cp -r wasm/pkg site/wasm/
+            # Wait for startup
+            sleep 5
+            
+            # Create database
+            createdb lmfdb
+            
+            # Load schema (if exists)
+            if [ -f schema.sql ]; then
+              psql lmfdb < schema.sql
             fi
+            
+            # Stop PostgreSQL
+            pg_ctl -D $out/data stop
           '';
           
           installPhase = ''
             mkdir -p $out
-            cp -r site/* $out/
+            cp -r data $out/
           '';
         };
         
-        # AI sampler with models
-        monster-ai-sampler = pkgs.rustPlatform.buildRustPackage {
-          pname = "monster-ai-sampler";
-          version = "0.1.0";
-          src = ./ai-sampler;
-          
-          cargoLock = {
-            lockFile = ./ai-sampler/Cargo.lock;
-          };
-          
-          nativeBuildInputs = with pkgs; [
-            pkg-config
-          ];
-          
-          buildInputs = with pkgs; [
-            openssl
-            chromium
-          ];
-          
-          postInstall = ''
-            mkdir -p $out/share/monster-ai-sampler
-            echo "AI Sampler installed"
-          '';
-        };
-        
-        # Complete AI environment
-        monster-ai-env = pkgs.buildEnv {
-          name = "monster-ai-env";
-          paths = with pkgs; [
-            ollama
-            monster-ai-sampler
-            chromium
-            python311
-            python311Packages.transformers
-            python311Packages.torch
-            python311Packages.pillow
-          ];
-        };
-        
-      in
-      {
+      in {
         packages = {
-          paper = monster-paper;
-          paper-v2 = monster-paper-v2;
-          pyodide-site = monster-pyodide-site;
-          ai-sampler = monster-ai-sampler;
-          ai-env = monster-ai-env;
-          default = monster-pyodide-site;
+          inherit lmfdb-database;
+          default = lmfdb-database;
         };
         
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            cargo
-            rustc
-            rustfmt
-            clippy
-            texlive.combined.scheme-full
-            pandoc
-            python3Packages.pygments
-            chromium
-            act
-            pkg-config
-            openssl
+          buildInputs = [
+            pythonEnv
+            pkgs.postgresql
+            pkgs.perf
+            pkgs.git
+            pkgs.jq
+            pkgs.act  # nektos/act for local GitHub Actions
           ];
           
           shellHook = ''
-            export CHROME_BIN=${pkgs.chromium}/bin/chromium
-            export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
-            export MISTRALRS_CACHE=$HOME/.cache/mistral.rs
-            
-            echo "Monster Walk Development Environment"
-            echo "===================================="
-            echo "Pure Rust AI with mistral.rs"
+            echo "Monster Group LMFDB Analysis Environment"
+            echo "========================================"
             echo ""
             echo "Available commands:"
-            echo "  cargo run --bin sample-with-mistralrs"
-            echo "  nix build .#paper-v2"
-            echo "  nix build .#pyodide-site"
+            echo "  python3 analyze_lmfdb_source.py"
+            echo "  python3 analyze_lmfdb_ast.py"
+            echo "  python3 analyze_lmfdb_bytecode.py"
+            echo "  ./trace_lmfdb_performance.sh"
+            echo "  act -j analyze-lmfdb  # Run GitHub Actions locally"
             echo ""
-            echo "Models cached in: $MISTRALRS_CACHE"
           '';
         };
       }

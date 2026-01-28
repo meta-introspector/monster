@@ -1,0 +1,108 @@
+name: LMFDB Hecke Analysis Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly
+  workflow_dispatch:
+
+jobs:
+  analyze-lmfdb:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Monster repo
+      uses: actions/checkout@v4
+      
+    - name: Checkout LMFDB
+      uses: actions/checkout@v4
+      with:
+        repository: LMFDB/lmfdb
+        path: lmfdb-source
+        
+    - name: Install Nix
+      uses: cachix/install-nix-action@v24
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+        
+    - name: Setup Cachix
+      uses: cachix/cachix-action@v12
+      with:
+        name: monster-group
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+        
+    - name: Phase 1 - Source Analysis
+      run: |
+        nix develop --command bash -c "
+          python3 analyze_lmfdb_source.py --all
+        "
+        
+    - name: Phase 2 - AST Analysis
+      run: |
+        nix develop --command bash -c "
+          python3 analyze_lmfdb_ast.py --all
+        "
+        
+    - name: Phase 3 - Bytecode Analysis
+      run: |
+        nix develop --command bash -c "
+          python3 analyze_lmfdb_bytecode.py --all
+        "
+        
+    - name: Phase 4 - Build LMFDB with Nix
+      run: |
+        nix build .#lmfdb-database
+        
+    - name: Phase 5 - Performance Tracing
+      run: |
+        nix develop --command bash -c "
+          ./trace_lmfdb_performance.sh
+        "
+        
+    - name: Phase 6 - Generate Hecke Shards
+      run: |
+        nix develop --command bash -c "
+          python3 generate_71_shards.py
+        "
+        
+    - name: Create Dataset Archive
+      run: |
+        tar -czf lmfdb-hecke-analysis.tar.gz lmfdb_hecke_analysis/
+        
+    - name: Upload to HuggingFace
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        pip install huggingface_hub
+        python3 << 'EOF'
+        from huggingface_hub import HfApi
+        api = HfApi()
+        api.upload_file(
+            path_or_fileobj="lmfdb-hecke-analysis.tar.gz",
+            path_in_repo="lmfdb-hecke-analysis.tar.gz",
+            repo_id="monster-group/lmfdb-hecke-analysis",
+            repo_type="dataset",
+        )
+        EOF
+        
+    - name: Generate Report
+      run: |
+        python3 generate_report.py > ANALYSIS_REPORT.md
+        
+    - name: Commit Results
+      run: |
+        git config user.name "Monster Bot"
+        git config user.email "bot@monster-group.io"
+        git add lmfdb_hecke_analysis/ ANALYSIS_REPORT.md
+        git commit -m "🔮 LMFDB Hecke Analysis - $(date +%Y-%m-%d)" || true
+        git push || true
+        
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      if: github.ref == 'refs/heads/main'
+      with:
+        tag_name: analysis-${{ github.run_number }}
+        files: |
+          lmfdb-hecke-analysis.tar.gz
+          ANALYSIS_REPORT.md
