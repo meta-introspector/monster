@@ -1,0 +1,3 @@
+# Brennen_Green - Page 01
+
+ As a researcher in the field of machine learning and artificial intelligence, I find it fascinating that a group is aiming to create a network specifically for Monsters in this paper. The concept of designing an AI system tailored for these fantastical entities could lead to some intriguing applications, such as creating narratives or predicting interactions in fictional worlds. It's an interesting blend of fantasy and technology that challenges the boundaries of what we traditionally consider a 'useful' application of AI. 
