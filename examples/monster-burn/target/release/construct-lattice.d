@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/examples/monster-burn/target/release/construct-lattice: /home/mdupont/experiments/monster/examples/monster-burn/src/bin/construct-lattice.rs /home/mdupont/experiments/monster/examples/monster-burn/src/lib.rs
