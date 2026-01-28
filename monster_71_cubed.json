@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "total_forms": 75,
+    "total_aspects": 75,
+    "items_per_form": 71,
+    "total_items": 399375,
+    "calculation": "75 forms \u00d7 71 items \u00d7 75 aspects = 399375"
+  },
+  "statistics": {
+    "total_items": 5041,
+    "prime_distribution": {
+      "71": 5041,
+      "2": 101301,
+      "3": 50539,
+      "5": 37934,
+      "7": 31662,
+      "11": 22181,
+      "13": 20328,
+      "17": 16510,
+      "19": 15582,
+      "23": 13457,
+      "29": 11050,
+      "31": 10683,
+      "41": 8282,
+      "47": 7380,
+      "59": 5981
+    },
+    "perfect_resonance_count": 307219,
+    "max_eigenvalue": 178954,
+    "min_eigenvalue": 0
+  },
+  "sample_forms": [
+    "binaries",
+    "shared_objects",
+    "websites",
+    "files",
+    "directories",
+    "processes",
+    "network_ports",
+    "git_commits",
+    "git_branches",
+    "git_tags"
+  ],
+  "note": "Full structure too large - use generator for complete data"
+}
