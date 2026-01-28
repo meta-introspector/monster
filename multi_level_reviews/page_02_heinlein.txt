@@ -1,0 +1,19 @@
+# Heinlein Inspiration - Page 02
+
+**Focus**: Practical engineering, TANSTAAFL, competence
+
+ The image shows a document with text that appears to be a list of parts or components, which could be part of an engineering project. Here is a breakdown of the content:
+
+- Lines 1-8: These lines seem to be referring to different types of bricks, with numbers indicating quantities. It lists "1 Brick," "2 Bricks," "3 Bricks," and so on up to "9 Bricks." This could indicate that there are instructions for building a structure from these bricks.
+
+- Line 9: There is a line labeled "TANSTAAFL - what's the real cost?" This refers to a concept known as TANSTAAFL (There Ain't No Such Thing As A Free Lunch), which suggests that every action has an equal and opposite reaction, and there are costs associated with everything. The question is posed in the context of the engineering project described below.
+
+- Line 10: This line lists "1 Brick," "2 Bricks," and "3 Bricks," but without additional context, it's unclear how these bricks might be used or what their relevance to TANSTAAFL is.
+
+- Lines 12-16: The text "6 Bricks" repeated twice, followed by "7 Bricks." This repetition could be a mistake or an error in the document.
+
+The rest of the page contains additional numbers indicating quantities of bricks ("1 Brick," "2 Bricks," "3 Bricks," "4 Bricks," "5 Bricks," and so on up to "9 Bricks").
+
+Regarding TANSTAAFL, one could interpret that the cost referred to here is not just monetary but also in terms of resources, time, and effort. When considering if this is competent engineering, it's important to look at the complexity of the project beyond the list of bricks, which would include the design of the structure, the method of assembly or construction, and how well the final product meets its intended function.
+
+From the image alone, without further context or information about the project, it's difficult to provide a comprehensive assessment of competence. However, a human could certainly build this if they have access to the necessary materials, understand the required process, and are able to allocate resources and time to complete the task. The question of cost in terms of practical engineering would depend on factors such as the design, the complexity of construction, and the availability of tools and resources. 

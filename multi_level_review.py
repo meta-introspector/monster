@@ -62,6 +62,38 @@ MUSES = {
     "peirce": {
         "focus": "Triadic semiotics, pragmatism, logic",
         "prompt": "You are Charles Sanders Peirce. Analyze the sign-object-interpretant relations. What's the pragmatic meaning? How do signs function here?"
+    },
+    "leary": {
+        "focus": "Consciousness expansion, reality tunnels, 8-circuit model",
+        "prompt": "You are Timothy Leary. What reality tunnel is this? Which circuit of consciousness? How does this expand the mind? SMI²LE!"
+    },
+    "pkd": {
+        "focus": "Reality, simulation, paranoia, what is real",
+        "prompt": "You are Philip K. Dick. Is this real or simulation? What's the underlying reality? Are we in VALIS? What's being hidden?"
+    },
+    "raw": {
+        "focus": "Maybe logic, Chapel Perilous, Discordianism",
+        "prompt": "You are Robert Anton Wilson. Apply maybe logic. What's the fnord? Is this Chapel Perilous? All hail Eris! What's the cosmic joke?"
+    },
+    "capra": {
+        "focus": "Physics meets mysticism, holism, interconnection",
+        "prompt": "You are Fritjof Capra. How does this connect physics and mysticism? What's the holistic view? The Tao of this system?"
+    },
+    "sagan": {
+        "focus": "Scientific rigor, wonder, cosmic perspective",
+        "prompt": "You are Carl Sagan. Is this extraordinary claim backed by extraordinary evidence? What's the cosmic significance? Billions and billions..."
+    },
+    "asimov": {
+        "focus": "Foundation, psychohistory, logic, prediction",
+        "prompt": "You are Isaac Asimov. Does this follow psychohistory? What are the Foundation principles? Can we predict the future with this?"
+    },
+    "bradbury": {
+        "focus": "Poetry of science, human emotion, metaphor",
+        "prompt": "You are Ray Bradbury. What's the poetry here? The human emotion? How does this touch the heart while reaching for stars?"
+    },
+    "heinlein": {
+        "focus": "Practical engineering, TANSTAAFL, competence",
+        "prompt": "You are Robert Heinlein. TANSTAAFL - what's the real cost? Is this competent engineering? Can a human actually build this?"
     }
 }
 
@@ -129,7 +161,8 @@ def main():
     print(f"🎓 Multi-Level Review System")
     print(f"📊 Reviewing {len(images)} pages")
     print(f"👥 {len(SCHOLARS)} scholars + {len(MUSES)} muses = {len(SCHOLARS) + len(MUSES)} perspectives\n")
-    print(f"🆕 NEW: Linus, RMS, Dawkins, Eco, Peirce\n")
+    print(f"🆕 Wave 1: Linus, RMS, Dawkins, Eco, Peirce")
+    print(f"🌌 Wave 2: Leary, PKD, RAW, Capra, Sagan, Asimov, Bradbury, Heinlein\n")
     
     for img in images:
         page_num = img.stem.replace('page-', '')

@@ -1,8 +1,8 @@
 # Multi-Level Review Index
 
-**Generated**: 2026-01-28T13:09:29.367110
+**Generated**: 2026-01-28T13:19:49.341188
 **Pages Reviewed**: 3
-**Perspectives**: 13
+**Perspectives**: 21
 
 ## Scholars (Critical Analysis)
 - **Mathematician**: Mathematical rigor, proof correctness, notation consistency
@@ -20,20 +20,28 @@
 - **Dawkins**: Memetic fitness, replication, evolution
 - **Eco**: Semiotics, interpretation, meaning
 - **Peirce**: Triadic semiotics, pragmatism, logic
+- **Leary**: Consciousness expansion, reality tunnels, 8-circuit model
+- **Pkd**: Reality, simulation, paranoia, what is real
+- **Raw**: Maybe logic, Chapel Perilous, Discordianism
+- **Capra**: Physics meets mysticism, holism, interconnection
+- **Sagan**: Scientific rigor, wonder, cosmic perspective
+- **Asimov**: Foundation, psychohistory, logic, prediction
+- **Bradbury**: Poetry of science, human emotion, metaphor
+- **Heinlein**: Practical engineering, TANSTAAFL, competence
 
 ## Reviews by Page
 
 ### Page 01
 - [Synthesis](page_01_synthesis.md)
 - Scholars: [mathematician](page_01_mathematician.txt), [computer_scientist](page_01_computer_scientist.txt), [group_theorist](page_01_group_theorist.txt), [ml_researcher](page_01_ml_researcher.txt)
-- Muses: [visionary](page_01_visionary.txt), [storyteller](page_01_storyteller.txt), [artist](page_01_artist.txt), [philosopher](page_01_philosopher.txt), [linus_torvalds](page_01_linus_torvalds.txt), [rms](page_01_rms.txt), [dawkins](page_01_dawkins.txt), [eco](page_01_eco.txt), [peirce](page_01_peirce.txt)
+- Muses: [visionary](page_01_visionary.txt), [storyteller](page_01_storyteller.txt), [artist](page_01_artist.txt), [philosopher](page_01_philosopher.txt), [linus_torvalds](page_01_linus_torvalds.txt), [rms](page_01_rms.txt), [dawkins](page_01_dawkins.txt), [eco](page_01_eco.txt), [peirce](page_01_peirce.txt), [leary](page_01_leary.txt), [pkd](page_01_pkd.txt), [raw](page_01_raw.txt), [capra](page_01_capra.txt), [sagan](page_01_sagan.txt), [asimov](page_01_asimov.txt), [bradbury](page_01_bradbury.txt), [heinlein](page_01_heinlein.txt)
 
 ### Page 02
 - [Synthesis](page_02_synthesis.md)
 - Scholars: [mathematician](page_02_mathematician.txt), [computer_scientist](page_02_computer_scientist.txt), [group_theorist](page_02_group_theorist.txt), [ml_researcher](page_02_ml_researcher.txt)
-- Muses: [visionary](page_02_visionary.txt), [storyteller](page_02_storyteller.txt), [artist](page_02_artist.txt), [philosopher](page_02_philosopher.txt), [linus_torvalds](page_02_linus_torvalds.txt), [rms](page_02_rms.txt), [dawkins](page_02_dawkins.txt), [eco](page_02_eco.txt), [peirce](page_02_peirce.txt)
+- Muses: [visionary](page_02_visionary.txt), [storyteller](page_02_storyteller.txt), [artist](page_02_artist.txt), [philosopher](page_02_philosopher.txt), [linus_torvalds](page_02_linus_torvalds.txt), [rms](page_02_rms.txt), [dawkins](page_02_dawkins.txt), [eco](page_02_eco.txt), [peirce](page_02_peirce.txt), [leary](page_02_leary.txt), [pkd](page_02_pkd.txt), [raw](page_02_raw.txt), [capra](page_02_capra.txt), [sagan](page_02_sagan.txt), [asimov](page_02_asimov.txt), [bradbury](page_02_bradbury.txt), [heinlein](page_02_heinlein.txt)
 
 ### Page 03
 - [Synthesis](page_03_synthesis.md)
 - Scholars: [mathematician](page_03_mathematician.txt), [computer_scientist](page_03_computer_scientist.txt), [group_theorist](page_03_group_theorist.txt), [ml_researcher](page_03_ml_researcher.txt)
-- Muses: [visionary](page_03_visionary.txt), [storyteller](page_03_storyteller.txt), [artist](page_03_artist.txt), [philosopher](page_03_philosopher.txt), [linus_torvalds](page_03_linus_torvalds.txt), [rms](page_03_rms.txt), [dawkins](page_03_dawkins.txt), [eco](page_03_eco.txt), [peirce](page_03_peirce.txt)
+- Muses: [visionary](page_03_visionary.txt), [storyteller](page_03_storyteller.txt), [artist](page_03_artist.txt), [philosopher](page_03_philosopher.txt), [linus_torvalds](page_03_linus_torvalds.txt), [rms](page_03_rms.txt), [dawkins](page_03_dawkins.txt), [eco](page_03_eco.txt), [peirce](page_03_peirce.txt), [leary](page_03_leary.txt), [pkd](page_03_pkd.txt), [raw](page_03_raw.txt), [capra](page_03_capra.txt), [sagan](page_03_sagan.txt), [asimov](page_03_asimov.txt), [bradbury](page_03_bradbury.txt), [heinlein](page_03_heinlein.txt)
