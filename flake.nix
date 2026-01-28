@@ -58,7 +58,7 @@
             
             # Document tools
             pkgs.pandoc
-            pkgs.poppler_utils  # pdftoppm
+            pkgs.poppler-utils  # pdftoppm
             pkgs.imagemagick
             pkgs.ghostscript
             pkgs.qpdf
