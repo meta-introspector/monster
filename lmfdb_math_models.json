@@ -1,0 +1,288 @@
+[
+  {
+    "name": "__init__",
+    "signature": "__init__(self)",
+    "complexity": 802,
+    "level": 22,
+    "operations": {
+      "Add": 17,
+      "Mult": 31,
+      "Pow": 124,
+      "Div": 626,
+      "Sub": 3
+    },
+    "mathematical_form": "exponential"
+  },
+  {
+    "name": "H",
+    "signature": "H(k, p)",
+    "complexity": 214,
+    "level": 2,
+    "operations": {
+      "Div": 30,
+      "Add": 25,
+      "Pow": 45,
+      "Mult": 65,
+      "Mod": 4,
+      "FloorDiv": 1,
+      "Sub": 31
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "__dimension_Sp6Z",
+    "signature": "__dimension_Sp6Z(wt)",
+    "complexity": 197,
+    "level": 56,
+    "operations": {
+      "Mod": 1,
+      "Mult": 53,
+      "Div": 7,
+      "Add": 50,
+      "Sub": 19,
+      "max": 1,
+      "Pow": 63
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "_dimension_Sp6Z",
+    "signature": "_dimension_Sp6Z(wt)",
+    "complexity": 194,
+    "level": 53,
+    "operations": {
+      "Mult": 53,
+      "Div": 7,
+      "Add": 50,
+      "Sub": 19,
+      "Pow": 63
+    },
+    "mathematical_form": "exponential"
+  },
+  {
+    "name": "code_snippets",
+    "signature": "code_snippets(self)",
+    "complexity": 190,
+    "level": 49,
+    "operations": {
+      "Add": 92,
+      "Div": 4
+    },
+    "mathematical_form": "rational"
+  },
+  {
+    "name": "render_by_label",
+    "signature": "render_by_label(label)",
+    "complexity": 120,
+    "level": 50,
+    "operations": {
+      "Mod": 23,
+      "Add": 27,
+      "sum": 8,
+      "Div": 17,
+      "Mult": 2,
+      "Sub": 1
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "make_E",
+    "signature": "make_E(self)",
+    "complexity": 120,
+    "level": 50,
+    "operations": {
+      "Pow": 6,
+      "FloorDiv": 2,
+      "Mod": 11,
+      "Add": 9,
+      "Mult": 8,
+      "Div": 3,
+      "Sub": 3
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "find_touching_centers",
+    "signature": "find_touching_centers(C1, C2, r, o)",
+    "complexity": 120,
+    "level": 50,
+    "operations": {
+      "Sub": 24,
+      "Div": 16,
+      "Add": 20,
+      "Mult": 25,
+      "Pow": 15
+    },
+    "mathematical_form": "exponential"
+  },
+  {
+    "name": "render_field_webpage",
+    "signature": "render_field_webpage(args)",
+    "complexity": 118,
+    "level": 48,
+    "operations": {
+      "Mod": 24,
+      "Add": 23,
+      "Pow": 1,
+      "Sub": 2,
+      "FloorDiv": 1,
+      "Mult": 5
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "hgcwa_code_download",
+    "signature": "hgcwa_code_download(void)",
+    "complexity": 107,
+    "level": 37,
+    "operations": {
+      "Add": 72,
+      "Mod": 1,
+      "Sub": 1
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "import_data",
+    "signature": "import_data(hmf_filename, fileprefix, ferrors, test)",
+    "complexity": 98,
+    "level": 28,
+    "operations": {
+      "Mod": 9,
+      "Add": 48,
+      "Sub": 4,
+      "sum": 1,
+      "abs": 2
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "paintCSNew",
+    "signature": "paintCSNew(width, height, xMax, yMax, xfactor, yfactor, ticlength, xMin, yMin, xoffset, dashedx, dashedy)",
+    "complexity": 96,
+    "level": 26,
+    "operations": {
+      "Add": 52,
+      "Mod": 1,
+      "Mult": 30,
+      "Sub": 8
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "find_curves",
+    "signature": "find_curves(field_label, min_norm, max_norm, label, outfilename, verbose, effort)",
+    "complexity": 92,
+    "level": 22,
+    "operations": {
+      "Add": 4,
+      "min": 2,
+      "Mod": 16,
+      "Pow": 15,
+      "Sub": 1
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "statistics",
+    "signature": "statistics(void)",
+    "complexity": 89,
+    "level": 19,
+    "operations": {
+      "Add": 46,
+      "sum": 3,
+      "max": 4,
+      "Sub": 10,
+      "Mod": 8,
+      "FloorDiv": 1,
+      "Pow": 6,
+      "Mult": 3
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "download_modular_curve_magma_str",
+    "signature": "download_modular_curve_magma_str(self, label)",
+    "complexity": 87,
+    "level": 17,
+    "operations": {
+      "Mod": 37,
+      "max": 1,
+      "Mult": 1,
+      "Add": 3
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "make_object",
+    "signature": "make_object(self, curve, endo, tama, ratpts, clus, galrep, nonsurj, is_curve)",
+    "complexity": 85,
+    "level": 15,
+    "operations": {
+      "Add": 23,
+      "Mult": 1,
+      "Mod": 22,
+      "Sub": 1
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "count_fields",
+    "signature": "count_fields(p, n, f, e, eopts)",
+    "complexity": 84,
+    "level": 14,
+    "operations": {
+      "Mult": 20,
+      "FloorDiv": 4,
+      "sum": 5,
+      "Add": 6,
+      "Div": 5,
+      "Pow": 11,
+      "Mod": 2,
+      "Sub": 11
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "paintSvgHolo",
+    "signature": "paintSvgHolo(Nmin, Nmax, kmin, kmax)",
+    "complexity": 84,
+    "level": 14,
+    "operations": {
+      "Add": 31,
+      "Mult": 22,
+      "Mod": 6,
+      "Sub": 6,
+      "Pow": 1,
+      "Div": 2
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "paintCSHolo",
+    "signature": "paintCSHolo(width, height, xMax, yMax, xfactor, yfactor, ticlength)",
+    "complexity": 83,
+    "level": 13,
+    "operations": {
+      "Add": 56,
+      "Mod": 1,
+      "Mult": 11,
+      "Sub": 8
+    },
+    "mathematical_form": "modular_arithmetic"
+  },
+  {
+    "name": "render_field_webpage",
+    "signature": "render_field_webpage(args)",
+    "complexity": 81,
+    "level": 11,
+    "operations": {
+      "Add": 15,
+      "Mod": 11,
+      "Mult": 1,
+      "Sub": 1,
+      "Pow": 2
+    },
+    "mathematical_form": "modular_arithmetic"
+  }
+]
