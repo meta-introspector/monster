@@ -1,0 +1,167 @@
+{
+  "total_functions": 500,
+  "converted": 20,
+  "conversion_rate": 0.04,
+  "functions": [
+    {
+      "python_name": "__init__",
+      "python_file": "lmfdb/utils/completeness.py",
+      "python_line": 1076,
+      "rust_code": "pub fn __init__(self: i64) -> f64 {\n    // Arithmetic\n    0\n}",
+      "complexity": 802,
+      "level": 22
+    },
+    {
+      "python_name": "H",
+      "python_file": "lmfdb/siegel_modular_forms/siegel_core.py",
+      "python_line": 348,
+      "rust_code": "pub fn H(k: i64, p: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 214,
+      "level": 2
+    },
+    {
+      "python_name": "__dimension_Sp6Z",
+      "python_file": "lmfdb/siegel_modular_forms/dimensions.py",
+      "python_line": 310,
+      "rust_code": "pub fn __dimension_Sp6Z(wt: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 197,
+      "level": 56
+    },
+    {
+      "python_name": "_dimension_Sp6Z",
+      "python_file": "lmfdb/siegel_modular_forms/siegel_core.py",
+      "python_line": 59,
+      "rust_code": "pub fn _dimension_Sp6Z(wt: i64) -> f64 {\n    // Arithmetic\n    0\n}",
+      "complexity": 194,
+      "level": 53
+    },
+    {
+      "python_name": "code_snippets",
+      "python_file": "lmfdb/groups/abstract/web_groups.py",
+      "python_line": 2872,
+      "rust_code": "pub fn code_snippets(self: i64) -> f64 {\n    // Arithmetic\n    0\n}",
+      "complexity": 190,
+      "level": 49
+    },
+    {
+      "python_name": "render_by_label",
+      "python_file": "lmfdb/sato_tate_groups/main.py",
+      "python_line": 857,
+      "rust_code": "pub fn render_by_label(label: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 120,
+      "level": 50
+    },
+    {
+      "python_name": "make_E",
+      "python_file": "lmfdb/ecnf/WebEllipticCurve.py",
+      "python_line": 339,
+      "rust_code": "pub fn make_E(self: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 120,
+      "level": 50
+    },
+    {
+      "python_name": "find_touching_centers",
+      "python_file": "lmfdb/groups/abstract/circles.py",
+      "python_line": 206,
+      "rust_code": "pub fn find_touching_centers(C1: i64, C2: i64, r: i64, o: i64) -> f64 {\n    // Arithmetic\n    0\n}",
+      "complexity": 120,
+      "level": 50
+    },
+    {
+      "python_name": "render_field_webpage",
+      "python_file": "lmfdb/number_fields/number_field.py",
+      "python_line": 420,
+      "rust_code": "pub fn render_field_webpage(args: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 118,
+      "level": 48
+    },
+    {
+      "python_name": "hgcwa_code_download",
+      "python_file": "lmfdb/higher_genus_w_automorphisms/main.py",
+      "python_line": 1146,
+      "rust_code": "pub fn hgcwa_code_download() -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 107,
+      "level": 37
+    },
+    {
+      "python_name": "import_data",
+      "python_file": "scripts/hmf/import_hmf_data_new_Galois_squarefull_forms.py",
+      "python_line": 47,
+      "rust_code": "pub fn import_data(hmf_filename: i64, fileprefix: i64, ferrors: i64, test: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 98,
+      "level": 28
+    },
+    {
+      "python_name": "paintCSNew",
+      "python_file": "lmfdb/lfunctions/LfunctionPlot.py",
+      "python_line": 372,
+      "rust_code": "pub fn paintCSNew(width: i64, height: i64, xMax: i64, yMax: i64, xfactor: i64, yfactor: i64, ticlength: i64, xMin: i64, yMin: i64, xoffset: i64, dashedx: i64, dashedy: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 96,
+      "level": 26
+    },
+    {
+      "python_name": "find_curves",
+      "python_file": "scripts/ecnf/hmf_check_find.py",
+      "python_line": 484,
+      "rust_code": "pub fn find_curves(field_label: i64, min_norm: i64, max_norm: i64, label: i64, outfilename: i64, verbose: i64, effort: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 92,
+      "level": 22
+    },
+    {
+      "python_name": "statistics",
+      "python_file": "lmfdb/number_fields/number_field.py",
+      "python_line": 267,
+      "rust_code": "pub fn statistics() -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 89,
+      "level": 19
+    },
+    {
+      "python_name": "download_modular_curve_magma_str",
+      "python_file": "lmfdb/modular_curves/main.py",
+      "python_line": 436,
+      "rust_code": "pub fn download_modular_curve_magma_str(self: i64, label: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 87,
+      "level": 17
+    },
+    {
+      "python_name": "make_object",
+      "python_file": "lmfdb/genus2_curves/web_g2c.py",
+      "python_line": 842,
+      "rust_code": "pub fn make_object(self: i64, curve: i64, endo: i64, tama: i64, ratpts: i64, clus: i64, galrep: i64, nonsurj: i64, is_curve: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 85,
+      "level": 15
+    },
+    {
+      "python_name": "count_fields",
+      "python_file": "lmfdb/local_fields/main.py",
+      "python_line": 689,
+      "rust_code": "pub fn count_fields(p: i64, n: i64, f: i64, e: i64, eopts: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 84,
+      "level": 14
+    },
+    {
+      "python_name": "paintSvgHolo",
+      "python_file": "lmfdb/lfunctions/LfunctionPlot.py",
+      "python_line": 556,
+      "rust_code": "pub fn paintSvgHolo(Nmin: i64, Nmax: i64, kmin: i64, kmax: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 84,
+      "level": 14
+    },
+    {
+      "python_name": "paintCSHolo",
+      "python_file": "lmfdb/lfunctions/LfunctionPlot.py",
+      "python_line": 676,
+      "rust_code": "pub fn paintCSHolo(width: i64, height: i64, xMax: i64, yMax: i64, xfactor: i64, yfactor: i64, ticlength: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 83,
+      "level": 13
+    },
+    {
+      "python_name": "render_field_webpage",
+      "python_file": "lmfdb/local_fields/main.py",
+      "python_line": 893,
+      "rust_code": "pub fn render_field_webpage(args: i64) -> i64 {\n    // Modular arithmetic\n    let result = /* operations */ 0;\n    result % 71\n}",
+      "complexity": 81,
+      "level": 11
+    }
+  ]
+}
