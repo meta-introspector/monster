@@ -1,0 +1,23 @@
+[package]
+name = "lmfdb-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["auto-initialize"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+
+# For gradual lifting
+num-bigint = "0.4"
+num-traits = "0.2"
+rug = "1.24"  # GMP bindings for number theory
+
+[lib]
+name = "lmfdb_rust"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "lift-hilbert"
+path = "src/bin/lift_hilbert.rs"
