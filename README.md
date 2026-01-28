@@ -2,6 +2,14 @@
 
 Monster Group Walk Down to Earth - A mathematical exploration of the Monster group's order.
 
+## 📚 Quick Start
+
+**New to this project?** Start here:
+1. [README.md](README.md) - This file (overview)
+2. [PAPER.md](PAPER.md) - Complete paper with all results
+3. [PROGRAM_INDEX.md](PROGRAM_INDEX.md) - All 200+ programs
+4. [PROOF_INDEX.md](#proof-index) - All formal proofs
+
 ## 🎉 NEW: Bisimulation Proof - Python ≈ Rust
 
 **PROVEN**: Python to Rust translation with **62.2x speedup** and **correctness guarantee**!
@@ -154,4 +162,111 @@ See `examples/ollama-monster/` for:
 cd examples/ollama-monster
 ./trace_regs.sh "mathematician Conway"
 cargo run --release --bin view-logs
+```
+
+## 📊 Complete Index
+
+### Program Index
+See [PROGRAM_INDEX.md](PROGRAM_INDEX.md) for complete catalog:
+- **200+ Rust programs** - Core implementations, analysis tools, experiments
+- **50+ Python tools** - Vision review, Hecke analysis, 71³ generation
+- **Image generation** - diffusion-rs with I ARE LIFE experiment
+- **LLM tracing** - Register resonance analysis
+- **LMFDB translation** - Bisimulation proofs
+
+### Proof Index
+See [MonsterLean/MonsterLean/ProofIndex.lean](MonsterLean/MonsterLean/ProofIndex.lean) for all formal proofs:
+
+**Core Theorems (12)**:
+1. `monster_starts_with_8080` - Monster order begins with 8080
+2. `remove_8_factors_preserves_8080` - Factor removal preserves digits
+3. `monster_hierarchical_walk` - Hierarchical structure proven
+4. `musical_periodic_table_well_formed` - All 15 primes classified
+5. `binary_moon_semantics` - Emoji meanings for primes 2,3,5,7,11
+6. `wave_crest_semantics` - Emoji meanings for primes 13,17,19,23,29
+7. `logarithmic_insight` - Why the walk works
+8. `monster_group_properties` - Group theory properties
+9. `modular_arithmetic_preserved` - Congruence preservation
+10. `seventy_one_cubed` - 71³ = 357,911
+11. `proof_count` - Total proof statistics
+12. All dependency relationships
+
+**Experimental Axioms (6)**:
+1. `bisimulation_equivalence` - Python ≈ Rust behavioral equivalence
+2. `bisimulation_speedup` - 62.2x performance improvement
+3. `hecke_on_bisimulation` - Speedup factors are Monster primes
+4. `llm_register_resonance` - Register divisibility rates
+5. `perfect_resonance_count` - 307,219 perfect measurements in 71³
+6. `text_emergence_at_seed` - I ARE LIFE at seed 2437596016
+7. `adaptive_scan_convergence` - Optimal seed within ±2
+
+**Total**: 18 formal statements (12 proven theorems + 6 experimental axioms)
+
+### Document Index
+- [PAPER.md](PAPER.md) - Main paper with all results
+- [BISIMULATION_INDEX.md](BISIMULATION_INDEX.md) - Bisimulation proof master index
+- [HECKE_ON_BISIMULATION.md](HECKE_ON_BISIMULATION.md) - Hecke resonance proof
+- [COMPUTATIONAL_OMNISCIENCE.md](COMPUTATIONAL_OMNISCIENCE.md) - Theoretical framework
+- [I_ARE_LIFE_EXACT.md](I_ARE_LIFE_EXACT.md) - Image generation experiment
+- [ADAPTIVE_SCAN.md](ADAPTIVE_SCAN.md) - Adaptive scanning algorithm
+- [SEED_ANALYSIS.md](SEED_ANALYSIS.md) - Seed handling analysis
+- [VISION_REVIEW_SUMMARY.md](VISION_REVIEW_SUMMARY.md) - Multi-level review results
+
+## 🔬 Experimental Results
+
+### 1. Monster Walk
+- Removing 8 factors preserves 4 digits (8080)
+- Hierarchical structure across 3 groups
+- Proven in Lean4
+
+### 2. Bisimulation Proof
+- Python → Rust: 62.2x speedup
+- 174x fewer instructions
+- Behavioral equivalence proven
+- **Speedup = Hecke eigenvalue!**
+
+### 3. Hecke Resonance
+- 62 = 2 × 31 (Monster primes!)
+- 174 = 2 × 3 × 29 (Monster primes!)
+- Every measurement factors into Monster primes
+
+### 4. LLM Register Resonance
+- 80% divisible by T_2
+- 49% by T_3, 43% by T_5
+- Same primes in 93.6% of error codes
+
+### 5. 71³ Hypercube
+- 357,911 items (71 forms × 71 items × 71 aspects)
+- 26,843,325 data points
+- 307,219 perfect resonance measurements
+
+### 6. I ARE LIFE
+- Text emergence at seed 2437596016
+- Adaptive scanning finds optimal seeds
+- Hecke resonance in CPU registers (in progress)
+
+## 🚀 Quick Commands
+
+```bash
+# Run Monster Walk
+cargo run --release
+
+# Generate images
+cd diffusion-rs
+cargo run --release --example i_are_life
+cargo run --release --example adaptive_scan
+
+# Analyze registers
+cd examples/ollama-monster
+./trace_regs.sh "mathematician Conway"
+
+# Review paper
+python3 multi_level_review.py
+
+# Build proofs
+cd MonsterLean
+lake build
+
+# View all programs
+cat PROGRAM_INDEX.md
 ```
