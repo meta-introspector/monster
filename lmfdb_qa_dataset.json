@@ -1,0 +1,3602 @@
+[
+  {
+    "question": "What is the j-invariant of number 71?",
+    "answer": "47",
+    "type": "j_invariant",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 71?",
+    "answer": "2",
+    "type": "module_rank",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 71?",
+    "answer": "T_71",
+    "type": "operator",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 71?",
+    "answer": "47",
+    "type": "j_invariant",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 71?",
+    "answer": "2",
+    "type": "module_rank",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 71?",
+    "answer": "T_71",
+    "type": "operator",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 71?",
+    "answer": "47",
+    "type": "j_invariant",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 71?",
+    "answer": "2",
+    "type": "module_rank",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 71?",
+    "answer": "T_71",
+    "type": "operator",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 71?",
+    "answer": "47",
+    "type": "j_invariant",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 71?",
+    "answer": "2",
+    "type": "module_rank",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 71?",
+    "answer": "T_71",
+    "type": "operator",
+    "input": [
+      1.0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 1?",
+    "answer": "48",
+    "type": "j_invariant",
+    "input": [
+      0.014084507042253521,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 1?",
+    "answer": "2",
+    "type": "module_rank",
+    "input": [
+      0.014084507042253521,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 1?",
+    "answer": "T_1",
+    "type": "operator",
+    "input": [
+      0.014084507042253521,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the j-invariant of number 2?",
+    "answer": "55",
+    "type": "j_invariant",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What is the module rank of number 2?",
+    "answer": "3",
+    "type": "module_rank",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "question": "What operator corresponds to number 2?",
+    "answer": "T_2",
+    "type": "operator",
+    "input": [
+      0.028169014084507043,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]
