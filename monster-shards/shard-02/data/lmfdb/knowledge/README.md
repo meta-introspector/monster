@@ -1,0 +1,4 @@
+# LMFDB Module: knowledge
+Primary Shard: 2
+Prime Resonances: [(2, 0.41630901287553645), (3, 0.12446351931330472), (5, 0.07725321888412018), (19, 0.004291845493562232), (41, 0.004291845493562232), (31, 0.004291845493562232), (23, 0.004291845493562232), (7, 0.004291845493562232)]
+Source: "/mnt/data1/nix/source/github/meta-introspector/lmfdb/lmfdb/knowledge"
