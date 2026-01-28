@@ -3,3 +3,4 @@ perf_traces/*.script
 .lake/
 result
 *.o
+*.data*

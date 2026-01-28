@@ -1,0 +1,4 @@
+../../gmp-src/tests/misc.c: In function ‘seed_from_urandom’:
+../../gmp-src/tests/misc.c:102:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  102 |   fread (buf, 1, 6, fs);
+      |   ^~~~~~~~~~~~~~~~~~~~~
