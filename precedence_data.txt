@@ -1,0 +1,85 @@
+=== CROSS-SYSTEM PRECEDENCE ANALYSIS ===
+
+1. SPECTRAL (Lean2)
+Precedence levels found:
+infixr ` /\ ` := and
+infixr ` ∧ ` := and
+60:  ∘ₛ 
+65:  ∧→ 
+65:  ⋀→ 
+71:  ** 
+73:  • 
+75:  ⬝egm 
+75:  ⬝egmp 
+75:  ⬝epgm 
+75:  ∘gm 
+75:  ∘lm 
+75:  ⬝lm 
+75:  ⬝lmp 
+75:  ⬝plm 
+78:  ∧~ 
+78:  ⋀~ 
+80:  ∧≃ 
+80:  ⋀≃ 
+
+Count by level:
+      2 30
+      2 35
+      1 60
+      2 65
+      1 71
+      1 73
+     11 75
+      2 78
+      2 80
+
+2. LEAN4 MATHLIB
+Searching for precedence 71:
+.lake/packages/mathlib/Mathlib/Tactic/ModCases.lean:186:syntax "mod_cases " (atomic(binderIdent ":"))? term:71 " % " num : tactic
+.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/SchwartzZippel.lean:59:local notation:70 s:70 " ^^ " n:71 => piFinset fun i : Fin n ↦ s i
+
+Common precedence levels:
+     76 25
+     64 50
+     33 80
+     33 70
+     18 100
+     15 65
+     14 81
+     12 60
+     11 26
+      9 10
+      6 67
+      5 90
+      4 75
+      4 74
+      3 73
+      3 51
+      3 15
+      3 0
+      2 82
+      2 72
+
+3. COQ STDLIB
+Coq not found
+
+4. MONSTER PRIME PRECEDENCE COUNTS
+Prime | Spectral | Lean4 | Coq
+------|----------|-------|-----
+    2 |        0 |     1 |   0
+    3 |        0 |     3 |   0
+    5 |        0 |     0 |   0
+    7 |        0 |     0 |   0
+   11 |        0 |     0 |   0
+   13 |        0 |     0 |   0
+   17 |        0 |     0 |   0
+   19 |        0 |     1 |   0
+   23 |        0 |     0 |   0
+   29 |        0 |     1 |   0
+   31 |        0 |     0 |   0
+   41 |        0 |     0 |   0
+   47 |        0 |     0 |   0
+   59 |        0 |     0 |   0
+   71 |        1 |     2 |   0
+
+=== SUMMARY ===
