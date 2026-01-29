@@ -1,0 +1,15 @@
+digraph Operations71 {
+  rankdir=LR;
+  node [shape=box];
+
+  precedence_71 [label="Precedence 71"];
+  graded_mul [label="Graded Multiplication"];
+  monster_primes [label="Monster Primes"];
+  resonance [label="Resonance Score"];
+  composition [label="Categorical Composition"];
+
+  precedence_71 -> graded_mul [label="defines"];
+  graded_mul -> monster_primes [label="extracts"];
+  monster_primes -> resonance [label="computes"];
+  graded_mul -> composition [label="enables"];
+}
