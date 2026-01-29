@@ -1,0 +1,127 @@
+name: Mirror Artifacts to HuggingFace Datasets
+
+on:
+  workflow_run:
+    workflows: ["Monster Pipeline - Review + ZK-ML + HuggingFace", "Lean Action CI", "Build Monster Walk Paper and WASM", "LMFDB Hecke Analysis Pipeline"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Workflow run ID to mirror'
+        required: true
+
+jobs:
+  mirror-to-hf:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: pip install huggingface_hub pandas pyarrow
+    
+    - name: Download artifacts
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        RUN_ID="${{ github.event.workflow_run.id || github.event.inputs.run_id }}"
+        echo "Downloading artifacts from run $RUN_ID"
+        
+        mkdir -p artifacts
+        cd artifacts
+        gh run download $RUN_ID || echo "No artifacts or download failed"
+        
+        # Flatten directory structure
+        find . -type f -name "*.parquet" -exec mv {} . \;
+        find . -type f -name "*.json" -exec mv {} . \;
+        find . -type f -name "*.md" -exec mv {} . \;
+        find . -type f -name "*.pdf" -exec mv {} . \;
+        find . -type f -name "*.html" -exec mv {} . \;
+        
+        # Remove empty directories
+        find . -type d -empty -delete
+        
+        ls -lh
+    
+    - name: Create dataset metadata
+      run: |
+        cd artifacts
+        python3 << 'EOF'
+        import json
+        import os
+        from datetime import datetime
+        
+        metadata = {
+            "workflow_run_id": "${{ github.event.workflow_run.id || github.event.inputs.run_id }}",
+            "workflow_name": "${{ github.event.workflow_run.name || 'manual' }}",
+            "commit_sha": "${{ github.sha }}",
+            "timestamp": datetime.now().isoformat(),
+            "files": []
+        }
+        
+        for f in os.listdir('.'):
+            if os.path.isfile(f):
+                metadata["files"].append({
+                    "name": f,
+                    "size": os.path.getsize(f)
+                })
+        
+        with open('artifact_metadata.json', 'w') as fp:
+            json.dump(metadata, fp, indent=2)
+        
+        print(json.dumps(metadata, indent=2))
+        EOF
+    
+    - name: Upload to HuggingFace
+      if: env.HF_TOKEN != ''
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        cd artifacts
+        
+        if [ -z "$(ls -A)" ]; then
+          echo "No artifacts to upload"
+          exit 0
+        fi
+        
+        huggingface-cli login --token "$HF_TOKEN"
+        
+        REPOS=("introspector/data-moonshine" "meta-introspector/monster-perf-proofs")
+        TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+        
+        for REPO in "${REPOS[@]}"; do
+          echo "📤 Uploading to $REPO"
+          
+          for file in *; do
+            if [ -f "$file" ]; then
+              # Add timestamp prefix to avoid overwrites
+              TARGET="artifacts/${TIMESTAMP}_${file}"
+              echo "  → $file as $TARGET"
+              huggingface-cli upload "$REPO" "$file" "$TARGET" --repo-type dataset || echo "Failed: $file"
+            fi
+          done
+          
+          echo "✓ $REPO complete"
+        done
+    
+    - name: Summary
+      run: |
+        echo "## 📦 Artifact Mirror Complete" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Workflow" >> $GITHUB_STEP_SUMMARY
+        echo "- Run ID: ${{ github.event.workflow_run.id || github.event.inputs.run_id }}" >> $GITHUB_STEP_SUMMARY
+        echo "- Name: ${{ github.event.workflow_run.name || 'manual' }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Files Mirrored" >> $GITHUB_STEP_SUMMARY
+        cd artifacts 2>/dev/null && ls -lh | tail -n +2 | awk '{print "- " $9 " (" $5 ")"}' >> $GITHUB_STEP_SUMMARY || echo "- No files" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Datasets" >> $GITHUB_STEP_SUMMARY
+        echo "- [introspector/data-moonshine](https://huggingface.co/datasets/introspector/data-moonshine)" >> $GITHUB_STEP_SUMMARY
+        echo "- [meta-introspector/monster-perf-proofs](https://huggingface.co/datasets/meta-introspector/monster-perf-proofs)" >> $GITHUB_STEP_SUMMARY
