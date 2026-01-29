@@ -1,0 +1,2125 @@
+[
+  {
+    "repo": "DFTK.jl",
+    "file": "src/fft.jl",
+    "score": 1538,
+    "size": 14960,
+    "matches": {
+      "representation": 3,
+      "fourier": 29,
+      "fft": 255,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.230789"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/PlaneWaveBasis.jl",
+    "score": 630,
+    "size": 29124,
+    "matches": {
+      "representation": 1,
+      "fourier": 14,
+      "fft": 101,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.231076"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/nonlocal.jl",
+    "score": 576,
+    "size": 15540,
+    "matches": {
+      "group": 65,
+      "fourier": 5,
+      "transform": 4
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233939"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/symmetry.jl",
+    "score": 534,
+    "size": 23277,
+    "matches": {
+      "representation": 1,
+      "group": 33,
+      "fourier": 15,
+      "eigenvalue": 4,
+      "orthogonal": 3,
+      "fft": 15,
+      "transform": 5
+    },
+    "match_count": 7,
+    "timestamp": "2026-01-29T09:35:15.230681"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/local.jl",
+    "score": 383,
+    "size": 8520,
+    "matches": {
+      "group": 20,
+      "fourier": 21,
+      "fft": 11
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233388"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/operators.jl",
+    "score": 383,
+    "size": 6685,
+    "matches": {
+      "representation": 1,
+      "fourier": 38,
+      "fft": 14
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.234031"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKGenericLinearAlgebraExt/ctfft.jl",
+    "score": 356,
+    "size": 24570,
+    "matches": {
+      "fourier": 3,
+      "fft": 56,
+      "transform": 13
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.230233"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKGenericLinearAlgebraExt/DFTKGenericLinearAlgebraExt.jl",
+    "score": 340,
+    "size": 3269,
+    "matches": {
+      "fourier": 5,
+      "fft": 56,
+      "transform": 5
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.230070"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/xc.jl",
+    "score": 317,
+    "size": 23762,
+    "matches": {
+      "group": 14,
+      "fourier": 12,
+      "fft": 21,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.233300"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/workarounds/forwarddiff_rules.jl",
+    "score": 307,
+    "size": 15519,
+    "matches": {
+      "group": 8,
+      "eigenvalue": 6,
+      "orthogonal": 2,
+      "fft": 37,
+      "transform": 1
+    },
+    "match_count": 5,
+    "timestamp": "2026-01-29T09:35:15.232719"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/Hamiltonian.jl",
+    "score": 299,
+    "size": 11277,
+    "matches": {
+      "group": 2,
+      "fourier": 26,
+      "fft": 15
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233553"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/PspHgh.jl",
+    "score": 252,
+    "size": 9406,
+    "matches": {
+      "fourier": 31,
+      "transform": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226211"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/anyonic.jl",
+    "score": 250,
+    "size": 6902,
+    "matches": {
+      "fourier": 18,
+      "orthogonal": 1,
+      "fft": 20
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233810"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "src/Extras/fftGeneric.jl",
+    "score": 225,
+    "size": 3635,
+    "matches": {
+      "fourier": 7,
+      "fft": 21,
+      "transform": 16
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.236951"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/occupation.jl",
+    "score": 217,
+    "size": 10058,
+    "matches": {
+      "eigenvalue": 31
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.231369"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/PspUpf.jl",
+    "score": 214,
+    "size": 10363,
+    "matches": {
+      "fourier": 25,
+      "fft": 2,
+      "transform": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.225410"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/Kpoint.jl",
+    "score": 208,
+    "size": 4451,
+    "matches": {
+      "fourier": 6,
+      "fft": 32
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.230417"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/SymOp.jl",
+    "score": 208,
+    "size": 3883,
+    "matches": {
+      "group": 24,
+      "fourier": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.231452"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/transfer.jl",
+    "score": 200,
+    "size": 10610,
+    "matches": {
+      "fourier": 10,
+      "fft": 24
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.230864"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/density_methods.jl",
+    "score": 196,
+    "size": 11494,
+    "matches": {
+      "group": 13,
+      "fourier": 6,
+      "fft": 8,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.231536"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/eigen/lobpcg_hyper_impl.jl",
+    "score": 189,
+    "size": 20836,
+    "matches": {
+      "eigenvalue": 1,
+      "orthogonal": 29,
+      "transform": 2
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.232611"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/discretisation.jl",
+    "score": 181,
+    "size": 13365,
+    "matches": {
+      "representation": 2,
+      "fourier": 11,
+      "eigenvalue": 8,
+      "fft": 1,
+      "transform": 2,
+      "spectrum": 2
+    },
+    "match_count": 6,
+    "timestamp": "2026-01-29T09:35:15.228998"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/response/chi0.jl",
+    "score": 181,
+    "size": 28915,
+    "matches": {
+      "group": 1,
+      "eigenvalue": 8,
+      "orthogonal": 7,
+      "fft": 15
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.233115"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/mixing.jl",
+    "score": 181,
+    "size": 12880,
+    "matches": {
+      "fourier": 16,
+      "eigenvalue": 2,
+      "fft": 7,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.235164"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/band_structure.jl",
+    "score": 177,
+    "size": 14039,
+    "matches": {
+      "group": 10,
+      "eigenvalue": 13,
+      "orthogonal": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.234243"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKPlotsExt.jl",
+    "score": 168,
+    "size": 7553,
+    "matches": {
+      "eigenvalue": 24
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.229841"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/NormConservingPsp.jl",
+    "score": 168,
+    "size": 8116,
+    "matches": {
+      "fourier": 20,
+      "transform": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234518"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/external/wannier_shared.jl",
+    "score": 154,
+    "size": 13274,
+    "matches": {
+      "fourier": 8,
+      "eigenvalue": 4,
+      "fft": 10,
+      "transform": 3
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.235554"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/self_consistent_field.jl",
+    "score": 141,
+    "size": 26215,
+    "matches": {
+      "character": 1,
+      "fourier": 3,
+      "eigenvalue": 13,
+      "spectral": 1,
+      "orthogonal": 1,
+      "spectrum": 1
+    },
+    "match_count": 6,
+    "timestamp": "2026-01-29T09:35:15.229518"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/occupation.jl",
+    "score": 139,
+    "size": 15272,
+    "matches": {
+      "eigenvalue": 17,
+      "fft": 4
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226020"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/fourier_transforms.jl",
+    "score": 138,
+    "size": 1567,
+    "matches": {
+      "fft": 26,
+      "transform": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.225694"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/elements.jl",
+    "score": 136,
+    "size": 14554,
+    "matches": {
+      "fourier": 17
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.231293"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/response/hessian.jl",
+    "score": 136,
+    "size": 17174,
+    "matches": {
+      "representation": 1,
+      "eigenvalue": 16,
+      "fft": 3
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.232847"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/hartree.jl",
+    "score": 135,
+    "size": 3522,
+    "matches": {
+      "fourier": 9,
+      "fft": 12,
+      "frequency": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233656"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/input_output.jl",
+    "score": 128,
+    "size": 17364,
+    "matches": {
+      "representation": 4,
+      "eigenvalue": 6,
+      "fft": 10
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.231191"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/compute_fft_size.jl",
+    "score": 110,
+    "size": 1786,
+    "matches": {
+      "fft": 22
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227122"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/dos.jl",
+    "score": 109,
+    "size": 10400,
+    "matches": {
+      "fourier": 2,
+      "eigenvalue": 11,
+      "orthogonal": 2,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.234408"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/self_consistent_field.jl",
+    "score": 107,
+    "size": 11953,
+    "matches": {
+      "representation": 1,
+      "eigenvalue": 14
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.235421"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/transfer.jl",
+    "score": 106,
+    "size": 4694,
+    "matches": {
+      "fourier": 7,
+      "fft": 10
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.225190"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/external/spglib.jl",
+    "score": 104,
+    "size": 3511,
+    "matches": {
+      "group": 13
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.235453"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/compute_density.jl",
+    "score": 100,
+    "size": 6530,
+    "matches": {
+      "fourier": 1,
+      "eigenvalue": 7,
+      "fft": 7,
+      "transform": 2
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.226853"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/elements.jl",
+    "score": 96,
+    "size": 4897,
+    "matches": {
+      "fourier": 12
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225674"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/PspLinComb.jl",
+    "score": 96,
+    "size": 6486,
+    "matches": {
+      "fourier": 12
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225822"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "ext/ApproxFunDualNumbersExt.jl",
+    "score": 96,
+    "size": 4245,
+    "matches": {
+      "fourier": 1,
+      "transform": 22
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.236870"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/NumberTypeTest.jl",
+    "score": 92,
+    "size": 3794,
+    "matches": {
+      "fourier": 7,
+      "orthogonal": 1,
+      "fft": 6
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.236353"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/compute_bands.jl",
+    "score": 91,
+    "size": 9668,
+    "matches": {
+      "eigenvalue": 13
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226534"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/PlaneWaveBasis.jl",
+    "score": 90,
+    "size": 6686,
+    "matches": {
+      "fft": 18
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225329"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Periodic1.jl",
+    "score": 90,
+    "size": 1124,
+    "matches": {
+      "representation": 2,
+      "fourier": 9
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.236629"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/periodic_problems.jl",
+    "score": 88,
+    "size": 16162,
+    "matches": {
+      "character": 1,
+      "group": 1,
+      "fourier": 1,
+      "eigenvalue": 2,
+      "transform": 9,
+      "spectrum": 4
+    },
+    "match_count": 6,
+    "timestamp": "2026-01-29T09:35:15.229322"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/densities.jl",
+    "score": 87,
+    "size": 6818,
+    "matches": {
+      "fourier": 1,
+      "fft": 15,
+      "transform": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.230469"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/Model.jl",
+    "score": 87,
+    "size": 20912,
+    "matches": {
+      "group": 6,
+      "eigenvalue": 1,
+      "transform": 8
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.231800"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/publications/2022_cazalis.jl",
+    "score": 86,
+    "size": 2179,
+    "matches": {
+      "group": 1,
+      "fourier": 8,
+      "fft": 2,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.228826"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/energy_orbital_eigenvalues.jl",
+    "score": 84,
+    "size": 1962,
+    "matches": {
+      "eigenvalue": 12
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225849"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/common/spherical_harmonics.jl",
+    "score": 82,
+    "size": 2930,
+    "matches": {
+      "harmonic": 7,
+      "orthogonal": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.232341"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "src/ApproxFun.jl",
+    "score": 79,
+    "size": 2846,
+    "matches": {
+      "fourier": 1,
+      "orthogonal": 2,
+      "fft": 7,
+      "transform": 6
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.236904"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/tutorialmath.jl",
+    "score": 76,
+    "size": 13508,
+    "matches": {
+      "eigenvalue": 10,
+      "spectrum": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.229102"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKJLD2Ext.jl",
+    "score": 74,
+    "size": 6519,
+    "matches": {
+      "group": 2,
+      "eigenvalue": 4,
+      "fft": 6
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.229913"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/external/spglib.jl",
+    "score": 72,
+    "size": 3648,
+    "matches": {
+      "group": 9
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227561"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/todict.jl",
+    "score": 71,
+    "size": 8195,
+    "matches": {
+      "eigenvalue": 8,
+      "fft": 3
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226284"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/compute_jacobian_eigen.jl",
+    "score": 70,
+    "size": 3461,
+    "matches": {
+      "eigenvalue": 10
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226467"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/analysing_scf_convergence.jl",
+    "score": 70,
+    "size": 5973,
+    "matches": {
+      "eigenvalue": 10
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228616"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/forwarddiff/geometry.jl",
+    "score": 68,
+    "size": 12258,
+    "matches": {
+      "group": 5,
+      "eigenvalue": 4
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.227302"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/DFTK.jl",
+    "score": 68,
+    "size": 7530,
+    "matches": {
+      "harmonic": 1,
+      "fourier": 1,
+      "fft": 10
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.231599"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Eigenvalue.jl",
+    "score": 66,
+    "size": 1478,
+    "matches": {
+      "harmonic": 1,
+      "eigenvalue": 8
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.236769"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/terms.jl",
+    "score": 63,
+    "size": 4740,
+    "matches": {
+      "representation": 1,
+      "fourier": 3,
+      "fft": 6
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.233620"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/chi0.jl",
+    "score": 61,
+    "size": 5988,
+    "matches": {
+      "eigenvalue": 3,
+      "fft": 8
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226434"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/list_psp.jl",
+    "score": 58,
+    "size": 3294,
+    "matches": {
+      "character": 1,
+      "group": 6
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234764"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/pseudopotential_data.jl",
+    "score": 56,
+    "size": 2498,
+    "matches": {
+      "group": 7
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234453"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/custom_potential.jl",
+    "score": 55,
+    "size": 3377,
+    "matches": {
+      "representation": 1,
+      "fourier": 4,
+      "fft": 2,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.228768"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/common/threading.jl",
+    "score": 50,
+    "size": 2855,
+    "matches": {
+      "fft": 10
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232158"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/interval_arithmetic.jl",
+    "score": 48,
+    "size": 2347,
+    "matches": {
+      "eigenvalue": 4,
+      "fft": 4
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226787"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/run_benchmarks.jl",
+    "score": 48,
+    "size": 3684,
+    "matches": {
+      "group": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230269"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/psp_correction.jl",
+    "score": 48,
+    "size": 1386,
+    "matches": {
+      "group": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.233140"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/PspHgh.jl",
+    "score": 48,
+    "size": 8857,
+    "matches": {
+      "fourier": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234735"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/chi0models.jl",
+    "score": 48,
+    "size": 3087,
+    "matches": {
+      "eigenvalue": 4,
+      "fft": 4
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.235072"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Eigenvalue_standard.jl",
+    "score": 48,
+    "size": 1120,
+    "matches": {
+      "harmonic": 2,
+      "eigenvalue": 4
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.236549"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/PspUpf.jl",
+    "score": 44,
+    "size": 10719,
+    "matches": {
+      "fourier": 5,
+      "transform": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234598"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/hubbard.jl",
+    "score": 42,
+    "size": 3777,
+    "matches": {
+      "eigenvalue": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228173"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/tutorial.jl",
+    "score": 42,
+    "size": 6942,
+    "matches": {
+      "eigenvalue": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.229202"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/response/inexact_gmres.jl",
+    "score": 42,
+    "size": 8232,
+    "matches": {
+      "orthogonal": 7
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232931"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/potential_mixing.jl",
+    "score": 42,
+    "size": 13286,
+    "matches": {
+      "eigenvalue": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234998"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/gross_pitaevskii.jl",
+    "score": 40,
+    "size": 4653,
+    "matches": {
+      "harmonic": 1,
+      "fourier": 2,
+      "fft": 2,
+      "transform": 1
+    },
+    "match_count": 4,
+    "timestamp": "2026-01-29T09:35:15.228678"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/PspLinComb.jl",
+    "score": 40,
+    "size": 3549,
+    "matches": {
+      "fourier": 5
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234633"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Eigenvalue_anharmonic.jl",
+    "score": 40,
+    "size": 1159,
+    "matches": {
+      "harmonic": 1,
+      "representation": 1,
+      "eigenvalue": 3
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.236502"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/interpolation.jl",
+    "score": 36,
+    "size": 4874,
+    "matches": {
+      "orthogonal": 1,
+      "fft": 6
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.232031"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/supercell.jl",
+    "score": 36,
+    "size": 6036,
+    "matches": {
+      "eigenvalue": 3,
+      "fft": 3
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.232083"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/workarounds/dummy_inplace_fft.jl",
+    "score": 35,
+    "size": 317,
+    "matches": {
+      "fft": 7
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232733"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/magnetic.jl",
+    "score": 35,
+    "size": 2099,
+    "matches": {
+      "fft": 7
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.233835"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/nbands_algorithm.jl",
+    "score": 35,
+    "size": 4982,
+    "matches": {
+      "eigenvalue": 5
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.235040"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKIntervalArithmeticExt.jl",
+    "score": 34,
+    "size": 3230,
+    "matches": {
+      "fourier": 3,
+      "fft": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.230011"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/phonon.jl",
+    "score": 33,
+    "size": 4888,
+    "matches": {
+      "eigenvalue": 4,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234145"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/MixFourierChebyshevTest.jl",
+    "score": 32,
+    "size": 450,
+    "matches": {
+      "fourier": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236458"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/energies_guess_density.jl",
+    "score": 31,
+    "size": 3470,
+    "matches": {
+      "fourier": 2,
+      "fft": 3
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.225147"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/silicon_redHF.jl",
+    "score": 30,
+    "size": 3508,
+    "matches": {
+      "fft": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226684"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "src/Extras/fftBigFloat.jl",
+    "score": 30,
+    "size": 788,
+    "matches": {
+      "fft": 6
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.237099"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/pseudopotentials.jl",
+    "score": 29,
+    "size": 6015,
+    "matches": {
+      "representation": 1,
+      "fourier": 2,
+      "transform": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.228243"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/run_scf_and_compare.jl",
+    "score": 28,
+    "size": 1408,
+    "matches": {
+      "eigenvalue": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226875"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/make.jl",
+    "score": 28,
+    "size": 9146,
+    "matches": {
+      "transform": 7
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228881"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/guide/atomic_chains.jl",
+    "score": 28,
+    "size": 5532,
+    "matches": {
+      "eigenvalue": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.229145"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/entropy.jl",
+    "score": 28,
+    "size": 1454,
+    "matches": {
+      "eigenvalue": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.233756"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/direct_minimization.jl",
+    "score": 27,
+    "size": 7319,
+    "matches": {
+      "eigenvalue": 3,
+      "orthogonal": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234856"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/newton.jl",
+    "score": 27,
+    "size": 6648,
+    "matches": {
+      "eigenvalue": 3,
+      "orthogonal": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234909"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/scf_compare.jl",
+    "score": 25,
+    "size": 6564,
+    "matches": {
+      "fft": 5
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227015"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/serialisation.jl",
+    "score": 24,
+    "size": 5870,
+    "matches": {
+      "eigenvalue": 2,
+      "fft": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226082"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/ewald.jl",
+    "score": 24,
+    "size": 11260,
+    "matches": {
+      "fourier": 2,
+      "transform": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.233468"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/pairwise.jl",
+    "score": 24,
+    "size": 6701,
+    "matches": {
+      "fourier": 2,
+      "transform": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234082"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/current.jl",
+    "score": 24,
+    "size": 936,
+    "matches": {
+      "representation": 1,
+      "fft": 3
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234427"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/ChebyshevAndFourierTest.jl",
+    "score": 24,
+    "size": 291,
+    "matches": {
+      "fourier": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236248"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Periodic.jl",
+    "score": 24,
+    "size": 332,
+    "matches": {
+      "fourier": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236673"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/collinear_magnetism.jl",
+    "score": 21,
+    "size": 5659,
+    "matches": {
+      "eigenvalue": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228292"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/lobpcg.jl",
+    "score": 20,
+    "size": 5891,
+    "matches": {
+      "fft": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225598"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/elastic_constants.jl",
+    "score": 20,
+    "size": 6593,
+    "matches": {
+      "group": 2,
+      "transform": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.227914"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKCUDAExt.jl",
+    "score": 20,
+    "size": 1788,
+    "matches": {
+      "fft": 4
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.229784"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/ODE.jl",
+    "score": 20,
+    "size": 1455,
+    "matches": {
+      "harmonic": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236581"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/random_spindensity.jl",
+    "score": 19,
+    "size": 1485,
+    "matches": {
+      "eigenvalue": 2,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226370"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/energy_cutoff_smearing.jl",
+    "score": 19,
+    "size": 2062,
+    "matches": {
+      "eigenvalue": 2,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226613"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/forwarddiff/parameters.jl",
+    "score": 19,
+    "size": 10166,
+    "matches": {
+      "eigenvalue": 2,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.227379"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Eigenvalue_well_barrier.jl",
+    "score": 19,
+    "size": 3123,
+    "matches": {
+      "representation": 1,
+      "eigenvalue": 1,
+      "spectrum": 1
+    },
+    "match_count": 3,
+    "timestamp": "2026-01-29T09:35:15.236706"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/eigen/diag.jl",
+    "score": 18,
+    "size": 3759,
+    "matches": {
+      "eigenvalue": 2,
+      "transform": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.232459"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/forces.jl",
+    "score": 17,
+    "size": 9268,
+    "matches": {
+      "eigenvalue": 1,
+      "fft": 2
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.225001"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/bzmesh_symmetry.jl",
+    "score": 16,
+    "size": 1388,
+    "matches": {
+      "group": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225486"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/external_potential.jl",
+    "score": 16,
+    "size": 711,
+    "matches": {
+      "fourier": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225867"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/graphene.jl",
+    "score": 16,
+    "size": 1199,
+    "matches": {
+      "group": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228567"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/ecosystem/input_output.jl",
+    "score": 16,
+    "size": 5842,
+    "matches": {
+      "representation": 1,
+      "eigenvalue": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.229623"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/variational.jl",
+    "score": 15,
+    "size": 1937,
+    "matches": {
+      "fft": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226557"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "ext/DFTKWriteVTKExt.jl",
+    "score": 15,
+    "size": 1737,
+    "matches": {
+      "fft": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.229864"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/memory_usage.jl",
+    "score": 15,
+    "size": 3181,
+    "matches": {
+      "fft": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230524"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/common/versioninfo.jl",
+    "score": 15,
+    "size": 875,
+    "matches": {
+      "fft": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232130"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/external/DFTKCalculator.jl",
+    "score": 15,
+    "size": 6900,
+    "matches": {
+      "fft": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.235649"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/phonon/helpers.jl",
+    "score": 14,
+    "size": 5271,
+    "matches": {
+      "eigenvalue": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227816"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/energy_cutoff_smearing.jl",
+    "score": 14,
+    "size": 5453,
+    "matches": {
+      "eigenvalue": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228496"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/publications/2020_silicon_scf_convergence.jl",
+    "score": 14,
+    "size": 2731,
+    "matches": {
+      "eigenvalue": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228797"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/ReadmeTest.jl",
+    "score": 14,
+    "size": 2785,
+    "matches": {
+      "eigenvalue": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236173"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "docs/make.jl",
+    "score": 14,
+    "size": 2698,
+    "matches": {
+      "eigenvalue": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236828"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/symmetry_issues.jl",
+    "score": 13,
+    "size": 2301,
+    "matches": {
+      "group": 1,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.226636"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "docs/src/ecosystem/wannier.jl",
+    "score": 12,
+    "size": 6501,
+    "matches": {
+      "fourier": 1,
+      "transform": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.229572"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/stresses.jl",
+    "score": 12,
+    "size": 2916,
+    "matches": {
+      "eigenvalue": 1,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.234334"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/scfres.jl",
+    "score": 12,
+    "size": 4322,
+    "matches": {
+      "eigenvalue": 1,
+      "fft": 1
+    },
+    "match_count": 2,
+    "timestamp": "2026-01-29T09:35:15.235204"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/silicon_scan.jl",
+    "score": 10,
+    "size": 2888,
+    "matches": {
+      "fft": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225719"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/arbitrary_floattype.jl",
+    "score": 10,
+    "size": 2486,
+    "matches": {
+      "fft": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227966"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "src/Extras/Extras.jl",
+    "score": 10,
+    "size": 631,
+    "matches": {
+      "fft": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.237002"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/Energies.jl",
+    "score": 9,
+    "size": 1889,
+    "matches": {
+      "representation": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230492"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/postprocess/refine.jl",
+    "score": 9,
+    "size": 8255,
+    "matches": {
+      "frequency": 3
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234306"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/hamiltonian_consistency.jl",
+    "score": 8,
+    "size": 6879,
+    "matches": {
+      "fourier": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225276"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/benchmarks.jl",
+    "score": 8,
+    "size": 344,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230284"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/cases/aluminium12.jl",
+    "score": 8,
+    "size": 924,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230302"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/cases/aluminium_rattled.jl",
+    "score": 8,
+    "size": 894,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230342"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/cases/SrVO3.jl",
+    "score": 8,
+    "size": 830,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230359"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "benchmark/cases/silicon.jl",
+    "score": 8,
+    "size": 1070,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.230376"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/hubbard.jl",
+    "score": 8,
+    "size": 11047,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.233734"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/terms/kinetic.jl",
+    "score": 8,
+    "size": 3659,
+    "matches": {
+      "fourier": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.233974"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/pseudo/load_psp.jl",
+    "score": 8,
+    "size": 4960,
+    "matches": {
+      "group": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.234671"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/PiecewiseSpaceDefiniteIntegralTest.jl",
+    "score": 8,
+    "size": 497,
+    "matches": {
+      "fourier": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236280"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "test/ExtrasTest.jl",
+    "score": 8,
+    "size": 4936,
+    "matches": {
+      "transform": 2
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236391"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_TPSS/extract.jl",
+    "score": 7,
+    "size": 640,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227430"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_NLCC/extract.jl",
+    "score": 7,
+    "size": 700,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227446"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_NLCC_forces/extract.jl",
+    "score": 7,
+    "size": 707,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227462"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_TB09/extract.jl",
+    "score": 7,
+    "size": 640,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227477"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_PBE/extract.jl",
+    "score": 7,
+    "size": 639,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227492"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_LDA/extract.jl",
+    "score": 7,
+    "size": 639,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227505"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/testcases_ABINIT/silicon_SCAN/extract.jl",
+    "score": 7,
+    "size": 640,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227518"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/custom_solvers.jl",
+    "score": 7,
+    "size": 3617,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228050"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "examples/scf_callbacks.jl",
+    "score": 7,
+    "size": 4120,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.228549"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/orbitals.jl",
+    "score": 7,
+    "size": 3916,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.231635"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/common/ortho.jl",
+    "score": 7,
+    "size": 609,
+    "matches": {
+      "eigenvalue": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232282"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/silicon_nlcc.jl",
+    "score": 5,
+    "size": 2899,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225041"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/silicon_pbe.jl",
+    "score": 5,
+    "size": 3238,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225092"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/nlcc.jl",
+    "score": 5,
+    "size": 825,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225219"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/iron_lda.jl",
+    "score": 5,
+    "size": 3209,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.225896"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/stresses.jl",
+    "score": 5,
+    "size": 2962,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226141"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/aqua.jl",
+    "score": 5,
+    "size": 731,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226652"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/guess_density.jl",
+    "score": 5,
+    "size": 1865,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226731"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/silicon_lda.jl",
+    "score": 5,
+    "size": 3127,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226760"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/Model.jl",
+    "score": 5,
+    "size": 5110,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.226919"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "test/iron_pbe.jl",
+    "score": 5,
+    "size": 3971,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.227101"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/scf/scf_callbacks.jl",
+    "score": 5,
+    "size": 8660,
+    "matches": {
+      "fft": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.235340"
+  },
+  {
+    "repo": "DFTK.jl",
+    "file": "src/common/hankel.jl",
+    "score": 4,
+    "size": 589,
+    "matches": {
+      "transform": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.232264"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/Sampling.jl",
+    "score": 3,
+    "size": 281,
+    "matches": {
+      "frequency": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236657"
+  },
+  {
+    "repo": "ApproxFun.jl",
+    "file": "examples/ODE_IVP2.jl",
+    "score": 3,
+    "size": 410,
+    "matches": {
+      "frequency": 1
+    },
+    "match_count": 1,
+    "timestamp": "2026-01-29T09:35:15.236783"
+  }
+]
