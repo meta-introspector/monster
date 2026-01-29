@@ -1,16 +1,22 @@
-# Stage 0: Minimal (hex0 equivalent)
+# Stage 0: Minimal (hex0 equivalent) → Monster prime 2
 stage_0: *.nix flake.lock
-# Stage 1: Assemblers (hex1/hex2 equivalent)  
+# Stage 1: Assemblers (hex1/hex2 equivalent) → Monster primes 3,5,7
 stage_1: *.sh *.pl
-# Stage 2: Simple compiler (cc_x86 equivalent)
+# Stage 2: Simple compiler (cc_x86 equivalent) → Monster prime 11
 stage_2: src/bin/*.rs
-# Stage 3: Self-hosting (M2-Planet equivalent)
+# Stage 3: Self-hosting (M2-Planet equivalent) → Monster prime 13
 stage_3: MonsterLean/*.lean
-# Stage 4: Runtime (mes-m2 equivalent)
+# Stage 4: Runtime (mes-m2 equivalent) → Monster prime 17
 stage_4: pipelite*.sh *_circuit.pl
-# Stage 5: Optimizing (tcc-boot equivalent)
+# Stage 5: Optimizing (tcc-boot equivalent) → Monster prime 19
 stage_5: src/lib.rs Cargo.toml
-# Stage 6: Production (tcc-0.9.26 equivalent)
+# Stage 6: Production (tcc-0.9.26 equivalent) → Monster prime 23
 stage_6: diffusion-rs/
-# Stage 7: Full system (gcc equivalent)
+# Stage 7: Full system (gcc equivalent) → Monster prime 29
 stage_7: .lake/packages/
+# Stage 8: LLVM equivalent → Monster prime 41
+stage_8: (future)
+# Stage 9: Rust full → Monster prime 47
+stage_9: (future)
+# Stage 10: Lean4 full → Monster prime 71
+stage_10: (future)
