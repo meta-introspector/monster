@@ -1,0 +1,7 @@
+{
+  "target_freq": 440.0,
+  "measured_freq": 440.0,
+  "tolerance": 1.0,
+  "cpk": 1.5,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "sample_rate": 44100,
+  "duration": 10.0,
+  "harmonics": [
+    {"prime": 2, "power": 46, "frequency": 440.0, "amplitude": 0.0213},
+    {"prime": 3, "power": 20, "frequency": 660.0, "amplitude": 0.0476},
+    {"prime": 5, "power": 9, "frequency": 1100.0, "amplitude": 0.1000},
+    {"prime": 7, "power": 6, "frequency": 1540.0, "amplitude": 0.1429},
+    {"prime": 11, "power": 2, "frequency": 2420.0, "amplitude": 0.3333},
+    {"prime": 13, "power": 3, "frequency": 2860.0, "amplitude": 0.2500},
+    {"prime": 17, "power": 1, "frequency": 3740.0, "amplitude": 0.5000},
+    {"prime": 19, "power": 1, "frequency": 4180.0, "amplitude": 0.5000},
+    {"prime": 23, "power": 1, "frequency": 5060.0, "amplitude": 0.5000},
+    {"prime": 29, "power": 1, "frequency": 6380.0, "amplitude": 0.5000},
+    {"prime": 31, "power": 1, "frequency": 6820.0, "amplitude": 0.5000},
+    {"prime": 41, "power": 1, "frequency": 9020.0, "amplitude": 0.5000},
+    {"prime": 47, "power": 1, "frequency": 10340.0, "amplitude": 0.5000},
+    {"prime": 59, "power": 1, "frequency": 12980.0, "amplitude": 0.5000},
+    {"prime": 71, "power": 1, "frequency": 15610.0, "amplitude": 0.5000}
+  ],
+  "timestamp": "20260129_120611"
+}

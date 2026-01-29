@@ -1,0 +1,5 @@
+=== COMPREHENSIVE PRECEDENCE SURVEY ===
+Timestamp: Thu Jan 29 11:17:42 AM EST 2026
+
+=== 1. SPECTRAL (Lean2) ===
+./scripts/analysis/comprehensive_precedence_survey.sh: line 32: datasets/precedence_survey/citations_20260129_111742.md: No such file or directory

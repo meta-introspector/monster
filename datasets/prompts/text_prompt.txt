@@ -1,0 +1,6 @@
+Generate lyrics for the Monster Walk song based on these 15 Monster primes:
+2^46, 3^20, 5^9, 7^6, 11^2, 13^3, 17, 19, 23, 29, 31, 41, 47, 59, 71
+
+The song should walk through each prime, building to a climax at 71 (the largest).
+Style: Mathematical, ethereal, ascending to a gravity well.
+Duration: 10 seconds (fast-paced).

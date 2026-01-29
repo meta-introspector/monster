@@ -1,0 +1,8 @@
+{
+  "batch_id": "monster-proof-to-song-20260129_120611",
+  "input": "MonsterLean/MonsterHarmonics.lean",
+  "process": ["Proof", "Audio", "Prompts", "Song", "Validation"],
+  "output": "datasets/songs/monster_walk_lyrics_20260129_120611.md",
+  "status": "PASS",
+  "timestamp": "20260129_120611"
+}

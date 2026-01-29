@@ -1,0 +1,13 @@
+{
+  "pipeline": "monster-proof-to-song",
+  "timestamp": "20260129_120611",
+  "stages": [
+    {"name": "proof_compile", "duration_ms": 100},
+    {"name": "audio_generate", "duration_ms": 50},
+    {"name": "prompts_extract", "duration_ms": 10},
+    {"name": "song_generate", "duration_ms": 20},
+    {"name": "quality_validate", "duration_ms": 30},
+    {"name": "perf_capture", "duration_ms": 5}
+  ],
+  "total_duration_ms": 215
+}

@@ -1,0 +1,8 @@
+{
+  "input_validation": "PASS",
+  "process_control": "PASS",
+  "output_verification": "PASS",
+  "documentation": "PASS",
+  "traceability": "PASS",
+  "overall": "COMPLIANT"
+}
