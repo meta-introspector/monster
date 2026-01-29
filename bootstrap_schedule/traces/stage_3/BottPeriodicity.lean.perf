@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/BottPeriodicity.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,195,519      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,367,317      cpu_core/instructions/           #    1.14  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,681      cpu_core/cache-misses/                                                
+
+       0.002095735 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002094000 seconds sys
+
+

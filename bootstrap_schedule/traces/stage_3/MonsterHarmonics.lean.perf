@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MonsterHarmonics.lean':
+
+         1,305,913      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,354,903      cpu_atom/instructions/           #    1.04  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,230      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.001874475 seconds time elapsed
+
+       0.001936000 seconds user
+       0.000000000 seconds sys
+
+

@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/lean4/higher_genus_w_automorphisms/hgcwa_stats.lean

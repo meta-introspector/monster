@@ -1,0 +1,7 @@
+./flake.nix
+./flake_pipelite.nix
+./image-gen-flake.nix
+./shell-computational.nix
+./shell-experiments.nix
+./shell-gap-pari.nix
+./flake.lock

@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/lean4/zeros/platt_zeros.lean

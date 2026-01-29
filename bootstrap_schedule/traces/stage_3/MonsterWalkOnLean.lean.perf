@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MonsterWalkOnLean.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,083,535      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,354,692      cpu_core/instructions/           #    1.25  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             3,443      cpu_core/cache-misses/                                                
+
+       0.001516018 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001447000 seconds sys
+
+

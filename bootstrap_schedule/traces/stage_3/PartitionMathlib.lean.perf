@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/PartitionMathlib.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,075,904      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,344,834      cpu_core/instructions/           #    1.25  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,500      cpu_core/cache-misses/                                                
+
+       0.001439604 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001516000 seconds sys
+
+

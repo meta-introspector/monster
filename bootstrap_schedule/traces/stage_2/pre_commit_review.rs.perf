@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./src/bin/pre_commit_review.rs':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,106,172      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,342,192      cpu_core/instructions/           #    1.21  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,042      cpu_core/cache-misses/                                                
+
+       0.000537655 seconds time elapsed
+
+       0.000551000 seconds user
+       0.000000000 seconds sys
+
+

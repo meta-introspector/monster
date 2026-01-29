@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./quickstart.sh':
+
+         1,308,635      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,334,740      cpu_atom/instructions/           #    1.02  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             1,801      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.000620336 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000748000 seconds sys
+
+

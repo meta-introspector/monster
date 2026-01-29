@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/SearchMonsterExponents.lean':
+
+         1,265,421      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,344,480      cpu_atom/instructions/           #    1.06  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,939      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.001077155 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001093000 seconds sys
+
+

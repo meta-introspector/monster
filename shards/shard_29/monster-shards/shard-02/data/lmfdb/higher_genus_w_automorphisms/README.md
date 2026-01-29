@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/data/lmfdb/higher_genus_w_automorphisms/README.md

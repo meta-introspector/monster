@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./introspect_shard.sh':
+
+           467,458      cpu_atom/cycles/                                                        (1.69%)
+         1,166,429      cpu_core/cycles/                                                        (98.31%)
+           173,343      cpu_atom/instructions/           #    0.37  insn per cycle              (1.69%)
+         1,373,620      cpu_core/instructions/           #    1.18  insn per cycle              (98.31%)
+               355      cpu_atom/cache-misses/                                                  (1.69%)
+             3,357      cpu_core/cache-misses/                                                  (98.31%)
+
+       0.002009280 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002087000 seconds sys
+
+

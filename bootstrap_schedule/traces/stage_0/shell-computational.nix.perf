@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./shell-computational.nix':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,068,569      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,349,792      cpu_core/instructions/           #    1.26  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,006      cpu_core/cache-misses/                                                
+
+       0.001914114 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001887000 seconds sys
+
+

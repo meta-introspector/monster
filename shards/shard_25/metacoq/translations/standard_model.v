@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/translations/standard_model.v

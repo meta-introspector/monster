@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./solve_prime_71.sh':
+
+         1,317,154      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,344,111      cpu_atom/instructions/           #    1.02  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,770      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.001198900 seconds time elapsed
+
+       0.001258000 seconds user
+       0.000000000 seconds sys
+
+

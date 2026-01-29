@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-26/zk/circuit.circom

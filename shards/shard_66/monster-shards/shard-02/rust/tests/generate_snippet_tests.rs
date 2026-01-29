@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/rust/tests/generate_snippet_tests.rs

@@ -1,0 +1,8 @@
+=== Stage 0: Bootstrap introspection ===
+./flake.nix|stage_0|shard_21
+./flake_pipelite.nix|stage_0|shard_12
+./image-gen-flake.nix|stage_0|shard_23
+./shell-computational.nix|stage_0|shard_1
+./shell-experiments.nix|stage_0|shard_6
+./shell-gap-pari.nix|stage_0|shard_38
+./flake.lock|stage_0|shard_27

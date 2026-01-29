@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-01/lean4/cluster_pictures/web_cluster_picture.lean

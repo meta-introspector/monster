@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/GradedRing71.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,118,746      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,344,029      cpu_core/instructions/           #    1.20  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,593      cpu_core/cache-misses/                                                
+
+       0.000530387 seconds time elapsed
+
+       0.000506000 seconds user
+       0.000000000 seconds sys
+
+

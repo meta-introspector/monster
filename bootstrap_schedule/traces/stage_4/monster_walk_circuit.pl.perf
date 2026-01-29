@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./prolog/monster_walk_circuit.pl':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,125,170      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,334,041      cpu_core/instructions/           #    1.19  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,947      cpu_core/cache-misses/                                                
+
+       0.000729099 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000773000 seconds sys
+
+

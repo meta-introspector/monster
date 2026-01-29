@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/erasure/theories/EInlining.v

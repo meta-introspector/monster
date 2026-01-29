@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./encode_prolog_circuit.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,087,228      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,354,514      cpu_core/instructions/           #    1.25  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,059      cpu_core/cache-misses/                                                
+
+       0.002019405 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002029000 seconds sys
+
+

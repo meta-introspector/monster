@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./image-gen-flake.nix':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,126,855      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,351,941      cpu_core/instructions/           #    1.20  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,747      cpu_core/cache-misses/                                                
+
+       0.000529758 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000565000 seconds sys
+
+

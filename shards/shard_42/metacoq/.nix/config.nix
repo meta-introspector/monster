@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/.nix/config.nix

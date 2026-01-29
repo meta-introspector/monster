@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/data/lmfdb/siegel_modular_forms/README.md

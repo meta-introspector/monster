@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/data/lmfdb/half_integral_weight_forms/README.md

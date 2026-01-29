@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./shard_files.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,101,778      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,336,922      cpu_core/instructions/           #    1.21  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,991      cpu_core/cache-misses/                                                
+
+       0.002027940 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002149000 seconds sys
+
+

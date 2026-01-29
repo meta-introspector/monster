@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MonsterReflection.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,101,450      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,359,516      cpu_core/instructions/           #    1.23  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,273      cpu_core/cache-misses/                                                
+
+       0.001061872 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001023000 seconds sys
+
+

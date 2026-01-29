@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./flake.nix':
+
+         1,306,382      cpu_atom/cycles/                                                        (53.90%)
+         1,298,786      cpu_core/cycles/                                                        (46.10%)
+         1,068,922      cpu_atom/instructions/           #    0.82  insn per cycle              (53.90%)
+         1,683,745      cpu_core/instructions/           #    1.30  insn per cycle              (46.10%)
+             2,235      cpu_atom/cache-misses/                                                  (53.90%)
+             3,607      cpu_core/cache-misses/                                                  (46.10%)
+
+       0.002270259 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002234000 seconds sys
+
+

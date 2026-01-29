@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MonsterAlgorithmSimple.lean':
+
+         1,320,628      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,342,793      cpu_atom/instructions/           #    1.02  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             3,151      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.002046022 seconds time elapsed
+
+       0.001046000 seconds user
+       0.001046000 seconds sys
+
+

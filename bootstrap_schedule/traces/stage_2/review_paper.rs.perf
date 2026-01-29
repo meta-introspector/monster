@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./src/bin/review_paper.rs':
+
+         1,646,023      cpu_atom/cycles/                                                        (38.72%)
+         1,147,450      cpu_core/cycles/                                                        (61.28%)
+         1,164,897      cpu_atom/instructions/           #    0.71  insn per cycle              (38.72%)
+         1,506,385      cpu_core/instructions/           #    1.31  insn per cycle              (61.28%)
+             3,241      cpu_atom/cache-misses/                                                  (38.72%)
+             2,553      cpu_core/cache-misses/                                                  (61.28%)
+
+       0.000900136 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000923000 seconds sys
+
+

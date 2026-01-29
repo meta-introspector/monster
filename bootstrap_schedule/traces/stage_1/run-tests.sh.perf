@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./run-tests.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,046,370      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,337,225      cpu_core/instructions/           #    1.28  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,220      cpu_core/cache-misses/                                                
+
+       0.001623957 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001742000 seconds sys
+
+

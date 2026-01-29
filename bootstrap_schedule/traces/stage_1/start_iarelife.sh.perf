@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./start_iarelife.sh':
+
+         1,344,721      cpu_atom/cycles/                                                        (79.67%)
+         1,181,098      cpu_core/cycles/                                                        (20.33%)
+         1,229,339      cpu_atom/instructions/           #    0.91  insn per cycle              (79.67%)
+         1,904,831      cpu_core/instructions/           #    1.61  insn per cycle              (20.33%)
+             1,509      cpu_atom/cache-misses/                                                  (79.67%)
+             1,559      cpu_core/cache-misses/                                                  (20.33%)
+
+       0.002077980 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002037000 seconds sys
+
+

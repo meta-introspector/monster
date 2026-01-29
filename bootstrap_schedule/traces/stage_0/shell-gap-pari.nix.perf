@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./shell-gap-pari.nix':
+
+         1,317,703      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,352,746      cpu_atom/instructions/           #    1.03  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,970      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.001545511 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001533000 seconds sys
+
+

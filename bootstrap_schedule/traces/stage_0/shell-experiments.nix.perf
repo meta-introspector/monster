@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./shell-experiments.nix':
+
+         1,263,341      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,341,902      cpu_atom/instructions/           #    1.06  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             1,105      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.002015613 seconds time elapsed
+
+       0.001067000 seconds user
+       0.001067000 seconds sys
+
+

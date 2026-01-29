@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/BisimulationProof.lean':
+
+         1,462,945      cpu_atom/cycles/                                                        (74.16%)
+         1,251,648      cpu_core/cycles/                                                        (25.84%)
+         1,251,390      cpu_atom/instructions/           #    0.86  insn per cycle              (74.16%)
+         1,645,701      cpu_core/instructions/           #    1.31  insn per cycle              (25.84%)
+             2,153      cpu_atom/cache-misses/                                                  (74.16%)
+             2,933      cpu_core/cache-misses/                                                  (25.84%)
+
+       0.000717719 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000840000 seconds sys
+
+

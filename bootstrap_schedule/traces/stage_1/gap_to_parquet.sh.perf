@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./gap_to_parquet.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,154,862      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,350,051      cpu_core/instructions/           #    1.17  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,246      cpu_core/cache-misses/                                                
+
+       0.000790218 seconds time elapsed
+
+       0.000753000 seconds user
+       0.000000000 seconds sys
+
+

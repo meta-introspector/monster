@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/data/lmfdb/galois_groups/README.md

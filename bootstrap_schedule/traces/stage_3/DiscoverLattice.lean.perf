@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/DiscoverLattice.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,050,806      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,350,648      cpu_core/instructions/           #    1.29  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,495      cpu_core/cache-misses/                                                
+
+       0.001638454 seconds time elapsed
+
+       0.000841000 seconds user
+       0.000841000 seconds sys
+
+

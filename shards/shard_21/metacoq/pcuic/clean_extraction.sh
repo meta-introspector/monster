@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/pcuic/clean_extraction.sh

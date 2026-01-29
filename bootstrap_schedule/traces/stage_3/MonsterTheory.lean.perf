@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MonsterTheory.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,186,883      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,375,966      cpu_core/instructions/           #    1.16  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,428      cpu_core/cache-misses/                                                
+
+       0.002007520 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002035000 seconds sys
+
+

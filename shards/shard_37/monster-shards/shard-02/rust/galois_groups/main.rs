@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/rust/galois_groups/main.rs

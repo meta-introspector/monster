@@ -1,0 +1,11 @@
+=== Stage 2: Bootstrap introspection ===
+./src/bin/graded_ring_71.rs|stage_2|shard_10
+./src/bin/monster_harmonics.rs|stage_2|shard_2
+./src/bin/partition_lmfdb.rs|stage_2|shard_38
+./src/bin/post_commit_review.rs|stage_2|shard_48
+./src/bin/precedence_survey.rs|stage_2|shard_41
+./src/bin/pre_commit_review.rs|stage_2|shard_15
+./src/bin/review_paper.rs|stage_2|shard_14
+./src/bin/term_frequency.rs|stage_2|shard_39
+./src/bin/test_algorithm.rs|stage_2|shard_2
+./src/bin/virtual_knuth.rs|stage_2|shard_42

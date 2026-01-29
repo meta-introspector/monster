@@ -1,0 +1,4 @@
+=== Stage 4: Bootstrap introspection ===
+./pipelite_nix_rust.sh|stage_4|shard_66
+./pipelite_proof_to_song.sh|stage_4|shard_62
+./prolog/monster_walk_circuit.pl|stage_4|shard_65

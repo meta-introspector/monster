@@ -1,0 +1,17 @@
+cat: '=== Stage 5: Bootstrap introspection ===': No such file or directory
+
+ Performance counter stats for 'cat === Stage 5: Bootstrap introspection ===':
+
+         1,356,109      cpu_atom/cycles/                                                        (37.16%)
+         1,585,524      cpu_core/cycles/                                                        (62.84%)
+           926,486      cpu_atom/instructions/           #    0.68  insn per cycle              (37.16%)
+         1,986,711      cpu_core/instructions/           #    1.25  insn per cycle              (62.84%)
+             1,792      cpu_atom/cache-misses/                                                  (37.16%)
+             5,162      cpu_core/cache-misses/                                                  (62.84%)
+
+       0.000767880 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000832000 seconds sys
+
+

@@ -1,0 +1,16 @@
+# Stage 0: Minimal (hex0 equivalent)
+stage_0: *.nix flake.lock
+# Stage 1: Assemblers (hex1/hex2 equivalent)  
+stage_1: *.sh *.pl
+# Stage 2: Simple compiler (cc_x86 equivalent)
+stage_2: src/bin/*.rs
+# Stage 3: Self-hosting (M2-Planet equivalent)
+stage_3: MonsterLean/*.lean
+# Stage 4: Runtime (mes-m2 equivalent)
+stage_4: pipelite*.sh *_circuit.pl
+# Stage 5: Optimizing (tcc-boot equivalent)
+stage_5: src/lib.rs Cargo.toml
+# Stage 6: Production (tcc-0.9.26 equivalent)
+stage_6: diffusion-rs/
+# Stage 7: Full system (gcc equivalent)
+stage_7: .lake/packages/

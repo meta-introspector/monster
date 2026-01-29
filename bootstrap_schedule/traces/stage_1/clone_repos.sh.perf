@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./clone_repos.sh':
+
+         2,033,425      cpu_atom/cycles/                                                        (11.96%)
+         1,124,887      cpu_core/cycles/                                                        (88.04%)
+         1,375,587      cpu_atom/instructions/           #    0.68  insn per cycle              (11.96%)
+         1,335,498      cpu_core/instructions/           #    1.19  insn per cycle              (88.04%)
+             4,079      cpu_atom/cache-misses/                                                  (11.96%)
+             2,055      cpu_core/cache-misses/                                                  (88.04%)
+
+       0.001071097 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001054000 seconds sys
+
+

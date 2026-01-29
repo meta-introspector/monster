@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/erasure-plugin/theories/ErasureCorrectness.v

@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./create-shards.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,105,460      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,357,170      cpu_core/instructions/           #    1.23  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,678      cpu_core/cache-misses/                                                
+
+       0.001322399 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001316000 seconds sys
+
+

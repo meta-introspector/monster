@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/MusicalPeriodicTable.lean':
+
+         1,342,403      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,360,490      cpu_atom/instructions/           #    1.01  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             3,762      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.000676834 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000694000 seconds sys
+
+

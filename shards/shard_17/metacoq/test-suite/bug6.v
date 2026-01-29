@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/test-suite/bug6.v

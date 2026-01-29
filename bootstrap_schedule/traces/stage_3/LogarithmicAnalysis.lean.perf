@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/LogarithmicAnalysis.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,044,219      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,348,999      cpu_core/instructions/           #    1.29  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,114      cpu_core/cache-misses/                                                
+
+       0.001641975 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001705000 seconds sys
+
+

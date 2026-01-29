@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/safechecker-plugin/clean_extraction.sh

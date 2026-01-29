@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./Cargo.toml':
+
+         1,267,680      cpu_atom/cycles/                                                        (71.67%)
+         1,278,251      cpu_core/cycles/                                                        (28.33%)
+         1,139,371      cpu_atom/instructions/           #    0.90  insn per cycle              (71.67%)
+         1,902,600      cpu_core/instructions/           #    1.49  insn per cycle              (28.33%)
+             1,614      cpu_atom/cache-misses/                                                  (71.67%)
+             2,164      cpu_core/cache-misses/                                                  (28.33%)
+
+       0.001770424 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001899000 seconds sys
+
+

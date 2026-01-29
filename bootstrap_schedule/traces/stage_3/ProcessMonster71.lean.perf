@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/ProcessMonster71.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,069,099      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,342,016      cpu_core/instructions/           #    1.26  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,792      cpu_core/cache-misses/                                                
+
+       0.001021964 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001057000 seconds sys
+
+

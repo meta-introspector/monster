@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/Prime71Precedence.lean':
+
+         1,297,448      cpu_atom/cycles/                                                        (69.04%)
+         1,561,748      cpu_core/cycles/                                                        (30.96%)
+         1,126,124      cpu_atom/instructions/           #    0.87  insn per cycle              (69.04%)
+         1,869,341      cpu_core/instructions/           #    1.20  insn per cycle              (30.96%)
+             1,306      cpu_atom/cache-misses/                                                  (69.04%)
+             3,659      cpu_core/cache-misses/                                                  (30.96%)
+
+       0.001126091 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001188000 seconds sys
+
+

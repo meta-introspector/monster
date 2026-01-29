@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./convert_with_pandoc.sh':
+
+         1,255,687      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,344,190      cpu_atom/instructions/           #    1.07  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             1,360      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.000742596 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000792000 seconds sys
+
+

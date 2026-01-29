@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./src/bin/post_commit_review.rs':
+
+         1,303,497      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,359,801      cpu_atom/instructions/           #    1.04  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,660      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.000891957 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000881000 seconds sys
+
+

@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./analyze_harmonic_profile.sh':
+
+         1,212,654      cpu_atom/cycles/                                                        (28.91%)
+         1,240,588      cpu_core/cycles/                                                        (71.09%)
+           838,418      cpu_atom/instructions/           #    0.69  insn per cycle              (28.91%)
+         1,568,607      cpu_core/instructions/           #    1.26  insn per cycle              (71.09%)
+             1,961      cpu_atom/cache-misses/                                                  (28.91%)
+             2,809      cpu_core/cache-misses/                                                  (71.09%)
+
+       0.002062167 seconds time elapsed
+
+       0.001104000 seconds user
+       0.001104000 seconds sys
+
+

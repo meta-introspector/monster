@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/lean4/artin_representations/cyc_alt_res_engine.lean

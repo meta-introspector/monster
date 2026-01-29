@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./run_minizinc_optimization.sh':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,091,432      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,349,601      cpu_core/instructions/           #    1.24  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             2,497      cpu_core/cache-misses/                                                
+
+       0.001958112 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001999000 seconds sys
+
+

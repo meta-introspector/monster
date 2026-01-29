@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/monster-shards/shard-02/lean4/lattice/isom.lean

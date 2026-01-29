@@ -1,0 +1,1 @@
+/home/mdupont/experiments/monster/metacoq/template-rocq/src/plugin_core.ml

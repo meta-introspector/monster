@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./lmfdb_conversion.pl':
+
+         1,320,291      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,353,584      cpu_atom/instructions/           #    1.03  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,962      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.000636513 seconds time elapsed
+
+       0.000660000 seconds user
+       0.000000000 seconds sys
+
+

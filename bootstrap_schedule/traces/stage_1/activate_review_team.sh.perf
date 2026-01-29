@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./activate_review_team.sh':
+
+         1,315,360      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,356,610      cpu_atom/instructions/           #    1.03  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,330      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.002135181 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002239000 seconds sys
+
+

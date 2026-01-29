@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/ExpressionKernels.lean':
+
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+         1,098,644      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+         1,365,319      cpu_core/instructions/           #    1.24  insn per cycle            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+             1,893      cpu_core/cache-misses/                                                
+
+       0.000897130 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000864000 seconds sys
+
+

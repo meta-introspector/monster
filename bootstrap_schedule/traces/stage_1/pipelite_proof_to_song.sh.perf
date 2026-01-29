@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./pipelite_proof_to_song.sh':
+
+         1,068,766      cpu_atom/cycles/                                                        (14.91%)
+         1,140,675      cpu_core/cycles/                                                        (85.09%)
+           778,780      cpu_atom/instructions/           #    0.73  insn per cycle              (14.91%)
+         1,468,773      cpu_core/instructions/           #    1.29  insn per cycle              (85.09%)
+             2,508      cpu_atom/cache-misses/                                                  (14.91%)
+             3,324      cpu_core/cache-misses/                                                  (85.09%)
+
+       0.001871656 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001903000 seconds sys
+
+

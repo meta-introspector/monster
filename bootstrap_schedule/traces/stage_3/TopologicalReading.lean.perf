@@ -1,0 +1,16 @@
+
+ Performance counter stats for 'cat ./MonsterLean/TopologicalReading.lean':
+
+         1,327,700      cpu_atom/cycles/                                                      
+     <not counted>      cpu_core/cycles/                                                        (0.00%)
+         1,341,438      cpu_atom/instructions/           #    1.01  insn per cycle            
+     <not counted>      cpu_core/instructions/                                                  (0.00%)
+             2,966      cpu_atom/cache-misses/                                                
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.001977935 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002127000 seconds sys
+
+
