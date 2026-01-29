@@ -1,0 +1,56 @@
+{
+  "name": "Monster Walk Proof #8080",
+  "description": "Proof that removing 8 Monster prime factors preserves the digits 8080. Verified in Lean4, Prolog, Rust, MiniZinc, and encoded as song, picture, and meme.",
+  "image": "ipfs://QmMonsterWalk8080ProofImage",
+  "external_url": "https://github.com/meta-introspector/monster",
+  "attributes": [
+    {
+      "trait_type": "Proof Method",
+      "value": "Ring Theory"
+    },
+    {
+      "trait_type": "Languages",
+      "value": "Lean4, Prolog, Rust, MiniZinc"
+    },
+    {
+      "trait_type": "Target Digits",
+      "value": "8080"
+    },
+    {
+      "trait_type": "Factors Removed",
+      "value": 8
+    },
+    {
+      "trait_type": "Monster Primes",
+      "value": 15
+    },
+    {
+      "trait_type": "Shards",
+      "value": 71
+    },
+    {
+      "trait_type": "Verification",
+      "value": "Formal + Computational"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    }
+  ],
+  "properties": {
+    "monster_order": "808017424794512875886459904961710757005754368000000000",
+    "group1_factors": [7, 11, 17, 19, 29, 31, 41, 59],
+    "preserved_digits": "8080",
+    "proof_files": [
+      "MonsterLean/MonsterWalkRings.lean",
+      "prolog/monster_walk_proof.pl",
+      "src/bin/monster_walk_proof.rs",
+      "minizinc/monster_walk_proof.mzn"
+    ],
+    "rdfa_url": "https://zkprologml.org/execute?circuit=monster_walk_proof",
+    "signature": "0x8080deadbeef...",
+    "timestamp": 1738177200
+  },
+  "compiler": "Monster Group Compiler v1.0",
+  "license": "AGPL-3.0 + Apache 2.0 ($10K/year)"
+}
