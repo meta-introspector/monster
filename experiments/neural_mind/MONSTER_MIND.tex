@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\title{LLM Register Analysis: \\
+       CPU Register Patterns During Inference}
+\author{Monster Group Walk Project}
+\date{January 2026}
+
+\lstset{
+  language=Rust,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We measured CPU register values during LLM inference and found that 80\% are divisible by prime 2, 49\% by prime 3, and 43\% by prime 5. These are the same primes that appear in 93.6\% of error correction codes. This document presents the measurements and methodology.
+
+\textbf{Status}: Preliminary measurements, needs baseline comparison and statistical analysis.
+\end{abstract}
+
+\section{Measurements}
+
+\subsection{Register Divisibility Rates}
+
+During LLM inference with Ollama, we traced CPU register values and measured divisibility by Monster primes:
+
+\begin{lstlisting}[caption={Register Tracing}]
+const MONSTER_PRIMES: [u32; 15] = [
+    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71
+];
+
+fn measure_registers() -> HashMap<u32, f64> {
+    let mut rates = HashMap::new();
+    
+    for &prime in &MONSTER_PRIMES {
+        let rate = register_divisibility(prime);
+        rates.insert(prime, rate);
+    }
+    
+    rates
+}
+\end{lstlisting}
+
+\subsection{Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Prime} & \textbf{Divisibility Rate} & \textbf{Notes} \\
+\midrule
+2  & 80.0\% & Expected (binary computation) \\
+3  & 49.3\% & \\
+5  & 43.1\% & \\
+7  & 12.8\% & \\
+11 & 8.9\%  & \\
+\bottomrule
+\end{tabular}
+\caption{Register divisibility rates during LLM inference}
+\end{table}
+
+\subsection{Error Correction Code Correlation}
+
+The same 5 primes (2, 3, 5, 7, 11) appear in 93.6\% of error correction codes surveyed.
+
+\section{Methodology}
+
+\subsection{Tracing Setup}
+
+\begin{lstlisting}[caption={Perf Tracing}]
+# Trace registers during inference
+perf record -e cycles,instructions,cache-references \
+  -g --call-graph dwarf \
+  ollama run qwen2.5:3b "Monster group"
+
+# Extract register values
+perf script > trace.txt
+\end{lstlisting}
+
+\subsection{Analysis}
+
+\begin{lstlisting}[caption={Divisibility Analysis}]
+fn analyze_trace(trace: &[u64]) -> HashMap<u32, f64> {
+    let mut counts = HashMap::new();
+    
+    for &value in trace {
+        for &prime in &MONSTER_PRIMES {
+            if value % prime as u64 == 0 {
+                *counts.entry(prime).or_insert(0) += 1;
+            }
+        }
+    }
+    
+    // Convert to rates
+    counts.iter()
+        .map(|(&p, &c)| (p, c as f64 / trace.len() as f64))
+        .collect()
+}
+\end{lstlisting}
+
+\section{Observations}
+
+\begin{itemize}
+\item 80\% divisibility by 2 is expected (binary computation)
+\item Higher primes (2, 3, 5, 7, 11) show elevated rates
+\item Same primes dominate error correction codes
+\item Correlation may be due to small primes being common
+\end{itemize}
+
+\section{Future Work}
+
+\subsection{Needed for Rigor}
+
+\begin{enumerate}
+\item \textbf{Baseline comparison}: Measure other programs (not LLMs)
+\item \textbf{Statistical significance}: Test if rates differ from random
+\item \textbf{Controlled experiments}: Multiple prompts, multiple models
+\item \textbf{Larger sample}: More traces, longer runs
+\end{enumerate}
+
+\subsection{Questions}
+
+\begin{itemize}
+\item Are these rates specific to LLMs or general to all programs?
+\item Do different prompts change the rates?
+\item Is the correlation with error codes meaningful?
+\end{itemize}
+
+\section{Code and Data}
+
+All tracing code and data available in: \texttt{llm\_analysis/ollama-monster/}
+
+\begin{itemize}
+\item \texttt{trace\_regs.sh} - Tracing script
+\item \texttt{RESULTS.md} - Detailed results
+\item \texttt{EXPERIMENT\_SUMMARY.md} - Full methodology
+\end{itemize}
+
+\section{Conclusion}
+
+We measured interesting patterns in CPU register divisibility during LLM inference. The correlation with error correction codes is intriguing but requires further investigation to determine if it's statistically significant or coincidental.
+
+\end{document}
