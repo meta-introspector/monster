@@ -1,0 +1,10 @@
+% Example data file for recursive CRUD review optimization
+
+% Number of ZK experts available
+num_experts = 10;
+
+% Maximum experts per review tier
+max_experts_per_review = 4;
+
+% Base cost per expert per review
+base_expert_cost = 100;

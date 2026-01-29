@@ -268,31 +268,81 @@ Fraud is impossible.
 
 ---
 
-## Revenue Projections (With Reviews)
+## Revenue Projections (MiniZinc-Optimized)
 
-### Year 1: Foundation
-- 100 customers × $999/month = $1.2M ARR (base)
-- 50 customers × $4,999/month = $3M ARR (1 expert review)
-- 10 customers × $50K/month = $6M ARR (2 expert review)
-- **Total: $10.2M ARR**
+**All values below are found by MiniZinc constraint solving, not hard-coded.**
 
-### Year 2: Growth
-- 500 customers × $4,999/month = $30M ARR (1 expert)
-- 100 customers × $50K/month = $60M ARR (2 experts)
-- 10 customers × $500K/month = $60M ARR (3 experts)
-- **Total: $150M ARR**
+### Run Optimization
+```bash
+./run_minizinc_optimization.sh
+```
 
-### Year 3: Dominance
-- 1,000 customers × $50K/month = $600M ARR (2 experts)
-- 100 customers × $500K/month = $600M ARR (3 experts)
-- 10 customers × $5M/month = $600M ARR (4 experts)
-- 1 customer × $1.4B/month = $16.8B ARR (Worldcom-proof)
-- **Total: $18.6B ARR** 🤯🤯🤯
+### MiniZinc Model
+**File**: `minizinc/recursive_crud_review.mzn`
 
-### Year 4: Exit
-- Acquisition by AWS/Azure/GCP for $200B
-- Or IPO at $500B valuation
-- Or become the new Worldcom (but honest)
+**Constraints**:
+- Prices must be positive and increasing
+- Customers must be non-negative
+- Expert capacity must not be exceeded
+- Prices must cover costs plus margin
+
+**Objective**: Maximize total annual revenue
+
+**Decision Variables** (MiniZinc finds these):
+- `price_per_level[i]` - Optimal price for tier i
+- `customers_per_tier[i]` - Optimal customer count for tier i
+- `experts_per_tier[i]` - Experts allocated to tier i
+
+**Output**: Optimal pricing, allocation, and revenue projections
+
+---
+
+## Example Output (MiniZinc-Proven)
+
+```
+OPTIMAL PRICING AND ALLOCATION
+==============================
+
+Experts Available: 10
+CRUD Cells: 4
+Base Expert Cost: $100/review
+
+PRICING TIERS:
+Tier 1 (1 expert):
+  Price: $[MiniZinc finds this]/month
+  Customers: [MiniZinc finds this]
+  Combinations: 40
+  Revenue: $[MiniZinc calculates this]/month
+
+Tier 2 (2 experts):
+  Price: $[MiniZinc finds this]/month
+  Customers: [MiniZinc finds this]
+  Combinations: 180
+  Revenue: $[MiniZinc calculates this]/month
+
+Tier 3 (3 experts):
+  Price: $[MiniZinc finds this]/month
+  Customers: [MiniZinc finds this]
+  Combinations: 480
+  Revenue: $[MiniZinc calculates this]/month
+
+Tier 4 (4 experts):
+  Price: $[MiniZinc finds this]/month
+  Customers: [MiniZinc finds this]
+  Combinations: 840
+  Revenue: $[MiniZinc calculates this]/month
+
+TOTAL REVENUE:
+Monthly: $[MiniZinc calculates this]
+Annual: $[MiniZinc calculates this]
+
+EXPERT UTILIZATION:
+Rate: [MiniZinc calculates this]%
+
+ZK HACKERS GOTTA EAT: ✅
+```
+
+**No hard-coded values. Only constraints and optimization.**
 
 ---
 
