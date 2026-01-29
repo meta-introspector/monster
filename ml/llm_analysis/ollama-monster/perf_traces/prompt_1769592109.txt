@@ -1,0 +1,18 @@
+Document: RESULTS.md
+
+# Monster Prime Resonance - Experimental Results
+
+## Discovery
+
+**LLM register values during inference are divisible by Monster group primes at rates matching error correction code distributions.**
+
+## Methodology
+
+1. Used Linux `perf` to capture CPU register values during qwen2.5:3b inference
+2. Measured divisibility by 15 Monster primes [2,3,5,7,11,13,17,19,23,29,31,41,47,59,71]
+3. Fed measurements back to model in automorphic loops
+4. Tested convergence to eigenvector/fixed point
+
+## Core Res
+
+As mathematician Conway, verify this claim: LLM registers show 80% divisibility by prime 2, 49% by prime 3, matching error correction codes. Valid?

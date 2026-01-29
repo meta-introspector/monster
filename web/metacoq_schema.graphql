@@ -1,0 +1,99 @@
+🔬 MetaCoq Monster Analysis
+============================================================
+
+📊 COLLECTED DATA:
+------------------------------------------------------------
+MetaCoq files: 584
+Spectral files: 73
+All sources: 10573
+
+👹 PRIME 71 LOCATIONS:
+------------------------------------------------------------
+Mathlib: Pi/Bounds, ModCases, Distribution, SchwartzZippel
+Spectral: ring.hlean
+Vericoding: 4 files
+
+📊 PRIME DISTRIBUTION (All Sources):
+------------------------------------------------------------
+Prime 2: 78083 (80.81202198234375%)
+Prime 3: 11150 (11.539695517630378%)
+Prime 5: 3538 (3.6616540575225365%)
+Prime 7: 1430 (1.479978887014479%)
+Prime 11: 998 (1.0328803700982168%)
+Prime 13: 264 (0.2732268714488269%)
+Prime 17: 209 (0.2163046065636546%)
+Prime 19: 193 (0.1997454022334227%)
+Prime 23: 188 (0.1945706508802252%)
+Prime 29: 193 (0.1997454022334227%)
+Prime 31: 277 (0.2866812249671403%)
+Prime 41: 15 (1.5524254059592438e-2%)
+Prime 47: 12 (1.241940324767395e-2%)
+Prime 59: 65 (6.727176759156722e-2%)
+Prime 71: 8 (8.279602165115967e-3%)
+
+🎯 MONSTER HYPOTHESIS:
+------------------------------------------------------------
+If MetaCoq AST depth >= 46:
+  → Matches 2^46 in Monster order
+  → Binary tree with 46 levels
+  → THE STRUCTURE IS THE MONSTER!
+
+Current max depth: 7 (parenthesis nesting)
+Need: Actual AST depth measurement
+
+📊 Generating GraphQL Schema...
+# MetaCoq Monster Analysis GraphQL Schema
+
+type Query {
+  # MetaCoq queries
+  term(id: ID!): Term
+  allTerms: [Term!]!
+  
+  # Monster analysis
+  monsterAnalysis: MonsterAnalysis!
+  findMonsterTerms(minDepth: Int = 46): [Term!]!
+  primeDistribution: [PrimeCount!]!
+  shellDistribution: [ShellCount!]!
+  
+  # Cross-source comparison
+  compareWithMathlib: Comparison!
+  compareWithSpectral: Comparison!
+}
+
+type MonsterAnalysis {
+  totalFiles: Int!
+  maxDepth: Int!
+  isMonster: Boolean!  # depth >= 46?
+  primeDistribution: [PrimeCount!]!
+  filesWithPrime71: [String!]!
+  hypothesis: String!
+}
+
+type PrimeCount {
+  prime: Int!
+  count: Int!
+  shell: Int!
+  emoji: String!
+}
+
+type Comparison {
+  source1: String!
+  source2: String!
+  commonPrimes: [Int!]!
+  uniquePrimes1: [Int!]!
+  uniquePrimes2: [Int!]!
+  correlation: Float!
+}
+
+📊 Exporting to CSV...
+✅ Exported to monster_primes_all_sources.csv
+✅ Exported to monster_primes_metacoq.csv
+✅ Exported to monster_primes_spectral.csv
+
+✅ Analysis complete!
+
+🎯 Next steps:
+  1. Use MetaCoq.Template.Quote to get actual AST
+  2. Measure true AST depth (not just parentheses)
+  3. Find terms with depth >= 46
+  4. PROVE: MetaCoq IS the Monster!

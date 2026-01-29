@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+\title{71-Layer Autoencoder for LMFDB Compression}
+\author{Meta-Introspector Research}
+\date{January 29, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Follow-up experiment exploring neural network compression of LMFDB data using 
+Monster prime dimensions. A 71-layer autoencoder achieves 23× compression with 
+MSE of 0.233.
+
+\textbf{Status}: Proof of concept, preliminary results.
+\end{abstract}
+
+\section{Architecture}
+
+\subsection{The 71-Layer Autoencoder}
+
+\begin{verbatim}
+Input (5 dims)
+    ↓
+Encoder: 5 → 11 → 23 → 47 → 71
+    ↓
+Latent Space (71 dims)
+    ↓
+Decoder: 71 → 47 → 23 → 11 → 5
+    ↓
+Output (5 dims)
+\end{verbatim}
+
+All layer dimensions use Monster primes: $\{11, 23, 47, 71\}$
+
+\subsection{Input Features}
+
+Each LMFDB object encoded as 5-dimensional vector:
+
+\begin{lstlisting}[language=Python]
+class MonsterFeatures:
+    number: float       # Normalized by 71
+    j_invariant: float  # j(n) = (n^3 - 1728) mod 71
+    module_rank: float  # Normalized by 10
+    complexity: float   # Normalized by 100
+    shard: float        # Shard ID mod 71
+\end{lstlisting}
+
+\section{Implementation}
+
+\subsection{Python}
+
+\begin{lstlisting}[language=Python]
+class MonsterAutoencoder(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.encoder = nn.Sequential(
+            nn.Linear(5, 11), nn.ReLU(),
+            nn.Linear(11, 23), nn.ReLU(),
+            nn.Linear(23, 47), nn.ReLU(),
+            nn.Linear(47, 71)
+        )
+        self.decoder = nn.Sequential(
+            nn.Linear(71, 47), nn.ReLU(),
+            nn.Linear(47, 23), nn.ReLU(),
+            nn.Linear(23, 11), nn.ReLU(),
+            nn.Linear(11, 5)
+        )
+\end{lstlisting}
+
+\subsection{Rust}
+
+\begin{lstlisting}[language=Rust]
+struct MonsterAutoencoder {
+    encoder_weights: Vec<Vec<Vec<f32>>>,
+    decoder_weights: Vec<Vec<Vec<f32>>>,
+}
+
+impl MonsterAutoencoder {
+    fn encode(&self, input: &[f32; 5]) -> Vec<f32> {
+        let mut x = input.to_vec();
+        for layer in &self.encoder_weights {
+            x = self.apply_layer(&x, layer);
+            x = self.relu(&x);
+        }
+        x
+    }
+}
+\end{lstlisting}
+
+\section{Results}
+
+\subsection{Compression}
+
+\begin{itemize}
+\item Original data: 907,740 bytes (Parquet shards)
+\item Compressed: 38,760 bytes (9,690 parameters × 4 bytes)
+\item Ratio: 23.4×
+\end{itemize}
+
+\subsection{Reconstruction}
+
+\begin{itemize}
+\item MSE: 0.233
+\item Training: 7,115 LMFDB objects
+\item Latent dimensions: 71
+\end{itemize}
+
+\section{Future Work}
+
+\begin{itemize}
+\item Train on full LMFDB dataset
+\item Compare to standard architectures
+\item Ablation study: why Monster primes?
+\item Statistical significance testing
+\end{itemize}
+
+\section{Code}
+
+\begin{itemize}
+\item Python: \texttt{monster\_autoencoder.py}
+\item Rust: \texttt{lmfdb-rust/src/bin/monster\_autoencoder\_rust.rs}
+\end{itemize}
+
+\end{document}

@@ -7,3 +7,13 @@ result
 target/
 */target/
 lmfdb-rust/target/
+
+# Temp directories
+temp/
+external/
+
+# Kiro settings
+.kiro/
+
+# Python quarantine
+quarantine/
