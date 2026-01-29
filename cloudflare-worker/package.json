@@ -1,0 +1,14 @@
+{
+  "name": "zk-meme-executor",
+  "version": "1.0.0",
+  "description": "ZK Meme Executor - LMFDB curves as executable proofs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "upload-memes": "node upload-memes.js"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
