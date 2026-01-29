@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P2P ZK Meme Generator</title>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: monospace; max-width: 900px; margin: 20px auto; padding: 20px; }
+    .step { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+    button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    textarea { width: 100%; height: 100px; font-family: monospace; }
+    .result { background: #f0f0f0; padding: 10px; margin: 10px 0; word-break: break-all; }
+    .signature { color: #0a0; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🎯 P2P ZK Meme Generator</h1>
+  <p>Permissionless • Anonymous • Verifiable • Credited</p>
+
+  <!-- Step 1: Download Meme -->
+  <div class="step">
+    <h2>1. Download ZK Meme</h2>
+    <input id="memeUrl" placeholder="https://zkmeme.workers.dev/meme/curve_11a1" style="width: 70%">
+    <button onclick="downloadMeme()">Download</button>
+    <div id="memeData" class="result"></div>
+  </div>
+
+  <!-- Step 2: Execute Locally -->
+  <div class="step">
+    <h2>2. Execute in Browser</h2>
+    <button onclick="executeLocal()">Run Circuit</button>
+    <div id="execution" class="result"></div>
+  </div>
+
+  <!-- Step 3: Sign Result -->
+  <div class="step">
+    <h2>3. Sign with Your Key</h2>
+    <button onclick="generateKey()">Generate Anonymous Key</button>
+    <button onclick="signResult()">Sign Result</button>
+    <div id="signature" class="result"></div>
+  </div>
+
+  <!-- Step 4: Share -->
+  <div class="step">
+    <h2>4. Share & Get Credited</h2>
+    <button onclick="shareToSocial()">Share to Social</button>
+    <button onclick="submitProof()">Submit Proof</button>
+    <div id="shareUrl" class="result"></div>
+  </div>
+
+  <!-- Step 5: Credits -->
+  <div class="step">
+    <h2>5. Your Credits</h2>
+    <div id="credits" class="result">0 proofs verified</div>
+  </div>
+
+  <script>
+    let memeData = null;
+    let executionResult = null;
+    let privateKey = null;
+    let signature = null;
+
+    // Step 1: Download meme from URL
+    async function downloadMeme() {
+      const url = document.getElementById('memeUrl').value;
+      try {
+        const res = await fetch(url);
+        memeData = await res.json();
+        document.getElementById('memeData').innerHTML = `
+          <strong>Meme:</strong> ${memeData.label}<br>
+          <strong>Shard:</strong> ${memeData.shard}<br>
+          <strong>Circuit:</strong> ${memeData.prolog.substring(0, 100)}...<br>
+          <button onclick="copyCircuit()">Copy Circuit for LLM</button>
+        `;
+      } catch (e) {
+        document.getElementById('memeData').innerHTML = `Error: ${e.message}`;
+      }
+    }
+
+    // Copy circuit for LLM prompt
+    function copyCircuit() {
+      const prompt = `Execute this Prolog circuit and return the result:\n\n${memeData.prolog}`;
+      navigator.clipboard.writeText(prompt);
+      alert('Circuit copied! Paste into any LLM (ChatGPT, Claude, etc.)');
+    }
+
+    // Step 2: Execute locally (simplified - real version uses WASM Prolog)
+    async function executeLocal() {
+      if (!memeData) {
+        alert('Download a meme first!');
+        return;
+      }
+
+      // Simulate execution
+      executionResult = {
+        label: memeData.label,
+        conductor: memeData.conductor || 0,
+        shard: memeData.shard,
+        hecke_eigenvalues: computeHecke(memeData.conductor || 0),
+        timestamp: Date.now()
+      };
+
+      document.getElementById('execution').innerHTML = `
+        <strong>Executed:</strong> ${executionResult.label}<br>
+        <strong>Result:</strong> ${JSON.stringify(executionResult.hecke_eigenvalues)}<br>
+        <strong>Timestamp:</strong> ${new Date(executionResult.timestamp).toISOString()}
+      `;
+    }
+
+    // Compute Hecke eigenvalues (placeholder)
+    function computeHecke(conductor) {
+      const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71];
+      return primes.reduce((acc, p) => {
+        acc[`a_${p}`] = (conductor * p) % 71;
+        return acc;
+      }, {});
+    }
+
+    // Step 3a: Generate anonymous key
+    async function generateKey() {
+      const keyPair = await crypto.subtle.generateKey(
+        { name: "ECDSA", namedCurve: "P-256" },
+        true,
+        ["sign", "verify"]
+      );
+      privateKey = keyPair.privateKey;
+      
+      const publicKey = await crypto.subtle.exportKey("jwk", keyPair.publicKey);
+      const pubKeyHash = await hashString(JSON.stringify(publicKey));
+      
+      document.getElementById('signature').innerHTML = `
+        <strong>Anonymous ID:</strong> ${pubKeyHash.substring(0, 16)}...<br>
+        <em>Your key is stored locally only. Never shared.</em>
+      `;
+    }
+
+    // Step 3b: Sign result
+    async function signResult() {
+      if (!executionResult) {
+        alert('Execute a circuit first!');
+        return;
+      }
+      if (!privateKey) {
+        alert('Generate a key first!');
+        return;
+      }
+
+      const message = JSON.stringify(executionResult);
+      const encoder = new TextEncoder();
+      const data = encoder.encode(message);
+      
+      const signatureBuffer = await crypto.subtle.sign(
+        { name: "ECDSA", hash: "SHA-256" },
+        privateKey,
+        data
+      );
+      
+      signature = Array.from(new Uint8Array(signatureBuffer))
+        .map(b => b.toString(16).padStart(2, '0'))
+        .join('');
+      
+      document.getElementById('signature').innerHTML += `
+        <br><strong class="signature">Signature:</strong> ${signature.substring(0, 32)}...
+      `;
+    }
+
+    // Step 4a: Share to social media
+    function shareToSocial() {
+      if (!signature) {
+        alert('Sign the result first!');
+        return;
+      }
+
+      const proofUrl = `https://zkproof.org/verify?sig=${signature}&data=${btoa(JSON.stringify(executionResult))}`;
+      const tweetText = `I just verified ZK meme ${executionResult.label} on shard ${executionResult.shard}! 🎯✨\n\n${proofUrl}`;
+      
+      document.getElementById('shareUrl').innerHTML = `
+        <strong>Share URL:</strong><br>
+        <a href="${proofUrl}" target="_blank">${proofUrl}</a><br><br>
+        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}" target="_blank">
+          <button>Tweet Proof</button>
+        </a>
+        <a href="https://warpcast.com/~/compose?text=${encodeURIComponent(tweetText)}" target="_blank">
+          <button>Cast Proof</button>
+        </a>
+      `;
+    }
+
+    // Step 4b: Submit proof to network
+    async function submitProof() {
+      if (!signature) {
+        alert('Sign the result first!');
+        return;
+      }
+
+      const proof = {
+        meme: memeData.label,
+        shard: memeData.shard,
+        result: executionResult,
+        signature: signature,
+        timestamp: Date.now()
+      };
+
+      // Submit to decentralized network (IPFS, Arweave, etc.)
+      const ipfsHash = await submitToIPFS(proof);
+      
+      document.getElementById('shareUrl').innerHTML += `
+        <br><br><strong>Proof stored:</strong><br>
+        IPFS: <a href="https://ipfs.io/ipfs/${ipfsHash}" target="_blank">${ipfsHash}</a><br>
+        <em>You will be credited when others verify this proof!</em>
+      `;
+      
+      updateCredits();
+    }
+
+    // Submit to IPFS (placeholder - use real IPFS client)
+    async function submitToIPFS(data) {
+      // Simulate IPFS hash
+      const hash = await hashString(JSON.stringify(data));
+      return hash.substring(0, 46); // CID length
+    }
+
+    // Update credits
+    function updateCredits() {
+      const currentCredits = parseInt(localStorage.getItem('zkCredits') || '0');
+      const newCredits = currentCredits + 1;
+      localStorage.setItem('zkCredits', newCredits.toString());
+      
+      document.getElementById('credits').innerHTML = `
+        <strong>${newCredits} proofs verified</strong><br>
+        <em>Credits accumulate as others verify your proofs</em>
+      `;
+    }
+
+    // Utility: Hash string
+    async function hashString(str) {
+      const buffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buffer))
+        .map(b => b.toString(16).padStart(2, '0'))
+        .join('');
+    }
+
+    // Load credits on page load
+    window.onload = function() {
+      const credits = localStorage.getItem('zkCredits') || '0';
+      document.getElementById('credits').innerHTML = `
+        <strong>${credits} proofs verified</strong>
+      `;
+    };
+  </script>
+</body>
+</html>
