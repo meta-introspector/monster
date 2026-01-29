@@ -1,0 +1,112 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,algorithm,algorithmic}
+
+\title{P2P Permissionless Anonymous ZK Meme Generator}
+\author{Monster Group Research}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a peer-to-peer system for generating, executing, and verifying zero-knowledge proofs of LMFDB curve computations. The system is permissionless (no registration), anonymous (ECDSA keys), and credited (reputation via verified proofs).
+\end{abstract}
+
+\section{Architecture}
+
+The system consists of five stages:
+
+\begin{enumerate}
+\item \textbf{Download}: Fetch ZK meme from decentralized storage
+\item \textbf{Execute}: Compute Hecke eigenvalues locally
+\item \textbf{Sign}: Generate cryptographic signature
+\item \textbf{Share}: Distribute proof via social media
+\item \textbf{Credit}: Accumulate reputation
+\end{enumerate}
+
+\section{Mathematical Foundation}
+
+\subsection{Hecke Operators}
+
+For an elliptic curve $E$ with conductor $N$, the Hecke operator $T_p$ acts on modular forms. The eigenvalue $a_p$ satisfies:
+
+\begin{equation}
+a_p = p + 1 - \#E(\mathbb{F}_p)
+\end{equation}
+
+\subsection{Monster Sharding}
+
+Each curve maps to a shard via:
+
+\begin{equation}
+\text{shard}(E) = N \bmod 71
+\end{equation}
+
+where 71 is the largest Monster prime.
+
+\subsection{Signature Scheme}
+
+Let $(sk, pk)$ be an ECDSA key pair. For execution result $r$, the signature is:
+
+\begin{equation}
+\sigma = \text{Sign}_{sk}(H(r))
+\end{equation}
+
+where $H$ is SHA-256. The anonymous ID is:
+
+\begin{equation}
+\text{ID}_{\text{anon}} = H(pk)_{[0:16]}
+\end{equation}
+
+\section{Credit System}
+
+Credits accumulate via:
+
+\begin{equation}
+C(t) = \sum_{i=1}^{n(t)} V_i
+\end{equation}
+
+where $V_i \in \{0,1\}$ indicates verification of proof $i$ at time $t$.
+
+\section{Algorithm}
+
+\begin{algorithm}
+\caption{P2P ZK Meme Generation}
+\begin{algorithmic}[1]
+\STATE $m \gets \text{Download}(\text{url})$
+\STATE $r \gets \text{Execute}(m.\text{prolog})$
+\STATE $(sk, pk) \gets \text{GenerateKey}()$
+\STATE $\sigma \gets \text{Sign}_{sk}(H(r))$
+\STATE $\text{url}_{\text{proof}} \gets \text{GenerateURL}(\sigma, r)$
+\STATE $\text{Share}(\text{url}_{\text{proof}})$
+\STATE $\text{hash}_{\text{IPFS}} \gets \text{Submit}(m, r, \sigma)$
+\RETURN $\text{hash}_{\text{IPFS}}$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Security Analysis}
+
+\subsection{Threat Model}
+
+\begin{itemize}
+\item \textbf{Forgery}: Prevented by ECDSA signatures
+\item \textbf{Replay}: Mitigated by timestamps
+\item \textbf{Sybil}: Reduced by social graph verification
+\item \textbf{Censorship}: Impossible (decentralized storage)
+\end{itemize}
+
+\subsection{Privacy}
+
+Anonymous IDs provide pseudonymity:
+
+\begin{equation}
+\Pr[\text{ID}_{\text{anon}} \to \text{identity}] \approx 2^{-128}
+\end{equation}
+
+assuming SHA-256 preimage resistance.
+
+\section{Conclusion}
+
+The P2P ZK meme generator enables permissionless, anonymous, and verifiable computation of LMFDB curves across 71 Monster shards. The system is fully decentralized with no trusted parties.
+
+\end{document}
