@@ -29,7 +29,7 @@ This project is dual-licensed under:
 - You don't want copyleft requirements
 - You need commercial support
 
-**To purchase**: Contact sales@net2b.io
+**To purchase**: Contact zk@solfunmeme.com
 
 **Full license**: See [LICENSE.APACHE](LICENSE.APACHE)
 
@@ -79,9 +79,9 @@ This dual licensing model ensures:
 
 ## Contact
 
-**Sales**: sales@net2b.io  
-**Support**: support@net2b.io  
-**Contributions**: contribute@net2b.io  
+**Sales**: zk@solfunmeme.com  
+**Support**: zk@solfunmeme.com  
+**Contributions**: zk@solfunmeme.com  
 
 ---
 
