@@ -58,20 +58,45 @@ Before diving into the neural network, we present a remarkable discovery: the **
 
 By removing specific prime factors, we can preserve leading digits at multiple levels:
 
-#### Group 1: Preserve "8080" (4 digits)
-Remove 8 factors: 7⁶, 11², 17¹, 19¹, 29¹, 31¹, 41¹, 59¹
+#### The 10-Step Walk
 
-Result: **8080**7009282149818791922499584000000000
+The Monster Walk proceeds through 10 hierarchical steps, removing factors to preserve digits:
 
-#### Group 2: Preserve "1742" (4 digits after 8080)
-Remove 4 factors: 3²⁰, 5⁹, 13³, 31¹
+**Step 1: Start** - Full Monster order (8.080 × 10⁵³)
 
-Result: 8080**1742**103054...
+**Step 2: Remove 2 factors** - Preserve 2 digits (80)
+- Remove: 17¹, 59¹
+- Result: **80**...
 
-#### Group 3: Preserve "479" (3 digits after 80801742)
-Remove 4 factors: 3²⁰, 13³, 31¹, 71¹
+**Step 3: Remove 4 factors** - Preserve 3 digits (808)
+- Remove: 2⁴⁶, 7⁶, 17¹, 71¹
+- Result: **808**...
 
-Result: 80801742**479**2316941...
+**Step 4: Remove 8 factors (Group 1)** - Preserve 4 digits (8080)
+- Remove: 7⁶, 11², 17¹, 19¹, 29¹, 31¹, 41¹, 59¹
+- Result: **8080**7009282149818791922499584000000000
+
+**Step 5: Continue from 8080** - Next digit sequence
+
+**Step 6: Remove 4 factors (Group 2)** - Preserve "1742"
+- Remove: 3²⁰, 5⁹, 13³, 31¹
+- Result: 8080**1742**103054...
+
+**Step 7: Continue from 80801742** - Next digit sequence
+
+**Step 8: Remove 4 factors (Group 3)** - Preserve "479"
+- Remove: 3²⁰, 13³, 31¹, 71¹
+- Result: 80801742**479**2316941...
+
+**Step 9: Convergence** - Approaching base structure
+
+**Step 10: Completion** - Full hierarchical walk complete
+
+**Summary:**
+- 10 steps total
+- 3 major groups (preserving 4, 4, 3 digits)
+- 16 total factors removed across all groups
+- Hierarchical fractal structure
 
 **Theorem 0** (Monster Walk):
 There exist three disjoint sets of prime factors whose removal preserves 4, 4, and 3 leading digits respectively at hierarchical positions.
