@@ -79,6 +79,13 @@ name = "pre-commit-review"
 path = "src/bin/pre_commit_review.rs"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.3"
+regex = "1.7"
+chrono = "0.4"
+parquet = "50.0"
+arrow = "50.0"
 # Core
 num-bigint = "0.4"
 num-traits = "0.2"
