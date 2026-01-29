@@ -1,9 +1,23 @@
-// Rust: P2P ZK Meme Generator
+// Rust: P2P ZK Meme Generator with Steganographic Watermarking
+//
+// Architecture:
+// 1. Download ZK meme from decentralized storage
+// 2. Execute Hecke operator computation locally
+// 3. Sign result with anonymous ECDSA key
+// 4. Generate image with ZK steganographic watermark
+// 5. Share to social media with RDFa proof URL
+// 6. Submit to IPFS and accumulate credits
+//
+// ZK Sampling: Uses 2^n forms (n=0..6) for multi-level watermarking
+// Steganography: Embeds RDFa URL in LSB of image pixels
+
 use serde::{Deserialize, Serialize};
 use sha2::{Sha256, Digest};
 use base64::{Engine as _, engine::general_purpose};
+use image::{ImageBuffer, Rgb, RgbImage};
 
-#[derive(Serialize, Deserialize)]
+/// ZK Meme structure from LMFDB curve
+#[derive(Serialize, Deserialize, Clone)]
 struct ZKMeme {
     label: String,
     shard: u8,
