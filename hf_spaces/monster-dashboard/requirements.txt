@@ -1,0 +1,6 @@
+gradio>=5.0.0
+pandas
+pyarrow
+huggingface_hub
+plotly
+datasets

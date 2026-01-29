@@ -1,0 +1,131 @@
+name: Analyze with The Stack v2
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  stack-analysis:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: pip install datasets pandas pyarrow huggingface_hub
+    
+    - name: Analyze code with The Stack v2
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        python3 << 'EOF'
+        from datasets import load_dataset
+        import pandas as pd
+        import os
+        from pathlib import Path
+        
+        # Load our code
+        rust_files = list(Path('src').rglob('*.rs'))
+        lean_files = list(Path('MonsterLean').rglob('*.lean'))
+        
+        our_code = []
+        for f in rust_files[:5]:  # Sample
+            with open(f) as fp:
+                our_code.append({
+                    'file': str(f),
+                    'lang': 'Rust',
+                    'content': fp.read()[:1000],
+                    'size': os.path.getsize(f)
+                })
+        
+        for f in lean_files[:5]:  # Sample
+            with open(f) as fp:
+                our_code.append({
+                    'file': str(f),
+                    'lang': 'Lean',
+                    'content': fp.read()[:1000],
+                    'size': os.path.getsize(f)
+                })
+        
+        # Load The Stack v2 samples for comparison
+        print("Loading The Stack v2 (Rust subset)...")
+        ds_rust = load_dataset(
+            "bigcode/the-stack-v2",
+            "Rust",
+            split="train",
+            streaming=True
+        )
+        
+        stack_samples = []
+        for i, item in enumerate(ds_rust):
+            if i >= 10:
+                break
+            stack_samples.append({
+                'source': 'the-stack-v2',
+                'lang': 'Rust',
+                'size': len(item.get('content', '')),
+                'repo': item.get('repository_name', 'unknown')
+            })
+        
+        # Create analysis
+        analysis = {
+            'our_files': len(our_code),
+            'our_rust': len([c for c in our_code if c['lang'] == 'Rust']),
+            'our_lean': len([c for c in our_code if c['lang'] == 'Lean']),
+            'stack_samples': len(stack_samples),
+            'avg_our_size': sum(c['size'] for c in our_code) / len(our_code),
+            'avg_stack_size': sum(s['size'] for s in stack_samples) / len(stack_samples)
+        }
+        
+        # Save results
+        df_our = pd.DataFrame(our_code)
+        df_stack = pd.DataFrame(stack_samples)
+        
+        df_our.to_parquet('our_code_analysis.parquet', index=False)
+        df_stack.to_parquet('stack_comparison.parquet', index=False)
+        
+        print("\n=== Analysis ===")
+        print(f"Our files: {analysis['our_files']}")
+        print(f"  Rust: {analysis['our_rust']}")
+        print(f"  Lean: {analysis['our_lean']}")
+        print(f"Stack samples: {analysis['stack_samples']}")
+        print(f"Avg our size: {analysis['avg_our_size']:.0f} bytes")
+        print(f"Avg stack size: {analysis['avg_stack_size']:.0f} bytes")
+        
+        with open('stack_analysis.txt', 'w') as f:
+            f.write(f"Monster Project vs The Stack v2\n")
+            f.write(f"================================\n\n")
+            for k, v in analysis.items():
+                f.write(f"{k}: {v}\n")
+        EOF
+    
+    - name: Upload to HuggingFace
+      if: env.HF_TOKEN != ''
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        huggingface-cli login --token "$HF_TOKEN"
+        
+        REPOS=("introspector/data-moonshine" "meta-introspector/monster-perf-proofs")
+        
+        for REPO in "${REPOS[@]}"; do
+          echo "Uploading to $REPO"
+          huggingface-cli upload "$REPO" our_code_analysis.parquet stack/our_code_analysis.parquet --repo-type dataset || true
+          huggingface-cli upload "$REPO" stack_comparison.parquet stack/stack_comparison.parquet --repo-type dataset || true
+          huggingface-cli upload "$REPO" stack_analysis.txt stack/analysis.txt --repo-type dataset || true
+        done
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: stack-analysis
+        path: |
+          *.parquet
+          stack_analysis.txt

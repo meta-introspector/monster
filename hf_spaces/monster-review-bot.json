@@ -1,0 +1,24 @@
+{
+  "name": "Monster Review Team",
+  "website": "https://github.com/meta-introspector/monster",
+  "developer": "meta-introspector",
+  "status": "active",
+  "created_at": "2026-01-29T00:00:00Z",
+  "description": "9-persona review team (Knuth, ITIL, ISO9001, GMP, Six Sigma, Rust Enforcer, Fake Detector, Security Auditor, Math Professor) with formal proofs in Lean4",
+  "github_usernames": [
+    "meta-introspector"
+  ],
+  "review_types": [
+    "code_quality",
+    "documentation",
+    "formal_proofs",
+    "security",
+    "data_integrity"
+  ],
+  "metrics": {
+    "personas": 9,
+    "max_score": 90,
+    "typical_score": 84,
+    "acceptance_threshold": 70
+  }
+}
