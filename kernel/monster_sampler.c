@@ -50,8 +50,41 @@ struct ring_buffer {
     spinlock_t lock;
 };
 
+// Bidirectional pipe for app coordination
+struct monster_pipe {
+    int id;
+    pid_t producer_pid;
+    pid_t consumer_pid;
+    struct ring_buffer *ring;
+    wait_queue_head_t read_wait;
+    wait_queue_head_t write_wait;
+    atomic_t readers;
+    atomic_t writers;
+    bool closed;
+};
+
+// Wait state for coordination
+struct wait_state {
+    pid_t pid;
+    uint8_t shard_id;
+    uint64_t sequence;
+    bool ready;
+    wait_queue_head_t wait_queue;
+};
+
+// Coordination context
+struct coord_ctx {
+    struct monster_pipe *pipes[15];  // One pipe per ring
+    struct wait_state *wait_states[256];  // Up to 256 waiting apps
+    spinlock_t coord_lock;
+    atomic64_t sequence_counter;
+};
+
 // 15 ring buffers (one per Monster prime)
 static struct ring_buffer *rings[15];
+
+// Coordination context
+static struct coord_ctx *coord;
 
 // GPU transfer buffer
 #define GPU_BUFFER_SIZE (1024 * 1024)  // 1MB
@@ -132,6 +165,227 @@ static int ring_pop(struct ring_buffer *ring, struct process_sample *sample)
     spin_unlock_irqrestore(&ring->lock, flags);
     
     return 0;
+}
+
+// Create bidirectional pipe
+static struct monster_pipe *pipe_create(int id, struct ring_buffer *ring)
+{
+    struct monster_pipe *pipe;
+    
+    pipe = kmalloc(sizeof(*pipe), GFP_KERNEL);
+    if (!pipe)
+        return NULL;
+    
+    pipe->id = id;
+    pipe->producer_pid = 0;
+    pipe->consumer_pid = 0;
+    pipe->ring = ring;
+    init_waitqueue_head(&pipe->read_wait);
+    init_waitqueue_head(&pipe->write_wait);
+    atomic_set(&pipe->readers, 0);
+    atomic_set(&pipe->writers, 0);
+    pipe->closed = false;
+    
+    return pipe;
+}
+
+// Register app as producer
+static int pipe_register_producer(struct monster_pipe *pipe, pid_t pid)
+{
+    if (pipe->producer_pid != 0 && pipe->producer_pid != pid)
+        return -EBUSY;
+    
+    pipe->producer_pid = pid;
+    atomic_inc(&pipe->writers);
+    
+    return 0;
+}
+
+// Register app as consumer
+static int pipe_register_consumer(struct monster_pipe *pipe, pid_t pid)
+{
+    if (pipe->consumer_pid != 0 && pipe->consumer_pid != pid)
+        return -EBUSY;
+    
+    pipe->consumer_pid = pid;
+    atomic_inc(&pipe->readers);
+    
+    return 0;
+}
+
+// Read from pipe (blocking)
+static int pipe_read(struct monster_pipe *pipe, struct process_sample *sample)
+{
+    int ret;
+    
+    // Wait for data
+    ret = wait_event_interruptible(pipe->read_wait,
+                                   pipe->ring->count > 0 || pipe->closed);
+    if (ret)
+        return ret;
+    
+    if (pipe->closed && pipe->ring->count == 0)
+        return -EPIPE;
+    
+    // Pop from ring
+    ret = ring_pop(pipe->ring, sample);
+    
+    // Wake up writers
+    wake_up_interruptible(&pipe->write_wait);
+    
+    return ret;
+}
+
+// Write to pipe (blocking)
+static int pipe_write(struct monster_pipe *pipe, struct process_sample *sample)
+{
+    int ret;
+    
+    // Wait for space
+    ret = wait_event_interruptible(pipe->write_wait,
+                                   pipe->ring->count < pipe->ring->capacity || pipe->closed);
+    if (ret)
+        return ret;
+    
+    if (pipe->closed)
+        return -EPIPE;
+    
+    // Push to ring
+    ret = ring_push(pipe->ring, sample);
+    
+    // Wake up readers
+    wake_up_interruptible(&pipe->read_wait);
+    
+    return ret;
+}
+
+// Close pipe
+static void pipe_close(struct monster_pipe *pipe)
+{
+    pipe->closed = true;
+    wake_up_interruptible_all(&pipe->read_wait);
+    wake_up_interruptible_all(&pipe->write_wait);
+}
+
+// Create wait state
+static struct wait_state *wait_state_create(pid_t pid, uint8_t shard_id)
+{
+    struct wait_state *ws;
+    
+    ws = kmalloc(sizeof(*ws), GFP_KERNEL);
+    if (!ws)
+        return NULL;
+    
+    ws->pid = pid;
+    ws->shard_id = shard_id;
+    ws->sequence = atomic64_inc_return(&coord->sequence_counter);
+    ws->ready = false;
+    init_waitqueue_head(&ws->wait_queue);
+    
+    return ws;
+}
+
+// Wait for coordination
+static int wait_for_coord(struct wait_state *ws, uint64_t timeout_ms)
+{
+    int ret;
+    
+    if (timeout_ms == 0) {
+        // Non-blocking
+        return ws->ready ? 0 : -EAGAIN;
+    }
+    
+    // Blocking with timeout
+    ret = wait_event_interruptible_timeout(ws->wait_queue,
+                                          ws->ready,
+                                          msecs_to_jiffies(timeout_ms));
+    
+    if (ret == 0)
+        return -ETIMEDOUT;
+    if (ret < 0)
+        return ret;
+    
+    return 0;
+}
+
+// Signal coordination ready
+static void signal_coord_ready(struct wait_state *ws)
+{
+    ws->ready = true;
+    wake_up_interruptible(&ws->wait_queue);
+}
+
+// Coordinate apps on same shard
+static int coordinate_shard(uint8_t shard_id)
+{
+    unsigned long flags;
+    int count = 0;
+    
+    spin_lock_irqsave(&coord->coord_lock, flags);
+    
+    // Find all wait states for this shard
+    for (int i = 0; i < 256; i++) {
+        struct wait_state *ws = coord->wait_states[i];
+        if (ws && ws->shard_id == shard_id && !ws->ready) {
+            signal_coord_ready(ws);
+            count++;
+        }
+    }
+    
+    spin_unlock_irqrestore(&coord->coord_lock, flags);
+    
+    return count;
+}
+
+// Initialize coordination context
+static int coord_init(void)
+{
+    coord = kmalloc(sizeof(*coord), GFP_KERNEL);
+    if (!coord)
+        return -ENOMEM;
+    
+    memset(coord, 0, sizeof(*coord));
+    spin_lock_init(&coord->coord_lock);
+    atomic64_set(&coord->sequence_counter, 0);
+    
+    // Create pipes for each ring
+    for (int i = 0; i < 15; i++) {
+        coord->pipes[i] = pipe_create(i, rings[i]);
+        if (!coord->pipes[i]) {
+            // Cleanup
+            for (int j = 0; j < i; j++) {
+                kfree(coord->pipes[j]);
+            }
+            kfree(coord);
+            return -ENOMEM;
+        }
+    }
+    
+    return 0;
+}
+
+// Cleanup coordination context
+static void coord_cleanup(void)
+{
+    if (!coord)
+        return;
+    
+    // Close all pipes
+    for (int i = 0; i < 15; i++) {
+        if (coord->pipes[i]) {
+            pipe_close(coord->pipes[i]);
+            kfree(coord->pipes[i]);
+        }
+    }
+    
+    // Free wait states
+    for (int i = 0; i < 256; i++) {
+        if (coord->wait_states[i]) {
+            kfree(coord->wait_states[i]);
+        }
+    }
+    
+    kfree(coord);
 }
 
 // Apply Hecke operator (permutation based on prime)
@@ -325,20 +579,30 @@ static int __init monster_sampler_init(void)
     gpu_buffer_count = 0;
     spin_lock_init(&gpu_lock);
     
+    // Initialize coordination
+    if (coord_init() < 0) {
+        pr_err("Failed to initialize coordination\n");
+        goto cleanup_gpu;
+    }
+    
     // Start sampling thread
     sampling_active = true;
     sampler_thread = kthread_run(sampler_thread_fn, NULL, "monster_sampler");
     if (IS_ERR(sampler_thread)) {
         pr_err("Failed to create sampler thread\n");
-        goto cleanup_gpu;
+        goto cleanup_coord;
     }
     
     pr_info("Monster Process Sampler initialized successfully\n");
     pr_info("Sampling at 100 Hz, 15 rings, GPU buffer: %d samples\n",
             GPU_BUFFER_SIZE);
+    pr_info("Bidirectional pipes: 15, Wait states: 256\n");
     
     return 0;
 
+cleanup_coord:
+    coord_cleanup();
+    
 cleanup_gpu:
     vfree(gpu_buffer);
     
@@ -368,6 +632,9 @@ static void __exit monster_sampler_exit(void)
     
     // Print final statistics
     print_stats();
+    
+    // Cleanup coordination
+    coord_cleanup();
     
     // Cleanup GPU buffer
     vfree(gpu_buffer);

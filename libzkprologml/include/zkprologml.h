@@ -158,6 +158,62 @@ int zkprologml_export_prolog(
     size_t count
 );
 
+// Bidirectional pipe operations
+typedef struct zkprologml_pipe zkprologml_pipe_t;
+
+// Open pipe to kernel ring
+zkprologml_pipe_t* zkprologml_pipe_open(
+    zkprologml_ctx_t *ctx,
+    uint8_t ring_id,
+    bool producer
+);
+
+// Close pipe
+void zkprologml_pipe_close(zkprologml_pipe_t *pipe);
+
+// Read from pipe (blocking)
+int zkprologml_pipe_read(
+    zkprologml_pipe_t *pipe,
+    zkprologml_sample_t *sample,
+    uint64_t timeout_ms
+);
+
+// Write to pipe (blocking)
+int zkprologml_pipe_write(
+    zkprologml_pipe_t *pipe,
+    const zkprologml_sample_t *sample,
+    uint64_t timeout_ms
+);
+
+// Wait state operations
+typedef struct zkprologml_wait zkprologml_wait_t;
+
+// Create wait state
+zkprologml_wait_t* zkprologml_wait_create(
+    zkprologml_ctx_t *ctx,
+    uint8_t shard_id
+);
+
+// Free wait state
+void zkprologml_wait_free(zkprologml_wait_t *wait);
+
+// Wait for coordination
+int zkprologml_wait_for_coord(
+    zkprologml_wait_t *wait,
+    uint64_t timeout_ms
+);
+
+// Signal ready
+int zkprologml_signal_ready(
+    zkprologml_wait_t *wait
+);
+
+// Coordinate apps on shard
+int zkprologml_coordinate_shard(
+    zkprologml_ctx_t *ctx,
+    uint8_t shard_id
+);
+
 // Batch operations
 typedef struct {
     zkprologml_sample_t *samples;
