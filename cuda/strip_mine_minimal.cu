@@ -27,6 +27,15 @@ __global__ void strip_mine_kernel(
         emb[i] = model_weights[(qid + i) % (100 * 1024 * 1024)];
     }
     
+    // Print Q42 embedding
+    if (qid == 42) {
+        printf("Q42 embedding (first 10): ");
+        for (int i = 0; i < 10; i++) {
+            printf("%.2f ", emb[i]);
+        }
+        printf("...\n");
+    }
+    
     shards_out[qid_idx] = shard;
 }
 

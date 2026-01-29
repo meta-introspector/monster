@@ -49,6 +49,18 @@ void write_parquet(QIDResult* results, int count, const char* filename) {
         fwrite(&results[i].qid, sizeof(uint64_t), 1, f);
         fwrite(&results[i].shard, sizeof(uint8_t), 1, f);
         fwrite(results[i].embedding, sizeof(float), EMBED_DIM, f);
+        
+        // Show Q42
+        if (results[i].qid == 42) {
+            printf("\n🎯 Q42 (Douglas Adams!):\n");
+            printf("   QID: %lu\n", results[i].qid);
+            printf("   Shard: %u\n", results[i].shard);
+            printf("   Embedding (first 10): ");
+            for (int j = 0; j < 10; j++) {
+                printf("%.2f ", results[i].embedding[j]);
+            }
+            printf("...\n");
+        }
     }
     
     // Footer
@@ -67,6 +79,13 @@ int main() {
     cudaMalloc(&d_model, 100 * 1024 * 1024 * sizeof(float));
     cudaMalloc(&d_qids, QID_BATCH * sizeof(uint64_t));
     cudaMalloc(&d_results, QID_BATCH * sizeof(QIDResult));
+    
+    // Initialize QIDs on CPU
+    uint64_t h_qids[QID_BATCH];
+    for (int i = 0; i < QID_BATCH; i++) {
+        h_qids[i] = i;
+    }
+    cudaMemcpy(d_qids, h_qids, QID_BATCH * sizeof(uint64_t), cudaMemcpyHostToDevice);
     
     // Launch GPU kernel
     strip_mine_collect_kernel<<<4, 256>>>(d_model, d_qids, d_results);
