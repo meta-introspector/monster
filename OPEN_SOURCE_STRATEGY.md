@@ -21,7 +21,17 @@
 ✅ Auditor interface (query language)
 ```
 
-**License**: MIT or Apache 2.0 (permissive)
+**License**: AGPL-3.0 (copyleft)
+
+**"ZK Hackers Gotta Eat" Policy**:
+- Free: AGPL-3.0 (must share modifications)
+- Paid: Apache 2.0 ($10,000/year commercial license)
+
+**Why AGPL?**
+- Forces cloud providers to contribute back
+- Prevents proprietary forks
+- Protects community value
+- Ensures sustainability
 
 ---
 
@@ -62,30 +72,37 @@ Customer → Verify Rules → Rules are public → Certainty
 
 ## Business Model
 
-### Open Source (Free)
+### Open Source (AGPL-3.0)
 ```
 github.com/net2b/compliance-circuits
+├── LICENSE.AGPL-3.0          # Free for open source
+├── LICENSE.COMMERCIAL        # $10k/year for proprietary
 ├── prolog/
-│   ├── gdpr.pl           # All GDPR rules
-│   ├── hipaa.pl          # All HIPAA rules
-│   ├── ccpa.pl           # All CCPA rules
-│   └── ...               # All laws
+│   ├── gdpr.pl               # All GDPR rules
+│   ├── hipaa.pl              # All HIPAA rules
+│   ├── ccpa.pl               # All CCPA rules
+│   └── ...                   # All laws
 ├── circuits/
-│   ├── gdpr_circuit.pl   # GDPR compliance circuit
+│   ├── gdpr_circuit.pl       # GDPR compliance circuit
 │   └── ...
 ├── zkprologml/
-│   ├── spec.md           # Full specification
-│   └── tools/            # Encoding/verification tools
+│   ├── spec.md               # Full specification
+│   └── tools/                # Encoding/verification tools
 └── lean4/
-    └── verify/           # All verification proofs
+    └── verify/               # All verification proofs
 ```
 
-**Anyone can:**
-- Download the code
-- Run it themselves
-- Verify the rules
-- Audit the proofs
-- Fork and modify
+**AGPL-3.0 (Free)**:
+- Use for free
+- Must share modifications
+- Must open source your service
+- Must contribute back
+
+**Apache 2.0 (Paid)**:
+- $10,000/year commercial license
+- Keep modifications private
+- No copyleft requirements
+- Commercial support included
 
 ### Paid Service (Net2B Cloud)
 ```
@@ -155,26 +172,28 @@ $ ./check_compliance.sh my-system gdpr
 
 ### vs Proprietary Compliance Tools
 
-| Feature | Proprietary | Net2B (Open Source) |
-|---------|------------|---------------------|
-| Code | Closed | Open |
+| Feature | Proprietary | Net2B (AGPL) |
+|---------|------------|--------------|
+| Code | Closed | Open (AGPL) |
 | Rules | Secret | Public |
 | Verification | Trust us | Verify yourself |
 | Lock-in | High | Zero |
 | Auditability | None | Complete |
-| Cost | High (licensing) | Low (execution only) |
+| Cost (open source) | N/A | Free (AGPL) |
+| Cost (proprietary) | High | $10k/year (Apache) |
+| Contributors | None | Community |
 
 ### Why Customers Choose Us
 
 1. **Trust through transparency**
-   - All code is open
+   - All code is open (AGPL)
    - All rules are public
    - All proofs are verifiable
 
-2. **No lock-in**
-   - Can run it themselves
-   - Can switch providers
-   - Can fork and modify
+2. **Flexible licensing**
+   - Free for open source (AGPL)
+   - Paid for proprietary ($10k/year Apache)
+   - No lock-in either way
 
 3. **Regulatory confidence**
    - Regulators can audit the code
@@ -185,40 +204,112 @@ $ ./check_compliance.sh my-system gdpr
    - Thousands of eyes on the code
    - Security researchers audit
    - Compliance experts contribute
+   - Contributors get paid
+
+### Why AGPL Works
+
+**For the community**:
+- Forces contributions back
+- Prevents proprietary forks
+- Ensures sustainability
+- Contributors get paid
+
+**For customers**:
+- Free if you open source
+- Paid if you want proprietary
+- Clear choice
+- Fair deal
+
+**For us**:
+- Revenue from enterprises
+- Community contributions
+- Sustainable business
+- ZK hackers eat
 
 ---
 
 ## Revenue Streams
 
-### 1. Managed Execution ($999-$9,999/month)
-- We run the open source code
+### 1. Commercial License ($10,000/year)
+- Apache 2.0 license (no copyleft)
+- Keep modifications private
+- No requirement to open source
+- Commercial support included
+- **Target**: Companies with money
+
+### 2. Managed Execution ($999-$9,999/month)
+- We run the AGPL code
 - We generate ZK proofs
 - We provide compliance dashboard
 - We guarantee uptime
+- **Target**: Companies without infrastructure
 
-### 2. Regulator Portal ($500/month per regulator)
+### 3. Regulator Portal ($500/month per regulator)
 - Direct access to compliance data
 - Real-time verification
 - Audit report generation
 - ZK proof verification tools
 
-### 3. Professional Services ($500/hour)
+### 4. Professional Services ($500/hour)
 - Custom law ingestion
 - Compliance consulting
 - Integration support
 - Training
 
-### 4. Enterprise Support ($10,000/month)
+### 5. Enterprise Support ($10,000/month)
 - Dedicated compliance engineer
 - 24/7 support
 - Custom SLAs
 - Priority features
+- Includes commercial license
 
-### 5. Certification ($5,000 per certification)
+### 6. Certification ($5,000 per certification)
 - Official Net2B compliance certification
 - Regulator-recognized
 - Annual renewal
 - Public badge
+
+---
+
+## "ZK Hackers Gotta Eat" Policy
+
+### Philosophy
+**Open source doesn't mean free labor. Contributors deserve to eat.**
+
+### Dual Licensing Strategy
+
+**AGPL-3.0 (Free)**:
+- ✅ Use for free
+- ✅ Modify freely
+- ✅ Deploy freely
+- ⚠️ Must share modifications
+- ⚠️ Must open source your service
+
+**Apache 2.0 (Paid)**:
+- ✅ Keep modifications private
+- ✅ No copyleft requirements
+- ✅ Commercial support
+- 💰 $10,000/year
+
+### Who Pays?
+
+**Free (AGPL)**:
+- Startups (open source their stack)
+- Researchers (publish their work)
+- Non-profits (share their code)
+- Individuals (learning/experimenting)
+
+**Paid (Apache)**:
+- Enterprises (want proprietary modifications)
+- Cloud providers (don't want to open source)
+- Consultancies (build for clients)
+- Anyone with money who wants flexibility
+
+### Revenue Split
+
+**50%** - Core contributors (by commit count)  
+**30%** - Law contributors (by law count)  
+**20%** - Foundation (infrastructure, marketing)
 
 ---
 
