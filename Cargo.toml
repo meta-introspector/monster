@@ -1,8 +1,9 @@
 [package]
 name = "monster"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
+# Core Monster Walk binaries
 [[bin]]
 name = "monster"
 path = "src/main.rs"
@@ -27,6 +28,93 @@ path = "src/musical_periodic_table.rs"
 name = "monster_emoji_report"
 path = "src/monster_emoji_report.rs"
 
+# ZK Witness binaries
+[[bin]]
+name = "witness-lmfdb"
+path = "src/bin/witness_lmfdb.rs"
+
+[[bin]]
+name = "witness-oeis"
+path = "src/bin/witness_oeis.rs"
+
+[[bin]]
+name = "witness-wikidata"
+path = "src/bin/witness_wikidata.rs"
+
+[[bin]]
+name = "compress-rdfa"
+path = "src/bin/compress_rdfa.rs"
+
+[[bin]]
+name = "encrypt-witness"
+path = "src/bin/encrypt_witness.rs"
+
+[[bin]]
+name = "shard-witness"
+path = "src/bin/shard_witness.rs"
+
+[[bin]]
+name = "upload-telemetry"
+path = "src/bin/upload_telemetry.rs"
+
+# Knowledge partition binaries
+[[bin]]
+name = "classify-math-object"
+path = "src/bin/classify_math_object.rs"
+
+[[bin]]
+name = "partition-lmfdb"
+path = "src/bin/partition_lmfdb.rs"
+
+[[bin]]
+name = "search-by-layer"
+path = "src/bin/search_by_layer.rs"
+
+[[bin]]
+name = "virtual-knuth"
+path = "src/bin/virtual_knuth.rs"
+
 [dependencies]
+# Core
 num-bigint = "0.4"
 num-traits = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+base64 = "0.21"
+parquet = "53.2"
+arrow = "53.2"
+chrono = { version = "0.4", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+walkdir = "2.4"
+regex = "1.10"
+
+# Parquet and Arrow
+arrow = "53.0"
+parquet = { version = "53.0", features = ["async"] }
+
+# RDF (Escaped RDFa)
+sophia = "0.8"
+rio_api = "0.8"
+rio_turtle = "0.8"
+
+# Cryptography (optional, enabled with 'crypto' feature)
+ring = { version = "0.17", optional = true }
+ed25519-dalek = { version = "2.0", optional = true }
+
+# Compression
+zstd = "0.13"
+lz4 = "1.24"
+
+# Networking
+reqwest = { version = "0.11", features = ["json", "blocking"], optional = true }
+tokio = { version = "1.0", features = ["full"], optional = true }
+
+# HuggingFace
+hf-hub = { version = "0.3", optional = true }
+
+[features]
+default = []
+crypto = ["ring", "ed25519-dalek"]
+witness = ["reqwest", "tokio", "hf-hub"]
+full = ["crypto", "witness"]

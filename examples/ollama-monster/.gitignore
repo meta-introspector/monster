@@ -1,5 +1,0 @@
-target/
-*.gguf
-*.json
-!Cargo.toml
-!package.json

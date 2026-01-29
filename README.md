@@ -6,8 +6,10 @@ Monster Group Walk Down to Earth - A mathematical exploration of the Monster gro
 
 **Author**: Undergraduate math student (not currently enrolled), exploring patterns in the Monster group. This is a learning project, not professional research. I welcome corrections, guidance, and constructive criticism from experts. Please review with patience and understanding.
 
-**What this is**: Documented experiments, working code, interesting patterns  
-**What this isn't**: Rigorous professional mathematics (yet)
+**What this is**: Documented experiments, working code, interesting patterns, conjectural models  
+**What this isn't**: Rigorous professional mathematics (yet), proven theory
+
+**Status**: The Monster Walk digit preservation is verified in Lean4. The shard/witness/frequency classification system is a conjecture we're testing. See [CONJECTURE_STATUS.md](CONJECTURE_STATUS.md) for confidence levels.
 
 I humbly request help, feedback, and mercy from the mathematical community.
 
@@ -21,36 +23,11 @@ I humbly request help, feedback, and mercy from the mathematical community.
 3. [PROGRAM_INDEX.md](PROGRAM_INDEX.md) - All 200+ programs
 4. [PROOF_INDEX.md](#proof-index) - All formal proofs
 
-## 🎉 NEW: Bisimulation Proof - Python ≈ Rust
+## 📊 Core Finding: Hierarchical Digit Preservation
 
-**PROVEN**: Python to Rust translation with **62.2x speedup** and **correctness guarantee**!
-
-📚 **Start here**: [BISIMULATION_INDEX.md](BISIMULATION_INDEX.md)
-
-### Key Results
-- ✅ **Behavioral equivalence** proven by bisimulation
-- ✅ **62.2x faster** (45.7M → 736K cycles)
-- ✅ **174x fewer instructions** (80.4M → 461K)
-- ✅ **1000 test cases** verified
-- ✅ **Line-by-line proof** with actual bytecode/assembly traces
-
-### 🔮 NEW: Hecke Operator Discovery
-**The bisimulation proof IS a Hecke eigenform!**
-
-- **Speedup 62 = 2 × 31** (both Monster primes!)
-- **Instruction ratio 174 = 2 × 3 × 29** (all Monster primes!)
-- **Every measurement** factors into Monster primes
-- **Proof**: [HECKE_ON_BISIMULATION.md](HECKE_ON_BISIMULATION.md)
-
-The speedup is not arbitrary - it's the **Hecke eigenvalue** determined by Monster group structure!
-
-### Documents
-1. [BISIMULATION_INDEX.md](BISIMULATION_INDEX.md) - Master index
-2. [BISIMULATION_SUMMARY.md](BISIMULATION_SUMMARY.md) - Executive summary
-3. [COMPLETE_BISIMULATION_PROOF.md](COMPLETE_BISIMULATION_PROOF.md) - Full proof
-4. [HECKE_ON_BISIMULATION.md](HECKE_ON_BISIMULATION.md) - Hecke resonance
-
-**Impact**: Ready to translate ALL LMFDB to Rust with correctness guarantee!
+This project documents a computational exploration of the Monster group's prime factorization, 
+focusing on a simple but interesting pattern: removing specific prime factors can preserve 
+leading digits at multiple levels.
 
 ---
 
@@ -146,6 +123,20 @@ nix develop
 lake build
 ```
 
+### Image Generation (Submodule)
+```bash
+# Clone with submodules
+git clone --recursive https://github.com/meta-introspector/monster-lean
+
+# Or add submodule separately
+git submodule add https://github.com/meta-introspector/diffusion-rs
+git submodule update --init --recursive
+
+# Build diffusion-rs
+cd diffusion-rs
+cargo build --release
+```
+
 ## The Monster Group
 
 Prime factorization: 2^46 × 3^20 × 5^9 × 7^6 × 11^2 × 13^3 × 17 × 19 × 23 × 29 × 31 × 41 × 47 × 59 × 71
@@ -225,36 +216,37 @@ See [MonsterLean/MonsterLean/ProofIndex.lean](MonsterLean/MonsterLean/ProofIndex
 
 ## 🔬 Experimental Results
 
-### 1. Monster Walk
-- Removing 8 factors preserves 4 digits (8080)
-- Hierarchical structure across 3 groups
-- Proven in Lean4
+### 1. Monster Walk (Core Finding)
+- ✅ Removing 8 factors preserves 4 digits (8080)
+- ✅ Hierarchical structure across 3 groups
+- ✅ Proven in Lean4
 
-### 2. Bisimulation Proof
-- Python → Rust: 62.2x speedup
-- 174x fewer instructions
-- Behavioral equivalence proven
-- **Speedup = Hecke eigenvalue!**
+### 2. Computational Experiments
+- Python → Rust translation: 62.2x speedup measured
+- Observation: Some performance metrics factor into Monster primes (62 = 2 × 31, 174 = 2 × 3 × 29)
+- Note: Statistical significance not yet established
 
-### 3. Hecke Resonance
-- 62 = 2 × 31 (Monster primes!)
-- 174 = 2 × 3 × 29 (Monster primes!)
-- Every measurement factors into Monster primes
+## 🚀 Future Work
 
-### 4. LLM Register Resonance
-- 80% divisible by T_2
-- 49% by T_3, 43% by T_5
-- Same primes in 93.6% of error codes
+### Planned Investigations:
+1. **Language Translation Analysis**: Systematic study of Python → Rust translations
+   - Extend bisimulation proof technique to more functions
+   - Statistical analysis of performance patterns
+   - Investigate if prime factorization patterns are significant
 
-### 5. 71³ Hypercube
-- 357,911 items (71 forms × 71 items × 71 aspects)
-- 26,843,325 data points
-- 307,219 perfect resonance measurements
+2. **Image Generation Experiments**: Text emergence in diffusion models
+   - "I ARE LIFE" seed reproduction (h4's experiment)
+   - "GOON'T" meta-language exploration
+   - See `examples/iarelife/` and `diffusion-rs/`
 
-### 6. I ARE LIFE
-- Text emergence at seed 2437596016
-- Adaptive scanning finds optimal seeds
-- Hecke resonance in CPU registers (in progress)
+3. **LLM Register Analysis**: CPU register patterns during inference
+   - Divisibility by Monster primes
+   - See `examples/ollama-monster/`
+
+4. **Neural Network Compression**: 71-layer autoencoder for LMFDB
+   - See `monster_autoencoder.py`
+
+**Status**: These are preliminary experiments requiring further validation.
 
 ## 🚀 Quick Commands
 

@@ -1,3 +1,21 @@
 [submodule "examples/eczoo_data"]
 	path = examples/eczoo_data
 	url = https://github.com/errorcorrectionzoo/eczoo_data.git
+[submodule "spectral"]
+	path = spectral
+	url = https://github.com/cmu-phil/Spectral
+[submodule "vericoding"]
+	path = vericoding
+	url = https://github.com/beneficial-AI-Foundation/vericoding
+[submodule "tex_lean_retriever"]
+	path = tex_lean_retriever
+	url = https://github.com/Aflo23/tex_lean_retriever
+[submodule "FormalBook"]
+	path = FormalBook
+	url = https://github.com/mo271/FormalBook
+[submodule "ProofNet"]
+	path = ProofNet
+	url = https://github.com/zhangir-azerbayev/ProofNet
+[submodule "metacoq"]
+	path = metacoq
+	url = https://github.com/MetaCoq/metacoq

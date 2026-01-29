@@ -5,9 +5,10 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     rust-overlay.url = "github:oxalica/rust-overlay";
+    zkprologml.url = "github:meta-introspector/zkprologml";
   };
 
-  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
+  outputs = { self, nixpkgs, flake-utils, rust-overlay, zkprologml }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         overlays = [ (import rust-overlay) ];
@@ -25,6 +26,8 @@
           matplotlib
           jupyter
           huggingface-hub
+          pillow
+          requests
         ]);
         
       in {
@@ -58,7 +61,7 @@
             
             # Document tools
             pkgs.pandoc
-            pkgs.poppler-utils  # pdftoppm
+            pkgs.poppler-utils  # pdftoppm, pdftotext
             pkgs.imagemagick
             pkgs.ghostscript
             pkgs.qpdf
@@ -66,27 +69,31 @@
             # Diagrams
             pkgs.graphviz
             pkgs.plantuml
+            
+            # Dataset tools from zkprologml
+            zkprologml.packages.${system}.default or pkgs.hello
           ];
           
           shellHook = ''
-            echo "🔬 Monster Group LMFDB Analysis Environment"
-            echo "============================================"
+            echo "🔬 Monster Group Walk Analysis Environment"
+            echo "=========================================="
             echo ""
-            echo "📊 Analysis:"
-            echo "  cargo run --bin abelian_variety"
-            echo "  python3 analyze_lmfdb_source.py"
+            echo "📄 Paper Review:"
+            echo "  cargo run --release --bin review_paper PAPER.tex"
+            echo "  ./review_paper.sh"
             echo ""
-            echo "📝 LaTeX & Literate Programming:"
-            echo "  pdflatex, xelatex, lualatex"
-            echo "  noweb - Literate programming"
-            echo "  cweb - C literate programming"
-            echo "  pandoc - Document conversion"
+            echo "📊 Core Analysis:"
+            echo "  cargo run --release              # Monster Walk"
+            echo "  cd MonsterLean && lake build     # Lean4 proofs"
             echo ""
-            echo "🔄 Workflow:"
-            echo "  notangle file.nw > file.rs    # Extract code"
-            echo "  noweave -latex file.nw > file.tex  # Extract docs"
-            echo "  pdflatex file.tex             # Compile PDF"
-            echo "  pdftoppm -png file.pdf page   # Convert to PNG"
+            echo "📝 LaTeX:"
+            echo "  pdflatex PAPER.tex"
+            echo "  pdftoppm -png PAPER.pdf page"
+            echo ""
+            echo "🔍 Review System:"
+            echo "  Requires: ollama with llava model"
+            echo "  Install: curl -fsSL https://ollama.com/install.sh | sh"
+            echo "  Pull model: ollama pull llava"
             echo ""
           '';
         };
