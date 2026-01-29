@@ -1,0 +1,107 @@
+{
+  "timestamp": "20260129_121549",
+  "model": "gpt-4",
+  "prompt": "Generate lyrics for the Monster Walk song based on these 15 Monster primes:\n2^46, 3^20, 5^9, 7^6, 11^2, 13^3, 17, 19, 23, 29, 31, 41, 47, 59, 71\n\nThe song should walk through each prime, building to a climax at 71 (the largest).\nStyle: Mathematical, ethereal, ascending to a gravity well.\nDuration: 10 seconds (fast-paced).\n",
+  "context": {
+    "sample_rate": 44100,
+    "duration": 10,
+    "harmonics": [
+      {
+        "prime": 2,
+        "power": 46,
+        "frequency": 440,
+        "amplitude": 0.0213
+      },
+      {
+        "prime": 3,
+        "power": 20,
+        "frequency": 660,
+        "amplitude": 0.0476
+      },
+      {
+        "prime": 5,
+        "power": 9,
+        "frequency": 1100,
+        "amplitude": 0.1
+      },
+      {
+        "prime": 7,
+        "power": 6,
+        "frequency": 1540,
+        "amplitude": 0.1429
+      },
+      {
+        "prime": 11,
+        "power": 2,
+        "frequency": 2420,
+        "amplitude": 0.3333
+      },
+      {
+        "prime": 13,
+        "power": 3,
+        "frequency": 2860,
+        "amplitude": 0.25
+      },
+      {
+        "prime": 17,
+        "power": 1,
+        "frequency": 3740,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 19,
+        "power": 1,
+        "frequency": 4180,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 23,
+        "power": 1,
+        "frequency": 5060,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 29,
+        "power": 1,
+        "frequency": 6380,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 31,
+        "power": 1,
+        "frequency": 6820,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 41,
+        "power": 1,
+        "frequency": 9020,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 47,
+        "power": 1,
+        "frequency": 10340,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 59,
+        "power": 1,
+        "frequency": 12980,
+        "amplitude": 0.5
+      },
+      {
+        "prime": 71,
+        "power": 1,
+        "frequency": 15610,
+        "amplitude": 0.5
+      }
+    ],
+    "timestamp": "20260129_120611"
+  },
+  "proof": "sha256:203ad8e3c74c1bfebfcde5a3cc4ced9fd5ddc00e641ae148cf9ce286667a2f32",
+  "result": "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest ⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K\u001b[?25h\u001b[?2026l\nError: pull model manifest: file does not exist\n⚠️  ollama failed\n",
+  "status": "resolved",
+  "resolver": "local",
+  "verified": "skipped"
+}

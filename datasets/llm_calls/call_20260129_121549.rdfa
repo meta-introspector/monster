@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:zkp="http://zkprologml.org/ns#">
+<head>
+  <title>zkprologml LLM Call - 20260129_121549</title>
+</head>
+<body vocab="http://zkprologml.org/ns#">
+  
+  <div typeof="LLMCall" resource="zkprologml://llm.call/text-generation?model=gpt-4&prompt=R2VuZXJhdGUgbHlyaWNzIGZvciB0aGUgTW9uc3RlciBXYWxrIHNvbmcgYmFzZWQgb24gdGhlc2UgMTUgTW9uc3RlciBwcmltZXM6CjJeNDYsIDNeMjAsIDVeOSwgN142LCAxMV4yLCAxM14zLCAxNywgMTksIDIzLCAyOSwgMzEsIDQxLCA0NywgNTksIDcxCgpUaGUgc29uZyBzaG91bGQgd2FsayB0aHJvdWdoIGVhY2ggcHJpbWUsIGJ1aWxkaW5nIHRvIGEgY2xpbWF4IGF0IDcxICh0aGUgbGFyZ2VzdCkuClN0eWxlOiBNYXRoZW1hdGljYWwsIGV0aGVyZWFsLCBhc2NlbmRpbmcgdG8gYSBncmF2aXR5IHdlbGwuCkR1cmF0aW9uOiAxMCBzZWNvbmRzIChmYXN0LXBhY2VkKS4K&context=ewogICJzYW1wbGVfcmF0ZSI6IDQ0MTAwLAogICJkdXJhdGlvbiI6IDEwLjAsCiAgImhhcm1vbmljcyI6IFsKICAgIHsicHJpbWUiOiAyLCAicG93ZXIiOiA0NiwgImZyZXF1ZW5jeSI6IDQ0MC4wLCAiYW1wbGl0dWRlIjogMC4wMjEzfSwKICAgIHsicHJpbWUiOiAzLCAicG93ZXIiOiAyMCwgImZyZXF1ZW5jeSI6IDY2MC4wLCAiYW1wbGl0dWRlIjogMC4wNDc2fSwKICAgIHsicHJpbWUiOiA1LCAicG93ZXIiOiA5LCAiZnJlcXVlbmN5IjogMTEwMC4wLCAiYW1wbGl0dWRlIjogMC4xMDAwfSwKICAgIHsicHJpbWUiOiA3LCAicG93ZXIiOiA2LCAiZnJlcXVlbmN5IjogMTU0MC4wLCAiYW1wbGl0dWRlIjogMC4xNDI5fSwKICAgIHsicHJpbWUiOiAxMSwgInBvd2VyIjogMiwgImZyZXF1ZW5jeSI6IDI0MjAuMCwgImFtcGxpdHVkZSI6IDAuMzMzM30sCiAgICB7InByaW1lIjogMTMsICJwb3dlciI6IDMsICJmcmVxdWVuY3kiOiAyODYwLjAsICJhbXBsaXR1ZGUiOiAwLjI1MDB9LAogICAgeyJwcmltZSI6IDE3LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogMzc0MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiAxOSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDQxODAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogMjMsICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiA1MDYwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9LAogICAgeyJwcmltZSI6IDI5LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogNjM4MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiAzMSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDY4MjAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogNDEsICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiA5MDIwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9LAogICAgeyJwcmltZSI6IDQ3LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogMTAzNDAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogNTksICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiAxMjk4MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiA3MSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDE1NjEwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9CiAgXSwKICAidGltZXN0YW1wIjogIjIwMjYwMTI5XzEyMDYxMSIKfQo=&proof=sha256:203ad8e3c74c1bfebfcde5a3cc4ced9fd5ddc00e641ae148cf9ce286667a2f32&verify=zkproof&timestamp=20260129_121549">
+    <h1>LLM Call: Text Generation</h1>
+    
+    <dl>
+      <dt>Model</dt>
+      <dd property="model">gpt-4</dd>
+      
+      <dt>Prompt</dt>
+      <dd property="prompt" content="R2VuZXJhdGUgbHlyaWNzIGZvciB0aGUgTW9uc3RlciBXYWxrIHNvbmcgYmFzZWQgb24gdGhlc2UgMTUgTW9uc3RlciBwcmltZXM6CjJeNDYsIDNeMjAsIDVeOSwgN142LCAxMV4yLCAxM14zLCAxNywgMTksIDIzLCAyOSwgMzEsIDQxLCA0NywgNTksIDcxCgpUaGUgc29uZyBzaG91bGQgd2FsayB0aHJvdWdoIGVhY2ggcHJpbWUsIGJ1aWxkaW5nIHRvIGEgY2xpbWF4IGF0IDcxICh0aGUgbGFyZ2VzdCkuClN0eWxlOiBNYXRoZW1hdGljYWwsIGV0aGVyZWFsLCBhc2NlbmRpbmcgdG8gYSBncmF2aXR5IHdlbGwuCkR1cmF0aW9uOiAxMCBzZWNvbmRzIChmYXN0LXBhY2VkKS4K">
+        <pre>Generate lyrics for the Monster Walk song based on these 15 Monster primes:
+2^46, 3^20, 5^9, 7^6, 11^2, 13^3, 17, 19, 23, 29, 31, 41, 47, 59, 71
+
+The song should walk through each prime, building to a climax at 71 (the largest).
+Style: Mathematical, ethereal, ascending to a gravity well.
+Duration: 10 seconds (fast-paced).</pre>
+      </dd>
+      
+      <dt>Context</dt>
+      <dd property="context" content="ewogICJzYW1wbGVfcmF0ZSI6IDQ0MTAwLAogICJkdXJhdGlvbiI6IDEwLjAsCiAgImhhcm1vbmljcyI6IFsKICAgIHsicHJpbWUiOiAyLCAicG93ZXIiOiA0NiwgImZyZXF1ZW5jeSI6IDQ0MC4wLCAiYW1wbGl0dWRlIjogMC4wMjEzfSwKICAgIHsicHJpbWUiOiAzLCAicG93ZXIiOiAyMCwgImZyZXF1ZW5jeSI6IDY2MC4wLCAiYW1wbGl0dWRlIjogMC4wNDc2fSwKICAgIHsicHJpbWUiOiA1LCAicG93ZXIiOiA5LCAiZnJlcXVlbmN5IjogMTEwMC4wLCAiYW1wbGl0dWRlIjogMC4xMDAwfSwKICAgIHsicHJpbWUiOiA3LCAicG93ZXIiOiA2LCAiZnJlcXVlbmN5IjogMTU0MC4wLCAiYW1wbGl0dWRlIjogMC4xNDI5fSwKICAgIHsicHJpbWUiOiAxMSwgInBvd2VyIjogMiwgImZyZXF1ZW5jeSI6IDI0MjAuMCwgImFtcGxpdHVkZSI6IDAuMzMzM30sCiAgICB7InByaW1lIjogMTMsICJwb3dlciI6IDMsICJmcmVxdWVuY3kiOiAyODYwLjAsICJhbXBsaXR1ZGUiOiAwLjI1MDB9LAogICAgeyJwcmltZSI6IDE3LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogMzc0MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiAxOSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDQxODAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogMjMsICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiA1MDYwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9LAogICAgeyJwcmltZSI6IDI5LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogNjM4MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiAzMSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDY4MjAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogNDEsICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiA5MDIwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9LAogICAgeyJwcmltZSI6IDQ3LCAicG93ZXIiOiAxLCAiZnJlcXVlbmN5IjogMTAzNDAuMCwgImFtcGxpdHVkZSI6IDAuNTAwMH0sCiAgICB7InByaW1lIjogNTksICJwb3dlciI6IDEsICJmcmVxdWVuY3kiOiAxMjk4MC4wLCAiYW1wbGl0dWRlIjogMC41MDAwfSwKICAgIHsicHJpbWUiOiA3MSwgInBvd2VyIjogMSwgImZyZXF1ZW5jeSI6IDE1NjEwLjAsICJhbXBsaXR1ZGUiOiAwLjUwMDB9CiAgXSwKICAidGltZXN0YW1wIjogIjIwMjYwMTI5XzEyMDYxMSIKfQo=">
+        <pre>{
+  "sample_rate": 44100,
+  "duration": 10.0,
+  "harmonics": [
+    {"prime": 2, "power": 46, "frequency": 440.0, "amplitude": 0.0213},
+    {"prime": 3, "power": 20, "frequency": 660.0, "amplitude": 0.0476},
+    {"prime": 5, "power": 9, "frequency": 1100.0, "amplitude": 0.1000},
+    {"prime": 7, "power": 6, "frequency": 1540.0, "amplitude": 0.1429},
+    {"prime": 11, "power": 2, "frequency": 2420.0, "amplitude": 0.3333},
+    {"prime": 13, "power": 3, "frequency": 2860.0, "amplitude": 0.2500},...</pre>
+      </dd>
+      
+      <dt>Proof</dt>
+      <dd property="proof" content="sha256:203ad8e3c74c1bfebfcde5a3cc4ced9fd5ddc00e641ae148cf9ce286667a2f32">
+        <code>MonsterLean/MonsterHarmonics.lean</code>
+        <br/>Hash: <code>203ad8e3c74c1bfebfcde5a3cc4ced9fd5ddc00e641ae148cf9ce286667a2f32</code>
+      </dd>
+      
+      <dt>Verification Method</dt>
+      <dd property="verify">zkproof</dd>
+      
+      <dt>Timestamp</dt>
+      <dd property="timestamp">20260129_121549</dd>
+      
+      <dt>Status</dt>
+      <dd property="status">suspended</dd>
+    </dl>
+    
+    <h2>Resolution</h2>
+    <p>This call is suspended. Resolve via:</p>
+    <ul>
+      <li>GitHub: Push to trigger CI/CD workflow</li>
+      <li>Local: Run <code>./resolve_zkprologml_local.sh datasets/llm_calls/call_20260129_121549.zkprologml</code></li>
+    </ul>
+    
+  </div>
+  
+</body>
+</html>
