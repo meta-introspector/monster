@@ -74,6 +74,10 @@ path = "src/bin/search_by_layer.rs"
 name = "virtual-knuth"
 path = "src/bin/virtual_knuth.rs"
 
+[[bin]]
+name = "pre-commit-review"
+path = "src/bin/pre_commit_review.rs"
+
 [dependencies]
 # Core
 num-bigint = "0.4"
