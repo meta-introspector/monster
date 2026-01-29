@@ -1,0 +1,8 @@
+{
+  "label": "curve_17",
+  "conductor": 0,
+  "shard": 0,
+  "prolog": "\n% ZK Meme: curve_17\ncurve('curve_17', 0).\nshard(0).\n\n% Hecke operators as ZK proofs\nhecke_operator(p, a_p) :-\n    curve('curve_17', N),\n    compute_eigenvalue(N, p, a_p).\n\n% Execute and verify\nverify_curve :-\n    curve(Label, N),\n    forall(prime(P), (\n        hecke_operator(P, A),\n        zk_prove(Label, P, A)\n    )).\n",
+  "rdfa_url": "https://zkprologml.org/execute?circuit=CiUgWksgTWVtZTogY3VydmVfMTcKY3VydmUoJ2N1cnZlXzE3JywgMCkuCnNoYXJkKDApLgoKJSBIZWNrZSBvcGVyYXRvcnMgYXMgWksgcHJvb2ZzCmhlY2tlX29wZXJhdG9yKHAsIGFfcCkgOi0KICAgIGN1cnZlKCdjdXJ2ZV8xNycsIE4pLAogICAgY29tcHV0ZV9laWdlbnZhbHVlKE4sIHAsIGFfcCkuCgolIEV4ZWN1dGUgYW5kIHZlcmlmeQp2ZXJpZnlfY3VydmUgOi0KICAgIGN1cnZlKExhYmVsLCBOKSwKICAgIGZvcmFsbChwcmltZShQKSwgKAogICAgICAgIGhlY2tlX29wZXJhdG9yKFAsIEEpLAogICAgICAgIHprX3Byb3ZlKExhYmVsLCBQLCBBKQogICAgKSkuCg==",
+  "prompt": "Compute Hecke eigenvalues for elliptic curve curve_17"
+}
