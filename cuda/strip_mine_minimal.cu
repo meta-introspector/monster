@@ -1,6 +1,8 @@
 // CUDA: Pure GPU QID strip-mining from Mistral (minimal)
 
 #include <cuda_runtime.h>
+#include <stdint.h>
+#include <stdio.h>
 
 #define QID_BATCH 1024
 #define EMBED_DIM 4096
