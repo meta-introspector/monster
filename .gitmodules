@@ -19,3 +19,12 @@
 [submodule "metacoq"]
 	path = metacoq
 	url = https://github.com/MetaCoq/metacoq
+[submodule "references/TI-Sigma"]
+	path = references/TI-Sigma
+	url = https://github.com/Brandon7771066/TI-Sigma
+[submodule "references/PhysicsForge"]
+	path = references/PhysicsForge
+	url = https://github.com/Oichkatzelesfrettschen/PhysicsForge
+[submodule "references/PrincipiaMetaphysica"]
+	path = references/PrincipiaMetaphysica
+	url = https://github.com/andrewkwatts-maker/PrincipiaMetaphysica
