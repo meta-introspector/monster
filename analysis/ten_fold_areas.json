@@ -1,0 +1,142 @@
+[
+  {
+    "group": 1,
+    "sequence": "8080",
+    "digits_preserved": 4,
+    "factors_removed": 8,
+    "position": 0,
+    "area": "Complex K-theory / Bott periodicity (period 8)",
+    "rationale": "Starts with full 8-factor removal → strongest Bott-period link",
+    "examples": [
+      "KU-theory",
+      "Bott periodicity theorem",
+      "Clifford algebras"
+    ]
+  },
+  {
+    "group": 2,
+    "sequence": "1742",
+    "digits_preserved": 4,
+    "factors_removed": 4,
+    "position": 4,
+    "area": "Elliptic curves over ℂ / complex multiplication",
+    "rationale": "4 digits + 4 removals → classical elliptic curve world",
+    "examples": [
+      "Weierstrass equations",
+      "CM theory",
+      "j-invariant"
+    ]
+  },
+  {
+    "group": 3,
+    "sequence": "479",
+    "digits_preserved": 3,
+    "factors_removed": 4,
+    "position": 8,
+    "area": "Hilbert modular forms (degree 2 number fields)",
+    "rationale": "3 digits but strong 4-removal → Hilbert modular forms",
+    "examples": [
+      "Real quadratic fields",
+      "Hilbert modular surfaces",
+      "Parallel weight forms"
+    ]
+  },
+  {
+    "group": 4,
+    "sequence": "451",
+    "digits_preserved": 3,
+    "factors_removed": 4,
+    "position": 11,
+    "area": "Siegel modular forms (genus 2 / degree 2 abelian varieties)",
+    "rationale": "3-digit / 4-removal → genus 2 territory (Siegel, Igusa)",
+    "examples": [
+      "Genus 2 curves",
+      "Igusa invariants",
+      "Jacobian varieties"
+    ]
+  },
+  {
+    "group": 5,
+    "sequence": "2875",
+    "digits_preserved": 4,
+    "factors_removed": 4,
+    "position": 14,
+    "area": "Calabi–Yau threefolds / mirror symmetry counting",
+    "rationale": "2875 is famous instanton number in quintic CY",
+    "examples": [
+      "Quintic threefold",
+      "Gromov-Witten invariants",
+      "Mirror symmetry"
+    ]
+  },
+  {
+    "group": 6,
+    "sequence": "8864",
+    "digits_preserved": 4,
+    "factors_removed": 8,
+    "position": 18,
+    "area": "Monster vertex operator algebra / monstrous moonshine",
+    "rationale": "Second 8-removal → full Monster / moonshine level",
+    "examples": [
+      "Vertex operator algebra V♮",
+      "j-function coefficients",
+      "McKay-Thompson series"
+    ]
+  },
+  {
+    "group": 7,
+    "sequence": "5990",
+    "digits_preserved": 4,
+    "factors_removed": 8,
+    "position": 22,
+    "area": "Generalized moonshine / Borcherds–Höhn",
+    "rationale": "Third 8-removal → exotic moonshine extensions",
+    "examples": [
+      "Generalized Kac-Moody algebras",
+      "Borcherds products",
+      "Norton's generalized moonshine"
+    ]
+  },
+  {
+    "group": 8,
+    "sequence": "496",
+    "digits_preserved": 3,
+    "factors_removed": 6,
+    "position": 26,
+    "area": "Heterotic string theory (rank 496: E₈×E₈ or SO(32))",
+    "rationale": "Famous physics number 496 → anomaly cancellation",
+    "examples": [
+      "E₈×E₈ gauge group",
+      "SO(32) gauge group",
+      "Green-Schwarz mechanism"
+    ]
+  },
+  {
+    "group": 9,
+    "sequence": "1710",
+    "digits_preserved": 4,
+    "factors_removed": 3,
+    "position": 29,
+    "area": "ADE classification / McKay correspondence",
+    "rationale": "1710 in ADE mutation tables; light 3-removal",
+    "examples": [
+      "Kleinian singularities",
+      "McKay correspondence",
+      "Coxeter-Dynkin diagrams"
+    ]
+  },
+  {
+    "group": 10,
+    "sequence": "7570",
+    "digits_preserved": 4,
+    "factors_removed": 8,
+    "position": 33,
+    "area": "Topological modular forms (tmf) / chromatic homotopy",
+    "rationale": "Final 8-removal → tmf (chromatic height 1–2)",
+    "examples": [
+      "Tmf spectrum",
+      "Connective cover of K-theory",
+      "Hopkins-Miller theorem"
+    ]
+  }
+]

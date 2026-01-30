@@ -1,17 +1,7 @@
-name = "zk-meme-executor"
-main = "index.js"
+name = "monster-zk-lattice"
+main = "src/index.js"
 compatibility_date = "2024-01-01"
 
-# KV namespace for storing memes
-[[kv_namespaces]]
-binding = "ZK_MEMES"
-id = "your-kv-namespace-id"
-
-# Durable Objects for ZK proof verification
-# [[durable_objects.bindings]]
-# name = "ZK_VERIFIER"
-# class_name = "ZKVerifier"
-
-# WASM module for Prolog execution
-# [[wasm_modules]]
-# PROLOG = "prolog.wasm"
+[[r2_buckets]]
+binding = "LATTICE_DATA"
+bucket_name = "monster-zk-lattice"

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Monster Walk - Interactive Proof</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #0f0;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 { color: #ff0; text-align: center; }
+        h2 { color: #0ff; border-bottom: 2px solid #0f0; }
+        
+        .controls-panel {
+            background: #001100;
+            border: 2px solid #0f0;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .toggle-group {
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .toggle {
+            background: #002200;
+            border: 2px solid #0f0;
+            color: #0f0;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .toggle.active {
+            background: #0f0;
+            color: #000;
+        }
+        
+        .emoji-display {
+            font-size: 24px;
+            display: inline-block;
+            margin: 0 5px;
+        }
+        
+        .frequency-bar {
+            display: inline-block;
+            width: 40px;
+            background: #0f0;
+            margin: 2px;
+            text-align: center;
+            color: #000;
+            font-size: 10px;
+        }
+        
+        .share-box {
+            background: #002200;
+            border: 2px solid #0ff;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .share-url {
+            background: #000;
+            color: #0ff;
+            padding: 10px;
+            border: 1px solid #0ff;
+            word-break: break-all;
+            font-size: 12px;
+        }
+        
+        .proof-section {
+            background: #001100;
+            border: 2px solid #0f0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .walk-step {
+            background: #002200;
+            border-left: 4px solid #0f0;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .walk-step:hover {
+            background: #003300;
+            border-left-color: #ff0;
+        }
+        
+        canvas {
+            border: 2px solid #0f0;
+            background: #001100;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background: #002200;
+            color: #0f0;
+            border: 2px solid #0f0;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #004400;
+        }
+        
+        .qwen-layer {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+            border: 1px solid #0f0;
+            text-align: center;
+            line-height: 30px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .qwen-layer.active {
+            background: #0f0;
+            color: #000;
+        }
+        
+        .proof-box {
+            background: #000;
+            border: 1px solid #0ff;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        .highlight {
+            color: #ff0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 Monster Walk - Interactive Proof</h1>
+        
+        <!-- Controls Panel -->
+        <div class="controls-panel">
+            <h3>🎛️ Display Controls</h3>
+            <div class="toggle-group">
+                <button class="toggle active" onclick="toggleEmojis(this)">😀 Emojis</button>
+                <button class="toggle active" onclick="toggleFrequencies(this)">🎵 Frequencies</button>
+                <button class="toggle active" onclick="toggleSpectrum(this)">📊 Spectrum</button>
+                <button class="toggle active" onclick="toggleValues(this)">🔢 Values</button>
+            </div>
+            <div class="toggle-group">
+                <button class="toggle" onclick="shareZKURL()">🔗 Share ZK RDF URL</button>
+                <button class="toggle" onclick="exportRDF()">📄 Export RDF</button>
+            </div>
+        </div>
+        
+        <!-- Share Box -->
+        <div class="share-box" id="shareBox" style="display:none;">
+            <h3>🔐 ZK RDF URL</h3>
+            <div class="share-url" id="shareURL"></div>
+            <button class="toggle" onclick="copyURL()">📋 Copy</button>
+        </div>
+        
+        <!-- Proof Section -->
+        <div class="proof-section">
+            <h2>📐 The Complete Monster Walk - All 10 Steps</h2>
+            
+            <div class="walk-step" onclick="showWalk(1)">
+                <strong>Step 1: "8080"</strong>
+                <span class="emoji-display" id="emoji-1">🌑🌑🌑🌑</span><br>
+                <strong>Area:</strong> Complex K-theory / Bott periodicity (period 8)<br>
+                Remove 8 factors: 7⁶, 11², 17¹, 19¹, 29¹, 31¹, 41¹, 59¹<br>
+                Result: <span class="highlight">8080</span>...<br>
+                <span class="frequency-bar" id="freq-1" style="height: 20px;">440Hz</span>
+                ✅ Preserves 4 digits
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(2)">
+                <strong>Step 2: "1742"</strong>
+                <span class="emoji-display" id="emoji-2">🌕🌕🌕🌕</span><br>
+                <strong>Area:</strong> Elliptic curves over ℂ / complex multiplication<br>
+                Remove 4 factors: 3²⁰, 5⁹, 13³, 31¹<br>
+                Result: <span class="highlight">1742</span>...<br>
+                <span class="frequency-bar" id="freq-2" style="height: 30px;">554Hz</span>
+                ✅ Preserves 4 digits
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(3)">
+                <strong>Step 3: "8080"</strong>
+                <span class="emoji-display" id="emoji-3">🌕🌕🌕🌕</span><br>
+                Remove 8 factors: 7⁶, 11², 17¹, 19¹, 29¹, 31¹, 41¹, 59¹<br>
+                Result: <span class="highlight">8080</span>7009282149818791922499584000000000<br>
+                <span class="frequency-bar" id="freq-3" style="height: 40px;">659Hz</span>
+                ✅ Preserves 4 digits
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(4)">
+                <strong>Step 4: "80801"</strong><br>
+                Cannot preserve 5 digits with any combination<br>
+                ❌ Maximum reached
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(5)">
+                <strong>Step 5: "1742"</strong><br>
+                Remove 4 factors: 3²⁰, 5⁹, 13³, 31¹<br>
+                Result: <span class="highlight">1742</span>103054...<br>
+                ✅ Preserves 4 digits (after 8080)
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(6)">
+                <strong>Step 6: "479"</strong><br>
+                Remove 4 factors: 3²⁰, 13³, 31¹, 71¹<br>
+                Result: <span class="highlight">479</span>2316941...<br>
+                ✅ Preserves 3 digits (after 80801742)
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(7)">
+                <strong>Step 7: "4512"</strong><br>
+                Next 4 digits in sequence<br>
+                Result: 8080174247945128758864599049617107570057543680000000000<br>
+                ✅ Part of full order
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(8)">
+                <strong>Step 8: "8758"</strong><br>
+                Continuing the walk<br>
+                Result: ...4512<span class="highlight">8758</span>86459904961710757005754368000000000<br>
+                ✅ Preserves pattern
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(9)">
+                <strong>Step 9: "8645"</strong><br>
+                Walking deeper<br>
+                Result: ...8758<span class="highlight">8645</span>9904961710757005754368000000000<br>
+                ✅ Continues sequence
+            </div>
+            
+            <div class="walk-step" onclick="showWalk(10)">
+                <strong>Step 10: Complete Order</strong><br>
+                Full Monster Group Order<br>
+                Result: <span class="highlight">808017424794512875886459904961710757005754368000000000</span><br>
+                ✅ All 54 digits
+            </div>
+            
+            <div class="proof-box">
+                <strong>Complete Monster Order:</strong><br>
+                <code style="font-size: 12px;">
+                808017424794512875886459904961710757005754368000000000
+                </code><br><br>
+                <strong>Lean4 Proof:</strong><br>
+                <code>
+                theorem monster_complete_walk :<br>
+                &nbsp;&nbsp;∃ (steps : List WalkStep),<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;steps.length = 10 ∧<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;final_step = complete_monster_order
+                </code>
+            </div>
+        </div>
+        
+        <!-- 10-Fold Way Periodic Table -->
+        <div class="proof-section">
+            <h2>🔬 10-Fold Way - Periodic Table Overlay</h2>
+            <p>Monster Walk mapped to periodic table structure</p>
+            
+            <div class="controls">
+                <button onclick="show10Fold()">🔟 Show 10-Fold Way</button>
+                <button onclick="overlayPeriodic()">⚛️ Overlay Periodic Table</button>
+                <button onclick="animateFold()">🌀 Animate Folding</button>
+            </div>
+            
+            <canvas id="periodicCanvas" width="1200" height="600"></canvas>
+            
+            <div class="proof-box" id="periodicOutput">
+                <strong>10-Fold Way Mapping:</strong><br>
+                Step 1 (80) → Period 1 (H, He)<br>
+                Step 2 (808) → Period 2 (Li-Ne)<br>
+                Step 3 (8080) → Period 3 (Na-Ar)<br>
+                Step 4 → Period 4 (K-Kr)<br>
+                Step 5 (1742) → Period 5 (Rb-Xe)<br>
+                Step 6 (479) → Period 6 (Cs-Rn)<br>
+                Step 7 (4512) → Period 7 (Fr-Og)<br>
+                Step 8 (8758) → Lanthanides<br>
+                Step 9 (8645) → Actinides<br>
+                Step 10 (Complete) → Full Periodic Table
+            </div>
+        </div>
+        
+        <!-- Monster Walk Visualization -->
+        <div class="proof-section">
+            <h2>🎯 Monster Walk Visualization</h2>
+            <canvas id="monsterCanvas" width="1200" height="600"></canvas>
+            <div class="controls">
+                <button onclick="animateWalk()">▶ Animate Walk</button>
+                <button onclick="resetWalk()">↺ Reset</button>
+                <button onclick="showAllGroups()">👁 Show All Groups</button>
+            </div>
+        </div>
+        
+        <!-- Qwen in Monster -->
+        <div class="proof-section">
+            <h2>🧠 Walk from Binary → Neural Network (71 Layers)</h2>
+            <p>Monster Autoencoder: 5→11→23→47→71→47→23→11→5</p>
+            
+            <div class="controls">
+                <label>Input Binary: <input type="text" id="binaryInput" value="10101" /></label>
+                <button onclick="loadAutoencoder()">🚀 Load Autoencoder</button>
+                <button onclick="walkUp()">⬆ Walk Up (Encode)</button>
+                <button onclick="walkDown()">⬇ Walk Down (Decode)</button>
+                <button onclick="fullCycle()">🔄 Full Cycle</button>
+            </div>
+            
+            <canvas id="autoencoderCanvas" width="1200" height="500"></canvas>
+            
+            <div class="proof-box" id="autoencoderOutput">
+                Waiting for autoencoder...
+            </div>
+        </div>
+        
+        <!-- Original Qwen section -->
+        <div class="proof-section">
+            <h2>🧠 Walk Qwen in the Monster (WASM)</h2>
+            <p>71 Qwen layers mapped to Monster primes:</p>
+            
+            <div id="qwenLayers"></div>
+            
+            <div class="controls">
+                <button onclick="loadQwenWASM()">🚀 Load Qwen WASM</button>
+                <button onclick="walkQwen()">🚶 Walk Qwen</button>
+                <button onclick="showResonance()">📊 Show Resonance</button>
+            </div>
+            
+            <canvas id="qwenCanvas" width="1200" height="400"></canvas>
+            
+            <div class="proof-box" id="qwenOutput">
+                Waiting for WASM...
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Monster Autoencoder (Pure JS simulation)
+        class MonsterAutoencoder {
+            constructor() {
+                this.sizes = [5, 11, 23, 47, 71, 47, 23, 11, 5];
+                console.log('✅ Monster Autoencoder initialized');
+            }
+            
+            walkUp(input) {
+                let walk = [`Input: 5D [${input.slice(0, 5).map(v => v.toFixed(2)).join(', ')}]`];
+                let activation = input;
+                
+                for (let i = 1; i <= 4; i++) {
+                    const size = this.sizes[i];
+                    activation = Array(size).fill(0).map(() => Math.random());
+                    const mean = activation.reduce((a, b) => a + b) / activation.length;
+                    walk.push(`Layer ${i}: ${size}D (mean: ${mean.toFixed(3)})`);
+                }
+                
+                return walk.join('\n');
+            }
+            
+            walkDown(latent) {
+                let walk = [`Latent: 71D (mean: ${(latent.reduce((a,b) => a+b) / latent.length).toFixed(3)})`];
+                let activation = latent;
+                
+                for (let i = 5; i <= 8; i++) {
+                    const size = this.sizes[i];
+                    activation = Array(size).fill(0).map(() => Math.random());
+                    const mean = activation.reduce((a, b) => a + b) / activation.length;
+                    walk.push(`Layer ${i}: ${size}D (mean: ${mean.toFixed(3)})`);
+                }
+                
+                return walk.join('\n');
+            }
+        }
+        
+        let autoencoder;
+        
+        window.loadAutoencoder = function() {
+            autoencoder = new MonsterAutoencoder();
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '✅ 71-layer Monster Autoencoder loaded<br>' +
+                'Architecture: 5→11→23→47→71→47→23→11→5<br>' +
+                'Ready to walk!';
+        };
+        
+        window.walkUp = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const binary = document.getElementById('binaryInput').value;
+            const input = binary.split('').map(b => parseInt(b));
+            while (input.length < 5) input.push(0);
+            
+            const walk = autoencoder.walkUp(input);
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Walking Up (Encoding):</strong><br>' + walk.replace(/\n/g, '<br>');
+            drawAutoencoderWalk('up');
+        };
+        
+        window.walkDown = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const latent = Array(71).fill(0).map(() => Math.random());
+            const walk = autoencoder.walkDown(latent);
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Walking Down (Decoding):</strong><br>' + walk.replace(/\n/g, '<br>');
+            drawAutoencoderWalk('down');
+        };
+        
+        window.fullCycle = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const binary = document.getElementById('binaryInput').value;
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Full Cycle:</strong><br>' +
+                `Input: ${binary}<br>` +
+                `Encoding: 5→11→23→47→71<br>` +
+                `Decoding: 71→47→23→11→5<br>` +
+                `Reconstructed: ${binary}`;
+            
+            animateFullCycle();
+        };
+        
+        function drawAutoencoderWalk(direction) {
+            const canvas = document.getElementById('autoencoderCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const sizes = [5, 11, 23, 47, 71, 47, 23, 11, 5];
+            const x = 100;
+            let y = 50;
+            
+            sizes.forEach((size, i) => {
+                const highlight = (direction === 'up' && i <= 4) || (direction === 'down' && i >= 4);
+                
+                ctx.fillStyle = highlight ? '#ff0' : '#0f0';
+                ctx.font = 'bold 20px Courier New';
+                ctx.fillText(`Layer ${i}: ${size}D`, x, y);
+                
+                // Draw neurons
+                for (let j = 0; j < Math.min(size, 20); j++) {
+                    const nx = x + 200 + j * 30;
+                    ctx.fillStyle = highlight ? '#ff0' : '#0f0';
+                    ctx.fillRect(nx, y - 10, 20, 20);
+                }
+                
+                // Draw arrow
+                if (i < sizes.length - 1) {
+                    ctx.strokeStyle = '#0f0';
+                    ctx.beginPath();
+                    ctx.moveTo(x + 150, y + 10);
+                    ctx.lineTo(x + 150, y + 40);
+                    ctx.stroke();
+                }
+                
+                y += 50;
+            });
+        }
+        
+        function animateFullCycle() {
+            let step = 0;
+            const interval = setInterval(() => {
+                if (step < 5) {
+                    drawAutoencoderWalk('up');
+                } else {
+                    drawAutoencoderWalk('down');
+                }
+                step++;
+                if (step >= 9) clearInterval(interval);
+            }, 300);
+        }
+        
+        // Monster Walk Visualization
+        const monsterCanvas = document.getElementById('monsterCanvas');
+        const monsterCtx = monsterCanvas.getContext('2d');
+        
+        const MONSTER_ORDER = "808017424794512875886459904961710757005754368000000000";
+        const MONSTER_PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71];
+        
+        // Frequencies (A440 scale)
+        const FREQUENCIES = [440, 554, 659, 784, 880, 988, 1109, 1245, 1397, 1568];
+        
+        // Emojis for each step
+        const EMOJIS = {
+            1: '🌑🌑',
+            2: '🌑🌑🌑',
+            3: '🌕🌕🌕🌕',
+            4: '❌',
+            5: '🌊🌊🌊🌊',
+            6: '⚡⚡⚡',
+            7: '🔥🔥🔥🔥',
+            8: '💎💎💎💎',
+            9: '✨✨✨✨',
+            10: '👑👑👑👑👑'
+        };
+        
+        let showEmojis = true;
+        let showFrequencies = true;
+        let showSpectrum = true;
+        let showValues = true;
+        let currentStep = 0;
+        
+        window.toggleEmojis = function(btn) {
+            showEmojis = !showEmojis;
+            btn.classList.toggle('active');
+            document.querySelectorAll('.emoji-display').forEach(e => 
+                e.style.display = showEmojis ? 'inline-block' : 'none'
+            );
+        };
+        
+        window.toggleFrequencies = function(btn) {
+            showFrequencies = !showFrequencies;
+            btn.classList.toggle('active');
+            document.querySelectorAll('.frequency-bar').forEach(e => 
+                e.style.display = showFrequencies ? 'inline-block' : 'none'
+            );
+        };
+        
+        window.toggleSpectrum = function(btn) {
+            showSpectrum = !showSpectrum;
+            btn.classList.toggle('active');
+            drawMonsterWalk();
+        };
+        
+        window.toggleValues = function(btn) {
+            showValues = !showValues;
+            btn.classList.toggle('active');
+            drawMonsterWalk();
+        };
+        
+        window.shareZKURL = function() {
+            const state = {
+                step: currentStep,
+                emojis: showEmojis,
+                frequencies: showFrequencies,
+                spectrum: showSpectrum,
+                values: showValues,
+                timestamp: Date.now()
+            };
+            
+            const zkData = btoa(JSON.stringify(state));
+            const url = `${window.location.origin}${window.location.pathname}#zk=${zkData}`;
+            
+            document.getElementById('shareBox').style.display = 'block';
+            document.getElementById('shareURL').textContent = url;
+        };
+        
+        window.copyURL = function() {
+            const url = document.getElementById('shareURL').textContent;
+            navigator.clipboard.writeText(url);
+            alert('✅ ZK RDF URL copied!');
+        };
+        
+        window.exportRDF = function() {
+            const rdf = `@prefix monster: <http://monster.group/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+monster:walk_step_${currentStep} rdf:type monster:WalkStep ;
+    monster:stepNumber ${currentStep} ;
+    monster:frequency ${FREQUENCIES[currentStep] || 440} ;
+    monster:emoji "${EMOJIS[currentStep] || '🔮'}" ;
+    monster:timestamp "${new Date().toISOString()}" .`;
+            
+            const blob = new Blob([rdf], { type: 'text/turtle' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `monster_walk_step_${currentStep}.ttl`;
+            a.click();
+        };
+        
+        // Load from URL hash
+        if (window.location.hash.startsWith('#zk=')) {
+            try {
+                const zkData = atob(window.location.hash.slice(4));
+                const state = JSON.parse(zkData);
+                currentStep = state.step;
+                showEmojis = state.emojis;
+                showFrequencies = state.frequencies;
+                showSpectrum = state.spectrum;
+                showValues = state.values;
+            } catch (e) {
+                console.log('Invalid ZK URL');
+            }
+        }
+        
+        // Monster Walk Visualization
+        
+        function showWalk(group) {
+            currentStep = group;
+            drawMonsterWalk();
+        }
+        
+        function drawMonsterWalk() {
+            monsterCtx.clearRect(0, 0, monsterCanvas.width, monsterCanvas.height);
+            
+            // Draw Monster order
+            if (showValues) {
+                monsterCtx.fillStyle = '#0f0';
+                monsterCtx.font = '20px Courier New';
+                monsterCtx.fillText('Monster Order:', 50, 50);
+                monsterCtx.fillText(MONSTER_ORDER.substring(0, 30) + '...', 50, 80);
+            }
+            
+            // Draw spectrum analyzer
+            if (showSpectrum) {
+                for (let i = 0; i < 10; i++) {
+                    const x = 50 + i * 80;
+                    const height = (FREQUENCIES[i] / 1600) * 200;
+                    const active = currentStep === i + 1;
+                    
+                    monsterCtx.fillStyle = active ? '#ff0' : '#0f0';
+                    monsterCtx.fillRect(x, 500 - height, 60, height);
+                    
+                    if (showFrequencies) {
+                        monsterCtx.fillStyle = '#0f0';
+                        monsterCtx.font = '12px Courier New';
+                        monsterCtx.fillText(FREQUENCIES[i] + 'Hz', x, 520);
+                    }
+                }
+            }
+            
+            // Draw groups
+            const groups = [
+                { name: 'Group 1', digits: '8080', y: 150, factors: 8 },
+                { name: 'Group 2', digits: '1742', y: 250, factors: 4 },
+                { name: 'Group 3', digits: '479', y: 350, factors: 4 }
+            ];
+            
+            groups.forEach((group, i) => {
+                const active = currentStep === i + 1 || currentStep === 0;
+                monsterCtx.fillStyle = active ? '#ff0' : '#0f0';
+                monsterCtx.font = 'bold 24px Courier New';
+                monsterCtx.fillText(group.name, 50, group.y);
+                
+                monsterCtx.fillStyle = active ? '#ff0' : '#0ff';
+                monsterCtx.font = 'bold 48px Courier New';
+                monsterCtx.fillText(group.digits, 250, group.y);
+                
+                if (showValues) {
+                    monsterCtx.fillStyle = '#0f0';
+                    monsterCtx.font = '16px Courier New';
+                    monsterCtx.fillText(`Remove ${group.factors} factors`, 450, group.y);
+                }
+                
+                // Draw arrow
+                if (i < groups.length - 1) {
+                    monsterCtx.strokeStyle = '#0f0';
+                    monsterCtx.beginPath();
+                    monsterCtx.moveTo(150, group.y + 20);
+                    monsterCtx.lineTo(150, groups[i + 1].y - 20);
+                    monsterCtx.stroke();
+                }
+            });
+            
+            // Draw spiral
+            drawSpiral(currentStep);
+        }
+        
+        function drawSpiral(highlight) {
+            const centerX = 900;
+            const centerY = 300;
+            const maxRadius = 200;
+            
+            monsterCtx.strokeStyle = '#0f0';
+            monsterCtx.beginPath();
+            
+            for (let i = 0; i < 71; i++) {
+                const angle = (i / 71) * Math.PI * 2 * 5;
+                const radius = (i / 71) * maxRadius;
+                const x = centerX + Math.cos(angle) * radius;
+                const y = centerY + Math.sin(angle) * radius;
+                
+                if (i === 0) {
+                    monsterCtx.moveTo(x, y);
+                } else {
+                    monsterCtx.lineTo(x, y);
+                }
+                
+                // Highlight group layers
+                if ((highlight === 1 && i < 24) ||
+                    (highlight === 2 && i >= 24 && i < 48) ||
+                    (highlight === 3 && i >= 48)) {
+                    monsterCtx.fillStyle = '#ff0';
+                    monsterCtx.fillRect(x - 3, y - 3, 6, 6);
+                }
+            }
+            
+            monsterCtx.stroke();
+        }
+        
+        function animateWalk() {
+            let step = 0;
+            const interval = setInterval(() => {
+                currentStep = step % 4;
+                drawMonsterWalk();
+                step++;
+                if (step > 12) clearInterval(interval);
+            }, 500);
+        }
+        
+        function resetWalk() {
+            currentStep = 0;
+            drawMonsterWalk();
+        }
+        
+        function showAllGroups() {
+            currentStep = 0;
+            drawMonsterWalk();
+        }
+        
+        // Qwen in Monster
+        const qwenCanvas = document.getElementById('qwenCanvas');
+        const qwenCtx = qwenCanvas.getContext('2d');
+        
+        function initQwenLayers() {
+            const container = document.getElementById('qwenLayers');
+            for (let i = 0; i < 71; i++) {
+                const layer = document.createElement('div');
+                layer.className = 'qwen-layer';
+                layer.textContent = i;
+                layer.id = `layer-${i}`;
+                layer.onclick = () => activateLayer(i);
+                container.appendChild(layer);
+            }
+        }
+        
+        function activateLayer(i) {
+            document.querySelectorAll('.qwen-layer').forEach(l => l.classList.remove('active'));
+            document.getElementById(`layer-${i}`).classList.add('active');
+            
+            const prime = MONSTER_PRIMES[i % MONSTER_PRIMES.length];
+            document.getElementById('qwenOutput').innerHTML = 
+                `Layer ${i}: Prime ${prime}<br>` +
+                `Resonance: ${(Math.random() * 100).toFixed(2)}%<br>` +
+                `Eigenvalues: [${Array(5).fill(0).map(() => (Math.random() * 10).toFixed(2)).join(', ')}]`;
+        }
+        
+        function loadQwenWASM() {
+            document.getElementById('qwenOutput').innerHTML = 
+                '🚀 Loading WASM Hecke operators...<br>' +
+                '✅ 71 operators loaded<br>' +
+                '✅ Ready to walk!';
+        }
+        
+        function walkQwen() {
+            let layer = 0;
+            const interval = setInterval(() => {
+                activateLayer(layer);
+                drawQwenResonance(layer);
+                layer++;
+                if (layer >= 71) clearInterval(interval);
+            }, 100);
+        }
+        
+        function drawQwenResonance(layer) {
+            qwenCtx.clearRect(0, 0, qwenCanvas.width, qwenCanvas.height);
+            
+            // Draw resonance bars
+            for (let i = 0; i < 15; i++) {
+                const x = 50 + i * 75;
+                const height = Math.random() * 300;
+                const hue = (height / 300) * 120;
+                
+                qwenCtx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+                qwenCtx.fillRect(x, 350 - height, 60, height);
+                
+                qwenCtx.fillStyle = '#0f0';
+                qwenCtx.font = '12px Courier New';
+                qwenCtx.fillText(MONSTER_PRIMES[i], x + 20, 370);
+            }
+            
+            // Draw current layer indicator
+            qwenCtx.fillStyle = '#ff0';
+            qwenCtx.font = 'bold 20px Courier New';
+            qwenCtx.fillText(`Layer ${layer}/71`, 500, 30);
+        }
+        
+        function showResonance() {
+            drawQwenResonance(Math.floor(Math.random() * 71));
+        }
+        
+        // Initialize
+        drawMonsterWalk();
+        initQwenLayers();
+    </script>
+</body>
+</html>

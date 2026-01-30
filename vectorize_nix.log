@@ -1,0 +1,38 @@
+warning: Git tree '/home/mdupont/experiments/monster' is dirty
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+this derivation will be built:
+  /nix/store/9fhwq8pfqqv3xxy9c87wzwpf40yjffl5-vectorize-all-parquets-0.1.0.drv
+building '/nix/store/9fhwq8pfqqv3xxy9c87wzwpf40yjffl5-vectorize-all-parquets-0.1.0.drv'...
+error: Cannot build '/nix/store/9fhwq8pfqqv3xxy9c87wzwpf40yjffl5-vectorize-all-parquets-0.1.0.drv'.
+       Reason: builder failed with exit code 101.
+       Output paths:
+         /nix/store/1cfhb7zinrijgiqd59xi664lk8cf2j8c-vectorize-all-parquets-0.1.0
+       Last 25 log lines:
+       >    --> src/bin/monster_gpu_consumer.rs:131:46
+       >     |
+       > 131 |     fn combine_rings(&self) -> Option<Tensor<burn_cuda::Cuda, 3>> {
+       >     |                                              ^^^^^^^^^ use of unresolved module or unlinked crate `burn_cuda`
+       >     |
+       >     = help: if you wanted to use a crate named `burn_cuda`, use `cargo add burn_cuda` to add it to your `Cargo.toml`
+       >
+       > Some errors have detailed explanations: E0282, E0412, E0432, E0433.
+       > error[E0752]: `main` function is not allowed to be `async`
+       >    --> src/bin/multi_level_review.rs:150:1
+       >     |
+       > 150 | async fn main() -> Result<(), Box<dyn std::error::Error>> {
+       >     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`
+       >
+       > error: could not compile `monster` (bin "zk_llm") due to 12 previous errors
+       > warning: `monster` (bin "monster_gpu_consumer") generated 3 warnings
+       > error: could not compile `monster` (bin "monster_gpu_consumer") due to 11 previous errors; 3 warnings emitted
+       > Some errors have detailed explanations: E0433, E0752.
+       > For more information about an error, try `rustc --explain E0433`.
+       > error: could not compile `monster` (bin "multi_level_review") due to 4 previous errors
+       > warning: `monster` (bin "monster_emoji_report") generated 1 warning (run `cargo fix --bin "monster_emoji_report" -p monster` to apply 1 suggestion)
+       > warning: `monster` (bin "monster_walk_primes") generated 1 warning
+       > warning: `monster` (bin "group_harmonics") generated 1 warning (run `cargo fix --bin "group_harmonics" -p monster` to apply 1 suggestion)
+       > warning: `monster` (bin "precedence_survey") generated 5 warnings (run `cargo fix --bin "precedence_survey" -p monster` to apply 5 suggestions)
+       > warning: `monster` (bin "markov_sampling") generated 1 warning (run `cargo fix --bin "markov_sampling" -p monster` to apply 1 suggestion)
+       For full logs, run:
+         nix-store -l /nix/store/9fhwq8pfqqv3xxy9c87wzwpf40yjffl5-vectorize-all-parquets-0.1.0.drv

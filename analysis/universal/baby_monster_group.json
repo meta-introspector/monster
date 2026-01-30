@@ -1,0 +1,70 @@
+{
+  "object": {
+    "name": "Baby Monster Group",
+    "order": "4154781481226426191177580544000000",
+    "prime_factors": {
+      "2": 41,
+      "47": 1,
+      "7": 2,
+      "13": 1,
+      "11": 1,
+      "19": 1,
+      "17": 1,
+      "31": 1,
+      "5": 6,
+      "3": 13,
+      "23": 1
+    },
+    "complexity": 4.15e+33
+  },
+  "groups": [
+    {
+      "sequence": "4154",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Complex K-theory / Bott periodicity"
+    },
+    {
+      "sequence": "7814",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Elliptic curves / CM theory"
+    },
+    {
+      "sequence": "8122",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Hilbert modular forms"
+    },
+    {
+      "sequence": "6426",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Siegel modular forms"
+    },
+    {
+      "sequence": "1911",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Calabi-Yau threefolds"
+    },
+    {
+      "sequence": "7758",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Vertex operator algebra / moonshine"
+    },
+    {
+      "sequence": "0544",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Generalized moonshine"
+    },
+    {
+      "sequence": "0000",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "String theory"
+    }
+  ]
+}

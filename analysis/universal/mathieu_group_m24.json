@@ -1,0 +1,29 @@
+{
+  "object": {
+    "name": "Mathieu Group M24",
+    "order": "244823040",
+    "prime_factors": {
+      "23": 1,
+      "5": 1,
+      "11": 1,
+      "7": 1,
+      "2": 10,
+      "3": 3
+    },
+    "complexity": 245000000.0
+  },
+  "groups": [
+    {
+      "sequence": "2448",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Complex K-theory / Bott periodicity"
+    },
+    {
+      "sequence": "2304",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Elliptic curves / CM theory"
+    }
+  ]
+}

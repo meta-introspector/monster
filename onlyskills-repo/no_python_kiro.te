@@ -1,0 +1,86 @@
+policy_module(no_python_kiro, 1.0.0)
+
+########################################
+# NO PYTHON FOR KIRO - Anti-Python Policy
+# Based on PYTHON_REMOVAL.md
+########################################
+
+# Kiro domain (NO PYTHON ALLOWED)
+type kiro_t;
+type kiro_exec_t;
+domain_type(kiro_t)
+domain_entry_file(kiro_t, kiro_exec_t)
+
+# Python executables
+type python_exec_t;
+application_executable_file(python_exec_t)
+
+# Python domain
+type python_t;
+domain_type(python_t)
+
+########################################
+# NEVERALLOW: Kiro CANNOT execute Python
+########################################
+
+# ABSOLUTE BAN on Python execution
+neverallow kiro_t python_exec_t:file { execute execute_no_trans };
+neverallow kiro_t python_exec_t:process { transition dyntransition };
+
+# ABSOLUTE BAN on Python scripts
+neverallow kiro_t python_script_t:file { execute execute_no_trans };
+
+# ABSOLUTE BAN on Python modules
+neverallow kiro_t python_module_t:file { read open };
+
+# ABSOLUTE BAN on pip/virtualenv
+neverallow kiro_t pip_exec_t:file { execute execute_no_trans };
+
+########################################
+# Audit all Python attempts
+########################################
+
+auditallow kiro_t python_exec_t:file { execute execute_no_trans };
+auditallow kiro_t python_exec_t:process { transition dyntransition };
+auditallow kiro_t python_script_t:file { execute execute_no_trans };
+
+########################################
+# ALLOWED: Rust, Nix, Prolog, Lean4
+########################################
+
+# Rust is ALLOWED
+type rust_exec_t;
+allow kiro_t rust_exec_t:file { read execute execute_no_trans };
+
+# Cargo is ALLOWED (via Pipelight only - see cargo_pipelight_only.te)
+# See SOP-CARGO-PIPELIGHT-001
+
+# Nix is ALLOWED
+type nix_exec_t;
+allow kiro_t nix_exec_t:file { read execute execute_no_trans };
+
+# Prolog is ALLOWED
+type prolog_exec_t;
+allow kiro_t prolog_exec_t:file { read execute execute_no_trans };
+
+# Lean4 is ALLOWED
+type lean_exec_t;
+allow kiro_t lean_exec_t:file { read execute execute_no_trans };
+
+########################################
+# Quarantine zone for Python
+########################################
+
+# Python files in quarantine/ are read-only
+type python_quarantine_t;
+allow kiro_t python_quarantine_t:file { read getattr };
+neverallow kiro_t python_quarantine_t:file { write execute };
+
+########################################
+# Enforcement message
+########################################
+
+# When kiro tries Python, log this message:
+# "DENIED: Python forbidden for kiro-cli per PYTHON_REMOVAL.md"
+# "Use Rust + Nix + Prolog + Lean4 instead"
+# "See: SOP-CARGO-PIPELIGHT-001, PYTHON_REMOVAL.md"

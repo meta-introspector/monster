@@ -1,0 +1,194 @@
+[
+  {
+    "username": "pipelight-dev",
+    "skill": "pipelite",
+    "github_url": "https://github.com/pipelight-dev",
+    "repos": [
+      "pipelight/pipelight"
+    ],
+    "functions_written": [
+      "parse_expr",
+      "compile_module",
+      "execute_proof"
+    ],
+    "shard_id": 0,
+    "prime": 2,
+    "rank": 6
+  },
+  {
+    "username": "edolstra",
+    "skill": "nix",
+    "github_url": "https://github.com/edolstra",
+    "repos": [
+      "NixOS/nix"
+    ],
+    "functions_written": [
+      "mkDerivation",
+      "buildRustPackage",
+      "fetchFromGitHub"
+    ],
+    "shard_id": 1,
+    "prime": 3,
+    "rank": 9
+  },
+  {
+    "username": "domenkozar",
+    "skill": "nix",
+    "github_url": "https://github.com/domenkozar",
+    "repos": [
+      "cachix/cachix"
+    ],
+    "functions_written": [
+      "mkDerivation",
+      "buildRustPackage",
+      "fetchFromGitHub"
+    ],
+    "shard_id": 2,
+    "prime": 5,
+    "rank": 15
+  },
+  {
+    "username": "zimbatm",
+    "skill": "nix",
+    "github_url": "https://github.com/zimbatm",
+    "repos": [
+      "nix-community/nix-direnv"
+    ],
+    "functions_written": [
+      "mkDerivation",
+      "buildRustPackage",
+      "fetchFromGitHub"
+    ],
+    "shard_id": 3,
+    "prime": 7,
+    "rank": 21
+  },
+  {
+    "username": "edolstra",
+    "skill": "flake",
+    "github_url": "https://github.com/edolstra",
+    "repos": [
+      "NixOS/nix"
+    ],
+    "functions_written": [
+      "mkDerivation",
+      "buildRustPackage",
+      "fetchFromGitHub"
+    ],
+    "shard_id": 4,
+    "prime": 11,
+    "rank": 33
+  },
+  {
+    "username": "numtide",
+    "skill": "flake",
+    "github_url": "https://github.com/numtide",
+    "repos": [
+      "numtide/flake-utils"
+    ],
+    "functions_written": [
+      "mkDerivation",
+      "buildRustPackage",
+      "fetchFromGitHub"
+    ],
+    "shard_id": 5,
+    "prime": 13,
+    "rank": 39
+  },
+  {
+    "username": "dtolnay",
+    "skill": "rust",
+    "github_url": "https://github.com/dtolnay",
+    "repos": [
+      "dtolnay/syn",
+      "dtolnay/serde"
+    ],
+    "functions_written": [
+      "parse_expr",
+      "compile_module",
+      "execute_proof"
+    ],
+    "shard_id": 6,
+    "prime": 17,
+    "rank": 51
+  },
+  {
+    "username": "alexcrichton",
+    "skill": "rust",
+    "github_url": "https://github.com/alexcrichton",
+    "repos": [
+      "rust-lang/cargo"
+    ],
+    "functions_written": [
+      "parse_expr",
+      "compile_module",
+      "execute_proof"
+    ],
+    "shard_id": 7,
+    "prime": 19,
+    "rank": 57
+  },
+  {
+    "username": "matklad",
+    "skill": "rust",
+    "github_url": "https://github.com/matklad",
+    "repos": [
+      "rust-analyzer/rust-analyzer"
+    ],
+    "functions_written": [
+      "parse_expr",
+      "compile_module",
+      "execute_proof"
+    ],
+    "shard_id": 8,
+    "prime": 23,
+    "rank": 69
+  },
+  {
+    "username": "leanprover",
+    "skill": "lean4",
+    "github_url": "https://github.com/leanprover",
+    "repos": [
+      "leanprover/lean4"
+    ],
+    "functions_written": [
+      "theorem_proof",
+      "tactic_apply",
+      "simp_all"
+    ],
+    "shard_id": 9,
+    "prime": 29,
+    "rank": 87
+  },
+  {
+    "username": "gebner",
+    "skill": "lean4",
+    "github_url": "https://github.com/gebner",
+    "repos": [
+      "leanprover-community/mathlib4"
+    ],
+    "functions_written": [
+      "theorem_proof",
+      "tactic_apply",
+      "simp_all"
+    ],
+    "shard_id": 10,
+    "prime": 31,
+    "rank": 93
+  },
+  {
+    "username": "MiniZinc",
+    "skill": "minizinc",
+    "github_url": "https://github.com/MiniZinc",
+    "repos": [
+      "MiniZinc/libminizinc"
+    ],
+    "functions_written": [
+      "solve_constraint",
+      "optimize_model"
+    ],
+    "shard_id": 11,
+    "prime": 41,
+    "rank": 82
+  }
+]

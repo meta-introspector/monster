@@ -1,0 +1,55 @@
+name: Trace Mathematical Software
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  trace-all:
+    runs-on: self-hosted
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v24
+    
+    - name: Build Tracer
+      run: |
+        nix develop --command cargo build --release --bin trace_math_software
+        nix develop --command cargo build --release --bin ten_fold_lattice
+    
+    - name: Trace GAP/PARI/Sage
+      run: |
+        nix develop --command ./target/release/trace_math_software
+    
+    - name: Build 10-Fold Lattice
+      run: |
+        nix develop --command ./target/release/ten_fold_lattice
+    
+    - name: Collect Traces
+      run: |
+        echo "## 🔬 Mathematical Software Traces" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        cat analysis/math_software_traces.json | jq -r '.[] | "- \(.software): \(.example) → \(.period) (complexity: \(.complexity))"' >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## 🔟 10-Fold Lattice" >> $GITHUB_STEP_SUMMARY
+        cat analysis/ten_fold_lattice.json | jq -r '.periods | to_entries | .[] | "- \(.key): \(.value | length) objects"' >> $GITHUB_STEP_SUMMARY
+    
+    - name: Commit Traces
+      run: |
+        git add analysis/math_software_traces.json
+        git add analysis/ten_fold_lattice.json
+        git commit -m "Update math software traces" || true
+        git push || true
+    
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: math-traces
+        path: |
+          analysis/math_software_traces.json
+          analysis/ten_fold_lattice.json

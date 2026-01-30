@@ -1,0 +1,2842 @@
+[
+  {
+    "policy_id": "policy_0_cpu",
+    "zone_id": 0,
+    "resource_type": "cpu",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_0_memory",
+    "zone_id": 0,
+    "resource_type": "memory",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_0_network",
+    "zone_id": 0,
+    "resource_type": "network",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_0_storage",
+    "zone_id": 0,
+    "resource_type": "storage",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_1_cpu",
+    "zone_id": 1,
+    "resource_type": "cpu",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_1_memory",
+    "zone_id": 1,
+    "resource_type": "memory",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_1_network",
+    "zone_id": 1,
+    "resource_type": "network",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_1_storage",
+    "zone_id": 1,
+    "resource_type": "storage",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_2_cpu",
+    "zone_id": 2,
+    "resource_type": "cpu",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_2_memory",
+    "zone_id": 2,
+    "resource_type": "memory",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_2_network",
+    "zone_id": 2,
+    "resource_type": "network",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_2_storage",
+    "zone_id": 2,
+    "resource_type": "storage",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_3_cpu",
+    "zone_id": 3,
+    "resource_type": "cpu",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_3_memory",
+    "zone_id": 3,
+    "resource_type": "memory",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_3_network",
+    "zone_id": 3,
+    "resource_type": "network",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_3_storage",
+    "zone_id": 3,
+    "resource_type": "storage",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_4_cpu",
+    "zone_id": 4,
+    "resource_type": "cpu",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_4_memory",
+    "zone_id": 4,
+    "resource_type": "memory",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_4_network",
+    "zone_id": 4,
+    "resource_type": "network",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_4_storage",
+    "zone_id": 4,
+    "resource_type": "storage",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_5_cpu",
+    "zone_id": 5,
+    "resource_type": "cpu",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_5_memory",
+    "zone_id": 5,
+    "resource_type": "memory",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_5_network",
+    "zone_id": 5,
+    "resource_type": "network",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_5_storage",
+    "zone_id": 5,
+    "resource_type": "storage",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_6_cpu",
+    "zone_id": 6,
+    "resource_type": "cpu",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_6_memory",
+    "zone_id": 6,
+    "resource_type": "memory",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_6_network",
+    "zone_id": 6,
+    "resource_type": "network",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_6_storage",
+    "zone_id": 6,
+    "resource_type": "storage",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_7_cpu",
+    "zone_id": 7,
+    "resource_type": "cpu",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_7_memory",
+    "zone_id": 7,
+    "resource_type": "memory",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_7_network",
+    "zone_id": 7,
+    "resource_type": "network",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_7_storage",
+    "zone_id": 7,
+    "resource_type": "storage",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_8_cpu",
+    "zone_id": 8,
+    "resource_type": "cpu",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_8_memory",
+    "zone_id": 8,
+    "resource_type": "memory",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_8_network",
+    "zone_id": 8,
+    "resource_type": "network",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_8_storage",
+    "zone_id": 8,
+    "resource_type": "storage",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_9_cpu",
+    "zone_id": 9,
+    "resource_type": "cpu",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_9_memory",
+    "zone_id": 9,
+    "resource_type": "memory",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_9_network",
+    "zone_id": 9,
+    "resource_type": "network",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_9_storage",
+    "zone_id": 9,
+    "resource_type": "storage",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_10_cpu",
+    "zone_id": 10,
+    "resource_type": "cpu",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_10_memory",
+    "zone_id": 10,
+    "resource_type": "memory",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_10_network",
+    "zone_id": 10,
+    "resource_type": "network",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_10_storage",
+    "zone_id": 10,
+    "resource_type": "storage",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_11_cpu",
+    "zone_id": 11,
+    "resource_type": "cpu",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_11_memory",
+    "zone_id": 11,
+    "resource_type": "memory",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_11_network",
+    "zone_id": 11,
+    "resource_type": "network",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_11_storage",
+    "zone_id": 11,
+    "resource_type": "storage",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_12_cpu",
+    "zone_id": 12,
+    "resource_type": "cpu",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_12_memory",
+    "zone_id": 12,
+    "resource_type": "memory",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_12_network",
+    "zone_id": 12,
+    "resource_type": "network",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_12_storage",
+    "zone_id": 12,
+    "resource_type": "storage",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_13_cpu",
+    "zone_id": 13,
+    "resource_type": "cpu",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_13_memory",
+    "zone_id": 13,
+    "resource_type": "memory",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_13_network",
+    "zone_id": 13,
+    "resource_type": "network",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_13_storage",
+    "zone_id": 13,
+    "resource_type": "storage",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_14_cpu",
+    "zone_id": 14,
+    "resource_type": "cpu",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_14_memory",
+    "zone_id": 14,
+    "resource_type": "memory",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_14_network",
+    "zone_id": 14,
+    "resource_type": "network",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_14_storage",
+    "zone_id": 14,
+    "resource_type": "storage",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_15_cpu",
+    "zone_id": 15,
+    "resource_type": "cpu",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_15_memory",
+    "zone_id": 15,
+    "resource_type": "memory",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_15_network",
+    "zone_id": 15,
+    "resource_type": "network",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_15_storage",
+    "zone_id": 15,
+    "resource_type": "storage",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_16_cpu",
+    "zone_id": 16,
+    "resource_type": "cpu",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_16_memory",
+    "zone_id": 16,
+    "resource_type": "memory",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_16_network",
+    "zone_id": 16,
+    "resource_type": "network",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_16_storage",
+    "zone_id": 16,
+    "resource_type": "storage",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_17_cpu",
+    "zone_id": 17,
+    "resource_type": "cpu",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_17_memory",
+    "zone_id": 17,
+    "resource_type": "memory",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_17_network",
+    "zone_id": 17,
+    "resource_type": "network",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_17_storage",
+    "zone_id": 17,
+    "resource_type": "storage",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_18_cpu",
+    "zone_id": 18,
+    "resource_type": "cpu",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_18_memory",
+    "zone_id": 18,
+    "resource_type": "memory",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_18_network",
+    "zone_id": 18,
+    "resource_type": "network",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_18_storage",
+    "zone_id": 18,
+    "resource_type": "storage",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_19_cpu",
+    "zone_id": 19,
+    "resource_type": "cpu",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_19_memory",
+    "zone_id": 19,
+    "resource_type": "memory",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_19_network",
+    "zone_id": 19,
+    "resource_type": "network",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_19_storage",
+    "zone_id": 19,
+    "resource_type": "storage",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_20_cpu",
+    "zone_id": 20,
+    "resource_type": "cpu",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_20_memory",
+    "zone_id": 20,
+    "resource_type": "memory",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_20_network",
+    "zone_id": 20,
+    "resource_type": "network",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_20_storage",
+    "zone_id": 20,
+    "resource_type": "storage",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_21_cpu",
+    "zone_id": 21,
+    "resource_type": "cpu",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_21_memory",
+    "zone_id": 21,
+    "resource_type": "memory",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_21_network",
+    "zone_id": 21,
+    "resource_type": "network",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_21_storage",
+    "zone_id": 21,
+    "resource_type": "storage",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_22_cpu",
+    "zone_id": 22,
+    "resource_type": "cpu",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_22_memory",
+    "zone_id": 22,
+    "resource_type": "memory",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_22_network",
+    "zone_id": 22,
+    "resource_type": "network",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_22_storage",
+    "zone_id": 22,
+    "resource_type": "storage",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_23_cpu",
+    "zone_id": 23,
+    "resource_type": "cpu",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_23_memory",
+    "zone_id": 23,
+    "resource_type": "memory",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_23_network",
+    "zone_id": 23,
+    "resource_type": "network",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_23_storage",
+    "zone_id": 23,
+    "resource_type": "storage",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_24_cpu",
+    "zone_id": 24,
+    "resource_type": "cpu",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_24_memory",
+    "zone_id": 24,
+    "resource_type": "memory",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_24_network",
+    "zone_id": 24,
+    "resource_type": "network",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_24_storage",
+    "zone_id": 24,
+    "resource_type": "storage",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_25_cpu",
+    "zone_id": 25,
+    "resource_type": "cpu",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_25_memory",
+    "zone_id": 25,
+    "resource_type": "memory",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_25_network",
+    "zone_id": 25,
+    "resource_type": "network",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_25_storage",
+    "zone_id": 25,
+    "resource_type": "storage",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_26_cpu",
+    "zone_id": 26,
+    "resource_type": "cpu",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_26_memory",
+    "zone_id": 26,
+    "resource_type": "memory",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_26_network",
+    "zone_id": 26,
+    "resource_type": "network",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_26_storage",
+    "zone_id": 26,
+    "resource_type": "storage",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_27_cpu",
+    "zone_id": 27,
+    "resource_type": "cpu",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_27_memory",
+    "zone_id": 27,
+    "resource_type": "memory",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_27_network",
+    "zone_id": 27,
+    "resource_type": "network",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_27_storage",
+    "zone_id": 27,
+    "resource_type": "storage",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_28_cpu",
+    "zone_id": 28,
+    "resource_type": "cpu",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_28_memory",
+    "zone_id": 28,
+    "resource_type": "memory",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_28_network",
+    "zone_id": 28,
+    "resource_type": "network",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_28_storage",
+    "zone_id": 28,
+    "resource_type": "storage",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_29_cpu",
+    "zone_id": 29,
+    "resource_type": "cpu",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_29_memory",
+    "zone_id": 29,
+    "resource_type": "memory",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_29_network",
+    "zone_id": 29,
+    "resource_type": "network",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_29_storage",
+    "zone_id": 29,
+    "resource_type": "storage",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_30_cpu",
+    "zone_id": 30,
+    "resource_type": "cpu",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_30_memory",
+    "zone_id": 30,
+    "resource_type": "memory",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_30_network",
+    "zone_id": 30,
+    "resource_type": "network",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_30_storage",
+    "zone_id": 30,
+    "resource_type": "storage",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_31_cpu",
+    "zone_id": 31,
+    "resource_type": "cpu",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_31_memory",
+    "zone_id": 31,
+    "resource_type": "memory",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_31_network",
+    "zone_id": 31,
+    "resource_type": "network",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_31_storage",
+    "zone_id": 31,
+    "resource_type": "storage",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_32_cpu",
+    "zone_id": 32,
+    "resource_type": "cpu",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_32_memory",
+    "zone_id": 32,
+    "resource_type": "memory",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_32_network",
+    "zone_id": 32,
+    "resource_type": "network",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_32_storage",
+    "zone_id": 32,
+    "resource_type": "storage",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_33_cpu",
+    "zone_id": 33,
+    "resource_type": "cpu",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_33_memory",
+    "zone_id": 33,
+    "resource_type": "memory",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_33_network",
+    "zone_id": 33,
+    "resource_type": "network",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_33_storage",
+    "zone_id": 33,
+    "resource_type": "storage",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_34_cpu",
+    "zone_id": 34,
+    "resource_type": "cpu",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_34_memory",
+    "zone_id": 34,
+    "resource_type": "memory",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_34_network",
+    "zone_id": 34,
+    "resource_type": "network",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_34_storage",
+    "zone_id": 34,
+    "resource_type": "storage",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_35_cpu",
+    "zone_id": 35,
+    "resource_type": "cpu",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_35_memory",
+    "zone_id": 35,
+    "resource_type": "memory",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_35_network",
+    "zone_id": 35,
+    "resource_type": "network",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_35_storage",
+    "zone_id": 35,
+    "resource_type": "storage",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_36_cpu",
+    "zone_id": 36,
+    "resource_type": "cpu",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_36_memory",
+    "zone_id": 36,
+    "resource_type": "memory",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_36_network",
+    "zone_id": 36,
+    "resource_type": "network",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_36_storage",
+    "zone_id": 36,
+    "resource_type": "storage",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_37_cpu",
+    "zone_id": 37,
+    "resource_type": "cpu",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_37_memory",
+    "zone_id": 37,
+    "resource_type": "memory",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_37_network",
+    "zone_id": 37,
+    "resource_type": "network",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_37_storage",
+    "zone_id": 37,
+    "resource_type": "storage",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_38_cpu",
+    "zone_id": 38,
+    "resource_type": "cpu",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_38_memory",
+    "zone_id": 38,
+    "resource_type": "memory",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_38_network",
+    "zone_id": 38,
+    "resource_type": "network",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_38_storage",
+    "zone_id": 38,
+    "resource_type": "storage",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_39_cpu",
+    "zone_id": 39,
+    "resource_type": "cpu",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_39_memory",
+    "zone_id": 39,
+    "resource_type": "memory",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_39_network",
+    "zone_id": 39,
+    "resource_type": "network",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_39_storage",
+    "zone_id": 39,
+    "resource_type": "storage",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_40_cpu",
+    "zone_id": 40,
+    "resource_type": "cpu",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_40_memory",
+    "zone_id": 40,
+    "resource_type": "memory",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_40_network",
+    "zone_id": 40,
+    "resource_type": "network",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_40_storage",
+    "zone_id": 40,
+    "resource_type": "storage",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_41_cpu",
+    "zone_id": 41,
+    "resource_type": "cpu",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_41_memory",
+    "zone_id": 41,
+    "resource_type": "memory",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_41_network",
+    "zone_id": 41,
+    "resource_type": "network",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_41_storage",
+    "zone_id": 41,
+    "resource_type": "storage",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_42_cpu",
+    "zone_id": 42,
+    "resource_type": "cpu",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_42_memory",
+    "zone_id": 42,
+    "resource_type": "memory",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_42_network",
+    "zone_id": 42,
+    "resource_type": "network",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_42_storage",
+    "zone_id": 42,
+    "resource_type": "storage",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_43_cpu",
+    "zone_id": 43,
+    "resource_type": "cpu",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_43_memory",
+    "zone_id": 43,
+    "resource_type": "memory",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_43_network",
+    "zone_id": 43,
+    "resource_type": "network",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_43_storage",
+    "zone_id": 43,
+    "resource_type": "storage",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_44_cpu",
+    "zone_id": 44,
+    "resource_type": "cpu",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_44_memory",
+    "zone_id": 44,
+    "resource_type": "memory",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_44_network",
+    "zone_id": 44,
+    "resource_type": "network",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_44_storage",
+    "zone_id": 44,
+    "resource_type": "storage",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_45_cpu",
+    "zone_id": 45,
+    "resource_type": "cpu",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_45_memory",
+    "zone_id": 45,
+    "resource_type": "memory",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_45_network",
+    "zone_id": 45,
+    "resource_type": "network",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_45_storage",
+    "zone_id": 45,
+    "resource_type": "storage",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_46_cpu",
+    "zone_id": 46,
+    "resource_type": "cpu",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_46_memory",
+    "zone_id": 46,
+    "resource_type": "memory",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_46_network",
+    "zone_id": 46,
+    "resource_type": "network",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_46_storage",
+    "zone_id": 46,
+    "resource_type": "storage",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_47_cpu",
+    "zone_id": 47,
+    "resource_type": "cpu",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_47_memory",
+    "zone_id": 47,
+    "resource_type": "memory",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_47_network",
+    "zone_id": 47,
+    "resource_type": "network",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_47_storage",
+    "zone_id": 47,
+    "resource_type": "storage",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_48_cpu",
+    "zone_id": 48,
+    "resource_type": "cpu",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_48_memory",
+    "zone_id": 48,
+    "resource_type": "memory",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_48_network",
+    "zone_id": 48,
+    "resource_type": "network",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_48_storage",
+    "zone_id": 48,
+    "resource_type": "storage",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_49_cpu",
+    "zone_id": 49,
+    "resource_type": "cpu",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_49_memory",
+    "zone_id": 49,
+    "resource_type": "memory",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_49_network",
+    "zone_id": 49,
+    "resource_type": "network",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_49_storage",
+    "zone_id": 49,
+    "resource_type": "storage",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_50_cpu",
+    "zone_id": 50,
+    "resource_type": "cpu",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_50_memory",
+    "zone_id": 50,
+    "resource_type": "memory",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_50_network",
+    "zone_id": 50,
+    "resource_type": "network",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_50_storage",
+    "zone_id": 50,
+    "resource_type": "storage",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_51_cpu",
+    "zone_id": 51,
+    "resource_type": "cpu",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_51_memory",
+    "zone_id": 51,
+    "resource_type": "memory",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_51_network",
+    "zone_id": 51,
+    "resource_type": "network",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_51_storage",
+    "zone_id": 51,
+    "resource_type": "storage",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_52_cpu",
+    "zone_id": 52,
+    "resource_type": "cpu",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_52_memory",
+    "zone_id": 52,
+    "resource_type": "memory",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_52_network",
+    "zone_id": 52,
+    "resource_type": "network",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_52_storage",
+    "zone_id": 52,
+    "resource_type": "storage",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_53_cpu",
+    "zone_id": 53,
+    "resource_type": "cpu",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_53_memory",
+    "zone_id": 53,
+    "resource_type": "memory",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_53_network",
+    "zone_id": 53,
+    "resource_type": "network",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_53_storage",
+    "zone_id": 53,
+    "resource_type": "storage",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_54_cpu",
+    "zone_id": 54,
+    "resource_type": "cpu",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_54_memory",
+    "zone_id": 54,
+    "resource_type": "memory",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_54_network",
+    "zone_id": 54,
+    "resource_type": "network",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_54_storage",
+    "zone_id": 54,
+    "resource_type": "storage",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_55_cpu",
+    "zone_id": 55,
+    "resource_type": "cpu",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_55_memory",
+    "zone_id": 55,
+    "resource_type": "memory",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_55_network",
+    "zone_id": 55,
+    "resource_type": "network",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_55_storage",
+    "zone_id": 55,
+    "resource_type": "storage",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_56_cpu",
+    "zone_id": 56,
+    "resource_type": "cpu",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_56_memory",
+    "zone_id": 56,
+    "resource_type": "memory",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_56_network",
+    "zone_id": 56,
+    "resource_type": "network",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_56_storage",
+    "zone_id": 56,
+    "resource_type": "storage",
+    "allocation": 41000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4100,
+    "votes_against": 300,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_57_cpu",
+    "zone_id": 57,
+    "resource_type": "cpu",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_57_memory",
+    "zone_id": 57,
+    "resource_type": "memory",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_57_network",
+    "zone_id": 57,
+    "resource_type": "network",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_57_storage",
+    "zone_id": 57,
+    "resource_type": "storage",
+    "allocation": 47000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 4700,
+    "votes_against": 240,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_58_cpu",
+    "zone_id": 58,
+    "resource_type": "cpu",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_58_memory",
+    "zone_id": 58,
+    "resource_type": "memory",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_58_network",
+    "zone_id": 58,
+    "resource_type": "network",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_58_storage",
+    "zone_id": 58,
+    "resource_type": "storage",
+    "allocation": 59000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 5900,
+    "votes_against": 120,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_59_cpu",
+    "zone_id": 59,
+    "resource_type": "cpu",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_59_memory",
+    "zone_id": 59,
+    "resource_type": "memory",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_59_network",
+    "zone_id": 59,
+    "resource_type": "network",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_59_storage",
+    "zone_id": 59,
+    "resource_type": "storage",
+    "allocation": 71000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 7100,
+    "votes_against": 0,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_60_cpu",
+    "zone_id": 60,
+    "resource_type": "cpu",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_60_memory",
+    "zone_id": 60,
+    "resource_type": "memory",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_60_network",
+    "zone_id": 60,
+    "resource_type": "network",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_60_storage",
+    "zone_id": 60,
+    "resource_type": "storage",
+    "allocation": 200,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 200,
+    "votes_against": 690,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_61_cpu",
+    "zone_id": 61,
+    "resource_type": "cpu",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_61_memory",
+    "zone_id": 61,
+    "resource_type": "memory",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_61_network",
+    "zone_id": 61,
+    "resource_type": "network",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_61_storage",
+    "zone_id": 61,
+    "resource_type": "storage",
+    "allocation": 300,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 300,
+    "votes_against": 680,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_62_cpu",
+    "zone_id": 62,
+    "resource_type": "cpu",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_62_memory",
+    "zone_id": 62,
+    "resource_type": "memory",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_62_network",
+    "zone_id": 62,
+    "resource_type": "network",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_62_storage",
+    "zone_id": 62,
+    "resource_type": "storage",
+    "allocation": 500,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 500,
+    "votes_against": 660,
+    "approved": false
+  },
+  {
+    "policy_id": "policy_63_cpu",
+    "zone_id": 63,
+    "resource_type": "cpu",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_63_memory",
+    "zone_id": 63,
+    "resource_type": "memory",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_63_network",
+    "zone_id": 63,
+    "resource_type": "network",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_63_storage",
+    "zone_id": 63,
+    "resource_type": "storage",
+    "allocation": 7000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 700,
+    "votes_against": 640,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_64_cpu",
+    "zone_id": 64,
+    "resource_type": "cpu",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_64_memory",
+    "zone_id": 64,
+    "resource_type": "memory",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_64_network",
+    "zone_id": 64,
+    "resource_type": "network",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_64_storage",
+    "zone_id": 64,
+    "resource_type": "storage",
+    "allocation": 11000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1100,
+    "votes_against": 600,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_65_cpu",
+    "zone_id": 65,
+    "resource_type": "cpu",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_65_memory",
+    "zone_id": 65,
+    "resource_type": "memory",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_65_network",
+    "zone_id": 65,
+    "resource_type": "network",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_65_storage",
+    "zone_id": 65,
+    "resource_type": "storage",
+    "allocation": 13000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1300,
+    "votes_against": 580,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_66_cpu",
+    "zone_id": 66,
+    "resource_type": "cpu",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_66_memory",
+    "zone_id": 66,
+    "resource_type": "memory",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_66_network",
+    "zone_id": 66,
+    "resource_type": "network",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_66_storage",
+    "zone_id": 66,
+    "resource_type": "storage",
+    "allocation": 17000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1700,
+    "votes_against": 540,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_67_cpu",
+    "zone_id": 67,
+    "resource_type": "cpu",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_67_memory",
+    "zone_id": 67,
+    "resource_type": "memory",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_67_network",
+    "zone_id": 67,
+    "resource_type": "network",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_67_storage",
+    "zone_id": 67,
+    "resource_type": "storage",
+    "allocation": 19000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 1900,
+    "votes_against": 520,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_68_cpu",
+    "zone_id": 68,
+    "resource_type": "cpu",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_68_memory",
+    "zone_id": 68,
+    "resource_type": "memory",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_68_network",
+    "zone_id": 68,
+    "resource_type": "network",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_68_storage",
+    "zone_id": 68,
+    "resource_type": "storage",
+    "allocation": 23000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2300,
+    "votes_against": 480,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_69_cpu",
+    "zone_id": 69,
+    "resource_type": "cpu",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_69_memory",
+    "zone_id": 69,
+    "resource_type": "memory",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_69_network",
+    "zone_id": 69,
+    "resource_type": "network",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_69_storage",
+    "zone_id": 69,
+    "resource_type": "storage",
+    "allocation": 29000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 2900,
+    "votes_against": 420,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_70_cpu",
+    "zone_id": 70,
+    "resource_type": "cpu",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_70_memory",
+    "zone_id": 70,
+    "resource_type": "memory",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_70_network",
+    "zone_id": 70,
+    "resource_type": "network",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  },
+  {
+    "policy_id": "policy_70_storage",
+    "zone_id": 70,
+    "resource_type": "storage",
+    "allocation": 31000,
+    "enforcement": "selinux+iptables+ebpf+strace",
+    "votes_for": 3100,
+    "votes_against": 400,
+    "approved": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "serde",
+    "version": "*",
+    "repo_url": "https://github.com/rust-lang/serde",
+    "commit_count": 0,
+    "author_count": 0,
+    "threat_score": 0.5
+  },
+  {
+    "name": "serde_json",
+    "version": "*",
+    "repo_url": "https://github.com/rust-lang/serde_json",
+    "commit_count": 0,
+    "author_count": 0,
+    "threat_score": 0.5
+  }
+]

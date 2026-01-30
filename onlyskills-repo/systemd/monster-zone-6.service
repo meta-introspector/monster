@@ -1,0 +1,32 @@
+[Unit]
+Description=Monster DAO Zone 6 (Prime 17)
+After=network.target
+
+[Service]
+Type=simple
+User=monster_zone_6
+Group=monster_zone_6
+SELinuxContext=system_u:system_r:monster_zone_6_t:s6
+
+# Resource limits (DAO-governed)
+CPUShares=1700
+MemoryLimit=17408M
+TasksMax=170
+LimitNOFILE=1700
+
+# Network namespace
+PrivateNetwork=yes
+IPAddressDeny=any
+IPAddressAllow=10.71.6.0/24
+
+# Security
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+ExecStart=/usr/local/bin/monster_zone_6
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

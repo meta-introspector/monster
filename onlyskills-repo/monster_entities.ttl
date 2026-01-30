@@ -1,0 +1,130 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix zkerdfa: <https://onlyskills.com/zkerdfa#> .
+
+# Everything in Monster Group Structure
+
+<https://onlyskills.com/commit/abc123> rdf:type zkerdfa:Commit .
+<https://onlyskills.com/commit/abc123> zkerdfa:shardId 9 .
+<https://onlyskills.com/commit/abc123> zkerdfa:prime 29 .
+<https://onlyskills.com/commit/abc123> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/commit/abc123> zkerdfa:monsterForm "Additive Morphism" .
+<https://onlyskills.com/commit/abc123> zkerdfa:hash "abc123" .
+
+<https://onlyskills.com/commit/def456> rdf:type zkerdfa:Commit .
+<https://onlyskills.com/commit/def456> zkerdfa:shardId 70 .
+<https://onlyskills.com/commit/def456> zkerdfa:prime 31 .
+<https://onlyskills.com/commit/def456> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/commit/def456> zkerdfa:monsterForm "Corrective Automorphism" .
+<https://onlyskills.com/commit/def456> zkerdfa:hash "def456" .
+
+<https://onlyskills.com/commit/ghi789> rdf:type zkerdfa:Commit .
+<https://onlyskills.com/commit/ghi789> zkerdfa:shardId 28 .
+<https://onlyskills.com/commit/ghi789> zkerdfa:prime 59 .
+<https://onlyskills.com/commit/ghi789> zkerdfa:area "Calabi-Yau threefolds" .
+<https://onlyskills.com/commit/ghi789> zkerdfa:monsterForm "Isomorphic Transform" .
+<https://onlyskills.com/commit/ghi789> zkerdfa:hash "ghi789" .
+
+<https://onlyskills.com/commit/jkl012> rdf:type zkerdfa:Commit .
+<https://onlyskills.com/commit/jkl012> zkerdfa:shardId 10 .
+<https://onlyskills.com/commit/jkl012> zkerdfa:prime 31 .
+<https://onlyskills.com/commit/jkl012> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/commit/jkl012> zkerdfa:monsterForm "Semantic Embedding" .
+<https://onlyskills.com/commit/jkl012> zkerdfa:hash "jkl012" .
+
+<https://onlyskills.com/project/onlyskills> rdf:type zkerdfa:Project .
+<https://onlyskills.com/project/onlyskills> zkerdfa:shardId 57 .
+<https://onlyskills.com/project/onlyskills> zkerdfa:prime 47 .
+<https://onlyskills.com/project/onlyskills> zkerdfa:area "ADE classification" .
+<https://onlyskills.com/project/onlyskills> zkerdfa:monsterForm "Linear Type Manifold" .
+<https://onlyskills.com/project/onlyskills> zkerdfa:hash "fd3ccc03fbae8f98" .
+
+<https://onlyskills.com/project/monster-lean> rdf:type zkerdfa:Project .
+<https://onlyskills.com/project/monster-lean> zkerdfa:shardId 37 .
+<https://onlyskills.com/project/monster-lean> zkerdfa:prime 19 .
+<https://onlyskills.com/project/monster-lean> zkerdfa:area "Monster moonshine" .
+<https://onlyskills.com/project/monster-lean> zkerdfa:monsterForm "General Module" .
+<https://onlyskills.com/project/monster-lean> zkerdfa:hash "3b39c6d54cb39435" .
+
+<https://onlyskills.com/project/zkprologml> rdf:type zkerdfa:Project .
+<https://onlyskills.com/project/zkprologml> zkerdfa:shardId 34 .
+<https://onlyskills.com/project/zkprologml> zkerdfa:prime 11 .
+<https://onlyskills.com/project/zkprologml> zkerdfa:area "Calabi-Yau threefolds" .
+<https://onlyskills.com/project/zkprologml> zkerdfa:monsterForm "Dynamic Fiber Bundle" .
+<https://onlyskills.com/project/zkprologml> zkerdfa:hash "9ead73674e54e3a4" .
+
+<https://onlyskills.com/project/expert-system> rdf:type zkerdfa:Project .
+<https://onlyskills.com/project/expert-system> zkerdfa:shardId 21 .
+<https://onlyskills.com/project/expert-system> zkerdfa:prime 17 .
+<https://onlyskills.com/project/expert-system> zkerdfa:area "Siegel modular forms" .
+<https://onlyskills.com/project/expert-system> zkerdfa:monsterForm "Linear Type Manifold" .
+<https://onlyskills.com/project/expert-system> zkerdfa:hash "fc5c1ef03698d90a" .
+
+<https://onlyskills.com/build/build-001> rdf:type zkerdfa:Build .
+<https://onlyskills.com/build/build-001> zkerdfa:shardId 62 .
+<https://onlyskills.com/build/build-001> zkerdfa:prime 5 .
+<https://onlyskills.com/build/build-001> zkerdfa:area "ADE classification" .
+<https://onlyskills.com/build/build-001> zkerdfa:monsterForm "Successful Compilation" .
+<https://onlyskills.com/build/build-001> zkerdfa:hash "99495251464ff086" .
+
+<https://onlyskills.com/build/build-002> rdf:type zkerdfa:Build .
+<https://onlyskills.com/build/build-002> zkerdfa:shardId 24 .
+<https://onlyskills.com/build/build-002> zkerdfa:prime 29 .
+<https://onlyskills.com/build/build-002> zkerdfa:area "Siegel modular forms" .
+<https://onlyskills.com/build/build-002> zkerdfa:monsterForm "Successful Compilation" .
+<https://onlyskills.com/build/build-002> zkerdfa:hash "dc114d5a6bb74489" .
+
+<https://onlyskills.com/build/build-003> rdf:type zkerdfa:Build .
+<https://onlyskills.com/build/build-003> zkerdfa:shardId 48 .
+<https://onlyskills.com/build/build-003> zkerdfa:prime 7 .
+<https://onlyskills.com/build/build-003> zkerdfa:area "Generalized moonshine" .
+<https://onlyskills.com/build/build-003> zkerdfa:monsterForm "Failed Reduction" .
+<https://onlyskills.com/build/build-003> zkerdfa:hash "7bafad908a4ece9f" .
+
+<https://onlyskills.com/binary/target/release/onlyskills> rdf:type zkerdfa:Binary .
+<https://onlyskills.com/binary/target/release/onlyskills> zkerdfa:shardId 61 .
+<https://onlyskills.com/binary/target/release/onlyskills> zkerdfa:prime 3 .
+<https://onlyskills.com/binary/target/release/onlyskills> zkerdfa:area "ADE classification" .
+<https://onlyskills.com/binary/target/release/onlyskills> zkerdfa:monsterForm "Dense Subgroup" .
+<https://onlyskills.com/binary/target/release/onlyskills> zkerdfa:hash "c18174f8a0d840cc" .
+
+<https://onlyskills.com/binary/target/release/expert_system> rdf:type zkerdfa:Binary .
+<https://onlyskills.com/binary/target/release/expert_system> zkerdfa:shardId 34 .
+<https://onlyskills.com/binary/target/release/expert_system> zkerdfa:prime 11 .
+<https://onlyskills.com/binary/target/release/expert_system> zkerdfa:area "Calabi-Yau threefolds" .
+<https://onlyskills.com/binary/target/release/expert_system> zkerdfa:monsterForm "Dense Subgroup" .
+<https://onlyskills.com/binary/target/release/expert_system> zkerdfa:hash "4d511a1de5706225" .
+
+<https://onlyskills.com/binary/target/release/kiro> rdf:type zkerdfa:Binary .
+<https://onlyskills.com/binary/target/release/kiro> zkerdfa:shardId 8 .
+<https://onlyskills.com/binary/target/release/kiro> zkerdfa:prime 23 .
+<https://onlyskills.com/binary/target/release/kiro> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/binary/target/release/kiro> zkerdfa:monsterForm "Compact Embedding" .
+<https://onlyskills.com/binary/target/release/kiro> zkerdfa:hash "1c1021295882b3a4" .
+
+<https://onlyskills.com/decl/Skill> rdf:type zkerdfa:Decl .
+<https://onlyskills.com/decl/Skill> zkerdfa:shardId 58 .
+<https://onlyskills.com/decl/Skill> zkerdfa:prime 59 .
+<https://onlyskills.com/decl/Skill> zkerdfa:area "ADE classification" .
+<https://onlyskills.com/decl/Skill> zkerdfa:monsterForm "Product Type" .
+<https://onlyskills.com/decl/Skill> zkerdfa:hash "6df1bb18a59ab97d" .
+
+<https://onlyskills.com/decl/search_keyword> rdf:type zkerdfa:Decl .
+<https://onlyskills.com/decl/search_keyword> zkerdfa:shardId 19 .
+<https://onlyskills.com/decl/search_keyword> zkerdfa:prime 11 .
+<https://onlyskills.com/decl/search_keyword> zkerdfa:area "Hilbert modular forms" .
+<https://onlyskills.com/decl/search_keyword> zkerdfa:monsterForm "Function Space Element" .
+<https://onlyskills.com/decl/search_keyword> zkerdfa:hash "d8d907ab60544168" .
+
+<https://onlyskills.com/decl/SearchCapability> rdf:type zkerdfa:Decl .
+<https://onlyskills.com/decl/SearchCapability> zkerdfa:shardId 21 .
+<https://onlyskills.com/decl/SearchCapability> zkerdfa:prime 17 .
+<https://onlyskills.com/decl/SearchCapability> zkerdfa:area "Siegel modular forms" .
+<https://onlyskills.com/decl/SearchCapability> zkerdfa:monsterForm "Sum Type" .
+<https://onlyskills.com/decl/SearchCapability> zkerdfa:hash "30c0870fa4c4b204" .
+
+<https://onlyskills.com/decl/ToRDF> rdf:type zkerdfa:Decl .
+<https://onlyskills.com/decl/ToRDF> zkerdfa:shardId 24 .
+<https://onlyskills.com/decl/ToRDF> zkerdfa:prime 29 .
+<https://onlyskills.com/decl/ToRDF> zkerdfa:area "Siegel modular forms" .
+<https://onlyskills.com/decl/ToRDF> zkerdfa:monsterForm "Type Class" .
+<https://onlyskills.com/decl/ToRDF> zkerdfa:hash "ea3407c300a5d356" .

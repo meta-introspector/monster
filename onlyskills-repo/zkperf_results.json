@@ -1,0 +1,97 @@
+{
+  "slow_processes": [
+    {
+      "pid": 1234,
+      "name": "kiro_agent_1",
+      "cpu_cycles": 1000000,
+      "cache_misses": 5000,
+      "branch_mispredicts": 200,
+      "slowness_score": 50200,
+      "shard_id": 14
+    },
+    {
+      "pid": 1235,
+      "name": "kiro_agent_2",
+      "cpu_cycles": 5000000,
+      "cache_misses": 50000,
+      "branch_mispredicts": 5000,
+      "slowness_score": 710000,
+      "shard_id": 13
+    },
+    {
+      "pid": 1236,
+      "name": "kiro_agent_3",
+      "cpu_cycles": 500000,
+      "cache_misses": 1000,
+      "branch_mispredicts": 50,
+      "slowness_score": 11050,
+      "shard_id": 12
+    }
+  ],
+  "slowest_pid": 1235,
+  "branch_predictions": [
+    {
+      "address": 4194304,
+      "predicted_taken": true,
+      "confidence": 1.0,
+      "history": "TTTTTTTT",
+      "prime": 71
+    },
+    {
+      "address": 4194560,
+      "predicted_taken": false,
+      "confidence": 1.0,
+      "history": "NNNNNNNN",
+      "prime": 71
+    },
+    {
+      "address": 4194816,
+      "predicted_taken": true,
+      "confidence": 0.8309859154929577,
+      "history": "TNTNTNT",
+      "prime": 59
+    },
+    {
+      "address": 4195072,
+      "predicted_taken": true,
+      "confidence": 0.6619718309859155,
+      "history": "TTTNTTTN",
+      "prime": 47
+    }
+  ],
+  "kernel_patches": [
+    {
+      "process_pid": 1235,
+      "patch_type": "branch_hint",
+      "address": 4194304,
+      "old_value": 0,
+      "new_value": 1,
+      "improvement": 0.1
+    },
+    {
+      "process_pid": 1235,
+      "patch_type": "branch_hint",
+      "address": 4194560,
+      "old_value": 0,
+      "new_value": 2,
+      "improvement": 0.1
+    },
+    {
+      "process_pid": 1235,
+      "patch_type": "branch_hint",
+      "address": 4194816,
+      "old_value": 0,
+      "new_value": 1,
+      "improvement": 0.08309859154929577
+    },
+    {
+      "process_pid": 1235,
+      "patch_type": "branch_hint",
+      "address": 4195072,
+      "old_value": 0,
+      "new_value": 1,
+      "improvement": 0.06619718309859156
+    }
+  ],
+  "estimated_improvement": 0.34929577464788736
+}

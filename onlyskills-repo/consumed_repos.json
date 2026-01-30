@@ -1,0 +1,44 @@
+{
+  "consumed_repos": [
+    {
+      "name": "zos-server",
+      "path": "/home/mdupont/terraform/services/submodules/zos-server",
+      "shard_id": 34,
+      "prime": 11,
+      "files_count": 295002,
+      "rust_files": 3162,
+      "python_files": 314,
+      "docs_count": 437,
+      "monster_form": "Rust Manifold",
+      "hecke_signature": 604119
+    },
+    {
+      "name": "meta-introspector",
+      "path": "/mnt/data1/meta-introspector",
+      "shard_id": 45,
+      "prime": 2,
+      "files_count": 687769,
+      "rust_files": 2462,
+      "python_files": 1972,
+      "docs_count": 1314,
+      "monster_form": "Rust Manifold",
+      "hecke_signature": 1401982
+    },
+    {
+      "name": "zombie_driver2",
+      "path": "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2",
+      "shard_id": 21,
+      "prime": 17,
+      "files_count": 90591,
+      "rust_files": 381,
+      "python_files": 1,
+      "docs_count": 31,
+      "monster_form": "Rust Manifold",
+      "hecke_signature": 182547
+    }
+  ],
+  "total_files": 1073362,
+  "total_rust": 6005,
+  "total_python": 2287,
+  "total_docs": 1782
+}

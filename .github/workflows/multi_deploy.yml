@@ -1,0 +1,70 @@
+name: Multi-Platform Deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy-all:
+    runs-on: self-hosted
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v24
+    
+    - name: Build WASM Reader
+      run: |
+        cd archive_org_reader
+        nix develop --command wasm-pack build --target web --out-dir pkg || true
+        mkdir -p deploy
+        cp index.html deploy/ || true
+        cp -r pkg deploy/ || true
+    
+    - name: Prepare Deployment
+      run: |
+        mkdir -p docs
+        cp -r archive_org_reader/deploy/* docs/ || true
+        cp README.md docs/
+        cp PAPER.md docs/ || true
+    
+    # GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+    
+    # Vercel
+    - name: Deploy to Vercel
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      run: |
+        npm i -g vercel
+        vercel --prod --token=$VERCEL_TOKEN --yes
+    
+    # Cloudflare Pages
+    - name: Deploy to Cloudflare Pages
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      run: |
+        npm i -g wrangler
+        wrangler pages deploy docs --project-name=monster-zk-lattice
+    
+    # Archive.org
+    - name: Deploy to Archive.org
+      run: |
+        nix develop --command cargo build --release --bin self_deploy
+        nix develop --command ./target/release/self_deploy
+    
+    - name: Summary
+      run: |
+        echo "## 🚀 Multi-Platform Deployment Complete!" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Deployed to:" >> $GITHUB_STEP_SUMMARY
+        echo "- [GitHub Pages](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Vercel](https://monster.vercel.app)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Cloudflare Pages](https://monster-zk-lattice.pages.dev)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Archive.org](https://archive.org/details/monster-zk-lattice-complete)" >> $GITHUB_STEP_SUMMARY

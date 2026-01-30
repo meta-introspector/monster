@@ -1,0 +1,32 @@
+[Unit]
+Description=Monster DAO Zone 3 (Prime 7)
+After=network.target
+
+[Service]
+Type=simple
+User=monster_zone_3
+Group=monster_zone_3
+SELinuxContext=system_u:system_r:monster_zone_3_t:s3
+
+# Resource limits (DAO-governed)
+CPUShares=700
+MemoryLimit=7168M
+TasksMax=70
+LimitNOFILE=700
+
+# Network namespace
+PrivateNetwork=yes
+IPAddressDeny=any
+IPAddressAllow=10.71.3.0/24
+
+# Security
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+ExecStart=/usr/local/bin/monster_zone_3
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

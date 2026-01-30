@@ -1,0 +1,124 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix zkerdfa: <https://onlyskills.com/zkerdfa#> .
+
+# GitHub Developer Rankings - 71 Shards
+
+<https://onlyskills.com/developer/torvalds> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/torvalds> zkerdfa:shardId 0 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:prime 2 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/torvalds> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/torvalds> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/torvalds> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/gvanrossum> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:shardId 1 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:prime 3 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/gvanrossum> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/dhh> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/dhh> zkerdfa:shardId 2 .
+<https://onlyskills.com/developer/dhh> zkerdfa:prime 5 .
+<https://onlyskills.com/developer/dhh> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/dhh> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/dhh> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/dhh> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/dhh> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/dhh> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/dhh> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/dhh> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/tenderlove> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:shardId 3 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:prime 7 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/tenderlove> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/antirez> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/antirez> zkerdfa:shardId 4 .
+<https://onlyskills.com/developer/antirez> zkerdfa:prime 11 .
+<https://onlyskills.com/developer/antirez> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/antirez> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/antirez> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/antirez> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/antirez> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/antirez> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/antirez> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/antirez> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/tj> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/tj> zkerdfa:shardId 5 .
+<https://onlyskills.com/developer/tj> zkerdfa:prime 13 .
+<https://onlyskills.com/developer/tj> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/tj> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/tj> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/tj> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/tj> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/tj> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/tj> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/tj> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/sindresorhus> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:shardId 6 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:prime 17 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/sindresorhus> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/addyosmani> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:shardId 7 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:prime 19 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/addyosmani> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/paulirish> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/paulirish> zkerdfa:shardId 8 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:prime 23 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/paulirish> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/paulirish> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/paulirish> zkerdfa:consistency 50 .
+
+<https://onlyskills.com/developer/jeresig> rdf:type zkerdfa:Developer .
+<https://onlyskills.com/developer/jeresig> zkerdfa:shardId 9 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:prime 29 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:rank 1385 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:tier "Miner" .
+<https://onlyskills.com/developer/jeresig> zkerdfa:languagesHash "6b16a38420179766" .
+<https://onlyskills.com/developer/jeresig> zkerdfa:codeQuality 61 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:contributionValue 71 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:collaboration 44 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:innovation 40 .
+<https://onlyskills.com/developer/jeresig> zkerdfa:consistency 50 .

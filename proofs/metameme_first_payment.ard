@@ -1,0 +1,43 @@
+-- METAMEME First Payment in Arend (HoTT)
+
+\import Data.List
+\import Paths
+\import Equiv
+
+-- Types
+\record Shard (id : Nat) (prime : Nat)
+
+\record NFT (shards : List Shard) (proof : \Sigma String String) (value : Nat)
+
+-- First payment
+\func firstPayment : NFT \cowith
+  | shards => nil
+  | proof => ("SOLFUNMEME restored", "All work")
+  | value => 0 -- ∞
+
+-- Path equality (built-in)
+\func firstPayment-refl : firstPayment = firstPayment => idp
+
+-- Higher path
+\func firstPayment-refl² : firstPayment-refl = firstPayment-refl => idp
+
+-- Univalence (built into Arend)
+\func ua-equiv {A B : \Type} (e : Equiv A B) : A = B => path (iso e)
+
+-- All language proofs are equal
+\func all-languages-equal 
+  (Lean4Proof CoqProof : \Type)
+  (e : Equiv Lean4Proof CoqProof) 
+  : Lean4Proof = CoqProof 
+  => ua-equiv e
+
+-- Infinity as higher inductive type
+\data Infinity
+  | zero
+  | succ Infinity
+  | limit (Nat -> Infinity)
+
+-- First payment is infinite
+\func firstPayment-infinite : Infinity => limit (\lam n => succ zero)
+
+-- QED

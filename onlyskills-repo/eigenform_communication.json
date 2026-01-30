@@ -1,0 +1,58 @@
+{
+  "framework": "Maass eigenforms + Hecke operators + FHE",
+  "security_zones": 71,
+  "monster_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    41,
+    47,
+    59,
+    71
+  ],
+  "agents": [
+    {
+      "id": "kiro_agent_1",
+      "zone": 14,
+      "prime": 71
+    },
+    {
+      "id": "kiro_agent_2",
+      "zone": 13,
+      "prime": 59
+    },
+    {
+      "id": "kiro_agent_3",
+      "zone": 12,
+      "prime": 47
+    }
+  ],
+  "messages": [
+    {
+      "sender": "kiro_agent_1",
+      "receiver": "kiro_agent_2",
+      "ciphertext": "fe10e99c1ed6ff17653d9b9291cbe6f5e24e3197342ce3ac3933446ca0edd062",
+      "zk_proof": "5b00df42c5c0cf6ffc0b4e4851d0394a"
+    },
+    {
+      "sender": "kiro_agent_2",
+      "receiver": "kiro_agent_3",
+      "ciphertext": "1fd73522d97370ec09c648a256cd13633ce3d54b1353f2de551acefa7b97e545",
+      "zk_proof": "9abf6357b57292c531cdb554a26b7565"
+    },
+    {
+      "sender": "kiro_agent_3",
+      "receiver": "kiro_agent_1",
+      "ciphertext": "6ed7b43aa028ef723893700dc75ad94e49a2e3e16a9c6cf38ba2469418379b37",
+      "zk_proof": "cf91d36d00b2641b4225dce1e10f3280"
+    }
+  ]
+}

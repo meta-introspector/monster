@@ -1,0 +1,167 @@
+[
+  {
+    "username": "torvalds",
+    "shard_id": 0,
+    "prime": 2,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "C",
+      "Assembly"
+    ],
+    "domains": [
+      "OS",
+      "Kernel"
+    ],
+    "monster_form": "Systems Kernel",
+    "filter_type": "low_level"
+  },
+  {
+    "username": "gvanrossum",
+    "shard_id": 1,
+    "prime": 3,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "Python",
+      "C"
+    ],
+    "domains": [
+      "Language Design"
+    ],
+    "monster_form": "Systems Kernel",
+    "filter_type": "low_level"
+  },
+  {
+    "username": "dhh",
+    "shard_id": 2,
+    "prime": 5,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "Ruby",
+      "JavaScript"
+    ],
+    "domains": [
+      "Web",
+      "Rails"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  },
+  {
+    "username": "tenderlove",
+    "shard_id": 3,
+    "prime": 7,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "Ruby",
+      "C"
+    ],
+    "domains": [
+      "Performance"
+    ],
+    "monster_form": "Systems Kernel",
+    "filter_type": "low_level"
+  },
+  {
+    "username": "antirez",
+    "shard_id": 4,
+    "prime": 11,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "C",
+      "Tcl"
+    ],
+    "domains": [
+      "Databases",
+      "Redis"
+    ],
+    "monster_form": "Systems Kernel",
+    "filter_type": "low_level"
+  },
+  {
+    "username": "tj",
+    "shard_id": 5,
+    "prime": 13,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "JavaScript",
+      "Go"
+    ],
+    "domains": [
+      "Web",
+      "CLI"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  },
+  {
+    "username": "sindresorhus",
+    "shard_id": 6,
+    "prime": 17,
+    "area": "K-theory / Bott periodicity",
+    "specialization": "Topological Structures",
+    "languages": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "domains": [
+      "npm",
+      "Tools"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  },
+  {
+    "username": "addyosmani",
+    "shard_id": 7,
+    "prime": 19,
+    "area": "Elliptic curves / CM theory",
+    "specialization": "Cryptographic Primitives",
+    "languages": [
+      "JavaScript"
+    ],
+    "domains": [
+      "Web",
+      "Performance"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  },
+  {
+    "username": "paulirish",
+    "shard_id": 8,
+    "prime": 23,
+    "area": "Elliptic curves / CM theory",
+    "specialization": "Cryptographic Primitives",
+    "languages": [
+      "JavaScript"
+    ],
+    "domains": [
+      "DevTools",
+      "Web"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  },
+  {
+    "username": "jeresig",
+    "shard_id": 9,
+    "prime": 29,
+    "area": "Elliptic curves / CM theory",
+    "specialization": "Cryptographic Primitives",
+    "languages": [
+      "JavaScript"
+    ],
+    "domains": [
+      "jQuery",
+      "Web"
+    ],
+    "monster_form": "Web Manifold",
+    "filter_type": "frontend"
+  }
+]

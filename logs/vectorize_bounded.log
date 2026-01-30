@@ -1,0 +1,18 @@
+🔥 VECTORIZING ALL PARQUETS (24 CPUs)
+======================================================================
+
+Found 248 parquet files
+
+  Processed: 10 batches, 10224 vectors
+  Processed: 20 batches, 20377 vectors
+  Processed: 30 batches, 32092 vectors
+  Processed: 40 batches, 43026 vectors
+  Processed: 50 batches, 62835 vectors
+  Processed: 60 batches, 117079 vectors
+  Processed: 70 batches, 214491 vectors
+  Processed: 80 batches, 241187 vectors
+  Processed: 90 batches, 262203 vectors
+  Processed: 100 batches, 274131 vectors
+  Processed: 110 batches, 454897 vectors
+  Processed: 120 batches, 656182 vectors
+  Processed: 130 batches, 791011 vectors

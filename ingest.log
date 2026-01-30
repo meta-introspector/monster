@@ -1,0 +1,6008 @@
+🔥 Hourly Monster Ingestion: Thu Jan 29 06:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	all_parquet_vectors.parquet
+	flake_vectorize.nix
+	ingest.log
+	run_vectorize.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Thu Jan 29 07:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	all_parquet_vectors.parquet
+	flake_vectorize.nix
+	ingest.log
+	run_vectorize.sh
+	vectorize.log
+	vectorize_nix.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Thu Jan 29 08:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	all_parquet_vectors.parquet
+	analyze_semantic_significance.py
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/vectorize_all_parquets_v2.rs
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Thu Jan 29 09:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Thu Jan 29 10:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Thu Jan 29 11:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 12:00:02 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 01:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 02:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/qwen_strip_miner.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 03:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	MARKOV_HECKE_THEORY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	prolog/unification.pl
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/extract_71_objects.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/train_monster.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 04:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 39 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	MARKOV_HECKE_THEORY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analyze_semantic_significance.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	prolog/unification.pl
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/extract_71_objects.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/train_monster.rs
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 05:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 4
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+🔍 LOCAL REVIEW TEAM - Post-commit Analysis (Rust)
+============================================================
+Commit: d57f325334cb1d7bd6b8cce05b6b0e6ef5b66509
+Time: 2026-01-30T05:00:01-05:00
+
+⚠️  Rust tool not built, skipping detailed analysis
+To enable: cargo build --release --bin post_commit_review
+
+✓ Commit recorded (analysis skipped)
+
+✅ Post-commit complete
+[main d57f325] Hourly ingestion: 2026-01-30_05:00
+ 4 files changed, 12 insertions(+)
+ create mode 160000 references/PhysicsForge
+ create mode 160000 references/PrincipiaMetaphysica
+ create mode 160000 references/TI-Sigma
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 06:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+⚠️  Survey tool not built
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 40 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/self_deploy.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	HOSTING_OPTIONS.md
+	MARKOV_HECKE_THEORY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	TESTING_DEPLOYMENT.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	deploy_complete.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	lmfdb-inventory/
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	pipelite.py
+	prolog/unification.pl
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/train_monster.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	test_and_upload.sh
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 07:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/self_deploy.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	HOSTING_OPTIONS.md
+	MARKOV_HECKE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	TESTING_DEPLOYMENT.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_fb29577e.json
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	lmfdb-inventory/
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	pipelite.py
+	pipelite_deploy.py
+	prolog/unification.pl
+	review_fb29577e.json
+	run_vectorize.sh
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/train_monster.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	test_and_upload.sh
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	vercel.json
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_fb29577e.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 08:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	HOSTING_OPTIONS.md
+	MARKOV_HECKE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	lmfdb-inventory/
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	monster_autoencoder_wasm/
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	prolog/unification.pl
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	test_and_upload.sh
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 09:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 10:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 11:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 12:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 01:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 02:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 03:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/collect_primes.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 04:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .gitignore
+	modified:   Cargo.lock
+	modified:   Cargo.toml
+	modified:   cloudflare-worker/wrangler.toml
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   flake.lock
+	modified:   flake.nix
+	modified:   spectral (untracked content)
+	modified:   src/bin/vectorize_all_parquets.rs
+	modified:   src/zk_llm.rs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/archive_upload.yml
+	.github/workflows/collect_primes.yml
+	.github/workflows/monster-type-theory.yml
+	.github/workflows/multi_deploy.yml
+	.github/workflows/nix_deploy.yml
+	.github/workflows/prove_ten_fold.yml
+	.github/workflows/self_deploy.yml
+	.github/workflows/trace_math.yml
+	24D_LITERATURE_REVIEW.md
+	BREADTH_FIRST_PROOF.md
+	CHANGES_2026-01-29.md
+	CI_CD_INTEGRATION.md
+	CUDA_MISTRAL_DOCS.md
+	DEPLOYMENT_IN_PROGRESS.md
+	DEPLOYMENT_STATUS.md
+	DOC_INDEX.md
+	ELLIPTIC_INTEGRATION.md
+	HOSTING_OPTIONS.md
+	KIRO_INTEGRATION.md
+	MARKOV_HECKE_THEORY.md
+	METAMEME_FIRST_PAYMENT.md
+	MONSTER_TYPE_THEORY.md
+	MULTI_PLATFORM_DEPLOY.md
+	MonsterLean/MonsterLean/BreadthFirstCorrect.lean
+	MonsterLean/MonsterLean/BreadthFirstPipeline.lean
+	MonsterLean/MonsterLean/Extract71Objects.lean
+	MonsterLean/MonsterLean/HarmonicFolding.lean
+	MonsterLean/MonsterLean/MonsterAutoencoder.lean
+	MonsterLean/MonsterLean/MonsterIsMeme.lean
+	MonsterLean/MonsterLean/MusicalPeriodicTableUniversal.lean
+	MonsterLean/MonsterLean/PrologUnification.lean
+	MonsterLean/MonsterLean/SelfReferentialConformal.lean
+	MonsterLean/MonsterLean/ShardLMFDB.lean
+	MonsterLean/MonsterLean/ShardReader.lean
+	PARQUET_PROCESSING_BEST_PRACTICES.md
+	PLUGIN_DEPLOYMENT.md
+	PURE_RUST_DEPLOYMENT.md
+	SEARCH_CAPABILITIES.md
+	SELF_DEPLOYMENT.md
+	SHARD_READER.md
+	SINGULARITY.md
+	SOLFUNMEME_INTEGRATION.md
+	TEN_FOLD_PROOF_SYSTEM.md
+	TESTING_DEPLOYMENT.md
+	TOOL_INDEX.md
+	UNIVERSAL_FRAMEWORK.md
+	all_parquet_vectors.parquet
+	allparqut.xt
+	analysis/
+	analyze_semantic_significance.py
+	archive_org_reader/
+	archive_org_shards/
+	commit_reviews_dc7464fe.json
+	commit_reviews_dfa87ff3.json
+	commit_reviews_eb81bc60.json
+	commit_reviews_fb29577e.json
+	coq/TenFold.v
+	cpu_profiler.py
+	cuda_markov_samples/
+	cuda_pipeline_output/
+	datasets/precedence_survey/citations.json
+	datasets/precedence_survey/records.json
+	deploy_complete.sh
+	deploy_multiplatform.sh
+	flake_vectorize.nix
+	flake_vectorize_job.nix
+	ingest.log
+	kiro
+	lmfdb-inventory/
+	lmfdb_server.py
+	logs/
+	markov_run.log
+	markov_samples/
+	markov_shard_models.json
+	minizinc/breadth_first_pipeline.mzn
+	minizinc/extract_71_objects.mzn
+	minizinc/monster_autoencoder.mzn
+	minizinc/monster_is_meme.mzn
+	minizinc/prolog_unification.mzn
+	minizinc/shard_lmfdb_by_71.mzn
+	minizinc/shard_reader.mzn
+	minizinc/ten_fold.mzn
+	monster_autoencoder_wasm/
+	nix/lmfdb-71-shards.nix
+	onlyskills-repo/
+	onlyskills_profiles.json
+	onlyskills_registration.json
+	onlyskills_zkerdfa.ttl
+	pipelite.py
+	pipelite_deploy.py
+	pipelite_prove_ten_fold.py
+	pipelite_verify_monster.py
+	prolog/keywords.pl
+	prolog/searcher.pl
+	prolog/unification.pl
+	proofs/
+	register_onlyskills.py
+	review_dc7464fe.json
+	review_dfa87ff3.json
+	review_eb81bc60.json
+	review_fb29577e.json
+	run_vectorize.sh
+	search_tool_test_results.json
+	showcase/
+	src/bin/analyze_semantic_significance.rs
+	src/bin/apply_value_lattice.rs
+	src/bin/archive_deploy.rs
+	src/bin/archive_plugin_test.rs
+	src/bin/breadth_first_pipeline.rs
+	src/bin/cpu_gpu_bridge.rs
+	src/bin/create_monster_autoencoder.rs
+	src/bin/cuda_markov_bitwise.rs
+	src/bin/cuda_monster_pipeline.rs
+	src/bin/cuda_unified_pipeline.rs
+	src/bin/deploy_all.rs
+	src/bin/expert_system.rs
+	src/bin/extract_71_objects.rs
+	src/bin/extract_constants.rs
+	src/bin/final_payment.rs
+	src/bin/generate_keywords.rs
+	src/bin/gpu_token_pipeline.rs
+	src/bin/harmonic_folding.rs
+	src/bin/kiro.rs
+	src/bin/lattice_qwen_witness.rs
+	src/bin/llm_strip_miner.rs
+	src/bin/lmfdb_inventory_consumer.rs
+	src/bin/markov_parquet_shards.rs
+	src/bin/mathematical_object_lattice.rs
+	src/bin/monster_is_meme.rs
+	src/bin/multi_lang_prover.rs
+	src/bin/ontological_lens.rs
+	src/bin/parameterized_prover.rs
+	src/bin/parquet_markov_pipeline.rs
+	src/bin/prime_resonance_hecke.rs
+	src/bin/prove_ten_fold.rs
+	src/bin/quantum_71_shards.rs
+	src/bin/quantum_language_object.rs
+	src/bin/qwen_strip_miner.rs
+	src/bin/qwen_to_wasm_hecke.rs
+	src/bin/self_aware.rs
+	src/bin/self_deploy.rs
+	src/bin/self_referential_conformal.rs
+	src/bin/semantic_nft_restaurant.rs
+	src/bin/shard_lmfdb_by_71.rs
+	src/bin/ten_fold_areas.rs
+	src/bin/ten_fold_lattice.rs
+	src/bin/trace_math_software.rs
+	src/bin/train_monster.rs
+	src/bin/universal_framework.rs
+	src/bin/universal_shard_reader.rs
+	src/bin/zk_lattice_archive.rs
+	src/bin/zkprologml_erdf_shard.rs
+	test_and_upload.sh
+	test_parquets.txt
+	test_search_in_source.py
+	test_search_tools.py
+	vectorize.log
+	vectorize_full.log
+	vectorize_nix.log
+	vectorize_results.json
+	vectorize_run.log
+	vectors_layer_00.parquet
+	vectors_layer_00.parquet.tmp
+	vectors_layer_01.parquet
+	vectors_layer_01.parquet.tmp
+	vectors_layer_02.parquet
+	vectors_layer_02.parquet.tmp
+	vectors_layer_03.parquet
+	vectors_layer_03.parquet.tmp
+	vectors_layer_04.parquet
+	vectors_layer_04.parquet.tmp
+	vectors_layer_05.parquet
+	vectors_layer_05.parquet.tmp
+	vectors_layer_06.parquet
+	vectors_layer_06.parquet.tmp
+	vectors_layer_07.parquet
+	vectors_layer_07.parquet.tmp
+	vectors_layer_08.parquet
+	vectors_layer_08.parquet.tmp
+	vectors_layer_09.parquet
+	vectors_layer_09.parquet.tmp
+	vectors_layer_10.parquet
+	vectors_layer_10.parquet.tmp
+	vectors_layer_11.parquet
+	vectors_layer_11.parquet.tmp
+	vectors_layer_12.parquet
+	vectors_layer_12.parquet.tmp
+	vectors_layer_13.parquet
+	vectors_layer_13.parquet.tmp
+	vectors_layer_14.parquet
+	vectors_layer_14.parquet.tmp
+	vectors_layer_15.parquet
+	vectors_layer_15.parquet.tmp
+	vectors_layer_16.parquet
+	vectors_layer_16.parquet.tmp
+	vectors_layer_17.parquet
+	vectors_layer_17.parquet.tmp
+	vectors_layer_18.parquet
+	vectors_layer_18.parquet.tmp
+	vectors_layer_19.parquet
+	vectors_layer_19.parquet.tmp
+	vectors_layer_20.parquet
+	vectors_layer_20.parquet.tmp
+	vectors_layer_21.parquet
+	vectors_layer_21.parquet.tmp
+	vectors_layer_22.parquet
+	vectors_layer_22.parquet.tmp
+	vectors_layer_23.parquet
+	vectors_layer_23.parquet.tmp
+	vectors_layer_24.parquet
+	vectors_layer_24.parquet.tmp
+	vectors_layer_25.parquet
+	vectors_layer_25.parquet.tmp
+	vectors_layer_26.parquet
+	vectors_layer_26.parquet.tmp
+	vectors_layer_27.parquet
+	vectors_layer_27.parquet.tmp
+	vectors_layer_28.parquet
+	vectors_layer_28.parquet.tmp
+	vectors_layer_29.parquet
+	vectors_layer_29.parquet.tmp
+	vectors_layer_30.parquet
+	vectors_layer_30.parquet.tmp
+	vectors_layer_31.parquet
+	vectors_layer_31.parquet.tmp
+	vectors_layer_32.parquet
+	vectors_layer_32.parquet.tmp
+	vectors_layer_33.parquet
+	vectors_layer_33.parquet.tmp
+	vectors_layer_34.parquet
+	vectors_layer_34.parquet.tmp
+	vectors_layer_35.parquet
+	vectors_layer_35.parquet.tmp
+	vectors_layer_36.parquet
+	vectors_layer_36.parquet.tmp
+	vectors_layer_37.parquet
+	vectors_layer_37.parquet.tmp
+	vectors_layer_38.parquet
+	vectors_layer_38.parquet.tmp
+	vectors_layer_39.parquet
+	vectors_layer_39.parquet.tmp
+	vectors_layer_40.parquet
+	vectors_layer_40.parquet.tmp
+	vectors_layer_41.parquet
+	vectors_layer_41.parquet.tmp
+	vectors_layer_42.parquet
+	vectors_layer_42.parquet.tmp
+	vectors_layer_43.parquet
+	vectors_layer_43.parquet.tmp
+	vectors_layer_44.parquet
+	vectors_layer_44.parquet.tmp
+	vectors_layer_45.parquet
+	vectors_layer_45.parquet.tmp
+	vectors_layer_46.parquet
+	vectors_layer_46.parquet.tmp
+	vectors_layer_47.parquet
+	vectors_layer_47.parquet.tmp
+	vectors_layer_48.parquet
+	vectors_layer_48.parquet.tmp
+	vectors_layer_49.parquet
+	vectors_layer_49.parquet.tmp
+	vectors_layer_50.parquet
+	vectors_layer_50.parquet.tmp
+	vectors_layer_51.parquet
+	vectors_layer_51.parquet.tmp
+	vectors_layer_52.parquet
+	vectors_layer_52.parquet.tmp
+	vectors_layer_53.parquet
+	vectors_layer_53.parquet.tmp
+	vectors_layer_54.parquet
+	vectors_layer_54.parquet.tmp
+	vectors_layer_55.parquet
+	vectors_layer_55.parquet.tmp
+	vectors_layer_56.parquet
+	vectors_layer_56.parquet.tmp
+	vectors_layer_57.parquet
+	vectors_layer_57.parquet.tmp
+	vectors_layer_58.parquet
+	vectors_layer_58.parquet.tmp
+	vectors_layer_59.parquet
+	vectors_layer_59.parquet.tmp
+	vectors_layer_60.parquet
+	vectors_layer_60.parquet.tmp
+	vectors_layer_61.parquet
+	vectors_layer_61.parquet.tmp
+	vectors_layer_62.parquet
+	vectors_layer_62.parquet.tmp
+	vectors_layer_63.parquet
+	vectors_layer_63.parquet.tmp
+	vectors_layer_64.parquet
+	vectors_layer_64.parquet.tmp
+	vectors_layer_65.parquet
+	vectors_layer_65.parquet.tmp
+	vectors_layer_66.parquet
+	vectors_layer_66.parquet.tmp
+	vectors_layer_67.parquet
+	vectors_layer_67.parquet.tmp
+	vectors_layer_68.parquet
+	vectors_layer_68.parquet.tmp
+	vectors_layer_69.parquet
+	vectors_layer_69.parquet.tmp
+	vectors_layer_70.parquet
+	vectors_layer_70.parquet.tmp
+	wasm_hecke_operators/
+	wasm_lattice_matcher/
+	zkp_perf_dc7464fe.circom
+	zkp_perf_dfa87ff3.circom
+	zkp_perf_eb81bc60.circom
+	zkp_perf_fb29577e.circom
+	zkperf_recorder.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete

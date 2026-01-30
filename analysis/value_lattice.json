@@ -1,0 +1,171 @@
+{
+  "constants": [
+    {
+      "name": "MONSTER_ORDER",
+      "value": "808017424794512875886459904961710757005754368000000000",
+      "file": "src/classification.rs",
+      "line": 33
+    },
+    {
+      "name": "BOSONIC_DIM",
+      "value": "24",
+      "file": "src/bin/self_referential_conformal.rs",
+      "line": 10
+    },
+    {
+      "name": "NUM_LAYERS",
+      "value": "71",
+      "file": "src/bin/bulk_all_layers.rs",
+      "line": 7
+    },
+    {
+      "name": "NUM_WORKERS",
+      "value": "24",
+      "file": "src/bin/vectorize_all_parquets.rs",
+      "line": 12
+    },
+    {
+      "name": "BATCH_SIZE",
+      "value": "10000",
+      "file": "src/bin/vectorize_all_parquets.rs",
+      "line": 13
+    },
+    {
+      "name": "BASE_FREQ",
+      "value": "440.0",
+      "file": "src/bin/monster_harmonics.rs",
+      "line": 12
+    },
+    {
+      "name": "SAMPLE_RATE",
+      "value": "44100",
+      "file": "src/bin/monster_harmonics.rs",
+      "line": 15
+    },
+    {
+      "name": "DURATION",
+      "value": "10.0",
+      "file": "src/bin/monster_harmonics.rs",
+      "line": 18
+    },
+    {
+      "name": "PRIME_71",
+      "value": "71",
+      "file": "src/bin/graded_ring_71.rs",
+      "line": 44
+    },
+    {
+      "name": "BASE_FREQ",
+      "value": "440.0",
+      "file": "src/bin/autolabel_filenames.rs",
+      "line": 8
+    },
+    {
+      "name": "STEPS",
+      "value": "10",
+      "file": "src/bin/monster_walk_gpu.rs",
+      "line": 9
+    },
+    {
+      "name": "BASES",
+      "value": "70",
+      "file": "src/bin/monster_walk_gpu.rs",
+      "line": 10
+    },
+    {
+      "name": "RINGS",
+      "value": "70",
+      "file": "src/bin/monster_walk_gpu.rs",
+      "line": 11
+    },
+    {
+      "name": "TOTAL_ENTRIES",
+      "value": "STEPS * BASES * RINGS",
+      "file": "src/bin/monster_walk_gpu.rs",
+      "line": 12
+    },
+    {
+      "name": "NUM_WORKERS",
+      "value": "24",
+      "file": "src/bin/markov_parquet_shards.rs",
+      "line": 13
+    },
+    {
+      "name": "BOSONIC_DIM",
+      "value": "24",
+      "file": "src/bin/harmonic_folding.rs",
+      "line": 6
+    },
+    {
+      "name": "NUM_SHARDS",
+      "value": "71",
+      "file": "src/bin/harmonic_folding.rs",
+      "line": 7
+    },
+    {
+      "name": "BOSONIC_DIM",
+      "value": "24",
+      "file": "src/bin/lmfdb_inventory_consumer.rs",
+      "line": 8
+    },
+    {
+      "name": "NUM_SHARDS",
+      "value": "71",
+      "file": "src/bin/lmfdb_inventory_consumer.rs",
+      "line": 9
+    }
+  ],
+  "value_map": {
+    "71": [
+      "NUM_LAYERS",
+      "PRIME_71",
+      "NUM_SHARDS",
+      "NUM_SHARDS"
+    ],
+    "10.0": [
+      "DURATION"
+    ],
+    "44100": [
+      "SAMPLE_RATE"
+    ],
+    "10": [
+      "STEPS"
+    ],
+    "70": [
+      "BASES",
+      "RINGS"
+    ],
+    "808017424794512875886459904961710757005754368000000000": [
+      "MONSTER_ORDER"
+    ],
+    "440.0": [
+      "BASE_FREQ",
+      "BASE_FREQ"
+    ],
+    "STEPS * BASES * RINGS": [
+      "TOTAL_ENTRIES"
+    ],
+    "10000": [
+      "BATCH_SIZE"
+    ],
+    "24": [
+      "BOSONIC_DIM",
+      "NUM_WORKERS",
+      "NUM_WORKERS",
+      "BOSONIC_DIM",
+      "BOSONIC_DIM"
+    ]
+  },
+  "frequency": {
+    "STEPS * BASES * RINGS": 1,
+    "24": 5,
+    "71": 4,
+    "10.0": 1,
+    "808017424794512875886459904961710757005754368000000000": 1,
+    "10": 1,
+    "440.0": 2,
+    "70": 2,
+    "44100": 1,
+    "10000": 1
+  }
+}

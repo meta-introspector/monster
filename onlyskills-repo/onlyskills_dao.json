@@ -1,0 +1,604 @@
+{
+  "dao": {
+    "name": "onlyskills.com DAO",
+    "members": [
+      "pipelight-dev",
+      "edolstra",
+      "domenkozar",
+      "zimbatm",
+      "edolstra",
+      "numtide",
+      "dtolnay",
+      "alexcrichton",
+      "matklad",
+      "leanprover",
+      "gebner",
+      "MiniZinc",
+      "rms",
+      "torvalds",
+      "wall",
+      "gvanrossum",
+      "ken",
+      "dmr",
+      "stroustrup"
+    ],
+    "total_shards": 71,
+    "governance_token": "OSKILL",
+    "voting_power": {
+      "pipelight-dev": 1010,
+      "edolstra": 1100,
+      "domenkozar": 1040,
+      "zimbatm": 1060,
+      "numtide": 1120,
+      "dtolnay": 1160,
+      "alexcrichton": 1180,
+      "matklad": 1220,
+      "leanprover": 1280,
+      "gebner": 1300,
+      "MiniZinc": 1400
+    },
+    "treasury": 1000000
+  },
+  "virtual_authors": [
+    {
+      "username": "pipelight-dev",
+      "shard_id": 0,
+      "prime": 2,
+      "commit_count": 10,
+      "commit_hashes": [
+        "6ec6c36e",
+        "b02fb98c",
+        "ca84e2ff",
+        "5344a5ad",
+        "32360166",
+        "e62e408d",
+        "d74e9cc0",
+        "6ccc8149",
+        "258b9b72",
+        "d83262c2"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "edolstra",
+      "shard_id": 1,
+      "prime": 3,
+      "commit_count": 10,
+      "commit_hashes": [
+        "37b66b6b",
+        "52c0b201",
+        "b8d3a0a7",
+        "91f96a2f",
+        "5539b90c",
+        "e75209fd",
+        "b9e7a511",
+        "c4e5b6be",
+        "d9362406",
+        "37561877"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "domenkozar",
+      "shard_id": 2,
+      "prime": 5,
+      "commit_count": 10,
+      "commit_hashes": [
+        "386b3d90",
+        "c6bca840",
+        "80837b20",
+        "74891f4e",
+        "602aadff",
+        "52771822",
+        "019a801b",
+        "0c29709c",
+        "7b00916b",
+        "0a18657d"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "zimbatm",
+      "shard_id": 3,
+      "prime": 7,
+      "commit_count": 10,
+      "commit_hashes": [
+        "e4e9e740",
+        "09159c61",
+        "dbf89b12",
+        "480fe33e",
+        "5b9c7a9d",
+        "420daeb9",
+        "cb0344a9",
+        "614c4471",
+        "c03902ac",
+        "cdadf425"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "edolstra",
+      "shard_id": 4,
+      "prime": 11,
+      "commit_count": 10,
+      "commit_hashes": [
+        "37b66b6b",
+        "52c0b201",
+        "b8d3a0a7",
+        "91f96a2f",
+        "5539b90c",
+        "e75209fd",
+        "b9e7a511",
+        "c4e5b6be",
+        "d9362406",
+        "37561877"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "numtide",
+      "shard_id": 5,
+      "prime": 13,
+      "commit_count": 10,
+      "commit_hashes": [
+        "48eec580",
+        "098fea9f",
+        "f7ae7159",
+        "21c869a3",
+        "98c11c8c",
+        "ede72fed",
+        "8712e797",
+        "2e9453a3",
+        "ebf9f7b3",
+        "c1ca9155"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "dtolnay",
+      "shard_id": 6,
+      "prime": 17,
+      "commit_count": 10,
+      "commit_hashes": [
+        "6256fc77",
+        "f8dc3a9d",
+        "26e93c50",
+        "96e0f09f",
+        "f59e0691",
+        "04d365ce",
+        "ea56631b",
+        "49d1eccd",
+        "5e64425a",
+        "211d93a6"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "alexcrichton",
+      "shard_id": 7,
+      "prime": 19,
+      "commit_count": 10,
+      "commit_hashes": [
+        "4b1fdda1",
+        "50d586a4",
+        "b8667ec3",
+        "9dda412a",
+        "f1bc59a3",
+        "3548e0ad",
+        "a69f20bb",
+        "0c8cdbb8",
+        "eb1939bd",
+        "fadde10b"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "matklad",
+      "shard_id": 8,
+      "prime": 23,
+      "commit_count": 10,
+      "commit_hashes": [
+        "000e107a",
+        "6e7d1776",
+        "5ff292ae",
+        "8e881c48",
+        "3bae7305",
+        "f670bb37",
+        "e335706a",
+        "07236e59",
+        "b6a3dc2a",
+        "154aef5b"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "leanprover",
+      "shard_id": 9,
+      "prime": 29,
+      "commit_count": 10,
+      "commit_hashes": [
+        "80284e1a",
+        "564f1bed",
+        "1eaa4a85",
+        "0e61ce91",
+        "892c3a94",
+        "97d7fad9",
+        "56caf950",
+        "9fb46856",
+        "30a99c2a",
+        "6d64317f"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "gebner",
+      "shard_id": 10,
+      "prime": 31,
+      "commit_count": 10,
+      "commit_hashes": [
+        "6ac1e958",
+        "be253114",
+        "7e859018",
+        "46119b9c",
+        "0ae14231",
+        "19de37bb",
+        "7fe5c502",
+        "88ed1a07",
+        "75a9c012",
+        "202895a5"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    },
+    {
+      "username": "MiniZinc",
+      "shard_id": 11,
+      "prime": 41,
+      "commit_count": 10,
+      "commit_hashes": [
+        "efd5b49d",
+        "947d770d",
+        "2441fc1c",
+        "83808f84",
+        "dd0d847f",
+        "f80f6272",
+        "b53f1430",
+        "d4a74912",
+        "c338a4b0",
+        "a9f4adf6"
+      ],
+      "code_patterns": [
+        "feature_driven",
+        "builder"
+      ],
+      "personality_vector": {
+        "creativity": 1.0,
+        "productivity": 95.0,
+        "precision": 0.9,
+        "collaboration": 0.8,
+        "innovation": 0.4
+      },
+      "reconstruction_complete": true
+    }
+  ],
+  "shard_distribution": {
+    "0": [
+      "pipelight-dev"
+    ],
+    "1": [
+      "edolstra",
+      "gebner_echo_2"
+    ],
+    "2": [
+      "pipelight-dev_echo_1",
+      "domenkozar"
+    ],
+    "3": [
+      "zimbatm",
+      "dtolnay_echo_4",
+      "MiniZinc_echo_5"
+    ],
+    "4": [
+      "pipelight-dev_echo_2",
+      "edolstra_echo_1",
+      "edolstra",
+      "matklad_echo_6"
+    ],
+    "5": [
+      "numtide"
+    ],
+    "6": [
+      "pipelight-dev_echo_3",
+      "dtolnay",
+      "matklad_echo_3"
+    ],
+    "7": [
+      "edolstra_echo_2",
+      "domenkozar_echo_1",
+      "alexcrichton"
+    ],
+    "8": [
+      "pipelight-dev_echo_4",
+      "matklad"
+    ],
+    "9": [
+      "leanprover"
+    ],
+    "10": [
+      "pipelight-dev_echo_5",
+      "edolstra_echo_3",
+      "zimbatm_echo_1",
+      "edolstra_echo_7",
+      "gebner"
+    ],
+    "11": [
+      "MiniZinc"
+    ],
+    "12": [
+      "pipelight-dev_echo_6",
+      "domenkozar_echo_2",
+      "numtide_echo_6",
+      "alexcrichton_echo_4",
+      "leanprover_echo_5"
+    ],
+    "13": [
+      "edolstra_echo_4"
+    ],
+    "14": [
+      "pipelight-dev_echo_7",
+      "gebner_echo_7",
+      "MiniZinc_echo_7"
+    ],
+    "15": [
+      "edolstra_echo_1"
+    ],
+    "16": [
+      "edolstra_echo_5"
+    ],
+    "17": [
+      "domenkozar_echo_3",
+      "zimbatm_echo_2"
+    ],
+    "18": [
+      "numtide_echo_1"
+    ],
+    "19": [
+      "edolstra_echo_6"
+    ],
+    "20": [
+      "dtolnay_echo_5"
+    ],
+    "22": [
+      "edolstra_echo_7",
+      "domenkozar_echo_4",
+      "MiniZinc_echo_2"
+    ],
+    "23": [
+      "dtolnay_echo_1",
+      "gebner_echo_5"
+    ],
+    "24": [
+      "zimbatm_echo_3"
+    ],
+    "25": [
+      "numtide_echo_7",
+      "leanprover_echo_3"
+    ],
+    "26": [
+      "edolstra_echo_2",
+      "alexcrichton_echo_1"
+    ],
+    "27": [
+      "domenkozar_echo_5",
+      "matklad_echo_7"
+    ],
+    "29": [
+      "matklad_echo_4"
+    ],
+    "31": [
+      "zimbatm_echo_4",
+      "numtide_echo_2",
+      "alexcrichton_echo_5",
+      "matklad_echo_1"
+    ],
+    "32": [
+      "domenkozar_echo_6",
+      "gebner_echo_3"
+    ],
+    "33": [
+      "MiniZinc_echo_4"
+    ],
+    "37": [
+      "domenkozar_echo_7",
+      "edolstra_echo_3",
+      "dtolnay_echo_6"
+    ],
+    "38": [
+      "zimbatm_echo_5",
+      "leanprover_echo_1"
+    ],
+    "40": [
+      "dtolnay_echo_2"
+    ],
+    "41": [
+      "leanprover_echo_6",
+      "gebner_echo_1"
+    ],
+    "44": [
+      "numtide_echo_3",
+      "MiniZinc_echo_6"
+    ],
+    "45": [
+      "zimbatm_echo_6",
+      "alexcrichton_echo_2"
+    ],
+    "48": [
+      "edolstra_echo_4"
+    ],
+    "50": [
+      "alexcrichton_echo_6"
+    ],
+    "52": [
+      "zimbatm_echo_7",
+      "matklad_echo_5",
+      "MiniZinc_echo_1"
+    ],
+    "54": [
+      "dtolnay_echo_7",
+      "matklad_echo_2",
+      "leanprover_echo_4",
+      "gebner_echo_6"
+    ],
+    "57": [
+      "numtide_echo_4",
+      "dtolnay_echo_3"
+    ],
+    "59": [
+      "edolstra_echo_5"
+    ],
+    "63": [
+      "gebner_echo_4",
+      "MiniZinc_echo_3"
+    ],
+    "64": [
+      "alexcrichton_echo_3"
+    ],
+    "67": [
+      "leanprover_echo_2"
+    ],
+    "69": [
+      "alexcrichton_echo_7"
+    ],
+    "70": [
+      "edolstra_echo_6",
+      "numtide_echo_5",
+      "leanprover_echo_7"
+    ]
+  },
+  "statistics": {
+    "total_members": 12,
+    "total_commits": 120,
+    "occupied_shards": 48,
+    "total_instances": 96
+  }
+}

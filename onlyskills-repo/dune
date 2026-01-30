@@ -1,0 +1,4 @@
+(executable
+ (name onlyskills)
+ (public_name onlyskills)
+ (libraries yojson cohttp-lwt-unix rdf))

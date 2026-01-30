@@ -1,0 +1,16 @@
+@prefix monster: <http://monster.group/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<monster:value_0594630943592953> rdf:type monster:Value .
+<monster:value_0594630943592953> monster:godelNumber "191"^^xsd:integer .
+<monster:value_0594630943592953> monster:usageCount "1"^^xsd:integer .
+<monster:value_12> rdf:type monster:Value .
+<monster:value_12> monster:godelNumber "68"^^xsd:integer .
+<monster:value_12> monster:usageCount "21"^^xsd:integer .
+<monster:value_3> rdf:type monster:Value .
+<monster:value_3> monster:godelNumber "4"^^xsd:integer .
+<monster:value_3> monster:usageCount "306"^^xsd:integer .
+<monster:value_46> rdf:type monster:Value .
+<monster:value_46> monster:godelNumber "3"^^xsd:integer .
+<monster:value_46> monster:usageCount "31"^^xsd:integer .

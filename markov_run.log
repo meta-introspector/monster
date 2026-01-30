@@ -1,0 +1,206 @@
+warning: Git tree '/home/mdupont/experiments/monster' is dirty
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+🔥 MARKOV MODEL: COLUMN → SHARD → BITWISE SAMPLING
+======================================================================
+
+Found 428658 parquet files
+
+🚀 Computing column Markov models...
+  Collected 100 batches, 100110 column models
+
+thread '<unnamed>' (1548014) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/polars-core-0.44.2/src/series/ops/null.rs:124:17:
+not implemented for dtype UInt8
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Worker 0: Error /home/mdupont/nix-controller/data/training_data.parquet: cannot create series from UInt8
+
+thread '<unnamed>' (1548021) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/polars-core-0.44.2/src/series/ops/null.rs:124:17:
+not implemented for dtype UInt8
+Worker 0: Error /home/mdupont/nix-controller/data/use_declarations.parquet: cannot create series from UInt8
+  Collected 200 batches, 159111 column models
+  Collected 300 batches, 180766 column models
+  Collected 400 batches, 202066 column models
+  Collected 500 batches, 223366 column models
+  Collected 600 batches, 244666 column models
+  Collected 700 batches, 265966 column models
+  Collected 800 batches, 287266 column models
+  Collected 900 batches, 308566 column models
+  Collected 1000 batches, 329866 column models
+  Collected 1100 batches, 351166 column models
+  Collected 1200 batches, 372466 column models
+  Collected 1300 batches, 393766 column models
+  Collected 1400 batches, 415066 column models
+  Collected 1500 batches, 436366 column models
+  Collected 1600 batches, 457666 column models
+  Collected 1700 batches, 478966 column models
+  Collected 1800 batches, 500266 column models
+  Collected 1900 batches, 521566 column models
+  Collected 2000 batches, 542866 column models
+  Collected 2100 batches, 564166 column models
+  Collected 2200 batches, 585466 column models
+  Collected 2300 batches, 606766 column models
+  Collected 2400 batches, 628066 column models
+  Collected 2500 batches, 649366 column models
+  Collected 2600 batches, 670666 column models
+  Collected 2700 batches, 691966 column models
+  Collected 2800 batches, 713266 column models
+  Collected 2900 batches, 734566 column models
+  Collected 3000 batches, 755866 column models
+  Collected 3100 batches, 777166 column models
+  Collected 3200 batches, 798466 column models
+  Collected 3300 batches, 819766 column models
+  Collected 3400 batches, 841066 column models
+  Collected 3500 batches, 862366 column models
+  Collected 3600 batches, 883666 column models
+  Collected 3700 batches, 904966 column models
+  Collected 3800 batches, 926266 column models
+  Collected 3900 batches, 947566 column models
+  Collected 4000 batches, 968866 column models
+  Collected 4100 batches, 990166 column models
+  Collected 4200 batches, 1011466 column models
+  Collected 4300 batches, 1032766 column models
+  Collected 4400 batches, 1054066 column models
+  Collected 4500 batches, 1075366 column models
+  Collected 4600 batches, 1096666 column models
+  Collected 4700 batches, 1117966 column models
+  Collected 4800 batches, 1139266 column models
+  Collected 4900 batches, 1160566 column models
+  Collected 5000 batches, 1181866 column models
+  Collected 5100 batches, 1203166 column models
+  Collected 5200 batches, 1224466 column models
+  Collected 5300 batches, 1245766 column models
+  Collected 5400 batches, 1267066 column models
+  Collected 5500 batches, 1288366 column models
+  Collected 5600 batches, 1309666 column models
+  Collected 5700 batches, 1330966 column models
+  Collected 5800 batches, 1352266 column models
+  Collected 5900 batches, 1373566 column models
+  Collected 6000 batches, 1394866 column models
+  Collected 6100 batches, 1416166 column models
+  Collected 6200 batches, 1437466 column models
+  Collected 6300 batches, 1458766 column models
+  Collected 6400 batches, 1480066 column models
+  Collected 6500 batches, 1501366 column models
+  Collected 6600 batches, 1522666 column models
+  Collected 6700 batches, 1543966 column models
+  Collected 6800 batches, 1565266 column models
+  Collected 6900 batches, 1586566 column models
+  Collected 7000 batches, 1607866 column models
+  Collected 7100 batches, 1629166 column models
+  Collected 7200 batches, 1650466 column models
+  Collected 7300 batches, 1671766 column models
+  Collected 7400 batches, 1693066 column models
+  Collected 7500 batches, 1714366 column models
+  Collected 7600 batches, 1735666 column models
+  Collected 7700 batches, 1756966 column models
+  Collected 7800 batches, 1778266 column models
+  Collected 7900 batches, 1799566 column models
+  Collected 8000 batches, 1820866 column models
+  Collected 8100 batches, 1842166 column models
+  Collected 8200 batches, 1863466 column models
+  Collected 8300 batches, 1884766 column models
+  Collected 8400 batches, 1906066 column models
+  Collected 8500 batches, 1927366 column models
+  Collected 8600 batches, 1948666 column models
+  Collected 8700 batches, 1969966 column models
+  Collected 8800 batches, 1991266 column models
+  Collected 8900 batches, 2012566 column models
+  Collected 9000 batches, 2033866 column models
+  Collected 9100 batches, 2055166 column models
+  Collected 9200 batches, 2076466 column models
+  Collected 9300 batches, 2097766 column models
+  Collected 9400 batches, 2119066 column models
+  Collected 9500 batches, 2140366 column models
+  Collected 9600 batches, 2161666 column models
+  Collected 9700 batches, 2182966 column models
+  Collected 9800 batches, 2204266 column models
+  Collected 9900 batches, 2225566 column models
+  Collected 10000 batches, 2246866 column models
+  Collected 10100 batches, 2268166 column models
+  Collected 10200 batches, 2289466 column models
+  Collected 10300 batches, 2310766 column models
+  Collected 10400 batches, 2332066 column models
+  Collected 10500 batches, 2353366 column models
+  Collected 10600 batches, 2374666 column models
+  Collected 10700 batches, 2395966 column models
+  Collected 10800 batches, 2417266 column models
+  Collected 10900 batches, 2438566 column models
+  Collected 11000 batches, 2459866 column models
+  Collected 11100 batches, 2481166 column models
+  Collected 11200 batches, 2502466 column models
+  Collected 11300 batches, 2523766 column models
+  Collected 11400 batches, 2545066 column models
+  Collected 11500 batches, 2566366 column models
+  Collected 11600 batches, 2587666 column models
+  Collected 11700 batches, 2608966 column models
+  Collected 11800 batches, 2630266 column models
+  Collected 11900 batches, 2651566 column models
+  Collected 12000 batches, 2672866 column models
+  Collected 12100 batches, 2694166 column models
+  Collected 12200 batches, 2715466 column models
+  Collected 12300 batches, 2736766 column models
+  Collected 12400 batches, 2758066 column models
+  Collected 12500 batches, 2779366 column models
+  Collected 12600 batches, 2800666 column models
+  Collected 12700 batches, 2821966 column models
+  Collected 12800 batches, 2843266 column models
+  Collected 12900 batches, 2864566 column models
+  Collected 13000 batches, 2885866 column models
+  Collected 13100 batches, 2907166 column models
+  Collected 13200 batches, 2928466 column models
+  Collected 13300 batches, 2949766 column models
+  Collected 13400 batches, 2971066 column models
+  Collected 13500 batches, 2992366 column models
+  Collected 13600 batches, 3013666 column models
+  Collected 13700 batches, 3034966 column models
+  Collected 13800 batches, 3056266 column models
+  Collected 13900 batches, 3077566 column models
+  Collected 14000 batches, 3098866 column models
+  Collected 14100 batches, 3120166 column models
+  Collected 14200 batches, 3141466 column models
+  Collected 14300 batches, 3162766 column models
+  Collected 14400 batches, 3184066 column models
+  Collected 14500 batches, 3205366 column models
+  Collected 14600 batches, 3226666 column models
+  Collected 14700 batches, 3247966 column models
+  Collected 14800 batches, 3269266 column models
+  Collected 14900 batches, 3290566 column models
+  Collected 15000 batches, 3311866 column models
+  Collected 15100 batches, 3333166 column models
+  Collected 15200 batches, 3354466 column models
+  Collected 15300 batches, 3375766 column models
+  Collected 15400 batches, 3397066 column models
+  Collected 15500 batches, 3418366 column models
+  Collected 15600 batches, 3439666 column models
+  Collected 15700 batches, 3460966 column models
+  Collected 15800 batches, 3482266 column models
+  Collected 15900 batches, 3503566 column models
+  Collected 16000 batches, 3524866 column models
+  Collected 16100 batches, 3546166 column models
+  Collected 16200 batches, 3567466 column models
+  Collected 16300 batches, 3588766 column models
+  Collected 16400 batches, 3610634 column models
+  Collected 16500 batches, 3638750 column models
+  Collected 16600 batches, 3666937 column models
+  Collected 16700 batches, 3695337 column models
+  Collected 16800 batches, 3723737 column models
+  Collected 16900 batches, 3753273 column models
+  Collected 17000 batches, 3781673 column models
+  Collected 17100 batches, 3810073 column models
+  Collected 17200 batches, 3838473 column models
+  Collected 17300 batches, 3866873 column models
+  Collected 17400 batches, 3895273 column models
+  Collected 17500 batches, 3923673 column models
+  Collected 17600 batches, 3952073 column models
+  Collected 17700 batches, 3980473 column models
+  Collected 17800 batches, 4008873 column models
+  Collected 17900 batches, 4038409 column models
+  Collected 18000 batches, 4066809 column models
+  Collected 18100 batches, 4095209 column models
+  Collected 18200 batches, 4123609 column models
+  Collected 18300 batches, 4152009 column models
+  Collected 18400 batches, 4180409 column models
+  Collected 18500 batches, 4209945 column models
+  Collected 18600 batches, 4238345 column models
+  Collected 18700 batches, 4266745 column models

@@ -1,0 +1,17 @@
+{
+  "total_authors": 1,
+  "total_tokens": 36744,
+  "token_symbol": "SOLFUNMEME",
+  "blockchain": "Solana",
+  "airdrops": [
+    {
+      "author": "mike dupont",
+      "email": "mike.dupont@introspector.local",
+      "tokens": 36744,
+      "shard_id": 0,
+      "prime": 2,
+      "wallet_address": "SOLe6caa844fc69e8ce237153749a6bfaa481dc275c6",
+      "tx_hash": "46f3a06301be64194445d970281cc7944d10eb025b6146a68039b9052c39bf7e"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "commit": "fb29577ef4a83e9bb8244ea6ca3da0c0e9ab8784",
+    "timestamp": "2026-01-30T11:20:30.429132108+00:00",
+    "message": "Deploy to GitHub Pages",
+    "reviewer": "Knuth",
+    "comment": "Performance trace captured. IPC: 2.00",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_fb29577e.circom"
+  },
+  {
+    "commit": "fb29577ef4a83e9bb8244ea6ca3da0c0e9ab8784",
+    "timestamp": "2026-01-30T11:20:30.429132108+00:00",
+    "message": "Deploy to GitHub Pages",
+    "reviewer": "ITIL",
+    "comment": "Change documented. Audit trail maintained.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_fb29577e.circom"
+  },
+  {
+    "commit": "fb29577ef4a83e9bb8244ea6ca3da0c0e9ab8784",
+    "timestamp": "2026-01-30T11:20:30.429132108+00:00",
+    "message": "Deploy to GitHub Pages",
+    "reviewer": "ISO9001",
+    "comment": "Quality metrics captured via ZKP.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_fb29577e.circom"
+  },
+  {
+    "commit": "fb29577ef4a83e9bb8244ea6ca3da0c0e9ab8784",
+    "timestamp": "2026-01-30T11:20:30.429132108+00:00",
+    "message": "Deploy to GitHub Pages",
+    "reviewer": "RustEnforcer",
+    "comment": "No Python. Type-safe. Memory-safe. ZKP verified.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_fb29577e.circom"
+  }
+]

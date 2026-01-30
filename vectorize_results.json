@@ -1,0 +1,9 @@
+{
+  "total_files": 222,
+  "total_vectors": 4344490,
+  "shards_written": 71,
+  "skipped_files": [
+    "./qid_embeddings.parquet",
+    "./datasets/harmonics/harmonics_ranked.parquet"
+  ]
+}

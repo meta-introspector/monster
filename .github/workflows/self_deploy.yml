@@ -1,0 +1,82 @@
+name: Self-Deploy to Archive.org
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+jobs:
+  self-deploy:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v24
+    
+    - name: Install internetarchive
+      run: nix develop --command pip install --user internetarchive
+    
+    - name: Configure Archive.org
+      env:
+        IA_ACCESS: ${{ secrets.IA_ACCESS_KEY }}
+        IA_SECRET: ${{ secrets.IA_SECRET_KEY }}
+      run: |
+        echo "$IA_ACCESS" > ~/.ia_access
+        echo "$IA_SECRET" > ~/.ia_secret
+        nix develop --command ia configure --username="$IA_ACCESS" --password="$IA_SECRET"
+    
+    - name: Self-Deploy Complete Package
+      run: |
+        chmod +x deploy_complete.sh
+        ./deploy_complete.sh
+    
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          deploy_package/MANIFEST.md
+          analysis/value_lattice_witnessed.json
+          archive_org_reader/deploy/index.html
+        body: |
+          ## Monster ZK Lattice Release
+          
+          Complete package deployed to Archive.org:
+          - https://archive.org/details/monster-zk-lattice-complete
+          - https://archive.org/details/monster-zk-lattice-reader
+          
+          ### Contents
+          - 57 RDF shards (41MB)
+          - Value lattice with 71,000 ZK witnesses (9MB)
+          - 71 WASM Hecke operators (316KB)
+          - Complete documentation
+          - Lean4 proofs
+          - MiniZinc models
+          - Interactive WASM reader
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./archive_org_reader/deploy
+        destination_dir: reader
+    
+    - name: Summary
+      run: |
+        echo "## 🎯 Self-Deployment Complete!" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Archive.org" >> $GITHUB_STEP_SUMMARY
+        echo "- [Complete Package](https://archive.org/details/monster-zk-lattice-complete)" >> $GITHUB_STEP_SUMMARY
+        echo "- [WASM Reader](https://archive.org/details/monster-zk-lattice-reader)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### GitHub Pages" >> $GITHUB_STEP_SUMMARY
+        echo "- [Reader](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reader/)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Package Size" >> $GITHUB_STEP_SUMMARY
+        du -sh deploy_package >> $GITHUB_STEP_SUMMARY

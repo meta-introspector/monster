@@ -1,0 +1,65 @@
+policy_module(vile_code_containment, 1.0.0)
+
+########################################
+# Vile Code Containment Policy
+# Maximum restriction, audit everything
+########################################
+
+type vile_code_t;
+type vile_code_exec_t;
+domain_type(vile_code_t)
+domain_entry_file(vile_code_t, vile_code_exec_t)
+
+########################################
+# DENY EVERYTHING (default deny)
+########################################
+
+# No file writes
+neverallow vile_code_t *:file { write append create unlink rename };
+neverallow vile_code_t *:dir { write add_name remove_name rmdir };
+
+# No process operations
+neverallow vile_code_t *:process { fork transition dyntransition execmem execstack };
+
+# No network
+neverallow vile_code_t *:tcp_socket *;
+neverallow vile_code_t *:udp_socket *;
+neverallow vile_code_t *:rawip_socket *;
+neverallow vile_code_t *:netlink_socket *;
+
+# No kernel access
+neverallow vile_code_t kernel_t:system *;
+neverallow vile_code_t device_t:* *;
+
+# No IPC
+neverallow vile_code_t *:shm *;
+neverallow vile_code_t *:sem *;
+neverallow vile_code_t *:msgq *;
+
+# No capabilities
+neverallow vile_code_t self:capability *;
+neverallow vile_code_t self:capability2 *;
+
+########################################
+# MINIMAL ALLOW (read-only execution)
+########################################
+
+# Can read own executable
+allow vile_code_t vile_code_exec_t:file { read execute execute_no_trans getattr };
+
+# Can read /proc/self only
+allow vile_code_t self:process { getattr getsched };
+
+# Can write to stdout/stderr only
+allow vile_code_t self:fd use;
+
+########################################
+# AUDIT EVERYTHING
+########################################
+
+auditallow vile_code_t *:file *;
+auditallow vile_code_t *:dir *;
+auditallow vile_code_t *:process *;
+auditallow vile_code_t *:socket *;
+auditallow vile_code_t *:capability *;
+auditallow vile_code_t kernel_t:* *;

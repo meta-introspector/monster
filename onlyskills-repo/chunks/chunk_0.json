@@ -1,0 +1,28 @@
+Lowering default frequency rate from 4000 to 2000.
+Please consider tweaking /proc/sys/kernel/perf_event_max_sample_rate.
+#I  packagemanager package is not available. Check that the name is correct
+#I  and it is present in one of the GAP root directories (see '??RootPaths')
+{
+  "chunk": 0,
+  "start": 2,
+  "end": 1002,
+  "url": "https://zkprologml.org/primes/chunk_0",
+  "chord": [0, 0, 0],
+  "primes": [
+Syntax warning: Unbound global variable in chunks/chunk_0.g:23
+    nu_inf := Sum(DivisorsInt(N), d -> EulerPhi(Gcd(d, N/d)));
+                                       ^^^^^^^^
+Syntax warning: Unbound global variable in chunks/chunk_0.g:23
+    nu_inf := Sum(DivisorsInt(N), d -> EulerPhi(Gcd(d, N/d)));
+                                                       ^
+Error, Variable: 'EulerPhi' must have an assigned value in
+  return EulerPhi( Gcd( d, N / d ) ); at chunks/chunk_0.g:23 called from 
+func( C[1] ) at /nix/store/gjdjr00689alxls0xmg8lrakjdimqpgv-gap-4.15.1/share/gap/lib/coll.gi:1114 called from
+Sum( DivisorsInt( N ), function ( d )
+      return EulerPhi( Gcd( d, N / d ) );
+  end ) at chunks/chunk_0.g:23 called from
+<function "unknown">( <arguments> )
+ called from read-eval loop at chunks/chunk_0.g:51
+type 'quit;' to quit to outer loop
+[1m[34m[0m[31m[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.084 MB perf_data/chunk_0.data (1281 samples) ]

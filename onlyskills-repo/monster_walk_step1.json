@@ -1,0 +1,56 @@
+{
+  "step": 1,
+  "total_shards": 70368744177664,
+  "bits_predicted": 46,
+  "objects": 8,
+  "predictions": [
+    {
+      "object": "zkwasm_proof_1",
+      "first_bit": 0,
+      "shard": 39171681833102,
+      "confidence": 0.3
+    },
+    {
+      "object": "solfunmeme_token",
+      "first_bit": 1,
+      "shard": 48603126319551,
+      "confidence": 0.31
+    },
+    {
+      "object": "eigenform_message",
+      "first_bit": 0,
+      "shard": 42723595625812,
+      "confidence": 0.84
+    },
+    {
+      "object": "hecke_operator_T_71",
+      "first_bit": 1,
+      "shard": 40696643743661,
+      "confidence": 0.24
+    },
+    {
+      "object": "maass_form_level_71",
+      "first_bit": 0,
+      "shard": 58997749084364,
+      "confidence": 0.9
+    },
+    {
+      "object": "paxos_proposal_42",
+      "first_bit": 1,
+      "shard": 2290920573227,
+      "confidence": 0.77
+    },
+    {
+      "object": "dao_vote_result",
+      "first_bit": 1,
+      "shard": 64708298425087,
+      "confidence": 0.51
+    },
+    {
+      "object": "quarantine_policy",
+      "first_bit": 1,
+      "shard": 26246104323427,
+      "confidence": 0.96
+    }
+  ]
+}

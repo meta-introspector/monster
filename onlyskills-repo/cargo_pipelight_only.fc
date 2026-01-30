@@ -1,0 +1,15 @@
+# File contexts for cargo_pipelight_only policy
+
+# Cargo executable
+/usr/bin/cargo          -- gen_context(system_u:object_r:cargo_exec_t,s0)
+/home/.*/.cargo/bin/cargo -- gen_context(system_u:object_r:cargo_exec_t,s0)
+/root/.cargo/bin/cargo  -- gen_context(system_u:object_r:cargo_exec_t,s0)
+
+# Pipelight executable
+/usr/bin/pipelight      -- gen_context(system_u:object_r:pipelight_exec_t,s0)
+/usr/local/bin/pipelight -- gen_context(system_u:object_r:pipelight_exec_t,s0)
+
+# Kiro executable
+/usr/bin/kiro-cli       -- gen_context(system_u:object_r:kiro_exec_t,s0)
+/usr/local/bin/kiro-cli -- gen_context(system_u:object_r:kiro_exec_t,s0)
+/usr/bin/kiro-cli-chat  -- gen_context(system_u:object_r:kiro_exec_t,s0)

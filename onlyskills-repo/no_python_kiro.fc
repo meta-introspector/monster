@@ -1,0 +1,36 @@
+# File contexts for no_python_kiro policy
+
+# Python executables (FORBIDDEN for kiro)
+/usr/bin/python.*          -- gen_context(system_u:object_r:python_exec_t,s0)
+/usr/bin/python2.*         -- gen_context(system_u:object_r:python_exec_t,s0)
+/usr/bin/python3.*         -- gen_context(system_u:object_r:python_exec_t,s0)
+/usr/local/bin/python.*    -- gen_context(system_u:object_r:python_exec_t,s0)
+
+# Pip (FORBIDDEN)
+/usr/bin/pip.*             -- gen_context(system_u:object_r:pip_exec_t,s0)
+/usr/local/bin/pip.*       -- gen_context(system_u:object_r:pip_exec_t,s0)
+
+# Python scripts (FORBIDDEN)
+.*\.py                     -- gen_context(system_u:object_r:python_script_t,s0)
+
+# Quarantine zone (read-only)
+/home/.*/quarantine/.*\.py -- gen_context(system_u:object_r:python_quarantine_t,s0)
+
+# Rust (ALLOWED)
+/usr/bin/rustc             -- gen_context(system_u:object_r:rust_exec_t,s0)
+/home/.*/.cargo/bin/.*     -- gen_context(system_u:object_r:rust_exec_t,s0)
+
+# Nix (ALLOWED)
+/usr/bin/nix.*             -- gen_context(system_u:object_r:nix_exec_t,s0)
+/nix/store/.*/bin/.*       -- gen_context(system_u:object_r:nix_exec_t,s0)
+
+# Prolog (ALLOWED)
+/usr/bin/swipl             -- gen_context(system_u:object_r:prolog_exec_t,s0)
+
+# Lean4 (ALLOWED)
+/usr/bin/lean              -- gen_context(system_u:object_r:lean_exec_t,s0)
+/usr/bin/lake              -- gen_context(system_u:object_r:lean_exec_t,s0)
+
+# Kiro executable
+/usr/bin/kiro-cli          -- gen_context(system_u:object_r:kiro_exec_t,s0)
+/usr/local/bin/kiro-cli    -- gen_context(system_u:object_r:kiro_exec_t,s0)

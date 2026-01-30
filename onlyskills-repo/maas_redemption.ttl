@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix zkerdfa: <https://onlyskills.com/zkerdfa#> .
+@prefix maas: <https://onlyskills.com/maas#> .
+
+# MaaS Form - Value Shards Redeemed from Noise
+
+<https://onlyskills.com/maas/shard/0> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/0> maas:shardId 0 .
+<https://onlyskills.com/maas/shard/0> maas:prime 2 .
+<https://onlyskills.com/maas/shard/0> maas:signal "proof" .
+<https://onlyskills.com/maas/shard/0> maas:valueScore 71 .
+<https://onlyskills.com/maas/shard/0> maas:form "Proof Meme" .
+<https://onlyskills.com/maas/shard/0> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/1> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/1> maas:shardId 1 .
+<https://onlyskills.com/maas/shard/1> maas:prime 3 .
+<https://onlyskills.com/maas/shard/1> maas:signal "optimal" .
+<https://onlyskills.com/maas/shard/1> maas:valueScore 31 .
+<https://onlyskills.com/maas/shard/1> maas:form "Optimization Meme" .
+<https://onlyskills.com/maas/shard/1> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/2> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/2> maas:shardId 2 .
+<https://onlyskills.com/maas/shard/2> maas:prime 5 .
+<https://onlyskills.com/maas/shard/2> maas:signal "elegant" .
+<https://onlyskills.com/maas/shard/2> maas:valueScore 23 .
+<https://onlyskills.com/maas/shard/2> maas:form "Elegance Meme" .
+<https://onlyskills.com/maas/shard/2> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/3> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/3> maas:shardId 3 .
+<https://onlyskills.com/maas/shard/3> maas:prime 7 .
+<https://onlyskills.com/maas/shard/3> maas:signal "useful" .
+<https://onlyskills.com/maas/shard/3> maas:valueScore 13 .
+<https://onlyskills.com/maas/shard/3> maas:form "Utility Meme" .
+<https://onlyskills.com/maas/shard/3> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/4> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/4> maas:shardId 4 .
+<https://onlyskills.com/maas/shard/4> maas:prime 11 .
+<https://onlyskills.com/maas/shard/4> maas:signal "clear" .
+<https://onlyskills.com/maas/shard/4> maas:valueScore 17 .
+<https://onlyskills.com/maas/shard/4> maas:form "Clarity Meme" .
+<https://onlyskills.com/maas/shard/4> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/5> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/5> maas:shardId 5 .
+<https://onlyskills.com/maas/shard/5> maas:prime 13 .
+<https://onlyskills.com/maas/shard/5> maas:signal "theorem" .
+<https://onlyskills.com/maas/shard/5> maas:valueScore 59 .
+<https://onlyskills.com/maas/shard/5> maas:form "Theorem Meme" .
+<https://onlyskills.com/maas/shard/5> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/6> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/6> maas:shardId 6 .
+<https://onlyskills.com/maas/shard/6> maas:prime 17 .
+<https://onlyskills.com/maas/shard/6> maas:signal "efficient" .
+<https://onlyskills.com/maas/shard/6> maas:valueScore 29 .
+<https://onlyskills.com/maas/shard/6> maas:form "Efficiency Meme" .
+<https://onlyskills.com/maas/shard/6> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/8> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/8> maas:shardId 8 .
+<https://onlyskills.com/maas/shard/8> maas:prime 23 .
+<https://onlyskills.com/maas/shard/8> maas:signal "correct" .
+<https://onlyskills.com/maas/shard/8> maas:valueScore 41 .
+<https://onlyskills.com/maas/shard/8> maas:form "Correctness Meme" .
+<https://onlyskills.com/maas/shard/8> maas:redeemed true .
+
+<https://onlyskills.com/maas/shard/9> rdf:type maas:ValueShard .
+<https://onlyskills.com/maas/shard/9> maas:shardId 9 .
+<https://onlyskills.com/maas/shard/9> maas:prime 29 .
+<https://onlyskills.com/maas/shard/9> maas:signal "good" .
+<https://onlyskills.com/maas/shard/9> maas:valueScore 7 .
+<https://onlyskills.com/maas/shard/9> maas:form "Quality Meme" .
+<https://onlyskills.com/maas/shard/9> maas:redeemed true .

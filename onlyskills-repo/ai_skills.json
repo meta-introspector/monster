@@ -1,0 +1,134 @@
+[
+  {
+    "skill_id": "zkwasm_loader",
+    "name": "zkWASM Proof Loader",
+    "description": "Load and execute eRDF zkWASM proofs with zero-knowledge verification",
+    "shard_id": 34,
+    "prime": 11,
+    "skill_type": "proof_verification",
+    "command": "zkos load-proof",
+    "source_repo": "zos-server",
+    "capabilities": [
+      "zkwasm",
+      "erdf",
+      "proof_execution",
+      "zero_knowledge"
+    ],
+    "zkperf_hash": "9f2c8749cb7eafb8"
+  },
+  {
+    "skill_id": "evolution_server",
+    "name": "Evolution Server",
+    "description": "Self-evolving code generation and compilation server",
+    "shard_id": 35,
+    "prime": 13,
+    "skill_type": "code_generation",
+    "command": "zkos evolve",
+    "source_repo": "zos-server",
+    "capabilities": [
+      "code_evolution",
+      "self_modification",
+      "compilation"
+    ],
+    "zkperf_hash": "20f73d64d153def0"
+  },
+  {
+    "skill_id": "zos_71_shards",
+    "name": "71-Shard System",
+    "description": "Distribute computation across 71 Monster group shards",
+    "shard_id": 36,
+    "prime": 17,
+    "skill_type": "distributed_compute",
+    "command": "zkos shard",
+    "source_repo": "zos-server",
+    "capabilities": [
+      "sharding",
+      "monster_group",
+      "parallel_compute"
+    ],
+    "zkperf_hash": "ba0e2324e581bed1"
+  },
+  {
+    "skill_id": "solfunmeme",
+    "name": "SOLFUNMEME Integration",
+    "description": "Solana meme coin with Monster NFT pairing and MaaS form",
+    "shard_id": 45,
+    "prime": 2,
+    "skill_type": "blockchain",
+    "command": "meta solfunmeme",
+    "source_repo": "meta-introspector",
+    "capabilities": [
+      "solana",
+      "nft",
+      "meme_coin",
+      "maas_form"
+    ],
+    "zkperf_hash": "22826592eb0802f5"
+  },
+  {
+    "skill_id": "dao_bootstrap",
+    "name": "Recursive DAO Bootstrap",
+    "description": "Self-bootstrapping DAO with event-driven blockchain",
+    "shard_id": 46,
+    "prime": 3,
+    "skill_type": "governance",
+    "command": "meta dao-bootstrap",
+    "source_repo": "meta-introspector",
+    "capabilities": [
+      "dao",
+      "governance",
+      "recursive_bootstrap",
+      "blockchain"
+    ],
+    "zkperf_hash": "8f055b3495d9453a"
+  },
+  {
+    "skill_id": "grammar_constrained_llm",
+    "name": "Grammar-Constrained LLM",
+    "description": "LLM with formal grammar constraints for verified output",
+    "shard_id": 47,
+    "prime": 5,
+    "skill_type": "llm",
+    "command": "meta grammar-llm",
+    "source_repo": "meta-introspector",
+    "capabilities": [
+      "llm",
+      "grammar",
+      "verification",
+      "constrained_generation"
+    ],
+    "zkperf_hash": "5c959b8f0143a8ad"
+  },
+  {
+    "skill_id": "automorphic_orbit_tracer",
+    "name": "Automorphic Orbit Tracer",
+    "description": "Trace execution orbits and detect automorphic patterns",
+    "shard_id": 21,
+    "prime": 17,
+    "skill_type": "execution_analysis",
+    "command": "zombie trace-orbit",
+    "source_repo": "zombie_driver2",
+    "capabilities": [
+      "orbit_tracing",
+      "automorphic",
+      "execution_analysis"
+    ],
+    "zkperf_hash": "a359541721604b45"
+  },
+  {
+    "skill_id": "abi_signature_extractor",
+    "name": "ABI Signature Extractor",
+    "description": "Extract and analyze ABI signatures from binaries",
+    "shard_id": 22,
+    "prime": 19,
+    "skill_type": "binary_analysis",
+    "command": "zombie extract-abi",
+    "source_repo": "zombie_driver2",
+    "capabilities": [
+      "abi",
+      "signature_extraction",
+      "binary_analysis"
+    ],
+    "zkperf_hash": "6016bbf54bdde15e"
+  }
+]

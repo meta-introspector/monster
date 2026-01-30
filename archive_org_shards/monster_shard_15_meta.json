@@ -1,0 +1,24 @@
+{
+  "content_hash": "37235f8d0dcbdd77516baa9d6324207236605d13739a43529be179605970d0c8",
+  "shard_id": 15,
+  "rdf_triples": [
+    "@prefix monster: <http://monster.group/> .",
+    "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+    "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .",
+    "",
+    "<monster:value_024> rdf:type monster:Value .",
+    "<monster:value_024> monster:godelNumber \"72\"^^xsd:integer .",
+    "<monster:value_024> monster:usageCount \"1\"^^xsd:integer .",
+    "<monster:value_1024> rdf:type monster:Value .",
+    "<monster:value_1024> monster:godelNumber \"46\"^^xsd:integer .",
+    "<monster:value_1024> monster:usageCount \"12\"^^xsd:integer .",
+    "<monster:value_283> rdf:type monster:Value .",
+    "<monster:value_283> monster:godelNumber \"132\"^^xsd:integer .",
+    "<monster:value_283> monster:usageCount \"1\"^^xsd:integer .",
+    "<monster:value_-1> rdf:type monster:Value .",
+    "<monster:value_-1> monster:godelNumber \"154\"^^xsd:integer .",
+    "<monster:value_-1> monster:usageCount \"3\"^^xsd:integer ."
+  ],
+  "zk_proof": "zk:37235f8d0dcbdd77516baa9d6324207236605d13739a43529be179605970d0c8:810",
+  "compressed_size": 841
+}

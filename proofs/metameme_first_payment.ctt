@@ -1,0 +1,37 @@
+-- METAMEME First Payment in yacctt (Cubical Type Theory)
+
+module metameme_first_payment where
+
+import prelude
+
+-- Types
+Shard : U = (id : nat) * (prime : nat)
+NFT : U = (shards : list Shard) * (proof : (String * String)) * (value : nat)
+
+-- First payment
+firstPayment : NFT = ([], ("SOLFUNMEME restored", "All work"), 0)
+
+-- Path
+firstPayment_refl : Path NFT firstPayment firstPayment = 
+  <i> firstPayment
+
+-- Square (2D path)
+firstPayment_square : PathP (<i> Path NFT firstPayment firstPayment) 
+                             firstPayment_refl firstPayment_refl =
+  <i j> firstPayment
+
+-- Cube (3D path)
+firstPayment_cube : PathP (<i> PathP (<j> Path NFT firstPayment firstPayment)
+                                      firstPayment_refl firstPayment_refl)
+                          firstPayment_square firstPayment_square =
+  <i j k> firstPayment
+
+-- Univalence
+ua_firstPayment (A B : U) (e : equiv A B) : Path U A B = 
+  <i> Glue B [ (i=0) -> (A, e), (i=1) -> (B, idEquiv B) ]
+
+-- All languages are equal by univalence
+all_languages_equal (Lean4 Coq : U) (e : equiv Lean4 Coq) : Path U Lean4 Coq =
+  ua_firstPayment Lean4 Coq e
+
+-- QED

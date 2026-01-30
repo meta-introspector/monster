@@ -1,0 +1,74 @@
+[
+  {
+    "software": "GAP",
+    "example": "2+2;",
+    "complexity": 153.0,
+    "period": "Period3",
+    "output": "#I  packagemanager package is not available. Check that the name is correct\n#I  and it is present in one of the GAP root directories (see '??RootPaths')\n",
+    "perf_data": {}
+  },
+  {
+    "software": "GAP",
+    "example": "Order(SymmetricGroup(5));",
+    "complexity": 153.0,
+    "period": "Period3",
+    "output": "#I  packagemanager package is not available. Check that the name is correct\n#I  and it is present in one of the GAP root directories (see '??RootPaths')\n",
+    "perf_data": {}
+  },
+  {
+    "software": "GAP",
+    "example": "Order(AlternatingGroup(5));",
+    "complexity": 153.0,
+    "period": "Period3",
+    "output": "#I  packagemanager package is not available. Check that the name is correct\n#I  and it is present in one of the GAP root directories (see '??RootPaths')\n",
+    "perf_data": {}
+  },
+  {
+    "software": "PARI",
+    "example": "factor(12)",
+    "complexity": 26.0,
+    "period": "Period2",
+    "output": "\u001b[0;35m\n[2 2]\n\n[3 1]\n\u001b[0m\n",
+    "perf_data": {}
+  },
+  {
+    "software": "PARI",
+    "example": "ellap(ellinit([0,1]),7)",
+    "complexity": 14.0,
+    "period": "Period2",
+    "output": "\u001b[0;35m-4\u001b[0m\n",
+    "perf_data": {}
+  },
+  {
+    "software": "PARI",
+    "example": "fibonacci(20)",
+    "complexity": 16.0,
+    "period": "Period2",
+    "output": "\u001b[0;35m6765\u001b[0m\n",
+    "perf_data": {}
+  },
+  {
+    "software": "Sage",
+    "example": "print(2+2)",
+    "complexity": 2.0,
+    "period": "Period1",
+    "output": "4\n",
+    "perf_data": {}
+  },
+  {
+    "software": "Sage",
+    "example": "print(factor(100))",
+    "complexity": 10.0,
+    "period": "Period2",
+    "output": "2^2 * 5^2\n",
+    "perf_data": {}
+  },
+  {
+    "software": "Sage",
+    "example": "print(EllipticCurve([0,1]).conductor())",
+    "complexity": 4.668907502301861,
+    "period": "Period1",
+    "output": "36\n",
+    "perf_data": {}
+  }
+]

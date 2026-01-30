@@ -1,0 +1,32 @@
+[Unit]
+Description=Monster DAO Zone 2 (Prime 5)
+After=network.target
+
+[Service]
+Type=simple
+User=monster_zone_2
+Group=monster_zone_2
+SELinuxContext=system_u:system_r:monster_zone_2_t:s2
+
+# Resource limits (DAO-governed)
+CPUShares=500
+MemoryLimit=5120M
+TasksMax=50
+LimitNOFILE=500
+
+# Network namespace
+PrivateNetwork=yes
+IPAddressDeny=any
+IPAddressAllow=10.71.2.0/24
+
+# Security
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+ExecStart=/usr/local/bin/monster_zone_2
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

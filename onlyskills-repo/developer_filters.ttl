@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix zkerdfa: <https://onlyskills.com/zkerdfa#> .
+
+# Developer Filters - Monster Group Structure
+
+<https://onlyskills.com/filter/torvalds> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/torvalds> zkerdfa:shardId 0 .
+<https://onlyskills.com/filter/torvalds> zkerdfa:prime 2 .
+<https://onlyskills.com/filter/torvalds> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/torvalds> zkerdfa:monsterForm "Systems Kernel" .
+<https://onlyskills.com/filter/torvalds> zkerdfa:filterType "low_level" .
+
+<https://onlyskills.com/filter/gvanrossum> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/gvanrossum> zkerdfa:shardId 1 .
+<https://onlyskills.com/filter/gvanrossum> zkerdfa:prime 3 .
+<https://onlyskills.com/filter/gvanrossum> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/gvanrossum> zkerdfa:monsterForm "Systems Kernel" .
+<https://onlyskills.com/filter/gvanrossum> zkerdfa:filterType "low_level" .
+
+<https://onlyskills.com/filter/dhh> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/dhh> zkerdfa:shardId 2 .
+<https://onlyskills.com/filter/dhh> zkerdfa:prime 5 .
+<https://onlyskills.com/filter/dhh> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/dhh> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/dhh> zkerdfa:filterType "frontend" .
+
+<https://onlyskills.com/filter/tenderlove> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/tenderlove> zkerdfa:shardId 3 .
+<https://onlyskills.com/filter/tenderlove> zkerdfa:prime 7 .
+<https://onlyskills.com/filter/tenderlove> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/tenderlove> zkerdfa:monsterForm "Systems Kernel" .
+<https://onlyskills.com/filter/tenderlove> zkerdfa:filterType "low_level" .
+
+<https://onlyskills.com/filter/antirez> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/antirez> zkerdfa:shardId 4 .
+<https://onlyskills.com/filter/antirez> zkerdfa:prime 11 .
+<https://onlyskills.com/filter/antirez> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/antirez> zkerdfa:monsterForm "Systems Kernel" .
+<https://onlyskills.com/filter/antirez> zkerdfa:filterType "low_level" .
+
+<https://onlyskills.com/filter/tj> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/tj> zkerdfa:shardId 5 .
+<https://onlyskills.com/filter/tj> zkerdfa:prime 13 .
+<https://onlyskills.com/filter/tj> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/tj> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/tj> zkerdfa:filterType "frontend" .
+
+<https://onlyskills.com/filter/sindresorhus> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/sindresorhus> zkerdfa:shardId 6 .
+<https://onlyskills.com/filter/sindresorhus> zkerdfa:prime 17 .
+<https://onlyskills.com/filter/sindresorhus> zkerdfa:area "K-theory / Bott periodicity" .
+<https://onlyskills.com/filter/sindresorhus> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/sindresorhus> zkerdfa:filterType "frontend" .
+
+<https://onlyskills.com/filter/addyosmani> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/addyosmani> zkerdfa:shardId 7 .
+<https://onlyskills.com/filter/addyosmani> zkerdfa:prime 19 .
+<https://onlyskills.com/filter/addyosmani> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/filter/addyosmani> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/addyosmani> zkerdfa:filterType "frontend" .
+
+<https://onlyskills.com/filter/paulirish> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/paulirish> zkerdfa:shardId 8 .
+<https://onlyskills.com/filter/paulirish> zkerdfa:prime 23 .
+<https://onlyskills.com/filter/paulirish> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/filter/paulirish> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/paulirish> zkerdfa:filterType "frontend" .
+
+<https://onlyskills.com/filter/jeresig> rdf:type zkerdfa:DeveloperFilter .
+<https://onlyskills.com/filter/jeresig> zkerdfa:shardId 9 .
+<https://onlyskills.com/filter/jeresig> zkerdfa:prime 29 .
+<https://onlyskills.com/filter/jeresig> zkerdfa:area "Elliptic curves / CM theory" .
+<https://onlyskills.com/filter/jeresig> zkerdfa:monsterForm "Web Manifold" .
+<https://onlyskills.com/filter/jeresig> zkerdfa:filterType "frontend" .

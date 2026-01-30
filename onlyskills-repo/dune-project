@@ -1,0 +1,21 @@
+(lang dune 3.0)
+(name onlyskills-zkerdaprologml)
+(version 1.0.0)
+
+(generate_opam_files true)
+
+(source (github onlyskills/zkerdaprologml))
+(license MIT)
+(authors "onlyskills.com")
+(maintainers "hello@onlyskills.com")
+
+(package
+ (name onlyskills-zkerdaprologml)
+ (synopsis "Zero-Knowledge 71-Shard Skill Registry for AI Agents")
+ (description "onlyskills.com is a skill registry using zkERDAProlog deployed across 71 platforms")
+ (depends
+  (ocaml (>= 4.14))
+  (dune (>= 3.0))
+  (yojson (>= 2.0))
+  (cohttp-lwt-unix (>= 5.0))
+  (rdf (>= 0.13))))

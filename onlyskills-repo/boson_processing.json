@@ -1,0 +1,686 @@
+{
+  "num_bosons": 24,
+  "num_objects": 1000,
+  "elapsed_seconds": 0.01627659797668457,
+  "throughput": 61437.90007177489,
+  "boson_stats": {
+    "9": {
+      "boson_id": 9,
+      "center": [
+        27,
+        14,
+        20,
+        50,
+        58,
+        27,
+        14
+      ],
+      "objects_processed": 35,
+      "type": "stats"
+    },
+    "6": {
+      "boson_id": 6,
+      "center": [
+        18,
+        40,
+        8,
+        61,
+        42,
+        18,
+        40
+      ],
+      "objects_processed": 32,
+      "type": "stats"
+    },
+    "7": {
+      "boson_id": 7,
+      "center": [
+        21,
+        55,
+        12,
+        10,
+        0,
+        21,
+        55
+      ],
+      "objects_processed": 45,
+      "type": "stats"
+    },
+    "22": {
+      "boson_id": 22,
+      "center": [
+        66,
+        67,
+        1,
+        26,
+        9,
+        66,
+        67
+      ],
+      "objects_processed": 30,
+      "type": "stats"
+    },
+    "1": {
+      "boson_id": 1,
+      "center": [
+        3,
+        36,
+        59,
+        32,
+        39,
+        3,
+        36
+      ],
+      "objects_processed": 54,
+      "type": "stats"
+    },
+    "17": {
+      "boson_id": 17,
+      "center": [
+        51,
+        63,
+        52,
+        68,
+        6,
+        51,
+        63
+      ],
+      "objects_processed": 45,
+      "type": "stats"
+    },
+    "23": {
+      "boson_id": 23,
+      "center": [
+        69,
+        11,
+        5,
+        46,
+        38,
+        69,
+        11
+      ],
+      "objects_processed": 28,
+      "type": "stats"
+    },
+    "8": {
+      "boson_id": 8,
+      "center": [
+        24,
+        70,
+        16,
+        30,
+        29,
+        24,
+        70
+      ],
+      "objects_processed": 36,
+      "type": "stats"
+    },
+    "2": {
+      "boson_id": 2,
+      "center": [
+        6,
+        51,
+        63,
+        52,
+        68,
+        6,
+        51
+      ],
+      "objects_processed": 44,
+      "type": "stats"
+    },
+    "5": {
+      "boson_id": 5,
+      "center": [
+        15,
+        25,
+        4,
+        41,
+        13,
+        15,
+        25
+      ],
+      "objects_processed": 50,
+      "type": "stats"
+    },
+    "0": {
+      "boson_id": 0,
+      "center": [
+        0,
+        21,
+        55,
+        12,
+        10,
+        0,
+        21
+      ],
+      "objects_processed": 55,
+      "type": "stats"
+    },
+    "11": {
+      "boson_id": 11,
+      "center": [
+        33,
+        44,
+        28,
+        19,
+        45,
+        33,
+        44
+      ],
+      "objects_processed": 41,
+      "type": "stats"
+    },
+    "12": {
+      "boson_id": 12,
+      "center": [
+        36,
+        59,
+        32,
+        39,
+        3,
+        36,
+        59
+      ],
+      "objects_processed": 35,
+      "type": "stats"
+    },
+    "3": {
+      "boson_id": 3,
+      "center": [
+        9,
+        66,
+        67,
+        1,
+        26,
+        9,
+        66
+      ],
+      "objects_processed": 53,
+      "type": "stats"
+    },
+    "10": {
+      "boson_id": 10,
+      "center": [
+        30,
+        29,
+        24,
+        70,
+        16,
+        30,
+        29
+      ],
+      "objects_processed": 37,
+      "type": "stats"
+    },
+    "19": {
+      "boson_id": 19,
+      "center": [
+        57,
+        22,
+        60,
+        37,
+        64,
+        57,
+        22
+      ],
+      "objects_processed": 42,
+      "type": "stats"
+    },
+    "15": {
+      "boson_id": 15,
+      "center": [
+        45,
+        33,
+        44,
+        28,
+        19,
+        45,
+        33
+      ],
+      "objects_processed": 32,
+      "type": "stats"
+    },
+    "21": {
+      "boson_id": 21,
+      "center": [
+        63,
+        52,
+        68,
+        6,
+        51,
+        63,
+        52
+      ],
+      "objects_processed": 42,
+      "type": "stats"
+    },
+    "4": {
+      "boson_id": 4,
+      "center": [
+        12,
+        10,
+        0,
+        21,
+        55,
+        12,
+        10
+      ],
+      "objects_processed": 69,
+      "type": "stats"
+    },
+    "20": {
+      "boson_id": 20,
+      "center": [
+        60,
+        37,
+        64,
+        57,
+        22,
+        60,
+        37
+      ],
+      "objects_processed": 32,
+      "type": "stats"
+    },
+    "13": {
+      "boson_id": 13,
+      "center": [
+        39,
+        3,
+        36,
+        59,
+        32,
+        39,
+        3
+      ],
+      "objects_processed": 46,
+      "type": "stats"
+    },
+    "14": {
+      "boson_id": 14,
+      "center": [
+        42,
+        18,
+        40,
+        8,
+        61,
+        42,
+        18
+      ],
+      "objects_processed": 37,
+      "type": "stats"
+    },
+    "18": {
+      "boson_id": 18,
+      "center": [
+        54,
+        7,
+        56,
+        17,
+        35,
+        54,
+        7
+      ],
+      "objects_processed": 40,
+      "type": "stats"
+    },
+    "16": {
+      "boson_id": 16,
+      "center": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "objects_processed": 40,
+      "type": "stats"
+    }
+  },
+  "sample_results": [
+    {
+      "boson_id": 0,
+      "object_id": 0,
+      "hecke_index": 8803797402281,
+      "coords": [
+        0,
+        18,
+        66,
+        61,
+        37,
+        51,
+        68
+      ],
+      "distance_from_center": 89.83317872590283,
+      "signature": 3037,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 2,
+      "hecke_index": 6693850787711,
+      "coords": [
+        22,
+        0,
+        53,
+        20,
+        6,
+        18,
+        52
+      ],
+      "distance_from_center": 47.89572005931219,
+      "signature": 1633,
+      "in_radius": true
+    },
+    {
+      "boson_id": 0,
+      "object_id": 3,
+      "hecke_index": 5644584656628,
+      "coords": [
+        62,
+        33,
+        67,
+        41,
+        37,
+        4,
+        44
+      ],
+      "distance_from_center": 79.03796556086195,
+      "signature": 2052,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 4,
+      "hecke_index": 1932666501269,
+      "coords": [
+        32,
+        21,
+        14,
+        18,
+        13,
+        6,
+        15
+      ],
+      "distance_from_center": 53.1224999411737,
+      "signature": 799,
+      "in_radius": true
+    },
+    {
+      "boson_id": 0,
+      "object_id": 6,
+      "hecke_index": 3795408924194,
+      "coords": [
+        3,
+        52,
+        12,
+        61,
+        43,
+        44,
+        29
+      ],
+      "distance_from_center": 91.15371632577578,
+      "signature": 2187,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 8,
+      "hecke_index": 7565011112717,
+      "coords": [
+        56,
+        10,
+        41,
+        12,
+        66,
+        3,
+        59
+      ],
+      "distance_from_center": 89.67719888578144,
+      "signature": 2199,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 9,
+      "hecke_index": 3288072415887,
+      "coords": [
+        0,
+        55,
+        49,
+        11,
+        30,
+        47,
+        25
+      ],
+      "distance_from_center": 61.78996682310163,
+      "signature": 1853,
+      "in_radius": true
+    },
+    {
+      "boson_id": 1,
+      "object_id": 1,
+      "hecke_index": 2068123093954,
+      "coords": [
+        3,
+        59,
+        46,
+        52,
+        18,
+        10,
+        16
+      ],
+      "distance_from_center": 44.58699361921591,
+      "signature": 1377,
+      "in_radius": true
+    },
+    {
+      "boson_id": 1,
+      "object_id": 7,
+      "hecke_index": 8450484145212,
+      "coords": [
+        49,
+        61,
+        69,
+        20,
+        50,
+        68,
+        65
+      ],
+      "distance_from_center": 90.39911503991618,
+      "signature": 3305,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 11,
+      "hecke_index": 3989889204135,
+      "coords": [
+        32,
+        11,
+        19,
+        3,
+        29,
+        10,
+        31
+      ],
+      "distance_from_center": 55.33534132902769,
+      "signature": 1189,
+      "in_radius": true
+    },
+    {
+      "boson_id": 1,
+      "object_id": 12,
+      "hecke_index": 5926031911472,
+      "coords": [
+        53,
+        4,
+        68,
+        6,
+        37,
+        18,
+        46
+      ],
+      "distance_from_center": 67.89698078707183,
+      "signature": 1923,
+      "in_radius": true
+    },
+    {
+      "boson_id": 2,
+      "object_id": 5,
+      "hecke_index": 5601170632643,
+      "coords": [
+        23,
+        42,
+        40,
+        11,
+        33,
+        51,
+        43
+      ],
+      "distance_from_center": 76.77239087067694,
+      "signature": 2206,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 14,
+      "hecke_index": 8561829248213,
+      "coords": [
+        2,
+        49,
+        11,
+        67,
+        29,
+        59,
+        66
+      ],
+      "distance_from_center": 107.77754868245984,
+      "signature": 2883,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 16,
+      "hecke_index": 3359346552361,
+      "coords": [
+        7,
+        13,
+        69,
+        66,
+        65,
+        15,
+        26
+      ],
+      "distance_from_center": 80.62257748298549,
+      "signature": 2212,
+      "in_radius": false
+    },
+    {
+      "boson_id": 2,
+      "object_id": 18,
+      "hecke_index": 464788396869,
+      "coords": [
+        61,
+        2,
+        32,
+        24,
+        43,
+        44,
+        3
+      ],
+      "distance_from_center": 107.44300814850634,
+      "signature": 1552,
+      "in_radius": false
+    },
+    {
+      "boson_id": 1,
+      "object_id": 15,
+      "hecke_index": 8544396587529,
+      "coords": [
+        61,
+        41,
+        33,
+        66,
+        53,
+        49,
+        66
+      ],
+      "distance_from_center": 91.8313671900838,
+      "signature": 3214,
+      "in_radius": false
+    },
+    {
+      "boson_id": 0,
+      "object_id": 19,
+      "hecke_index": 5862626151105,
+      "coords": [
+        24,
+        49,
+        60,
+        67,
+        26,
+        54,
+        45
+      ],
+      "distance_from_center": 90.3216474606171,
+      "signature": 2717,
+      "in_radius": false
+    },
+    {
+      "boson_id": 1,
+      "object_id": 17,
+      "hecke_index": 7172953382931,
+      "coords": [
+        46,
+        25,
+        66,
+        65,
+        44,
+        70,
+        55
+      ],
+      "distance_from_center": 89.34763567101258,
+      "signature": 3281,
+      "in_radius": false
+    },
+    {
+      "boson_id": 1,
+      "object_id": 20,
+      "hecke_index": 195504244714,
+      "coords": [
+        33,
+        52,
+        2,
+        34,
+        25,
+        37,
+        1
+      ],
+      "distance_from_center": 83.58229477586745,
+      "signature": 1243,
+      "in_radius": false
+    },
+    {
+      "boson_id": 1,
+      "object_id": 21,
+      "hecke_index": 1184983405551,
+      "coords": [
+        31,
+        26,
+        42,
+        31,
+        55,
+        17,
+        9
+      ],
+      "distance_from_center": 48.52834223420371,
+      "signature": 1546,
+      "in_radius": true
+    }
+  ]
+}

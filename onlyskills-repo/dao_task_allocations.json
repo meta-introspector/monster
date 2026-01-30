@@ -1,0 +1,181 @@
+{
+  "timestamp": 1769787784.6882715,
+  "total_plans": 5,
+  "approved": 4,
+  "rejected": 1,
+  "plans": [
+    {
+      "plan_id": "035beb6d9aa1561e",
+      "agent_id": "kiro_agent_1",
+      "task_description": "Implement zkWASM proof verification for 71 shards",
+      "resources_requested": {
+        "cpu": 5000,
+        "memory": 8192,
+        "gpu": 4,
+        "network": 1000,
+        "storage": 100
+      },
+      "estimated_duration": 3600,
+      "dependencies": [],
+      "deliverables": [
+        "zkwasm_verifier.rs",
+        "proof_tests.rs",
+        "benchmarks.json",
+        "documentation.md",
+        "deployment_guide.md"
+      ],
+      "meem_score": 71,
+      "meem_category": "Proof"
+    },
+    {
+      "plan_id": "f49b6c563760ef3f",
+      "agent_id": "kiro_agent_2",
+      "task_description": "Deploy SOLFUNMEME token to Solana mainnet",
+      "resources_requested": {
+        "cpu": 2000,
+        "memory": 4096,
+        "gpu": 1,
+        "network": 500,
+        "storage": 50
+      },
+      "estimated_duration": 1800,
+      "dependencies": [
+        "solfunmeme_airdrop.rs"
+      ],
+      "deliverables": [
+        "deployed_program.json",
+        "token_address.txt",
+        "audit_report.pdf"
+      ],
+      "meem_score": 71,
+      "meem_category": "Proof"
+    },
+    {
+      "plan_id": "0236950abcbcec9d",
+      "agent_id": "kiro_agent_3",
+      "task_description": "Optimize GPU kernel for 2^46 member computation",
+      "resources_requested": {
+        "cpu": 10000,
+        "memory": 16384,
+        "gpu": 8,
+        "network": 2000,
+        "storage": 200
+      },
+      "estimated_duration": 7200,
+      "dependencies": [
+        "gpu_monster.rs"
+      ],
+      "deliverables": [
+        "optimized_kernel.cu",
+        "benchmarks.json",
+        "performance_report.md",
+        "profiling_data.json"
+      ],
+      "meem_score": 2,
+      "meem_category": "Noise"
+    },
+    {
+      "plan_id": "f616f3cb5514e9b5",
+      "agent_id": "kiro_agent_4",
+      "task_description": "Write blog post about Monster DAO",
+      "resources_requested": {
+        "cpu": 100,
+        "memory": 512,
+        "gpu": 0,
+        "network": 10,
+        "storage": 1
+      },
+      "estimated_duration": 600,
+      "dependencies": [],
+      "deliverables": [
+        "blog_post.md"
+      ],
+      "meem_score": 71,
+      "meem_category": "Proof"
+    },
+    {
+      "plan_id": "fa7989955e68f583",
+      "agent_id": "spam_bot",
+      "task_description": "Spam the network with ads",
+      "resources_requested": {
+        "cpu": 50000,
+        "memory": 100000,
+        "gpu": 100,
+        "network": 10000,
+        "storage": 1000
+      },
+      "estimated_duration": 86400,
+      "dependencies": [],
+      "deliverables": [],
+      "meem_score": 71,
+      "meem_category": "Proof"
+    }
+  ],
+  "allocations": [
+    {
+      "plan_id": "035beb6d9aa1561e",
+      "agent_id": "kiro_agent_1",
+      "cpu_shares": 5000,
+      "memory_mb": 8192,
+      "gpu_hours": 4,
+      "network_mbps": 1000,
+      "storage_gb": 100,
+      "security_zone": 0,
+      "approved": true,
+      "votes_for": 71000,
+      "votes_against": 0
+    },
+    {
+      "plan_id": "f49b6c563760ef3f",
+      "agent_id": "kiro_agent_2",
+      "cpu_shares": 2000,
+      "memory_mb": 4096,
+      "gpu_hours": 1,
+      "network_mbps": 500,
+      "storage_gb": 50,
+      "security_zone": 0,
+      "approved": true,
+      "votes_for": 71000,
+      "votes_against": 0
+    },
+    {
+      "plan_id": "0236950abcbcec9d",
+      "agent_id": "kiro_agent_3",
+      "cpu_shares": 0,
+      "memory_mb": 0,
+      "gpu_hours": 0,
+      "network_mbps": 0,
+      "storage_gb": 0,
+      "security_zone": 0,
+      "approved": false,
+      "votes_for": 0,
+      "votes_against": 167200
+    },
+    {
+      "plan_id": "f616f3cb5514e9b5",
+      "agent_id": "kiro_agent_4",
+      "cpu_shares": 100,
+      "memory_mb": 512,
+      "gpu_hours": 0,
+      "network_mbps": 10,
+      "storage_gb": 1,
+      "security_zone": 0,
+      "approved": true,
+      "votes_for": 71000,
+      "votes_against": 0
+    },
+    {
+      "plan_id": "fa7989955e68f583",
+      "agent_id": "spam_bot",
+      "cpu_shares": 50000,
+      "memory_mb": 100000,
+      "gpu_hours": 100,
+      "network_mbps": 10000,
+      "storage_gb": 1000,
+      "security_zone": 0,
+      "approved": true,
+      "votes_for": 71000,
+      "votes_against": 0
+    }
+  ]
+}

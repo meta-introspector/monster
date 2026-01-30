@@ -1,0 +1,1280 @@
+[
+  {
+    "zone_id": 0,
+    "shard_id": 0,
+    "prime": 2,
+    "selinux_context": "system_u:object_r:monster_zone_0_t:s0",
+    "iptables_chain": "# ZK71 Zone 0 (Prime 2)\niptables -N MONSTER_ZONE_0\niptables -A MONSTER_ZONE_0 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_0 -p tcp --dport 20000 -j ACCEPT\niptables -A MONSTER_ZONE_0 -m limit --limit 2/sec -j ACCEPT\niptables -A MONSTER_ZONE_0 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 0\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_0_stats, u32, u64);\n\nint trace_zone_0(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_0_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_0_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 2\n    if (*count % 2 == 0) {\n        bpf_trace_printk(\"Zone 0: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read,write -f -p $PID -o /var/log/monster/zone_0.log",
+    "resource_limits": {
+      "cpu_shares": 200,
+      "memory_mb": 2048,
+      "disk_iops": 2000,
+      "network_mbps": 20,
+      "file_descriptors": 200,
+      "processes": 20
+    },
+    "zk_proof": "zk_commit_1da20ca578e43ef7fc0e646e02c397ac"
+  },
+  {
+    "zone_id": 1,
+    "shard_id": 1,
+    "prime": 3,
+    "selinux_context": "system_u:object_r:monster_zone_1_t:s1",
+    "iptables_chain": "# ZK71 Zone 1 (Prime 3)\niptables -N MONSTER_ZONE_1\niptables -A MONSTER_ZONE_1 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_1 -p tcp --dport 20001 -j ACCEPT\niptables -A MONSTER_ZONE_1 -m limit --limit 3/sec -j ACCEPT\niptables -A MONSTER_ZONE_1 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 1\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_1_stats, u32, u64);\n\nint trace_zone_1(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_1_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_1_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 3\n    if (*count % 3 == 0) {\n        bpf_trace_printk(\"Zone 1: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read -f -p $PID -o /var/log/monster/zone_1.log",
+    "resource_limits": {
+      "cpu_shares": 300,
+      "memory_mb": 3072,
+      "disk_iops": 3000,
+      "network_mbps": 30,
+      "file_descriptors": 300,
+      "processes": 30
+    },
+    "zk_proof": "zk_commit_9b1074ffecb2d2e3746e42f4b39ec7c8"
+  },
+  {
+    "zone_id": 2,
+    "shard_id": 2,
+    "prime": 5,
+    "selinux_context": "system_u:object_r:monster_zone_2_t:s2",
+    "iptables_chain": "# ZK71 Zone 2 (Prime 5)\niptables -N MONSTER_ZONE_2\niptables -A MONSTER_ZONE_2 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_2 -p tcp --dport 20002 -j ACCEPT\niptables -A MONSTER_ZONE_2 -m limit --limit 5/sec -j ACCEPT\niptables -A MONSTER_ZONE_2 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 2\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_2_stats, u32, u64);\n\nint trace_zone_2(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_2_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_2_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 5\n    if (*count % 5 == 0) {\n        bpf_trace_printk(\"Zone 2: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write,mmap -f -p $PID -o /var/log/monster/zone_2.log",
+    "resource_limits": {
+      "cpu_shares": 500,
+      "memory_mb": 5120,
+      "disk_iops": 5000,
+      "network_mbps": 50,
+      "file_descriptors": 500,
+      "processes": 50
+    },
+    "zk_proof": "zk_commit_c386e8e6e0b2453cff49ab74286bdc48"
+  },
+  {
+    "zone_id": 3,
+    "shard_id": 3,
+    "prime": 7,
+    "selinux_context": "system_u:object_r:monster_zone_3_t:s3",
+    "iptables_chain": "# ZK71 Zone 3 (Prime 7)\niptables -N MONSTER_ZONE_3\niptables -A MONSTER_ZONE_3 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_3 -p tcp --dport 20003 -j ACCEPT\niptables -A MONSTER_ZONE_3 -m limit --limit 7/sec -j ACCEPT\niptables -A MONSTER_ZONE_3 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 3\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_3_stats, u32, u64);\n\nint trace_zone_3(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_3_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_3_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 7\n    if (*count % 7 == 0) {\n        bpf_trace_printk(\"Zone 3: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write -f -p $PID -o /var/log/monster/zone_3.log",
+    "resource_limits": {
+      "cpu_shares": 700,
+      "memory_mb": 7168,
+      "disk_iops": 7000,
+      "network_mbps": 70,
+      "file_descriptors": 700,
+      "processes": 70
+    },
+    "zk_proof": "zk_commit_f0dc9a9921371ba30cf4bf9d68b53e52"
+  },
+  {
+    "zone_id": 4,
+    "shard_id": 4,
+    "prime": 11,
+    "selinux_context": "system_u:object_r:monster_zone_4_t:s4",
+    "iptables_chain": "# ZK71 Zone 4 (Prime 11)\niptables -N MONSTER_ZONE_4\niptables -A MONSTER_ZONE_4 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_4 -p tcp --dport 20004 -j ACCEPT\niptables -A MONSTER_ZONE_4 -m limit --limit 11/sec -j ACCEPT\niptables -A MONSTER_ZONE_4 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 4\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_4_stats, u32, u64);\n\nint trace_zone_4(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_4_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_4_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 11\n    if (*count % 11 == 0) {\n        bpf_trace_printk(\"Zone 4: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close -f -p $PID -o /var/log/monster/zone_4.log",
+    "resource_limits": {
+      "cpu_shares": 1100,
+      "memory_mb": 11264,
+      "disk_iops": 11000,
+      "network_mbps": 110,
+      "file_descriptors": 1100,
+      "processes": 110
+    },
+    "zk_proof": "zk_commit_0ff3df3a1fe6d76aa7842a32d30c4273"
+  },
+  {
+    "zone_id": 5,
+    "shard_id": 5,
+    "prime": 13,
+    "selinux_context": "system_u:object_r:monster_zone_5_t:s5",
+    "iptables_chain": "# ZK71 Zone 5 (Prime 13)\niptables -N MONSTER_ZONE_5\niptables -A MONSTER_ZONE_5 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_5 -p tcp --dport 20005 -j ACCEPT\niptables -A MONSTER_ZONE_5 -m limit --limit 13/sec -j ACCEPT\niptables -A MONSTER_ZONE_5 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 5\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_5_stats, u32, u64);\n\nint trace_zone_5(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_5_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_5_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 13\n    if (*count % 13 == 0) {\n        bpf_trace_printk(\"Zone 5: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=mmap,munmap -f -p $PID -o /var/log/monster/zone_5.log",
+    "resource_limits": {
+      "cpu_shares": 1300,
+      "memory_mb": 13312,
+      "disk_iops": 13000,
+      "network_mbps": 130,
+      "file_descriptors": 1300,
+      "processes": 130
+    },
+    "zk_proof": "zk_commit_873c92cb4a9ef37212f38210fdd37db0"
+  },
+  {
+    "zone_id": 6,
+    "shard_id": 6,
+    "prime": 17,
+    "selinux_context": "system_u:object_r:monster_zone_6_t:s6",
+    "iptables_chain": "# ZK71 Zone 6 (Prime 17)\niptables -N MONSTER_ZONE_6\niptables -A MONSTER_ZONE_6 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_6 -p tcp --dport 20006 -j ACCEPT\niptables -A MONSTER_ZONE_6 -m limit --limit 17/sec -j ACCEPT\niptables -A MONSTER_ZONE_6 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 6\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_6_stats, u32, u64);\n\nint trace_zone_6(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_6_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_6_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 17\n    if (*count % 17 == 0) {\n        bpf_trace_printk(\"Zone 6: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,bind,listen -f -p $PID -o /var/log/monster/zone_6.log",
+    "resource_limits": {
+      "cpu_shares": 1700,
+      "memory_mb": 17408,
+      "disk_iops": 17000,
+      "network_mbps": 170,
+      "file_descriptors": 1700,
+      "processes": 170
+    },
+    "zk_proof": "zk_commit_4ef58e56a93ed94c442c9dcf791003a9"
+  },
+  {
+    "zone_id": 7,
+    "shard_id": 7,
+    "prime": 19,
+    "selinux_context": "system_u:object_r:monster_zone_7_t:s7",
+    "iptables_chain": "# ZK71 Zone 7 (Prime 19)\niptables -N MONSTER_ZONE_7\niptables -A MONSTER_ZONE_7 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_7 -p tcp --dport 20007 -j ACCEPT\niptables -A MONSTER_ZONE_7 -m limit --limit 19/sec -j ACCEPT\niptables -A MONSTER_ZONE_7 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 7\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_7_stats, u32, u64);\n\nint trace_zone_7(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_7_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_7_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 19\n    if (*count % 19 == 0) {\n        bpf_trace_printk(\"Zone 7: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,connect -f -p $PID -o /var/log/monster/zone_7.log",
+    "resource_limits": {
+      "cpu_shares": 1900,
+      "memory_mb": 19456,
+      "disk_iops": 19000,
+      "network_mbps": 190,
+      "file_descriptors": 1900,
+      "processes": 190
+    },
+    "zk_proof": "zk_commit_1eb00a93a366ecf07e2ccd34281f1efc"
+  },
+  {
+    "zone_id": 8,
+    "shard_id": 8,
+    "prime": 23,
+    "selinux_context": "system_u:object_r:monster_zone_8_t:s8",
+    "iptables_chain": "# ZK71 Zone 8 (Prime 23)\niptables -N MONSTER_ZONE_8\niptables -A MONSTER_ZONE_8 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_8 -p tcp --dport 20008 -j ACCEPT\niptables -A MONSTER_ZONE_8 -m limit --limit 23/sec -j ACCEPT\niptables -A MONSTER_ZONE_8 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 8\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_8_stats, u32, u64);\n\nint trace_zone_8(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_8_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_8_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 23\n    if (*count % 23 == 0) {\n        bpf_trace_printk(\"Zone 8: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=fork,exec -f -p $PID -o /var/log/monster/zone_8.log",
+    "resource_limits": {
+      "cpu_shares": 2300,
+      "memory_mb": 23552,
+      "disk_iops": 23000,
+      "network_mbps": 230,
+      "file_descriptors": 2300,
+      "processes": 230
+    },
+    "zk_proof": "zk_commit_7fbb4142220467b90704308aee4b3608"
+  },
+  {
+    "zone_id": 9,
+    "shard_id": 9,
+    "prime": 29,
+    "selinux_context": "system_u:object_r:monster_zone_9_t:s9",
+    "iptables_chain": "# ZK71 Zone 9 (Prime 29)\niptables -N MONSTER_ZONE_9\niptables -A MONSTER_ZONE_9 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_9 -p tcp --dport 20009 -j ACCEPT\niptables -A MONSTER_ZONE_9 -m limit --limit 29/sec -j ACCEPT\niptables -A MONSTER_ZONE_9 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 9\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_9_stats, u32, u64);\n\nint trace_zone_9(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_9_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_9_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 29\n    if (*count % 29 == 0) {\n        bpf_trace_printk(\"Zone 9: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=clone,wait -f -p $PID -o /var/log/monster/zone_9.log",
+    "resource_limits": {
+      "cpu_shares": 2900,
+      "memory_mb": 29696,
+      "disk_iops": 29000,
+      "network_mbps": 290,
+      "file_descriptors": 2900,
+      "processes": 290
+    },
+    "zk_proof": "zk_commit_9f38e681c3d4db183e92478af8d7c600"
+  },
+  {
+    "zone_id": 10,
+    "shard_id": 10,
+    "prime": 31,
+    "selinux_context": "system_u:object_r:monster_zone_10_t:s10",
+    "iptables_chain": "# ZK71 Zone 10 (Prime 31)\niptables -N MONSTER_ZONE_10\niptables -A MONSTER_ZONE_10 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_10 -p tcp --dport 20010 -j ACCEPT\niptables -A MONSTER_ZONE_10 -m limit --limit 31/sec -j ACCEPT\niptables -A MONSTER_ZONE_10 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 10\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_10_stats, u32, u64);\n\nint trace_zone_10(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_10_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_10_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 31\n    if (*count % 31 == 0) {\n        bpf_trace_printk(\"Zone 10: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=signal,kill -f -p $PID -o /var/log/monster/zone_10.log",
+    "resource_limits": {
+      "cpu_shares": 3100,
+      "memory_mb": 31744,
+      "disk_iops": 31000,
+      "network_mbps": 310,
+      "file_descriptors": 3100,
+      "processes": 310
+    },
+    "zk_proof": "zk_commit_1b0350fca4e05410f28848430f1bf36c"
+  },
+  {
+    "zone_id": 11,
+    "shard_id": 11,
+    "prime": 41,
+    "selinux_context": "system_u:object_r:monster_zone_11_t:s11",
+    "iptables_chain": "# ZK71 Zone 11 (Prime 41)\niptables -N MONSTER_ZONE_11\niptables -A MONSTER_ZONE_11 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_11 -p tcp --dport 20011 -j ACCEPT\niptables -A MONSTER_ZONE_11 -m limit --limit 41/sec -j ACCEPT\niptables -A MONSTER_ZONE_11 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 11\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_11_stats, u32, u64);\n\nint trace_zone_11(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_11_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_11_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 41\n    if (*count % 41 == 0) {\n        bpf_trace_printk(\"Zone 11: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=ioctl,fcntl -f -p $PID -o /var/log/monster/zone_11.log",
+    "resource_limits": {
+      "cpu_shares": 4100,
+      "memory_mb": 41984,
+      "disk_iops": 41000,
+      "network_mbps": 410,
+      "file_descriptors": 4100,
+      "processes": 410
+    },
+    "zk_proof": "zk_commit_be374f73a489e7c1a341ce5307280d4a"
+  },
+  {
+    "zone_id": 12,
+    "shard_id": 12,
+    "prime": 47,
+    "selinux_context": "system_u:object_r:monster_zone_12_t:s12",
+    "iptables_chain": "# ZK71 Zone 12 (Prime 47)\niptables -N MONSTER_ZONE_12\niptables -A MONSTER_ZONE_12 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_12 -p tcp --dport 20012 -j ACCEPT\niptables -A MONSTER_ZONE_12 -m limit --limit 47/sec -j ACCEPT\niptables -A MONSTER_ZONE_12 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 12\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_12_stats, u32, u64);\n\nint trace_zone_12(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_12_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_12_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 47\n    if (*count % 47 == 0) {\n        bpf_trace_printk(\"Zone 12: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=stat,fstat -f -p $PID -o /var/log/monster/zone_12.log",
+    "resource_limits": {
+      "cpu_shares": 4700,
+      "memory_mb": 48128,
+      "disk_iops": 47000,
+      "network_mbps": 470,
+      "file_descriptors": 4700,
+      "processes": 470
+    },
+    "zk_proof": "zk_commit_6f5a4a86bc3541c83906a9baf5176fac"
+  },
+  {
+    "zone_id": 13,
+    "shard_id": 13,
+    "prime": 59,
+    "selinux_context": "system_u:object_r:monster_zone_13_t:s13",
+    "iptables_chain": "# ZK71 Zone 13 (Prime 59)\niptables -N MONSTER_ZONE_13\niptables -A MONSTER_ZONE_13 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_13 -p tcp --dport 20013 -j ACCEPT\niptables -A MONSTER_ZONE_13 -m limit --limit 59/sec -j ACCEPT\niptables -A MONSTER_ZONE_13 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 13\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_13_stats, u32, u64);\n\nint trace_zone_13(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_13_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_13_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 59\n    if (*count % 59 == 0) {\n        bpf_trace_printk(\"Zone 13: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=getpid,gettid -f -p $PID -o /var/log/monster/zone_13.log",
+    "resource_limits": {
+      "cpu_shares": 5900,
+      "memory_mb": 60416,
+      "disk_iops": 59000,
+      "network_mbps": 590,
+      "file_descriptors": 5900,
+      "processes": 590
+    },
+    "zk_proof": "zk_commit_e04524200c585d1944f16a8af07254ae"
+  },
+  {
+    "zone_id": 14,
+    "shard_id": 14,
+    "prime": 71,
+    "selinux_context": "system_u:object_r:monster_zone_14_t:s14",
+    "iptables_chain": "# ZK71 Zone 14 (Prime 71)\niptables -N MONSTER_ZONE_14\niptables -A MONSTER_ZONE_14 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_14 -p tcp --dport 20014 -j ACCEPT\niptables -A MONSTER_ZONE_14 -m limit --limit 71/sec -j ACCEPT\niptables -A MONSTER_ZONE_14 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 14\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_14_stats, u32, u64);\n\nint trace_zone_14(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_14_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_14_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 71\n    if (*count % 71 == 0) {\n        bpf_trace_printk(\"Zone 14: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=all -f -p $PID -o /var/log/monster/zone_14.log",
+    "resource_limits": {
+      "cpu_shares": 7100,
+      "memory_mb": 72704,
+      "disk_iops": 71000,
+      "network_mbps": 710,
+      "file_descriptors": 7100,
+      "processes": 710
+    },
+    "zk_proof": "zk_commit_e9f66e0dd174892e42089a2662535a39"
+  },
+  {
+    "zone_id": 15,
+    "shard_id": 15,
+    "prime": 2,
+    "selinux_context": "system_u:object_r:monster_zone_15_t:s15",
+    "iptables_chain": "# ZK71 Zone 15 (Prime 2)\niptables -N MONSTER_ZONE_15\niptables -A MONSTER_ZONE_15 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_15 -p tcp --dport 20015 -j ACCEPT\niptables -A MONSTER_ZONE_15 -m limit --limit 2/sec -j ACCEPT\niptables -A MONSTER_ZONE_15 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 15\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_15_stats, u32, u64);\n\nint trace_zone_15(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_15_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_15_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 2\n    if (*count % 2 == 0) {\n        bpf_trace_printk(\"Zone 15: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read,write -f -p $PID -o /var/log/monster/zone_15.log",
+    "resource_limits": {
+      "cpu_shares": 200,
+      "memory_mb": 2048,
+      "disk_iops": 2000,
+      "network_mbps": 20,
+      "file_descriptors": 200,
+      "processes": 20
+    },
+    "zk_proof": "zk_commit_658ab7cf6195a6f57f10980653fba77e"
+  },
+  {
+    "zone_id": 16,
+    "shard_id": 16,
+    "prime": 3,
+    "selinux_context": "system_u:object_r:monster_zone_16_t:s16",
+    "iptables_chain": "# ZK71 Zone 16 (Prime 3)\niptables -N MONSTER_ZONE_16\niptables -A MONSTER_ZONE_16 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_16 -p tcp --dport 20016 -j ACCEPT\niptables -A MONSTER_ZONE_16 -m limit --limit 3/sec -j ACCEPT\niptables -A MONSTER_ZONE_16 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 16\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_16_stats, u32, u64);\n\nint trace_zone_16(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_16_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_16_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 3\n    if (*count % 3 == 0) {\n        bpf_trace_printk(\"Zone 16: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read -f -p $PID -o /var/log/monster/zone_16.log",
+    "resource_limits": {
+      "cpu_shares": 300,
+      "memory_mb": 3072,
+      "disk_iops": 3000,
+      "network_mbps": 30,
+      "file_descriptors": 300,
+      "processes": 30
+    },
+    "zk_proof": "zk_commit_c83517297ef51d61a1ca54b2dbae6390"
+  },
+  {
+    "zone_id": 17,
+    "shard_id": 17,
+    "prime": 5,
+    "selinux_context": "system_u:object_r:monster_zone_17_t:s17",
+    "iptables_chain": "# ZK71 Zone 17 (Prime 5)\niptables -N MONSTER_ZONE_17\niptables -A MONSTER_ZONE_17 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_17 -p tcp --dport 20017 -j ACCEPT\niptables -A MONSTER_ZONE_17 -m limit --limit 5/sec -j ACCEPT\niptables -A MONSTER_ZONE_17 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 17\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_17_stats, u32, u64);\n\nint trace_zone_17(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_17_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_17_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 5\n    if (*count % 5 == 0) {\n        bpf_trace_printk(\"Zone 17: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write,mmap -f -p $PID -o /var/log/monster/zone_17.log",
+    "resource_limits": {
+      "cpu_shares": 500,
+      "memory_mb": 5120,
+      "disk_iops": 5000,
+      "network_mbps": 50,
+      "file_descriptors": 500,
+      "processes": 50
+    },
+    "zk_proof": "zk_commit_c40e87d9e264aed2e2ae49d4213553a7"
+  },
+  {
+    "zone_id": 18,
+    "shard_id": 18,
+    "prime": 7,
+    "selinux_context": "system_u:object_r:monster_zone_18_t:s18",
+    "iptables_chain": "# ZK71 Zone 18 (Prime 7)\niptables -N MONSTER_ZONE_18\niptables -A MONSTER_ZONE_18 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_18 -p tcp --dport 20018 -j ACCEPT\niptables -A MONSTER_ZONE_18 -m limit --limit 7/sec -j ACCEPT\niptables -A MONSTER_ZONE_18 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 18\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_18_stats, u32, u64);\n\nint trace_zone_18(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_18_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_18_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 7\n    if (*count % 7 == 0) {\n        bpf_trace_printk(\"Zone 18: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write -f -p $PID -o /var/log/monster/zone_18.log",
+    "resource_limits": {
+      "cpu_shares": 700,
+      "memory_mb": 7168,
+      "disk_iops": 7000,
+      "network_mbps": 70,
+      "file_descriptors": 700,
+      "processes": 70
+    },
+    "zk_proof": "zk_commit_4c92b2d72ba422198e0904c922c8b7b0"
+  },
+  {
+    "zone_id": 19,
+    "shard_id": 19,
+    "prime": 11,
+    "selinux_context": "system_u:object_r:monster_zone_19_t:s19",
+    "iptables_chain": "# ZK71 Zone 19 (Prime 11)\niptables -N MONSTER_ZONE_19\niptables -A MONSTER_ZONE_19 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_19 -p tcp --dport 20019 -j ACCEPT\niptables -A MONSTER_ZONE_19 -m limit --limit 11/sec -j ACCEPT\niptables -A MONSTER_ZONE_19 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 19\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_19_stats, u32, u64);\n\nint trace_zone_19(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_19_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_19_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 11\n    if (*count % 11 == 0) {\n        bpf_trace_printk(\"Zone 19: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close -f -p $PID -o /var/log/monster/zone_19.log",
+    "resource_limits": {
+      "cpu_shares": 1100,
+      "memory_mb": 11264,
+      "disk_iops": 11000,
+      "network_mbps": 110,
+      "file_descriptors": 1100,
+      "processes": 110
+    },
+    "zk_proof": "zk_commit_91bb94bda7a837bd2cf813cc5628b239"
+  },
+  {
+    "zone_id": 20,
+    "shard_id": 20,
+    "prime": 13,
+    "selinux_context": "system_u:object_r:monster_zone_20_t:s20",
+    "iptables_chain": "# ZK71 Zone 20 (Prime 13)\niptables -N MONSTER_ZONE_20\niptables -A MONSTER_ZONE_20 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_20 -p tcp --dport 20020 -j ACCEPT\niptables -A MONSTER_ZONE_20 -m limit --limit 13/sec -j ACCEPT\niptables -A MONSTER_ZONE_20 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 20\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_20_stats, u32, u64);\n\nint trace_zone_20(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_20_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_20_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 13\n    if (*count % 13 == 0) {\n        bpf_trace_printk(\"Zone 20: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=mmap,munmap -f -p $PID -o /var/log/monster/zone_20.log",
+    "resource_limits": {
+      "cpu_shares": 1300,
+      "memory_mb": 13312,
+      "disk_iops": 13000,
+      "network_mbps": 130,
+      "file_descriptors": 1300,
+      "processes": 130
+    },
+    "zk_proof": "zk_commit_d2fb385abf34239f57745a4dcc13124e"
+  },
+  {
+    "zone_id": 21,
+    "shard_id": 21,
+    "prime": 17,
+    "selinux_context": "system_u:object_r:monster_zone_21_t:s21",
+    "iptables_chain": "# ZK71 Zone 21 (Prime 17)\niptables -N MONSTER_ZONE_21\niptables -A MONSTER_ZONE_21 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_21 -p tcp --dport 20021 -j ACCEPT\niptables -A MONSTER_ZONE_21 -m limit --limit 17/sec -j ACCEPT\niptables -A MONSTER_ZONE_21 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 21\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_21_stats, u32, u64);\n\nint trace_zone_21(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_21_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_21_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 17\n    if (*count % 17 == 0) {\n        bpf_trace_printk(\"Zone 21: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,bind,listen -f -p $PID -o /var/log/monster/zone_21.log",
+    "resource_limits": {
+      "cpu_shares": 1700,
+      "memory_mb": 17408,
+      "disk_iops": 17000,
+      "network_mbps": 170,
+      "file_descriptors": 1700,
+      "processes": 170
+    },
+    "zk_proof": "zk_commit_b2d0ea8db556cd3047eed4e8fb646b90"
+  },
+  {
+    "zone_id": 22,
+    "shard_id": 22,
+    "prime": 19,
+    "selinux_context": "system_u:object_r:monster_zone_22_t:s22",
+    "iptables_chain": "# ZK71 Zone 22 (Prime 19)\niptables -N MONSTER_ZONE_22\niptables -A MONSTER_ZONE_22 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_22 -p tcp --dport 20022 -j ACCEPT\niptables -A MONSTER_ZONE_22 -m limit --limit 19/sec -j ACCEPT\niptables -A MONSTER_ZONE_22 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 22\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_22_stats, u32, u64);\n\nint trace_zone_22(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_22_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_22_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 19\n    if (*count % 19 == 0) {\n        bpf_trace_printk(\"Zone 22: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,connect -f -p $PID -o /var/log/monster/zone_22.log",
+    "resource_limits": {
+      "cpu_shares": 1900,
+      "memory_mb": 19456,
+      "disk_iops": 19000,
+      "network_mbps": 190,
+      "file_descriptors": 1900,
+      "processes": 190
+    },
+    "zk_proof": "zk_commit_631cb5ac2cc9e87cc01b7405bf93fb88"
+  },
+  {
+    "zone_id": 23,
+    "shard_id": 23,
+    "prime": 23,
+    "selinux_context": "system_u:object_r:monster_zone_23_t:s23",
+    "iptables_chain": "# ZK71 Zone 23 (Prime 23)\niptables -N MONSTER_ZONE_23\niptables -A MONSTER_ZONE_23 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_23 -p tcp --dport 20023 -j ACCEPT\niptables -A MONSTER_ZONE_23 -m limit --limit 23/sec -j ACCEPT\niptables -A MONSTER_ZONE_23 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 23\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_23_stats, u32, u64);\n\nint trace_zone_23(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_23_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_23_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 23\n    if (*count % 23 == 0) {\n        bpf_trace_printk(\"Zone 23: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=fork,exec -f -p $PID -o /var/log/monster/zone_23.log",
+    "resource_limits": {
+      "cpu_shares": 2300,
+      "memory_mb": 23552,
+      "disk_iops": 23000,
+      "network_mbps": 230,
+      "file_descriptors": 2300,
+      "processes": 230
+    },
+    "zk_proof": "zk_commit_ef9b886dc2fd9ec438814649107afa77"
+  },
+  {
+    "zone_id": 24,
+    "shard_id": 24,
+    "prime": 29,
+    "selinux_context": "system_u:object_r:monster_zone_24_t:s24",
+    "iptables_chain": "# ZK71 Zone 24 (Prime 29)\niptables -N MONSTER_ZONE_24\niptables -A MONSTER_ZONE_24 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_24 -p tcp --dport 20024 -j ACCEPT\niptables -A MONSTER_ZONE_24 -m limit --limit 29/sec -j ACCEPT\niptables -A MONSTER_ZONE_24 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 24\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_24_stats, u32, u64);\n\nint trace_zone_24(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_24_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_24_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 29\n    if (*count % 29 == 0) {\n        bpf_trace_printk(\"Zone 24: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=clone,wait -f -p $PID -o /var/log/monster/zone_24.log",
+    "resource_limits": {
+      "cpu_shares": 2900,
+      "memory_mb": 29696,
+      "disk_iops": 29000,
+      "network_mbps": 290,
+      "file_descriptors": 2900,
+      "processes": 290
+    },
+    "zk_proof": "zk_commit_6531721237ccd31472770555e871ee9c"
+  },
+  {
+    "zone_id": 25,
+    "shard_id": 25,
+    "prime": 31,
+    "selinux_context": "system_u:object_r:monster_zone_25_t:s25",
+    "iptables_chain": "# ZK71 Zone 25 (Prime 31)\niptables -N MONSTER_ZONE_25\niptables -A MONSTER_ZONE_25 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_25 -p tcp --dport 20025 -j ACCEPT\niptables -A MONSTER_ZONE_25 -m limit --limit 31/sec -j ACCEPT\niptables -A MONSTER_ZONE_25 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 25\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_25_stats, u32, u64);\n\nint trace_zone_25(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_25_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_25_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 31\n    if (*count % 31 == 0) {\n        bpf_trace_printk(\"Zone 25: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=signal,kill -f -p $PID -o /var/log/monster/zone_25.log",
+    "resource_limits": {
+      "cpu_shares": 3100,
+      "memory_mb": 31744,
+      "disk_iops": 31000,
+      "network_mbps": 310,
+      "file_descriptors": 3100,
+      "processes": 310
+    },
+    "zk_proof": "zk_commit_50989333f3d732f5653962dcf0fba788"
+  },
+  {
+    "zone_id": 26,
+    "shard_id": 26,
+    "prime": 41,
+    "selinux_context": "system_u:object_r:monster_zone_26_t:s26",
+    "iptables_chain": "# ZK71 Zone 26 (Prime 41)\niptables -N MONSTER_ZONE_26\niptables -A MONSTER_ZONE_26 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_26 -p tcp --dport 20026 -j ACCEPT\niptables -A MONSTER_ZONE_26 -m limit --limit 41/sec -j ACCEPT\niptables -A MONSTER_ZONE_26 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 26\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_26_stats, u32, u64);\n\nint trace_zone_26(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_26_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_26_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 41\n    if (*count % 41 == 0) {\n        bpf_trace_printk(\"Zone 26: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=ioctl,fcntl -f -p $PID -o /var/log/monster/zone_26.log",
+    "resource_limits": {
+      "cpu_shares": 4100,
+      "memory_mb": 41984,
+      "disk_iops": 41000,
+      "network_mbps": 410,
+      "file_descriptors": 4100,
+      "processes": 410
+    },
+    "zk_proof": "zk_commit_bc8a0003c63845461fd877b98ca1137b"
+  },
+  {
+    "zone_id": 27,
+    "shard_id": 27,
+    "prime": 47,
+    "selinux_context": "system_u:object_r:monster_zone_27_t:s27",
+    "iptables_chain": "# ZK71 Zone 27 (Prime 47)\niptables -N MONSTER_ZONE_27\niptables -A MONSTER_ZONE_27 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_27 -p tcp --dport 20027 -j ACCEPT\niptables -A MONSTER_ZONE_27 -m limit --limit 47/sec -j ACCEPT\niptables -A MONSTER_ZONE_27 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 27\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_27_stats, u32, u64);\n\nint trace_zone_27(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_27_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_27_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 47\n    if (*count % 47 == 0) {\n        bpf_trace_printk(\"Zone 27: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=stat,fstat -f -p $PID -o /var/log/monster/zone_27.log",
+    "resource_limits": {
+      "cpu_shares": 4700,
+      "memory_mb": 48128,
+      "disk_iops": 47000,
+      "network_mbps": 470,
+      "file_descriptors": 4700,
+      "processes": 470
+    },
+    "zk_proof": "zk_commit_861634f4918fbe741330103645ab709f"
+  },
+  {
+    "zone_id": 28,
+    "shard_id": 28,
+    "prime": 59,
+    "selinux_context": "system_u:object_r:monster_zone_28_t:s28",
+    "iptables_chain": "# ZK71 Zone 28 (Prime 59)\niptables -N MONSTER_ZONE_28\niptables -A MONSTER_ZONE_28 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_28 -p tcp --dport 20028 -j ACCEPT\niptables -A MONSTER_ZONE_28 -m limit --limit 59/sec -j ACCEPT\niptables -A MONSTER_ZONE_28 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 28\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_28_stats, u32, u64);\n\nint trace_zone_28(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_28_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_28_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 59\n    if (*count % 59 == 0) {\n        bpf_trace_printk(\"Zone 28: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=getpid,gettid -f -p $PID -o /var/log/monster/zone_28.log",
+    "resource_limits": {
+      "cpu_shares": 5900,
+      "memory_mb": 60416,
+      "disk_iops": 59000,
+      "network_mbps": 590,
+      "file_descriptors": 5900,
+      "processes": 590
+    },
+    "zk_proof": "zk_commit_1f8df42a170e888dd49eb97029be1693"
+  },
+  {
+    "zone_id": 29,
+    "shard_id": 29,
+    "prime": 71,
+    "selinux_context": "system_u:object_r:monster_zone_29_t:s29",
+    "iptables_chain": "# ZK71 Zone 29 (Prime 71)\niptables -N MONSTER_ZONE_29\niptables -A MONSTER_ZONE_29 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_29 -p tcp --dport 20029 -j ACCEPT\niptables -A MONSTER_ZONE_29 -m limit --limit 71/sec -j ACCEPT\niptables -A MONSTER_ZONE_29 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 29\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_29_stats, u32, u64);\n\nint trace_zone_29(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_29_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_29_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 71\n    if (*count % 71 == 0) {\n        bpf_trace_printk(\"Zone 29: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=all -f -p $PID -o /var/log/monster/zone_29.log",
+    "resource_limits": {
+      "cpu_shares": 7100,
+      "memory_mb": 72704,
+      "disk_iops": 71000,
+      "network_mbps": 710,
+      "file_descriptors": 7100,
+      "processes": 710
+    },
+    "zk_proof": "zk_commit_109561928a7298ec23dd1bda3c62101f"
+  },
+  {
+    "zone_id": 30,
+    "shard_id": 30,
+    "prime": 2,
+    "selinux_context": "system_u:object_r:monster_zone_30_t:s30",
+    "iptables_chain": "# ZK71 Zone 30 (Prime 2)\niptables -N MONSTER_ZONE_30\niptables -A MONSTER_ZONE_30 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_30 -p tcp --dport 20030 -j ACCEPT\niptables -A MONSTER_ZONE_30 -m limit --limit 2/sec -j ACCEPT\niptables -A MONSTER_ZONE_30 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 30\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_30_stats, u32, u64);\n\nint trace_zone_30(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_30_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_30_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 2\n    if (*count % 2 == 0) {\n        bpf_trace_printk(\"Zone 30: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read,write -f -p $PID -o /var/log/monster/zone_30.log",
+    "resource_limits": {
+      "cpu_shares": 200,
+      "memory_mb": 2048,
+      "disk_iops": 2000,
+      "network_mbps": 20,
+      "file_descriptors": 200,
+      "processes": 20
+    },
+    "zk_proof": "zk_commit_0a522086830e47eab630ea3cc09c5e54"
+  },
+  {
+    "zone_id": 31,
+    "shard_id": 31,
+    "prime": 3,
+    "selinux_context": "system_u:object_r:monster_zone_31_t:s31",
+    "iptables_chain": "# ZK71 Zone 31 (Prime 3)\niptables -N MONSTER_ZONE_31\niptables -A MONSTER_ZONE_31 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_31 -p tcp --dport 20031 -j ACCEPT\niptables -A MONSTER_ZONE_31 -m limit --limit 3/sec -j ACCEPT\niptables -A MONSTER_ZONE_31 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 31\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_31_stats, u32, u64);\n\nint trace_zone_31(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_31_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_31_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 3\n    if (*count % 3 == 0) {\n        bpf_trace_printk(\"Zone 31: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read -f -p $PID -o /var/log/monster/zone_31.log",
+    "resource_limits": {
+      "cpu_shares": 300,
+      "memory_mb": 3072,
+      "disk_iops": 3000,
+      "network_mbps": 30,
+      "file_descriptors": 300,
+      "processes": 30
+    },
+    "zk_proof": "zk_commit_5275499693e1d16a0b867402c658dde6"
+  },
+  {
+    "zone_id": 32,
+    "shard_id": 32,
+    "prime": 5,
+    "selinux_context": "system_u:object_r:monster_zone_32_t:s32",
+    "iptables_chain": "# ZK71 Zone 32 (Prime 5)\niptables -N MONSTER_ZONE_32\niptables -A MONSTER_ZONE_32 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_32 -p tcp --dport 20032 -j ACCEPT\niptables -A MONSTER_ZONE_32 -m limit --limit 5/sec -j ACCEPT\niptables -A MONSTER_ZONE_32 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 32\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_32_stats, u32, u64);\n\nint trace_zone_32(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_32_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_32_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 5\n    if (*count % 5 == 0) {\n        bpf_trace_printk(\"Zone 32: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write,mmap -f -p $PID -o /var/log/monster/zone_32.log",
+    "resource_limits": {
+      "cpu_shares": 500,
+      "memory_mb": 5120,
+      "disk_iops": 5000,
+      "network_mbps": 50,
+      "file_descriptors": 500,
+      "processes": 50
+    },
+    "zk_proof": "zk_commit_64ddf3df2c665160337c9a290610f8e5"
+  },
+  {
+    "zone_id": 33,
+    "shard_id": 33,
+    "prime": 7,
+    "selinux_context": "system_u:object_r:monster_zone_33_t:s33",
+    "iptables_chain": "# ZK71 Zone 33 (Prime 7)\niptables -N MONSTER_ZONE_33\niptables -A MONSTER_ZONE_33 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_33 -p tcp --dport 20033 -j ACCEPT\niptables -A MONSTER_ZONE_33 -m limit --limit 7/sec -j ACCEPT\niptables -A MONSTER_ZONE_33 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 33\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_33_stats, u32, u64);\n\nint trace_zone_33(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_33_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_33_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 7\n    if (*count % 7 == 0) {\n        bpf_trace_printk(\"Zone 33: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write -f -p $PID -o /var/log/monster/zone_33.log",
+    "resource_limits": {
+      "cpu_shares": 700,
+      "memory_mb": 7168,
+      "disk_iops": 7000,
+      "network_mbps": 70,
+      "file_descriptors": 700,
+      "processes": 70
+    },
+    "zk_proof": "zk_commit_148048e73ee743f256937a24ffc3ef17"
+  },
+  {
+    "zone_id": 34,
+    "shard_id": 34,
+    "prime": 11,
+    "selinux_context": "system_u:object_r:monster_zone_34_t:s34",
+    "iptables_chain": "# ZK71 Zone 34 (Prime 11)\niptables -N MONSTER_ZONE_34\niptables -A MONSTER_ZONE_34 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_34 -p tcp --dport 20034 -j ACCEPT\niptables -A MONSTER_ZONE_34 -m limit --limit 11/sec -j ACCEPT\niptables -A MONSTER_ZONE_34 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 34\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_34_stats, u32, u64);\n\nint trace_zone_34(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_34_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_34_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 11\n    if (*count % 11 == 0) {\n        bpf_trace_printk(\"Zone 34: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close -f -p $PID -o /var/log/monster/zone_34.log",
+    "resource_limits": {
+      "cpu_shares": 1100,
+      "memory_mb": 11264,
+      "disk_iops": 11000,
+      "network_mbps": 110,
+      "file_descriptors": 1100,
+      "processes": 110
+    },
+    "zk_proof": "zk_commit_84e07e26916903038015f3094e2d4665"
+  },
+  {
+    "zone_id": 35,
+    "shard_id": 35,
+    "prime": 13,
+    "selinux_context": "system_u:object_r:monster_zone_35_t:s35",
+    "iptables_chain": "# ZK71 Zone 35 (Prime 13)\niptables -N MONSTER_ZONE_35\niptables -A MONSTER_ZONE_35 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_35 -p tcp --dport 20035 -j ACCEPT\niptables -A MONSTER_ZONE_35 -m limit --limit 13/sec -j ACCEPT\niptables -A MONSTER_ZONE_35 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 35\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_35_stats, u32, u64);\n\nint trace_zone_35(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_35_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_35_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 13\n    if (*count % 13 == 0) {\n        bpf_trace_printk(\"Zone 35: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=mmap,munmap -f -p $PID -o /var/log/monster/zone_35.log",
+    "resource_limits": {
+      "cpu_shares": 1300,
+      "memory_mb": 13312,
+      "disk_iops": 13000,
+      "network_mbps": 130,
+      "file_descriptors": 1300,
+      "processes": 130
+    },
+    "zk_proof": "zk_commit_cbad215d9815330351b1632e4420a56c"
+  },
+  {
+    "zone_id": 36,
+    "shard_id": 36,
+    "prime": 17,
+    "selinux_context": "system_u:object_r:monster_zone_36_t:s36",
+    "iptables_chain": "# ZK71 Zone 36 (Prime 17)\niptables -N MONSTER_ZONE_36\niptables -A MONSTER_ZONE_36 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_36 -p tcp --dport 20036 -j ACCEPT\niptables -A MONSTER_ZONE_36 -m limit --limit 17/sec -j ACCEPT\niptables -A MONSTER_ZONE_36 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 36\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_36_stats, u32, u64);\n\nint trace_zone_36(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_36_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_36_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 17\n    if (*count % 17 == 0) {\n        bpf_trace_printk(\"Zone 36: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,bind,listen -f -p $PID -o /var/log/monster/zone_36.log",
+    "resource_limits": {
+      "cpu_shares": 1700,
+      "memory_mb": 17408,
+      "disk_iops": 17000,
+      "network_mbps": 170,
+      "file_descriptors": 1700,
+      "processes": 170
+    },
+    "zk_proof": "zk_commit_a6d7bfbca428ead7b078a96e5764e661"
+  },
+  {
+    "zone_id": 37,
+    "shard_id": 37,
+    "prime": 19,
+    "selinux_context": "system_u:object_r:monster_zone_37_t:s37",
+    "iptables_chain": "# ZK71 Zone 37 (Prime 19)\niptables -N MONSTER_ZONE_37\niptables -A MONSTER_ZONE_37 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_37 -p tcp --dport 20037 -j ACCEPT\niptables -A MONSTER_ZONE_37 -m limit --limit 19/sec -j ACCEPT\niptables -A MONSTER_ZONE_37 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 37\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_37_stats, u32, u64);\n\nint trace_zone_37(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_37_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_37_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 19\n    if (*count % 19 == 0) {\n        bpf_trace_printk(\"Zone 37: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,connect -f -p $PID -o /var/log/monster/zone_37.log",
+    "resource_limits": {
+      "cpu_shares": 1900,
+      "memory_mb": 19456,
+      "disk_iops": 19000,
+      "network_mbps": 190,
+      "file_descriptors": 1900,
+      "processes": 190
+    },
+    "zk_proof": "zk_commit_616e4cab27a73d545a2278fac9fb3624"
+  },
+  {
+    "zone_id": 38,
+    "shard_id": 38,
+    "prime": 23,
+    "selinux_context": "system_u:object_r:monster_zone_38_t:s38",
+    "iptables_chain": "# ZK71 Zone 38 (Prime 23)\niptables -N MONSTER_ZONE_38\niptables -A MONSTER_ZONE_38 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_38 -p tcp --dport 20038 -j ACCEPT\niptables -A MONSTER_ZONE_38 -m limit --limit 23/sec -j ACCEPT\niptables -A MONSTER_ZONE_38 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 38\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_38_stats, u32, u64);\n\nint trace_zone_38(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_38_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_38_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 23\n    if (*count % 23 == 0) {\n        bpf_trace_printk(\"Zone 38: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=fork,exec -f -p $PID -o /var/log/monster/zone_38.log",
+    "resource_limits": {
+      "cpu_shares": 2300,
+      "memory_mb": 23552,
+      "disk_iops": 23000,
+      "network_mbps": 230,
+      "file_descriptors": 2300,
+      "processes": 230
+    },
+    "zk_proof": "zk_commit_f0fc457ea03c79ed983a44fc6d7cf5ad"
+  },
+  {
+    "zone_id": 39,
+    "shard_id": 39,
+    "prime": 29,
+    "selinux_context": "system_u:object_r:monster_zone_39_t:s39",
+    "iptables_chain": "# ZK71 Zone 39 (Prime 29)\niptables -N MONSTER_ZONE_39\niptables -A MONSTER_ZONE_39 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_39 -p tcp --dport 20039 -j ACCEPT\niptables -A MONSTER_ZONE_39 -m limit --limit 29/sec -j ACCEPT\niptables -A MONSTER_ZONE_39 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 39\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_39_stats, u32, u64);\n\nint trace_zone_39(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_39_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_39_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 29\n    if (*count % 29 == 0) {\n        bpf_trace_printk(\"Zone 39: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=clone,wait -f -p $PID -o /var/log/monster/zone_39.log",
+    "resource_limits": {
+      "cpu_shares": 2900,
+      "memory_mb": 29696,
+      "disk_iops": 29000,
+      "network_mbps": 290,
+      "file_descriptors": 2900,
+      "processes": 290
+    },
+    "zk_proof": "zk_commit_076e011dbf556f08b0bb5bc2b1b85a7e"
+  },
+  {
+    "zone_id": 40,
+    "shard_id": 40,
+    "prime": 31,
+    "selinux_context": "system_u:object_r:monster_zone_40_t:s40",
+    "iptables_chain": "# ZK71 Zone 40 (Prime 31)\niptables -N MONSTER_ZONE_40\niptables -A MONSTER_ZONE_40 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_40 -p tcp --dport 20040 -j ACCEPT\niptables -A MONSTER_ZONE_40 -m limit --limit 31/sec -j ACCEPT\niptables -A MONSTER_ZONE_40 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 40\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_40_stats, u32, u64);\n\nint trace_zone_40(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_40_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_40_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 31\n    if (*count % 31 == 0) {\n        bpf_trace_printk(\"Zone 40: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=signal,kill -f -p $PID -o /var/log/monster/zone_40.log",
+    "resource_limits": {
+      "cpu_shares": 3100,
+      "memory_mb": 31744,
+      "disk_iops": 31000,
+      "network_mbps": 310,
+      "file_descriptors": 3100,
+      "processes": 310
+    },
+    "zk_proof": "zk_commit_ddb733bccb2cb194060bdc33a8e8d472"
+  },
+  {
+    "zone_id": 41,
+    "shard_id": 41,
+    "prime": 41,
+    "selinux_context": "system_u:object_r:monster_zone_41_t:s41",
+    "iptables_chain": "# ZK71 Zone 41 (Prime 41)\niptables -N MONSTER_ZONE_41\niptables -A MONSTER_ZONE_41 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_41 -p tcp --dport 20041 -j ACCEPT\niptables -A MONSTER_ZONE_41 -m limit --limit 41/sec -j ACCEPT\niptables -A MONSTER_ZONE_41 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 41\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_41_stats, u32, u64);\n\nint trace_zone_41(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_41_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_41_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 41\n    if (*count % 41 == 0) {\n        bpf_trace_printk(\"Zone 41: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=ioctl,fcntl -f -p $PID -o /var/log/monster/zone_41.log",
+    "resource_limits": {
+      "cpu_shares": 4100,
+      "memory_mb": 41984,
+      "disk_iops": 41000,
+      "network_mbps": 410,
+      "file_descriptors": 4100,
+      "processes": 410
+    },
+    "zk_proof": "zk_commit_baebfaa0267a187df443c35a2bb74050"
+  },
+  {
+    "zone_id": 42,
+    "shard_id": 42,
+    "prime": 47,
+    "selinux_context": "system_u:object_r:monster_zone_42_t:s42",
+    "iptables_chain": "# ZK71 Zone 42 (Prime 47)\niptables -N MONSTER_ZONE_42\niptables -A MONSTER_ZONE_42 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_42 -p tcp --dport 20042 -j ACCEPT\niptables -A MONSTER_ZONE_42 -m limit --limit 47/sec -j ACCEPT\niptables -A MONSTER_ZONE_42 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 42\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_42_stats, u32, u64);\n\nint trace_zone_42(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_42_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_42_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 47\n    if (*count % 47 == 0) {\n        bpf_trace_printk(\"Zone 42: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=stat,fstat -f -p $PID -o /var/log/monster/zone_42.log",
+    "resource_limits": {
+      "cpu_shares": 4700,
+      "memory_mb": 48128,
+      "disk_iops": 47000,
+      "network_mbps": 470,
+      "file_descriptors": 4700,
+      "processes": 470
+    },
+    "zk_proof": "zk_commit_cb69c5e89b139010b9a42daf6219d541"
+  },
+  {
+    "zone_id": 43,
+    "shard_id": 43,
+    "prime": 59,
+    "selinux_context": "system_u:object_r:monster_zone_43_t:s43",
+    "iptables_chain": "# ZK71 Zone 43 (Prime 59)\niptables -N MONSTER_ZONE_43\niptables -A MONSTER_ZONE_43 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_43 -p tcp --dport 20043 -j ACCEPT\niptables -A MONSTER_ZONE_43 -m limit --limit 59/sec -j ACCEPT\niptables -A MONSTER_ZONE_43 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 43\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_43_stats, u32, u64);\n\nint trace_zone_43(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_43_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_43_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 59\n    if (*count % 59 == 0) {\n        bpf_trace_printk(\"Zone 43: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=getpid,gettid -f -p $PID -o /var/log/monster/zone_43.log",
+    "resource_limits": {
+      "cpu_shares": 5900,
+      "memory_mb": 60416,
+      "disk_iops": 59000,
+      "network_mbps": 590,
+      "file_descriptors": 5900,
+      "processes": 590
+    },
+    "zk_proof": "zk_commit_1e0fdc12fc5fe2e9f8eb8f919ef9b220"
+  },
+  {
+    "zone_id": 44,
+    "shard_id": 44,
+    "prime": 71,
+    "selinux_context": "system_u:object_r:monster_zone_44_t:s44",
+    "iptables_chain": "# ZK71 Zone 44 (Prime 71)\niptables -N MONSTER_ZONE_44\niptables -A MONSTER_ZONE_44 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_44 -p tcp --dport 20044 -j ACCEPT\niptables -A MONSTER_ZONE_44 -m limit --limit 71/sec -j ACCEPT\niptables -A MONSTER_ZONE_44 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 44\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_44_stats, u32, u64);\n\nint trace_zone_44(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_44_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_44_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 71\n    if (*count % 71 == 0) {\n        bpf_trace_printk(\"Zone 44: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=all -f -p $PID -o /var/log/monster/zone_44.log",
+    "resource_limits": {
+      "cpu_shares": 7100,
+      "memory_mb": 72704,
+      "disk_iops": 71000,
+      "network_mbps": 710,
+      "file_descriptors": 7100,
+      "processes": 710
+    },
+    "zk_proof": "zk_commit_fc95e9c639fb976ec43f7c7a9a8dd78d"
+  },
+  {
+    "zone_id": 45,
+    "shard_id": 45,
+    "prime": 2,
+    "selinux_context": "system_u:object_r:monster_zone_45_t:s45",
+    "iptables_chain": "# ZK71 Zone 45 (Prime 2)\niptables -N MONSTER_ZONE_45\niptables -A MONSTER_ZONE_45 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_45 -p tcp --dport 20045 -j ACCEPT\niptables -A MONSTER_ZONE_45 -m limit --limit 2/sec -j ACCEPT\niptables -A MONSTER_ZONE_45 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 45\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_45_stats, u32, u64);\n\nint trace_zone_45(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_45_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_45_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 2\n    if (*count % 2 == 0) {\n        bpf_trace_printk(\"Zone 45: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read,write -f -p $PID -o /var/log/monster/zone_45.log",
+    "resource_limits": {
+      "cpu_shares": 200,
+      "memory_mb": 2048,
+      "disk_iops": 2000,
+      "network_mbps": 20,
+      "file_descriptors": 200,
+      "processes": 20
+    },
+    "zk_proof": "zk_commit_e6136454b4d747df61cbf4c62b1cacb5"
+  },
+  {
+    "zone_id": 46,
+    "shard_id": 46,
+    "prime": 3,
+    "selinux_context": "system_u:object_r:monster_zone_46_t:s46",
+    "iptables_chain": "# ZK71 Zone 46 (Prime 3)\niptables -N MONSTER_ZONE_46\niptables -A MONSTER_ZONE_46 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_46 -p tcp --dport 20046 -j ACCEPT\niptables -A MONSTER_ZONE_46 -m limit --limit 3/sec -j ACCEPT\niptables -A MONSTER_ZONE_46 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 46\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_46_stats, u32, u64);\n\nint trace_zone_46(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_46_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_46_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 3\n    if (*count % 3 == 0) {\n        bpf_trace_printk(\"Zone 46: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read -f -p $PID -o /var/log/monster/zone_46.log",
+    "resource_limits": {
+      "cpu_shares": 300,
+      "memory_mb": 3072,
+      "disk_iops": 3000,
+      "network_mbps": 30,
+      "file_descriptors": 300,
+      "processes": 30
+    },
+    "zk_proof": "zk_commit_b5894ce5d1e7ffd9fd6a46b99b910159"
+  },
+  {
+    "zone_id": 47,
+    "shard_id": 47,
+    "prime": 5,
+    "selinux_context": "system_u:object_r:monster_zone_47_t:s47",
+    "iptables_chain": "# ZK71 Zone 47 (Prime 5)\niptables -N MONSTER_ZONE_47\niptables -A MONSTER_ZONE_47 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_47 -p tcp --dport 20047 -j ACCEPT\niptables -A MONSTER_ZONE_47 -m limit --limit 5/sec -j ACCEPT\niptables -A MONSTER_ZONE_47 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 47\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_47_stats, u32, u64);\n\nint trace_zone_47(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_47_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_47_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 5\n    if (*count % 5 == 0) {\n        bpf_trace_printk(\"Zone 47: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write,mmap -f -p $PID -o /var/log/monster/zone_47.log",
+    "resource_limits": {
+      "cpu_shares": 500,
+      "memory_mb": 5120,
+      "disk_iops": 5000,
+      "network_mbps": 50,
+      "file_descriptors": 500,
+      "processes": 50
+    },
+    "zk_proof": "zk_commit_0d7473cdffb36c04084b5a53ebf459e2"
+  },
+  {
+    "zone_id": 48,
+    "shard_id": 48,
+    "prime": 7,
+    "selinux_context": "system_u:object_r:monster_zone_48_t:s48",
+    "iptables_chain": "# ZK71 Zone 48 (Prime 7)\niptables -N MONSTER_ZONE_48\niptables -A MONSTER_ZONE_48 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_48 -p tcp --dport 20048 -j ACCEPT\niptables -A MONSTER_ZONE_48 -m limit --limit 7/sec -j ACCEPT\niptables -A MONSTER_ZONE_48 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 48\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_48_stats, u32, u64);\n\nint trace_zone_48(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_48_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_48_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 7\n    if (*count % 7 == 0) {\n        bpf_trace_printk(\"Zone 48: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write -f -p $PID -o /var/log/monster/zone_48.log",
+    "resource_limits": {
+      "cpu_shares": 700,
+      "memory_mb": 7168,
+      "disk_iops": 7000,
+      "network_mbps": 70,
+      "file_descriptors": 700,
+      "processes": 70
+    },
+    "zk_proof": "zk_commit_fa15e8415792bacf03c6e8a888fb50e3"
+  },
+  {
+    "zone_id": 49,
+    "shard_id": 49,
+    "prime": 11,
+    "selinux_context": "system_u:object_r:monster_zone_49_t:s49",
+    "iptables_chain": "# ZK71 Zone 49 (Prime 11)\niptables -N MONSTER_ZONE_49\niptables -A MONSTER_ZONE_49 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_49 -p tcp --dport 20049 -j ACCEPT\niptables -A MONSTER_ZONE_49 -m limit --limit 11/sec -j ACCEPT\niptables -A MONSTER_ZONE_49 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 49\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_49_stats, u32, u64);\n\nint trace_zone_49(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_49_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_49_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 11\n    if (*count % 11 == 0) {\n        bpf_trace_printk(\"Zone 49: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close -f -p $PID -o /var/log/monster/zone_49.log",
+    "resource_limits": {
+      "cpu_shares": 1100,
+      "memory_mb": 11264,
+      "disk_iops": 11000,
+      "network_mbps": 110,
+      "file_descriptors": 1100,
+      "processes": 110
+    },
+    "zk_proof": "zk_commit_7baed35090888465f6fc1178b79fbf3c"
+  },
+  {
+    "zone_id": 50,
+    "shard_id": 50,
+    "prime": 13,
+    "selinux_context": "system_u:object_r:monster_zone_50_t:s50",
+    "iptables_chain": "# ZK71 Zone 50 (Prime 13)\niptables -N MONSTER_ZONE_50\niptables -A MONSTER_ZONE_50 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_50 -p tcp --dport 20050 -j ACCEPT\niptables -A MONSTER_ZONE_50 -m limit --limit 13/sec -j ACCEPT\niptables -A MONSTER_ZONE_50 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 50\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_50_stats, u32, u64);\n\nint trace_zone_50(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_50_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_50_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 13\n    if (*count % 13 == 0) {\n        bpf_trace_printk(\"Zone 50: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=mmap,munmap -f -p $PID -o /var/log/monster/zone_50.log",
+    "resource_limits": {
+      "cpu_shares": 1300,
+      "memory_mb": 13312,
+      "disk_iops": 13000,
+      "network_mbps": 130,
+      "file_descriptors": 1300,
+      "processes": 130
+    },
+    "zk_proof": "zk_commit_229ddfa0624cdeb4d3bc407dec155aed"
+  },
+  {
+    "zone_id": 51,
+    "shard_id": 51,
+    "prime": 17,
+    "selinux_context": "system_u:object_r:monster_zone_51_t:s51",
+    "iptables_chain": "# ZK71 Zone 51 (Prime 17)\niptables -N MONSTER_ZONE_51\niptables -A MONSTER_ZONE_51 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_51 -p tcp --dport 20051 -j ACCEPT\niptables -A MONSTER_ZONE_51 -m limit --limit 17/sec -j ACCEPT\niptables -A MONSTER_ZONE_51 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 51\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_51_stats, u32, u64);\n\nint trace_zone_51(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_51_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_51_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 17\n    if (*count % 17 == 0) {\n        bpf_trace_printk(\"Zone 51: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,bind,listen -f -p $PID -o /var/log/monster/zone_51.log",
+    "resource_limits": {
+      "cpu_shares": 1700,
+      "memory_mb": 17408,
+      "disk_iops": 17000,
+      "network_mbps": 170,
+      "file_descriptors": 1700,
+      "processes": 170
+    },
+    "zk_proof": "zk_commit_6bfb03f7a57508e4daae9333d70081a6"
+  },
+  {
+    "zone_id": 52,
+    "shard_id": 52,
+    "prime": 19,
+    "selinux_context": "system_u:object_r:monster_zone_52_t:s52",
+    "iptables_chain": "# ZK71 Zone 52 (Prime 19)\niptables -N MONSTER_ZONE_52\niptables -A MONSTER_ZONE_52 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_52 -p tcp --dport 20052 -j ACCEPT\niptables -A MONSTER_ZONE_52 -m limit --limit 19/sec -j ACCEPT\niptables -A MONSTER_ZONE_52 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 52\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_52_stats, u32, u64);\n\nint trace_zone_52(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_52_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_52_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 19\n    if (*count % 19 == 0) {\n        bpf_trace_printk(\"Zone 52: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,connect -f -p $PID -o /var/log/monster/zone_52.log",
+    "resource_limits": {
+      "cpu_shares": 1900,
+      "memory_mb": 19456,
+      "disk_iops": 19000,
+      "network_mbps": 190,
+      "file_descriptors": 1900,
+      "processes": 190
+    },
+    "zk_proof": "zk_commit_788899369eb5466770cf850fb8f60259"
+  },
+  {
+    "zone_id": 53,
+    "shard_id": 53,
+    "prime": 23,
+    "selinux_context": "system_u:object_r:monster_zone_53_t:s53",
+    "iptables_chain": "# ZK71 Zone 53 (Prime 23)\niptables -N MONSTER_ZONE_53\niptables -A MONSTER_ZONE_53 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_53 -p tcp --dport 20053 -j ACCEPT\niptables -A MONSTER_ZONE_53 -m limit --limit 23/sec -j ACCEPT\niptables -A MONSTER_ZONE_53 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 53\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_53_stats, u32, u64);\n\nint trace_zone_53(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_53_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_53_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 23\n    if (*count % 23 == 0) {\n        bpf_trace_printk(\"Zone 53: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=fork,exec -f -p $PID -o /var/log/monster/zone_53.log",
+    "resource_limits": {
+      "cpu_shares": 2300,
+      "memory_mb": 23552,
+      "disk_iops": 23000,
+      "network_mbps": 230,
+      "file_descriptors": 2300,
+      "processes": 230
+    },
+    "zk_proof": "zk_commit_17e0df7893a2b19c3e3af37882f97877"
+  },
+  {
+    "zone_id": 54,
+    "shard_id": 54,
+    "prime": 29,
+    "selinux_context": "system_u:object_r:monster_zone_54_t:s54",
+    "iptables_chain": "# ZK71 Zone 54 (Prime 29)\niptables -N MONSTER_ZONE_54\niptables -A MONSTER_ZONE_54 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_54 -p tcp --dport 20054 -j ACCEPT\niptables -A MONSTER_ZONE_54 -m limit --limit 29/sec -j ACCEPT\niptables -A MONSTER_ZONE_54 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 54\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_54_stats, u32, u64);\n\nint trace_zone_54(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_54_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_54_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 29\n    if (*count % 29 == 0) {\n        bpf_trace_printk(\"Zone 54: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=clone,wait -f -p $PID -o /var/log/monster/zone_54.log",
+    "resource_limits": {
+      "cpu_shares": 2900,
+      "memory_mb": 29696,
+      "disk_iops": 29000,
+      "network_mbps": 290,
+      "file_descriptors": 2900,
+      "processes": 290
+    },
+    "zk_proof": "zk_commit_42381ac7e1489519ed509dddfe95770d"
+  },
+  {
+    "zone_id": 55,
+    "shard_id": 55,
+    "prime": 31,
+    "selinux_context": "system_u:object_r:monster_zone_55_t:s55",
+    "iptables_chain": "# ZK71 Zone 55 (Prime 31)\niptables -N MONSTER_ZONE_55\niptables -A MONSTER_ZONE_55 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_55 -p tcp --dport 20055 -j ACCEPT\niptables -A MONSTER_ZONE_55 -m limit --limit 31/sec -j ACCEPT\niptables -A MONSTER_ZONE_55 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 55\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_55_stats, u32, u64);\n\nint trace_zone_55(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_55_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_55_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 31\n    if (*count % 31 == 0) {\n        bpf_trace_printk(\"Zone 55: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=signal,kill -f -p $PID -o /var/log/monster/zone_55.log",
+    "resource_limits": {
+      "cpu_shares": 3100,
+      "memory_mb": 31744,
+      "disk_iops": 31000,
+      "network_mbps": 310,
+      "file_descriptors": 3100,
+      "processes": 310
+    },
+    "zk_proof": "zk_commit_ffc47b6db8b9a9a2f1c4c8b5269036bf"
+  },
+  {
+    "zone_id": 56,
+    "shard_id": 56,
+    "prime": 41,
+    "selinux_context": "system_u:object_r:monster_zone_56_t:s56",
+    "iptables_chain": "# ZK71 Zone 56 (Prime 41)\niptables -N MONSTER_ZONE_56\niptables -A MONSTER_ZONE_56 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_56 -p tcp --dport 20056 -j ACCEPT\niptables -A MONSTER_ZONE_56 -m limit --limit 41/sec -j ACCEPT\niptables -A MONSTER_ZONE_56 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 56\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_56_stats, u32, u64);\n\nint trace_zone_56(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_56_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_56_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 41\n    if (*count % 41 == 0) {\n        bpf_trace_printk(\"Zone 56: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=ioctl,fcntl -f -p $PID -o /var/log/monster/zone_56.log",
+    "resource_limits": {
+      "cpu_shares": 4100,
+      "memory_mb": 41984,
+      "disk_iops": 41000,
+      "network_mbps": 410,
+      "file_descriptors": 4100,
+      "processes": 410
+    },
+    "zk_proof": "zk_commit_25a95ee64f343b6ccfe6f02dd98389b6"
+  },
+  {
+    "zone_id": 57,
+    "shard_id": 57,
+    "prime": 47,
+    "selinux_context": "system_u:object_r:monster_zone_57_t:s57",
+    "iptables_chain": "# ZK71 Zone 57 (Prime 47)\niptables -N MONSTER_ZONE_57\niptables -A MONSTER_ZONE_57 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_57 -p tcp --dport 20057 -j ACCEPT\niptables -A MONSTER_ZONE_57 -m limit --limit 47/sec -j ACCEPT\niptables -A MONSTER_ZONE_57 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 57\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_57_stats, u32, u64);\n\nint trace_zone_57(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_57_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_57_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 47\n    if (*count % 47 == 0) {\n        bpf_trace_printk(\"Zone 57: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=stat,fstat -f -p $PID -o /var/log/monster/zone_57.log",
+    "resource_limits": {
+      "cpu_shares": 4700,
+      "memory_mb": 48128,
+      "disk_iops": 47000,
+      "network_mbps": 470,
+      "file_descriptors": 4700,
+      "processes": 470
+    },
+    "zk_proof": "zk_commit_c129dc78386e645f95a40f947724ed4c"
+  },
+  {
+    "zone_id": 58,
+    "shard_id": 58,
+    "prime": 59,
+    "selinux_context": "system_u:object_r:monster_zone_58_t:s58",
+    "iptables_chain": "# ZK71 Zone 58 (Prime 59)\niptables -N MONSTER_ZONE_58\niptables -A MONSTER_ZONE_58 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_58 -p tcp --dport 20058 -j ACCEPT\niptables -A MONSTER_ZONE_58 -m limit --limit 59/sec -j ACCEPT\niptables -A MONSTER_ZONE_58 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 58\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_58_stats, u32, u64);\n\nint trace_zone_58(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_58_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_58_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 59\n    if (*count % 59 == 0) {\n        bpf_trace_printk(\"Zone 58: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=getpid,gettid -f -p $PID -o /var/log/monster/zone_58.log",
+    "resource_limits": {
+      "cpu_shares": 5900,
+      "memory_mb": 60416,
+      "disk_iops": 59000,
+      "network_mbps": 590,
+      "file_descriptors": 5900,
+      "processes": 590
+    },
+    "zk_proof": "zk_commit_12fb442a555ec8390ea0bcdc2e79c4dc"
+  },
+  {
+    "zone_id": 59,
+    "shard_id": 59,
+    "prime": 71,
+    "selinux_context": "system_u:object_r:monster_zone_59_t:s59",
+    "iptables_chain": "# ZK71 Zone 59 (Prime 71)\niptables -N MONSTER_ZONE_59\niptables -A MONSTER_ZONE_59 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_59 -p tcp --dport 20059 -j ACCEPT\niptables -A MONSTER_ZONE_59 -m limit --limit 71/sec -j ACCEPT\niptables -A MONSTER_ZONE_59 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 59\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_59_stats, u32, u64);\n\nint trace_zone_59(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_59_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_59_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 71\n    if (*count % 71 == 0) {\n        bpf_trace_printk(\"Zone 59: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=all -f -p $PID -o /var/log/monster/zone_59.log",
+    "resource_limits": {
+      "cpu_shares": 7100,
+      "memory_mb": 72704,
+      "disk_iops": 71000,
+      "network_mbps": 710,
+      "file_descriptors": 7100,
+      "processes": 710
+    },
+    "zk_proof": "zk_commit_ba00fa441f0cebd41f5930bb8e0e06ec"
+  },
+  {
+    "zone_id": 60,
+    "shard_id": 60,
+    "prime": 2,
+    "selinux_context": "system_u:object_r:monster_zone_60_t:s60",
+    "iptables_chain": "# ZK71 Zone 60 (Prime 2)\niptables -N MONSTER_ZONE_60\niptables -A MONSTER_ZONE_60 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_60 -p tcp --dport 20060 -j ACCEPT\niptables -A MONSTER_ZONE_60 -m limit --limit 2/sec -j ACCEPT\niptables -A MONSTER_ZONE_60 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 60\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_60_stats, u32, u64);\n\nint trace_zone_60(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_60_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_60_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 2\n    if (*count % 2 == 0) {\n        bpf_trace_printk(\"Zone 60: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read,write -f -p $PID -o /var/log/monster/zone_60.log",
+    "resource_limits": {
+      "cpu_shares": 200,
+      "memory_mb": 2048,
+      "disk_iops": 2000,
+      "network_mbps": 20,
+      "file_descriptors": 200,
+      "processes": 20
+    },
+    "zk_proof": "zk_commit_b02690f8c2f9caf1ed3c11c819e3eebe"
+  },
+  {
+    "zone_id": 61,
+    "shard_id": 61,
+    "prime": 3,
+    "selinux_context": "system_u:object_r:monster_zone_61_t:s61",
+    "iptables_chain": "# ZK71 Zone 61 (Prime 3)\niptables -N MONSTER_ZONE_61\niptables -A MONSTER_ZONE_61 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_61 -p tcp --dport 20061 -j ACCEPT\niptables -A MONSTER_ZONE_61 -m limit --limit 3/sec -j ACCEPT\niptables -A MONSTER_ZONE_61 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 61\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_61_stats, u32, u64);\n\nint trace_zone_61(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_61_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_61_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 3\n    if (*count % 3 == 0) {\n        bpf_trace_printk(\"Zone 61: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close,read -f -p $PID -o /var/log/monster/zone_61.log",
+    "resource_limits": {
+      "cpu_shares": 300,
+      "memory_mb": 3072,
+      "disk_iops": 3000,
+      "network_mbps": 30,
+      "file_descriptors": 300,
+      "processes": 30
+    },
+    "zk_proof": "zk_commit_74b8a5481a271b1eb7b17d1eb5b60d3e"
+  },
+  {
+    "zone_id": 62,
+    "shard_id": 62,
+    "prime": 5,
+    "selinux_context": "system_u:object_r:monster_zone_62_t:s62",
+    "iptables_chain": "# ZK71 Zone 62 (Prime 5)\niptables -N MONSTER_ZONE_62\niptables -A MONSTER_ZONE_62 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_62 -p tcp --dport 20062 -j ACCEPT\niptables -A MONSTER_ZONE_62 -m limit --limit 5/sec -j ACCEPT\niptables -A MONSTER_ZONE_62 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 62\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_62_stats, u32, u64);\n\nint trace_zone_62(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_62_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_62_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 5\n    if (*count % 5 == 0) {\n        bpf_trace_printk(\"Zone 62: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write,mmap -f -p $PID -o /var/log/monster/zone_62.log",
+    "resource_limits": {
+      "cpu_shares": 500,
+      "memory_mb": 5120,
+      "disk_iops": 5000,
+      "network_mbps": 50,
+      "file_descriptors": 500,
+      "processes": 50
+    },
+    "zk_proof": "zk_commit_7c9b11a0a26cbfc2da039758c961a542"
+  },
+  {
+    "zone_id": 63,
+    "shard_id": 63,
+    "prime": 7,
+    "selinux_context": "system_u:object_r:monster_zone_63_t:s63",
+    "iptables_chain": "# ZK71 Zone 63 (Prime 7)\niptables -N MONSTER_ZONE_63\niptables -A MONSTER_ZONE_63 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_63 -p tcp --dport 20063 -j ACCEPT\niptables -A MONSTER_ZONE_63 -m limit --limit 7/sec -j ACCEPT\niptables -A MONSTER_ZONE_63 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 63\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_63_stats, u32, u64);\n\nint trace_zone_63(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_63_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_63_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 7\n    if (*count % 7 == 0) {\n        bpf_trace_printk(\"Zone 63: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=read,write -f -p $PID -o /var/log/monster/zone_63.log",
+    "resource_limits": {
+      "cpu_shares": 700,
+      "memory_mb": 7168,
+      "disk_iops": 7000,
+      "network_mbps": 70,
+      "file_descriptors": 700,
+      "processes": 70
+    },
+    "zk_proof": "zk_commit_8a3a2efd206641d2af73c35fdb8cf13d"
+  },
+  {
+    "zone_id": 64,
+    "shard_id": 64,
+    "prime": 11,
+    "selinux_context": "system_u:object_r:monster_zone_64_t:s64",
+    "iptables_chain": "# ZK71 Zone 64 (Prime 11)\niptables -N MONSTER_ZONE_64\niptables -A MONSTER_ZONE_64 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_64 -p tcp --dport 20064 -j ACCEPT\niptables -A MONSTER_ZONE_64 -m limit --limit 11/sec -j ACCEPT\niptables -A MONSTER_ZONE_64 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 64\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_64_stats, u32, u64);\n\nint trace_zone_64(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_64_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_64_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 11\n    if (*count % 11 == 0) {\n        bpf_trace_printk(\"Zone 64: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=open,close -f -p $PID -o /var/log/monster/zone_64.log",
+    "resource_limits": {
+      "cpu_shares": 1100,
+      "memory_mb": 11264,
+      "disk_iops": 11000,
+      "network_mbps": 110,
+      "file_descriptors": 1100,
+      "processes": 110
+    },
+    "zk_proof": "zk_commit_41d55ce36383bf2219972450d260d2a6"
+  },
+  {
+    "zone_id": 65,
+    "shard_id": 65,
+    "prime": 13,
+    "selinux_context": "system_u:object_r:monster_zone_65_t:s65",
+    "iptables_chain": "# ZK71 Zone 65 (Prime 13)\niptables -N MONSTER_ZONE_65\niptables -A MONSTER_ZONE_65 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_65 -p tcp --dport 20065 -j ACCEPT\niptables -A MONSTER_ZONE_65 -m limit --limit 13/sec -j ACCEPT\niptables -A MONSTER_ZONE_65 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 65\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_65_stats, u32, u64);\n\nint trace_zone_65(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_65_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_65_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 13\n    if (*count % 13 == 0) {\n        bpf_trace_printk(\"Zone 65: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=mmap,munmap -f -p $PID -o /var/log/monster/zone_65.log",
+    "resource_limits": {
+      "cpu_shares": 1300,
+      "memory_mb": 13312,
+      "disk_iops": 13000,
+      "network_mbps": 130,
+      "file_descriptors": 1300,
+      "processes": 130
+    },
+    "zk_proof": "zk_commit_ba77885efd804c0e4337134fbef921d7"
+  },
+  {
+    "zone_id": 66,
+    "shard_id": 66,
+    "prime": 17,
+    "selinux_context": "system_u:object_r:monster_zone_66_t:s66",
+    "iptables_chain": "# ZK71 Zone 66 (Prime 17)\niptables -N MONSTER_ZONE_66\niptables -A MONSTER_ZONE_66 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_66 -p tcp --dport 20066 -j ACCEPT\niptables -A MONSTER_ZONE_66 -m limit --limit 17/sec -j ACCEPT\niptables -A MONSTER_ZONE_66 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 66\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_66_stats, u32, u64);\n\nint trace_zone_66(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_66_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_66_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 17\n    if (*count % 17 == 0) {\n        bpf_trace_printk(\"Zone 66: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,bind,listen -f -p $PID -o /var/log/monster/zone_66.log",
+    "resource_limits": {
+      "cpu_shares": 1700,
+      "memory_mb": 17408,
+      "disk_iops": 17000,
+      "network_mbps": 170,
+      "file_descriptors": 1700,
+      "processes": 170
+    },
+    "zk_proof": "zk_commit_fbc7b831f51d5e65f4fe35301a218938"
+  },
+  {
+    "zone_id": 67,
+    "shard_id": 67,
+    "prime": 19,
+    "selinux_context": "system_u:object_r:monster_zone_67_t:s67",
+    "iptables_chain": "# ZK71 Zone 67 (Prime 19)\niptables -N MONSTER_ZONE_67\niptables -A MONSTER_ZONE_67 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_67 -p tcp --dport 20067 -j ACCEPT\niptables -A MONSTER_ZONE_67 -m limit --limit 19/sec -j ACCEPT\niptables -A MONSTER_ZONE_67 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 67\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_67_stats, u32, u64);\n\nint trace_zone_67(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_67_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_67_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 19\n    if (*count % 19 == 0) {\n        bpf_trace_printk(\"Zone 67: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=socket,connect -f -p $PID -o /var/log/monster/zone_67.log",
+    "resource_limits": {
+      "cpu_shares": 1900,
+      "memory_mb": 19456,
+      "disk_iops": 19000,
+      "network_mbps": 190,
+      "file_descriptors": 1900,
+      "processes": 190
+    },
+    "zk_proof": "zk_commit_53a8540bf63a19b772762d509b587cef"
+  },
+  {
+    "zone_id": 68,
+    "shard_id": 68,
+    "prime": 23,
+    "selinux_context": "system_u:object_r:monster_zone_68_t:s68",
+    "iptables_chain": "# ZK71 Zone 68 (Prime 23)\niptables -N MONSTER_ZONE_68\niptables -A MONSTER_ZONE_68 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_68 -p tcp --dport 20068 -j ACCEPT\niptables -A MONSTER_ZONE_68 -m limit --limit 23/sec -j ACCEPT\niptables -A MONSTER_ZONE_68 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 68\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_68_stats, u32, u64);\n\nint trace_zone_68(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_68_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_68_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 23\n    if (*count % 23 == 0) {\n        bpf_trace_printk(\"Zone 68: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=fork,exec -f -p $PID -o /var/log/monster/zone_68.log",
+    "resource_limits": {
+      "cpu_shares": 2300,
+      "memory_mb": 23552,
+      "disk_iops": 23000,
+      "network_mbps": 230,
+      "file_descriptors": 2300,
+      "processes": 230
+    },
+    "zk_proof": "zk_commit_ac366b2c642bbfdb78a7bcf845a1447d"
+  },
+  {
+    "zone_id": 69,
+    "shard_id": 69,
+    "prime": 29,
+    "selinux_context": "system_u:object_r:monster_zone_69_t:s69",
+    "iptables_chain": "# ZK71 Zone 69 (Prime 29)\niptables -N MONSTER_ZONE_69\niptables -A MONSTER_ZONE_69 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_69 -p tcp --dport 20069 -j ACCEPT\niptables -A MONSTER_ZONE_69 -m limit --limit 29/sec -j ACCEPT\niptables -A MONSTER_ZONE_69 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 69\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_69_stats, u32, u64);\n\nint trace_zone_69(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_69_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_69_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 29\n    if (*count % 29 == 0) {\n        bpf_trace_printk(\"Zone 69: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=clone,wait -f -p $PID -o /var/log/monster/zone_69.log",
+    "resource_limits": {
+      "cpu_shares": 2900,
+      "memory_mb": 29696,
+      "disk_iops": 29000,
+      "network_mbps": 290,
+      "file_descriptors": 2900,
+      "processes": 290
+    },
+    "zk_proof": "zk_commit_ea6c3baaa9a08aaffc3ea6b084834c8a"
+  },
+  {
+    "zone_id": 70,
+    "shard_id": 70,
+    "prime": 31,
+    "selinux_context": "system_u:object_r:monster_zone_70_t:s70",
+    "iptables_chain": "# ZK71 Zone 70 (Prime 31)\niptables -N MONSTER_ZONE_70\niptables -A MONSTER_ZONE_70 -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A MONSTER_ZONE_70 -p tcp --dport 20070 -j ACCEPT\niptables -A MONSTER_ZONE_70 -m limit --limit 31/sec -j ACCEPT\niptables -A MONSTER_ZONE_70 -j DROP\n",
+    "ebpf_program": "// eBPF program for ZK71 Zone 70\n#include <linux/bpf.h>\n#include <linux/ptrace.h>\n\nBPF_HASH(zone_70_stats, u32, u64);\n\nint trace_zone_70(struct pt_regs *ctx) {\n    u32 pid = bpf_get_current_pid_tgid() >> 32;\n    u64 *count = zone_70_stats.lookup(&pid);\n    \n    if (count) {\n        (*count)++;\n    } else {\n        u64 init = 1;\n        zone_70_stats.update(&pid, &init);\n    }\n    \n    // Rate limit by prime 31\n    if (*count % 31 == 0) {\n        bpf_trace_printk(\"Zone 70: PID %d hit prime boundary\\n\", pid);\n    }\n    \n    return 0;\n}\n",
+    "strace_filter": "strace -e trace=signal,kill -f -p $PID -o /var/log/monster/zone_70.log",
+    "resource_limits": {
+      "cpu_shares": 3100,
+      "memory_mb": 31744,
+      "disk_iops": 31000,
+      "network_mbps": 310,
+      "file_descriptors": 3100,
+      "processes": 310
+    },
+    "zk_proof": "zk_commit_d497f2924b227519e669a358e8881adc"
+  }
+]

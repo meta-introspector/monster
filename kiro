@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Kiro Tool Wrapper - Unified interface for all Monster tools"""
+
+import subprocess
+import sys
+import json
+from pathlib import Path
+from typing import List, Dict, Optional
+
+TOOL_REGISTRY = {
+    # Verification Tools
+    "verify": {
+        "monster-walk": {"bin": "monster_walk_proof", "type": "rust"},
+        "ten-fold": {"bin": "prove_ten_fold", "type": "rust"},
+        "all-proofs": {"bin": "pipelite_verify_monster.py", "type": "python"},
+        "zkperf": {"bin": "zkperf_recorder.py", "type": "python"},
+    },
+    
+    # Neural Network Tools
+    "train": {
+        "autoencoder": {"bin": "monster_autoencoder", "type": "rust"},
+        "monster": {"bin": "train_monster", "type": "rust"},
+        "hecke": {"bin": "hecke_autoencoder", "type": "rust"},
+    },
+    
+    # Data Processing
+    "extract": {
+        "lmfdb": {"bin": "extract_71_objects", "type": "rust"},
+    },
+    
+    "shard": {
+        "lmfdb": {"bin": "shard_lmfdb_by_71", "type": "rust"},
+    },
+    
+    "vectorize": {
+        "parquets": {"bin": "vectorize_all_parquets", "type": "rust"},
+    },
+    
+    # GPU Tools
+    "gpu": {
+        "monster-walk": {"bin": "monster_walk_gpu", "type": "rust"},
+        "cuda-pipeline": {"bin": "cuda_unified_pipeline", "type": "rust"},
+        "hecke": {"bin": "hecke_burn_cuda", "type": "rust"},
+    },
+    
+    # Analysis Tools
+    "analyze": {
+        "harmonics": {"bin": "monster_harmonics", "type": "rust"},
+        "resonance": {"bin": "prime_resonance_hecke", "type": "rust"},
+        "semantic": {"bin": "analyze_semantic_significance", "type": "rust"},
+    },
+    
+    # Review Tools
+    "review": {
+        "multi-level": {"bin": "multi_level_review.py", "type": "python"},
+        "paper": {"bin": "review_paper", "type": "rust"},
+        "pre-commit": {"bin": "pre_commit_review", "type": "rust"},
+    },
+    
+    # Deployment Tools
+    "deploy": {
+        "all": {"bin": "deploy_all", "type": "rust"},
+        "self": {"bin": "self_deploy", "type": "rust"},
+        "archive": {"bin": "archive_deploy", "type": "rust"},
+    },
+}
+
+def run_rust_tool(bin_name: str, args: List[str]) -> int:
+    """Run a Rust binary"""
+    cmd = ["cargo", "run", "--release", "--bin", bin_name, "--"] + args
+    return subprocess.run(cmd).returncode
+
+def run_python_tool(script_name: str, args: List[str]) -> int:
+    """Run a Python script"""
+    cmd = ["python3", script_name] + args
+    return subprocess.run(cmd).returncode
+
+def list_tools():
+    """List all available tools"""
+    print("🔧 Monster Project - Kiro Tool Registry")
+    print("=" * 60)
+    
+    for category, tools in TOOL_REGISTRY.items():
+        print(f"\n{category.upper()}:")
+        for name, info in tools.items():
+            print(f"  {name:20s} ({info['type']:6s}) -> {info['bin']}")
+    
+    print("\n" + "=" * 60)
+    print("Usage: kiro <category> <tool> [args...]")
+    print("Example: kiro verify monster-walk")
+
+def main():
+    if len(sys.argv) < 2:
+        list_tools()
+        return 0
+    
+    if sys.argv[1] in ["--help", "-h", "help"]:
+        list_tools()
+        return 0
+    
+    if sys.argv[1] == "list":
+        list_tools()
+        return 0
+    
+    if len(sys.argv) < 3:
+        print(f"❌ Error: Missing tool name")
+        print(f"Usage: kiro <category> <tool> [args...]")
+        return 1
+    
+    category = sys.argv[1]
+    tool = sys.argv[2]
+    args = sys.argv[3:]
+    
+    if category not in TOOL_REGISTRY:
+        print(f"❌ Error: Unknown category '{category}'")
+        print(f"Available: {', '.join(TOOL_REGISTRY.keys())}")
+        return 1
+    
+    if tool not in TOOL_REGISTRY[category]:
+        print(f"❌ Error: Unknown tool '{tool}' in category '{category}'")
+        print(f"Available: {', '.join(TOOL_REGISTRY[category].keys())}")
+        return 1
+    
+    info = TOOL_REGISTRY[category][tool]
+    print(f"🚀 Running {category}/{tool} ({info['type']})...")
+    
+    if info["type"] == "rust":
+        return run_rust_tool(info["bin"], args)
+    elif info["type"] == "python":
+        return run_python_tool(info["bin"], args)
+    else:
+        print(f"❌ Error: Unknown tool type '{info['type']}'")
+        return 1
+
+if __name__ == "__main__":
+    sys.exit(main())

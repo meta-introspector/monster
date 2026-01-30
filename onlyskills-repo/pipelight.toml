@@ -1,0 +1,58 @@
+[[pipelines]]
+name = "collect_primes"
+description = "Collect prime attributes in chunks with GAP and perf"
+
+[[pipelines.steps]]
+name = "setup"
+commands = [
+  "mkdir -p chunks perf_data results"
+]
+
+[[pipelines.steps]]
+name = "collect_chunk_0"
+commands = [
+  "nix-shell -p gap perf --run './collect_primes_chunked.sh 0 1000'"
+]
+
+[[pipelines.steps]]
+name = "collect_chunk_1"
+commands = [
+  "nix-shell -p gap perf --run './collect_primes_chunked.sh 1000 2000'"
+]
+
+[[pipelines.steps]]
+name = "collect_chunk_2"
+commands = [
+  "nix-shell -p gap perf --run './collect_primes_chunked.sh 2000 3000'"
+]
+
+[[pipelines.steps]]
+name = "merge_chunks"
+commands = [
+  "nix-shell -p cargo rustc --run 'cargo build --release --bin merge_prime_chunks'",
+  "./target/release/merge_prime_chunks"
+]
+
+[[pipelines.steps]]
+name = "upload_artifacts"
+commands = [
+  "cp prime_chunks.parquet results/",
+  "cp -r perf_data results/",
+  "cp -r chunks results/"
+]
+
+[[pipelines]]
+name = "collect_all_primes"
+description = "Collect all primes up to 71^3 in parallel chunks"
+
+[[pipelines.steps]]
+name = "parallel_collect"
+commands = [
+  "nix-shell -p gap perf parallel --run 'seq 0 357 | parallel -j 4 ./collect_primes_chunked.sh {} 1000'"
+]
+
+[[pipelines.steps]]
+name = "merge_all"
+commands = [
+  "cargo run --release --bin merge_prime_chunks"
+]

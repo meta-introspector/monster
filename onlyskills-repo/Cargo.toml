@@ -1,0 +1,84 @@
+[package]
+name = "onlyskills"
+version = "1.0.0"
+edition = "2021"
+
+[[bin]]
+name = "selinux_reflection"
+path = "src/bin/selinux_reflection.rs"
+
+[[bin]]
+name = "mcts_risk_predictor"
+path = "src/bin/mcts_risk_predictor.rs"
+
+[[bin]]
+name = "onlyskills_git_finder"
+path = "src/bin/onlyskills_git_finder.rs"
+
+[[bin]]
+name = "repo_scanner"
+path = "src/bin/repo_scanner.rs"
+
+[[bin]]
+name = "duplicate_detector"
+path = "src/bin/duplicate_detector.rs"
+
+[[bin]]
+name = "prolog_searcher"
+path = "src/bin/prolog_searcher.rs"
+
+[[bin]]
+name = "shared_memory_index"
+path = "src/bin/shared_memory_index.rs"
+
+[[bin]]
+name = "index_git_repos"
+path = "src/bin/index_git_repos.rs"
+
+[[bin]]
+name = "first_bit_index"
+path = "src/bin/first_bit_index.rs"
+
+[[bin]]
+name = "semantic_71_index"
+path = "src/bin/semantic_71_index.rs"
+
+[[bin]]
+name = "monster_15_prime_index"
+path = "src/bin/monster_15_prime_index.rs"
+
+[[bin]]
+name = "topological_sort_bits"
+path = "src/bin/topological_sort_bits.rs"
+
+[[bin]]
+name = "layer1_bitmap"
+path = "src/bin/layer1_bitmap.rs"
+
+[[bin]]
+name = "layer1_to_parquet"
+path = "src/bin/layer1_to_parquet.rs"
+
+[[bin]]
+name = "zkparquet_kernel_server"
+path = "src/bin/zkparquet_kernel_server.rs"
+
+[[bin]]
+name = "zkparquet_userspace_service"
+path = "src/bin/zkparquet_userspace_service.rs"
+
+[[bin]]
+name = "selinux_zone_assignment"
+path = "src/bin/selinux_zone_assignment.rs"
+
+[[bin]]
+name = "topological_genus"
+path = "src/bin/topological_genus.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.4"
+sha2 = "0.10"
+polars = { version = "0.36", features = ["parquet"] }
+memmap2 = "0.9"

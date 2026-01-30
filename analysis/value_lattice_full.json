@@ -1,0 +1,3502 @@
+{
+  "255": {
+    "value": "255",
+    "godel_number": 146,
+    "usage_count": 4,
+    "file_locations": [
+      "src/zk_llm.rs"
+    ]
+  },
+  "6": {
+    "value": "6",
+    "godel_number": 9,
+    "usage_count": 84,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "3": {
+    "value": "3",
+    "godel_number": 4,
+    "usage_count": 306,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/qwen_strip_miner.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "11": {
+    "value": "11",
+    "godel_number": 10,
+    "usage_count": 132,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "-10": {
+    "value": "-10",
+    "godel_number": 160,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "-14": {
+    "value": "-14",
+    "godel_number": 180,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/qwen_shard_splitter.rs"
+    ]
+  },
+  "241": {
+    "value": "241",
+    "godel_number": 124,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "296": {
+    "value": "296",
+    "godel_number": 70,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "245": {
+    "value": "245",
+    "godel_number": 64,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "1": {
+    "value": "1",
+    "godel_number": 13,
+    "usage_count": 774,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/qwen_strip_miner.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/extract_71_objects.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/archive_plugin_test.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/term_frequency.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "46": {
+    "value": "46",
+    "godel_number": 3,
+    "usage_count": 31,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "31": {
+    "value": "31",
+    "godel_number": 17,
+    "usage_count": 88,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "5000": {
+    "value": "5000",
+    "godel_number": 187,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/post_commit_review.rs"
+    ]
+  },
+  "194": {
+    "value": "194",
+    "godel_number": 67,
+    "usage_count": 4,
+    "file_locations": [
+      "src/classification.rs",
+      "src/bin/graded_ring_71.rs"
+    ]
+  },
+  "49000": {
+    "value": "49000",
+    "godel_number": 217,
+    "usage_count": 7,
+    "file_locations": [
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "8888": {
+    "value": "8888",
+    "godel_number": 221,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/parquet_to_zkml.rs"
+    ]
+  },
+  "149": {
+    "value": "149",
+    "godel_number": 106,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "864": {
+    "value": "864",
+    "godel_number": 69,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "696729600": {
+    "value": "696729600",
+    "godel_number": 203,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "6912": {
+    "value": "6912",
+    "godel_number": 152,
+    "usage_count": 1,
+    "file_locations": [
+      "src/monster_emoji_report.rs"
+    ]
+  },
+  "160": {
+    "value": "160",
+    "godel_number": 71,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "21": {
+    "value": "21",
+    "godel_number": 196,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "8080": {
+    "value": "8080",
+    "godel_number": 31,
+    "usage_count": 55,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/parquet_to_zkml.rs"
+    ]
+  },
+  "42": {
+    "value": "42",
+    "godel_number": 182,
+    "usage_count": 4,
+    "file_locations": [
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "8671": {
+    "value": "8671",
+    "godel_number": 197,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "11173": {
+    "value": "11173",
+    "godel_number": 214,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "672": {
+    "value": "672",
+    "godel_number": 85,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "349": {
+    "value": "349",
+    "godel_number": 140,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "53": {
+    "value": "53",
+    "godel_number": 90,
+    "usage_count": 7,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/monster_emoji_report.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/hecke_autoencoder.rs"
+    ]
+  },
+  "22": {
+    "value": "22",
+    "godel_number": 147,
+    "usage_count": 3,
+    "file_locations": [
+      "src/zk_llm.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/zk_lattice_archive.rs"
+    ]
+  },
+  "225": {
+    "value": "225",
+    "godel_number": 181,
+    "usage_count": 4,
+    "file_locations": [
+      "src/bin/qwen_shard_splitter.rs"
+    ]
+  },
+  "35": {
+    "value": "35",
+    "godel_number": 162,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/analyze_semantic_significance.rs"
+    ]
+  },
+  "109": {
+    "value": "109",
+    "godel_number": 100,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "2001": {
+    "value": "2001",
+    "godel_number": 228,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/zk_lattice_archive.rs"
+    ]
+  },
+  "1000": {
+    "value": "1000",
+    "godel_number": 87,
+    "usage_count": 23,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "001": {
+    "value": "001",
+    "godel_number": 220,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "256": {
+    "value": "256",
+    "godel_number": 43,
+    "usage_count": 74,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/zk_llm.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "257": {
+    "value": "257",
+    "godel_number": 126,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "512": {
+    "value": "512",
+    "godel_number": 145,
+    "usage_count": 4,
+    "file_locations": [
+      "src/zk_llm.rs"
+    ]
+  },
+  "-3": {
+    "value": "-3",
+    "godel_number": 164,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/train_monster.rs"
+    ]
+  },
+  "728": {
+    "value": "728",
+    "godel_number": 65,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "64": {
+    "value": "64",
+    "godel_number": 47,
+    "usage_count": 357,
+    "file_locations": [
+      "src/group_harmonics.rs",
+      "src/classification.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/extract_71_objects.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "128": {
+    "value": "128",
+    "godel_number": 37,
+    "usage_count": 22,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/classification.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "337": {
+    "value": "337",
+    "godel_number": 138,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "24": {
+    "value": "24",
+    "godel_number": 155,
+    "usage_count": 67,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "000045": {
+    "value": "000045",
+    "godel_number": 176,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/prime_resonance_hecke.rs"
+    ]
+  },
+  "196883": {
+    "value": "196883",
+    "godel_number": 194,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "71000": {
+    "value": "71000",
+    "godel_number": 45,
+    "usage_count": 1,
+    "file_locations": [
+      "src/monster_walk_vectors.rs"
+    ]
+  },
+  "710": {
+    "value": "710",
+    "godel_number": 50,
+    "usage_count": 5,
+    "file_locations": [
+      "src/latent_space_proof.rs"
+    ]
+  },
+  "291": {
+    "value": "291",
+    "godel_number": 56,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "251": {
+    "value": "251",
+    "godel_number": 125,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "2310": {
+    "value": "2310",
+    "godel_number": 224,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/test_algorithm.rs"
+    ]
+  },
+  "23": {
+    "value": "23",
+    "godel_number": 15,
+    "usage_count": 104,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "801742": {
+    "value": "801742",
+    "godel_number": 30,
+    "usage_count": 1,
+    "file_locations": [
+      "src/transitions.rs"
+    ]
+  },
+  "43229": {
+    "value": "43229",
+    "godel_number": 209,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "101": {
+    "value": "101",
+    "godel_number": 97,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "79": {
+    "value": "79",
+    "godel_number": 93,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "8315553613086720000": {
+    "value": "8315553613086720000",
+    "godel_number": 202,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "900": {
+    "value": "900",
+    "godel_number": 41,
+    "usage_count": 1,
+    "file_locations": [
+      "src/monster_walk_vectors.rs"
+    ]
+  },
+  "0": {
+    "value": "0",
+    "godel_number": 27,
+    "usage_count": 834,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/term_frequency.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "304": {
+    "value": "304",
+    "godel_number": 81,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "277": {
+    "value": "277",
+    "godel_number": 130,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "80801742": {
+    "value": "80801742",
+    "godel_number": 33,
+    "usage_count": 14,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/group3.rs",
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "5": {
+    "value": "5",
+    "godel_number": 6,
+    "usage_count": 202,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "32767": {
+    "value": "32767",
+    "godel_number": 174,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_harmonics.rs"
+    ]
+  },
+  "681": {
+    "value": "681",
+    "godel_number": 66,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "80": {
+    "value": "80",
+    "godel_number": 29,
+    "usage_count": 8,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/parquet_to_zkml.rs"
+    ]
+  },
+  "05": {
+    "value": "05",
+    "godel_number": 167,
+    "usage_count": 4,
+    "file_locations": [
+      "src/bin/analyze_semantic_significance.rs"
+    ]
+  },
+  "432": {
+    "value": "432",
+    "godel_number": 48,
+    "usage_count": 20,
+    "file_locations": [
+      "src/group_harmonics.rs",
+      "src/musical_periodic_table.rs",
+      "src/monster_emoji_report.rs",
+      "src/prime_emojis.rs"
+    ]
+  },
+  "1742": {
+    "value": "1742",
+    "godel_number": 34,
+    "usage_count": 10,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/monster_emoji_report.rs",
+      "src/prime_emojis.rs"
+    ]
+  },
+  "10000000": {
+    "value": "10000000",
+    "godel_number": 158,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs"
+    ]
+  },
+  "497": {
+    "value": "497",
+    "godel_number": 55,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "8": {
+    "value": "8",
+    "godel_number": 25,
+    "usage_count": 393,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/latent_space_proof.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/deploy_all.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/archive_plugin_test.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "4157776806543360000": {
+    "value": "4157776806543360000",
+    "godel_number": 198,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "82": {
+    "value": "82",
+    "godel_number": 185,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_gpu_consumer.rs"
+    ]
+  },
+  "386724": {
+    "value": "386724",
+    "godel_number": 210,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "61": {
+    "value": "61",
+    "godel_number": 91,
+    "usage_count": 4,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/hecke_autoencoder.rs"
+    ]
+  },
+  "131": {
+    "value": "131",
+    "godel_number": 103,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "479": {
+    "value": "479",
+    "godel_number": 35,
+    "usage_count": 10,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/monster_emoji_report.rs",
+      "src/prime_emojis.rs"
+    ]
+  },
+  "7432": {
+    "value": "7432",
+    "godel_number": 213,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "208": {
+    "value": "208",
+    "godel_number": 76,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "43": {
+    "value": "43",
+    "godel_number": 89,
+    "usage_count": 5,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/hecke_autoencoder.rs"
+    ]
+  },
+  "197": {
+    "value": "197",
+    "godel_number": 116,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "331": {
+    "value": "331",
+    "godel_number": 137,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "-2": {
+    "value": "-2",
+    "godel_number": 205,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "9": {
+    "value": "9",
+    "godel_number": 7,
+    "usage_count": 40,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "440": {
+    "value": "440",
+    "godel_number": 51,
+    "usage_count": 15,
+    "file_locations": [
+      "src/latent_space_proof.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/zk_llm.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "67": {
+    "value": "67",
+    "godel_number": 42,
+    "usage_count": 5,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/hecke_autoencoder.rs"
+    ]
+  },
+  "15": {
+    "value": "15",
+    "godel_number": 52,
+    "usage_count": 90,
+    "file_locations": [
+      "src/classification.rs",
+      "src/musical_periodic_table.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/group2_verified.rs",
+      "src/peel_onion.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "30": {
+    "value": "30",
+    "godel_number": 84,
+    "usage_count": 10,
+    "file_locations": [
+      "src/musical_periodic_table.rs",
+      "src/all_groups.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/lmfdb_inventory_consumer.rs"
+    ]
+  },
+  "12": {
+    "value": "12",
+    "godel_number": 68,
+    "usage_count": 21,
+    "file_locations": [
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/lmfdb_inventory_consumer.rs"
+    ]
+  },
+  "36": {
+    "value": "36",
+    "godel_number": 175,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_harmonics.rs"
+    ]
+  },
+  "50": {
+    "value": "50",
+    "godel_number": 26,
+    "usage_count": 6,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/prime_resonance_matcher.rs"
+    ]
+  },
+  "-1": {
+    "value": "-1",
+    "godel_number": 154,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/markov_sampling.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/post_commit_review.rs"
+    ]
+  },
+  "32": {
+    "value": "32",
+    "godel_number": 2,
+    "usage_count": 577,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "612": {
+    "value": "612",
+    "godel_number": 62,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "1000000000": {
+    "value": "1000000000",
+    "godel_number": 156,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs"
+    ]
+  },
+  "506": {
+    "value": "506",
+    "godel_number": 63,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "402": {
+    "value": "402",
+    "godel_number": 59,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "173": {
+    "value": "173",
+    "godel_number": 111,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "137": {
+    "value": "137",
+    "godel_number": 104,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "80801": {
+    "value": "80801",
+    "godel_number": 143,
+    "usage_count": 2,
+    "file_locations": [
+      "src/main.rs"
+    ]
+  },
+  "1024": {
+    "value": "1024",
+    "godel_number": 46,
+    "usage_count": 12,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "95040": {
+    "value": "95040",
+    "godel_number": 200,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "0801742": {
+    "value": "0801742",
+    "godel_number": 28,
+    "usage_count": 1,
+    "file_locations": [
+      "src/transitions.rs"
+    ]
+  },
+  "2026": {
+    "value": "2026",
+    "godel_number": 168,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/analyze_semantic_significance.rs"
+    ]
+  },
+  "1999": {
+    "value": "1999",
+    "godel_number": 227,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/zk_lattice_archive.rs"
+    ]
+  },
+  "191": {
+    "value": "191",
+    "godel_number": 114,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "-29": {
+    "value": "-29",
+    "godel_number": 170,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/analyze_semantic_significance.rs"
+    ]
+  },
+  "600000": {
+    "value": "600000",
+    "godel_number": 188,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/post_commit_review.rs"
+    ]
+  },
+  "000": {
+    "value": "000",
+    "godel_number": 36,
+    "usage_count": 45,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/qwen_indexer.rs"
+    ]
+  },
+  "19": {
+    "value": "19",
+    "godel_number": 14,
+    "usage_count": 70,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "113": {
+    "value": "113",
+    "godel_number": 101,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "179": {
+    "value": "179",
+    "godel_number": 112,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "151885": {
+    "value": "151885",
+    "godel_number": 211,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "838": {
+    "value": "838",
+    "godel_number": 57,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "223": {
+    "value": "223",
+    "godel_number": 119,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "353": {
+    "value": "353",
+    "godel_number": 141,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "9074": {
+    "value": "9074",
+    "godel_number": 148,
+    "usage_count": 2,
+    "file_locations": [
+      "src/monster_emoji_report.rs"
+    ]
+  },
+  "4096": {
+    "value": "4096",
+    "godel_number": 172,
+    "usage_count": 9,
+    "file_locations": [
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/gpu_to_parquet.rs",
+      "src/bin/train_markov_bypass.rs"
+    ]
+  },
+  "02": {
+    "value": "02",
+    "godel_number": 142,
+    "usage_count": 42,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "151": {
+    "value": "151",
+    "godel_number": 107,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "7": {
+    "value": "7",
+    "godel_number": 8,
+    "usage_count": 108,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "71": {
+    "value": "71",
+    "godel_number": 21,
+    "usage_count": 290,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/extract_71_objects.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "293": {
+    "value": "293",
+    "godel_number": 133,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "064": {
+    "value": "064",
+    "godel_number": 178,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/autolabel_filenames.rs"
+    ]
+  },
+  "193": {
+    "value": "193",
+    "godel_number": 115,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "-47": {
+    "value": "-47",
+    "godel_number": 183,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/qwen_shard_splitter.rs"
+    ]
+  },
+  "80801742479": {
+    "value": "80801742479",
+    "godel_number": 218,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "12345": {
+    "value": "12345",
+    "godel_number": 223,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/test_algorithm.rs",
+      "src/bin/p2p_zk_meme.rs"
+    ]
+  },
+  "1656682": {
+    "value": "1656682",
+    "godel_number": 212,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "239": {
+    "value": "239",
+    "godel_number": 123,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "97": {
+    "value": "97",
+    "godel_number": 96,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "4": {
+    "value": "4",
+    "godel_number": 32,
+    "usage_count": 200,
+    "file_locations": [
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/musical_periodic_table.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/term_frequency.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs"
+    ]
+  },
+  "360": {
+    "value": "360",
+    "godel_number": 201,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "139": {
+    "value": "139",
+    "godel_number": 105,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "30030": {
+    "value": "30030",
+    "godel_number": 226,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/test_algorithm.rs"
+    ]
+  },
+  "281": {
+    "value": "281",
+    "godel_number": 131,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "-9": {
+    "value": "-9",
+    "godel_number": 163,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/extract_constants.rs"
+    ]
+  },
+  "347": {
+    "value": "347",
+    "godel_number": 139,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "59": {
+    "value": "59",
+    "godel_number": 20,
+    "usage_count": 69,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "211": {
+    "value": "211",
+    "godel_number": 118,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "229": {
+    "value": "229",
+    "godel_number": 121,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "103": {
+    "value": "103",
+    "godel_number": 98,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "0594630943592953": {
+    "value": "0594630943592953",
+    "godel_number": 191,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/autolabel_filenames.rs"
+    ]
+  },
+  "2": {
+    "value": "2",
+    "godel_number": 1,
+    "usage_count": 529,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/zk_llm.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/qwen_strip_miner.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/multi_level_review.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/review_paper.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "313": {
+    "value": "313",
+    "godel_number": 136,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "44": {
+    "value": "44",
+    "godel_number": 173,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_harmonics.rs"
+    ]
+  },
+  "227": {
+    "value": "227",
+    "godel_number": 120,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "722": {
+    "value": "722",
+    "godel_number": 58,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "10": {
+    "value": "10",
+    "godel_number": 23,
+    "usage_count": 113,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/latent_space_proof.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/extract_71_objects.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/term_frequency.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "157": {
+    "value": "157",
+    "godel_number": 108,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "283": {
+    "value": "283",
+    "godel_number": 132,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "4371": {
+    "value": "4371",
+    "godel_number": 195,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "16": {
+    "value": "16",
+    "godel_number": 24,
+    "usage_count": 46,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/monster_walk_vectors.rs",
+      "src/musical_periodic_table.rs",
+      "src/zk_llm.rs",
+      "src/prime_emojis.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "2000000000": {
+    "value": "2000000000",
+    "godel_number": 157,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs"
+    ]
+  },
+  "50000": {
+    "value": "50000",
+    "godel_number": 177,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/multilayer_to_parquet.rs"
+    ]
+  },
+  "712": {
+    "value": "712",
+    "godel_number": 80,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "17": {
+    "value": "17",
+    "godel_number": 12,
+    "usage_count": 77,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "37": {
+    "value": "37",
+    "godel_number": 88,
+    "usage_count": 5,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/hecke_autoencoder.rs"
+    ]
+  },
+  "73": {
+    "value": "73",
+    "godel_number": 92,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "67100": {
+    "value": "67100",
+    "godel_number": 193,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/monster_batch_sampler.rs"
+    ]
+  },
+  "3456": {
+    "value": "3456",
+    "godel_number": 150,
+    "usage_count": 1,
+    "file_locations": [
+      "src/monster_emoji_report.rs"
+    ]
+  },
+  "08": {
+    "value": "08",
+    "godel_number": 149,
+    "usage_count": 1,
+    "file_locations": [
+      "src/monster_emoji_report.rs"
+    ]
+  },
+  "49": {
+    "value": "49",
+    "godel_number": 216,
+    "usage_count": 4,
+    "file_locations": [
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "41": {
+    "value": "41",
+    "godel_number": 18,
+    "usage_count": 66,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "528": {
+    "value": "528",
+    "godel_number": 78,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "127": {
+    "value": "127",
+    "godel_number": 102,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "271": {
+    "value": "271",
+    "godel_number": 129,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "4189": {
+    "value": "4189",
+    "godel_number": 225,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/test_algorithm.rs"
+    ]
+  },
+  "311": {
+    "value": "311",
+    "godel_number": 135,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "500": {
+    "value": "500",
+    "godel_number": 179,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/virtual_knuth.rs"
+    ]
+  },
+  "9001": {
+    "value": "9001",
+    "godel_number": 189,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/post_commit_review.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "17334923": {
+    "value": "17334923",
+    "godel_number": 208,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "8968": {
+    "value": "8968",
+    "godel_number": 222,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/parquet_to_zkml.rs"
+    ]
+  },
+  "462": {
+    "value": "462",
+    "godel_number": 61,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "44100": {
+    "value": "44100",
+    "godel_number": 144,
+    "usage_count": 2,
+    "file_locations": [
+      "src/zk_llm.rs",
+      "src/bin/monster_harmonics.rs"
+    ]
+  },
+  "344": {
+    "value": "344",
+    "godel_number": 75,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "89": {
+    "value": "89",
+    "godel_number": 95,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "808": {
+    "value": "808",
+    "godel_number": 190,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/parquet_to_zkml.rs"
+    ]
+  },
+  "20": {
+    "value": "20",
+    "godel_number": 5,
+    "usage_count": 37,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs"
+    ]
+  },
+  "-5": {
+    "value": "-5",
+    "godel_number": 38,
+    "usage_count": 6,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/hecke_burn_cuda.rs"
+    ]
+  },
+  "438": {
+    "value": "438",
+    "godel_number": 60,
+    "usage_count": 1,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "13": {
+    "value": "13",
+    "godel_number": 11,
+    "usage_count": 84,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "-7": {
+    "value": "-7",
+    "godel_number": 165,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_batch_sampler.rs"
+    ]
+  },
+  "1000000": {
+    "value": "1000000",
+    "godel_number": 184,
+    "usage_count": 8,
+    "file_locations": [
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/post_commit_review.rs"
+    ]
+  },
+  "200": {
+    "value": "200",
+    "godel_number": 206,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "25": {
+    "value": "25",
+    "godel_number": 82,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "488": {
+    "value": "488",
+    "godel_number": 83,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "-01": {
+    "value": "-01",
+    "godel_number": 169,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/analyze_semantic_significance.rs"
+    ]
+  },
+  "233": {
+    "value": "233",
+    "godel_number": 122,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "6999": {
+    "value": "6999",
+    "godel_number": 215,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "700": {
+    "value": "700",
+    "godel_number": 219,
+    "usage_count": 2,
+    "file_locations": [
+      "src/bin/monster_walk_gpu.rs"
+    ]
+  },
+  "100": {
+    "value": "100",
+    "godel_number": 39,
+    "usage_count": 26,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/pre_commit_review.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/cuda_monster_pipeline.rs"
+    ]
+  },
+  "100000": {
+    "value": "100000",
+    "godel_number": 161,
+    "usage_count": 3,
+    "file_locations": [
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/map_files_to_layer1.rs"
+    ]
+  },
+  "47": {
+    "value": "47",
+    "godel_number": 19,
+    "usage_count": 92,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "616": {
+    "value": "616",
+    "godel_number": 74,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "5000000": {
+    "value": "5000000",
+    "godel_number": 159,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/self_referential_conformal.rs"
+    ]
+  },
+  "11434": {
+    "value": "11434",
+    "godel_number": 192,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/llm_strip_miner.rs"
+    ]
+  },
+  "263": {
+    "value": "263",
+    "godel_number": 127,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "40": {
+    "value": "40",
+    "godel_number": 153,
+    "usage_count": 4,
+    "file_locations": [
+      "src/peel_onion.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/monster_walk_proof.rs"
+    ]
+  },
+  "107": {
+    "value": "107",
+    "godel_number": 99,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "936": {
+    "value": "936",
+    "godel_number": 77,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "-23": {
+    "value": "-23",
+    "godel_number": 204,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "-71": {
+    "value": "-71",
+    "godel_number": 44,
+    "usage_count": 5,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/division_preservation.rs"
+    ]
+  },
+  "317": {
+    "value": "317",
+    "godel_number": 54,
+    "usage_count": 2,
+    "file_locations": [
+      "src/classification.rs",
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "-70": {
+    "value": "-70",
+    "godel_number": 86,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "392": {
+    "value": "392",
+    "godel_number": 79,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "70": {
+    "value": "70",
+    "godel_number": 22,
+    "usage_count": 222,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/monster_walk_vectors.rs",
+      "src/group2.rs",
+      "src/group3.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/all_groups.rs",
+      "src/group2_verified.rs",
+      "src/peel_onion.rs",
+      "src/bin/markov_sampling.rs",
+      "src/bin/self_referential_conformal.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/index_8m_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/universal_shard_reader.rs",
+      "src/bin/qwen_strip_miner.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/lattice_qwen_witness.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/deploy_all.rs",
+      "src/bin/self_deploy.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/multilayer_to_parquet.rs",
+      "src/bin/extract_71_objects.rs",
+      "src/bin/train_monster.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/shard_lmfdb_by_71.rs",
+      "src/bin/extract_constants.rs",
+      "src/bin/strip_mine_layers.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/monster_batch_sampler.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/archive_plugin_test.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/monster_walk_gpu.rs",
+      "src/bin/apply_value_lattice.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/archive_deploy.rs",
+      "src/bin/cuda_markov_bitwise.rs",
+      "src/bin/parquet_gpu_pipeline.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/parquet_to_zkml.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/qwen_indexer.rs",
+      "src/bin/train_markov_bypass.rs",
+      "src/bin/harmonic_folding.rs",
+      "src/bin/create_monster_autoencoder.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/lmfdb_inventory_consumer.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/zk_lattice_archive.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs"
+    ]
+  },
+  "307": {
+    "value": "307",
+    "godel_number": 134,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "29": {
+    "value": "29",
+    "godel_number": 16,
+    "usage_count": 66,
+    "file_locations": [
+      "src/different_bases.rs",
+      "src/transitions.rs",
+      "src/group_harmonics.rs",
+      "src/group2.rs",
+      "src/classification.rs",
+      "src/group3.rs",
+      "src/musical_periodic_table.rs",
+      "src/mycelium_spore_jar.rs",
+      "src/main.rs",
+      "src/all_groups.rs",
+      "src/monster_emoji_report.rs",
+      "src/group2_verified.rs",
+      "src/prime_emojis.rs",
+      "src/peel_onion.rs",
+      "src/bin/monster_walk_primes.rs",
+      "src/bin/ingest_all_files.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/monster_is_meme.rs",
+      "src/bin/precedence_survey.rs",
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/cuda_unified_pipeline.rs",
+      "src/bin/monster_harmonics.rs",
+      "src/bin/prime_resonance_hecke.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/prime_resonance_matcher.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_walk_proof.rs",
+      "src/bin/autolabel_filenames.rs",
+      "src/bin/llm_strip_miner.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/division_preservation.rs",
+      "src/bin/hecke_burn_cuda.rs",
+      "src/bin/qwen_to_wasm_hecke.rs",
+      "src/bin/harmonic_wikidata_scanner.rs",
+      "src/bin/markov_parquet_shards.rs",
+      "src/bin/breadth_first_pipeline.rs",
+      "src/bin/zk_llm.rs",
+      "src/bin/hecke_autoencoder.rs",
+      "src/bin/test_algorithm.rs",
+      "src/bin/parquet_markov_pipeline.rs",
+      "src/bin/cpu_gpu_bridge.rs",
+      "src/bin/gpu_token_pipeline.rs",
+      "src/bin/p2p_zk_meme.rs",
+      "src/bin/cuda_monster_pipeline.rs",
+      "src/bin/model_all_columns.rs",
+      "src/bin/p2p_zk_meme_cuda.rs"
+    ]
+  },
+  "244823040": {
+    "value": "244823040",
+    "godel_number": 199,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "163": {
+    "value": "163",
+    "godel_number": 109,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "024": {
+    "value": "024",
+    "godel_number": 72,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  },
+  "262": {
+    "value": "262",
+    "godel_number": 53,
+    "usage_count": 2,
+    "file_locations": [
+      "src/classification.rs"
+    ]
+  },
+  "167": {
+    "value": "167",
+    "godel_number": 110,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "1728": {
+    "value": "1728",
+    "godel_number": 151,
+    "usage_count": 2,
+    "file_locations": [
+      "src/monster_emoji_report.rs"
+    ]
+  },
+  "60": {
+    "value": "60",
+    "godel_number": 40,
+    "usage_count": 12,
+    "file_locations": [
+      "src/monster_walk_vectors.rs",
+      "src/bin/bulk_all_layers.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/monster_autoencoder.rs",
+      "src/bin/mathematical_object_lattice.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "3339": {
+    "value": "3339",
+    "godel_number": 166,
+    "usage_count": 8,
+    "file_locations": [
+      "src/bin/precedence_survey.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/virtual_knuth.rs",
+      "src/bin/pre_commit_review.rs"
+    ]
+  },
+  "10000": {
+    "value": "10000",
+    "godel_number": 171,
+    "usage_count": 5,
+    "file_locations": [
+      "src/bin/vectorize_all_parquets.rs",
+      "src/bin/map_files_to_layer1.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/post_commit_review.rs",
+      "src/bin/harmonic_folding.rs"
+    ]
+  },
+  "2000000": {
+    "value": "2000000",
+    "godel_number": 186,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/post_commit_review.rs"
+    ]
+  },
+  "14": {
+    "value": "14",
+    "godel_number": 49,
+    "usage_count": 10,
+    "file_locations": [
+      "src/group_harmonics.rs",
+      "src/musical_periodic_table.rs",
+      "src/bin/partition_lmfdb.rs",
+      "src/bin/analyze_semantic_significance.rs",
+      "src/bin/graded_ring_71.rs",
+      "src/bin/qwen_shard_splitter.rs",
+      "src/bin/monster_gpu_consumer.rs",
+      "src/bin/mathematical_object_lattice.rs"
+    ]
+  },
+  "199": {
+    "value": "199",
+    "godel_number": 117,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "181": {
+    "value": "181",
+    "godel_number": 113,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "83": {
+    "value": "83",
+    "godel_number": 94,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "35120": {
+    "value": "35120",
+    "godel_number": 207,
+    "usage_count": 1,
+    "file_locations": [
+      "src/bin/harmonic_wikidata_scanner.rs"
+    ]
+  },
+  "269": {
+    "value": "269",
+    "godel_number": 128,
+    "usage_count": 1,
+    "file_locations": [
+      "src/mycelium_spore_jar.rs"
+    ]
+  },
+  "752": {
+    "value": "752",
+    "godel_number": 73,
+    "usage_count": 1,
+    "file_locations": [
+      "src/musical_periodic_table.rs"
+    ]
+  }
+}

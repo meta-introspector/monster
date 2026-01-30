@@ -1,0 +1,996 @@
+[
+  {
+    "shard_id": 0,
+    "prime": 2,
+    "skill_name": "monster_walk_primes",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin monster_walk_primes",
+    "search_capability": "filter_search",
+    "zkperf_hash": "607ac4333f642c95",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 236,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 1,
+    "prime": 3,
+    "skill_name": "self_referential_conformal",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin self_referential_conformal",
+    "search_capability": "filter_search",
+    "zkperf_hash": "993923e59ae13ded",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 231,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 2,
+    "prime": 5,
+    "skill_name": "bulk_all_layers",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin bulk_all_layers",
+    "search_capability": "filter_search",
+    "zkperf_hash": "882b30d117d9c06d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 109,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 3,
+    "prime": 7,
+    "skill_name": "universal_shard_reader",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin universal_shard_reader",
+    "search_capability": "filter_search",
+    "zkperf_hash": "447f7f2ed63ebb57",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 194,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 4,
+    "prime": 11,
+    "skill_name": "qwen_strip_miner",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin qwen_strip_miner",
+    "search_capability": "filter_search",
+    "zkperf_hash": "f18ffad4271a46a4",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 68,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 5,
+    "prime": 13,
+    "skill_name": "precedence_survey",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin precedence_survey",
+    "search_capability": "filter_search",
+    "zkperf_hash": "b5cbb8c08af15141",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 467,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 6,
+    "prime": 17,
+    "skill_name": "analyze_semantic_significance",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin analyze_semantic_significance",
+    "search_capability": "filter_search",
+    "zkperf_hash": "293d7c48b04b8b2e",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 367,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 7,
+    "prime": 19,
+    "skill_name": "lattice_qwen_witness",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin lattice_qwen_witness",
+    "search_capability": "filter_search",
+    "zkperf_hash": "edda1927db34d041",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 145,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 8,
+    "prime": 23,
+    "skill_name": "vectorize_all_parquets",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin vectorize_all_parquets",
+    "search_capability": "filter_search",
+    "zkperf_hash": "cbc139b5a491b255",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 262,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 9,
+    "prime": 29,
+    "skill_name": "multi_lang_prover",
+    "skill_type": "search_implicit_search",
+    "command": "cargo run --release --bin multi_lang_prover",
+    "search_capability": "implicit_search",
+    "zkperf_hash": "7d77d266d7765d4d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 163,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 10,
+    "prime": 31,
+    "skill_name": "cuda_unified_pipeline",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin cuda_unified_pipeline",
+    "search_capability": "filter_search",
+    "zkperf_hash": "fad649cb89770f37",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 309,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 11,
+    "prime": 41,
+    "skill_name": "extract_71_objects",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin extract_71_objects",
+    "search_capability": "filter_search",
+    "zkperf_hash": "16cc65f9848e0e93",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 90,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 12,
+    "prime": 47,
+    "skill_name": "map_files_to_layer1",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin map_files_to_layer1",
+    "search_capability": "filter_search",
+    "zkperf_hash": "6604589cbfaa04a8",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 86,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 13,
+    "prime": 59,
+    "skill_name": "ten_fold_areas",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin ten_fold_areas",
+    "search_capability": "filter_search",
+    "zkperf_hash": "af041aeace0c3d4d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 208,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 14,
+    "prime": 71,
+    "skill_name": "extract_constants",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin extract_constants",
+    "search_capability": "filter_search",
+    "zkperf_hash": "e9aa06a956e18c35",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 184,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 15,
+    "prime": 2,
+    "skill_name": "quantum_71_shards",
+    "skill_type": "search_implicit_search",
+    "command": "cargo run --release --bin quantum_71_shards",
+    "search_capability": "implicit_search",
+    "zkperf_hash": "384d860e03983478",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 143,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 16,
+    "prime": 3,
+    "skill_name": "autolabel_filenames",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin autolabel_filenames",
+    "search_capability": "filter_search",
+    "zkperf_hash": "d3b35276d70d2cda",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 114,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 17,
+    "prime": 5,
+    "skill_name": "llm_strip_miner",
+    "skill_type": "search_find_search",
+    "command": "cargo run --release --bin llm_strip_miner",
+    "search_capability": "find_search",
+    "zkperf_hash": "0072bdd6f8c12032",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 421,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 18,
+    "prime": 7,
+    "skill_name": "mathematical_object_lattice",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin mathematical_object_lattice",
+    "search_capability": "filter_search",
+    "zkperf_hash": "1b26b69794240ea5",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 368,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 19,
+    "prime": 11,
+    "skill_name": "virtual_knuth",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin virtual_knuth",
+    "search_capability": "filter_search",
+    "zkperf_hash": "ddc082fb3e4b64ea",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 181,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 20,
+    "prime": 13,
+    "skill_name": "archive_plugin_test",
+    "skill_type": "search_explicit_search",
+    "command": "cargo run --release --bin archive_plugin_test",
+    "search_capability": "explicit_search",
+    "zkperf_hash": "cdeda3836c43eee3",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 112,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 21,
+    "prime": 17,
+    "skill_name": "pre_commit_review",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin pre_commit_review",
+    "search_capability": "filter_search",
+    "zkperf_hash": "f3b324eca6e9b88b",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 241,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 22,
+    "prime": 19,
+    "skill_name": "markov_parquet_shards",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin markov_parquet_shards",
+    "search_capability": "filter_search",
+    "zkperf_hash": "5fdb51e9adfc0e56",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 318,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 23,
+    "prime": 23,
+    "skill_name": "cuda_markov_bitwise",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin cuda_markov_bitwise",
+    "search_capability": "filter_search",
+    "zkperf_hash": "adc317e572fb5253",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 243,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 24,
+    "prime": 29,
+    "skill_name": "multi_level_review",
+    "skill_type": "search_implicit_search",
+    "command": "cargo run --release --bin multi_level_review",
+    "search_capability": "implicit_search",
+    "zkperf_hash": "ed19b9624a546fd9",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 191,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 25,
+    "prime": 31,
+    "skill_name": "parquet_gpu_pipeline",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin parquet_gpu_pipeline",
+    "search_capability": "filter_search",
+    "zkperf_hash": "c4ccfe93e51bdc18",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 161,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 26,
+    "prime": 41,
+    "skill_name": "parquet_to_zkml",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin parquet_to_zkml",
+    "search_capability": "filter_search",
+    "zkperf_hash": "2eb0daa0ac4339b2",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 172,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 27,
+    "prime": 47,
+    "skill_name": "generate_keywords",
+    "skill_type": "search_implicit_search",
+    "command": "cargo run --release --bin generate_keywords",
+    "search_capability": "implicit_search",
+    "zkperf_hash": "1d69d0b1734d9a8c",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 386,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 28,
+    "prime": 59,
+    "skill_name": "term_frequency",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin term_frequency",
+    "search_capability": "filter_search",
+    "zkperf_hash": "b6c0feb73e5327d1",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 55,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 29,
+    "prime": 71,
+    "skill_name": "expert_system",
+    "skill_type": "search_explicit_search",
+    "command": "cargo run --release --bin expert_system",
+    "search_capability": "explicit_search",
+    "zkperf_hash": "f18c9c50e07c7fdf",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 194,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 30,
+    "prime": 2,
+    "skill_name": "test_algorithm",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin test_algorithm",
+    "search_capability": "filter_search",
+    "zkperf_hash": "47bfb3fc4a39e27c",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 37,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 31,
+    "prime": 3,
+    "skill_name": "review_paper",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin review_paper",
+    "search_capability": "filter_search",
+    "zkperf_hash": "a59b3e2241fcf319",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 288,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 32,
+    "prime": 5,
+    "skill_name": "parquet_markov_pipeline",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin parquet_markov_pipeline",
+    "search_capability": "filter_search",
+    "zkperf_hash": "b438910091c44c45",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 212,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 33,
+    "prime": 7,
+    "skill_name": "lmfdb_inventory_consumer",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin lmfdb_inventory_consumer",
+    "search_capability": "filter_search",
+    "zkperf_hash": "319cf3f0b09b8c77",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 187,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 34,
+    "prime": 11,
+    "skill_name": "cuda_monster_pipeline",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin cuda_monster_pipeline",
+    "search_capability": "filter_search",
+    "zkperf_hash": "9beea0d857f36e08",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 474,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 35,
+    "prime": 13,
+    "skill_name": "model_all_columns",
+    "skill_type": "search_filter_search",
+    "command": "cargo run --release --bin model_all_columns",
+    "search_capability": "filter_search",
+    "zkperf_hash": "0335d87a79ca7933",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 110,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 36,
+    "prime": 17,
+    "skill_name": "virtual_search_shard_36",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 36'",
+    "search_capability": "virtual",
+    "zkperf_hash": "55bacec1ead6fa6a",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 37,
+    "prime": 19,
+    "skill_name": "virtual_search_shard_37",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 37'",
+    "search_capability": "virtual",
+    "zkperf_hash": "07debed8d355eb8e",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 38,
+    "prime": 23,
+    "skill_name": "virtual_search_shard_38",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 38'",
+    "search_capability": "virtual",
+    "zkperf_hash": "8e10cb35f764683d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 39,
+    "prime": 29,
+    "skill_name": "virtual_search_shard_39",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 39'",
+    "search_capability": "virtual",
+    "zkperf_hash": "006e853afd9eb0a9",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 40,
+    "prime": 31,
+    "skill_name": "virtual_search_shard_40",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 40'",
+    "search_capability": "virtual",
+    "zkperf_hash": "fa87229fc41a533c",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 41,
+    "prime": 41,
+    "skill_name": "virtual_search_shard_41",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 41'",
+    "search_capability": "virtual",
+    "zkperf_hash": "39bd3dd221886eb0",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 42,
+    "prime": 47,
+    "skill_name": "virtual_search_shard_42",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 42'",
+    "search_capability": "virtual",
+    "zkperf_hash": "fc59a43b0d57e186",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 43,
+    "prime": 59,
+    "skill_name": "virtual_search_shard_43",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 43'",
+    "search_capability": "virtual",
+    "zkperf_hash": "bf8133d9e8187dfd",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 44,
+    "prime": 71,
+    "skill_name": "virtual_search_shard_44",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 44'",
+    "search_capability": "virtual",
+    "zkperf_hash": "e5454c41a2d5a4a4",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 45,
+    "prime": 2,
+    "skill_name": "virtual_search_shard_45",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 45'",
+    "search_capability": "virtual",
+    "zkperf_hash": "944aab6db38d037d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 46,
+    "prime": 3,
+    "skill_name": "virtual_search_shard_46",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 46'",
+    "search_capability": "virtual",
+    "zkperf_hash": "9abd5c22e06b6e15",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 47,
+    "prime": 5,
+    "skill_name": "virtual_search_shard_47",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 47'",
+    "search_capability": "virtual",
+    "zkperf_hash": "5dc5a82c85f65b27",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 48,
+    "prime": 7,
+    "skill_name": "virtual_search_shard_48",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 48'",
+    "search_capability": "virtual",
+    "zkperf_hash": "69167d8fe57e4ba7",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 49,
+    "prime": 11,
+    "skill_name": "virtual_search_shard_49",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 49'",
+    "search_capability": "virtual",
+    "zkperf_hash": "74f463e46d1a218b",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 50,
+    "prime": 13,
+    "skill_name": "virtual_search_shard_50",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 50'",
+    "search_capability": "virtual",
+    "zkperf_hash": "ee95ea25bc643602",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 51,
+    "prime": 17,
+    "skill_name": "virtual_search_shard_51",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 51'",
+    "search_capability": "virtual",
+    "zkperf_hash": "47202c3fee441686",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 52,
+    "prime": 19,
+    "skill_name": "virtual_search_shard_52",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 52'",
+    "search_capability": "virtual",
+    "zkperf_hash": "34b4d7c3cdc88767",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 53,
+    "prime": 23,
+    "skill_name": "virtual_search_shard_53",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 53'",
+    "search_capability": "virtual",
+    "zkperf_hash": "3f794655fe92d015",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 54,
+    "prime": 29,
+    "skill_name": "virtual_search_shard_54",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 54'",
+    "search_capability": "virtual",
+    "zkperf_hash": "053cb24690412213",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 55,
+    "prime": 31,
+    "skill_name": "virtual_search_shard_55",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 55'",
+    "search_capability": "virtual",
+    "zkperf_hash": "9b937b8c85a8ea24",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 56,
+    "prime": 41,
+    "skill_name": "virtual_search_shard_56",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 56'",
+    "search_capability": "virtual",
+    "zkperf_hash": "0eaa4de9c819b2f3",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 57,
+    "prime": 47,
+    "skill_name": "virtual_search_shard_57",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 57'",
+    "search_capability": "virtual",
+    "zkperf_hash": "1e04253418227f7d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 58,
+    "prime": 59,
+    "skill_name": "virtual_search_shard_58",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 58'",
+    "search_capability": "virtual",
+    "zkperf_hash": "d5e4e5c730d1d8ff",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 59,
+    "prime": 71,
+    "skill_name": "virtual_search_shard_59",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 59'",
+    "search_capability": "virtual",
+    "zkperf_hash": "7481631878582ece",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 60,
+    "prime": 2,
+    "skill_name": "virtual_search_shard_60",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 60'",
+    "search_capability": "virtual",
+    "zkperf_hash": "c852b413b81dfaf8",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 61,
+    "prime": 3,
+    "skill_name": "virtual_search_shard_61",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 61'",
+    "search_capability": "virtual",
+    "zkperf_hash": "36002cfeb51508b5",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 62,
+    "prime": 5,
+    "skill_name": "virtual_search_shard_62",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 62'",
+    "search_capability": "virtual",
+    "zkperf_hash": "6bb32897fcf5ce55",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 63,
+    "prime": 7,
+    "skill_name": "virtual_search_shard_63",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 63'",
+    "search_capability": "virtual",
+    "zkperf_hash": "a485d774ab50dc54",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 64,
+    "prime": 11,
+    "skill_name": "virtual_search_shard_64",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 64'",
+    "search_capability": "virtual",
+    "zkperf_hash": "81d1815e7c23991a",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 65,
+    "prime": 13,
+    "skill_name": "virtual_search_shard_65",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 65'",
+    "search_capability": "virtual",
+    "zkperf_hash": "2cf2938330076e20",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 66,
+    "prime": 17,
+    "skill_name": "virtual_search_shard_66",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 66'",
+    "search_capability": "virtual",
+    "zkperf_hash": "65c8b629005b4a7f",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 67,
+    "prime": 19,
+    "skill_name": "virtual_search_shard_67",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 67'",
+    "search_capability": "virtual",
+    "zkperf_hash": "89ee40b1990c688d",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 68,
+    "prime": 23,
+    "skill_name": "virtual_search_shard_68",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 68'",
+    "search_capability": "virtual",
+    "zkperf_hash": "76fe305ec47caf3c",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 69,
+    "prime": 29,
+    "skill_name": "virtual_search_shard_69",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 69'",
+    "search_capability": "virtual",
+    "zkperf_hash": "74e2ac02aa520ee9",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  },
+  {
+    "shard_id": 70,
+    "prime": 31,
+    "skill_name": "virtual_search_shard_70",
+    "skill_type": "virtual_search",
+    "command": "echo 'Virtual shard 70'",
+    "search_capability": "virtual",
+    "zkperf_hash": "272986618613dc2b",
+    "performance": {
+      "verification_time_ms": 0,
+      "lines_of_code": 0,
+      "quantum_amplitude": 0.014084507042253521
+    }
+  }
+]

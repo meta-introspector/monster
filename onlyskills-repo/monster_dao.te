@@ -1,0 +1,719 @@
+# ZK71 Monster DAO SELinux Policy
+policy_module(monster_dao, 1.0.0)
+
+require {
+    type unconfined_t;
+    class process { fork signal };
+    class file { read write open };
+}
+
+
+# Zone 0 (Shard 0)
+type monster_zone_0_t;
+domain_type(monster_zone_0_t)
+
+allow monster_zone_0_t self:process { fork signal };
+allow monster_zone_0_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_0_t ~monster_zone_0_t:file { read write };
+
+# Zone 1 (Shard 1)
+type monster_zone_1_t;
+domain_type(monster_zone_1_t)
+
+allow monster_zone_1_t self:process { fork signal };
+allow monster_zone_1_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_1_t ~monster_zone_1_t:file { read write };
+
+# Zone 2 (Shard 2)
+type monster_zone_2_t;
+domain_type(monster_zone_2_t)
+
+allow monster_zone_2_t self:process { fork signal };
+allow monster_zone_2_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_2_t ~monster_zone_2_t:file { read write };
+
+# Zone 3 (Shard 3)
+type monster_zone_3_t;
+domain_type(monster_zone_3_t)
+
+allow monster_zone_3_t self:process { fork signal };
+allow monster_zone_3_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_3_t ~monster_zone_3_t:file { read write };
+
+# Zone 4 (Shard 4)
+type monster_zone_4_t;
+domain_type(monster_zone_4_t)
+
+allow monster_zone_4_t self:process { fork signal };
+allow monster_zone_4_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_4_t ~monster_zone_4_t:file { read write };
+
+# Zone 5 (Shard 5)
+type monster_zone_5_t;
+domain_type(monster_zone_5_t)
+
+allow monster_zone_5_t self:process { fork signal };
+allow monster_zone_5_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_5_t ~monster_zone_5_t:file { read write };
+
+# Zone 6 (Shard 6)
+type monster_zone_6_t;
+domain_type(monster_zone_6_t)
+
+allow monster_zone_6_t self:process { fork signal };
+allow monster_zone_6_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_6_t ~monster_zone_6_t:file { read write };
+
+# Zone 7 (Shard 7)
+type monster_zone_7_t;
+domain_type(monster_zone_7_t)
+
+allow monster_zone_7_t self:process { fork signal };
+allow monster_zone_7_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_7_t ~monster_zone_7_t:file { read write };
+
+# Zone 8 (Shard 8)
+type monster_zone_8_t;
+domain_type(monster_zone_8_t)
+
+allow monster_zone_8_t self:process { fork signal };
+allow monster_zone_8_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_8_t ~monster_zone_8_t:file { read write };
+
+# Zone 9 (Shard 9)
+type monster_zone_9_t;
+domain_type(monster_zone_9_t)
+
+allow monster_zone_9_t self:process { fork signal };
+allow monster_zone_9_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_9_t ~monster_zone_9_t:file { read write };
+
+# Zone 10 (Shard 10)
+type monster_zone_10_t;
+domain_type(monster_zone_10_t)
+
+allow monster_zone_10_t self:process { fork signal };
+allow monster_zone_10_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_10_t ~monster_zone_10_t:file { read write };
+
+# Zone 11 (Shard 11)
+type monster_zone_11_t;
+domain_type(monster_zone_11_t)
+
+allow monster_zone_11_t self:process { fork signal };
+allow monster_zone_11_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_11_t ~monster_zone_11_t:file { read write };
+
+# Zone 12 (Shard 12)
+type monster_zone_12_t;
+domain_type(monster_zone_12_t)
+
+allow monster_zone_12_t self:process { fork signal };
+allow monster_zone_12_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_12_t ~monster_zone_12_t:file { read write };
+
+# Zone 13 (Shard 13)
+type monster_zone_13_t;
+domain_type(monster_zone_13_t)
+
+allow monster_zone_13_t self:process { fork signal };
+allow monster_zone_13_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_13_t ~monster_zone_13_t:file { read write };
+
+# Zone 14 (Shard 14)
+type monster_zone_14_t;
+domain_type(monster_zone_14_t)
+
+allow monster_zone_14_t self:process { fork signal };
+allow monster_zone_14_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_14_t ~monster_zone_14_t:file { read write };
+
+# Zone 15 (Shard 15)
+type monster_zone_15_t;
+domain_type(monster_zone_15_t)
+
+allow monster_zone_15_t self:process { fork signal };
+allow monster_zone_15_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_15_t ~monster_zone_15_t:file { read write };
+
+# Zone 16 (Shard 16)
+type monster_zone_16_t;
+domain_type(monster_zone_16_t)
+
+allow monster_zone_16_t self:process { fork signal };
+allow monster_zone_16_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_16_t ~monster_zone_16_t:file { read write };
+
+# Zone 17 (Shard 17)
+type monster_zone_17_t;
+domain_type(monster_zone_17_t)
+
+allow monster_zone_17_t self:process { fork signal };
+allow monster_zone_17_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_17_t ~monster_zone_17_t:file { read write };
+
+# Zone 18 (Shard 18)
+type monster_zone_18_t;
+domain_type(monster_zone_18_t)
+
+allow monster_zone_18_t self:process { fork signal };
+allow monster_zone_18_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_18_t ~monster_zone_18_t:file { read write };
+
+# Zone 19 (Shard 19)
+type monster_zone_19_t;
+domain_type(monster_zone_19_t)
+
+allow monster_zone_19_t self:process { fork signal };
+allow monster_zone_19_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_19_t ~monster_zone_19_t:file { read write };
+
+# Zone 20 (Shard 20)
+type monster_zone_20_t;
+domain_type(monster_zone_20_t)
+
+allow monster_zone_20_t self:process { fork signal };
+allow monster_zone_20_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_20_t ~monster_zone_20_t:file { read write };
+
+# Zone 21 (Shard 21)
+type monster_zone_21_t;
+domain_type(monster_zone_21_t)
+
+allow monster_zone_21_t self:process { fork signal };
+allow monster_zone_21_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_21_t ~monster_zone_21_t:file { read write };
+
+# Zone 22 (Shard 22)
+type monster_zone_22_t;
+domain_type(monster_zone_22_t)
+
+allow monster_zone_22_t self:process { fork signal };
+allow monster_zone_22_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_22_t ~monster_zone_22_t:file { read write };
+
+# Zone 23 (Shard 23)
+type monster_zone_23_t;
+domain_type(monster_zone_23_t)
+
+allow monster_zone_23_t self:process { fork signal };
+allow monster_zone_23_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_23_t ~monster_zone_23_t:file { read write };
+
+# Zone 24 (Shard 24)
+type monster_zone_24_t;
+domain_type(monster_zone_24_t)
+
+allow monster_zone_24_t self:process { fork signal };
+allow monster_zone_24_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_24_t ~monster_zone_24_t:file { read write };
+
+# Zone 25 (Shard 25)
+type monster_zone_25_t;
+domain_type(monster_zone_25_t)
+
+allow monster_zone_25_t self:process { fork signal };
+allow monster_zone_25_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_25_t ~monster_zone_25_t:file { read write };
+
+# Zone 26 (Shard 26)
+type monster_zone_26_t;
+domain_type(monster_zone_26_t)
+
+allow monster_zone_26_t self:process { fork signal };
+allow monster_zone_26_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_26_t ~monster_zone_26_t:file { read write };
+
+# Zone 27 (Shard 27)
+type monster_zone_27_t;
+domain_type(monster_zone_27_t)
+
+allow monster_zone_27_t self:process { fork signal };
+allow monster_zone_27_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_27_t ~monster_zone_27_t:file { read write };
+
+# Zone 28 (Shard 28)
+type monster_zone_28_t;
+domain_type(monster_zone_28_t)
+
+allow monster_zone_28_t self:process { fork signal };
+allow monster_zone_28_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_28_t ~monster_zone_28_t:file { read write };
+
+# Zone 29 (Shard 29)
+type monster_zone_29_t;
+domain_type(monster_zone_29_t)
+
+allow monster_zone_29_t self:process { fork signal };
+allow monster_zone_29_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_29_t ~monster_zone_29_t:file { read write };
+
+# Zone 30 (Shard 30)
+type monster_zone_30_t;
+domain_type(monster_zone_30_t)
+
+allow monster_zone_30_t self:process { fork signal };
+allow monster_zone_30_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_30_t ~monster_zone_30_t:file { read write };
+
+# Zone 31 (Shard 31)
+type monster_zone_31_t;
+domain_type(monster_zone_31_t)
+
+allow monster_zone_31_t self:process { fork signal };
+allow monster_zone_31_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_31_t ~monster_zone_31_t:file { read write };
+
+# Zone 32 (Shard 32)
+type monster_zone_32_t;
+domain_type(monster_zone_32_t)
+
+allow monster_zone_32_t self:process { fork signal };
+allow monster_zone_32_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_32_t ~monster_zone_32_t:file { read write };
+
+# Zone 33 (Shard 33)
+type monster_zone_33_t;
+domain_type(monster_zone_33_t)
+
+allow monster_zone_33_t self:process { fork signal };
+allow monster_zone_33_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_33_t ~monster_zone_33_t:file { read write };
+
+# Zone 34 (Shard 34)
+type monster_zone_34_t;
+domain_type(monster_zone_34_t)
+
+allow monster_zone_34_t self:process { fork signal };
+allow monster_zone_34_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_34_t ~monster_zone_34_t:file { read write };
+
+# Zone 35 (Shard 35)
+type monster_zone_35_t;
+domain_type(monster_zone_35_t)
+
+allow monster_zone_35_t self:process { fork signal };
+allow monster_zone_35_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_35_t ~monster_zone_35_t:file { read write };
+
+# Zone 36 (Shard 36)
+type monster_zone_36_t;
+domain_type(monster_zone_36_t)
+
+allow monster_zone_36_t self:process { fork signal };
+allow monster_zone_36_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_36_t ~monster_zone_36_t:file { read write };
+
+# Zone 37 (Shard 37)
+type monster_zone_37_t;
+domain_type(monster_zone_37_t)
+
+allow monster_zone_37_t self:process { fork signal };
+allow monster_zone_37_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_37_t ~monster_zone_37_t:file { read write };
+
+# Zone 38 (Shard 38)
+type monster_zone_38_t;
+domain_type(monster_zone_38_t)
+
+allow monster_zone_38_t self:process { fork signal };
+allow monster_zone_38_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_38_t ~monster_zone_38_t:file { read write };
+
+# Zone 39 (Shard 39)
+type monster_zone_39_t;
+domain_type(monster_zone_39_t)
+
+allow monster_zone_39_t self:process { fork signal };
+allow monster_zone_39_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_39_t ~monster_zone_39_t:file { read write };
+
+# Zone 40 (Shard 40)
+type monster_zone_40_t;
+domain_type(monster_zone_40_t)
+
+allow monster_zone_40_t self:process { fork signal };
+allow monster_zone_40_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_40_t ~monster_zone_40_t:file { read write };
+
+# Zone 41 (Shard 41)
+type monster_zone_41_t;
+domain_type(monster_zone_41_t)
+
+allow monster_zone_41_t self:process { fork signal };
+allow monster_zone_41_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_41_t ~monster_zone_41_t:file { read write };
+
+# Zone 42 (Shard 42)
+type monster_zone_42_t;
+domain_type(monster_zone_42_t)
+
+allow monster_zone_42_t self:process { fork signal };
+allow monster_zone_42_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_42_t ~monster_zone_42_t:file { read write };
+
+# Zone 43 (Shard 43)
+type monster_zone_43_t;
+domain_type(monster_zone_43_t)
+
+allow monster_zone_43_t self:process { fork signal };
+allow monster_zone_43_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_43_t ~monster_zone_43_t:file { read write };
+
+# Zone 44 (Shard 44)
+type monster_zone_44_t;
+domain_type(monster_zone_44_t)
+
+allow monster_zone_44_t self:process { fork signal };
+allow monster_zone_44_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_44_t ~monster_zone_44_t:file { read write };
+
+# Zone 45 (Shard 45)
+type monster_zone_45_t;
+domain_type(monster_zone_45_t)
+
+allow monster_zone_45_t self:process { fork signal };
+allow monster_zone_45_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_45_t ~monster_zone_45_t:file { read write };
+
+# Zone 46 (Shard 46)
+type monster_zone_46_t;
+domain_type(monster_zone_46_t)
+
+allow monster_zone_46_t self:process { fork signal };
+allow monster_zone_46_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_46_t ~monster_zone_46_t:file { read write };
+
+# Zone 47 (Shard 47)
+type monster_zone_47_t;
+domain_type(monster_zone_47_t)
+
+allow monster_zone_47_t self:process { fork signal };
+allow monster_zone_47_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_47_t ~monster_zone_47_t:file { read write };
+
+# Zone 48 (Shard 48)
+type monster_zone_48_t;
+domain_type(monster_zone_48_t)
+
+allow monster_zone_48_t self:process { fork signal };
+allow monster_zone_48_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_48_t ~monster_zone_48_t:file { read write };
+
+# Zone 49 (Shard 49)
+type monster_zone_49_t;
+domain_type(monster_zone_49_t)
+
+allow monster_zone_49_t self:process { fork signal };
+allow monster_zone_49_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_49_t ~monster_zone_49_t:file { read write };
+
+# Zone 50 (Shard 50)
+type monster_zone_50_t;
+domain_type(monster_zone_50_t)
+
+allow monster_zone_50_t self:process { fork signal };
+allow monster_zone_50_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_50_t ~monster_zone_50_t:file { read write };
+
+# Zone 51 (Shard 51)
+type monster_zone_51_t;
+domain_type(monster_zone_51_t)
+
+allow monster_zone_51_t self:process { fork signal };
+allow monster_zone_51_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_51_t ~monster_zone_51_t:file { read write };
+
+# Zone 52 (Shard 52)
+type monster_zone_52_t;
+domain_type(monster_zone_52_t)
+
+allow monster_zone_52_t self:process { fork signal };
+allow monster_zone_52_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_52_t ~monster_zone_52_t:file { read write };
+
+# Zone 53 (Shard 53)
+type monster_zone_53_t;
+domain_type(monster_zone_53_t)
+
+allow monster_zone_53_t self:process { fork signal };
+allow monster_zone_53_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_53_t ~monster_zone_53_t:file { read write };
+
+# Zone 54 (Shard 54)
+type monster_zone_54_t;
+domain_type(monster_zone_54_t)
+
+allow monster_zone_54_t self:process { fork signal };
+allow monster_zone_54_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_54_t ~monster_zone_54_t:file { read write };
+
+# Zone 55 (Shard 55)
+type monster_zone_55_t;
+domain_type(monster_zone_55_t)
+
+allow monster_zone_55_t self:process { fork signal };
+allow monster_zone_55_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_55_t ~monster_zone_55_t:file { read write };
+
+# Zone 56 (Shard 56)
+type monster_zone_56_t;
+domain_type(monster_zone_56_t)
+
+allow monster_zone_56_t self:process { fork signal };
+allow monster_zone_56_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_56_t ~monster_zone_56_t:file { read write };
+
+# Zone 57 (Shard 57)
+type monster_zone_57_t;
+domain_type(monster_zone_57_t)
+
+allow monster_zone_57_t self:process { fork signal };
+allow monster_zone_57_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_57_t ~monster_zone_57_t:file { read write };
+
+# Zone 58 (Shard 58)
+type monster_zone_58_t;
+domain_type(monster_zone_58_t)
+
+allow monster_zone_58_t self:process { fork signal };
+allow monster_zone_58_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_58_t ~monster_zone_58_t:file { read write };
+
+# Zone 59 (Shard 59)
+type monster_zone_59_t;
+domain_type(monster_zone_59_t)
+
+allow monster_zone_59_t self:process { fork signal };
+allow monster_zone_59_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_59_t ~monster_zone_59_t:file { read write };
+
+# Zone 60 (Shard 60)
+type monster_zone_60_t;
+domain_type(monster_zone_60_t)
+
+allow monster_zone_60_t self:process { fork signal };
+allow monster_zone_60_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_60_t ~monster_zone_60_t:file { read write };
+
+# Zone 61 (Shard 61)
+type monster_zone_61_t;
+domain_type(monster_zone_61_t)
+
+allow monster_zone_61_t self:process { fork signal };
+allow monster_zone_61_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_61_t ~monster_zone_61_t:file { read write };
+
+# Zone 62 (Shard 62)
+type monster_zone_62_t;
+domain_type(monster_zone_62_t)
+
+allow monster_zone_62_t self:process { fork signal };
+allow monster_zone_62_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_62_t ~monster_zone_62_t:file { read write };
+
+# Zone 63 (Shard 63)
+type monster_zone_63_t;
+domain_type(monster_zone_63_t)
+
+allow monster_zone_63_t self:process { fork signal };
+allow monster_zone_63_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_63_t ~monster_zone_63_t:file { read write };
+
+# Zone 64 (Shard 64)
+type monster_zone_64_t;
+domain_type(monster_zone_64_t)
+
+allow monster_zone_64_t self:process { fork signal };
+allow monster_zone_64_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_64_t ~monster_zone_64_t:file { read write };
+
+# Zone 65 (Shard 65)
+type monster_zone_65_t;
+domain_type(monster_zone_65_t)
+
+allow monster_zone_65_t self:process { fork signal };
+allow monster_zone_65_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_65_t ~monster_zone_65_t:file { read write };
+
+# Zone 66 (Shard 66)
+type monster_zone_66_t;
+domain_type(monster_zone_66_t)
+
+allow monster_zone_66_t self:process { fork signal };
+allow monster_zone_66_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_66_t ~monster_zone_66_t:file { read write };
+
+# Zone 67 (Shard 67)
+type monster_zone_67_t;
+domain_type(monster_zone_67_t)
+
+allow monster_zone_67_t self:process { fork signal };
+allow monster_zone_67_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_67_t ~monster_zone_67_t:file { read write };
+
+# Zone 68 (Shard 68)
+type monster_zone_68_t;
+domain_type(monster_zone_68_t)
+
+allow monster_zone_68_t self:process { fork signal };
+allow monster_zone_68_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_68_t ~monster_zone_68_t:file { read write };
+
+# Zone 69 (Shard 69)
+type monster_zone_69_t;
+domain_type(monster_zone_69_t)
+
+allow monster_zone_69_t self:process { fork signal };
+allow monster_zone_69_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_69_t ~monster_zone_69_t:file { read write };
+
+# Zone 70 (Shard 70)
+type monster_zone_70_t;
+domain_type(monster_zone_70_t)
+
+allow monster_zone_70_t self:process { fork signal };
+allow monster_zone_70_t self:file { read write open };
+
+# Zone isolation
+neverallow monster_zone_70_t ~monster_zone_70_t:file { read write };

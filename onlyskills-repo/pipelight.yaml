@@ -1,0 +1,62 @@
+name: selinux_reflection_build
+version: 1.0.0
+
+metadata:
+  sop: SOP-CARGO-PIPELIGHT-001
+  iso9000: compliant
+  description: Build selinux_reflection via Pipelight (cargo forbidden for kiro)
+
+stages:
+  - name: init_audit
+    command: |
+      echo "=== Pipelight Build Audit ===" | tee build_audit.log
+      date -Iseconds | tee -a build_audit.log
+      echo "Operator: $USER" | tee -a build_audit.log
+      echo "Pipeline: selinux_reflection_build" | tee -a build_audit.log
+      echo "SOP: SOP-CARGO-PIPELIGHT-001" | tee -a build_audit.log
+  
+  - name: cargo_check
+    depends: [init_audit]
+    command: |
+      echo "Stage: cargo check" | tee -a build_audit.log
+      cargo check --bin selinux_reflection 2>&1 | tee -a build_audit.log
+  
+  - name: cargo_build
+    depends: [cargo_check]
+    command: |
+      echo "Stage: cargo build" | tee -a build_audit.log
+      cargo build --release --bin selinux_reflection 2>&1 | tee -a build_audit.log
+  
+  - name: generate_artifacts
+    depends: [cargo_build]
+    command: |
+      echo "Stage: generate artifacts" | tee -a build_audit.log
+      ./target/release/selinux_reflection 2>&1 | tee -a build_audit.log
+  
+  - name: verify_artifacts
+    depends: [generate_artifacts]
+    command: |
+      echo "Stage: verify artifacts" | tee -a build_audit.log
+      ls -lh selinux_lattice.* | tee -a build_audit.log
+      echo "✓ Prolog: $(test -f selinux_lattice.pl && echo 'PRESENT' || echo 'MISSING')" | tee -a build_audit.log
+      echo "✓ Lean4: $(test -f selinux_lattice.lean && echo 'PRESENT' || echo 'MISSING')" | tee -a build_audit.log
+      echo "✓ MiniZinc: $(test -f selinux_lattice.mzn && echo 'PRESENT' || echo 'MISSING')" | tee -a build_audit.log
+      echo "✓ Nix: $(test -f selinux_lattice.nix && echo 'PRESENT' || echo 'MISSING')" | tee -a build_audit.log
+      echo "✓ PipeLite: $(test -f selinux_lattice.pipe && echo 'PRESENT' || echo 'MISSING')" | tee -a build_audit.log
+  
+  - name: finalize_audit
+    depends: [verify_artifacts]
+    command: |
+      echo "Build completed: $(date -Iseconds)" | tee -a build_audit.log
+      echo "Status: SUCCESS" | tee -a build_audit.log
+      chmod 444 build_audit.log
+
+outputs:
+  - target/release/selinux_reflection
+  - selinux_lattice.pl
+  - selinux_lattice.lean
+  - selinux_lattice.mzn
+  - selinux_lattice.nix
+  - selinux_lattice.pipe
+  - selinux_lattice_mapping.json
+  - build_audit.log

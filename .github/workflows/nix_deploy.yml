@@ -1,0 +1,81 @@
+name: Multi-Platform Deploy (Local Runner + Nix)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy-all-nix:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v24
+    
+    - name: Build All Binaries (Nix)
+      run: |
+        nix develop --command cargo build --release --bin self_deploy
+        nix develop --command cargo build --release --bin archive_deploy
+        nix develop --command cargo build --release --bin extract_constants
+        nix develop --command cargo build --release --bin apply_value_lattice
+        nix develop --command cargo build --release --bin lattice_qwen_witness
+        nix develop --command cargo build --release --bin zk_lattice_archive
+        nix develop --command cargo build --release --bin qwen_to_wasm_hecke
+    
+    - name: Generate Artifacts (Nix)
+      run: |
+        nix develop --command ./target/release/extract_constants
+        nix develop --command ./target/release/apply_value_lattice
+        nix develop --command ./target/release/lattice_qwen_witness
+        nix develop --command ./target/release/zk_lattice_archive
+        nix develop --command ./target/release/qwen_to_wasm_hecke
+    
+    - name: Prepare Deployment
+      run: |
+        nix develop --command mkdir -p docs
+        nix develop --command cp README.md docs/
+        nix develop --command cp PAPER.md docs/ || true
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+    
+    - name: Deploy to Vercel (Nix)
+      if: env.VERCEL_TOKEN != ''
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      run: |
+        nix-shell -p nodePackages.vercel --run "vercel --prod --token=$VERCEL_TOKEN --yes"
+    
+    - name: Deploy to Cloudflare Pages (Nix)
+      if: env.CLOUDFLARE_API_TOKEN != ''
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      run: |
+        nix-shell -p nodePackages.wrangler --run "wrangler pages deploy docs --project-name=monster-zk-lattice"
+    
+    - name: Deploy to Archive.org (Rust)
+      run: |
+        nix develop --command ./target/release/self_deploy
+    
+    - name: Summary
+      run: |
+        echo "## 🚀 Multi-Platform Deployment (Nix)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "All tools from Nix:" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ cargo (Rust builds)" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ vercel (via nix-shell)" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ wrangler (via nix-shell)" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ ia (Archive.org via Rust)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Deployed to:" >> $GITHUB_STEP_SUMMARY
+        echo "- [GitHub Pages](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Vercel](https://monster.vercel.app)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Cloudflare Pages](https://monster-zk-lattice.pages.dev)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Archive.org](https://archive.org/details/monster-zk-lattice-complete)" >> $GITHUB_STEP_SUMMARY

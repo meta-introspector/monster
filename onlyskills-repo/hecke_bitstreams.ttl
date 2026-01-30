@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hecke: <https://onlyskills.com/hecke#> .
+
+# 8M Objects as Recursive Bitstreams in 71^7 Hecke Space
+
+<https://onlyskills.com/object/0> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/0> hecke:heckeIndex 8803797402281 .
+<https://onlyskills.com/object/0> hecke:primeSignature 3037 .
+
+<https://onlyskills.com/object/1> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/1> hecke:heckeIndex 2068123093954 .
+<https://onlyskills.com/object/1> hecke:primeSignature 1377 .
+
+<https://onlyskills.com/object/2> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/2> hecke:heckeIndex 6693850787711 .
+<https://onlyskills.com/object/2> hecke:primeSignature 1633 .
+
+<https://onlyskills.com/object/3> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/3> hecke:heckeIndex 5644584656628 .
+<https://onlyskills.com/object/3> hecke:primeSignature 2052 .
+
+<https://onlyskills.com/object/4> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/4> hecke:heckeIndex 1932666501269 .
+<https://onlyskills.com/object/4> hecke:primeSignature 799 .
+
+<https://onlyskills.com/object/5> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/5> hecke:heckeIndex 5601170632643 .
+<https://onlyskills.com/object/5> hecke:primeSignature 2206 .
+
+<https://onlyskills.com/object/6> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/6> hecke:heckeIndex 3795408924194 .
+<https://onlyskills.com/object/6> hecke:primeSignature 2187 .
+
+<https://onlyskills.com/object/7> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/7> hecke:heckeIndex 8450484145212 .
+<https://onlyskills.com/object/7> hecke:primeSignature 3305 .
+
+<https://onlyskills.com/object/8> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/8> hecke:heckeIndex 7565011112717 .
+<https://onlyskills.com/object/8> hecke:primeSignature 2199 .
+
+<https://onlyskills.com/object/9> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/9> hecke:heckeIndex 3288072415887 .
+<https://onlyskills.com/object/9> hecke:primeSignature 1853 .
+
+<https://onlyskills.com/object/10> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/10> hecke:heckeIndex 6905298527613 .
+<https://onlyskills.com/object/10> hecke:primeSignature 2335 .
+
+<https://onlyskills.com/object/11> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/11> hecke:heckeIndex 3989889204135 .
+<https://onlyskills.com/object/11> hecke:primeSignature 1189 .
+
+<https://onlyskills.com/object/12> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/12> hecke:heckeIndex 5926031911472 .
+<https://onlyskills.com/object/12> hecke:primeSignature 1923 .
+
+<https://onlyskills.com/object/13> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/13> hecke:heckeIndex 3359733022825 .
+<https://onlyskills.com/object/13> hecke:primeSignature 1242 .
+
+<https://onlyskills.com/object/14> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/14> hecke:heckeIndex 8561829248213 .
+<https://onlyskills.com/object/14> hecke:primeSignature 2883 .
+
+<https://onlyskills.com/object/15> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/15> hecke:heckeIndex 8544396587529 .
+<https://onlyskills.com/object/15> hecke:primeSignature 3214 .
+
+<https://onlyskills.com/object/16> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/16> hecke:heckeIndex 3359346552361 .
+<https://onlyskills.com/object/16> hecke:primeSignature 2212 .
+
+<https://onlyskills.com/object/17> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/17> hecke:heckeIndex 7172953382931 .
+<https://onlyskills.com/object/17> hecke:primeSignature 3281 .
+
+<https://onlyskills.com/object/18> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/18> hecke:heckeIndex 464788396869 .
+<https://onlyskills.com/object/18> hecke:primeSignature 1552 .
+
+<https://onlyskills.com/object/19> rdf:type hecke:BitstreamObject .
+<https://onlyskills.com/object/19> hecke:heckeIndex 5862626151105 .
+<https://onlyskills.com/object/19> hecke:primeSignature 2717 .

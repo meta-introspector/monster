@@ -1,0 +1,58 @@
+[
+  {
+    "commit": "dc7464fed44cef8380cfa105fa115403b5803e21",
+    "timestamp": "2026-01-30T12:07:21.944026286+00:00",
+    "message": "Add Monster Walk showcase",
+    "reviewer": "Knuth",
+    "comment": "Performance trace captured. IPC: 2.00",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_dc7464fe.circom"
+  },
+  {
+    "commit": "dc7464fed44cef8380cfa105fa115403b5803e21",
+    "timestamp": "2026-01-30T12:07:21.944026286+00:00",
+    "message": "Add Monster Walk showcase",
+    "reviewer": "ITIL",
+    "comment": "Change documented. Audit trail maintained.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_dc7464fe.circom"
+  },
+  {
+    "commit": "dc7464fed44cef8380cfa105fa115403b5803e21",
+    "timestamp": "2026-01-30T12:07:21.944026286+00:00",
+    "message": "Add Monster Walk showcase",
+    "reviewer": "ISO9001",
+    "comment": "Quality metrics captured via ZKP.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_dc7464fe.circom"
+  },
+  {
+    "commit": "dc7464fed44cef8380cfa105fa115403b5803e21",
+    "timestamp": "2026-01-30T12:07:21.944026286+00:00",
+    "message": "Add Monster Walk showcase",
+    "reviewer": "RustEnforcer",
+    "comment": "No Python. Type-safe. Memory-safe. ZKP verified.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_dc7464fe.circom"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "tool": "expert_system",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "multi_lang_prover",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "precedence_survey",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "universal_shard_reader",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "extract_constants",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "term_frequency",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "virtual_knuth",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "llm_strip_miner",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "mathematical_object_lattice",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "qwen_strip_miner",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "vectorize_all_parquets",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  },
+  {
+    "tool": "quantum_71_shards",
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'cargo'"
+  }
+]

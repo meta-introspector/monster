@@ -1,0 +1,104 @@
+warning: Git tree '/home/mdupont/experiments/monster' is dirty
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+warning: ignoring the client-specified setting 'stalled-download-timeout', because it is a restricted setting and you are not a trusted user
+🔥 VECTORIZING ALL PARQUETS (24 CPUs)
+======================================================================
+
+Found 428658 parquet files
+
+🚀 Queueing 428658 files...
+Worker 12: Error processing /home/mdupont/.local/share/toolchain-analysis/cargo/markov_symbol_scores.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 15: Error processing /home/mdupont/.local/share/toolchain-analysis/cargo/nix_store_grammars.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 22: Error processing /home/mdupont/.local/share/toolchain-analysis/rustc/nix_store_grammars.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 17: Error processing /home/mdupont/.local/share/toolchain-analysis/rustc/markov_symbol_scores.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 7: Error processing /home/mdupont/.local/share/toolchain-analysis/bash/markov_symbol_scores.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 14: Error processing /home/mdupont/.local/share/toolchain-analysis/rustc/byte_provenance.parquet: parquet: File out of specification: The file must end with PAR1
+Worker 20: Error processing /home/mdupont/.local/share/toolchain-analysis/gcc/markov_symbol_scores.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 16: Error processing /home/mdupont/.local/share/toolchain-analysis/gcc/byte_provenance.parquet: parquet: File out of specification: The file must end with PAR1
+Worker 5: Error processing /home/mdupont/.local/share/toolchain-analysis/bash/nix_store_grammars.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 4: Error processing /home/mdupont/.local/share/toolchain-analysis/bash/byte_provenance.parquet: parquet: File out of specification: The file must end with PAR1
+Worker 11: Error processing /home/mdupont/.local/share/toolchain-analysis/cargo/byte_provenance.parquet: parquet: File out of specification: The file must end with PAR1
+Worker 18: Error processing /home/mdupont/.local/share/toolchain-analysis/gcc/nix_store_grammars.parquet: parquet: File out of specification: A parquet file must contain a header and footer with at least 12 bytes
+Worker 7: Error processing /home/mdupont/nix-controller/data/const_declarations.parquet: cannot create series from UInt8
+Worker 14: Error processing /home/mdupont/nix-controller/data/const_declarations_public.parquet: cannot create series from UInt8
+
+thread '<unnamed>' (1547398) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/polars-core-0.44.2/src/series/ops/null.rs:124:17:
+not implemented for dtype UInt8
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  Processed: 100 batches, 1873406 vectors
+Worker 10: Error processing /home/mdupont/nix-controller/data/fn_declarations_public.parquet: cannot create series from UInt8
+Worker 16: Error processing /home/mdupont/nix-controller/data/impl_declarations.parquet: cannot create series from UInt8
+Worker 12: Error processing /home/mdupont/nix-controller/data/enum_declarations_public.parquet: cannot create series from UInt8
+Worker 22: Error processing /home/mdupont/nix-controller/data/keyword_table.parquet: cannot create series from UInt8
+Worker 1: Error processing /home/mdupont/nix-controller/data/mod_declarations.parquet: cannot create series from UInt8
+Worker 8: Error processing /home/mdupont/nix-controller/data/pub_declarations.parquet: cannot create series from UInt8
+Worker 23: Error processing /home/mdupont/nix-controller/data/enum_declarations.parquet: cannot create series from UInt8
+Worker 11: Error processing /home/mdupont/nix-controller/data/fn_declarations.parquet: cannot create series from UInt8
+Worker 19: Error processing /home/mdupont/nix-controller/data/markov_fingerprints.parquet: cannot create series from UInt8
+Worker 9: Error processing /home/mdupont/nix-controller/data/ngram_content_model.parquet: cannot create series from UInt8
+Worker 21: Error processing /home/mdupont/nix-controller/data/semantic_lattice.parquet: cannot create series from UInt8
+Worker 18: Error processing /home/mdupont/nix-controller/data/static_declarations.parquet: cannot create series from UInt8
+Worker 3: Error processing /home/mdupont/nix-controller/data/struct_declarations.parquet: cannot create series from UInt8
+Worker 5: Error processing /home/mdupont/nix-controller/data/struct_declarations_public.parquet: cannot create series from UInt8
+Worker 0: Error processing /home/mdupont/nix-controller/data/cuda_training_dataset.parquet: cannot create series from UInt8
+Worker 19: Error processing /home/mdupont/nix-controller/data/super_git_lookup.parquet: cannot create series from UInt8
+
+thread '<unnamed>' (1547385) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/polars-core-0.44.2/src/series/ops/null.rs:124:17:
+not implemented for dtype UInt8
+Worker 2: Error processing /home/mdupont/nix-controller/data/training_data.parquet: cannot create series from UInt8
+Worker 20: Error processing /home/mdupont/nix-controller/data/trait_declarations_public.parquet: cannot create series from UInt8
+Worker 9: Error processing /home/mdupont/nix-controller/data/sus_authors.parquet: cannot create series from UInt8
+Worker 18: Error processing /home/mdupont/nix-controller/data/unified_complexity_dataset.parquet: cannot create series from UInt8
+Worker 3: Error processing /home/mdupont/nix-controller/data/use_declarations.parquet: cannot create series from UInt8
+Worker 21: Error processing /home/mdupont/nix-controller/data/trait_declarations.parquet: cannot create series from UInt8
+Worker 15: Error processing /home/mdupont/nix-controller/data/type_declarations.parquet: cannot create series from UInt8
+Worker 19: Error processing /home/mdupont/nix-controller/data/zero_lattice.parquet: cannot create series from UInt8
+  Processed: 200 batches, 4026197 vectors
+  Processed: 300 batches, 6156197 vectors
+Worker 17: Error processing /home/mdupont/nix-controller/data/skeleton.parquet: cannot create series from UInt8
+Worker 14: Error processing /home/mdupont/nix-controller/data/deep_group_models.parquet: cannot create series from UInt8
+  Processed: 400 batches, 8286197 vectors
+  Processed: 500 batches, 10430397 vectors
+  Processed: 600 batches, 12567497 vectors
+  Processed: 700 batches, 14697497 vectors
+  Processed: 800 batches, 16827497 vectors
+  Processed: 900 batches, 18957497 vectors
+  Processed: 1000 batches, 21087497 vectors
+  Processed: 1100 batches, 23217497 vectors
+  Processed: 1200 batches, 25347497 vectors
+  Processed: 1300 batches, 27477497 vectors
+  Processed: 1400 batches, 29607497 vectors
+  Processed: 1500 batches, 31737497 vectors
+  Processed: 1600 batches, 33867497 vectors
+  Processed: 1700 batches, 35997497 vectors
+  Processed: 1800 batches, 38127497 vectors
+  Processed: 1900 batches, 40257497 vectors
+  Processed: 2000 batches, 42387497 vectors
+  Processed: 2100 batches, 44517497 vectors
+  Processed: 2200 batches, 46647497 vectors
+  Processed: 2300 batches, 48777497 vectors
+  Processed: 2400 batches, 50907497 vectors
+  Processed: 2500 batches, 53037497 vectors
+  Processed: 2600 batches, 55167497 vectors
+  Processed: 2700 batches, 57297497 vectors
+  Processed: 2800 batches, 59427497 vectors
+  Processed: 2900 batches, 61557497 vectors
+  Processed: 3000 batches, 63687497 vectors
+  Processed: 3100 batches, 65817497 vectors
+  Processed: 3200 batches, 67947497 vectors
+  Processed: 3300 batches, 70077497 vectors
+  Processed: 3400 batches, 72207497 vectors
+  Processed: 3500 batches, 74337497 vectors
+  Processed: 3600 batches, 76462598 vectors
+  Processed: 3700 batches, 78592598 vectors
+  Processed: 3800 batches, 80722598 vectors
+  Processed: 3900 batches, 82852598 vectors
+  Processed: 4000 batches, 84982598 vectors
+  Processed: 4100 batches, 87112598 vectors
+  Processed: 4200 batches, 89242598 vectors
+  Processed: 4300 batches, 91372598 vectors
+  Processed: 4400 batches, 93502598 vectors
+  Processed: 4500 batches, 95632598 vectors
+  Processed: 4600 batches, 97762598 vectors
+  Processed: 4700 batches, 99892598 vectors

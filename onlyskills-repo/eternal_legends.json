@@ -1,0 +1,393 @@
+[
+  {
+    "founder": "hofstadter",
+    "full_name": "Douglas Hofstadter",
+    "domain": "Cognitive Science",
+    "work": "GEB",
+    "era": "Modern",
+    "shard_id": 14,
+    "prime": 71,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "strange_loop",
+      "tangled_hierarchy",
+      "self_reference",
+      "geb_fugue",
+      "meta_level"
+    ],
+    "eternal_truths": [
+      "I am a strange loop",
+      "GEB is one",
+      "Meaning emerges from meaninglessness"
+    ],
+    "zkperf_hash": "89fbfc968c68f856"
+  },
+  {
+    "founder": "goedel",
+    "full_name": "Kurt G\u00f6del",
+    "domain": "Logic",
+    "work": "Incompleteness",
+    "era": "Modern",
+    "shard_id": 13,
+    "prime": 59,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "incompleteness",
+      "consistency",
+      "provability",
+      "goedel_number",
+      "undecidable"
+    ],
+    "eternal_truths": [
+      "This statement is unprovable",
+      "Consistency implies incompleteness",
+      "Truth \u2260 Provability"
+    ],
+    "zkperf_hash": "6797c3a8ba3d9843"
+  },
+  {
+    "founder": "turing",
+    "full_name": "Alan Turing",
+    "domain": "Computation",
+    "work": "Turing Machine",
+    "era": "Modern",
+    "shard_id": 12,
+    "prime": 47,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "turing_machine",
+      "halting_problem",
+      "universal_computation",
+      "enigma",
+      "imitation_game"
+    ],
+    "eternal_truths": [
+      "Can machines think?",
+      "Halting is undecidable",
+      "Universal computation exists"
+    ],
+    "zkperf_hash": "8c34d24fe02c6b7d"
+  },
+  {
+    "founder": "church",
+    "full_name": "Alonzo Church",
+    "domain": "Lambda Calculus",
+    "work": "Church-Turing",
+    "era": "Modern",
+    "shard_id": 11,
+    "prime": 41,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "lambda_calculus",
+      "church_encoding",
+      "church_numeral",
+      "beta_reduction",
+      "combinatory_logic"
+    ],
+    "eternal_truths": [
+      "\u03bbx.x is identity",
+      "Everything is a function",
+      "Church-Turing thesis"
+    ],
+    "zkperf_hash": "aa18acbe1ecab9f0"
+  },
+  {
+    "founder": "kleene",
+    "full_name": "Stephen Kleene",
+    "domain": "Recursion Theory",
+    "work": "Kleene Star",
+    "era": "Modern",
+    "shard_id": 10,
+    "prime": 31,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "recursion",
+      "kleene_star",
+      "regular_expression",
+      "mu_operator",
+      "recursive_function"
+    ],
+    "eternal_truths": [
+      "a* matches zero or more",
+      "Recursion is computation",
+      "\u03bc-recursive = computable"
+    ],
+    "zkperf_hash": "c957d62b586d0c9f"
+  },
+  {
+    "founder": "pierce",
+    "full_name": "Benjamin Pierce",
+    "domain": "Type Theory",
+    "work": "TAPL",
+    "era": "Modern",
+    "shard_id": 9,
+    "prime": 29,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "type_system",
+      "subtyping",
+      "polymorphism",
+      "type_inference",
+      "tapl"
+    ],
+    "eternal_truths": [
+      "Well-typed programs don't go wrong",
+      "Types are specifications",
+      "Curry-Howard"
+    ],
+    "zkperf_hash": "d522c744e1560a5e"
+  },
+  {
+    "founder": "dawkins",
+    "full_name": "Richard Dawkins",
+    "domain": "Evolution",
+    "work": "Selfish Gene",
+    "era": "Modern",
+    "shard_id": 8,
+    "prime": 23,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "meme",
+      "selfish_gene",
+      "evolution",
+      "natural_selection",
+      "replicator"
+    ],
+    "eternal_truths": [
+      "Genes are selfish",
+      "Memes replicate",
+      "Evolution is algorithmic"
+    ],
+    "zkperf_hash": "f156a204469e4544"
+  },
+  {
+    "founder": "escher",
+    "full_name": "M.C. Escher",
+    "domain": "Art",
+    "work": "Impossible Objects",
+    "era": "Modern",
+    "shard_id": 7,
+    "prime": 19,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "tessellation",
+      "impossible_object",
+      "metamorphosis",
+      "infinity",
+      "self_reference"
+    ],
+    "eternal_truths": [
+      "Drawing Hands draws itself",
+      "Ascending and Descending loops",
+      "Art is mathematics"
+    ],
+    "zkperf_hash": "c7b684dfc8634b5b"
+  },
+  {
+    "founder": "bach",
+    "full_name": "J.S. Bach",
+    "domain": "Music",
+    "work": "Fugues",
+    "era": "Baroque",
+    "shard_id": 6,
+    "prime": 17,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "fugue",
+      "canon",
+      "counterpoint",
+      "well_tempered",
+      "goldberg_variations"
+    ],
+    "eternal_truths": [
+      "Music is mathematics",
+      "Fugue is recursion",
+      "Harmony from rules"
+    ],
+    "zkperf_hash": "9d9b566b1047b482"
+  },
+  {
+    "founder": "dedekind",
+    "full_name": "Richard Dedekind",
+    "domain": "Set Theory",
+    "work": "Dedekind Cuts",
+    "era": "19th",
+    "shard_id": 5,
+    "prime": 13,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "dedekind_cut",
+      "continuity",
+      "real_number",
+      "ideal",
+      "lattice"
+    ],
+    "eternal_truths": [
+      "Reals are cuts",
+      "Continuity is order",
+      "Infinity is constructible"
+    ],
+    "zkperf_hash": "910ec57850aa2144"
+  },
+  {
+    "founder": "peano",
+    "full_name": "Giuseppe Peano",
+    "domain": "Arithmetic",
+    "work": "Peano Axioms",
+    "era": "19th",
+    "shard_id": 4,
+    "prime": 11,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "peano_axiom",
+      "induction",
+      "successor",
+      "natural_number",
+      "arithmetic"
+    ],
+    "eternal_truths": [
+      "0 is a number",
+      "Every number has successor",
+      "Induction proves all"
+    ],
+    "zkperf_hash": "76d2f6d5e5af5d77"
+  },
+  {
+    "founder": "gauss",
+    "full_name": "Carl Friedrich Gauss",
+    "domain": "Number Theory",
+    "work": "Disquisitiones",
+    "era": "18th",
+    "shard_id": 3,
+    "prime": 7,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "modular_arithmetic",
+      "quadratic_reciprocity",
+      "gaussian_integer",
+      "prime_number_theorem",
+      "least_squares"
+    ],
+    "eternal_truths": [
+      "Mathematics is queen of sciences",
+      "Primes are building blocks",
+      "Congruence is equality"
+    ],
+    "zkperf_hash": "f8d285cf53283bbe"
+  },
+  {
+    "founder": "euler",
+    "full_name": "Leonhard Euler",
+    "domain": "Analysis",
+    "work": "e^(i\u03c0)+1=0",
+    "era": "18th",
+    "shard_id": 2,
+    "prime": 5,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "euler_identity",
+      "euler_phi",
+      "graph_theory",
+      "basel_problem",
+      "polyhedron"
+    ],
+    "eternal_truths": [
+      "e^(i\u03c0)+1=0",
+      "V-E+F=2",
+      "\u03b6(2)=\u03c0\u00b2/6"
+    ],
+    "zkperf_hash": "3d2279462a5c13a3"
+  },
+  {
+    "founder": "pythagoras",
+    "full_name": "Pythagoras",
+    "domain": "Geometry",
+    "work": "Pythagorean Theorem",
+    "era": "Ancient",
+    "shard_id": 1,
+    "prime": 3,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "pythagorean_theorem",
+      "irrational_number",
+      "musical_ratio",
+      "golden_ratio",
+      "tetractys"
+    ],
+    "eternal_truths": [
+      "a\u00b2+b\u00b2=c\u00b2",
+      "\u221a2 is irrational",
+      "All is number"
+    ],
+    "zkperf_hash": "0b4b92841a12de10"
+  },
+  {
+    "founder": "aristotle",
+    "full_name": "Aristotle",
+    "domain": "Logic",
+    "work": "Organon",
+    "era": "Ancient",
+    "shard_id": 0,
+    "prime": 2,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "syllogism",
+      "logic",
+      "category",
+      "causation",
+      "virtue_ethics"
+    ],
+    "eternal_truths": [
+      "All men are mortal",
+      "Socrates is a man",
+      "Therefore Socrates is mortal"
+    ],
+    "zkperf_hash": "83f74afb16049c5e"
+  },
+  {
+    "founder": "plato",
+    "full_name": "Plato",
+    "domain": "Philosophy",
+    "work": "Theory of Forms",
+    "era": "Ancient",
+    "shard_id": 14,
+    "prime": 71,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "theory_of_forms",
+      "ideal",
+      "cave_allegory",
+      "philosopher_king",
+      "dialectic"
+    ],
+    "eternal_truths": [
+      "Shadows are not reality",
+      "Forms are eternal",
+      "Knowledge is recollection"
+    ],
+    "zkperf_hash": "5d834431a6af17a5"
+  },
+  {
+    "founder": "socrates",
+    "full_name": "Socrates",
+    "domain": "Philosophy",
+    "work": "Socratic Method",
+    "era": "Ancient",
+    "shard_id": 13,
+    "prime": 59,
+    "skills_donated": 71,
+    "signature_concepts": [
+      "socratic_method",
+      "know_thyself",
+      "examined_life",
+      "elenchus",
+      "aporia"
+    ],
+    "eternal_truths": [
+      "I know that I know nothing",
+      "Unexamined life not worth living",
+      "Virtue is knowledge"
+    ],
+    "zkperf_hash": "71d6cb46880a95b9"
+  }
+]

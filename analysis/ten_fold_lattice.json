@@ -1,0 +1,215 @@
+{
+  "periods": {
+    "Period3": [
+      {
+        "id": "lmfdb:elliptic_curves",
+        "db_name": "elliptic_curves",
+        "collection": "main",
+        "complexity": 140.0,
+        "period": "Period3",
+        "properties": {}
+      }
+    ],
+    "Period10": [
+      {
+        "id": "monster_group",
+        "db_name": "groups",
+        "collection": "sporadic",
+        "complexity": 8.08e+53,
+        "period": "Period10",
+        "properties": {
+          "type": "sporadic",
+          "rank": "largest",
+          "order": "808017424794512875886459904961710757005754368000000000"
+        }
+      }
+    ],
+    "Period2": [
+      {
+        "id": "lmfdb:HTPicard",
+        "db_name": "HTPicard",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:hmfs",
+        "db_name": "hmfs",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:localfields",
+        "db_name": "localfields",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:Lattices",
+        "db_name": "Lattices",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:knowledge",
+        "db_name": "knowledge",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:sato_tate_groups",
+        "db_name": "sato_tate_groups",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:mod_l_galois",
+        "db_name": "mod_l_galois",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:MaassWaveForms",
+        "db_name": "MaassWaveForms",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:siegel_modular_forms",
+        "db_name": "siegel_modular_forms",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:Lfunctions",
+        "db_name": "Lfunctions",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:abvar",
+        "db_name": "abvar",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:SL2Zsubgroups",
+        "db_name": "SL2Zsubgroups",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:bmfs",
+        "db_name": "bmfs",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:halfintegralmf",
+        "db_name": "halfintegralmf",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:curve_automorphisms",
+        "db_name": "curve_automorphisms",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:mod_l_eigenvalues",
+        "db_name": "mod_l_eigenvalues",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:modularforms2",
+        "db_name": "modularforms2",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:genus2_curves",
+        "db_name": "genus2_curves",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:artin",
+        "db_name": "artin",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:README",
+        "db_name": "README",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:hgm",
+        "db_name": "hgm",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:numberfields",
+        "db_name": "numberfields",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      },
+      {
+        "id": "lmfdb:transitivegroups",
+        "db_name": "transitivegroups",
+        "collection": "main",
+        "complexity": 90.0,
+        "period": "Period2",
+        "properties": {}
+      }
+    ]
+  },
+  "total_objects": 25
+}

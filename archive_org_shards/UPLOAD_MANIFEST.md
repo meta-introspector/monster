@@ -1,0 +1,186 @@
+# Monster Group ZK Lattice - Archive.org Upload
+
+## Content-Addressable Shards
+
+- Shard 00: `7c58d6cea087f2d9ee8fe120af48d091197c7ff240cbcc808336e74ed20e9cb4`
+  - ZK Proof: `zk:7c58d6cea087f2d9ee8fe120af48d091197c7ff240cbcc808336e74ed20e9cb4:813`
+  - Size: 844 bytes
+- Shard 01: `27ec4ca9f2eb1af7fbafab895838294828051ac5bb3f39e4acbb184851557aa9`
+  - ZK Proof: `zk:27ec4ca9f2eb1af7fbafab895838294828051ac5bb3f39e4acbb184851557aa9:811`
+  - Size: 842 bytes
+- Shard 02: `5b778c19c9a120039b7c66e3cab3de16b7ea1a43d52135360e6fa882a20c371a`
+  - ZK Proof: `zk:5b778c19c9a120039b7c66e3cab3de16b7ea1a43d52135360e6fa882a20c371a:865`
+  - Size: 896 bytes
+- Shard 03: `1d8108c5deb679594a939bd57e93b45284335bbee188592e604ae88ff94a50f2`
+  - ZK Proof: `zk:1d8108c5deb679594a939bd57e93b45284335bbee188592e604ae88ff94a50f2:831`
+  - Size: 862 bytes
+- Shard 04: `0c18a917a1b5304232597a291dcff67b7ba7821812fdd208eacd0f60c703c7f8`
+  - ZK Proof: `zk:0c18a917a1b5304232597a291dcff67b7ba7821812fdd208eacd0f60c703c7f8:806`
+  - Size: 837 bytes
+- Shard 05: `adaca477fd8422434ac87d42a3adea0e75df85b178da5888b6dced2c5dec70d4`
+  - ZK Proof: `zk:adaca477fd8422434ac87d42a3adea0e75df85b178da5888b6dced2c5dec70d4:804`
+  - Size: 835 bytes
+- Shard 06: `10a3e6e97f5d3b61675e4c3a37ae6476cb94fb17dec6a696be3799cb6a9e942b`
+  - ZK Proof: `zk:10a3e6e97f5d3b61675e4c3a37ae6476cb94fb17dec6a696be3799cb6a9e942b:824`
+  - Size: 855 bytes
+- Shard 07: `82ac7666ebc409a14126f327fab3e1eefeeef0e90fccbe6f0dbb6515b584ef5b`
+  - ZK Proof: `zk:82ac7666ebc409a14126f327fab3e1eefeeef0e90fccbe6f0dbb6515b584ef5b:808`
+  - Size: 839 bytes
+- Shard 08: `ab559c9b7ca2839010a138ca61400884236a2f300e5e96cb7f22ca12e3356a06`
+  - ZK Proof: `zk:ab559c9b7ca2839010a138ca61400884236a2f300e5e96cb7f22ca12e3356a06:807`
+  - Size: 838 bytes
+- Shard 09: `590e5aaab2dd03065291a6ea6362361b77b5777675bee4c480256079cb927a5a`
+  - ZK Proof: `zk:590e5aaab2dd03065291a6ea6362361b77b5777675bee4c480256079cb927a5a:835`
+  - Size: 866 bytes
+- Shard 10: `edc0906a8fa59c5f697ce07b0f13d855a63f8b215c0a1adf0fcef3d4f94cf8ba`
+  - ZK Proof: `zk:edc0906a8fa59c5f697ce07b0f13d855a63f8b215c0a1adf0fcef3d4f94cf8ba:813`
+  - Size: 844 bytes
+- Shard 11: `71b947193f31ac47da39afc65d08556b63bc42fb34d1b1278f2fa90d89b2308a`
+  - ZK Proof: `zk:71b947193f31ac47da39afc65d08556b63bc42fb34d1b1278f2fa90d89b2308a:806`
+  - Size: 837 bytes
+- Shard 12: `53601421338880d3e47d599c5a79cb920cd0430bd64cd3e2c49e55f0dd285367`
+  - ZK Proof: `zk:53601421338880d3e47d599c5a79cb920cd0430bd64cd3e2c49e55f0dd285367:840`
+  - Size: 871 bytes
+- Shard 13: `19a8643c80403b9a167b115f6ab576f1efc44540fb39820993d505122caeceaf`
+  - ZK Proof: `zk:19a8643c80403b9a167b115f6ab576f1efc44540fb39820993d505122caeceaf:802`
+  - Size: 833 bytes
+- Shard 14: `1f79aebb19549e4989072324d7e845a81126da64df83ebf3e4267ebcb3ecb06f`
+  - ZK Proof: `zk:1f79aebb19549e4989072324d7e845a81126da64df83ebf3e4267ebcb3ecb06f:807`
+  - Size: 838 bytes
+- Shard 15: `37235f8d0dcbdd77516baa9d6324207236605d13739a43529be179605970d0c8`
+  - ZK Proof: `zk:37235f8d0dcbdd77516baa9d6324207236605d13739a43529be179605970d0c8:810`
+  - Size: 841 bytes
+- Shard 16: `34bf2ec03254ca0cafb6c14d1943bdfeefeac3463165313ecbf68056c2131b0c`
+  - ZK Proof: `zk:34bf2ec03254ca0cafb6c14d1943bdfeefeac3463165313ecbf68056c2131b0c:818`
+  - Size: 849 bytes
+- Shard 17: `7735a635f5595b17ea2658f5cf734040f6ad1f4d6794b507301d8f2ed77c21d7`
+  - ZK Proof: `zk:7735a635f5595b17ea2658f5cf734040f6ad1f4d6794b507301d8f2ed77c21d7:819`
+  - Size: 850 bytes
+- Shard 18: `bc7e2607e7089af9a7e003e48219087aad53b0ffc51498944c079cab9e23e910`
+  - ZK Proof: `zk:bc7e2607e7089af9a7e003e48219087aad53b0ffc51498944c079cab9e23e910:805`
+  - Size: 836 bytes
+- Shard 19: `bb9080e2b0db93679c760ecfeb33e581e5fad328ad811ccfd4c6d86b6a963f20`
+  - ZK Proof: `zk:bb9080e2b0db93679c760ecfeb33e581e5fad328ad811ccfd4c6d86b6a963f20:804`
+  - Size: 835 bytes
+- Shard 20: `d81031af55818fcc0db084a285cc15cfb87c9849af6e34ea0a378e7bad968e3f`
+  - ZK Proof: `zk:d81031af55818fcc0db084a285cc15cfb87c9849af6e34ea0a378e7bad968e3f:809`
+  - Size: 840 bytes
+- Shard 21: `fcb851e069bc71e01755d9373501ee0b25cb291365e281d6febf4ea8a4fdcfbc`
+  - ZK Proof: `zk:fcb851e069bc71e01755d9373501ee0b25cb291365e281d6febf4ea8a4fdcfbc:817`
+  - Size: 848 bytes
+- Shard 22: `150a5c21d1b5c91176c20908b9bd60367c639a2d6a51260113dc6913ba9fe500`
+  - ZK Proof: `zk:150a5c21d1b5c91176c20908b9bd60367c639a2d6a51260113dc6913ba9fe500:803`
+  - Size: 834 bytes
+- Shard 23: `fec2ab8c68d473688e57be8d0543508599d054a405e0e1b07d9a53912dab75fe`
+  - ZK Proof: `zk:fec2ab8c68d473688e57be8d0543508599d054a405e0e1b07d9a53912dab75fe:816`
+  - Size: 847 bytes
+- Shard 24: `823b303b42c01a59d276ec746df5153045cd9ebad8c95b4b29b4bee00cfa14bf`
+  - ZK Proof: `zk:823b303b42c01a59d276ec746df5153045cd9ebad8c95b4b29b4bee00cfa14bf:835`
+  - Size: 866 bytes
+- Shard 25: `4c78643fcacee497e79ffa37eda58ca68f99667d669a8596bafb3950c2eedc3d`
+  - ZK Proof: `zk:4c78643fcacee497e79ffa37eda58ca68f99667d669a8596bafb3950c2eedc3d:823`
+  - Size: 854 bytes
+- Shard 26: `312f9c43162c15e346754061e63b3b8bef3890ccdb140c2edd11f00bba8d9fbe`
+  - ZK Proof: `zk:312f9c43162c15e346754061e63b3b8bef3890ccdb140c2edd11f00bba8d9fbe:803`
+  - Size: 834 bytes
+- Shard 27: `e1379a9f2ab73461f8d0b99c454ca60edec01d512ac4d927a1bf7453b3c79ce6`
+  - ZK Proof: `zk:e1379a9f2ab73461f8d0b99c454ca60edec01d512ac4d927a1bf7453b3c79ce6:816`
+  - Size: 847 bytes
+- Shard 28: `b4db811e4fb9cf1976e1a775e36d6f882a47d2471ab581fdc5d6e61b0c7ccb1d`
+  - ZK Proof: `zk:b4db811e4fb9cf1976e1a775e36d6f882a47d2471ab581fdc5d6e61b0c7ccb1d:8008878`
+  - Size: 8292909 bytes
+- Shard 29: `f27c7c96f9606ca2c5ffee5a51f9703fbad91335e8849ac93e57d5f035641bb6`
+  - ZK Proof: `zk:f27c7c96f9606ca2c5ffee5a51f9703fbad91335e8849ac93e57d5f035641bb6:828`
+  - Size: 859 bytes
+- Shard 30: `0446a8550374117120d0326810ee915f2431b4bb5950e351878174132c9a4866`
+  - ZK Proof: `zk:0446a8550374117120d0326810ee915f2431b4bb5950e351878174132c9a4866:823`
+  - Size: 854 bytes
+- Shard 31: `2e371c02421c90a8b73fb9a35da1bc93f3f05ad1be40380ede90bd592c710777`
+  - ZK Proof: `zk:2e371c02421c90a8b73fb9a35da1bc93f3f05ad1be40380ede90bd592c710777:810`
+  - Size: 841 bytes
+- Shard 32: `e4b573a03db1a4d612d4e2013baf69ba501ad82968de3d6cf0e5fcfbabee9e73`
+  - ZK Proof: `zk:e4b573a03db1a4d612d4e2013baf69ba501ad82968de3d6cf0e5fcfbabee9e73:799`
+  - Size: 830 bytes
+- Shard 33: `c1f45ea33f6bb1785fc1bab7648a27d136702483fcba9ef90446cc9b0e12ab37`
+  - ZK Proof: `zk:c1f45ea33f6bb1785fc1bab7648a27d136702483fcba9ef90446cc9b0e12ab37:807`
+  - Size: 838 bytes
+- Shard 34: `79af136030cf9ab6f58fc1503985142c00b3a3cfaecf4b9ad760c491dcc60e3a`
+  - ZK Proof: `zk:79af136030cf9ab6f58fc1503985142c00b3a3cfaecf4b9ad760c491dcc60e3a:804`
+  - Size: 835 bytes
+- Shard 35: `cd89ab68527f9b0b7fd03fdb49132c24b1d9bdced9f145caea32820ca4f0bf55`
+  - ZK Proof: `zk:cd89ab68527f9b0b7fd03fdb49132c24b1d9bdced9f145caea32820ca4f0bf55:813`
+  - Size: 844 bytes
+- Shard 36: `604fab67fafc23b970a16cc4f64b0d75d87e11ef752c41ca1d4ef8ed1a3ce4ba`
+  - ZK Proof: `zk:604fab67fafc23b970a16cc4f64b0d75d87e11ef752c41ca1d4ef8ed1a3ce4ba:811`
+  - Size: 842 bytes
+- Shard 37: `cc26386445ae44bee90d50f11f134f9362ba8ec6c3e7c50ed6ca2581f8b668f5`
+  - ZK Proof: `zk:cc26386445ae44bee90d50f11f134f9362ba8ec6c3e7c50ed6ca2581f8b668f5:812`
+  - Size: 843 bytes
+- Shard 38: `b4f0692ff722d0f112505eae8f3587f64b00c4ba7a8b5bb0c0cd9d3d780fd462`
+  - ZK Proof: `zk:b4f0692ff722d0f112505eae8f3587f64b00c4ba7a8b5bb0c0cd9d3d780fd462:816`
+  - Size: 847 bytes
+- Shard 39: `d9852c02720c57570028c57bc465ea59ae27a2ffb14a229c06855e0638446bc8`
+  - ZK Proof: `zk:d9852c02720c57570028c57bc465ea59ae27a2ffb14a229c06855e0638446bc8:821`
+  - Size: 852 bytes
+- Shard 40: `db7e9a9a058b95c8800f8800aa4d866ff7be08c619b9c9a5f4ed55207a66984f`
+  - ZK Proof: `zk:db7e9a9a058b95c8800f8800aa4d866ff7be08c619b9c9a5f4ed55207a66984f:8013297`
+  - Size: 8297328 bytes
+- Shard 41: `46c82055a117313bdf33a5761954de2ddfd1caa9d6e5b05202a863b010a854f1`
+  - ZK Proof: `zk:46c82055a117313bdf33a5761954de2ddfd1caa9d6e5b05202a863b010a854f1:835`
+  - Size: 866 bytes
+- Shard 42: `3c87b5403850f6fe73b6840f9d59787502d4e20b110d1b0d5fa771aba683d03d`
+  - ZK Proof: `zk:3c87b5403850f6fe73b6840f9d59787502d4e20b110d1b0d5fa771aba683d03d:820`
+  - Size: 851 bytes
+- Shard 43: `4b983e7f64e6b0344ce565b06ba55a367cd57d384b807d748dfc324aeba7ee68`
+  - ZK Proof: `zk:4b983e7f64e6b0344ce565b06ba55a367cd57d384b807d748dfc324aeba7ee68:815`
+  - Size: 846 bytes
+- Shard 44: `4042d94a21776d975596746ad112c35a4e0f8a3176a24b0a3eb68944197b6a21`
+  - ZK Proof: `zk:4042d94a21776d975596746ad112c35a4e0f8a3176a24b0a3eb68944197b6a21:837`
+  - Size: 868 bytes
+- Shard 45: `97dddc8a08e1617e8d465d2d97e660e7abb67796f98a167c1f63759a4563a6cf`
+  - ZK Proof: `zk:97dddc8a08e1617e8d465d2d97e660e7abb67796f98a167c1f63759a4563a6cf:814`
+  - Size: 845 bytes
+- Shard 46: `d3f944722be7d69b268e61fcee0c4932328d00683f347f19bbf1941de790491d`
+  - ZK Proof: `zk:d3f944722be7d69b268e61fcee0c4932328d00683f347f19bbf1941de790491d:811`
+  - Size: 842 bytes
+- Shard 47: `6a13979ac54c1abd220d1330370cefd3a41f4127f692c60dfc95be87651841fe`
+  - ZK Proof: `zk:6a13979ac54c1abd220d1330370cefd3a41f4127f692c60dfc95be87651841fe:819`
+  - Size: 850 bytes
+- Shard 48: `0c7c1547ad049947bf8559e38021d73852e4a1214369077d3f1397cf329d3ee5`
+  - ZK Proof: `zk:0c7c1547ad049947bf8559e38021d73852e4a1214369077d3f1397cf329d3ee5:814`
+  - Size: 845 bytes
+- Shard 49: `d3264a838be9474480cbd31c13b2909b9bd8a3d3d1255e125866e98b2bf52b8b`
+  - ZK Proof: `zk:d3264a838be9474480cbd31c13b2909b9bd8a3d3d1255e125866e98b2bf52b8b:848`
+  - Size: 879 bytes
+- Shard 50: `c3334f9ee44b8c9266f6198e375c3b4e2943195aa7ec93f1f488bb1383597bda`
+  - ZK Proof: `zk:c3334f9ee44b8c9266f6198e375c3b4e2943195aa7ec93f1f488bb1383597bda:813`
+  - Size: 844 bytes
+- Shard 51: `d128d03a6c685586635b98cb02b5d301d1615e18e6da2d053afb75ca54f8fdfd`
+  - ZK Proof: `zk:d128d03a6c685586635b98cb02b5d301d1615e18e6da2d053afb75ca54f8fdfd:3934647`
+  - Size: 4076678 bytes
+- Shard 52: `f1dea56b1cea56f79b81c3b04e91e4ff77587f4d8bcb6d1d28eceb9428a6ee3e`
+  - ZK Proof: `zk:f1dea56b1cea56f79b81c3b04e91e4ff77587f4d8bcb6d1d28eceb9428a6ee3e:814`
+  - Size: 845 bytes
+- Shard 53: `c86f6f0ac93f72fb729fb6cf74f108b3a789ba31f21d5e7241e0c351ecb3d493`
+  - ZK Proof: `zk:c86f6f0ac93f72fb729fb6cf74f108b3a789ba31f21d5e7241e0c351ecb3d493:805`
+  - Size: 836 bytes
+- Shard 54: `33dbf1153a5daccd462e5a0b211a02222ea2a1ee5348982c1accb752d031494e`
+  - ZK Proof: `zk:33dbf1153a5daccd462e5a0b211a02222ea2a1ee5348982c1accb752d031494e:807`
+  - Size: 838 bytes
+- Shard 55: `337be8ad83a2f8da935b62f073f3473010e26f3825340fba7bf77b96a2919815`
+  - ZK Proof: `zk:337be8ad83a2f8da935b62f073f3473010e26f3825340fba7bf77b96a2919815:813`
+  - Size: 844 bytes
+- Shard 56: `9a8f1bf24df3c03ef45b2d8d4ec433491ea16adc13766ad196e39ea305a3e1ef`
+  - ZK Proof: `zk:9a8f1bf24df3c03ef45b2d8d4ec433491ea16adc13766ad196e39ea305a3e1ef:805`
+  - Size: 836 bytes
+
+## Upload Command
+
+```bash
+ia upload monster-zk-lattice \
+  archive_org_shards/*.ttl \
+  archive_org_shards/*.json \
+  --metadata="title:Monster Group ZK Lattice" \
+  --metadata="creator:Monster Project" \
+  --metadata="subject:mathematics;group theory;zero knowledge"
+```

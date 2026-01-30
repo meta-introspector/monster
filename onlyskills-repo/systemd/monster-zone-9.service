@@ -1,0 +1,32 @@
+[Unit]
+Description=Monster DAO Zone 9 (Prime 29)
+After=network.target
+
+[Service]
+Type=simple
+User=monster_zone_9
+Group=monster_zone_9
+SELinuxContext=system_u:system_r:monster_zone_9_t:s9
+
+# Resource limits (DAO-governed)
+CPUShares=2900
+MemoryLimit=29696M
+TasksMax=290
+LimitNOFILE=2900
+
+# Network namespace
+PrivateNetwork=yes
+IPAddressDeny=any
+IPAddressAllow=10.71.9.0/24
+
+# Security
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+ExecStart=/usr/local/bin/monster_zone_9
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+Package: onlyskills-zkerdaprologml
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: all
+Depends: nodejs (>= 18), npm
+Maintainer: onlyskills.com <hello@onlyskills.com>
+Description: Zero-Knowledge 71-Shard Skill Registry for AI Agents
+ onlyskills.com is a skill registry using zkERDAProlog (zero-knowledge
+ ERDF-A Prolog) deployed across 71 platforms and protocols.
+ .
+ Features:
+  - 71 Shards mapped to Monster group primes
+  - zkPerf: Zero-knowledge performance metrics
+  - zkERDAProlog: RDF-based semantic skill descriptions
+  - AI Agent Ready: REST API + SPARQL endpoint
+Homepage: https://onlyskills.com

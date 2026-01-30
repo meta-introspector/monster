@@ -1,0 +1,36 @@
+{
+  "name": "onlyskills-zkerdaprologml",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge 71-Shard Skill Registry for AI Agents",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy:vercel": "vercel --prod",
+    "deploy:hf": "git push hf main",
+    "deploy:archive": "ia upload onlyskills-zkerdfa dist/"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.18.0",
+    "pg": "^8.11.0",
+    "redis": "^4.6.0",
+    "sparqljs": "^3.7.0",
+    "n3": "^1.17.0",
+    "graphql": "^16.8.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "keywords": [
+    "zkerdaprologml",
+    "zero-knowledge",
+    "skill-registry",
+    "ai-agents",
+    "monster-group",
+    "71-shards"
+  ],
+  "author": "onlyskills.com",
+  "license": "MIT"
+}

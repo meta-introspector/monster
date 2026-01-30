@@ -1,0 +1,164 @@
+[
+  {
+    "entity_type": "commit",
+    "entity_id": "abc123",
+    "shard_id": 9,
+    "prime": 29,
+    "area": "Elliptic curves / CM theory",
+    "hash": "abc123",
+    "monster_form": "Additive Morphism"
+  },
+  {
+    "entity_type": "commit",
+    "entity_id": "def456",
+    "shard_id": 70,
+    "prime": 31,
+    "area": "K-theory / Bott periodicity",
+    "hash": "def456",
+    "monster_form": "Corrective Automorphism"
+  },
+  {
+    "entity_type": "commit",
+    "entity_id": "ghi789",
+    "shard_id": 28,
+    "prime": 59,
+    "area": "Calabi-Yau threefolds",
+    "hash": "ghi789",
+    "monster_form": "Isomorphic Transform"
+  },
+  {
+    "entity_type": "commit",
+    "entity_id": "jkl012",
+    "shard_id": 10,
+    "prime": 31,
+    "area": "Elliptic curves / CM theory",
+    "hash": "jkl012",
+    "monster_form": "Semantic Embedding"
+  },
+  {
+    "entity_type": "project",
+    "entity_id": "onlyskills",
+    "shard_id": 57,
+    "prime": 47,
+    "area": "ADE classification",
+    "hash": "fd3ccc03fbae8f98",
+    "monster_form": "Linear Type Manifold"
+  },
+  {
+    "entity_type": "project",
+    "entity_id": "monster-lean",
+    "shard_id": 37,
+    "prime": 19,
+    "area": "Monster moonshine",
+    "hash": "3b39c6d54cb39435",
+    "monster_form": "General Module"
+  },
+  {
+    "entity_type": "project",
+    "entity_id": "zkprologml",
+    "shard_id": 34,
+    "prime": 11,
+    "area": "Calabi-Yau threefolds",
+    "hash": "9ead73674e54e3a4",
+    "monster_form": "Dynamic Fiber Bundle"
+  },
+  {
+    "entity_type": "project",
+    "entity_id": "expert-system",
+    "shard_id": 21,
+    "prime": 17,
+    "area": "Siegel modular forms",
+    "hash": "fc5c1ef03698d90a",
+    "monster_form": "Linear Type Manifold"
+  },
+  {
+    "entity_type": "build",
+    "entity_id": "build-001",
+    "shard_id": 62,
+    "prime": 5,
+    "area": "ADE classification",
+    "hash": "99495251464ff086",
+    "monster_form": "Successful Compilation"
+  },
+  {
+    "entity_type": "build",
+    "entity_id": "build-002",
+    "shard_id": 24,
+    "prime": 29,
+    "area": "Siegel modular forms",
+    "hash": "dc114d5a6bb74489",
+    "monster_form": "Successful Compilation"
+  },
+  {
+    "entity_type": "build",
+    "entity_id": "build-003",
+    "shard_id": 48,
+    "prime": 7,
+    "area": "Generalized moonshine",
+    "hash": "7bafad908a4ece9f",
+    "monster_form": "Failed Reduction"
+  },
+  {
+    "entity_type": "binary",
+    "entity_id": "target/release/onlyskills",
+    "shard_id": 61,
+    "prime": 3,
+    "area": "ADE classification",
+    "hash": "c18174f8a0d840cc",
+    "monster_form": "Dense Subgroup"
+  },
+  {
+    "entity_type": "binary",
+    "entity_id": "target/release/expert_system",
+    "shard_id": 34,
+    "prime": 11,
+    "area": "Calabi-Yau threefolds",
+    "hash": "4d511a1de5706225",
+    "monster_form": "Dense Subgroup"
+  },
+  {
+    "entity_type": "binary",
+    "entity_id": "target/release/kiro",
+    "shard_id": 8,
+    "prime": 23,
+    "area": "Elliptic curves / CM theory",
+    "hash": "1c1021295882b3a4",
+    "monster_form": "Compact Embedding"
+  },
+  {
+    "entity_type": "decl",
+    "entity_id": "Skill",
+    "shard_id": 58,
+    "prime": 59,
+    "area": "ADE classification",
+    "hash": "6df1bb18a59ab97d",
+    "monster_form": "Product Type"
+  },
+  {
+    "entity_type": "decl",
+    "entity_id": "search_keyword",
+    "shard_id": 19,
+    "prime": 11,
+    "area": "Hilbert modular forms",
+    "hash": "d8d907ab60544168",
+    "monster_form": "Function Space Element"
+  },
+  {
+    "entity_type": "decl",
+    "entity_id": "SearchCapability",
+    "shard_id": 21,
+    "prime": 17,
+    "area": "Siegel modular forms",
+    "hash": "30c0870fa4c4b204",
+    "monster_form": "Sum Type"
+  },
+  {
+    "entity_type": "decl",
+    "entity_id": "ToRDF",
+    "shard_id": 24,
+    "prime": 29,
+    "area": "Siegel modular forms",
+    "hash": "ea3407c300a5d356",
+    "monster_form": "Type Class"
+  }
+]

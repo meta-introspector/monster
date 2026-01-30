@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Archive.org Monster Lattice Reader</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #000;
+            color: #0f0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 { color: #ff0; }
+        .controls {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #0f0;
+        }
+        input, button, select {
+            background: #002200;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 10px;
+            font-family: monospace;
+            margin: 5px;
+        }
+        button:hover {
+            background: #004400;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #0f0;
+            min-height: 300px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .shard {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 3px solid #0f0;
+        }
+        .triple {
+            color: #0ff;
+            margin-left: 20px;
+        }
+        .loading {
+            color: #ff0;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+        .error {
+            color: #f00;
+        }
+        .success {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📦 Archive.org Monster Lattice Reader</h1>
+    <p>Read Monster ZK Lattice shards directly from Archive.org</p>
+    
+    <div class="controls">
+        <label>Archive.org Item ID:</label>
+        <input type="text" id="itemId" value="monster-zk-lattice-v1" size="40" />
+        <button onclick="initReader()">Connect</button>
+    </div>
+    
+    <div class="controls">
+        <label>Shard ID:</label>
+        <select id="shardId">
+            <option value="0">Shard 0</option>
+            <option value="1">Shard 1</option>
+            <option value="2">Shard 2</option>
+            <option value="3">Shard 3</option>
+            <option value="4">Shard 4</option>
+            <option value="5">Shard 5</option>
+        </select>
+        <button onclick="readShard()">Read Shard</button>
+        <button onclick="readAllShards()">Read All (0-5)</button>
+        <button onclick="readLattice()">Read Value Lattice</button>
+    </div>
+    
+    <div id="output">
+        <p>Ready. Click "Connect" to initialize reader.</p>
+    </div>
+    
+    <script type="module">
+        import init, { ArchiveOrgReader, init_panic_hook } from './pkg/archive_org_shard_reader.js';
+        
+        let reader;
+        
+        async function setup() {
+            await init();
+            init_panic_hook();
+            console.log('✅ WASM loaded');
+        }
+        
+        window.initReader = async function() {
+            const itemId = document.getElementById('itemId').value;
+            reader = new ArchiveOrgReader(itemId);
+            
+            document.getElementById('output').innerHTML = 
+                `<p class="success">✅ Connected to Archive.org item: ${itemId}</p>`;
+        };
+        
+        window.readShard = async function() {
+            if (!reader) {
+                alert('Click "Connect" first');
+                return;
+            }
+            
+            const shardId = parseInt(document.getElementById('shardId').value);
+            const output = document.getElementById('output');
+            
+            output.innerHTML = `<p class="loading">⏳ Loading shard ${shardId}...</p>`;
+            
+            try {
+                const shard = await reader.read_shard(shardId);
+                
+                let html = `<div class="shard">`;
+                html += `<h3>Shard ${shard.shard_id}</h3>`;
+                html += `<p>Hash: ${shard.content_hash}</p>`;
+                html += `<p>Triples: ${shard.triples.length}</p>`;
+                html += `<details><summary>Show triples</summary>`;
+                
+                for (const triple of shard.triples.slice(0, 20)) {
+                    html += `<div class="triple">${triple}</div>`;
+                }
+                
+                if (shard.triples.length > 20) {
+                    html += `<p>... and ${shard.triples.length - 20} more</p>`;
+                }
+                
+                html += `</details></div>`;
+                
+                output.innerHTML = html;
+            } catch (e) {
+                output.innerHTML = `<p class="error">❌ Error: ${e}</p>`;
+                console.error(e);
+            }
+        };
+        
+        window.readAllShards = async function() {
+            if (!reader) {
+                alert('Click "Connect" first');
+                return;
+            }
+            
+            const output = document.getElementById('output');
+            output.innerHTML = `<p class="loading">⏳ Loading shards 0-5...</p>`;
+            
+            let html = '';
+            
+            for (let i = 0; i < 6; i++) {
+                try {
+                    const shard = await reader.read_shard(i);
+                    html += `<div class="shard">`;
+                    html += `<strong>Shard ${i}:</strong> ${shard.triples.length} triples, `;
+                    html += `hash ${shard.content_hash}`;
+                    html += `</div>`;
+                } catch (e) {
+                    html += `<div class="shard error">Shard ${i}: Error - ${e}</div>`;
+                }
+            }
+            
+            output.innerHTML = html;
+        };
+        
+        window.readLattice = async function() {
+            if (!reader) {
+                alert('Click "Connect" first');
+                return;
+            }
+            
+            const output = document.getElementById('output');
+            output.innerHTML = `<p class="loading">⏳ Loading value lattice...</p>`;
+            
+            try {
+                const lattice = await reader.read_lattice();
+                
+                let html = `<h3>Value Lattice</h3>`;
+                html += `<p>Total values: ${Object.keys(lattice).length}</p>`;
+                
+                html += `<details><summary>Show values</summary>`;
+                
+                let count = 0;
+                for (const [key, entry] of Object.entries(lattice)) {
+                    if (count++ < 20) {
+                        html += `<div class="triple">`;
+                        html += `Value ${entry.value}: Gödel ${entry.godel_number}, `;
+                        html += `${entry.zk_witnesses ? entry.zk_witnesses.length : 0} witnesses`;
+                        html += `</div>`;
+                    }
+                }
+                
+                html += `</details>`;
+                
+                output.innerHTML = html;
+            } catch (e) {
+                output.innerHTML = `<p class="error">❌ Error: ${e}</p>`;
+                console.error(e);
+            }
+        };
+        
+        setup();
+    </script>
+</body>
+</html>

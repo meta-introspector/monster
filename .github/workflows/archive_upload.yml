@@ -1,0 +1,96 @@
+name: Build and Upload to Archive.org
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-upload:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Setup Nix
+      uses: cachix/install-nix-action@v24
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+    
+    - name: Build WASM Reader
+      run: |
+        cd archive_org_reader
+        nix develop --command wasm-pack build --target web --out-dir pkg
+        mkdir -p deploy
+        cp index.html deploy/
+        cp -r pkg deploy/
+    
+    - name: Build All Rust Binaries
+      run: |
+        nix develop --command cargo build --release --bin extract_constants
+        nix develop --command cargo build --release --bin apply_value_lattice
+        nix develop --command cargo build --release --bin lattice_qwen_witness
+        nix develop --command cargo build --release --bin zk_lattice_archive
+        nix develop --command cargo build --release --bin qwen_to_wasm_hecke
+        nix develop --command cargo build --release --bin universal_shard_reader
+    
+    - name: Generate All Artifacts
+      run: |
+        nix develop --command ./target/release/extract_constants
+        nix develop --command ./target/release/apply_value_lattice
+        nix develop --command ./target/release/lattice_qwen_witness
+        nix develop --command ./target/release/zk_lattice_archive
+        nix develop --command ./target/release/qwen_to_wasm_hecke
+    
+    - name: Configure Archive.org
+      env:
+        IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+        IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+      run: |
+        nix develop --command ia configure --username="${IA_ACCESS_KEY}" --password="${IA_SECRET_KEY}"
+    
+    - name: Upload Data to Archive.org
+      run: |
+        nix develop --command ia upload monster-zk-lattice-v1 \
+          archive_org_shards/*.ttl \
+          archive_org_shards/*.json \
+          analysis/value_lattice_witnessed.json \
+          wasm_hecke_operators/*.wat \
+          --metadata="title:Monster ZK Lattice Data v1" \
+          --metadata="creator:Monster Project" \
+          --metadata="subject:mathematics;group theory;zero knowledge" \
+          --metadata="date:$(date -I)" \
+          --no-derive
+    
+    - name: Upload WASM Reader to Archive.org
+      run: |
+        nix develop --command ia upload monster-zk-lattice-reader \
+          archive_org_reader/deploy/index.html \
+          archive_org_reader/deploy/pkg/*.js \
+          archive_org_reader/deploy/pkg/*.wasm \
+          --metadata="title:Monster ZK Lattice WASM Reader" \
+          --metadata="creator:Monster Project" \
+          --metadata="subject:wasm;mathematics;interactive" \
+          --metadata="date:$(date -I)" \
+          --no-derive
+    
+    - name: Upload to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./archive_org_reader/deploy
+        destination_dir: reader
+    
+    - name: Summary
+      run: |
+        echo "✅ Build and upload complete!"
+        echo ""
+        echo "📦 Archive.org URLs:"
+        echo "   Data: https://archive.org/details/monster-zk-lattice-v1"
+        echo "   Reader: https://archive.org/details/monster-zk-lattice-reader"
+        echo ""
+        echo "🌐 GitHub Pages:"
+        echo "   https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reader/"

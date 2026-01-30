@@ -1,0 +1,42 @@
+{
+  "object": {
+    "name": "Conway Group Co1",
+    "order": "4157776806543360000",
+    "prime_factors": {
+      "7": 2,
+      "11": 1,
+      "13": 1,
+      "5": 4,
+      "3": 9,
+      "23": 1,
+      "2": 21
+    },
+    "complexity": 4.16e+18
+  },
+  "groups": [
+    {
+      "sequence": "4157",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Complex K-theory / Bott periodicity"
+    },
+    {
+      "sequence": "7768",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Elliptic curves / CM theory"
+    },
+    {
+      "sequence": "0654",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Hilbert modular forms"
+    },
+    {
+      "sequence": "3360",
+      "digits_preserved": 4,
+      "factors_removed": [],
+      "area": "Siegel modular forms"
+    }
+  ]
+}

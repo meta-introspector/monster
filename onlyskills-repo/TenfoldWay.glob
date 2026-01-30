@@ -1,0 +1,134 @@
+DIGEST 6f5cafa1b017721ada7c7738f5393bd1
+FTenfoldWay
+R82:89 Corelib.Init.Nat <> <> lib
+R107:116 Corelib.Init.Peano <> <> lib
+ind 156:168 <> SymmetryClass
+constr 184:184 <> A
+constr 206:209 <> AIII
+constr 231:232 <> AI
+constr 254:256 <> BDI
+constr 278:278 <> D
+constr 300:303 <> DIII
+constr 325:327 <> AII
+constr 349:351 <> CII
+constr 373:373 <> C
+constr 395:396 <> CI
+R188:200 TenfoldWay <> SymmetryClass:1 ind
+R213:225 TenfoldWay <> SymmetryClass:1 ind
+R236:248 TenfoldWay <> SymmetryClass:1 ind
+R260:272 TenfoldWay <> SymmetryClass:1 ind
+R282:294 TenfoldWay <> SymmetryClass:1 ind
+R307:319 TenfoldWay <> SymmetryClass:1 ind
+R331:343 TenfoldWay <> SymmetryClass:1 ind
+R355:367 TenfoldWay <> SymmetryClass:1 ind
+R377:389 TenfoldWay <> SymmetryClass:1 ind
+R400:412 TenfoldWay <> SymmetryClass:1 ind
+scheme 156:168 <> SymmetryClass_rect
+scheme 156:168 <> SymmetryClass_ind
+scheme 156:168 <> SymmetryClass_rec
+scheme 156:168 <> SymmetryClass_sind
+prf 447:466 <> SymmetryClass_eq_dec
+R484:496 TenfoldWay <> SymmetryClass ind
+binder 478:478 <> x:3
+binder 480:480 <> y:4
+R500:500 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R506:510 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R517:517 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R502:504 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R501:501 TenfoldWay <> x:3 var
+R505:505 TenfoldWay <> y:4 var
+R512:515 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R511:511 TenfoldWay <> x:3 var
+R516:516 TenfoldWay <> y:4 var
+def 597:601 <> toNat
+R608:620 TenfoldWay <> SymmetryClass ind
+binder 604:604 <> c:5
+R625:627 Corelib.Init.Datatypes <> nat ind
+R640:640 TenfoldWay <> c:5 var
+R651:651 TenfoldWay <> A constr
+R660:663 TenfoldWay <> AIII constr
+R672:673 TenfoldWay <> AI constr
+R682:684 TenfoldWay <> BDI constr
+R693:693 TenfoldWay <> D constr
+R704:707 TenfoldWay <> DIII constr
+R716:718 TenfoldWay <> AII constr
+R727:729 TenfoldWay <> CII constr
+R738:738 TenfoldWay <> C constr
+R747:748 TenfoldWay <> CI constr
+def 774:780 <> fromNat
+R787:789 Corelib.Init.Datatypes <> nat ind
+binder 783:783 <> n:7
+R794:799 Corelib.Init.Datatypes <> option ind
+R801:813 TenfoldWay <> SymmetryClass ind
+R826:826 TenfoldWay <> n:7 var
+R842:845 Corelib.Init.Datatypes <> Some constr
+R847:847 TenfoldWay <> A constr
+R856:859 Corelib.Init.Datatypes <> Some constr
+R861:864 TenfoldWay <> AIII constr
+R873:876 Corelib.Init.Datatypes <> Some constr
+R878:879 TenfoldWay <> AI constr
+R888:891 Corelib.Init.Datatypes <> Some constr
+R893:895 TenfoldWay <> BDI constr
+R904:907 Corelib.Init.Datatypes <> Some constr
+R909:909 TenfoldWay <> D constr
+R920:923 Corelib.Init.Datatypes <> Some constr
+R925:928 TenfoldWay <> DIII constr
+R937:940 Corelib.Init.Datatypes <> Some constr
+R942:944 TenfoldWay <> AII constr
+R953:956 Corelib.Init.Datatypes <> Some constr
+R958:960 TenfoldWay <> CII constr
+R969:972 Corelib.Init.Datatypes <> Some constr
+R974:974 TenfoldWay <> C constr
+R983:986 Corelib.Init.Datatypes <> Some constr
+R988:989 TenfoldWay <> CI constr
+R1000:1003 Corelib.Init.Datatypes <> None constr
+prf 1044:1054 <> toNat_lt_10
+binder 1065:1065 <> c:9
+R1075:1077 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1068:1072 TenfoldWay <> toNat def
+R1074:1074 TenfoldWay <> c:9 var
+prf 1153:1165 <> fromNat_toNat
+binder 1176:1176 <> c:10
+R1196:1198 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1179:1185 TenfoldWay <> fromNat def
+R1188:1192 TenfoldWay <> toNat def
+R1194:1194 TenfoldWay <> c:10 var
+R1199:1202 Corelib.Init.Datatypes <> Some constr
+R1204:1204 TenfoldWay <> c:10 var
+prf 1264:1276 <> toNat_fromNat
+binder 1287:1287 <> n:11
+binder 1289:1289 <> c:12
+R1298:1301 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1293:1295 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1292:1292 TenfoldWay <> n:11 var
+R1320:1323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1311:1313 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1302:1308 TenfoldWay <> fromNat def
+R1310:1310 TenfoldWay <> n:11 var
+R1314:1317 Corelib.Init.Datatypes <> Some constr
+R1319:1319 TenfoldWay <> c:12 var
+R1331:1333 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1324:1328 TenfoldWay <> toNat def
+R1330:1330 TenfoldWay <> c:12 var
+R1334:1334 TenfoldWay <> n:11 var
+def 1479:1487 <> bottShift
+R1494:1506 TenfoldWay <> SymmetryClass ind
+binder 1490:1490 <> c:13
+R1514:1516 Corelib.Init.Datatypes <> nat ind
+binder 1510:1510 <> d:14
+R1521:1533 TenfoldWay <> SymmetryClass ind
+R1546:1552 TenfoldWay <> fromNat def
+R1555:1555 Corelib.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1567:1572 Corelib.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1563:1565 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1556:1560 TenfoldWay <> toNat def
+R1562:1562 TenfoldWay <> c:13 var
+R1566:1566 TenfoldWay <> d:14 var
+R1586:1589 Corelib.Init.Datatypes <> Some constr
+R1604:1607 Corelib.Init.Datatypes <> None constr
+R1612:1612 TenfoldWay <> c:13 var
+def 1702:1716 <> bott_period_8_A
+R1733:1735 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1720:1728 TenfoldWay <> bottShift def
+R1730:1730 TenfoldWay <> A constr
+R1736:1736 TenfoldWay <> A constr

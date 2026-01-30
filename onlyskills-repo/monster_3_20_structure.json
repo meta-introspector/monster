@@ -1,0 +1,365 @@
+{
+  "total_categories": 3486784401,
+  "dimensions": 20,
+  "choices_per_dimension": 3,
+  "monster_factor": "3^20",
+  "shards": 71,
+  "categories_per_shard": 49109639,
+  "distribution": {
+    "shard_0": {
+      "shard_id": 0,
+      "prime": 2,
+      "categories": 49109640
+    },
+    "shard_1": {
+      "shard_id": 1,
+      "prime": 3,
+      "categories": 49109640
+    },
+    "shard_2": {
+      "shard_id": 2,
+      "prime": 5,
+      "categories": 49109640
+    },
+    "shard_3": {
+      "shard_id": 3,
+      "prime": 7,
+      "categories": 49109640
+    },
+    "shard_4": {
+      "shard_id": 4,
+      "prime": 11,
+      "categories": 49109640
+    },
+    "shard_5": {
+      "shard_id": 5,
+      "prime": 13,
+      "categories": 49109640
+    },
+    "shard_6": {
+      "shard_id": 6,
+      "prime": 17,
+      "categories": 49109640
+    },
+    "shard_7": {
+      "shard_id": 7,
+      "prime": 19,
+      "categories": 49109640
+    },
+    "shard_8": {
+      "shard_id": 8,
+      "prime": 23,
+      "categories": 49109640
+    },
+    "shard_9": {
+      "shard_id": 9,
+      "prime": 29,
+      "categories": 49109640
+    },
+    "shard_10": {
+      "shard_id": 10,
+      "prime": 31,
+      "categories": 49109640
+    },
+    "shard_11": {
+      "shard_id": 11,
+      "prime": 41,
+      "categories": 49109640
+    },
+    "shard_12": {
+      "shard_id": 12,
+      "prime": 47,
+      "categories": 49109640
+    },
+    "shard_13": {
+      "shard_id": 13,
+      "prime": 59,
+      "categories": 49109640
+    },
+    "shard_14": {
+      "shard_id": 14,
+      "prime": 71,
+      "categories": 49109640
+    },
+    "shard_15": {
+      "shard_id": 15,
+      "prime": 2,
+      "categories": 49109640
+    },
+    "shard_16": {
+      "shard_id": 16,
+      "prime": 3,
+      "categories": 49109640
+    },
+    "shard_17": {
+      "shard_id": 17,
+      "prime": 5,
+      "categories": 49109640
+    },
+    "shard_18": {
+      "shard_id": 18,
+      "prime": 7,
+      "categories": 49109640
+    },
+    "shard_19": {
+      "shard_id": 19,
+      "prime": 11,
+      "categories": 49109640
+    },
+    "shard_20": {
+      "shard_id": 20,
+      "prime": 13,
+      "categories": 49109640
+    },
+    "shard_21": {
+      "shard_id": 21,
+      "prime": 17,
+      "categories": 49109640
+    },
+    "shard_22": {
+      "shard_id": 22,
+      "prime": 19,
+      "categories": 49109640
+    },
+    "shard_23": {
+      "shard_id": 23,
+      "prime": 23,
+      "categories": 49109640
+    },
+    "shard_24": {
+      "shard_id": 24,
+      "prime": 29,
+      "categories": 49109640
+    },
+    "shard_25": {
+      "shard_id": 25,
+      "prime": 31,
+      "categories": 49109640
+    },
+    "shard_26": {
+      "shard_id": 26,
+      "prime": 41,
+      "categories": 49109640
+    },
+    "shard_27": {
+      "shard_id": 27,
+      "prime": 47,
+      "categories": 49109640
+    },
+    "shard_28": {
+      "shard_id": 28,
+      "prime": 59,
+      "categories": 49109640
+    },
+    "shard_29": {
+      "shard_id": 29,
+      "prime": 71,
+      "categories": 49109640
+    },
+    "shard_30": {
+      "shard_id": 30,
+      "prime": 2,
+      "categories": 49109640
+    },
+    "shard_31": {
+      "shard_id": 31,
+      "prime": 3,
+      "categories": 49109640
+    },
+    "shard_32": {
+      "shard_id": 32,
+      "prime": 5,
+      "categories": 49109639
+    },
+    "shard_33": {
+      "shard_id": 33,
+      "prime": 7,
+      "categories": 49109639
+    },
+    "shard_34": {
+      "shard_id": 34,
+      "prime": 11,
+      "categories": 49109639
+    },
+    "shard_35": {
+      "shard_id": 35,
+      "prime": 13,
+      "categories": 49109639
+    },
+    "shard_36": {
+      "shard_id": 36,
+      "prime": 17,
+      "categories": 49109639
+    },
+    "shard_37": {
+      "shard_id": 37,
+      "prime": 19,
+      "categories": 49109639
+    },
+    "shard_38": {
+      "shard_id": 38,
+      "prime": 23,
+      "categories": 49109639
+    },
+    "shard_39": {
+      "shard_id": 39,
+      "prime": 29,
+      "categories": 49109639
+    },
+    "shard_40": {
+      "shard_id": 40,
+      "prime": 31,
+      "categories": 49109639
+    },
+    "shard_41": {
+      "shard_id": 41,
+      "prime": 41,
+      "categories": 49109639
+    },
+    "shard_42": {
+      "shard_id": 42,
+      "prime": 47,
+      "categories": 49109639
+    },
+    "shard_43": {
+      "shard_id": 43,
+      "prime": 59,
+      "categories": 49109639
+    },
+    "shard_44": {
+      "shard_id": 44,
+      "prime": 71,
+      "categories": 49109639
+    },
+    "shard_45": {
+      "shard_id": 45,
+      "prime": 2,
+      "categories": 49109639
+    },
+    "shard_46": {
+      "shard_id": 46,
+      "prime": 3,
+      "categories": 49109639
+    },
+    "shard_47": {
+      "shard_id": 47,
+      "prime": 5,
+      "categories": 49109639
+    },
+    "shard_48": {
+      "shard_id": 48,
+      "prime": 7,
+      "categories": 49109639
+    },
+    "shard_49": {
+      "shard_id": 49,
+      "prime": 11,
+      "categories": 49109639
+    },
+    "shard_50": {
+      "shard_id": 50,
+      "prime": 13,
+      "categories": 49109639
+    },
+    "shard_51": {
+      "shard_id": 51,
+      "prime": 17,
+      "categories": 49109639
+    },
+    "shard_52": {
+      "shard_id": 52,
+      "prime": 19,
+      "categories": 49109639
+    },
+    "shard_53": {
+      "shard_id": 53,
+      "prime": 23,
+      "categories": 49109639
+    },
+    "shard_54": {
+      "shard_id": 54,
+      "prime": 29,
+      "categories": 49109639
+    },
+    "shard_55": {
+      "shard_id": 55,
+      "prime": 31,
+      "categories": 49109639
+    },
+    "shard_56": {
+      "shard_id": 56,
+      "prime": 41,
+      "categories": 49109639
+    },
+    "shard_57": {
+      "shard_id": 57,
+      "prime": 47,
+      "categories": 49109639
+    },
+    "shard_58": {
+      "shard_id": 58,
+      "prime": 59,
+      "categories": 49109639
+    },
+    "shard_59": {
+      "shard_id": 59,
+      "prime": 71,
+      "categories": 49109639
+    },
+    "shard_60": {
+      "shard_id": 60,
+      "prime": 2,
+      "categories": 49109639
+    },
+    "shard_61": {
+      "shard_id": 61,
+      "prime": 3,
+      "categories": 49109639
+    },
+    "shard_62": {
+      "shard_id": 62,
+      "prime": 5,
+      "categories": 49109639
+    },
+    "shard_63": {
+      "shard_id": 63,
+      "prime": 7,
+      "categories": 49109639
+    },
+    "shard_64": {
+      "shard_id": 64,
+      "prime": 11,
+      "categories": 49109639
+    },
+    "shard_65": {
+      "shard_id": 65,
+      "prime": 13,
+      "categories": 49109639
+    },
+    "shard_66": {
+      "shard_id": 66,
+      "prime": 17,
+      "categories": 49109639
+    },
+    "shard_67": {
+      "shard_id": 67,
+      "prime": 19,
+      "categories": 49109639
+    },
+    "shard_68": {
+      "shard_id": 68,
+      "prime": 23,
+      "categories": 49109639
+    },
+    "shard_69": {
+      "shard_id": 69,
+      "prime": 29,
+      "categories": 49109639
+    },
+    "shard_70": {
+      "shard_id": 70,
+      "prime": 31,
+      "categories": 49109639
+    }
+  }
+}

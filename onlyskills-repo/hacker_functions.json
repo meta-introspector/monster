@@ -1,0 +1,352 @@
+[
+  {
+    "function_name": "parse_expr",
+    "author": "pipelight-dev",
+    "skill_domain": "pipelite",
+    "language": "rust",
+    "signature": "rust::parse_expr",
+    "shard_id": 0,
+    "prime": 2,
+    "zkperf_hash": "6a04fed0cbf1a299"
+  },
+  {
+    "function_name": "compile_module",
+    "author": "pipelight-dev",
+    "skill_domain": "pipelite",
+    "language": "rust",
+    "signature": "rust::compile_module",
+    "shard_id": 0,
+    "prime": 2,
+    "zkperf_hash": "dfcad84cb8be1247"
+  },
+  {
+    "function_name": "execute_proof",
+    "author": "pipelight-dev",
+    "skill_domain": "pipelite",
+    "language": "rust",
+    "signature": "rust::execute_proof",
+    "shard_id": 0,
+    "prime": 2,
+    "zkperf_hash": "1758d121400a1285"
+  },
+  {
+    "function_name": "mkDerivation",
+    "author": "edolstra",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::mkDerivation",
+    "shard_id": 1,
+    "prime": 3,
+    "zkperf_hash": "fea903fd7e621b01"
+  },
+  {
+    "function_name": "buildRustPackage",
+    "author": "edolstra",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::buildRustPackage",
+    "shard_id": 1,
+    "prime": 3,
+    "zkperf_hash": "ada77e140b01adfb"
+  },
+  {
+    "function_name": "fetchFromGitHub",
+    "author": "edolstra",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::fetchFromGitHub",
+    "shard_id": 1,
+    "prime": 3,
+    "zkperf_hash": "7f8890a94552a503"
+  },
+  {
+    "function_name": "mkDerivation",
+    "author": "domenkozar",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::mkDerivation",
+    "shard_id": 2,
+    "prime": 5,
+    "zkperf_hash": "fea903fd7e621b01"
+  },
+  {
+    "function_name": "buildRustPackage",
+    "author": "domenkozar",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::buildRustPackage",
+    "shard_id": 2,
+    "prime": 5,
+    "zkperf_hash": "ada77e140b01adfb"
+  },
+  {
+    "function_name": "fetchFromGitHub",
+    "author": "domenkozar",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::fetchFromGitHub",
+    "shard_id": 2,
+    "prime": 5,
+    "zkperf_hash": "7f8890a94552a503"
+  },
+  {
+    "function_name": "mkDerivation",
+    "author": "zimbatm",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::mkDerivation",
+    "shard_id": 3,
+    "prime": 7,
+    "zkperf_hash": "fea903fd7e621b01"
+  },
+  {
+    "function_name": "buildRustPackage",
+    "author": "zimbatm",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::buildRustPackage",
+    "shard_id": 3,
+    "prime": 7,
+    "zkperf_hash": "ada77e140b01adfb"
+  },
+  {
+    "function_name": "fetchFromGitHub",
+    "author": "zimbatm",
+    "skill_domain": "nix",
+    "language": "nix",
+    "signature": "nix::fetchFromGitHub",
+    "shard_id": 3,
+    "prime": 7,
+    "zkperf_hash": "7f8890a94552a503"
+  },
+  {
+    "function_name": "mkDerivation",
+    "author": "edolstra",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::mkDerivation",
+    "shard_id": 4,
+    "prime": 11,
+    "zkperf_hash": "6cb037cb5109a3a2"
+  },
+  {
+    "function_name": "buildRustPackage",
+    "author": "edolstra",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::buildRustPackage",
+    "shard_id": 4,
+    "prime": 11,
+    "zkperf_hash": "632d448b0a19dcc0"
+  },
+  {
+    "function_name": "fetchFromGitHub",
+    "author": "edolstra",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::fetchFromGitHub",
+    "shard_id": 4,
+    "prime": 11,
+    "zkperf_hash": "7a4a30c7481fb024"
+  },
+  {
+    "function_name": "mkDerivation",
+    "author": "numtide",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::mkDerivation",
+    "shard_id": 5,
+    "prime": 13,
+    "zkperf_hash": "6cb037cb5109a3a2"
+  },
+  {
+    "function_name": "buildRustPackage",
+    "author": "numtide",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::buildRustPackage",
+    "shard_id": 5,
+    "prime": 13,
+    "zkperf_hash": "632d448b0a19dcc0"
+  },
+  {
+    "function_name": "fetchFromGitHub",
+    "author": "numtide",
+    "skill_domain": "flake",
+    "language": "flake",
+    "signature": "flake::fetchFromGitHub",
+    "shard_id": 5,
+    "prime": 13,
+    "zkperf_hash": "7a4a30c7481fb024"
+  },
+  {
+    "function_name": "parse_expr",
+    "author": "dtolnay",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::parse_expr",
+    "shard_id": 6,
+    "prime": 17,
+    "zkperf_hash": "6a04fed0cbf1a299"
+  },
+  {
+    "function_name": "compile_module",
+    "author": "dtolnay",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::compile_module",
+    "shard_id": 6,
+    "prime": 17,
+    "zkperf_hash": "dfcad84cb8be1247"
+  },
+  {
+    "function_name": "execute_proof",
+    "author": "dtolnay",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::execute_proof",
+    "shard_id": 6,
+    "prime": 17,
+    "zkperf_hash": "1758d121400a1285"
+  },
+  {
+    "function_name": "parse_expr",
+    "author": "alexcrichton",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::parse_expr",
+    "shard_id": 7,
+    "prime": 19,
+    "zkperf_hash": "6a04fed0cbf1a299"
+  },
+  {
+    "function_name": "compile_module",
+    "author": "alexcrichton",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::compile_module",
+    "shard_id": 7,
+    "prime": 19,
+    "zkperf_hash": "dfcad84cb8be1247"
+  },
+  {
+    "function_name": "execute_proof",
+    "author": "alexcrichton",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::execute_proof",
+    "shard_id": 7,
+    "prime": 19,
+    "zkperf_hash": "1758d121400a1285"
+  },
+  {
+    "function_name": "parse_expr",
+    "author": "matklad",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::parse_expr",
+    "shard_id": 8,
+    "prime": 23,
+    "zkperf_hash": "6a04fed0cbf1a299"
+  },
+  {
+    "function_name": "compile_module",
+    "author": "matklad",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::compile_module",
+    "shard_id": 8,
+    "prime": 23,
+    "zkperf_hash": "dfcad84cb8be1247"
+  },
+  {
+    "function_name": "execute_proof",
+    "author": "matklad",
+    "skill_domain": "rust",
+    "language": "rust",
+    "signature": "rust::execute_proof",
+    "shard_id": 8,
+    "prime": 23,
+    "zkperf_hash": "1758d121400a1285"
+  },
+  {
+    "function_name": "theorem_proof",
+    "author": "leanprover",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::theorem_proof",
+    "shard_id": 9,
+    "prime": 29,
+    "zkperf_hash": "43766e4066daedbd"
+  },
+  {
+    "function_name": "tactic_apply",
+    "author": "leanprover",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::tactic_apply",
+    "shard_id": 9,
+    "prime": 29,
+    "zkperf_hash": "918c6eca168949e4"
+  },
+  {
+    "function_name": "simp_all",
+    "author": "leanprover",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::simp_all",
+    "shard_id": 9,
+    "prime": 29,
+    "zkperf_hash": "604835e815a145ec"
+  },
+  {
+    "function_name": "theorem_proof",
+    "author": "gebner",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::theorem_proof",
+    "shard_id": 10,
+    "prime": 31,
+    "zkperf_hash": "43766e4066daedbd"
+  },
+  {
+    "function_name": "tactic_apply",
+    "author": "gebner",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::tactic_apply",
+    "shard_id": 10,
+    "prime": 31,
+    "zkperf_hash": "918c6eca168949e4"
+  },
+  {
+    "function_name": "simp_all",
+    "author": "gebner",
+    "skill_domain": "lean4",
+    "language": "lean4",
+    "signature": "lean4::simp_all",
+    "shard_id": 10,
+    "prime": 31,
+    "zkperf_hash": "604835e815a145ec"
+  },
+  {
+    "function_name": "solve_constraint",
+    "author": "MiniZinc",
+    "skill_domain": "minizinc",
+    "language": "minizinc",
+    "signature": "minizinc::solve_constraint",
+    "shard_id": 11,
+    "prime": 41,
+    "zkperf_hash": "e5a2200cbdacbf1b"
+  },
+  {
+    "function_name": "optimize_model",
+    "author": "MiniZinc",
+    "skill_domain": "minizinc",
+    "language": "minizinc",
+    "signature": "minizinc::optimize_model",
+    "shard_id": 11,
+    "prime": 41,
+    "zkperf_hash": "3e534e458d114f58"
+  }
+]

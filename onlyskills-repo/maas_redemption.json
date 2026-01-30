@@ -1,0 +1,100 @@
+{
+  "redeemer": {
+    "name": "SOLFUNMEME Redeemer",
+    "total_value": 291,
+    "redemption_rate": 0.1267605633802817,
+    "shards_redeemed": 9
+  },
+  "shards": [
+    {
+      "shard_id": 0,
+      "prime": 2,
+      "signal": "proof",
+      "noise_hash": "ee1c7e9fe7f84066",
+      "value_score": 71,
+      "redeemed": true,
+      "maas_form": "Proof Meme"
+    },
+    {
+      "shard_id": 1,
+      "prime": 3,
+      "signal": "optimal",
+      "noise_hash": "6e3f9c6a27452c8b",
+      "value_score": 31,
+      "redeemed": true,
+      "maas_form": "Optimization Meme"
+    },
+    {
+      "shard_id": 2,
+      "prime": 5,
+      "signal": "elegant",
+      "noise_hash": "1fdd7d46c0ae7fb7",
+      "value_score": 23,
+      "redeemed": true,
+      "maas_form": "Elegance Meme"
+    },
+    {
+      "shard_id": 3,
+      "prime": 7,
+      "signal": "useful",
+      "noise_hash": "19d31399e4d19117",
+      "value_score": 13,
+      "redeemed": true,
+      "maas_form": "Utility Meme"
+    },
+    {
+      "shard_id": 4,
+      "prime": 11,
+      "signal": "clear",
+      "noise_hash": "b6559efae2b93d1a",
+      "value_score": 17,
+      "redeemed": true,
+      "maas_form": "Clarity Meme"
+    },
+    {
+      "shard_id": 5,
+      "prime": 13,
+      "signal": "theorem",
+      "noise_hash": "2948c4389f02ab52",
+      "value_score": 59,
+      "redeemed": true,
+      "maas_form": "Theorem Meme"
+    },
+    {
+      "shard_id": 6,
+      "prime": 17,
+      "signal": "efficient",
+      "noise_hash": "ceaf8a73342a8c36",
+      "value_score": 29,
+      "redeemed": true,
+      "maas_form": "Efficiency Meme"
+    },
+    {
+      "shard_id": 7,
+      "prime": 19,
+      "signal": "noise",
+      "noise_hash": "15285d8c3ec694a7",
+      "value_score": 2,
+      "redeemed": false,
+      "maas_form": "Noise Meme"
+    },
+    {
+      "shard_id": 8,
+      "prime": 23,
+      "signal": "correct",
+      "noise_hash": "e923a34c3b0289d0",
+      "value_score": 41,
+      "redeemed": true,
+      "maas_form": "Correctness Meme"
+    },
+    {
+      "shard_id": 9,
+      "prime": 29,
+      "signal": "good",
+      "noise_hash": "dc0059566fb98263",
+      "value_score": 7,
+      "redeemed": true,
+      "maas_form": "Quality Meme"
+    }
+  ]
+}

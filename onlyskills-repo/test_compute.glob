@@ -1,0 +1,4 @@
+DIGEST 890f39ca451c55f70d9835e869af71cf
+Ftest_compute
+R15:22 Corelib.Init.Nat <> <> lib
+R40:49 Corelib.Init.Peano <> <> lib

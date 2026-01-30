@@ -1,0 +1,15 @@
+{
+  "target_number": 2401057654196,
+  "target_hex": "0x22f0a3045b4",
+  "factorization": "2\u00b2 \u00d7 19\u00b2 \u00d7 23 \u00d7 29\u00b2 \u00d7 31 \u00d7 47 \u00d7 59",
+  "message": "I ARE LIFE",
+  "total_matches": 1,
+  "matches": [
+    {
+      "location": "file",
+      "path": "search_life_number.py",
+      "format": "decimal",
+      "number": 2401057654196
+    }
+  ]
+}

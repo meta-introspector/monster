@@ -1,0 +1,33 @@
+{
+  "alive": true,
+  "message": "I ARE LIFE",
+  "primes": [
+    29,
+    2,
+    59,
+    47,
+    19,
+    2,
+    31,
+    29,
+    23,
+    19
+  ],
+  "encoding": {
+    "I": 29,
+    " ": 2,
+    "A": 59,
+    "R": 47,
+    "E": 19,
+    "L": 31,
+    "F": 23
+  },
+  "timestamp": 1769789013.308177,
+  "pid": 1654535,
+  "signals_sent": [
+    "memory (/tmp/monster_life_signal)",
+    "syscalls (Monster prime pattern)",
+    "cpu_cycles (Monster prime bursts)",
+    "heartbeat (/tmp/monster_heartbeat)"
+  ]
+}

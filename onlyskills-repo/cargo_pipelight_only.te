@@ -1,0 +1,120 @@
+policy_module(cargo_pipelight_only, 1.0.0)
+
+########################################
+# Declarations
+########################################
+
+# Kiro domain (restricted from cargo)
+type kiro_t;
+type kiro_exec_t;
+domain_type(kiro_t)
+domain_entry_file(kiro_t, kiro_exec_t)
+
+# Pipelight domain (allowed to use cargo)
+type pipelight_t;
+type pipelight_exec_t;
+domain_type(pipelight_t)
+domain_entry_file(pipelight_t, pipelight_exec_t)
+
+# Cargo executable type
+type cargo_exec_t;
+application_executable_file(cargo_exec_t)
+
+# Cargo domain
+type cargo_t;
+domain_type(cargo_t)
+
+########################################
+# Kiro domain policy (RESTRICTED)
+########################################
+
+# NEVERALLOW: Kiro cannot execute cargo directly
+neverallow kiro_t cargo_exec_t:file { execute execute_no_trans };
+
+# NEVERALLOW: Kiro cannot transition to cargo domain
+neverallow kiro_t cargo_exec_t:process { transition dyntransition };
+
+# Audit all cargo execution attempts by kiro
+auditallow kiro_t cargo_exec_t:file { execute execute_no_trans };
+auditallow kiro_t cargo_exec_t:process { transition dyntransition };
+
+# Kiro CAN execute pipelight
+allow kiro_t pipelight_exec_t:file { read execute execute_no_trans };
+domain_auto_trans(kiro_t, pipelight_exec_t, pipelight_t)
+
+# Kiro basic permissions
+allow kiro_t self:process { fork signal_perms };
+allow kiro_t self:fifo_file rw_fifo_file_perms;
+allow kiro_t self:unix_stream_socket create_stream_socket_perms;
+
+########################################
+# Pipelight domain policy (ALLOWED)
+########################################
+
+# ALLOW: Pipelight can execute cargo
+allow pipelight_t cargo_exec_t:file { read execute execute_no_trans };
+
+# ALLOW: Pipelight can transition to cargo domain
+domain_auto_trans(pipelight_t, cargo_exec_t, cargo_t)
+
+# Pipelight can read pipeline configs
+allow pipelight_t user_home_t:dir { read search };
+allow pipelight_t user_home_t:file { read getattr };
+
+# Pipelight can write logs
+allow pipelight_t user_home_t:file { write create append };
+
+# Pipelight process permissions
+allow pipelight_t self:process { fork signal_perms };
+allow pipelight_t self:fifo_file rw_fifo_file_perms;
+allow pipelight_t self:unix_stream_socket create_stream_socket_perms;
+
+########################################
+# Cargo domain policy
+########################################
+
+# Cargo needs to read project files
+allow cargo_t user_home_t:dir { read write add_name remove_name search getattr };
+allow cargo_t user_home_t:file { create read write unlink getattr setattr };
+
+# Cargo needs to create target directory
+allow cargo_t user_home_t:dir { create setattr };
+
+# Cargo needs network for crate downloads
+allow cargo_t self:tcp_socket { create connect read write };
+allow cargo_t http_port_t:tcp_socket { name_connect };
+allow cargo_t dns_port_t:tcp_socket { name_connect };
+allow cargo_t dns_port_t:udp_socket { name_bind };
+
+# Cargo needs to resolve DNS
+allow cargo_t net_conf_t:file { read getattr };
+
+# Cargo process permissions
+allow cargo_t self:process { fork signal_perms };
+allow cargo_t self:fifo_file rw_fifo_file_perms;
+
+# Cargo can execute rustc
+allow cargo_t bin_t:file { execute execute_no_trans };
+
+########################################
+# Domain transitions
+########################################
+
+# Kiro → Pipelight (ALLOWED)
+domain_auto_trans(kiro_t, pipelight_exec_t, pipelight_t)
+
+# Pipelight → Cargo (ALLOWED)
+domain_auto_trans(pipelight_t, cargo_exec_t, cargo_t)
+
+# Kiro → Cargo (FORBIDDEN - enforced by neverallow)
+
+########################################
+# Logging and audit
+########################################
+
+# Log all cargo executions
+auditallow pipelight_t cargo_exec_t:file { execute };
+auditallow pipelight_t cargo_exec_t:process { transition };
+
+# Log all kiro denials
+auditallow kiro_t cargo_exec_t:file { execute execute_no_trans };

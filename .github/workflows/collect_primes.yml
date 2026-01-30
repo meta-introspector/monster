@@ -1,0 +1,134 @@
+name: Collect Prime Attributes
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      max_chunks:
+        description: 'Maximum number of chunks to process'
+        required: false
+        default: '10'
+
+jobs:
+  collect-primes:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install Nix
+      uses: cachix/install-nix-action@v22
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+    
+    - name: Setup Cachix
+      uses: cachix/cachix-action@v12
+      with:
+        name: monster-primes
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+    
+    - name: Install dependencies
+      run: |
+        nix-shell -p gap perf --run "gap --version"
+        nix-shell -p cargo rustc --run "cargo --version"
+    
+    - name: Collect chunk ${{ matrix.chunk }}
+      run: |
+        cd onlyskills-repo
+        chmod +x collect_primes_chunked.sh
+        
+        START=$((matrix.chunk * 1000 + 2))
+        END=$((START + 1000))
+        
+        nix-shell -p gap perf --run "
+          mkdir -p chunks perf_data
+          
+          # Create GAP script for this chunk
+          cat > chunks/chunk_${{ matrix.chunk }}.g <<'EOF'
+primes := Filtered([$START..$END], IsPrime);
+Print(\"{\n\");
+Print(\"  \\\"chunk\\\": ${{ matrix.chunk }},\n\");
+Print(\"  \\\"start\\\": $START,\n\");
+Print(\"  \\\"end\\\": $END,\n\");
+Print(\"  \\\"url\\\": \\\"https://zkprologml.org/primes/chunk_${{ matrix.chunk }}\\\",\n\");
+Print(\"  \\\"chord\\\": [$((matrix.chunk % 71)), $(((matrix.chunk * 2) % 71)), $(((matrix.chunk * 3) % 71))],\n\");
+Print(\"  \\\"primes\\\": [\n\");
+for i in [1..Length(primes)] do
+    p := primes[i];
+    N := p;
+    nu_inf := Sum(DivisorsInt(N), d -> EulerPhi(Gcd(d, N/d)));
+    nu_2 := 0;
+    if N mod 4 <> 0 and Length(Filtered(FactorsInt(N), q -> q mod 4 = 3)) > 0 then nu_2 := 1; fi;
+    nu_3 := 0;
+    if N mod 9 <> 0 and Length(Filtered(FactorsInt(N), q -> q mod 3 = 2)) > 0 then nu_3 := 1; fi;
+    mu := N * Product(Set(FactorsInt(N)), q -> (1 + 1/q));
+    genus := Int(1 + (mu/12) - (nu_2/4) - (nu_3/3) - (nu_inf/2));
+    is_monster := p in [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71];
+    Print(\"    {\\\"p\\\": \", p, \", \\\"g\\\": \", genus, \", \\\"m\\\": \", is_monster, \", \\\"s\\\": \", p mod 71, \"}\");
+    if i < Length(primes) then Print(\",\n\"); else Print(\"\n\"); fi;
+od;
+Print(\"  ]\n}\n\");
+quit;
+EOF
+          
+          # Run with perf
+          perf record -o perf_data/chunk_${{ matrix.chunk }}.data \
+            gap -q chunks/chunk_${{ matrix.chunk }}.g \
+            > chunks/chunk_${{ matrix.chunk }}.json 2>&1
+        "
+    
+    - name: Upload chunk artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: prime-chunk-${{ matrix.chunk }}
+        path: |
+          onlyskills-repo/chunks/chunk_${{ matrix.chunk }}.json
+          onlyskills-repo/perf_data/chunk_${{ matrix.chunk }}.data
+  
+  merge-chunks:
+    needs: collect-primes
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install Nix
+      uses: cachix/install-nix-action@v22
+    
+    - name: Download all chunks
+      uses: actions/download-artifact@v3
+      with:
+        path: artifacts
+    
+    - name: Merge chunks to Parquet
+      run: |
+        cd onlyskills-repo
+        
+        # Copy all chunks
+        mkdir -p chunks perf_data
+        find ../artifacts -name "*.json" -exec cp {} chunks/ \;
+        find ../artifacts -name "*.data" -exec cp {} perf_data/ \;
+        
+        # Build and run merger
+        nix-shell -p cargo rustc --run "
+          cargo build --release --bin merge_prime_chunks
+          ./target/release/merge_prime_chunks
+        "
+    
+    - name: Upload final Parquet
+      uses: actions/upload-artifact@v3
+      with:
+        name: prime-chunks-parquet
+        path: onlyskills-repo/prime_chunks.parquet
+    
+    - name: Upload perf data
+      uses: actions/upload-artifact@v3
+      with:
+        name: perf-data
+        path: onlyskills-repo/perf_data/

@@ -1,0 +1,285 @@
+[
+  {
+    "object": {
+      "name": "Monster Group",
+      "order": "808017424794512875886459904961710757005754368000000000",
+      "prime_factors": {
+        "11": 2,
+        "31": 1,
+        "41": 1,
+        "2": 46,
+        "5": 9,
+        "23": 1,
+        "7": 6,
+        "29": 1,
+        "19": 1,
+        "13": 3,
+        "47": 1,
+        "71": 1,
+        "3": 20,
+        "59": 1,
+        "17": 1
+      },
+      "complexity": 8.08e+53
+    },
+    "groups": [
+      {
+        "sequence": "8080",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Complex K-theory / Bott periodicity"
+      },
+      {
+        "sequence": "1742",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Elliptic curves / CM theory"
+      },
+      {
+        "sequence": "4794",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Hilbert modular forms"
+      },
+      {
+        "sequence": "5128",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Siegel modular forms"
+      },
+      {
+        "sequence": "7588",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Calabi-Yau threefolds"
+      },
+      {
+        "sequence": "6459",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Vertex operator algebra / moonshine"
+      },
+      {
+        "sequence": "9049",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Generalized moonshine"
+      },
+      {
+        "sequence": "6171",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "String theory"
+      },
+      {
+        "sequence": "0757",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "ADE classification"
+      },
+      {
+        "sequence": "0057",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Topological modular forms"
+      }
+    ]
+  },
+  {
+    "object": {
+      "name": "Baby Monster Group",
+      "order": "4154781481226426191177580544000000",
+      "prime_factors": {
+        "2": 41,
+        "47": 1,
+        "7": 2,
+        "13": 1,
+        "11": 1,
+        "19": 1,
+        "17": 1,
+        "31": 1,
+        "5": 6,
+        "3": 13,
+        "23": 1
+      },
+      "complexity": 4.15e+33
+    },
+    "groups": [
+      {
+        "sequence": "4154",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Complex K-theory / Bott periodicity"
+      },
+      {
+        "sequence": "7814",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Elliptic curves / CM theory"
+      },
+      {
+        "sequence": "8122",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Hilbert modular forms"
+      },
+      {
+        "sequence": "6426",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Siegel modular forms"
+      },
+      {
+        "sequence": "1911",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Calabi-Yau threefolds"
+      },
+      {
+        "sequence": "7758",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Vertex operator algebra / moonshine"
+      },
+      {
+        "sequence": "0544",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Generalized moonshine"
+      },
+      {
+        "sequence": "0000",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "String theory"
+      }
+    ]
+  },
+  {
+    "object": {
+      "name": "Fischer Group Fi24",
+      "order": "1255205709190661721292800",
+      "prime_factors": {
+        "13": 1,
+        "2": 21,
+        "17": 1,
+        "29": 1,
+        "23": 1,
+        "7": 3,
+        "3": 16,
+        "5": 2,
+        "11": 1
+      },
+      "complexity": 1.26e+24
+    },
+    "groups": [
+      {
+        "sequence": "1255",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Complex K-theory / Bott periodicity"
+      },
+      {
+        "sequence": "2057",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Elliptic curves / CM theory"
+      },
+      {
+        "sequence": "0919",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Hilbert modular forms"
+      },
+      {
+        "sequence": "0661",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Siegel modular forms"
+      },
+      {
+        "sequence": "7212",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Calabi-Yau threefolds"
+      },
+      {
+        "sequence": "9280",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Vertex operator algebra / moonshine"
+      }
+    ]
+  },
+  {
+    "object": {
+      "name": "Conway Group Co1",
+      "order": "4157776806543360000",
+      "prime_factors": {
+        "7": 2,
+        "11": 1,
+        "13": 1,
+        "5": 4,
+        "3": 9,
+        "23": 1,
+        "2": 21
+      },
+      "complexity": 4.16e+18
+    },
+    "groups": [
+      {
+        "sequence": "4157",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Complex K-theory / Bott periodicity"
+      },
+      {
+        "sequence": "7768",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Elliptic curves / CM theory"
+      },
+      {
+        "sequence": "0654",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Hilbert modular forms"
+      },
+      {
+        "sequence": "3360",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Siegel modular forms"
+      }
+    ]
+  },
+  {
+    "object": {
+      "name": "Mathieu Group M24",
+      "order": "244823040",
+      "prime_factors": {
+        "23": 1,
+        "5": 1,
+        "11": 1,
+        "7": 1,
+        "2": 10,
+        "3": 3
+      },
+      "complexity": 245000000.0
+    },
+    "groups": [
+      {
+        "sequence": "2448",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Complex K-theory / Bott periodicity"
+      },
+      {
+        "sequence": "2304",
+        "digits_preserved": 4,
+        "factors_removed": [],
+        "area": "Elliptic curves / CM theory"
+      }
+    ]
+  }
+]

@@ -249,13 +249,7 @@ pub fn generate_image_stream(
     
     // Encode to PNG
     let mut png_data = Vec::new();
-    let encoder = image::codecs::png::PngEncoder::new(&mut png_data);
-    encoder.write_image(
-        img.as_raw(),
-        width,
-        height,
-        image::ColorType::Rgba8,
-    ).unwrap();
+    img.write_to(&mut std::io::Cursor::new(&mut png_data), image::ImageFormat::Png).unwrap();
     
     png_data
 }
