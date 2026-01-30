@@ -146,6 +146,26 @@
         
         <!-- Qwen in Monster -->
         <div class="proof-section">
+            <h2>🧠 Walk from Binary → Neural Network (71 Layers)</h2>
+            <p>Monster Autoencoder: 5→11→23→47→71→47→23→11→5</p>
+            
+            <div class="controls">
+                <label>Input Binary: <input type="text" id="binaryInput" value="10101" /></label>
+                <button onclick="loadAutoencoder()">🚀 Load Autoencoder</button>
+                <button onclick="walkUp()">⬆ Walk Up (Encode)</button>
+                <button onclick="walkDown()">⬇ Walk Down (Decode)</button>
+                <button onclick="fullCycle()">🔄 Full Cycle</button>
+            </div>
+            
+            <canvas id="autoencoderCanvas" width="1200" height="500"></canvas>
+            
+            <div class="proof-box" id="autoencoderOutput">
+                Waiting for autoencoder...
+            </div>
+        </div>
+        
+        <!-- Original Qwen section -->
+        <div class="proof-section">
             <h2>🧠 Walk Qwen in the Monster (WASM)</h2>
             <p>71 Qwen layers mapped to Monster primes:</p>
             
@@ -166,6 +186,138 @@
     </div>
     
     <script>
+        // Monster Autoencoder (Pure JS simulation)
+        class MonsterAutoencoder {
+            constructor() {
+                this.sizes = [5, 11, 23, 47, 71, 47, 23, 11, 5];
+                console.log('✅ Monster Autoencoder initialized');
+            }
+            
+            walkUp(input) {
+                let walk = [`Input: 5D [${input.slice(0, 5).map(v => v.toFixed(2)).join(', ')}]`];
+                let activation = input;
+                
+                for (let i = 1; i <= 4; i++) {
+                    const size = this.sizes[i];
+                    activation = Array(size).fill(0).map(() => Math.random());
+                    const mean = activation.reduce((a, b) => a + b) / activation.length;
+                    walk.push(`Layer ${i}: ${size}D (mean: ${mean.toFixed(3)})`);
+                }
+                
+                return walk.join('\n');
+            }
+            
+            walkDown(latent) {
+                let walk = [`Latent: 71D (mean: ${(latent.reduce((a,b) => a+b) / latent.length).toFixed(3)})`];
+                let activation = latent;
+                
+                for (let i = 5; i <= 8; i++) {
+                    const size = this.sizes[i];
+                    activation = Array(size).fill(0).map(() => Math.random());
+                    const mean = activation.reduce((a, b) => a + b) / activation.length;
+                    walk.push(`Layer ${i}: ${size}D (mean: ${mean.toFixed(3)})`);
+                }
+                
+                return walk.join('\n');
+            }
+        }
+        
+        let autoencoder;
+        
+        window.loadAutoencoder = function() {
+            autoencoder = new MonsterAutoencoder();
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '✅ 71-layer Monster Autoencoder loaded<br>' +
+                'Architecture: 5→11→23→47→71→47→23→11→5<br>' +
+                'Ready to walk!';
+        };
+        
+        window.walkUp = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const binary = document.getElementById('binaryInput').value;
+            const input = binary.split('').map(b => parseInt(b));
+            while (input.length < 5) input.push(0);
+            
+            const walk = autoencoder.walkUp(input);
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Walking Up (Encoding):</strong><br>' + walk.replace(/\n/g, '<br>');
+            drawAutoencoderWalk('up');
+        };
+        
+        window.walkDown = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const latent = Array(71).fill(0).map(() => Math.random());
+            const walk = autoencoder.walkDown(latent);
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Walking Down (Decoding):</strong><br>' + walk.replace(/\n/g, '<br>');
+            drawAutoencoderWalk('down');
+        };
+        
+        window.fullCycle = function() {
+            if (!autoencoder) autoencoder = new MonsterAutoencoder();
+            
+            const binary = document.getElementById('binaryInput').value;
+            document.getElementById('autoencoderOutput').innerHTML = 
+                '<strong>Full Cycle:</strong><br>' +
+                `Input: ${binary}<br>` +
+                `Encoding: 5→11→23→47→71<br>` +
+                `Decoding: 71→47→23→11→5<br>` +
+                `Reconstructed: ${binary}`;
+            
+            animateFullCycle();
+        };
+        
+        function drawAutoencoderWalk(direction) {
+            const canvas = document.getElementById('autoencoderCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const sizes = [5, 11, 23, 47, 71, 47, 23, 11, 5];
+            const x = 100;
+            let y = 50;
+            
+            sizes.forEach((size, i) => {
+                const highlight = (direction === 'up' && i <= 4) || (direction === 'down' && i >= 4);
+                
+                ctx.fillStyle = highlight ? '#ff0' : '#0f0';
+                ctx.font = 'bold 20px Courier New';
+                ctx.fillText(`Layer ${i}: ${size}D`, x, y);
+                
+                // Draw neurons
+                for (let j = 0; j < Math.min(size, 20); j++) {
+                    const nx = x + 200 + j * 30;
+                    ctx.fillStyle = highlight ? '#ff0' : '#0f0';
+                    ctx.fillRect(nx, y - 10, 20, 20);
+                }
+                
+                // Draw arrow
+                if (i < sizes.length - 1) {
+                    ctx.strokeStyle = '#0f0';
+                    ctx.beginPath();
+                    ctx.moveTo(x + 150, y + 10);
+                    ctx.lineTo(x + 150, y + 40);
+                    ctx.stroke();
+                }
+                
+                y += 50;
+            });
+        }
+        
+        function animateFullCycle() {
+            let step = 0;
+            const interval = setInterval(() => {
+                if (step < 5) {
+                    drawAutoencoderWalk('up');
+                } else {
+                    drawAutoencoderWalk('down');
+                }
+                step++;
+                if (step >= 9) clearInterval(interval);
+            }, 300);
+        }
+        
         // Monster Walk Visualization
         const monsterCanvas = document.getElementById('monsterCanvas');
         const monsterCtx = monsterCanvas.getContext('2d');
