@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1020" height="820" viewBox="0 0 1020 820" role="img" aria-labelledby="viz-title viz-desc" font-family="sans-serif">
+  <title id="viz-title">Hilbert trace and animated 2-D shadow of the Monster shadow system</title>
+  <desc id="viz-desc">An animated Hilbert space-filling curve steps through four scales (orders 1 to 4). Order 2 places the 15 Ogg primes in a 4-by-4 grid coloured by how many simple groups each reaches, marking as holes the ten primes with no shadow (7,17,19,23,29,31,41,47,59,71) and the unused 16th cell. Order 3 traces all 51 system nodes (15 primes, 9 groups, 27 shadow parts). Order 4 is the fine narrative manifold. A sampler lens travels each curve. It auto-plays at 2x speed with no interaction (pure SMIL, 12s loop), and a time slider and play/pause button control the timeline.</desc>
+  <defs>
+    <radialGradient id="manifold" cx="50%" cy="46%" r="70%">
+      <stop offset="0%" stop-color="#fdfefe"/>
+      <stop offset="70%" stop-color="#eef3f7"/>
+      <stop offset="100%" stop-color="#d6dbdf"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1020" height="820" fill="url(#manifold)"/>
+  <g transform="translate(340 430)" fill="none" stroke="#aab7c4" opacity="0.35">
+    <circle r="120"><animate attributeName="r" dur="11s" repeatCount="indefinite" values="120;150;120"/></circle>
+    <circle r="210"><animate attributeName="r" dur="13s" repeatCount="indefinite" values="210;240;210"/></circle>
+    <circle r="300"><animate attributeName="r" dur="17s" repeatCount="indefinite" values="300;330;300"/></circle>
+    <rect x="-280" y="-280" width="560" height="560" fill="none" stroke="#5d6d7e" opacity="0.5"/>
+  </g>
+  <text x="510" y="46" font-size="24" text-anchor="middle" fill="#1a2530" font-family="sans-serif" font-weight="bold">Hilbert Trace of the Monster Shadow System</text>
+  <text x="510" y="74" font-size="14" text-anchor="middle" fill="#566573" font-family="sans-serif">a 2-D shadow tour · simple → complex · scaling &amp; sampling · Ogg primes → simple groups → shadow parts</text>
+  <g role="group" aria-label="Tour landmarks">
+    <text x="660" y="140" font-size="16" fill="#212f3d" font-family="sans-serif" font-weight="bold">Tour &amp; landmarks</text>
+    <text x="660" y="168" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">① Genesis</text>
+    <text x="660" y="186" font-size="11" fill="#566573" font-family="sans-serif">the order-1 Hilbert seed</text>
+    <text x="660" y="214" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">② 15 primes</text>
+    <text x="660" y="232" font-size="11" fill="#566573" font-family="sans-serif">one per 4×4 cell, coloured by reach</text>
+    <text x="660" y="260" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">③ Full trace</text>
+    <text x="660" y="278" font-size="11" fill="#566573" font-family="sans-serif">51 nodes: primes → groups → parts</text>
+    <text x="660" y="306" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">④ Manifold</text>
+    <text x="660" y="324" font-size="11" fill="#566573" font-family="sans-serif">the order-4 continuum</text>
+    <text x="660" y="352" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">★ PGL(2,7)</text>
+    <text x="660" y="370" font-size="11" fill="#566573" font-family="sans-serif">top delta +0.682 · primes [3,13,11]</text>
+    <text x="660" y="398" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">▦ [2,3,5] family</text>
+    <text x="660" y="416" font-size="11" fill="#566573" font-family="sans-serif">PSL(2,7),PSL(3,4),M22,M23,Sz(8),A7,A8</text>
+    <text x="660" y="444" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">◆ U3(4)</text>
+    <text x="660" y="462" font-size="11" fill="#566573" font-family="sans-serif">outlier · primes [2,5,13]</text>
+    <text x="660" y="490" font-size="15" fill="#1a2530" font-family="sans-serif" font-weight="bold">○ 10 holes</text>
+    <text x="660" y="508" font-size="11" fill="#566573" font-family="sans-serif">7,17,19,23,29,31,41,47,59,71 — no shadow</text>
+  </g>
+  <g opacity="0" role="group" aria-label="Stage 1: Genesis, the order-1 Hilbert seed">
+    <title>Stage 1 — Genesis: the order-1 Hilbert seed</title>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="1;1;0" keyTimes="0;0.23;0.25"/>
+    <polyline points="200,290 200,570 480,570 480,290" fill="none" stroke="#5d6d7e" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.85" stroke-dasharray="9000">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="9000;9000;0;0" keyTimes="0;0.01;0.12;1"/>
+    </polyline>
+    <circle r="7" fill="#ffffff" stroke="#5d6d7e" stroke-width="2">
+      <title>sampler lens tracing the Hilbert curve</title>
+      <animateMotion dur="12s" repeatCount="indefinite" path="M 200 290 L 200 570 L 480 570 L 480 290" keyPoints="0;0;1;1" keyTimes="0;0.02;0.18;1" calcMode="linear"/>
+      <animate attributeName="r" dur="1.4s" repeatCount="indefinite" values="6;11;6"/>
+    </circle>
+    <text x="60" y="740" font-size="16" fill="#5d6d7e" font-family="sans-serif" font-weight="bold">stage 1 · genesis — the order-1 seed (2×2)</text>
+  </g>
+  <g opacity="0" role="group" aria-label="Stage 2: the fifteen Ogg primes on the order-2 Hilbert curve, with holes">
+    <title>Stage 2 — The fifteen primes (order-2 curve), holes marked</title>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.25;0.27;0.48;0.5"/>
+    <polyline points="130,220 270,220 270,360 130,360 130,500 130,640 270,640 270,500 410,500 410,640 550,640 550,500 550,360 410,360 410,220 550,220" fill="none" stroke="#f39c12" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.85" stroke-dasharray="9000">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="9000;9000;0;0" keyTimes="0;0.25;0.38;1"/>
+    </polyline>
+    <circle r="7" fill="#ffffff" stroke="#f39c12" stroke-width="2">
+      <title>sampler lens tracing the Hilbert curve</title>
+      <animateMotion dur="12s" repeatCount="indefinite" path="M 130 220 L 270 220 L 270 360 L 130 360 L 130 500 L 130 640 L 270 640 L 270 500 L 410 500 L 410 640 L 550 640 L 550 500 L 550 360 L 410 360 L 410 220 L 550 220" keyPoints="0;0;1;1" keyTimes="0;0.25;0.42;1" calcMode="linear"/>
+      <animate attributeName="r" dur="1.4s" repeatCount="indefinite" values="6;11;6"/>
+    </circle>
+    <circle cx="130" cy="220" r="10" fill="#e67e22" stroke="#7e5109" stroke-width="1">
+      <title>prime 2 · reaches 8 group(s)</title>
+    </circle>
+    <text x="130" y="224" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">2</text>
+    <circle cx="270" cy="220" r="10" fill="#e67e22" stroke="#7e5109" stroke-width="1">
+      <title>prime 3 · reaches 8 group(s)</title>
+    </circle>
+    <text x="270" y="224" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">3</text>
+    <circle cx="270" cy="360" r="10" fill="#e67e22" stroke="#7e5109" stroke-width="1">
+      <title>prime 5 · reaches 8 group(s)</title>
+    </circle>
+    <text x="270" y="364" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">5</text>
+    <circle cx="130" cy="360" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="130" cy="360" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 7 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="130" y="364" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">7</text>
+    <circle cx="130" cy="500" r="10" fill="#f7dc6f" stroke="#7e5109" stroke-width="1">
+      <title>prime 11 · reaches 1 group(s)</title>
+    </circle>
+    <text x="130" y="504" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">11</text>
+    <circle cx="130" cy="640" r="10" fill="#f5b041" stroke="#7e5109" stroke-width="1">
+      <title>prime 13 · reaches 2 group(s)</title>
+    </circle>
+    <text x="130" y="644" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">13</text>
+    <circle cx="270" cy="640" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="270" cy="640" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 17 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="270" y="644" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">17</text>
+    <circle cx="270" cy="500" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="270" cy="500" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 19 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="270" y="504" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">19</text>
+    <circle cx="410" cy="500" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="410" cy="500" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 23 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="410" y="504" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">23</text>
+    <circle cx="410" cy="640" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="410" cy="640" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 29 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="410" y="644" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">29</text>
+    <circle cx="550" cy="640" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="550" cy="640" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 31 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="550" y="644" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">31</text>
+    <circle cx="550" cy="500" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="550" cy="500" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 41 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="550" y="504" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">41</text>
+    <circle cx="550" cy="360" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="550" cy="360" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 47 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="550" y="364" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">47</text>
+    <circle cx="410" cy="360" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="410" cy="360" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 59 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="410" y="364" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">59</text>
+    <circle cx="410" cy="220" r="14" fill="none" stroke="#aeb6bf" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="410" cy="220" r="10" fill="#c8ccd0" stroke="#7e5109" stroke-width="1">
+      <title>prime 71 · reaches 0 group(s) · HOLE (no shadow)</title>
+    </circle>
+    <text x="410" y="224" font-size="11" text-anchor="middle" fill="#212f3d" font-family="monospace">71</text>
+    <circle cx="550" cy="220" r="14" fill="none" stroke="#cb4335" stroke-width="1.5" stroke-dasharray="2 4">
+      <title>unused 16th cell — a hole in the 4×4 cover</title>
+    </circle>
+    <text x="60" y="740" font-size="16" fill="#b9770e" font-family="sans-serif" font-weight="bold">stage 2 · the fifteen primes — colour = groups reached, grey = hole</text>
+  </g>
+  <g opacity="0" role="group" aria-label="Stage 3: the full 51-node system trace on the order-3 Hilbert curve">
+    <title>Stage 3 — The full trace: 15 primes, 9 groups, 27 shadow parts</title>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.5;0.52;0.73;0.75"/>
+    <polyline points="95,185 95,255 165,255 165,185 235,185 305,185 305,255 235,255 235,325 305,325 305,395 235,395 165,395 165,325 95,325 95,395 95,465 165,465 165,535 95,535 95,605 95,675 165,675 165,605 235,605 235,675 305,675 305,605 305,535 235,535 235,465 305,465 375,465 445,465 445,535 375,535 375,605 375,675 445,675 445,605 515,605 515,675 585,675 585,605 585,535 515,535 515,465 585,465 585,395 585,325 515,325 515,395 445,395 375,395 375,325 445,325 445,255 375,255 375,185 445,185 515,185 515,255 585,255 585,185" fill="none" stroke="#2471a3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.85" stroke-dasharray="9000">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="9000;9000;0;0" keyTimes="0;0.5;0.64;1"/>
+    </polyline>
+    <circle r="7" fill="#ffffff" stroke="#2471a3" stroke-width="2">
+      <title>sampler lens tracing the Hilbert curve</title>
+      <animateMotion dur="12s" repeatCount="indefinite" path="M 95 185 L 95 255 L 165 255 L 165 185 L 235 185 L 305 185 L 305 255 L 235 255 L 235 325 L 305 325 L 305 395 L 235 395 L 165 395 L 165 325 L 95 325 L 95 395 L 95 465 L 165 465 L 165 535 L 95 535 L 95 605 L 95 675 L 165 675 L 165 605 L 235 605 L 235 675 L 305 675 L 305 605 L 305 535 L 235 535 L 235 465 L 305 465 L 375 465 L 445 465 L 445 535 L 375 535 L 375 605 L 375 675 L 445 675 L 445 605 L 515 605 L 515 675 L 585 675 L 585 605 L 585 535 L 515 535 L 515 465 L 585 465 L 585 395 L 585 325 L 515 325 L 515 395 L 445 395 L 375 395 L 375 325 L 445 325 L 445 255 L 375 255 L 375 185 L 445 185 L 515 185 L 515 255 L 585 255 L 585 185" keyPoints="0;0;1;1" keyTimes="0;0.5;0.68;1" calcMode="linear"/>
+      <animate attributeName="r" dur="1.4s" repeatCount="indefinite" values="6;11;6"/>
+    </circle>
+    <circle cx="95" cy="185" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="95" cy="255" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="165" cy="255" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="165" cy="185" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="235" cy="185" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="305" cy="185" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="305" cy="255" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="235" cy="255" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="235" cy="325" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="305" cy="325" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="305" cy="395" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="235" cy="395" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="165" cy="395" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="165" cy="325" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="95" cy="325" r="5" fill="#e67e22" opacity="0.95"/>
+    <circle cx="95" cy="395" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="95" cy="465" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="165" cy="465" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="165" cy="535" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="95" cy="535" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="95" cy="605" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="95" cy="675" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="165" cy="675" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="165" cy="605" r="5" fill="#2471a3" opacity="0.95"/>
+    <circle cx="235" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="235" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="305" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="305" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="305" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="235" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="235" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="305" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="375" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="445" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="445" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="375" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="375" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="375" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="445" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="445" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="675" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="605" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="535" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="465" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="395" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="585" cy="325" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="325" r="5" fill="#27ae60" opacity="0.95"/>
+    <circle cx="515" cy="395" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="445" cy="395" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="375" cy="395" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="375" cy="325" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="445" cy="325" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="445" cy="255" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="375" cy="255" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="375" cy="185" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="445" cy="185" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="515" cy="185" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="515" cy="255" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="585" cy="255" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <circle cx="585" cy="185" r="3" fill="none" stroke="#cb4335" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <text x="60" y="740" font-size="16" fill="#1f618d" font-family="sans-serif" font-weight="bold">stage 3 · the full trace — orange=prime, blue=group, green=shadow part</text>
+  </g>
+  <g opacity="0" role="group" aria-label="Stage 4: the order-4 narrative manifold continuum">
+    <title>Stage 4 — The narrative manifold: the order-4 continuum</title>
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.75;0.77;1"/>
+    <polyline points="77,167 112,167 112,202 77,202 77,237 77,272 112,272 112,237 147,237 147,272 182,272 182,237 182,202 147,202 147,167 182,167 217,167 217,202 252,202 252,167 287,167 322,167 322,202 287,202 287,237 322,237 322,272 287,272 252,272 252,237 217,237 217,272 217,307 217,342 252,342 252,307 287,307 322,307 322,342 287,342 287,377 322,377 322,412 287,412 252,412 252,377 217,377 217,412 182,412 147,412 147,377 182,377 182,342 182,307 147,307 147,342 112,342 112,307 77,307 77,342 77,377 112,377 112,412 77,412 77,447 77,482 112,482 112,447 147,447 182,447 182,482 147,482 147,517 182,517 182,552 147,552 112,552 112,517 77,517 77,552 77,587 112,587 112,622 77,622 77,657 77,692 112,692 112,657 147,657 147,692 182,692 182,657 182,622 147,622 147,587 182,587 217,587 252,587 252,622 217,622 217,657 217,692 252,692 252,657 287,657 287,692 322,692 322,657 322,622 287,622 287,587 322,587 322,552 322,517 287,517 287,552 252,552 217,552 217,517 252,517 252,482 217,482 217,447 252,447 287,447 287,482 322,482 322,447 357,447 357,482 392,482 392,447 427,447 462,447 462,482 427,482 427,517 462,517 462,552 427,552 392,552 392,517 357,517 357,552 357,587 392,587 392,622 357,622 357,657 357,692 392,692 392,657 427,657 427,692 462,692 462,657 462,622 427,622 427,587 462,587 497,587 532,587 532,622 497,622 497,657 497,692 532,692 532,657 567,657 567,692 602,692 602,657 602,622 567,622 567,587 602,587 602,552 602,517 567,517 567,552 532,552 497,552 497,517 532,517 532,482 497,482 497,447 532,447 567,447 567,482 602,482 602,447 602,412 567,412 567,377 602,377 602,342 602,307 567,307 567,342 532,342 532,307 497,307 497,342 497,377 532,377 532,412 497,412 462,412 462,377 427,377 427,412 392,412 357,412 357,377 392,377 392,342 357,342 357,307 392,307 427,307 427,342 462,342 462,307 462,272 462,237 427,237 427,272 392,272 357,272 357,237 392,237 392,202 357,202 357,167 392,167 427,167 427,202 462,202 462,167 497,167 532,167 532,202 497,202 497,237 497,272 532,272 532,237 567,237 567,272 602,272 602,237 602,202 567,202 567,167 602,167" fill="none" stroke="#8e44ad" stroke-width="1" opacity="0.55" stroke-dasharray="9000">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="9000;9000;0;0" keyTimes="0;0.75;0.9;1"/>
+    </polyline>
+    <circle cx="130" cy="220" r="6" fill="#e67e22" opacity="0.9"/>
+    <circle cx="270" cy="220" r="6" fill="#e67e22" opacity="0.9"/>
+    <circle cx="270" cy="360" r="6" fill="#e67e22" opacity="0.9"/>
+    <circle cx="130" cy="360" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="130" cy="500" r="6" fill="#f7dc6f" opacity="0.9"/>
+    <circle cx="130" cy="640" r="6" fill="#f5b041" opacity="0.9"/>
+    <circle cx="270" cy="640" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="270" cy="500" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="410" cy="500" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="410" cy="640" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="550" cy="640" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="550" cy="500" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="550" cy="360" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="410" cy="360" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <circle cx="410" cy="220" r="6" fill="#c8ccd0" opacity="0.9"/>
+    <text x="60" y="740" font-size="16" fill="#6c3483" font-family="sans-serif" font-weight="bold">stage 4 · the narrative manifold — the continuum the data embeds into</text>
+  </g>
+  <g role="group" aria-label="Narration">
+    <text x="60" y="768" font-size="13" fill="#34495e" font-family="sans-serif" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0;0.02;0.23;0.25"/>
+      We begin at the seed: a single Hilbert fold folds a line into the plane.
+    </text>
+    <text x="60" y="768" font-size="13" fill="#34495e" font-family="sans-serif" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.25;0.27;0.48;0.5"/>
+      The 15 Ogg primes land in the 4×4 grid; grey rings are holes — primes with no shadow.
+    </text>
+    <text x="60" y="768" font-size="13" fill="#34495e" font-family="sans-serif" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.5;0.52;0.73;0.75"/>
+      Zoom in: the whole system — primes, then groups, then shadow parts — traced as one path.
+    </text>
+    <text x="60" y="768" font-size="13" fill="#34495e" font-family="sans-serif" opacity="0">
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.75;0.77;0.98;1"/>
+      At the finest scale the discrete trace dissolves into its narrative manifold.
+    </text>
+  </g>
+  <script type="text/javascript"><![CDATA[
+    function svgRoot(){return document.documentElement;}
+    function playPause(){var s=svgRoot();if(s.animationsPaused())s.unpauseAnimations();else s.pauseAnimations();}
+    function scrub(v){var s=svgRoot();s.pauseAnimations();s.setCurrentTime(parseFloat(v));var l=document.getElementById('tlabel');if(l)l.textContent='t = '+parseFloat(v).toFixed(1)+' s';}
+  ]]></script>
+  <foreignObject x="60" y="764" width="900" height="48">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;font-family:sans-serif;font-size:13px;color:#212f3d;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button type="button" onclick="playPause()" aria-label="Play or pause the animation" style="padding:4px 10px;border:1px solid #5d6d7e;border-radius:6px;background:#eaeded;cursor:pointer;">play / pause</button>
+        <label for="tslider">time</label>
+        <input id="tslider" type="range" min="0" max="12" step="0.1" value="0" aria-label="Timeline scrubber in seconds, 0 to 12" oninput="scrub(this.value)" style="flex:1;"/>
+        <span id="tlabel">t = 0.0 s</span>
+      </div>
+    </body>
+  </foreignObject>
+</svg>
