@@ -1,0 +1,524 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1590' height='1092' viewBox='0 0 1590 1092' font-family='ui-monospace, monospace'>
+<rect width='1590' height='1092' fill='#0b0f1a'/>
+<g stroke='#16203a' stroke-width='1'>
+<line x1='0' y1='0' x2='0' y2='1092'/>
+<line x1='40' y1='0' x2='40' y2='1092'/>
+<line x1='80' y1='0' x2='80' y2='1092'/>
+<line x1='120' y1='0' x2='120' y2='1092'/>
+<line x1='160' y1='0' x2='160' y2='1092'/>
+<line x1='200' y1='0' x2='200' y2='1092'/>
+<line x1='240' y1='0' x2='240' y2='1092'/>
+<line x1='280' y1='0' x2='280' y2='1092'/>
+<line x1='320' y1='0' x2='320' y2='1092'/>
+<line x1='360' y1='0' x2='360' y2='1092'/>
+<line x1='400' y1='0' x2='400' y2='1092'/>
+<line x1='440' y1='0' x2='440' y2='1092'/>
+<line x1='480' y1='0' x2='480' y2='1092'/>
+<line x1='520' y1='0' x2='520' y2='1092'/>
+<line x1='560' y1='0' x2='560' y2='1092'/>
+<line x1='600' y1='0' x2='600' y2='1092'/>
+<line x1='640' y1='0' x2='640' y2='1092'/>
+<line x1='680' y1='0' x2='680' y2='1092'/>
+<line x1='720' y1='0' x2='720' y2='1092'/>
+<line x1='760' y1='0' x2='760' y2='1092'/>
+<line x1='800' y1='0' x2='800' y2='1092'/>
+<line x1='840' y1='0' x2='840' y2='1092'/>
+<line x1='880' y1='0' x2='880' y2='1092'/>
+<line x1='920' y1='0' x2='920' y2='1092'/>
+<line x1='960' y1='0' x2='960' y2='1092'/>
+<line x1='1000' y1='0' x2='1000' y2='1092'/>
+<line x1='1040' y1='0' x2='1040' y2='1092'/>
+<line x1='1080' y1='0' x2='1080' y2='1092'/>
+<line x1='1120' y1='0' x2='1120' y2='1092'/>
+<line x1='1160' y1='0' x2='1160' y2='1092'/>
+<line x1='1200' y1='0' x2='1200' y2='1092'/>
+<line x1='1240' y1='0' x2='1240' y2='1092'/>
+<line x1='1280' y1='0' x2='1280' y2='1092'/>
+<line x1='1320' y1='0' x2='1320' y2='1092'/>
+<line x1='1360' y1='0' x2='1360' y2='1092'/>
+<line x1='1400' y1='0' x2='1400' y2='1092'/>
+<line x1='1440' y1='0' x2='1440' y2='1092'/>
+<line x1='1480' y1='0' x2='1480' y2='1092'/>
+<line x1='1520' y1='0' x2='1520' y2='1092'/>
+<line x1='1560' y1='0' x2='1560' y2='1092'/>
+<line x1='0' y1='0' x2='1590' y2='0'/>
+<line x1='0' y1='40' x2='1590' y2='40'/>
+<line x1='0' y1='80' x2='1590' y2='80'/>
+<line x1='0' y1='120' x2='1590' y2='120'/>
+<line x1='0' y1='160' x2='1590' y2='160'/>
+<line x1='0' y1='200' x2='1590' y2='200'/>
+<line x1='0' y1='240' x2='1590' y2='240'/>
+<line x1='0' y1='280' x2='1590' y2='280'/>
+<line x1='0' y1='320' x2='1590' y2='320'/>
+<line x1='0' y1='360' x2='1590' y2='360'/>
+<line x1='0' y1='400' x2='1590' y2='400'/>
+<line x1='0' y1='440' x2='1590' y2='440'/>
+<line x1='0' y1='480' x2='1590' y2='480'/>
+<line x1='0' y1='520' x2='1590' y2='520'/>
+<line x1='0' y1='560' x2='1590' y2='560'/>
+<line x1='0' y1='600' x2='1590' y2='600'/>
+<line x1='0' y1='640' x2='1590' y2='640'/>
+<line x1='0' y1='680' x2='1590' y2='680'/>
+<line x1='0' y1='720' x2='1590' y2='720'/>
+<line x1='0' y1='760' x2='1590' y2='760'/>
+<line x1='0' y1='800' x2='1590' y2='800'/>
+<line x1='0' y1='840' x2='1590' y2='840'/>
+<line x1='0' y1='880' x2='1590' y2='880'/>
+<line x1='0' y1='920' x2='1590' y2='920'/>
+<line x1='0' y1='960' x2='1590' y2='960'/>
+<line x1='0' y1='1000' x2='1590' y2='1000'/>
+<line x1='0' y1='1040' x2='1590' y2='1040'/>
+<line x1='0' y1='1080' x2='1590' y2='1080'/>
+</g>
+<text x='795.0' y='54' text-anchor='middle' font-size='34' font-weight='bold' fill='#ffd166'>THE PRIME NUMBER VIEW</text>
+<text x='795.0' y='84' text-anchor='middle' font-size='15.5' fill='#c9d1d9'>each room is labelled by the primes it introduces — those are its doors — split by prime factors, every label placed</text>
+<text x='795.0' y='108' text-anchor='middle' font-size='12.5' fill='#7d8aa3'>the memory palace re-read by prime · every room, door and exponent is machine-checked in PrimeNumberView.lean</text>
+<rect x='36' y='132' width='1518' height='78' rx='9' fill='#111726' stroke='#ffd166' stroke-width='1.4'/>
+<text x='52' y='156' font-size='13.5' font-weight='bold' fill='#ffd166'>THE FIFTEEN MONSTER DOORS</text>
+<text x='52' y='174' font-size='11' fill='#7d8aa3'>a prime is a Monster door iff it divides |M| (the supersingular / Ogg primes)</text>
+<rect x='826' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='846.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>2</text>
+<rect x='874' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='894.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>3</text>
+<rect x='922' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='942.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>5</text>
+<rect x='970' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='990.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>7</text>
+<rect x='1018' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1038.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>11</text>
+<rect x='1066' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1086.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>13</text>
+<rect x='1114' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1134.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>17</text>
+<rect x='1162' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1182.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>19</text>
+<rect x='1210' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1230.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>23</text>
+<rect x='1258' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1278.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>29</text>
+<rect x='1306' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1326.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>31</text>
+<rect x='1354' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1374.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>41</text>
+<rect x='1402' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1422.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>47</text>
+<rect x='1450' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1470.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>59</text>
+<rect x='1498' y='156' width='40' height='34' rx='5' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='1518.0' y='178' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffd166'>71</text>
+<rect x='36' y='240' width='360' height='56' rx='8' fill='#111726' stroke='#ffd166' stroke-width='1.5'/>
+<text x='216.0' y='264' text-anchor='middle' font-size='14.5' font-weight='bold' fill='#ffd166'>WING I · THE MONSTER CORE</text>
+<text x='216.0' y='283' text-anchor='middle' font-size='10.5' fill='#7d8aa3'>rooms whose doors all stay inside the fifteen-prime alphabet</text>
+<rect x='36' y='304' width='360' height='248' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='36' y='304' width='360' height='46' rx='9' fill='#ffd166' opacity='0.14'/>
+<rect x='36' y='347' width='360' height='3' fill='#ffd166' opacity='0.5'/>
+<text x='50' y='329' font-size='19' font-weight='bold' fill='#ffd166'>|M|</text>
+<text x='50' y='344' font-size='10' fill='#7d8aa3'>order of the Monster — the grand hall, all fifteen doors</text>
+<g><title>prime 2, exponent 46 — Monster door</title>
+<rect x='50.0' y='364' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='82.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='66.0' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2⁴⁶</text>
+</g>
+<g><title>prime 3, exponent 20 — Monster door</title>
+<rect x='98.0' y='364' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='130.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='114.0' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3²⁰</text>
+</g>
+<g><title>prime 5, exponent 9 — Monster door</title>
+<rect x='146.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='173.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='159.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5⁹</text>
+</g>
+<g><title>prime 7, exponent 6 — Monster door</title>
+<rect x='189.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='216.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='202.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>7⁶</text>
+</g>
+<g><title>prime 11, exponent 2 — Monster door</title>
+<rect x='232.0' y='364' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='264.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='248.0' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>11²</text>
+</g>
+<g><title>prime 13, exponent 3 — Monster door</title>
+<rect x='280.0' y='364' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='312.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='296.0' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>13³</text>
+</g>
+<g><title>prime 17, exponent 1 — Monster door</title>
+<rect x='328.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='355.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='341.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>17</text>
+</g>
+<g><title>prime 19, exponent 1 — Monster door</title>
+<rect x='50.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='77.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='63.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>19</text>
+</g>
+<g><title>prime 23, exponent 1 — Monster door</title>
+<rect x='93.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='120.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='106.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>23</text>
+</g>
+<g><title>prime 29, exponent 1 — Monster door</title>
+<rect x='136.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='163.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='149.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>29</text>
+</g>
+<g><title>prime 31, exponent 1 — Monster door</title>
+<rect x='179.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='206.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='192.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>31</text>
+</g>
+<g><title>prime 41, exponent 1 — Monster door</title>
+<rect x='222.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='249.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='235.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>41</text>
+</g>
+<g><title>prime 47, exponent 1 — Monster door</title>
+<rect x='265.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='292.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='278.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>47</text>
+</g>
+<g><title>prime 59, exponent 1 — Monster door</title>
+<rect x='308.0' y='407' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='335.0' cy='424.0' r='2.3' fill='#ffd166'/>
+<text x='321.5' y='429' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>59</text>
+</g>
+<g><title>prime 71, exponent 1 — Monster door</title>
+<rect x='50.0' y='450' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='77.0' cy='467.0' r='2.3' fill='#ffd166'/>
+<text x='63.5' y='472' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>71</text>
+</g>
+<text x='50' y='500' font-size='10.5' fill='#7d8aa3'>15 doors  ·  15 Monster  ·  0 outside  ·  Ω = 95</text>
+<text x='50' y='517' font-size='11' fill='#c9d1d9'>|M| = 2⁴⁶ · 3²⁰ · 5⁹ · 7⁶ · 11² · 13³ · 17 · 19</text>
+<text x='50' y='535' font-size='11' fill='#c9d1d9'>    23 · 29 · 31 · 41 · 47 · 59 · 71</text>
+<rect x='36' y='568' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='36' y='568' width='360' height='46' rx='9' fill='#ffd166' opacity='0.14'/>
+<rect x='36' y='611' width='360' height='3' fill='#ffd166' opacity='0.5'/>
+<text x='50' y='593' font-size='19' font-weight='bold' fill='#ffd166'>196883</text>
+<text x='50' y='608' font-size='10' fill='#7d8aa3'>the anchor — smallest faithful Monster chart (the spore)</text>
+<g><title>prime 47, exponent 1 — Monster door</title>
+<rect x='50.0' y='628' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='77.0' cy='645.0' r='2.3' fill='#ffd166'/>
+<text x='63.5' y='650' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>47</text>
+</g>
+<g><title>prime 59, exponent 1 — Monster door</title>
+<rect x='93.0' y='628' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='120.0' cy='645.0' r='2.3' fill='#ffd166'/>
+<text x='106.5' y='650' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>59</text>
+</g>
+<g><title>prime 71, exponent 1 — Monster door</title>
+<rect x='136.0' y='628' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='163.0' cy='645.0' r='2.3' fill='#ffd166'/>
+<text x='149.5' y='650' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>71</text>
+</g>
+<text x='50' y='678' font-size='10.5' fill='#7d8aa3'>3 doors  ·  3 Monster  ·  0 outside  ·  Ω = 3</text>
+<text x='50' y='695' font-size='11' fill='#c9d1d9'>196883 = 47 · 59 · 71</text>
+<rect x='36' y='728' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='36' y='728' width='360' height='46' rx='9' fill='#ffd166' opacity='0.14'/>
+<rect x='36' y='771' width='360' height='3' fill='#ffd166' opacity='0.5'/>
+<text x='50' y='753' font-size='19' font-weight='bold' fill='#ffd166'>21296876</text>
+<text x='50' y='768' font-size='10' fill='#7d8aa3'>second irrep degree</text>
+<g><title>prime 2, exponent 2 — Monster door</title>
+<rect x='50.0' y='788' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='77.0' cy='805.0' r='2.3' fill='#ffd166'/>
+<text x='63.5' y='810' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2²</text>
+</g>
+<g><title>prime 31, exponent 1 — Monster door</title>
+<rect x='93.0' y='788' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='120.0' cy='805.0' r='2.3' fill='#ffd166'/>
+<text x='106.5' y='810' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>31</text>
+</g>
+<g><title>prime 41, exponent 1 — Monster door</title>
+<rect x='136.0' y='788' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='163.0' cy='805.0' r='2.3' fill='#ffd166'/>
+<text x='149.5' y='810' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>41</text>
+</g>
+<g><title>prime 59, exponent 1 — Monster door</title>
+<rect x='179.0' y='788' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='206.0' cy='805.0' r='2.3' fill='#ffd166'/>
+<text x='192.5' y='810' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>59</text>
+</g>
+<g><title>prime 71, exponent 1 — Monster door</title>
+<rect x='222.0' y='788' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='249.0' cy='805.0' r='2.3' fill='#ffd166'/>
+<text x='235.5' y='810' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>71</text>
+</g>
+<text x='50' y='838' font-size='10.5' fill='#7d8aa3'>5 doors  ·  5 Monster  ·  0 outside  ·  Ω = 6</text>
+<text x='50' y='855' font-size='11' fill='#c9d1d9'>21296876 = 2² · 31 · 41 · 59 · 71</text>
+<rect x='36' y='888' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='36' y='888' width='360' height='46' rx='9' fill='#ffd166' opacity='0.14'/>
+<rect x='36' y='931' width='360' height='3' fill='#ffd166' opacity='0.5'/>
+<text x='50' y='913' font-size='19' font-weight='bold' fill='#ffd166'>842609326</text>
+<text x='50' y='928' font-size='10' fill='#7d8aa3'>third irrep degree</text>
+<g><title>prime 2, exponent 1 — Monster door</title>
+<rect x='50.0' y='948' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='77.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='63.5' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2</text>
+</g>
+<g><title>prime 13, exponent 2 — Monster door</title>
+<rect x='93.0' y='948' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='125.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='109.0' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>13²</text>
+</g>
+<g><title>prime 29, exponent 1 — Monster door</title>
+<rect x='141.0' y='948' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='168.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='154.5' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>29</text>
+</g>
+<g><title>prime 31, exponent 1 — Monster door</title>
+<rect x='184.0' y='948' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='211.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='197.5' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>31</text>
+</g>
+<g><title>prime 47, exponent 1 — Monster door</title>
+<rect x='227.0' y='948' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='254.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='240.5' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>47</text>
+</g>
+<g><title>prime 59, exponent 1 — Monster door</title>
+<rect x='270.0' y='948' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='297.0' cy='965.0' r='2.3' fill='#ffd166'/>
+<text x='283.5' y='970' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>59</text>
+</g>
+<text x='50' y='998' font-size='10.5' fill='#7d8aa3'>6 doors  ·  6 Monster  ·  0 outside  ·  Ω = 7</text>
+<text x='50' y='1015' font-size='11' fill='#c9d1d9'>842609326 = 2 · 13² · 29 · 31 · 47 · 59</text>
+<rect x='422' y='240' width='360' height='56' rx='8' fill='#111726' stroke='#7ee787' stroke-width='1.5'/>
+<text x='602.0' y='264' text-anchor='middle' font-size='14.5' font-weight='bold' fill='#7ee787'>WING II · THE COLLAPSE CORRIDOR</text>
+<text x='602.0' y='283' text-anchor='middle' font-size='10.5' fill='#7d8aa3'>the 194 → 170 → 160 chain the project animates</text>
+<rect x='422' y='304' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='422' y='304' width='360' height='46' rx='9' fill='#7ee787' opacity='0.14'/>
+<rect x='422' y='347' width='360' height='3' fill='#7ee787' opacity='0.5'/>
+<text x='436' y='329' font-size='19' font-weight='bold' fill='#7ee787'>194</text>
+<text x='436' y='344' font-size='10' fill='#7d8aa3'>conjugacy classes / irreps — one door leaves the Monster</text>
+<g><title>prime 2, exponent 1 — Monster door</title>
+<rect x='436.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='463.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='449.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2</text>
+</g>
+<g><title>prime 97, exponent 1 — leaves the Monster</title>
+<rect x='479.0' y='364' width='34.0' height='34' rx='6' fill='#2a0f0f' stroke='#ff6b6b' stroke-width='1.3'/>
+<circle cx='506.0' cy='381.0' r='2.3' fill='#ff6b6b'/>
+<text x='492.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ff6b6b'>97</text>
+</g>
+<text x='436' y='414' font-size='10.5' fill='#7d8aa3'>2 doors  ·  1 Monster  ·  1 outside  ·  Ω = 2</text>
+<text x='436' y='431' font-size='11' fill='#c9d1d9'>194 = 2 · 97</text>
+<rect x='422' y='464' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='422' y='464' width='360' height='46' rx='9' fill='#7ee787' opacity='0.14'/>
+<rect x='422' y='507' width='360' height='3' fill='#7ee787' opacity='0.5'/>
+<text x='436' y='489' font-size='19' font-weight='bold' fill='#7ee787'>170</text>
+<text x='436' y='504' font-size='10' fill='#7d8aa3'>distinct irrep degrees</text>
+<g><title>prime 2, exponent 1 — Monster door</title>
+<rect x='436.0' y='524' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='463.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='449.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='479.0' y='524' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='506.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='492.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<g><title>prime 17, exponent 1 — Monster door</title>
+<rect x='522.0' y='524' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='549.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='535.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>17</text>
+</g>
+<text x='436' y='574' font-size='10.5' fill='#7d8aa3'>3 doors  ·  3 Monster  ·  0 outside  ·  Ω = 3</text>
+<text x='436' y='591' font-size='11' fill='#c9d1d9'>170 = 2 · 5 · 17</text>
+<rect x='422' y='624' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='422' y='624' width='360' height='46' rx='9' fill='#7ee787' opacity='0.14'/>
+<rect x='422' y='667' width='360' height='3' fill='#7ee787' opacity='0.5'/>
+<text x='436' y='649' font-size='19' font-weight='bold' fill='#7ee787'>160</text>
+<text x='436' y='664' font-size='10' fill='#7d8aa3'>distinct prime-support biomes</text>
+<g><title>prime 2, exponent 5 — Monster door</title>
+<rect x='436.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='463.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='449.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2⁵</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='479.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='506.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='492.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<text x='436' y='734' font-size='10.5' fill='#7d8aa3'>2 doors  ·  2 Monster  ·  0 outside  ·  Ω = 6</text>
+<text x='436' y='751' font-size='11' fill='#c9d1d9'>160 = 2⁵ · 5</text>
+<rect x='808' y='240' width='360' height='56' rx='8' fill='#111726' stroke='#79c0ff' stroke-width='1.5'/>
+<text x='988.0' y='264' text-anchor='middle' font-size='14.5' font-weight='bold' fill='#79c0ff'>WING III · MOONSHINE COEFFICIENTS</text>
+<text x='988.0' y='283' text-anchor='middle' font-size='10.5' fill='#7d8aa3'>the first three j-coefficients — each hides a door to the outside</text>
+<rect x='808' y='304' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='808' y='304' width='360' height='46' rx='9' fill='#79c0ff' opacity='0.14'/>
+<rect x='808' y='347' width='360' height='3' fill='#79c0ff' opacity='0.5'/>
+<text x='822' y='329' font-size='19' font-weight='bold' fill='#79c0ff'>196884</text>
+<text x='822' y='344' font-size='10' fill='#7d8aa3'>c(1) = [q¹] j</text>
+<g><title>prime 2, exponent 2 — Monster door</title>
+<rect x='822.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='849.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='835.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2²</text>
+</g>
+<g><title>prime 3, exponent 3 — Monster door</title>
+<rect x='865.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='892.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='878.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3³</text>
+</g>
+<g><title>prime 1823, exponent 1 — leaves the Monster</title>
+<rect x='908.0' y='364' width='48.0' height='34' rx='6' fill='#2a0f0f' stroke='#ff6b6b' stroke-width='1.3'/>
+<circle cx='949.0' cy='381.0' r='2.3' fill='#ff6b6b'/>
+<text x='928.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ff6b6b'>1823</text>
+</g>
+<text x='822' y='414' font-size='10.5' fill='#7d8aa3'>3 doors  ·  2 Monster  ·  1 outside  ·  Ω = 6</text>
+<text x='822' y='431' font-size='11' fill='#c9d1d9'>196884 = 2² · 3³ · 1823</text>
+<rect x='808' y='464' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='808' y='464' width='360' height='46' rx='9' fill='#79c0ff' opacity='0.14'/>
+<rect x='808' y='507' width='360' height='3' fill='#79c0ff' opacity='0.5'/>
+<text x='822' y='489' font-size='19' font-weight='bold' fill='#79c0ff'>21493760</text>
+<text x='822' y='504' font-size='10' fill='#7d8aa3'>c(2) = [q²] j</text>
+<g><title>prime 2, exponent 11 — Monster door</title>
+<rect x='822.0' y='524' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='854.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='838.0' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2¹¹</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='870.0' y='524' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='897.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='883.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<g><title>prime 2099, exponent 1 — leaves the Monster</title>
+<rect x='913.0' y='524' width='48.0' height='34' rx='6' fill='#2a0f0f' stroke='#ff6b6b' stroke-width='1.3'/>
+<circle cx='954.0' cy='541.0' r='2.3' fill='#ff6b6b'/>
+<text x='933.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ff6b6b'>2099</text>
+</g>
+<text x='822' y='574' font-size='10.5' fill='#7d8aa3'>3 doors  ·  2 Monster  ·  1 outside  ·  Ω = 13</text>
+<text x='822' y='591' font-size='11' fill='#c9d1d9'>21493760 = 2¹¹ · 5 · 2099</text>
+<rect x='808' y='624' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='808' y='624' width='360' height='46' rx='9' fill='#79c0ff' opacity='0.14'/>
+<rect x='808' y='667' width='360' height='3' fill='#79c0ff' opacity='0.5'/>
+<text x='822' y='649' font-size='19' font-weight='bold' fill='#79c0ff'>864299970</text>
+<text x='822' y='664' font-size='10' fill='#7d8aa3'>c(3) = [q³] j</text>
+<g><title>prime 2, exponent 1 — Monster door</title>
+<rect x='822.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='849.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='835.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2</text>
+</g>
+<g><title>prime 3, exponent 5 — Monster door</title>
+<rect x='865.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='892.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='878.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3⁵</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='908.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='935.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='921.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<g><title>prime 355679, exponent 1 — leaves the Monster</title>
+<rect x='951.0' y='684' width='66.0' height='34' rx='6' fill='#2a0f0f' stroke='#ff6b6b' stroke-width='1.3'/>
+<circle cx='1010.0' cy='701.0' r='2.3' fill='#ff6b6b'/>
+<text x='980.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ff6b6b'>355679</text>
+</g>
+<text x='822' y='734' font-size='10.5' fill='#7d8aa3'>4 doors  ·  3 Monster  ·  1 outside  ·  Ω = 8</text>
+<text x='822' y='751' font-size='11' fill='#c9d1d9'>864299970 = 2 · 3⁵ · 5 · 355679</text>
+<rect x='1194' y='240' width='360' height='56' rx='8' fill='#111726' stroke='#f0883e' stroke-width='1.5'/>
+<text x='1374.0' y='264' text-anchor='middle' font-size='14.5' font-weight='bold' fill='#f0883e'>WING IV · LATTICES &amp; SPORADIC NEIGHBOURS</text>
+<text x='1374.0' y='283' text-anchor='middle' font-size='10.5' fill='#7d8aa3'>the Leech lattice, its kissing number, and M₂₄</text>
+<rect x='1194' y='304' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='1194' y='304' width='360' height='46' rx='9' fill='#f0883e' opacity='0.14'/>
+<rect x='1194' y='347' width='360' height='3' fill='#f0883e' opacity='0.5'/>
+<text x='1208' y='329' font-size='19' font-weight='bold' fill='#f0883e'>24</text>
+<text x='1208' y='344' font-size='10' fill='#7d8aa3'>Leech / Niemeier dimension</text>
+<g><title>prime 2, exponent 3 — Monster door</title>
+<rect x='1208.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1235.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='1221.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2³</text>
+</g>
+<g><title>prime 3, exponent 1 — Monster door</title>
+<rect x='1251.0' y='364' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1278.0' cy='381.0' r='2.3' fill='#ffd166'/>
+<text x='1264.5' y='386' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3</text>
+</g>
+<text x='1208' y='414' font-size='10.5' fill='#7d8aa3'>2 doors  ·  2 Monster  ·  0 outside  ·  Ω = 4</text>
+<text x='1208' y='431' font-size='11' fill='#c9d1d9'>24 = 2³ · 3</text>
+<rect x='1194' y='464' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='1194' y='464' width='360' height='46' rx='9' fill='#f0883e' opacity='0.14'/>
+<rect x='1194' y='507' width='360' height='3' fill='#f0883e' opacity='0.5'/>
+<text x='1208' y='489' font-size='19' font-weight='bold' fill='#f0883e'>23</text>
+<text x='1208' y='504' font-size='10' fill='#7d8aa3'>the deep-hole prime (a single door)</text>
+<g><title>prime 23, exponent 1 — Monster door</title>
+<rect x='1208.0' y='524' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1235.0' cy='541.0' r='2.3' fill='#ffd166'/>
+<text x='1221.5' y='546' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>23</text>
+</g>
+<text x='1208' y='574' font-size='10.5' fill='#7d8aa3'>1 door  ·  1 Monster  ·  0 outside  ·  Ω = 1</text>
+<text x='1208' y='591' font-size='11' fill='#c9d1d9'>23 = 23</text>
+<rect x='1194' y='624' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='1194' y='624' width='360' height='46' rx='9' fill='#f0883e' opacity='0.14'/>
+<rect x='1194' y='667' width='360' height='3' fill='#f0883e' opacity='0.5'/>
+<text x='1208' y='649' font-size='19' font-weight='bold' fill='#f0883e'>196560</text>
+<text x='1208' y='664' font-size='10' fill='#7d8aa3'>Leech kissing number</text>
+<g><title>prime 2, exponent 4 — Monster door</title>
+<rect x='1208.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1235.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='1221.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2⁴</text>
+</g>
+<g><title>prime 3, exponent 3 — Monster door</title>
+<rect x='1251.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1278.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='1264.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3³</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='1294.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1321.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='1307.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<g><title>prime 7, exponent 1 — Monster door</title>
+<rect x='1337.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1364.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='1350.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>7</text>
+</g>
+<g><title>prime 13, exponent 1 — Monster door</title>
+<rect x='1380.0' y='684' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1407.0' cy='701.0' r='2.3' fill='#ffd166'/>
+<text x='1393.5' y='706' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>13</text>
+</g>
+<text x='1208' y='734' font-size='10.5' fill='#7d8aa3'>5 doors  ·  5 Monster  ·  0 outside  ·  Ω = 10</text>
+<text x='1208' y='751' font-size='11' fill='#c9d1d9'>196560 = 2⁴ · 3³ · 5 · 7 · 13</text>
+<rect x='1194' y='784' width='360' height='144' rx='9' fill='#111726' stroke='#26314a' stroke-width='1.2'/>
+<rect x='1194' y='784' width='360' height='46' rx='9' fill='#f0883e' opacity='0.14'/>
+<rect x='1194' y='827' width='360' height='3' fill='#f0883e' opacity='0.5'/>
+<text x='1208' y='809' font-size='19' font-weight='bold' fill='#f0883e'>244823040</text>
+<text x='1208' y='824' font-size='10' fill='#7d8aa3'>|M₂₄|, order of the Mathieu group</text>
+<g><title>prime 2, exponent 10 — Monster door</title>
+<rect x='1208.0' y='844' width='39.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1240.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1224.0' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>2¹⁰</text>
+</g>
+<g><title>prime 3, exponent 3 — Monster door</title>
+<rect x='1256.0' y='844' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1283.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1269.5' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>3³</text>
+</g>
+<g><title>prime 5, exponent 1 — Monster door</title>
+<rect x='1299.0' y='844' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1326.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1312.5' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>5</text>
+</g>
+<g><title>prime 7, exponent 1 — Monster door</title>
+<rect x='1342.0' y='844' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1369.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1355.5' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>7</text>
+</g>
+<g><title>prime 11, exponent 1 — Monster door</title>
+<rect x='1385.0' y='844' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1412.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1398.5' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>11</text>
+</g>
+<g><title>prime 23, exponent 1 — Monster door</title>
+<rect x='1428.0' y='844' width='34.0' height='34' rx='6' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<circle cx='1455.0' cy='861.0' r='2.3' fill='#ffd166'/>
+<text x='1441.5' y='866' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffd166'>23</text>
+</g>
+<text x='1208' y='894' font-size='10.5' fill='#7d8aa3'>6 doors  ·  6 Monster  ·  0 outside  ·  Ω = 17</text>
+<text x='1208' y='911' font-size='11' fill='#c9d1d9'>244823040 = 2¹⁰ · 3³ · 5 · 7 · 11 · 23</text>
+<rect x='36' y='1061' width='16' height='12' rx='3' fill='#1a1408' stroke='#ffd166' stroke-width='1.3'/>
+<text x='58' y='1071' font-size='11.5' fill='#7d8aa3'>Monster door (prime divides |M|)</text>
+<rect x='286' y='1061' width='16' height='12' rx='3' fill='#2a0f0f' stroke='#ff6b6b' stroke-width='1.3'/>
+<text x='308' y='1071' font-size='11.5' fill='#7d8aa3'>outside door (97, 1823, 2099, 355679 — a prime that leaves the palace)</text>
+</svg>
