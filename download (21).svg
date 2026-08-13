@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1180" viewBox="0 0 1700 1180" role="img" aria-labelledby="title desc">
+<title id="title">The Unified Omnibus — all twenty-two verified results</title>
+<desc id="desc">An animated bus follows twenty-two numbered stops. A passenger and theorem field at every stop represent one field of UnitedTheories.TheoryBundle. Check marks appear as the bus picks up each passenger.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061321"/><stop offset=".55" stop-color="#102a45"/><stop offset="1" stop-color="#211631"/></linearGradient>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9bc8e8" opacity=".055"/></pattern>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <style>
+  text{font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+  .stop-title{fill:#f3f8ff;font-size:14px;font-weight:750}
+  .stop-fact{fill:#8fa8bf;font-size:12px;font-family:Cambria,serif}
+  .route{fill:none;stroke:#52718d;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+  .route-dash{fill:none;stroke:#b5d5e9;stroke-width:2;stroke-dasharray:8 13;opacity:.5}
+ </style>
+</defs>
+<rect width="1700" height="1180" fill="url(#bg)"/><rect width="1700" height="1180" fill="url(#grid)"/>
+<text x="80" y="70" fill="#f6fbff" font-size="43" font-weight="900">THE UNIFIED OMNIBUS</text>
+<text x="82" y="108" fill="#a9bfd2" font-size="18">One route · 22 theorem stops · every passenger picked up exactly once</text>
+<g transform="translate(1350 40)"><rect width="270" height="82" rx="16" fill="#0a1c2e" stroke="#65e5aa"/><text x="22" y="32" fill="#65e5aa" font-size="13" font-weight="850">LEAN-CERTIFIED MAP</text><text x="22" y="59" fill="#f2f8ff" font-size="16">length = 22 · Nodup · ∀ p, p ∈ route</text></g>
+<path d="M 145 285 L 425 285 L 705 285 L 985 285 L 1265 285 L 1545 285 L 1545 520 L 1265 520 L 985 520 L 705 520 L 425 520 L 145 520 L 180 755 L 520 755 L 860 755 L 1200 755 L 1540 755 L 1540 990 L 1200 990 L 860 990 L 520 990 L 180 990" class="route"/><path d="M 145 285 L 425 285 L 705 285 L 985 285 L 1265 285 L 1545 285 L 1545 520 L 1265 520 L 985 520 L 705 520 L 425 520 L 145 520 L 180 755 L 520 755 L 860 755 L 1200 755 L 1540 755 L 1540 990 L 1200 990 L 860 990 L 520 990 L 180 990" class="route-dash"/>
+<g class="stop" aria-label="Stop 1: Maass spectrum">
+      <circle cx="145" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="145" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(110 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="176" cy="255" r="12" fill="#65e5aa"/><path d="M170 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0000;0.0455;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="145" y="221" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">01</tspan> · Maass spectrum</text>
+      <text x="145" y="239" text-anchor="middle" class="stop-fact">λ = ¼ + r²</text>
+      <title>maassSpectral</title>
+    </g><g class="stop" aria-label="Stop 2: Higher dimensions">
+      <circle cx="425" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="425" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(390 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="456" cy="255" r="12" fill="#65e5aa"/><path d="M450 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0455;0.0909;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="425" y="360" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">02</tspan> · Higher dimensions</text>
+      <text x="425" y="378" text-anchor="middle" class="stop-fact">λₙ = ((n−1)/2)² + r²</text>
+      <title>higherDimensionalSpectral</title>
+    </g><g class="stop" aria-label="Stop 3: Hejhal reconstruction">
+      <circle cx="705" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="705" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(670 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="736" cy="255" r="12" fill="#65e5aa"/><path d="M730 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0909;0.1364;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="705" y="221" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">03</tspan> · Hejhal reconstruction</text>
+      <text x="705" y="239" text-anchor="middle" class="stop-fact">SID · Q = I</text>
+      <title>hejhalReconstruction</title>
+    </g><g class="stop" aria-label="Stop 4: Interval products">
+      <circle cx="985" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="985" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(950 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1016" cy="255" r="12" fill="#65e5aa"/><path d="M1010 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1364;0.1818;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="985" y="360" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">04</tspan> · Interval products</text>
+      <text x="985" y="378" text-anchor="middle" class="stop-fact">certified enclosure</text>
+      <title>intervalMultiplication</title>
+    </g><g class="stop" aria-label="Stop 5: Interval sums">
+      <circle cx="1265" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="1265" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(1230 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1296" cy="255" r="12" fill="#65e5aa"/><path d="M1290 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1818;0.2273;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1265" y="221" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">05</tspan> · Interval sums</text>
+      <text x="1265" y="239" text-anchor="middle" class="stop-fact">certified Σ</text>
+      <title>intervalAggregation</title>
+    </g><g class="stop" aria-label="Stop 6: Fricke sign">
+      <circle cx="1545" cy="285" r="20" fill="#0b1d31" stroke="#54d7ff" stroke-width="4"/>
+      <circle cx="1545" cy="285" r="7" fill="#54d7ff"/>
+      <g class="passenger" transform="translate(1510 242)">
+        <circle cy="-8" r="7" fill="#54d7ff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#54d7ff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1576" cy="255" r="12" fill="#65e5aa"/><path d="M1570 255l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2273;0.2727;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1545" y="360" text-anchor="middle" class="stop-title"><tspan fill="#54d7ff">06</tspan> · Fricke sign</text>
+      <text x="1545" y="378" text-anchor="middle" class="stop-fact">certified detection</text>
+      <title>frickeSignDetection</title>
+    </g><g class="stop" aria-label="Stop 7: Hecke multiplicativity">
+      <circle cx="1545" cy="520" r="20" fill="#0b1d31" stroke="#9d8cff" stroke-width="4"/>
+      <circle cx="1545" cy="520" r="7" fill="#9d8cff"/>
+      <g class="passenger" transform="translate(1510 477)">
+        <circle cy="-8" r="7" fill="#9d8cff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#9d8cff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1576" cy="490" r="12" fill="#65e5aa"/><path d="M1570 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2727;0.3182;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1545" y="456" text-anchor="middle" class="stop-title"><tspan fill="#9d8cff">07</tspan> · Hecke multiplicativity</text>
+      <text x="1545" y="474" text-anchor="middle" class="stop-fact">a(mn) = a(m)a(n)</text>
+      <title>heckeCoprimeMultiplicativity</title>
+    </g><g class="stop" aria-label="Stop 8: Good-prime relation">
+      <circle cx="1265" cy="520" r="20" fill="#0b1d31" stroke="#9d8cff" stroke-width="4"/>
+      <circle cx="1265" cy="520" r="7" fill="#9d8cff"/>
+      <g class="passenger" transform="translate(1230 477)">
+        <circle cy="-8" r="7" fill="#9d8cff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#9d8cff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1296" cy="490" r="12" fill="#65e5aa"/><path d="M1290 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3182;0.3636;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1265" y="595" text-anchor="middle" class="stop-title"><tspan fill="#9d8cff">08</tspan> · Good-prime relation</text>
+      <text x="1265" y="613" text-anchor="middle" class="stop-fact">a(p)² = a(p²) + 1</text>
+      <title>heckeGoodPrimeRelation</title>
+    </g><g class="stop" aria-label="Stop 9: Quasimode detection">
+      <circle cx="985" cy="520" r="20" fill="#0b1d31" stroke="#9d8cff" stroke-width="4"/>
+      <circle cx="985" cy="520" r="7" fill="#9d8cff"/>
+      <g class="passenger" transform="translate(950 477)">
+        <circle cy="-8" r="7" fill="#9d8cff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#9d8cff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1016" cy="490" r="12" fill="#65e5aa"/><path d="M1010 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3636;0.4091;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="985" y="456" text-anchor="middle" class="stop-title"><tspan fill="#9d8cff">09</tspan> · Quasimode detection</text>
+      <text x="985" y="474" text-anchor="middle" class="stop-fact">nearby spectrum</text>
+      <title>quasimodeDetection</title>
+    </g><g class="stop" aria-label="Stop 10: Database levels">
+      <circle cx="705" cy="520" r="20" fill="#0b1d31" stroke="#9d8cff" stroke-width="4"/>
+      <circle cx="705" cy="520" r="7" fill="#9d8cff"/>
+      <g class="passenger" transform="translate(670 477)">
+        <circle cy="-8" r="7" fill="#9d8cff"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#9d8cff" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="736" cy="490" r="12" fill="#65e5aa"/><path d="M730 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4091;0.4545;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="705" y="595" text-anchor="middle" class="stop-title"><tspan fill="#9d8cff">10</tspan> · Database levels</text>
+      <text x="705" y="613" text-anchor="middle" class="stop-fact">65 levels</text>
+      <title>databaseLevelCount</title>
+    </g><g class="stop" aria-label="Stop 11: Monster irreducibles">
+      <circle cx="425" cy="520" r="20" fill="#0b1d31" stroke="#ffcc66" stroke-width="4"/>
+      <circle cx="425" cy="520" r="7" fill="#ffcc66"/>
+      <g class="passenger" transform="translate(390 477)">
+        <circle cy="-8" r="7" fill="#ffcc66"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="456" cy="490" r="12" fill="#65e5aa"/><path d="M450 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4545;0.5000;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="425" y="456" text-anchor="middle" class="stop-title"><tspan fill="#ffcc66">11</tspan> · Monster irreducibles</text>
+      <text x="425" y="474" text-anchor="middle" class="stop-fact">194 degrees</text>
+      <title>monsterIrrepCount</title>
+    </g><g class="stop" aria-label="Stop 12: Degree identity">
+      <circle cx="145" cy="520" r="20" fill="#0b1d31" stroke="#ffcc66" stroke-width="4"/>
+      <circle cx="145" cy="520" r="7" fill="#ffcc66"/>
+      <g class="passenger" transform="translate(110 477)">
+        <circle cy="-8" r="7" fill="#ffcc66"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="176" cy="490" r="12" fill="#65e5aa"/><path d="M170 490l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5000;0.5455;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="145" y="595" text-anchor="middle" class="stop-title"><tspan fill="#ffcc66">12</tspan> · Degree identity</text>
+      <text x="145" y="613" text-anchor="middle" class="stop-fact">Σ dᵢ² = |𝕄|</text>
+      <title>monsterDegreeIdentity</title>
+    </g><g class="stop" aria-label="Stop 13: Character rows">
+      <circle cx="180" cy="755" r="20" fill="#0b1d31" stroke="#ffcc66" stroke-width="4"/>
+      <circle cx="180" cy="755" r="7" fill="#ffcc66"/>
+      <g class="passenger" transform="translate(145 712)">
+        <circle cy="-8" r="7" fill="#ffcc66"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="211" cy="725" r="12" fill="#65e5aa"/><path d="M205 725l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5455;0.5909;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="180" y="691" text-anchor="middle" class="stop-title"><tspan fill="#ffcc66">13</tspan> · Character rows</text>
+      <text x="180" y="709" text-anchor="middle" class="stop-fact">194 rows</text>
+      <title>characterTableRows</title>
+    </g><g class="stop" aria-label="Stop 14: Orthogonality">
+      <circle cx="520" cy="755" r="20" fill="#0b1d31" stroke="#ffcc66" stroke-width="4"/>
+      <circle cx="520" cy="755" r="7" fill="#ffcc66"/>
+      <g class="passenger" transform="translate(485 712)">
+        <circle cy="-8" r="7" fill="#ffcc66"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="551" cy="725" r="12" fill="#65e5aa"/><path d="M545 725l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5909;0.6364;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="520" y="830" text-anchor="middle" class="stop-title"><tspan fill="#ffcc66">14</tspan> · Orthogonality</text>
+      <text x="520" y="848" text-anchor="middle" class="stop-fact">⟨χᵢ,χⱼ⟩ = δᵢⱼ</text>
+      <title>characterOrthogonality</title>
+    </g><g class="stop" aria-label="Stop 15: Matrix codec">
+      <circle cx="860" cy="755" r="20" fill="#0b1d31" stroke="#65e5aa" stroke-width="4"/>
+      <circle cx="860" cy="755" r="7" fill="#65e5aa"/>
+      <g class="passenger" transform="translate(825 712)">
+        <circle cy="-8" r="7" fill="#65e5aa"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#65e5aa" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="891" cy="725" r="12" fill="#65e5aa"/><path d="M885 725l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6364;0.6818;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="860" y="691" text-anchor="middle" class="stop-title"><tspan fill="#65e5aa">15</tspan> · Matrix codec</text>
+      <text x="860" y="709" text-anchor="middle" class="stop-fact">exact reconstruction</text>
+      <title>characterCodecLossless</title>
+    </g><g class="stop" aria-label="Stop 16: Serialized codec">
+      <circle cx="1200" cy="755" r="20" fill="#0b1d31" stroke="#65e5aa" stroke-width="4"/>
+      <circle cx="1200" cy="755" r="7" fill="#65e5aa"/>
+      <g class="passenger" transform="translate(1165 712)">
+        <circle cy="-8" r="7" fill="#65e5aa"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#65e5aa" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1231" cy="725" r="12" fill="#65e5aa"/><path d="M1225 725l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6818;0.7273;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1200" y="830" text-anchor="middle" class="stop-title"><tspan fill="#65e5aa">16</tspan> · Serialized codec</text>
+      <text x="1200" y="848" text-anchor="middle" class="stop-fact">exact deserialization</text>
+      <title>serializedCodecLossless</title>
+    </g><g class="stop" aria-label="Stop 17: Minimal latent width">
+      <circle cx="1540" cy="755" r="20" fill="#0b1d31" stroke="#65e5aa" stroke-width="4"/>
+      <circle cx="1540" cy="755" r="7" fill="#65e5aa"/>
+      <g class="passenger" transform="translate(1505 712)">
+        <circle cy="-8" r="7" fill="#65e5aa"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#65e5aa" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1571" cy="725" r="12" fill="#65e5aa"/><path d="M1565 725l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.7273;0.7727;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1540" y="691" text-anchor="middle" class="stop-title"><tspan fill="#65e5aa">17</tspan> · Minimal latent width</text>
+      <text x="1540" y="709" text-anchor="middle" class="stop-fact">width = 15</text>
+      <title>autoencoderWidth</title>
+    </g><g class="stop" aria-label="Stop 18: Entry symmetry codec">
+      <circle cx="1540" cy="990" r="20" fill="#0b1d31" stroke="#65e5aa" stroke-width="4"/>
+      <circle cx="1540" cy="990" r="7" fill="#65e5aa"/>
+      <g class="passenger" transform="translate(1505 947)">
+        <circle cy="-8" r="7" fill="#65e5aa"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#65e5aa" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1571" cy="960" r="12" fill="#65e5aa"/><path d="M1565 960l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.7727;0.8182;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1540" y="1065" text-anchor="middle" class="stop-title"><tspan fill="#65e5aa">18</tspan> · Entry symmetry codec</text>
+      <text x="1540" y="1083" text-anchor="middle" class="stop-fact">decode ∘ encode = id</text>
+      <title>entryCodecLossless</title>
+    </g><g class="stop" aria-label="Stop 19: Transition tensor">
+      <circle cx="1200" cy="990" r="20" fill="#0b1d31" stroke="#65e5aa" stroke-width="4"/>
+      <circle cx="1200" cy="990" r="7" fill="#65e5aa"/>
+      <g class="passenger" transform="translate(1165 947)">
+        <circle cy="-8" r="7" fill="#65e5aa"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#65e5aa" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="1231" cy="960" r="12" fill="#65e5aa"/><path d="M1225 960l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.8182;0.8636;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="1200" y="926" text-anchor="middle" class="stop-title"><tspan fill="#65e5aa">19</tspan> · Transition tensor</text>
+      <text x="1200" y="944" text-anchor="middle" class="stop-fact">dimensions decode T</text>
+      <title>transitionTensorFromDimensions</title>
+    </g><g class="stop" aria-label="Stop 20: Moonshine bridge">
+      <circle cx="860" cy="990" r="20" fill="#0b1d31" stroke="#ff829d" stroke-width="4"/>
+      <circle cx="860" cy="990" r="7" fill="#ff829d"/>
+      <g class="passenger" transform="translate(825 947)">
+        <circle cy="-8" r="7" fill="#ff829d"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ff829d" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="891" cy="960" r="12" fill="#65e5aa"/><path d="M885 960l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.8636;0.9091;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="860" y="1065" text-anchor="middle" class="stop-title"><tspan fill="#ff829d">20</tspan> · Moonshine bridge</text>
+      <text x="860" y="1083" text-anchor="middle" class="stop-fact">196884 = 1 + 196883</text>
+      <title>moonshineBridge</title>
+    </g><g class="stop" aria-label="Stop 21: Sporadic census">
+      <circle cx="520" cy="990" r="20" fill="#0b1d31" stroke="#ff829d" stroke-width="4"/>
+      <circle cx="520" cy="990" r="7" fill="#ff829d"/>
+      <g class="passenger" transform="translate(485 947)">
+        <circle cy="-8" r="7" fill="#ff829d"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ff829d" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="551" cy="960" r="12" fill="#65e5aa"/><path d="M545 960l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.9091;0.9545;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="520" y="926" text-anchor="middle" class="stop-title"><tspan fill="#ff829d">21</tspan> · Sporadic census</text>
+      <text x="520" y="944" text-anchor="middle" class="stop-fact">26 + Tits = 27</text>
+      <title>sporadicAndTitsCount</title>
+    </g><g class="stop" aria-label="Stop 22: Sporadic shapes">
+      <circle cx="180" cy="990" r="20" fill="#0b1d31" stroke="#ff829d" stroke-width="4"/>
+      <circle cx="180" cy="990" r="7" fill="#ff829d"/>
+      <g class="passenger" transform="translate(145 947)">
+        <circle cy="-8" r="7" fill="#ff829d"/><path d="M-10 18Q0 0 10 18" fill="none" stroke="#ff829d" stroke-width="5" stroke-linecap="round"/>
+        <animate attributeName="opacity" values="1;1;.18;.18" keyTimes="0;.03;.05;1" dur="22s" begin="0s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0"><circle cx="211" cy="960" r="12" fill="#65e5aa"/><path d="M205 960l4 4 8-9" fill="none" stroke="#082519" stroke-width="3"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.9545;1.0000;1" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <text x="180" y="1065" text-anchor="middle" class="stop-title"><tspan fill="#ff829d">22</tspan> · Sporadic shapes</text>
+      <text x="180" y="1083" text-anchor="middle" class="stop-fact">27 records</text>
+      <title>sporadicShapeCount</title>
+    </g>
+<g filter="url(#glow)"><g transform="translate(0 0)">
+      <rect x="-57" y="-30" width="114" height="55" rx="12" fill="#ffd45c" stroke="#fff2b8" stroke-width="2"/>
+      <rect x="-45" y="-20" width="25" height="20" rx="3" fill="#16324d"/><rect x="-13" y="-20" width="25" height="20" rx="3" fill="#16324d"/><rect x="19" y="-20" width="25" height="20" rx="3" fill="#16324d"/>
+      <path d="M-57 7H57" stroke="#8d6715"/><text x="0" y="17" text-anchor="middle" font-size="11" font-weight="900" fill="#493400">OMNIBUS</text>
+      <circle cx="-34" cy="27" r="10" fill="#071727" stroke="#c9e8ff"/><circle cx="35" cy="27" r="10" fill="#071727" stroke="#c9e8ff"/>
+    </g><animateMotion dur="22s" repeatCount="indefinite" path="M 145 285 L 425 285 L 705 285 L 985 285 L 1265 285 L 1545 285 L 1545 520 L 1265 520 L 985 520 L 705 520 L 425 520 L 145 520 L 180 755 L 520 755 L 860 755 L 1200 755 L 1540 755 L 1540 990 L 1200 990 L 860 990 L 520 990 L 180 990" keyPoints="0.0 ; 0.047619047619047616 ; 0.09523809523809523 ; 0.14285714285714285 ; 0.19047619047619047 ; 0.23809523809523808 ; 0.2857142857142857 ; 0.3333333333333333 ; 0.38095238095238093 ; 0.42857142857142855 ; 0.47619047619047616 ; 0.5238095238095238 ; 0.5714285714285714 ; 0.6190476190476191 ; 0.6666666666666666 ; 0.7142857142857143 ; 0.7619047619047619 ; 0.8095238095238095 ; 0.8571428571428571 ; 0.9047619047619048 ; 0.9523809523809523 ; 1.0" keyTimes="0.0 ; 0.047619047619047616 ; 0.09523809523809523 ; 0.14285714285714285 ; 0.19047619047619047 ; 0.23809523809523808 ; 0.2857142857142857 ; 0.3333333333333333 ; 0.38095238095238093 ; 0.42857142857142855 ; 0.47619047619047616 ; 0.5238095238095238 ; 0.5714285714285714 ; 0.6190476190476191 ; 0.6666666666666666 ; 0.7142857142857143 ; 0.7619047619047619 ; 0.8095238095238095 ; 0.8571428571428571 ; 0.9047619047619048 ; 0.9523809523809523 ; 1.0" calcMode="linear"/></g>
+<g transform="translate(80 1100)"><circle r="7" fill="#54d7ff"/><text x="16" y="5" fill="#adc3d6" font-size="13">analytic</text><circle cx="115" r="7" fill="#9d8cff"/><text x="131" y="5" fill="#adc3d6" font-size="13">arithmetic</text><circle cx="250" r="7" fill="#ffcc66"/><text x="266" y="5" fill="#adc3d6" font-size="13">Monster data</text><circle cx="400" r="7" fill="#65e5aa"/><text x="416" y="5" fill="#adc3d6" font-size="13">exact codecs</text><circle cx="545" r="7" fill="#ff829d"/><text x="561" y="5" fill="#adc3d6" font-size="13">symmetry</text></g>
+<text x="1620" y="1105" text-anchor="end" fill="#8fa8bf" font-size="13">SOURCE · UnitedTheories.omnibusRoute</text>
+<text x="850" y="1150" text-anchor="middle" fill="#6f8aa1" font-size="12">Animation restarts after the final pickup · theorem labels and route order are checked against AllTheories.lean</text>
+</svg>
