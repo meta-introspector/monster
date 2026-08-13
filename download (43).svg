@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1830" viewBox="0 0 1600 1830" font-family="Helvetica,Arial,sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1b2a"/><stop offset="1" stop-color="#081420"/></linearGradient><radialGradient id="core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffd166" stop-opacity="0.20"/><stop offset="1" stop-color="#ffd166" stop-opacity="0.03"/></radialGradient></defs>
+<rect width="1600" height="1830" fill="url(#bg)"/>
+<text x="800.0" y="66" text-anchor="middle" font-size="42" font-weight="bold" fill="#e0e6ed">The Prime Wheel</text>
+<text x="800.0" y="102" text-anchor="middle" font-size="20" fill="#9fb3c8">Every prime of the &#963;&#8321; / moonshine analysis, drawn once &#8212; Ogg (supersingular) primes at the core, new primes on outer shells.</text>
+<text x="800.0" y="130" text-anchor="middle" font-size="17" fill="#9fb3c8">105 distinct primes, each drawn once; repeated primes are referenced by dots, and repunits (&#8220;just ones in base N&#8221;) wear a cyan halo.</text>
+<circle cx="800.0" cy="640" r="222.0" fill="none" stroke="#f4a261" stroke-opacity="0.09" stroke-width="64.0"/>
+<circle cx="800.0" cy="640" r="313.0" fill="none" stroke="#f4978e" stroke-opacity="0.09" stroke-width="118.0"/>
+<circle cx="800.0" cy="640" r="412.0" fill="none" stroke="#a3e635" stroke-opacity="0.09" stroke-width="80.0"/>
+<circle cx="800.0" cy="640" r="482.0" fill="none" stroke="#4ea8de" stroke-opacity="0.09" stroke-width="60.0"/>
+<circle cx="800.0" cy="640" r="190" fill="url(#core)" stroke="#ffd166" stroke-width="2.5"/>
+<text x="800.0" y="646.5" text-anchor="middle" font-size="30" font-weight="bold" fill="#ffd166">2<tspan baseline-shift="super" font-size="18">46</tspan></text>
+<text x="800.0" y="547.7" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffd166">3<tspan baseline-shift="super" font-size="13">20</tspan></text>
+<text x="895.1" y="616.8" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffd166">5<tspan baseline-shift="super" font-size="13">9</tspan></text>
+<circle cx="858.8" cy="720.9" r="23.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="858.8" y="728.6" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffd166">7<tspan baseline-shift="super" font-size="13">6</tspan></text>
+<circle cx="741.2" cy="720.9" r="23.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="741.2" y="728.6" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffd166">13<tspan baseline-shift="super" font-size="13">3</tspan></text>
+<text x="704.9" y="616.8" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffd166">11<tspan baseline-shift="super" font-size="13">2</tspan></text>
+<text x="800.0" y="487.9" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">17<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="901.6" y="524.9" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">19<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="955.6" y="618.5" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">23<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="936.8" y="725.0" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">29<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<circle cx="854.0" cy="788.5" r="19.1" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="854.0" y="794.4" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">31<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="746.0" y="794.4" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">41<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="663.2" y="725.0" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">47<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="644.4" y="618.5" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">59<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="698.4" y="524.9" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffd166">71<tspan baseline-shift="super" font-size="10">1</tspan></text>
+<text x="800.0" y="413.6" text-anchor="middle" font-size="16" font-weight="normal" fill="#f4a261">37</text>
+<circle cx="800.0" cy="387.6" r="3.3" fill="#f4978e"/>
+<circle cx="800.0" cy="379.6" r="3.3" fill="#4ea8de"/>
+<circle cx="1000.9" cy="756.0" r="18.2" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="1000.9" y="761.6" text-anchor="middle" font-size="16" font-weight="bold" fill="#f4a261">43</text>
+<circle cx="1018.6" cy="766.2" r="3.3" fill="#f4978e"/>
+<circle cx="1025.5" cy="770.2" r="3.3" fill="#4ea8de"/>
+<text x="599.1" y="761.6" text-anchor="middle" font-size="16" font-weight="normal" fill="#f4a261">67</text>
+<circle cx="581.4" cy="766.2" r="3.3" fill="#4ea8de"/>
+<text x="800.0" y="308.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">61</text>
+<circle cx="800.0" cy="287.6" r="3.3" fill="#4ea8de"/>
+<circle cx="847.1" cy="290.1" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="847.1" y="294.2" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">73</text>
+<circle cx="849.2" cy="273.9" r="3.3" fill="#4ea8de"/>
+<text x="888.8" y="320.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">89</text>
+<circle cx="937.8" cy="315.0" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="937.8" y="319.0" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">127</text>
+<circle cx="944.2" cy="300.0" r="3.3" fill="#4ea8de"/>
+<text x="971.2" y="354.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">151</text>
+<circle cx="979.6" cy="336.8" r="3.3" fill="#4ea8de"/>
+<text x="1018.8" y="367.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">193</text>
+<text x="1041.5" y="410.4" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">233</text>
+<text x="1084.2" y="434.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">257</text>
+<text x="1094.7" y="482.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">313</text>
+<text x="1129.4" y="517.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">337</text>
+<text x="1126.8" y="566.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">397</text>
+<text x="1151.2" y="608.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">431</text>
+<text x="1135.8" y="655.3" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">521</text>
+<text x="1148.1" y="702.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">547</text>
+<text x="1120.9" y="743.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">631</text>
+<text x="1120.2" y="792.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">683</text>
+<circle cx="1083.2" cy="820.8" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="1083.2" y="824.8" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">757</text>
+<text x="1069.6" y="871.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">829</text>
+<circle cx="1025.4" cy="889.2" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="1025.4" y="893.2" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">1093</text>
+<circle cx="1036.4" cy="901.3" r="3.3" fill="#4ea8de"/>
+<text x="999.8" y="935.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">1103</text>
+<text x="951.5" y="943.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">1181</text>
+<circle cx="958.9" cy="954.5" r="3.3" fill="#4ea8de"/>
+<text x="915.8" y="977.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">1597</text>
+<text x="866.9" y="973.3" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">1871</text>
+<text x="823.6" y="996.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">2089</text>
+<text x="777.6" y="979.3" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">2113</text>
+<text x="729.7" y="990.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">2351</text>
+<circle cx="689.8" cy="957.4" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="689.8" y="961.4" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">2801</text>
+<text x="640.8" y="959.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">3851</text>
+<text x="609.8" y="921.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">4513</text>
+<text x="563.2" y="905.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">4733</text>
+<text x="543.4" y="861.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">5419</text>
+<circle cx="502.5" cy="829.9" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="502.5" y="834.0" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">8191</text>
+<circle cx="488.7" cy="838.7" r="3.3" fill="#4ea8de"/>
+<text x="495.2" y="785.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">9719</text>
+<circle cx="462.8" cy="744.6" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="462.8" y="748.6" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">19531</text>
+<text x="468.7" y="699.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">23311</text>
+<text x="447.2" y="655.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">34511</text>
+<text x="465.7" y="610.4" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">61681</text>
+<text x="456.6" y="562.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">65537</text>
+<circle cx="486.5" cy="519.2" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="486.5" y="523.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">131071</text>
+<circle cx="471.2" cy="513.4" r="3.3" fill="#4ea8de"/>
+<text x="490.4" y="474.4" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">178481</text>
+<text x="529.5" y="444.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">363889</text>
+<text x="546.3" y="398.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">368089</text>
+<circle cx="591.8" cy="376.3" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="591.8" y="380.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">524287</text>
+<text x="620.1" y="340.3" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">599479</text>
+<circle cx="668.8" cy="330.7" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="668.8" y="334.7" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#f4978e">797161</text>
+<text x="706.7" y="303.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">2099863</text>
+<text x="755.2" y="311.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#f4978e">13264529</text>
+<text x="800.0" y="226.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">199</text>
+<text x="916.8" y="227.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">271</text>
+<text x="1017.2" y="286.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">281</text>
+<text x="1116.5" y="348.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">383</text>
+<circle cx="1171.1" cy="447.7" r="13.9" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.9"/>
+<text x="1171.1" y="451.7" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#a3e635">1483</text>
+<text x="1223.9" y="555.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">1823</text>
+<text x="1217.0" y="672.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">2099</text>
+<text x="1208.0" y="789.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">2143</text>
+<text x="1141.5" y="885.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">4723</text>
+<text x="1073.3" y="979.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">41047</text>
+<text x="966.5" y="1027.4" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">45767</text>
+<text x="859.0" y="1073.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">96457</text>
+<text x="743.1" y="1058.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">112291</text>
+<text x="627.5" y="1041.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">355679</text>
+<text x="536.2" y="968.3" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">777421</text>
+<text x="446.3" y="893.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">5366467</text>
+<text x="406.1" y="784.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">8202479</text>
+<text x="368.0" y="673.6" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">15376021</text>
+<text x="390.7" y="559.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">174376673</text>
+<text x="415.5" y="444.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">1746673133</text>
+<text x="494.5" y="358.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">10980221089</text>
+<text x="575.0" y="274.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">666739430527</text>
+<text x="687.2" y="241.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#a3e635">1008344102147</text>
+<text x="800.0" y="158.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">53</text>
+<text x="981.0" y="176.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">109</text>
+<text x="1127.4" y="284.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">239</text>
+<text x="1248.5" y="420.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">419</text>
+<text x="1283.9" y="599.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">733</text>
+<text x="1281.9" y="781.1" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">1171</text>
+<text x="1187.8" y="936.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">1907</text>
+<text x="1063.7" y="1070.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">2837</text>
+<text x="889.3" y="1121.7" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">8707</text>
+<text x="707.9" y="1136.5" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">8929</text>
+<text x="544.2" y="1057.2" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">33601</text>
+<text x="400.2" y="945.9" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">388711</text>
+<text x="332.6" y="777.0" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">833593</text>
+<text x="301.1" y="597.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">937679</text>
+<text x="365.0" y="427.4" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">1341617</text>
+<text x="462.5" y="273.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">7688011</text>
+<text x="624.4" y="190.8" text-anchor="middle" font-size="11.5" font-weight="normal" fill="#4ea8de">7867897</text>
+<rect x="40" y="210" width="300" height="290" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="58" y="240" font-size="18" font-weight="bold" fill="#e0e6ed">Shells (core &#8594; out)</text>
+<circle cx="66" cy="263" r="8" fill="#ffd166"/>
+<text x="84" y="268" font-size="15" font-weight="bold" fill="#ffd166">Ogg core</text>
+<text x="84" y="283" font-size="12" fill="#9fb3c8">15 supersingular primes of |M|</text>
+<circle cx="66" cy="297" r="8" fill="#f4a261"/>
+<text x="84" y="302" font-size="15" font-weight="bold" fill="#f4a261">Pariah numbers</text>
+<text x="84" y="317" font-size="12" fill="#9fb3c8">orders of J4, Ly</text>
+<circle cx="66" cy="331" r="8" fill="#f4978e"/>
+<text x="84" y="336" font-size="15" font-weight="bold" fill="#f4978e">Monster &#963;&#8321;</text>
+<text x="84" y="351" font-size="12" fill="#9fb3c8">in the divisor sums</text>
+<circle cx="66" cy="365" r="8" fill="#a3e635"/>
+<text x="84" y="370" font-size="15" font-weight="bold" fill="#a3e635">Moonshine c(n)</text>
+<text x="84" y="385" font-size="12" fill="#9fb3c8">j-function coefficients</text>
+<circle cx="66" cy="399" r="8" fill="#4ea8de"/>
+<text x="84" y="404" font-size="15" font-weight="bold" fill="#4ea8de">Moonshine &#963;&#8321;</text>
+<text x="84" y="419" font-size="12" fill="#9fb3c8">&#963; of those coefficients</text>
+<circle cx="66" cy="439" r="9" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+<text x="84" y="444" font-size="14" fill="#22d3ee">cyan halo = repunit</text>
+<text x="84" y="459" font-size="11.5" fill="#9fb3c8">all ones in some base (see lenses)</text>
+<circle cx="62" cy="477" r="3.3" fill="#f4978e"/>
+<circle cx="70" cy="477" r="3.3" fill="#4ea8de"/>
+<text x="84" y="481" font-size="14" fill="#e0e6ed">dot = also on that shell</text>
+<rect x="1260" y="210" width="300" height="290" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="1278" y="240" font-size="18" font-weight="bold" fill="#e0e6ed">Reading the wheel</text>
+<text x="1278" y="266" font-size="13" fill="#9fb3c8">The core is the 15 Ogg primes,</text>
+<text x="1278" y="284" font-size="13" fill="#9fb3c8">sized by exponent in |M|: 2&#8308;&#8310; at</text>
+<text x="1278" y="302" font-size="13" fill="#9fb3c8">the centre out to the nine</text>
+<text x="1278" y="320" font-size="13" fill="#9fb3c8">exponent-1 primes on the gold ring.</text>
+<text x="1278" y="338" font-size="13" fill="#9fb3c8"></text>
+<text x="1278" y="356" font-size="13" fill="#9fb3c8">No prime is drawn twice. A prime</text>
+<text x="1278" y="374" font-size="13" fill="#9fb3c8">that recurs on an outer shell keeps</text>
+<text x="1278" y="392" font-size="13" fill="#9fb3c8">its innermost home and gets one</text>
+<text x="1278" y="410" font-size="13" fill="#9fb3c8">coloured dot per extra shell.</text>
+<text x="1278" y="428" font-size="13" fill="#9fb3c8"></text>
+<text x="1278" y="446" font-size="13" fill="#9fb3c8">A cyan halo flags a prime that is</text>
+<text x="1278" y="464" font-size="13" fill="#9fb3c8">a string of ones in some base &#8212;</text>
+<text x="1278" y="482" font-size="13" fill="#9fb3c8">its p-adic notation is below.</text>
+<text x="800.0" y="1210" text-anchor="middle" font-size="30" font-weight="bold" fill="#e0e6ed">p-adic lenses &#8212; the same primes as &#8220;just ones&#8221;</text>
+<text x="800.0" y="1242" text-anchor="middle" font-size="16" fill="#9fb3c8">A prime with a cyan halo is a base-b repunit: 1 + b + &#8230; + b&#7503;&#8315;&#185; = a run of k ones. Each lens views the flagged primes in one base (optimal = smallest base, most ones).</text>
+<rect x="45.0" y="1272" width="490" height="216" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="63.0" y="1302" font-size="18" font-weight="bold" fill="#22d3ee">base 2 &#183; binary / Mersenne</text>
+<text x="63.0" y="1324" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="195.0" y="1324" font-size="14" fill="#9fb3c8">= 3 ones in base 2</text>
+<text x="517.0" y="1324" text-anchor="end" font-size="15" font-weight="bold" fill="#ffd166">7</text>
+<text x="63.0" y="1350" font-size="16" font-family="monospace" fill="#e0e6ed">11111</text>
+<text x="195.0" y="1350" font-size="14" fill="#9fb3c8">= 5 ones in base 2</text>
+<text x="517.0" y="1350" text-anchor="end" font-size="15" font-weight="bold" fill="#ffd166">31 &#9737;</text>
+<text x="63.0" y="1376" font-size="16" font-family="monospace" fill="#e0e6ed">1111111</text>
+<text x="195.0" y="1376" font-size="14" fill="#9fb3c8">= 7 ones in base 2</text>
+<text x="517.0" y="1376" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">127</text>
+<text x="63.0" y="1402" font-size="16" font-family="monospace" fill="#e0e6ed">111&#8230;1  (13&#215;)</text>
+<text x="195.0" y="1402" font-size="14" fill="#9fb3c8">= 13 ones in base 2</text>
+<text x="517.0" y="1402" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">8191 &#9737;</text>
+<text x="63.0" y="1428" font-size="16" font-family="monospace" fill="#e0e6ed">111&#8230;1  (17&#215;)</text>
+<text x="195.0" y="1428" font-size="14" fill="#9fb3c8">= 17 ones in base 2</text>
+<text x="517.0" y="1428" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">131071</text>
+<text x="63.0" y="1454" font-size="16" font-family="monospace" fill="#e0e6ed">111&#8230;1  (19&#215;)</text>
+<text x="195.0" y="1454" font-size="14" fill="#9fb3c8">= 19 ones in base 2</text>
+<text x="517.0" y="1454" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">524287</text>
+<rect x="555.0" y="1272" width="490" height="138" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="573.0" y="1302" font-size="18" font-weight="bold" fill="#22d3ee">base 3 &#183; ternary</text>
+<text x="573.0" y="1324" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="705.0" y="1324" font-size="14" fill="#9fb3c8">= 3 ones in base 3</text>
+<text x="1027.0" y="1324" text-anchor="end" font-size="15" font-weight="bold" fill="#ffd166">13</text>
+<text x="573.0" y="1350" font-size="16" font-family="monospace" fill="#e0e6ed">1111111</text>
+<text x="705.0" y="1350" font-size="14" fill="#9fb3c8">= 7 ones in base 3</text>
+<text x="1027.0" y="1350" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">1093</text>
+<text x="573.0" y="1376" font-size="16" font-family="monospace" fill="#e0e6ed">111&#8230;1  (13&#215;)</text>
+<text x="705.0" y="1376" font-size="14" fill="#9fb3c8">= 13 ones in base 3</text>
+<text x="1027.0" y="1376" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">797161</text>
+<rect x="1065.0" y="1272" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="1083.0" y="1302" font-size="18" font-weight="bold" fill="#22d3ee">base 5</text>
+<text x="1083.0" y="1324" font-size="16" font-family="monospace" fill="#e0e6ed">1111111</text>
+<text x="1215.0" y="1324" font-size="14" fill="#9fb3c8">= 7 ones in base 5</text>
+<text x="1537.0" y="1324" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">19531</text>
+<rect x="45.0" y="1508" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="63.0" y="1538" font-size="18" font-weight="bold" fill="#22d3ee">base 6</text>
+<text x="63.0" y="1560" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="195.0" y="1560" font-size="14" fill="#9fb3c8">= 3 ones in base 6</text>
+<text x="517.0" y="1560" text-anchor="end" font-size="15" font-weight="bold" fill="#f4a261">43</text>
+<rect x="555.0" y="1430" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="573.0" y="1460" font-size="18" font-weight="bold" fill="#22d3ee">base 7</text>
+<text x="573.0" y="1482" font-size="16" font-family="monospace" fill="#e0e6ed">11111</text>
+<text x="705.0" y="1482" font-size="14" fill="#9fb3c8">= 5 ones in base 7</text>
+<text x="1027.0" y="1482" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">2801</text>
+<rect x="1065.0" y="1378" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="1083.0" y="1408" font-size="18" font-weight="bold" fill="#22d3ee">base 8</text>
+<text x="1083.0" y="1430" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="1215.0" y="1430" font-size="14" fill="#9fb3c8">= 3 ones in base 8</text>
+<text x="1537.0" y="1430" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">73</text>
+<rect x="45.0" y="1614" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="63.0" y="1644" font-size="18" font-weight="bold" fill="#22d3ee">base 27</text>
+<text x="63.0" y="1666" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="195.0" y="1666" font-size="14" fill="#9fb3c8">= 3 ones in base 27</text>
+<text x="517.0" y="1666" text-anchor="end" font-size="15" font-weight="bold" fill="#f4978e">757</text>
+<rect x="555.0" y="1536" width="490" height="86" rx="12" fill="#152a41" stroke="#24384f" stroke-width="1"/>
+<text x="573.0" y="1566" font-size="18" font-weight="bold" fill="#22d3ee">base 38</text>
+<text x="573.0" y="1588" font-size="16" font-family="monospace" fill="#e0e6ed">111</text>
+<text x="705.0" y="1588" font-size="14" fill="#9fb3c8">= 3 ones in base 38</text>
+<text x="1027.0" y="1588" text-anchor="end" font-size="15" font-weight="bold" fill="#a3e635">1483</text>
+<text x="800.0" y="1734" text-anchor="middle" font-size="15" fill="#22d3ee">15 of the 105 primes are repunits &#8212; a string of &#8805;3 ones in some base. Two are repunits in two bases: 31 = 11111&#8322; = 111&#8325;, 8191 = 1&#8230;1&#8322; (13) = 111&#8320;&#8325; (&#9737; marks them).</text>
+<text x="800.0" y="1784" text-anchor="middle" font-size="14" fill="#9fb3c8">&#963;&#8321;(p&#7497;) = 1 + p + &#8230; + p&#7497; is itself a base-p repunit; the primes above are the members of the series that are repunits in their own right.</text>
+<text x="800.0" y="1806" text-anchor="middle" font-size="13" fill="#9fb3c8">Every prime and every repunit flag is machine-checked in Lean 4 / Mathlib (RequestProject/RepunitPrimes.lean) &#8212; no sorry, standard axioms only.</text>
+</svg>
