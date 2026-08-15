@@ -237,9 +237,11 @@ theorem monster_walk_bott_tenfold :
 /-! ## Philosophical Interpretation -/
 
 /-- The Monster Group encodes topological structure -/
-axiom monster_is_topological_superconductor :
+theorem monster_is_topological_superconductor :
   ∀ (i : Fin 10), ∃ (phase : SymmetryClass), 
-    phase = groupToSymmetryClass i
+    phase = groupToSymmetryClass i := by
+  intro i
+  refine ⟨groupToSymmetryClass i, rfl⟩
 
 /-- Each group represents a distinct topological phase -/
 theorem distinct_topological_phases :

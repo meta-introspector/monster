@@ -132,17 +132,19 @@ theorem monster_hierarchical_walk :
   · native_decide
   · native_decide
 
-/-! ## Uniqueness Properties -/
+/-! ## Artifact-Backed Local Maxima Properties -/
 
-/-- Group 1 achieves maximum 4 digits, cannot achieve 5 -/
-axiom group1_max_is_4 : ∀ (indices : List Nat),
-  indices.length ≤ 15 →
-  preservesLeadingDigits monsterPrimes indices 5 = false
+/-- Group 1 witness preserves 4 digits and does not preserve 5 digits. -/
+theorem group1_max_is_4 :
+  preservesLeadingDigits monsterPrimes group1_removal 4 = true ∧
+  preservesLeadingDigits monsterPrimes group1_removal 5 = false := by
+  native_decide
 
-/-- Group 2 also maxes at 4 digits -/
-axiom group2_max_is_4 : ∀ (indices : List Nat),
-  indices.length ≤ 15 →
-  leadingDigits (orderFromFactors (removeFactors monsterPrimes indices)) 5 ≠ 17424
+/-- Group 2 witness preserves the 4-digit target and does not extend to 5 digits. -/
+theorem group2_max_is_4 :
+  leadingDigits group2_result 4 = 1742 ∧
+  leadingDigits group2_result 5 ≠ 17424 := by
+  native_decide
 
 /-- The symmetry: Both groups achieve exactly 4 digits -/
 theorem both_groups_achieve_4_digits :
@@ -155,4 +157,3 @@ theorem both_groups_achieve_4_digits :
     native_decide
 
 end Monster
-

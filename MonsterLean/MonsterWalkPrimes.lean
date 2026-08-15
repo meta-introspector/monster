@@ -3,6 +3,7 @@
 
 import Mathlib.Data.Nat.Basic
 import Mathlib.Data.Nat.Digits
+import Mathlib.Tactic
 
 namespace MonsterWalkPrimes
 
@@ -114,7 +115,7 @@ def walk_all_bases : List (Nat × List (WalkStep 71)) :=
 /-- Theorem: 70 bases computed --/
 theorem seventy_bases_computed :
   walk_all_bases.length = 70 := by
-  sorry
+  native_decide
 
 /-- Theorem: Each walk has 6 steps --/
 theorem six_steps_per_walk (b : Nat) :
@@ -126,6 +127,6 @@ theorem step4_preserves_8080 :
   let walk := walk_in_base 10
   let step4 := walk[2]!
   step4.value / 10^35 = 8080 := by
-  sorry
+  native_decide
 
 end MonsterWalkPrimes
